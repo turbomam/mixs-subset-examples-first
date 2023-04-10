@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mixs_subset_examples_first"
-version = "0.1.0"
+version = "0.0.0.post3.dev0+f188a04"
 description = "A subset of the MIxS specification that's self-documenting, DataHarmonizer compatible. Comes with valid and invalid data examples."
 authors = ["Mark Andrew Miller <MAM@lbl.gov>"]
 license = "MIT"
@@ -12,7 +12,7 @@ python = "^3.9"
 linkml-runtime = "^1.1.24"
 
 [tool.poetry-dynamic-versioning]
-enable = true
+enable = false
 vcs = "git"
 style = "pep440"
 
@@ -22,6 +22,7 @@ mkdocs-material = "^8.2.8"
 mkdocs-mermaid2-plugin = "^0.6.0"
 schemasheets = "^0.1.14"
 check-jsonschema = "^0.22.0"
+click_log = "0.4.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
@@ -33,3 +34,11 @@ docs = ["linkml", "mkdocs-material"]
 [tool.poetry.scripts]
 dh-json2linkml = 'src.mixs_subset_examples_first.datamodel.dh_json2linkml:update_json'
 linkml-json2dh = 'src.mixs_subset_examples_first.datamodel.linkml_json2dh:extract_lists'
+
+combine_any_tsvs = 'src.mixs_subset_examples_first.datamodel.combine_any_tsvs:combine_tsvs'
+compare_headers = 'src.mixs_subset_examples_first.datamodel.compare_headers:cli'
+find_multi_pairings = 'src.mixs_subset_examples_first.datamodel.find_multi_pairings:main'
+tsv_key_management = 'src.mixs_subset_examples_first.datamodel.tsv_key_management:cli'
+xlsx_tab_to_tsv = 'src.mixs_subset_examples_first.datamodel.xlsx_tab_to_tsv:cli'
+drop_then_remove_dupes = 'src.mixs_subset_examples_first.datamodel.drop_then_remove_dupes:main'
+
