@@ -42,3 +42,6 @@ tsv_key_management = 'src.mixs_subset_examples_first.datamodel.tsv_key_managemen
 xlsx_tab_to_tsv = 'src.mixs_subset_examples_first.datamodel.xlsx_tab_to_tsv:cli'
 drop_then_remove_dupes = 'src.mixs_subset_examples_first.datamodel.drop_then_remove_dupes:main'
 
+filter_column = 'src.mixs_subset_examples_first.datamodel.filter_column:cli'
+
+
