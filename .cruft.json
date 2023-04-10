@@ -1,0 +1,27 @@
+{
+  "template": "https://github.com/turbomam/examples-first-cookiecutter",
+  "commit": "e214ff9c430e482dd14b3e878390141124d9c530",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "mixs-subset-examples-first",
+      "__project_slug": "mixs_subset_examples_first",
+      "github_org": "turbomam",
+      "__source_path": "src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml",
+      "project_description": "A subset of the MIxS specification that's self-documenting, DataHarmonizer compatible. Comes with valid and invalid data examples.",
+      "full_name": "Mark Andrew Miller",
+      "email": "MAM@lbl.gov",
+      "__author": "Mark Andrew Miller <MAM@lbl.gov>",
+      "license": "MIT",
+      "main_schema_class": "Biosample",
+      "create_python_classes": "Yes",
+      "use_schemasheets": "No",
+      "google_sheet_id": "1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ",
+      "google_sheet_tabs": "personinfo enums",
+      "__google_sheet_module": "personinfo_enums",
+      "github_token_for_pypi_deployment": "PYPI_PASSWORD",
+      "_template": "https://github.com/turbomam/examples-first-cookiecutter"
+    }
+  },
+  "directory": null
+}

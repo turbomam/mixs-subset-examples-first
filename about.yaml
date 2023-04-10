@@ -1,0 +1,7 @@
+---
+name: mixs_subset_examples_first
+author: Mark Andrew Miller <MAM@lbl.gov>
+description: A subset of the MIxS specification that's self-documenting, DataHarmonizer compatible. Comes with valid and invalid data examples.
+source_schema_path: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+google_sheet_tabs: personinfo enums

@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mixs_subset_examples_first"
+version = "0.1.0"
+description = "A subset of the MIxS specification that's self-documenting, DataHarmonizer compatible. Comes with valid and invalid data examples."
+authors = ["Mark Andrew Miller <MAM@lbl.gov>"]
+license = "MIT"
+readme = "README.md"
+include = ["README.md", "src/mixs_subset_examples_first/schema", "project"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+linkml-runtime = "^1.1.24"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
+
+[tool.poetry.dev-dependencies]
+linkml = "^1.3.5"
+mkdocs-material = "^8.2.8"
+mkdocs-mermaid2-plugin = "^0.6.0"
+schemasheets = "^0.1.14"
+check-jsonschema = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry.extras]
+docs = ["linkml", "mkdocs-material"]
+
+[tool.poetry.scripts]
+dh-json2linkml = 'src.mixs_subset_examples_first.datamodel.dh_json2linkml:update_json'
+linkml-json2dh = 'src.mixs_subset_examples_first.datamodel.linkml_json2dh:extract_lists'
