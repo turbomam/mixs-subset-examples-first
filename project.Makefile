@@ -55,8 +55,8 @@ pre_modifications: comprehensive_cleanup extract_all_sheets assets/pre_col_diff_
 assets/mixs_combined.tsv \
 assets/report_pre_id_scn_multi_pairings.out assets/report_pre_sc_item_multi_pairings.out assets/report_pre_id_item_multi_pairings.out
 
-post_modifications: assets/report_post_id_item_scn_multi_pairings.out assets/report_post_id_scn_multi_pairings.out  assets/report_post_sc_item_multi_pairings.out \
-assets/mixs_uniform_terms.tsv assets/mixs_combined_diff_conservative.html
+post_modifications: assets/report_post_id_scn_multi_pairings.out assets/report_post_id_scn_multi_pairings.out  assets/report_post_sc_item_multi_pairings.out \
+assets/mixs_uniform_terms.tsv assets/mixs_combined_diff.html
 
 comprehensive_cleanup: tsvs_cleanup management_cleanup diff_cleanup
 	rm -rf \
@@ -145,6 +145,19 @@ assets/mixs_v6_environmental_packages_managed_keys.tsv: assets/mixs_v6_environme
 
 management_all: management_cleanup assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
 
+
+assets/mixs_v6_environmental_packages_managed_keys.tsv: assets/mixs_v6_environmental_packages_managed_keys.tsv
+	# add agriculture if you want to see conflicts
+	# --accepted-value agriculture \
+	$(RUN) filter_column \
+		--input-tsv $< \
+		--filter-column 'Environmental package' \
+		--accepted-value soil \
+		--accepted-value water \
+		--accepted-value 'food-farm environment' \
+		--accept-empties \
+		--output-tsv $@
+
 assets/post_col_diff_report.out: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
 	$(RUN) compare_headers \
 		--file1 $(word 1, $^) \
@@ -176,62 +189,66 @@ assets/report_pre_id_item_multi_pairings.out: assets/mixs_combined.tsv
 		--column_b "Item" | tee $@
 
 
-assets/report_post_id_scn_multi_pairings.out: assets/mixs_combined_modified.tsv
-	$(RUN) find_multi_pairings \
-		--input_tsv $< \
-		--column_a "MIXS ID" \
-		--column_b "Structured comment name" | tee $@
-
-assets/report_post_sc_item_multi_pairings.out: assets/mixs_combined_modified.tsv
-	$(RUN) find_multi_pairings \
-		--input_tsv $< \
-		--column_a "Structured comment name" \
-		--column_b "Item" | tee $@
-
-assets/report_post_id_item_multi_pairings.out: assets/mixs_combined_modified.tsv
-	$(RUN) find_multi_pairings \
-		--input_tsv $< \
-		--column_a "MIXS ID" \
-		--column_b "Item" | tee $@
-
-
-## WHICH COLUMNS TO DROP?
-# denoters
-  #MIXS ID
-  #Structured comment name
-  #Item
-
-# context
-  #Environmental package
-  #Section
-
-  #Expected value
-  #Value syntax
-  #Occurrence
-  #Preferred unit
-  #Definition
-
-# package specific
-  #Example
-
-assets/mixs_uniform_terms.tsv: assets/mixs_combined_modified.tsv
-	$(RUN) drop_then_remove_dupes \
-		--input-tsv $< \
-		--uniform-terms-out $@ \
-		--conflicting-terms-out $(subst uniform,conflicting, $@) \
-		--drop-field "Environmental package" \
-		--drop-field "Section" \
-		--drop-field "Example" | tee assets/drop_then_remove_dupes.out
-
-assets/mixs_combined_conservative.tsv: assets/mixs_combined.tsv
-	grep -v "MIXS:0000752" $< | \
-	grep -v "MIXS:0000755" | \
-	grep -v "MIXS:0001230" > $@
-
-assets/mixs_combined_modified_conservative.tsv: assets/mixs_combined_modified.tsv
-	grep -v "MIXS:0000752" $< | \
-	grep -v "MIXS:0000755" | \
-	grep -v "MIXS:0001230" > $@
-
-assets/mixs_combined_diff_conservative.html: assets/mixs_combined_conservative.tsv assets/mixs_combined_modified_conservative.tsv
-	script -q -c "csvdiff --separator '\t'  --primary-key 0,3,4 --format word-diff  $^" | aha > $@
+#assets/report_post_id_scn_multi_pairings.out: assets/mixs_combined_modified.tsv
+#	$(RUN) find_multi_pairings \
+#		--input_tsv $< \
+#		--column_a "MIXS ID" \
+#		--column_b "Structured comment name" | tee $@
+#
+#assets/report_post_sc_item_multi_pairings.out: assets/mixs_combined_modified.tsv
+#	$(RUN) find_multi_pairings \
+#		--input_tsv $< \
+#		--column_a "Structured comment name" \
+#		--column_b "Item" | tee $@
+#
+#assets/report_post_id_item_multi_pairings.out: assets/mixs_combined_modified.tsv
+#	$(RUN) find_multi_pairings \
+#		--input_tsv $< \
+#		--column_a "MIXS ID" \
+#		--column_b "Item" | tee $@
+#
+#
+### WHICH COLUMNS TO DROP?
+## denoters
+#  #MIXS ID
+#  #Structured comment name
+#  #Item
+#
+## context
+#  #Environmental package
+#  #Section
+#
+#  #Expected value
+#  #Value syntax
+#  #Occurrence
+#  #Preferred unit
+#  #Definition
+#
+## package specific
+#  #Example
+#
+#assets/mixs_uniform_terms.tsv: assets/mixs_combined_modified.tsv
+#	$(RUN) drop_then_remove_dupes \
+#		--input-tsv $< \
+#		--uniform-terms-out $@ \
+#		--conflicting-terms-out $(subst uniform,conflicting, $@) \
+#		--drop-field "Environmental package" \
+#		--drop-field "Section" \
+#		--drop-field "Example" | tee assets/drop_then_remove_dupes.out
+#
+### comparing some rows crashes csvdiff
+### todo: don't foget to specify which csvdiff we're using
+##assets/mixs_combined_conservative.tsv: assets/mixs_combined.tsv
+##	grep -v "MIXS:0000752" $< | \
+##	grep -v "MIXS:0000755" | \
+##	grep -v "MIXS:0001230" > $@
+##
+##assets/mixs_combined_modified_conservative.tsv: assets/mixs_combined_modified.tsv
+##	grep -v "MIXS:0000752" $< | \
+##	grep -v "MIXS:0000755" | \
+##	grep -v "MIXS:0001230" > $@
+#
+## this may not work on Macs
+## ie may only work on Linux esp Ubuntu
+#assets/mixs_combined_diff.html: assets/mixs_combined.tsv assets/mixs_combined_modified.tsv
+#	script -q -c "csvdiff --separator '\t'  --primary-key 0,3,4 --format word-diff  $^" | aha > $@
