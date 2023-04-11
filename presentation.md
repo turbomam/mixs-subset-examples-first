@@ -5,9 +5,7 @@
 ## identify "worst offender" environmental packages
 _ie environmental packages whose term definitions are the most contradictory compared to other environmental packages_
 
-**provide background about why there are contradictions!**
-
-The contradiction measure equals the average number of rows required to cover all definitions for a term when the rows defining terms from multiple packages are combined. 
+TODO: provide background about why there are contradictions!
 
 ```shell
 make package_selection
@@ -26,12 +24,13 @@ from `project.Makefile`, which is included in the default `Makefile`
 - run worst_offenders on assets/mixs_combined_all.tsv to get an averages contradiction report `assets/worst_offender_averages.tsv`and a detailed contradiction report `assets/worst_offender_details.tsv`
 
 #### caveats: 
+- The contradiction score equals the average number of unique rows per term definitions when multiple packages are combined. 
 - The detailed report shows the degree of contradiction between pairs of environmental packages as raw scores
 - The average/summary report uses 0-1 normalized scores
 - The average/summary report also serves as a list of the environmental packages 
 - The "environmental package" that appears as an empty string actually contains the term definitions for the MIxS checklists from the MIxS sheet
 
-
+#### MIxS checklists
 - migs_ba
 - migs_eu
 - migs_org
@@ -242,8 +241,8 @@ _Goal: monotonicity at a minimum. A class can use a term in a way that is more c
 - Structured comment name
   - LinkML name
   - invariant across all packages and checklists
-    - names can undergo normalization in derived artifacts like RDF, JSONschema, etc.
-    - Allow 'Structured comment name to start with characters other than [a-zA-z]? 
+    - names can undergo normalization in derived artifacts like RDF, JSON schema, etc.
+    - Allow 'Structured comment name' to start with characters other than [a-zA-z]? 
       - 16s_recover
       - 16s_recover_software
     - Allow delimiters other than _ in 'Structured comment name's?
@@ -259,7 +258,7 @@ _Goal: monotonicity at a minimum. A class can use a term in a way that is more c
   - model as LinkML slot_groups?
   - where can we find authoritative, structured metadata?
 - Expected value
-  - combination of content that can be interpreted as LinkML range, ontological roots of enumerations (using inconsistent notation), inconsist=etn pattern hints, and free-form narratives
+  - combination of content that can be interpreted as LinkML range, ontological roots of enumerations (using inconsistent notation), inconsistent pattern hints, and free-form narratives
   - Range is invariant. The other content could possibly be routed into slot attributes that could tolerate variance/contradiction
 - Value syntax
   - hints about LinkML patterns/structured patterns (with inconsistent grammar), conventional enumerations, and enum/pattern hybrids
@@ -275,6 +274,9 @@ _Goal: monotonicity at a minimum. A class can use a term in a way that is more c
   - implicit list delimiters may not be consistent
 - Definition
   - separate out LinkML `description` from content that should go in other attributes, like examples, patterns, ontological roots of enums, etc.
+
+
+See also https://linkml.io/linkml-model/docs/SlotDefinition/
 
 _Note: slot/class requirement is expressed in a wide fashion (by checklist) in the MIxS shet and in a long fashion (by environmental_package) in the environmental_packages sheet. These are not propagated to files like assets/mixs_combined_all.tsv, assets/mixs_combined_filtered.tsv, assets/mixs_combined_filtered_modified.tsv_ 
 
