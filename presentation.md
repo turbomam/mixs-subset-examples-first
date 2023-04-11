@@ -275,6 +275,9 @@ _Goal: monotonicity at a minimum. A class can use a term in a way that is more c
 - Definition
   - separate out LinkML `description` from content that should go in other attributes, like examples, patterns, ontological roots of enums, etc.
 
+
+See also https://linkml.io/linkml-model/docs/SlotDefinition/
+
 _Note: slot/class requirement is expressed in a wide fashion (by checklist) in the MIxS shet and in a long fashion (by environmental_package) in the environmental_packages sheet. These are not propagated to files like assets/mixs_combined_all.tsv, assets/mixs_combined_filtered.tsv, assets/mixs_combined_filtered_modified.tsv_ 
 
 Omitted requirement-like attributes 
