@@ -51,6 +51,14 @@ SHEET_NAMES := MIxS environmental_packages
 
 .PHONY: comprehensive_cleanup extract_all_sheets management_all modification_lifecycle post_col_diff_report pre_col_diff_report pre_modifications report_id_item_multi_pairings report_id_scn_multi_pairings report_sc_item_multi_pairings tsvs_cleanup
 
+package_selection: comprehensive_cleanup assets/worts_offender_details.tsv
+
+assets/worts_offender_details.tsv: assets/mixs_combined.tsv
+	$(RUN) worst_offenders \
+		--input-tsv $< \
+		--averages-report-tsv assets/worst_offender_averages.tsv \
+		--details-report-tsv $@
+
 pre_modifications: comprehensive_cleanup extract_all_sheets assets/pre_col_diff_report.out management_all assets/post_col_diff_report.out \
 assets/mixs_combined.tsv \
 assets/report_pre_id_scn_multi_pairings.out assets/report_pre_sc_item_multi_pairings.out assets/report_pre_id_item_multi_pairings.out
@@ -83,7 +91,7 @@ diff_cleanup:
 	rm -rf assets/mixs_combined_no_752.tsv assets/mixs_combined_modified_no_752.tsv assets/mixs_combined_diff.html
 
 management_cleanup:
-	rm -rf assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
+	rm -rf assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv
 
 tsvs_cleanup:
 	rm -rf \
@@ -93,6 +101,7 @@ assets/mixs_v6_MIxS.tsv \
 assets/mixs_v6_MIxS_managed_keys.tsv \
 assets/mixs_v6_environmental_packages.tsv \
 assets/mixs_v6_environmental_packages_managed_keys.tsv \
+assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv \
 assets/*tsv
 
 ## Chris Mungall and Chris Hunter prefer not to the MIxS Google Sheets in
@@ -143,10 +152,10 @@ assets/mixs_v6_environmental_packages_managed_keys.tsv: assets/mixs_v6_environme
 		--key-to-remove Requirement \
 		--rename-column "Package item" Item
 
-management_all: management_cleanup assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
+management_all: management_cleanup assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv
 
 
-assets/mixs_v6_environmental_packages_managed_keys.tsv: assets/mixs_v6_environmental_packages_managed_keys.tsv
+assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv: assets/mixs_v6_environmental_packages_managed_keys.tsv
 	# add agriculture if you want to see conflicts
 	# --accepted-value agriculture \
 	$(RUN) filter_column \
@@ -158,12 +167,12 @@ assets/mixs_v6_environmental_packages_managed_keys.tsv: assets/mixs_v6_environme
 		--accept-empties \
 		--output-tsv $@
 
-assets/post_col_diff_report.out: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
+assets/post_col_diff_report.out: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv
 	$(RUN) compare_headers \
 		--file1 $(word 1, $^) \
 		--file2  $(word 2, $^) | tee $@
 
-assets/mixs_combined.tsv: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys.tsv
+assets/mixs_combined.tsv: assets/mixs_v6_MIxS_managed_keys.tsv assets/mixs_v6_environmental_packages_managed_keys_filtered.tsv
 	$(RUN) combine_any_tsvs \
 	  --input-tsv1 $(word 1, $^) \
 	  --input-tsv2 $(word 2, $^) \
