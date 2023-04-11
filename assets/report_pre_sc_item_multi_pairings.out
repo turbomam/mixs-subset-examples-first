@@ -1,0 +1,4 @@
+Structured comment name value: season_temp is paired with multiple values in Item: {'mean seasonal temperature', 'mean seasonal air temperature'}
+Item value: sample collection device is paired with multiple values in Structured comment name: {'samp_collect_device', 'samp_collec_device'}
+Item value: sample storage duration is paired with multiple values in Structured comment name: {'samp_store_dur', 'samp_stor_dur'}
+Item value: sample storage temperature is paired with multiple values in Structured comment name: {'samp_store_temp', 'samp_stor_temp'}

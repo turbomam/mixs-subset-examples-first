@@ -60,10 +60,10 @@ assets/worst_offender_details.tsv: assets/mixs_combined_all.tsv
 		--details-report-tsv $@
 
 pre_modifications: comprehensive_cleanup extract_all_sheets assets/pre_col_diff_report.out management_all assets/post_col_diff_report.out \
-assets/mixs_combined.tsv \
+assets/mixs_combined_filtered.tsv \
 assets/report_pre_id_scn_multi_pairings.out assets/report_pre_sc_item_multi_pairings.out assets/report_pre_id_item_multi_pairings.out
 
-post_modifications: assets/report_post_id_scn_multi_pairings.out assets/report_post_id_scn_multi_pairings.out  assets/report_post_sc_item_multi_pairings.out \
+post_modifications: assets/report_post_id_scn_multi_pairings.out assets/report_post_sc_item_multi_pairings.out assets/report_post_id_item_multi_pairings.out \
 assets/mixs_uniform_terms.tsv assets/mixs_combined_diff.html
 
 comprehensive_cleanup: tsvs_cleanup management_cleanup diff_cleanup
@@ -96,6 +96,8 @@ management_cleanup:
 tsvs_cleanup:
 	rm -rf \
 assets/mixs_combined.tsv \
+assets/mixs_combined_all.tsv \
+assets/mixs_combined_filtered.tsv \
 assets/mixs_v6.xlsx \
 assets/mixs_v6_MIxS.tsv \
 assets/mixs_v6_MIxS_managed_keys.tsv \
@@ -187,85 +189,106 @@ assets/mixs_combined_filtered.tsv: assets/mixs_v6_MIxS_managed_keys.tsv assets/m
 	  --column-order "MIXS ID","Structured comment name","Item","Environmental package","Section","Expected value","Value syntax","Occurrence","Preferred unit","Example","Definition" \
 	  --output-tsv $@
 
-assets/report_pre_id_scn_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_id_scn_multi_pairings.out: assets/mixs_combined_filtered.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "MIXS ID" \
 		--column_b "Structured comment name" | tee $@
 
-assets/report_pre_sc_item_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_sc_item_multi_pairings.out: assets/mixs_combined_filtered.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "Structured comment name" \
 		--column_b "Item" | tee $@
 
-assets/report_pre_id_item_multi_pairings.out: assets/mixs_combined.tsv
+assets/report_pre_id_item_multi_pairings.out: assets/mixs_combined_filtered.tsv
 	$(RUN) find_multi_pairings \
 		--input_tsv $< \
 		--column_a "MIXS ID" \
 		--column_b "Item" | tee $@
 
 
-#assets/report_post_id_scn_multi_pairings.out: assets/mixs_combined_modified.tsv
-#	$(RUN) find_multi_pairings \
-#		--input_tsv $< \
-#		--column_a "MIXS ID" \
-#		--column_b "Structured comment name" | tee $@
+assets/report_post_id_scn_multi_pairings.out: assets/mixs_combined_filtered_modified.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "MIXS ID" \
+		--column_b "Structured comment name" | tee $@
+
+assets/report_post_sc_item_multi_pairings.out: assets/mixs_combined_filtered_modified.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "Structured comment name" \
+		--column_b "Item" | tee $@
+
+assets/report_post_id_item_multi_pairings.out: assets/mixs_combined_filtered_modified.tsv
+	$(RUN) find_multi_pairings \
+		--input_tsv $< \
+		--column_a "MIXS ID" \
+		--column_b "Item" | tee $@
+
+
+## WHICH COLUMNS TO DROP?
+# denoters
+  #MIXS ID
+  #Structured comment name
+  #Item
+
+# context
+  #Environmental package
+  #Section
+
+  #Expected value
+  #Value syntax
+  #Occurrence
+  #Preferred unit
+  #Definition
+
+# package specific
+  #Example
+
+assets/mixs_uniform_terms.tsv: assets/mixs_combined_filtered_modified.tsv
+	$(RUN) drop_then_remove_dupes \
+		--input-tsv $< \
+		--uniform-terms-out $@ \
+		--conflicting-terms-out $(subst uniform,conflicting, $@) \
+		--drop-field "Environmental package" \
+		--drop-field "Section" \
+		--drop-field "Example" | tee assets/drop_then_remove_dupes.out
+
+## comparing some rows crashes csvdiff
+## todo: don't foget to specify which csvdiff we're using
+#assets/mixs_combined_conservative.tsv: assets/mixs_combined_filtered.tsv
+#	grep -v "MIXS:0000752" $< | \
+#	grep -v "MIXS:0000755" | \
+#	grep -v "MIXS:0001230" > $@
 #
-#assets/report_post_sc_item_multi_pairings.out: assets/mixs_combined_modified.tsv
-#	$(RUN) find_multi_pairings \
-#		--input_tsv $< \
-#		--column_a "Structured comment name" \
-#		--column_b "Item" | tee $@
-#
-#assets/report_post_id_item_multi_pairings.out: assets/mixs_combined_modified.tsv
-#	$(RUN) find_multi_pairings \
-#		--input_tsv $< \
-#		--column_a "MIXS ID" \
-#		--column_b "Item" | tee $@
-#
-#
-### WHICH COLUMNS TO DROP?
-## denoters
-#  #MIXS ID
-#  #Structured comment name
-#  #Item
-#
-## context
-#  #Environmental package
-#  #Section
-#
-#  #Expected value
-#  #Value syntax
-#  #Occurrence
-#  #Preferred unit
-#  #Definition
-#
-## package specific
-#  #Example
-#
-#assets/mixs_uniform_terms.tsv: assets/mixs_combined_modified.tsv
-#	$(RUN) drop_then_remove_dupes \
-#		--input-tsv $< \
-#		--uniform-terms-out $@ \
-#		--conflicting-terms-out $(subst uniform,conflicting, $@) \
-#		--drop-field "Environmental package" \
-#		--drop-field "Section" \
-#		--drop-field "Example" | tee assets/drop_then_remove_dupes.out
-#
-### comparing some rows crashes csvdiff
-### todo: don't foget to specify which csvdiff we're using
-##assets/mixs_combined_conservative.tsv: assets/mixs_combined.tsv
-##	grep -v "MIXS:0000752" $< | \
-##	grep -v "MIXS:0000755" | \
-##	grep -v "MIXS:0001230" > $@
-##
-##assets/mixs_combined_modified_conservative.tsv: assets/mixs_combined_modified.tsv
-##	grep -v "MIXS:0000752" $< | \
-##	grep -v "MIXS:0000755" | \
-##	grep -v "MIXS:0001230" > $@
-#
-## this may not work on Macs
-## ie may only work on Linux esp Ubuntu
-#assets/mixs_combined_diff.html: assets/mixs_combined.tsv assets/mixs_combined_modified.tsv
-#	script -q -c "csvdiff --separator '\t'  --primary-key 0,3,4 --format word-diff  $^" | aha > $@
+#assets/mixs_combined_modified_conservative.tsv: assets/mixs_combined_modified.tsv
+#	grep -v "MIXS:0000752" $< | \
+#	grep -v "MIXS:0000755" | \
+#	grep -v "MIXS:0001230" > $@
+
+# this may not work on Macs
+# ie may only work on Linux esp Ubuntu
+assets/mixs_combined_diff.html: assets/mixs_combined_filtered.tsv assets/mixs_combined_filtered_modified.tsv
+	script -q -c "csvdiff --separator '\t'  --primary-key 0,3,4 --format word-diff  $^" | aha > $@
+
+
+assets/spikein_vs_org_count_by_scn.tsv: keep/mixs_combined_all.tsv
+	$(RUN) filter_column \
+		--input-tsv $< \
+		--filter-column 'Structured comment name' \
+		--accepted-value spikein_count \
+		--accepted-value organism_count \
+		--accept-empties \
+		--output-tsv $@
+
+
+assets/0000103_vs_0001335_by_ID.tsv: keep/mixs_combined_all.tsv
+	$(RUN) filter_column \
+		--input-tsv $< \
+		--filter-column 'MIXS ID' \
+		--accepted-value 'MIXS:0000103' \
+		--accepted-value 'MIXS:0001335' \
+		--accept-empties \
+		--output-tsv $@
+
