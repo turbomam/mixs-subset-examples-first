@@ -77,8 +77,17 @@ def dict_list_average(data):
     return result
 
 
+def has_matching_dict(data, key1, val1, key2, val2):
+    for d in data:
+        if ((d.get(key1) == val1 and d.get(key2) == val2) or
+                (d.get(key1) == val2 and d.get(key2) == val1)):
+            return True
+    return False
+
+
 def calculate_contradiction_by_package(extracteds, unique_package_pairs, key):
     contradiction_by_package = {}
+    contradiction_by_pair = []
     for package_pair in unique_package_pairs:
         exhaustive = extracteds[package_pair]
         unique_dict_list = remove_duplicates(exhaustive)
@@ -91,13 +100,21 @@ def calculate_contradiction_by_package(extracteds, unique_package_pairs, key):
             else:
                 contradiction_by_package[package_element].append(contradiction)
 
+            if has_matching_dict(contradiction_by_pair, "env1", package_pair[0], "env2", package_pair[1]):
+                pass
+            else:
+                contradiction_by_pair.append(
+                    {"env1": package_pair[0], "env2": package_pair[1], "contradiction": contradiction})
+                contradiction_by_pair.append(
+                    {"env1": package_pair[1], "env2": package_pair[0], "contradiction": contradiction})
+
         # duplicate_value_count = count_duplicated_values(unique_dict_list, 'MIXS ID')
         # pprint.pprint(duplicate_value_count)
         # duplicated_keys = list(duplicate_value_count.keys())
         # dupe_details = extract_dicts(lod=unique_dict_list, x='MIXS ID', s=duplicated_keys)
         # pprint.pprint(dupe_details)
 
-    return contradiction_by_package
+    return contradiction_by_package, contradiction_by_pair
 
 
 def normalize_dict_values(data):
@@ -115,8 +132,9 @@ def normalize_dict_values(data):
 
 @click.command()
 @click.option('--input-tsv', required=True, type=click.Path(exists=True))
-@click.option('--report-tsv', required=True, type=click.Path())
-def worst_offender(input_tsv, report_tsv):
+@click.option('--averages-report-tsv', required=True, type=click.Path())
+@click.option('--details-report-tsv', required=True, type=click.Path())
+def worst_offender(input_tsv, averages_report_tsv, details_report_tsv):
     data = read_tsv_file(input_tsv)
 
     unique_packages_set = get_unique_values_set(data, 'Environmental package')
@@ -125,21 +143,32 @@ def worst_offender(input_tsv, report_tsv):
 
     extracteds = extract_dicts_by_tuple(lod=data, x="Environmental package", tuple_list=unique_package_pairs)
 
-    contradiction_by_package = calculate_contradiction_by_package(extracteds, unique_package_pairs, 'MIXS ID')
-
-    # pprint.pprint(contradiction_by_package)
+    contradiction_by_package, contradiction_by_pair = calculate_contradiction_by_package(extracteds,
+                                                                                         unique_package_pairs,
+                                                                                         'MIXS ID')
 
     average_contradiction_by_package = dict_list_average(contradiction_by_package)
 
     normalized_contradiction_by_package = normalize_dict_values(average_contradiction_by_package)
 
-    # pprint.pprint(average_contradiction_by_package)
-
-    with open(report_tsv, 'w', encoding='utf-8') as tsv_file:
+    with open(averages_report_tsv, 'w', encoding='utf-8') as tsv_file:
         writer = csv.writer(tsv_file, delimiter='\t')
         writer.writerow(['Environmental package', 'Normalized average contradiction'])
         for k, v in normalized_contradiction_by_package.items():
             writer.writerow([k, v])
+
+    # with open(details_report_tsv, 'w', encoding='utf-8') as tsv_file:
+    #     header = list(contradiction_by_pair[0].keys())
+    #     writer = csv.writer(tsv_file, delimiter='\t')
+    #     writer.writerow(header)
+    #     for row in contradiction_by_pair:
+    #         # writer.writerow(row)
+    #         pprint.pprint(row)
+
+    with open(details_report_tsv, 'w', newline='') as file:
+        writer = csv.DictWriter(file, delimiter='\t', fieldnames=contradiction_by_pair[0].keys())
+        writer.writeheader()
+        writer.writerows(contradiction_by_pair)
 
 
 if __name__ == '__main__':
