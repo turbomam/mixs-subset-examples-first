@@ -2,6 +2,10 @@
 
 A subset of the MIxS specification that's self-documenting and DataHarmonizer compatible. Comes with valid and invalid data examples.
 
+Cumulative log of modifications: https://htmlpreview.github.io/?https://raw.githubusercontent.com/turbomam/mixs-subset-examples-first/main/assets/mixs_combined_diff.html
+
+----
+
 ## Website
 
 [https://turbomam.github.io/mixs-subset-examples-first](https://turbomam.github.io/mixs-subset-examples-first)
