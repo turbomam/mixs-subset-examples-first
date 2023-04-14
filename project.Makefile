@@ -49,9 +49,9 @@ project/reports/slot_usage_esp_validation.tsv:
 # Define a list of sheet names to extract.
 SHEET_NAMES := MIxS environmental_packages
 
-.PHONY: clean report_contradiction_scores extract_all_sheets column_alignment_all modification_lifecycle post_column_alignment_diff_report pre_column_alignment_diff_report pre_modifications report_id_item_multi_pairings report_id_scn_multi_pairings report_sc_item_multi_pairings tsvs_cleanup
+.PHONY: clean report_contradiction_scores extract_all_sheets column_alignment_all modification_lifecycle post_column_alignment_diff_report pre_column_alignment_diff_report pre_modifications report_id_item_contradictions report_id_scn_contradictions report_sc_item_contradictions tsvs_cleanup
 
-clean: target_cleanup downloads_cleanup
+clean: target_cleanup downloads_cleanup reports_cleanup
 
 report_contradiction_scores: clean reports/contradiction_score_details.tsv
 
@@ -68,11 +68,11 @@ reports/contradiction_score_details.tsv: data/mixs_combined_all.tsv
 pre_modifications_reports: clean extract_all_sheets \
 reports/pre_column_alignment_diff_report.yaml column_alignment_all reports/post_column_alignment_diff_report.yaml \
 target/mixs_combined_filtered.tsv \
-reports/report_pre_id_scn_multi_pairings.yaml
+reports/report_pre_id_scn_contradictions.yaml
 
-# target/report_pre_sc_item_multi_pairings.out target/report_pre_id_item_multi_pairings.out
+# target/report_pre_sc_item_contradictions.out target/report_pre_id_item_contradictions.out
 
-post_modifications: target/report_post_id_scn_multi_pairings.out target/report_post_sc_item_multi_pairings.out target/report_post_id_item_multi_pairings.out \
+post_modifications: target/report_post_id_scn_contradictions.out target/report_post_sc_item_contradictions.out target/report_post_id_item_contradictions.out \
 target/mixs_uniform_terms.tsv target/mixs_combined_diff.html
 
 target_cleanup:
@@ -84,6 +84,12 @@ downloads_cleanup:
 	rm -rf downloads
 	mkdir -p downloads
 	touch downloads/.gitkeep
+
+reports_cleanup:
+#	rm -rf downloads
+	mkdir -p downloads
+	touch downloads/.gitkeep
+	rm -rf reports/report_pre_id_scn_contradictions.yaml
 
 
 
@@ -97,15 +103,15 @@ downloads_cleanup:
 #target/mixs_uniform_terms.tsv \
 #reports/post_column_alignment_diff_report.out \
 #reports/pre_column_alignment_diff_report.yaml \
-#target/report_id_item_multi_pairings.out \
-#target/report_id_scn_multi_pairings.out \
-#target/report_post_id_item_multi_pairings.out \
-#target/report_post_id_scn_multi_pairings.out \
-#target/report_post_sc_item_multi_pairings.out \
-#target/report_pre_id_item_multi_pairings.out \
-#reports/report_pre_id_scn_multi_pairings.yaml \
-#target/report_pre_sc_item_multi_pairings.out \
-#target/report_post_id_item_scn_multi_pairings.out
+#target/report_id_item_contradictions.out \
+#target/report_id_scn_contradictions.out \
+#target/report_post_id_item_contradictions.out \
+#target/report_post_id_scn_contradictions.out \
+#target/report_post_sc_item_contradictions.out \
+#target/report_pre_id_item_contradictions.out \
+#reports/report_pre_id_scn_contradictions.yaml \
+#target/report_pre_sc_item_contradictions.out \
+#target/report_post_id_item_scn_contradictions.out
 
 
 diff_cleanup:
@@ -212,40 +218,75 @@ target/mixs_combined_filtered.tsv: data/mixs_v6_MIxS_aligned_cols.tsv target/mix
 	  --output-tsv $@
 
 #target/mixs_combined_filtered.tsv
-reports/report_pre_id_scn_multi_pairings.yaml: data/mixs_combined_all.tsv
+reports/report_pre_id_scn_contradictions.yaml: data/mixs_combined_all.tsv data/ncbi_biosample_attributes.xml
 	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key HarmonizedName \
+		--context "Environmental package" \
 		--input-file $< \
-		--output-file $@ \
 		--key1 "MIXS ID" \
 		--key2 "Structured comment name" \
-		--context "Environmental package"
+		--output-file $@
 
-#target/report_pre_sc_item_multi_pairings.out: target/mixs_combined_filtered.tsv
+reports/report_post_id_scn_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key HarmonizedName \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Structured comment name" \
+		--output-file $@
+
+reports/report_post_id_item_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Name \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Item" \
+		--output-file $@
+
+reports/report_post_id_description_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Description \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Definition" \
+		--output-file $@
+
+data/ncbi_biosample_attributes.xml:
+	curl -o $@ https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml
+
+#target/report_pre_sc_item_contradictions.out: target/mixs_combined_filtered.tsv
 #	$(RUN) find_contradictions \
 #		--input_tsv $< \
 #		--column_a "Structured comment name" \
 #		--column_b "Item" | tee $@
 #
-#target/report_pre_id_item_multi_pairings.out: target/mixs_combined_filtered.tsv
+#target/report_pre_id_item_contradictions.out: target/mixs_combined_filtered.tsv
 #	$(RUN) find_contradictions \
 #		--input_tsv $< \
 #		--column_a "MIXS ID" \
 #		--column_b "Item" | tee $@
 #
 #
-#target/report_post_id_scn_multi_pairings.out: target/mixs_combined_filtered_modified.tsv
+#target/report_post_id_scn_contradictions.out: target/mixs_combined_filtered_modified.tsv
 #	$(RUN) find_contradictions \
 #		--input_tsv $< \
 #		--column_a "MIXS ID" \
 #		--column_b "Structured comment name" | tee $@
 #
-#target/report_post_sc_item_multi_pairings.out: target/mixs_combined_filtered_modified.tsv
+#target/report_post_sc_item_contradictions.out: target/mixs_combined_filtered_modified.tsv
 #	$(RUN) find_contradictions \
 #		--input_tsv $< \
 #		--column_a "Structured comment name" \
 #		--column_b "Item" | tee $@
 #
-#target/report_post_id_item_multi_pairings.out: target/mixs_combined_filtered_modified.tsv
+#target/report_post_id_item_contradictions.out: target/mixs_combined_filtered_modified.tsv
 #	$(RUN) find_contradictions \
 #		--input_tsv $< \
 #		--column_a "MIXS ID" \

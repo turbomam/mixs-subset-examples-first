@@ -11,22 +11,28 @@ import json
 
 @click.command()
 @click.option('--input-file', type=click.Path(exists=True), help='Input TSV file name')
+@click.option('--attributes-file', type=click.Path(exists=True), help='NCBI Biosample attributes XML file name')
+@click.option('--attributes-key', help='Search for key1 values from the input against this key in the attributes file')
 @click.option('--output-file', type=click.Path(), help='Output YAML file name')
 @click.option('--key1', type=str, help='First key column name')
 @click.option('--key2', type=str, help='Second key column name')
 @click.option('--context', type=str, help='Column that provides context for contradicted values')
-@click.option('--attributes-reference', default="https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml",
-              help="URL for NCBI's biosample attributes XML file")
-def main(input_file, output_file, key1, key2, context, attributes_reference):
-    attribs_response = requests.get(attributes_reference)
-    attribs_xml_data = attribs_response.content
+# @click.option('--attributes-reference', default="https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml",
+#               help="URL for NCBI's biosample attributes XML file")
+def main(input_file, output_file, key1, key2, context, attributes_file, attributes_key):
+    # attribs_response = requests.get(attributes_reference)
+    # attribs_xml_data = attribs_response.content
+    #
+    # # convert XML data to dictionary
+    # attribs_ordered = xmltodict.parse(attribs_xml_data)
+    #
+    # # biosample_attribs = json.loads(json.dumps(attribs_ordered))
 
-    # convert XML data to dictionary
-    attribs_ordered = xmltodict.parse(attribs_xml_data)
+    with open(attributes_file, encoding='utf-8') as fd:
+        attribs_ordered = xmltodict.parse(fd.read())
 
-    # biosample_attribs = json.loads(json.dumps(attribs_ordered))
-
-    ncbi_acknowledged = [i['HarmonizedName'] for i in attribs_ordered['BioSampleAttributes']['Attribute']]
+    ncbi_acknowledged = [i[attributes_key] for i in attribs_ordered['BioSampleAttributes']['Attribute'] if
+                         attributes_key in i]
 
     with open(input_file, newline='') as f:
         reader = csv.DictReader(f, delimiter='\t')
