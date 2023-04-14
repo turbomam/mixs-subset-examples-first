@@ -258,6 +258,19 @@ reports/report_post_id_description_contradictions.yaml: data/mixs_combined_all_m
 		--key2 "Definition" \
 		--output-file $@
 
+
+reports/report_post_id_occurrence_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Name \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Occurrence" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
 data/ncbi_biosample_attributes.xml:
 	curl -o $@ https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml
 
