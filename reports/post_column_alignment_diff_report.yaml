@@ -1,12 +1,12 @@
 Intersection:
 - Item
-- MIXS ID
-- Definition
-- Value syntax
-- Preferred unit
-- Occurrence
 - Expected value
 - Structured comment name
+- MIXS ID
+- Value syntax
+- Occurrence
+- Preferred unit
+- Definition
 - Example
 data/mixs_v6_MIxS_aligned_cols.tsv only:
 - Section

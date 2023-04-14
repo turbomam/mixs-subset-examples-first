@@ -1,1575 +1,403 @@
-MIXS:0000001:
-  samp_size: !!python/object/apply:collections.defaultdict
-    args:
-    - &id001 !!python/name:builtins.list ''
-    dictitems:
-      ? ''
-      : - Definition: The total amount or size (volume (ml), mass (g) or area (m2)
-            ) of sample collected.
-          Environmental package: ''
-          Example: 5 liter
-          Expected value: measurement value
-          Item: amount or size of sample collected
-          MIXS ID: MIXS:0000001
-          Occurrence: '1'
-          Preferred unit: millliter, gram, milligram, liter
-          Section: nucleic acid sequence source
-          Structured comment name: samp_size
-          Value syntax: '{float} {unit}'
-      food-farm environment:
-      - Definition: The total amount or size (volume (ml), mass (g) or area (m2) )
-          of sample collected.
-        Environmental package: food-farm environment
-        Example: 5 liters
-        Expected value: measurement value
-        Item: amount or size of sample collected
-        MIXS ID: MIXS:0000001
-        Occurrence: '1'
-        Preferred unit: liter, gram, cm^2
-        Section: ''
-        Structured comment name: samp_size
-        Value syntax: '{float} {unit}'
-MIXS:0000009:
-  lat_lon: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: The geographical origin of the sample as defined by latitude
-            and longitude. The values should be reported in decimal degrees and in
-            WGS84 system
-          Environmental package: ''
-          Example: 50.586825 6.408977
-          Expected value: decimal degrees,  limit to 8 decimal points
-          Item: geographic location (latitude and longitude)
-          MIXS ID: MIXS:0000009
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: lat_lon
-          Value syntax: '{float} {float}'
-      food-farm environment:
-      - Definition: The geographical origin of the sample as defined by latitude and
-          longitude. The values should be reported in decimal degrees and in WGS84
-          system.
-        Environmental package: food-farm environment
-        Example: 50.586825 6.408977
-        Expected value: decimal degrees,  limit to 8 decimal points
-        Item: geographic location (latitude and longitude)
-        MIXS ID: MIXS:0000009
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: lat_lon
-        Value syntax: '{float} {float}'
-MIXS:0000010:
-  geo_loc_name: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: The geographical origin of the sample as defined by the country
-            or sea name followed by specific region name. Country or sea names should
-            be chosen from the INSDC country list (http://insdc.org/country.html),
-            or the GAZ ontology (http://purl.bioontology.org/ontology/GAZ)
-          Environmental package: ''
-          Example: 'USA: Maryland, Bethesda'
-          Expected value: 'country or sea name (INSDC or GAZ): region(GAZ), specific
-            location name'
-          Item: geographic location (country and/or sea,region)
-          MIXS ID: MIXS:0000010
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: geo_loc_name
-          Value syntax: '{term}: {term}, {text}'
-      food-farm environment:
-      - Definition: The geographical origin of the sample as defined by the country
-          or sea name followed by specific region name. Country or sea names should
-          be chosen from the INSDC country list (http://insdc.org/country.html), or
-          the GAZ ontology  (http://purl.bioontology.org/ontology/GAZ).
-        Environmental package: food-farm environment
-        Example: 'USA: Maryland, Bethesda'
-        Expected value: 'country or sea name (INSDC or GAZ): region(GAZ), specific
-          location name'
-        Item: geographic location (country and/or sea,region)
-        MIXS ID: MIXS:0000010
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: geo_loc_name
-        Value syntax: '{term}: {term}, {text}'
-MIXS:0000011:
-  collection_date: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: 'The time of sampling, either as an instance (single point in
-            time) or interval. In case no exact time is available, the date/time can
-            be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00;
-            2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008
-            all are ISO8601 compliant'
-          Environmental package: ''
-          Example: 2018-05-11T10:00:00+01:00; 2018-05-11
-          Expected value: date and time
-          Item: collection date
-          MIXS ID: MIXS:0000011
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: collection_date
-          Value syntax: '{timestamp}'
-      food-farm environment:
-      - Definition: 'The time of sampling, either as an instance (single point in
-          time) or interval. In case no exact time is available, the date/time can
-          be right truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00;
-          2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all
-          are ISO8601 compliant.'
-        Environmental package: food-farm environment
-        Example: '2018-05-11T10:00:00+01:00'
-        Expected value: date and time
-        Item: collection date
-        MIXS ID: MIXS:0000011
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: collection_date
-        Value syntax: '{timestamp}'
-MIXS:0000012:
-  env_broad_scale: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: "Report the major environmental system the sample or specimen\
-            \ came from. The system(s) identified should have a coarse spatial grain,\
-            \ to provide the general environmental context of where the sampling was\
-            \ done (e.g. in the desert or a rainforest). We recommend using subclasses\
-            \ of EnvO\u2019s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428.\
-            \ EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS"
-          Environmental package: ''
-          Example: oceanic epipelagic zone biome [ENVO:01000033] for annotating a
-            water sample from the photic zone in middle of the Atlantic Ocean
-          Expected value: The major environment type(s) where the sample was collected.
-            Recommend subclasses of biome [ENVO:00000428]. Multiple terms can be separated
-            by one or more pipes.
-          Item: broad-scale environmental context
-          MIXS ID: MIXS:0000012
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: env_broad_scale
-          Value syntax: '{termLabel} {[termID]}'
-      food-farm environment:
-      - Definition: "Report the major environmental system the sample or specimen\
-          \ came from. The system(s) identified should have a coarse spatial grain,\
-          \ to provide the general environmental context of where the sampling was\
-          \ done (e.g. in the desert or a rainforest). We recommend using subclasses\
-          \ of EnvO\u2019s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428.\
-          \ EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS"
-        Environmental package: food-farm environment
-        Example: forest biome [ENVO:01000174]
-        Expected value: 'Add terms that identify the major environment type(s) where
-          your sample was collected. Recommend subclasses of biome [ENVO:00000428].
-          Multiple terms can be separated by one or more pipes e.g.: mangrove biome
-          [ENVO:01000181]|estuarine biome [ENVO:01000020]'
-        Item: broad-scale environmental context
-        MIXS ID: MIXS:0000012
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: env_broad_scale
-        Value syntax: '{termLabel} {[termID]}'
-MIXS:0000013:
-  env_local_scale: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: "Report the entity or entities which are in the sample or specimen\u2019\
-            s local vicinity and which you believe have significant causal influences\
-            \ on your sample or specimen. We recommend using EnvO terms which are\
-            \ of smaller spatial grain than your entry for env_broad_scale. Terms,\
-            \ such as anatomical sites, from other OBO Library ontologies which interoperate\
-            \ with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation\
-            \ about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS. "
-          Environmental package: ''
-          Example: 'litter layer [ENVO:01000338]; Annotating a pooled sample taken
-            from various vegetation layers in a forest consider: canopy [ENVO:00000047]|herb
-            and fern layer [ENVO:01000337]|litter layer [ENVO:01000338]|understory
-            [01000335]|shrub layer [ENVO:01000336].'
-          Expected value: Environmental entities having causal influences upon the
-            entity at time of sampling.
-          Item: local environmental context
-          MIXS ID: MIXS:0000013
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: env_local_scale
-          Value syntax: '{termLabel} {[termID]}'
-      food-farm environment:
-      - Definition: "Report the entity or entities which are in the sample or specimen\u2019\
-          s local vicinity and which you believe have significant causal influences\
-          \ on your sample or specimen. We recommend using EnvO terms which are of\
-          \ smaller spatial grain than your entry for env_broad_scale. Terms, such\
-          \ as anatomical sites, from other OBO Library ontologies which interoperate\
-          \ with EnvO (e.g. UBERON) are accepted in this field. EnvO documentation\
-          \ about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS"
-        Environmental package: food-farm environment
-        Example: litter layer [ENVO:01000338]
-        Expected value: 'Add terms that identify environmental entities having causal
-          influences upon the entity at time of sampling, multiple terms can be separated
-          by pipes, e.g.: shoreline [ENVO:00000486]|intertidal zone [ENVO:00000316]'
-        Item: local environmental context
-        MIXS ID: MIXS:0000013
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: env_local_scale
-        Value syntax: '{termLabel} {[termID]}'
-MIXS:0000014:
-  env_medium: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: 'Report the environmental material(s) immediately surrounding
-            the sample or specimen at the time of sampling. We recommend using subclasses
-            of ''environmental material'' (http://purl.obolibrary.org/obo/ENVO_00010483).
-            EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS
-            . Terms from other OBO ontologies are permissible as long as they reference
-            mass/volume nouns (e.g. air, water, blood) and not discrete, countable
-            entities (e.g. a tree, a leaf, a table top).'
-          Environmental package: ''
-          Example: 'soil [ENVO:00001998]; Annotating a fish swimming in the upper
-            100 m of the Atlantic Ocean, consider: ocean water [ENVO:00002151]. Example:
-            Annotating a duck on a pond consider: pond water [ENVO:00002228]|air [ENVO_00002005]'
-          Expected value: 'The material displaced by the entity at time of sampling.
-            Recommend subclasses of environmental material [ENVO:00010483]. '
-          Item: environmental medium
-          MIXS ID: MIXS:0000014
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: env_medium
-          Value syntax: '{termLabel} {[termID]}'
-      food-farm environment:
-      - Definition: 'Report the environmental material(s) immediately surrounding
-          the sample or specimen at the time of sampling. We recommend using subclasses
-          of ''environmental material'' (http://purl.obolibrary.org/obo/ENVO_00010483).
-          EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS
-          . Terms from other OBO ontologies are permissible as long as they reference
-          mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities
-          (e.g. a tree, a leaf, a table top).'
-        Environmental package: food-farm environment
-        Example: soil [ENVO:00001998]
-        Expected value: 'Add terms that identify the material displaced by the entity
-          at time of sampling. Recommend subclasses of environmental material [ENVO:00010483].
-          Multiple terms can be separated by pipes e.g.: estuarine water [ENVO:01000301]|estuarine
-          mud [ENVO:00002160]'
-        Item: environmental medium
-        MIXS ID: MIXS:0000014
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: env_medium
-        Value syntax: '{termLabel} {[termID]}'
-MIXS:0000018:
-  depth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: The vertical distance below local surface, e.g. for sediment
-            or soil samples depth is measured from sediment or soil surface, respectively.
-            Depth can be reported as an interval for subsurface samples.
-          Environmental package: ''
-          Example: 10 meter
-          Expected value: measurement value
-          Item: depth
-          MIXS ID: MIXS:0000018
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: depth
-          Value syntax: '{float} {unit}'
-      food-farm environment:
-      - Definition: The vertical distance below local surface, e.g. for sediment or
-          soil samples depth is measured from sediment or soil surface, respectively.
-          Depth can be reported as an interval for subsurface samples.
-        Environmental package: food-farm environment
-        Example: 10 meter
-        Expected value: measurement value
-        Item: depth
-        MIXS ID: MIXS:0000018
-        Occurrence: '1'
-        Preferred unit: meter
-        Section: ''
-        Structured comment name: depth
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: The vertical distance below local surface, e.g. For sediment or
-          soil samples depth is measured from sediment or soil surface, respectively.
-          Depth can be reported as an interval for subsurface samples.
-        Environmental package: soil
-        Example: 10 meter
-        Expected value: measurement value
-        Item: depth
-        MIXS ID: MIXS:0000018
-        Occurrence: '1'
-        Preferred unit: meter
-        Section: ''
-        Structured comment name: depth
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: The vertical distance below local surface, e.g. For sediment or
-          soil samples depth is measured from sediment or soil surface, respectively.
-          Depth can be reported as an interval for subsurface samples.
-        Environmental package: water
-        Example: 10 meter
-        Expected value: measurement value
-        Item: depth
-        MIXS ID: MIXS:0000018
-        Occurrence: '1'
-        Preferred unit: meter
-        Section: ''
-        Structured comment name: depth
-        Value syntax: '{float} {unit}'
-MIXS:0000031:
-  host_disease_stat: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: List of diseases with which the host has been diagnosed; can
-            include multiple diagnoses. The value of the field depends on host; for
-            humans the terms should be chosen from the DO (Human Disease Ontology)
-            at https://www.disease-ontology.org, non-human host diseases are free
-            text
-          Environmental package: ''
-          Example: rabies [DOID:11260]
-          Expected value: disease name or Disease Ontology term
-          Item: host disease status
-          MIXS ID: MIXS:0000031
-          Occurrence: m
-          Preferred unit: ''
-          Section: nucleic acid sequence source
-          Structured comment name: host_disease_stat
-          Value syntax: '{termLabel} {[termID]}|{text}'
-      food-farm environment:
-      - Definition: List of diseases with which the host has been diagnosed; can include
-          multiple diagnoses. The value of the field depends on host; for humans the
-          terms should be chosen from the DO (Human Disease Ontology) at https://www.disease-ontology.org,
-          non-human host diseases are free text.
-        Environmental package: food-farm environment
-        Example: downy mildew
-        Expected value: disease name or Disease Ontology term
-        Item: host disease status
-        MIXS ID: MIXS:0000031
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: host_disease_stat
-        Value syntax: '{text}|{termLabel} {[termID]}'
-MIXS:0000037:
-  nucl_acid_ext: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: A link to a literature reference, electronic resource or a standard
-            operating procedure (SOP), that describes the material separation to recover
-            the nucleic acid fraction from a sample
-          Environmental package: ''
-          Example: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf
-          Expected value: PMID, DOI or URL
-          Item: nucleic acid extraction
-          MIXS ID: MIXS:0000037
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: sequencing
-          Structured comment name: nucl_acid_ext
-          Value syntax: '{PMID}|{DOI}|{URL}'
-      food-farm environment:
-      - Definition: A link to a literature reference, electronic resource or a standard
-          operating procedure (SOP), that describes the material separation to recover
-          the nucleic acid fraction from a sample.
-        Environmental package: food-farm environment
-        Example: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf
-        Expected value: PMID, DOI or URL
-        Item: nucleic acid extraction
-        MIXS ID: MIXS:0000037
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: nucl_acid_ext
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000050:
-  seq_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: Sequencing machine used. Where possible the term should be taken
-            from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).
-          Environmental package: ''
-          Example: 454 Genome Sequencer FLX [OBI:0000702]
-          Expected value: Text or OBI
-          Item: sequencing method
-          MIXS ID: MIXS:0000050
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: sequencing
-          Structured comment name: seq_meth
-          Value syntax: '{termLabel} {[termID]}|{text}'
-      food-farm environment:
-      - Definition: Sequencing machine used. Where possible the term should be taken
-          from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103).
-        Environmental package: food-farm environment
-        Example: 454 Genome Sequencer FLX [OBI:0000702]
-        Expected value: Text or OBI
-        Item: sequencing method
-        MIXS ID: MIXS:0000050
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: seq_meth
-        Value syntax: '{termLabel} {[termID]}|{text}'
-MIXS:0000092:
-  project_name: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: Name of the project within which the sequencing was organized
-          Environmental package: ''
-          Example: Forest soil metagenome
-          Expected value: ''
-          Item: project name
-          MIXS ID: MIXS:0000092
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: investigation
-          Structured comment name: project_name
-          Value syntax: '{text}'
-      food-farm environment:
-      - Definition: Name of the project within which the sequencing was organized.
-        Environmental package: food-farm environment
-        Example: Forest soil metagenome
-        Expected value: text
-        Item: project name
-        MIXS ID: MIXS:0000092
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: project_name
-        Value syntax: '{text}'
-      soil:
-      - Definition: Name of the project within which the sequencing was organized.
-        Environmental package: soil
-        Example: Forest soil metagenome
-        Expected value: text
-        Item: project name
-        MIXS ID: MIXS:0000092
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: project_name
-        Value syntax: '{text}'
-      water:
-      - Definition: Name of the project within which the sequencing was organized.
-        Environmental package: water
-        Example: Forest soil metagenome
-        Expected value: text
-        Item: project name
-        MIXS ID: MIXS:0000092
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: project_name
-        Value syntax: '{text}'
-MIXS:0000093:
-  elev: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: Elevation of the sampling site is its height above a fixed reference
-            point, most commonly the mean sea level. Elevation is mainly used when
-            referring to points on the earth's surface, while altitude is used for
-            points above the surface, such as an aircraft in flight or a spacecraft
-            in orbit.
-          Environmental package: ''
-          Example: 100 meter
-          Expected value: measurement value
-          Item: elevation
-          MIXS ID: MIXS:0000093
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: environment
-          Structured comment name: elev
-          Value syntax: '{float} {unit}'
-      soil:
-      - Definition: Elevation of the sampling site is its height above a fixed reference
-          point, most commonly the mean sea level. Elevation is mainly used when referring
-          to points on the earth's surface, while altitude is used for points above
-          the surface, such as an aircraft in flight or a spacecraft in orbit
-        Environmental package: soil
-        Example: 100 meter
-        Expected value: measurement value
-        Item: elevation
-        MIXS ID: MIXS:0000093
-        Occurrence: '1'
-        Preferred unit: meter
-        Section: ''
-        Structured comment name: elev
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Elevation of the sampling site is its height above a fixed reference
-          point, most commonly the mean sea level. Elevation is mainly used when referring
-          to points on the earth's surface, while altitude is used for points above
-          the surface, such as an aircraft in flight or a spacecraft in orbit
-        Environmental package: water
-        Example: 100 meter
-        Expected value: measurement value
-        Item: elevation
-        MIXS ID: MIXS:0000093
-        Occurrence: '1'
-        Preferred unit: meter
-        Section: ''
-        Structured comment name: elev
-        Value syntax: '{float} {unit}'
-MIXS:0000103:
-  organism_count: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: 'Total cell count of any organism (or group of organisms) per
-          gram, volume or area of sample, should include name of organism followed
-          by count. The method that was used for the enumeration (e.g. qPCR, atp,
-          mpn, etc.) should also be provided. (example: total prokaryotes; 3.5e7 cells
-          per ml; qPCR).'
-        Environmental package: food-farm environment
-        Example: total prokaryotes;3.5e7 colony forming units per milliliter;qPCR
-        Expected value: organism name; measurement value; enumeration
-        Item: organism count
-        MIXS ID: MIXS:0000103
-        Occurrence: '1'
-        Preferred unit: colony forming units per milliliter; colony forming units
-          per gram of dry weight
-        Section: ''
-        Structured comment name: organism_count
-        Value syntax: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
-      water:
-      - Definition: 'Total cell count of any organism (or group of organisms) per
-          gram, volume or area of sample, should include name of organism followed
-          by count. The method that was used for the enumeration (e.g. qPCR, atp,
-          mpn, etc.) Should also be provided. (example: total prokaryotes; 3.5e7 cells
-          per ml; qpcr)'
-        Environmental package: water
-        Example: total prokaryotes;3.5e7 cells per milliliter;qPCR
-        Expected value: organism name;measurement value;enumeration
-        Item: organism count
-        MIXS ID: MIXS:0000103
-        Occurrence: m
-        Preferred unit: number of cells per cubic meter, number of cells per milliliter,
-          number of cells per cubic centimeter
-        Section: ''
-        Structured comment name: organism_count
-        Value syntax: '{text};{float} {unit};[qPCR|ATP|MPN|other]'
-MIXS:0000111:
-  samp_vol_we_dna_ext: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: 'Volume (ml) or mass (g) of total collected sample processed
-            for DNA extraction. Note: total sample collected should be entered under
-            the term Sample Size (MIXS:0000001).'
-          Environmental package: ''
-          Example: 1500 milliliter
-          Expected value: measurement value
-          Item: sample volume or weight for DNA extraction
-          MIXS ID: MIXS:0000111
-          Occurrence: '1'
-          Preferred unit: millliter, gram, milligram, square centimeter
-          Section: nucleic acid sequence source
-          Structured comment name: samp_vol_we_dna_ext
-          Value syntax: '{float} {unit}'
-      food-farm environment:
-      - Definition: 'Volume (ml) or mass (g) of total collected sample processed for
-          DNA extraction. Note: total sample collected should be entered under the
-          term Sample Size (MIXS:0000001).'
-        Environmental package: food-farm environment
-        Example: 1500 milliliter
-        Expected value: measurement value
-        Item: sample volume or weight for DNA extraction
-        MIXS ID: MIXS:0000111
-        Occurrence: '1'
-        Preferred unit: milliliter, gram, milligram, square centimeter
-        Section: ''
-        Structured comment name: samp_vol_we_dna_ext
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: 'Volume (ml) or mass (g) of total collected sample processed for
-          DNA extraction. Note: total sample collected should be entered under the
-          term Sample Size (MIXS:0000001).'
-        Environmental package: soil
-        Example: 1500 milliliter
-        Expected value: measurement value
-        Item: sample volume or weight for DNA extraction
-        MIXS ID: MIXS:0000111
-        Occurrence: '1'
-        Preferred unit: millliter, gram, milligram, square centimeter
-        Section: ''
-        Structured comment name: samp_vol_we_dna_ext
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: 'Volume (ml) or mass (g) of total collected sample processed for
-          DNA extraction. Note: total sample collected should be entered under the
-          term Sample Size (MIXS:0000001).'
-        Environmental package: water
-        Example: 1500 milliliter
-        Expected value: measurement value
-        Item: sample volume or weight for DNA extraction
-        MIXS ID: MIXS:0000111
-        Occurrence: '1'
-        Preferred unit: millliter, gram, milligram, square centimeter
-        Section: ''
-        Structured comment name: samp_vol_we_dna_ext
-        Value syntax: '{float} {unit}'
-MIXS:0000113:
-  temp: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: Temperature of the sample at the time of sampling.
-          Environmental package: ''
-          Example: 25 degree Celsius
-          Expected value: measurement value
-          Item: temperature
-          MIXS ID: MIXS:0000113
-          Occurrence: '1'
-          Preferred unit: degree Celsius
-          Section: environment
-          Structured comment name: temp
-          Value syntax: '{float} {unit}'
-      food-farm environment:
-      - Definition: Temperature of the sample at the time of sampling.
-        Environmental package: food-farm environment
-        Example: 25 degree Celsius
-        Expected value: measurement value
-        Item: temperature
-        MIXS ID: MIXS:0000113
-        Occurrence: '1'
-        Preferred unit: degree Celsius
-        Section: ''
-        Structured comment name: temp
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: Temperature of the sample at the time of sampling
-        Environmental package: soil
-        Example: 25 degree Celsius
-        Expected value: measurement value
-        Item: temperature
-        MIXS ID: MIXS:0000113
-        Occurrence: '1'
-        Preferred unit: degree Celsius
-        Section: ''
-        Structured comment name: temp
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Temperature of the sample at the time of sampling
-        Environmental package: water
-        Example: 25 degree Celsius
-        Expected value: measurement value
-        Item: temperature
-        MIXS ID: MIXS:0000113
-        Occurrence: '1'
-        Preferred unit: degree Celsius
-        Section: ''
-        Structured comment name: temp
-        Value syntax: '{float} {unit}'
-MIXS:0000183:
-  salinity: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: The total concentration of all dissolved salts in a liquid or
-          solid sample. While salinity can be measured by a complete chemical analysis,
-          this method is difficult and time consuming. More often, it is instead derived
-          from the conductivity measurement. This is known as practical salinity.
-          These derivations compare the specific conductance of the sample to a salinity
-          standard such as seawater.
-        Environmental package: food-farm environment
-        Example: 25 practical salinity unit
-        Expected value: measurement value
-        Item: salinity
-        MIXS ID: MIXS:0000183
-        Occurrence: '1'
-        Preferred unit: practical salinity unit, percentage
-        Section: ''
-        Structured comment name: salinity
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Salinity is the total concentration of all dissolved salts in
-          a water sample. While salinity can be measured by a complete chemical analysis,
-          this method is difficult and time consuming. More often, it is instead derived
-          from the conductivity measurement. This is known as practical salinity.
-          These derivations compare the specific conductance of the sample to a salinity
-          standard such as seawater
-        Environmental package: water
-        Example: 25 practical salinity unit
-        Expected value: measurement value
-        Item: salinity
-        MIXS ID: MIXS:0000183
-        Occurrence: '1'
-        Preferred unit: practical salinity unit, percentage
-        Section: ''
-        Structured comment name: salinity
-        Value syntax: '{float} {unit}'
-MIXS:0000191:
-  turbidity: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Measure of the amount of cloudiness or haziness in water caused
-          by individual particles.
-        Environmental package: food-farm environment
-        Example: 0.3 nephelometric turbidity units
-        Expected value: measurement value
-        Item: turbidity
-        MIXS ID: MIXS:0000191
-        Occurrence: '1'
-        Preferred unit: formazin turbidity unit, formazin nephelometric units, nephelometric
-          turbidity units
-        Section: ''
-        Structured comment name: turbidity
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Measure of the amount of cloudiness or haziness in water caused
-          by individual particles
-        Environmental package: water
-        Example: 0.3 nephelometric turbidity units
-        Expected value: measurement value
-        Item: turbidity
-        MIXS ID: MIXS:0000191
-        Occurrence: '1'
-        Preferred unit: formazin turbidity unit, formazin nephelometric units, nephelometric
-          turbidity units
-        Section: ''
-        Structured comment name: turbidity
-        Value syntax: '{float} {unit}'
-MIXS:0000204:
-  org_matter: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      soil:
-      - Definition: Concentration of organic matter
-        Environmental package: soil
-        Example: 1.75 milligram per cubic meter
-        Expected value: measurement value
-        Item: organic matter
-        MIXS ID: MIXS:0000204
-        Occurrence: '1'
-        Preferred unit: microgram per liter
-        Section: ''
-        Structured comment name: org_matter
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Concentration of organic matter
-        Environmental package: water
-        Example: 1.75 milligram per cubic meter
-        Expected value: measurement value
-        Item: organic matter
-        MIXS ID: MIXS:0000204
-        Occurrence: '1'
-        Preferred unit: microgram per liter, milligram per cubic meter
-        Section: ''
-        Structured comment name: org_matter
-        Value syntax: '{float} {unit}'
-MIXS:0000205:
-  org_nitro: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      soil:
-      - Definition: Concentration of organic nitrogen
-        Environmental package: soil
-        Example: 4 micromole per liter
-        Expected value: measurement value
-        Item: organic nitrogen
-        MIXS ID: MIXS:0000205
-        Occurrence: '1'
-        Preferred unit: microgram per liter
-        Section: ''
-        Structured comment name: org_nitro
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Concentration of organic nitrogen
-        Environmental package: water
-        Example: 4 micromole per liter
-        Expected value: measurement value
-        Item: organic nitrogen
-        MIXS ID: MIXS:0000205
-        Occurrence: '1'
-        Preferred unit: microgram per liter, micromole per liter
-        Section: ''
-        Structured comment name: org_nitro
-        Value syntax: '{float} {unit}'
-MIXS:0000315:
-  previous_land_use: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Previous land use and dates.
-        Environmental package: food-farm environment
-        Example: fallow; 2018-05-11:T14:30Z
-        Expected value: land use name;date
-        Item: history/previous land use
-        MIXS ID: MIXS:0000315
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: previous_land_use
-        Value syntax: '{text};{timestamp}'
-      soil:
-      - Definition: Previous land use and dates
-        Environmental package: soil
-        Example: ''
-        Expected value: land use name;date
-        Item: history/previous land use
-        MIXS ID: MIXS:0000315
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: previous_land_use
-        Value syntax: '{text};{timestamp}'
-MIXS:0000318:
-  crop_rotation: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Whether or not crop is rotated, and if yes, rotation schedule.
-        Environmental package: food-farm environment
-        Example: yes;R2/2017-01-01/2018-12-31/P6M
-        Expected value: crop rotation status;schedule
-        Item: history/crop rotation
-        MIXS ID: MIXS:0000318
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: crop_rotation
-        Value syntax: '{boolean};{Rn/start_time/end_time/duration}'
-      soil:
-      - Definition: Whether or not crop is rotated, and if yes, rotation schedule
-        Environmental package: soil
-        Example: yes;R2/2017-01-01/2018-12-31/P6M
-        Expected value: crop rotation status;schedule
-        Item: history/crop rotation
-        MIXS ID: MIXS:0000318
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: crop_rotation
-        Value syntax: '{boolean};{Rn/start_time/end_time/duration}'
-MIXS:0000332:
-  soil_type: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Description of the soil type or classification. This field accepts
-          terms under soil (http://purl.obolibrary.org/obo/ENVO_00001998).  Multiple
-          terms can be separated by pipes.
-        Environmental package: food-farm environment
-        Example: plinthosol [ENVO:00002250]
-        Expected value: ENVO_00001998
-        Item: soil type
-        MIXS ID: MIXS:0000332
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_type
-        Value syntax: '{termLabel} {[termID]}'
-      soil:
-      - Definition: Description of the soil type or classification. This field accepts
-          terms under soil (http://purl.obolibrary.org/obo/ENVO_00001998).  Multiple
-          terms can be separated by pipes.
-        Environmental package: soil
-        Example: plinthosol [ENVO:00002250]
-        Expected value: ENVO_00001998
-        Item: soil type
-        MIXS ID: MIXS:0000332
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_type
-        Value syntax: '{termLabel} {[termID]}
-
-          '
-MIXS:0000334:
-  soil_type_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining soil series name or other
-          lower-level classification.
-        Environmental package: food-farm environment
-        Example: Frederick series; Weikert series
-        Expected value: PMID,DOI or url
-        Item: soil type method
-        MIXS ID: MIXS:0000334
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_type_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining soil series name or other
-          lower-level classification
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: soil type method
-        MIXS ID: MIXS:0000334
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_type_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000336:
-  soil_texture_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining soil texture classification.
-        Environmental package: food-farm environment
-        Example: https://uwlab.soils.wisc.edu/wp-content/uploads/sites/17/2015/09/particle_size.pdf
-          (hydrometer method)
-        Expected value: PMID,DOI or url
-        Item: soil texture method
-        MIXS ID: MIXS:0000336
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_texture_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining soil texture
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: soil texture method
-        MIXS ID: MIXS:0000336
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: soil_texture_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000337:
-  tot_org_c_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining total organic carbon.
-        Environmental package: food-farm environment
-        Example: https://www.epa.gov/sites/production/files/2015-12/documents/9060a.pdf
-        Expected value: PMID,DOI or url
-        Item: total organic carbon method
-        MIXS ID: MIXS:0000337
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tot_org_c_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining total organic carbon
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: total organic carbon method
-        MIXS ID: MIXS:0000337
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tot_org_c_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000338:
-  tot_nitro_cont_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining the total nitrogen.
-        Environmental package: food-farm environment
-        Example: https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/0471142913.fab0102s00
-        Expected value: PMID,DOI or url
-        Item: total nitrogen content method
-        MIXS ID: MIXS:0000338
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tot_nitro_cont_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining the total nitrogen
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: total nitrogen content method
-        MIXS ID: MIXS:0000338
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tot_nitro_cont_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000341:
-  salinity_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining salinity.
-        Environmental package: food-farm environment
-        Example: 'PMID: 22895776'
-        Expected value: PMID,DOI or url
-        Item: salinity method
-        MIXS ID: MIXS:0000341
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: salinity_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining salinity
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: salinity method
-        MIXS ID: MIXS:0000341
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: salinity_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0000530:
-  tot_nitro_content: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Total nitrogen content of the sample.
-        Environmental package: food-farm environment
-        Example: 35 milligrams Nitrogen per kilogram of soil
-        Expected value: measurement value
-        Item: total nitrogen content
-        MIXS ID: MIXS:0000530
-        Occurrence: m
-        Preferred unit: milligrams Nitrogen per kilogram of soil
-        Section: ''
-        Structured comment name: tot_nitro_content
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: Total nitrogen content of the sample
-        Environmental package: soil
-        Example: ''
-        Expected value: measurement value
-        Item: total nitrogen content
-        MIXS ID: MIXS:0000530
-        Occurrence: '1'
-        Preferred unit: microgram per liter, micromole per liter, milligram per liter
-        Section: ''
-        Structured comment name: tot_nitro_content
-        Value syntax: '{float} {unit}'
-MIXS:0000533:
-  tot_org_carb: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: 'Definition for soil: total organic carbon content of the soil,
-          definition otherwise: total organic carbon content.'
-        Environmental package: food-farm environment
-        Example: '0.02'
-        Expected value: percent TOC
-        Item: total organic carbon
-        MIXS ID: MIXS:0000533
-        Occurrence: '1'
-        Preferred unit: gram Carbon per kilogram sample material
-        Section: ''
-        Structured comment name: tot_org_carb
-        Value syntax: '{percentage}'
-      soil:
-      - Definition: 'Definition for soil: total organic carbon content of the soil,
-          definition otherwise: total organic carbon content'
-        Environmental package: soil
-        Example: ''
-        Expected value: measurement value
-        Item: total organic carbon
-        MIXS ID: MIXS:0000533
-        Occurrence: '1'
-        Preferred unit: gram Carbon per kilogram sample material
-        Section: ''
-        Structured comment name: tot_org_carb
-        Value syntax: '{float} {unit}'
-MIXS:0000643:
-  season_temp: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Mean seasonal air temperature.
-        Environmental package: food-farm environment
-        Example: 18 degree Celsius
-        Expected value: measurement value
-        Item: mean seasonal air temperature
-        MIXS ID: MIXS:0000643
-        Occurrence: '1'
-        Preferred unit: degree Celsius
-        Section: ''
-        Structured comment name: season_temp
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: Mean seasonal temperature
-        Environmental package: soil
-        Example: 18 degree Celsius
-        Expected value: measurement value
-        Item: mean seasonal temperature
-        MIXS ID: MIXS:0000643
-        Occurrence: '1'
-        Preferred unit: degree Celsius
-        Section: ''
-        Structured comment name: season_temp
-        Value syntax: '{float} {unit}'
-MIXS:0000645:
-  season_precpt: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: The average of all seasonal precipitation values known, or an
-          estimated equivalent value derived by such methods as regional indexes or
-          Isohyetal maps.
-        Environmental package: food-farm environment
-        Example: 75 millimeters
-        Expected value: measurement value
-        Item: mean seasonal precipitation
-        MIXS ID: MIXS:0000645
-        Occurrence: m
-        Preferred unit: millimeter
-        Section: ''
-        Structured comment name: season_precpt
-        Value syntax: '{float} {unit}'
-      soil:
-      - Definition: The average of all seasonal precipitation values known, or an
-          estimated equivalent value derived by such methods as regional indexes or
-          Isohyetal maps.
-        Environmental package: soil
-        Example: ''
-        Expected value: measurement value
-        Item: mean seasonal precipitation
-        MIXS ID: MIXS:0000645
-        Occurrence: '1'
-        Preferred unit: millimeter
-        Section: ''
-        Structured comment name: season_precpt
-        Value syntax: '{float} {unit}'
-MIXS:0000692:
-  conduc: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Electrical conductivity of water.
-        Environmental package: food-farm environment
-        Example: 10 milliSiemens per centimeter
-        Expected value: measurement value
-        Item: conductivity
-        MIXS ID: MIXS:0000692
-        Occurrence: '1'
-        Preferred unit: milliSiemens per centimeter
-        Section: ''
-        Structured comment name: conduc
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Electrical conductivity of water
-        Environmental package: water
-        Example: 10 milliSiemens per centimeter
-        Expected value: measurement value
-        Item: conductivity
-        MIXS ID: MIXS:0000692
-        Occurrence: '1'
-        Preferred unit: milliSiemens per centimeter
-        Section: ''
-        Structured comment name: conduc
-        Value syntax: '{float} {unit}'
-MIXS:0000735:
-  size_frac_low: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
-          Materials larger than the size threshold are excluded from the sample.
-        Environmental package: food-farm environment
-        Example: 0.2 micrometer
-        Expected value: value
-        Item: size-fraction lower threshold
-        MIXS ID: MIXS:0000735
-        Occurrence: '1'
-        Preferred unit: micrometer
-        Section: ''
-        Structured comment name: size_frac_low
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Refers to the mesh/pore size used to pre-filter/pre-sort the sample.
-          Materials larger than the size threshold are excluded from the sample
-        Environmental package: water
-        Example: 0.2 micrometer
-        Expected value: value
-        Item: size-fraction lower threshold
-        MIXS ID: MIXS:0000735
-        Occurrence: '1'
-        Preferred unit: micrometer
-        Section: ''
-        Structured comment name: size_frac_low
-        Value syntax: '{float} {unit}'
-MIXS:0000736:
-  size_frac_up: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Refers to the mesh/pore size used to retain the sample. Materials
-          smaller than the size threshold are excluded from the sample.
-        Environmental package: food-farm environment
-        Example: 20 micrometer
-        Expected value: value
-        Item: size-fraction upper threshold
-        MIXS ID: MIXS:0000736
-        Occurrence: '1'
-        Preferred unit: micrometer
-        Section: ''
-        Structured comment name: size_frac_up
-        Value syntax: '{float} {unit}'
-      water:
-      - Definition: Refers to the mesh/pore size used to retain the sample. Materials
-          smaller than the size threshold are excluded from the sample
-        Environmental package: water
-        Example: 20 micrometer
-        Expected value: value
-        Item: size-fraction upper threshold
-        MIXS ID: MIXS:0000736
-        Occurrence: '1'
-        Preferred unit: micrometer
-        Section: ''
-        Structured comment name: size_frac_up
-        Value syntax: '{float} {unit}'
-MIXS:0000751:
-  chem_administration: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: List of chemical compounds administered to the host or site where
-          sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter);
-          can include multiple compounds. For chemical entities of biological interest
-          ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi.
-        Environmental package: food-farm environment
-        Example: agar [CHEBI:2509];2018-05-11T20:00Z
-        Expected value: CHEBI;timestamp
-        Item: chemical administration
-        MIXS ID: MIXS:0000751
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: chem_administration
-        Value syntax: '{termLabel} {[termID]};{timestamp}'
-      water:
-      - Definition: List of chemical compounds administered to the host or site where
-          sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter);
-          can include multiple compounds. For chemical entities of biological interest
-          ontology (chebi) (v 163), http://purl.bioontology.org/ontology/chebi
-        Environmental package: water
-        Example: agar [CHEBI:2509];2018-05-11T20:00Z
-        Expected value: CHEBI;timestamp
-        Item: chemical administration
-        MIXS ID: MIXS:0000751
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: chem_administration
-        Value syntax: '{termLabel} {[termID]};{timestamp}'
-MIXS:0000752:
-  misc_param: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Any other measurement performed or parameter collected, that is
-          not listed here.
-        Environmental package: food-farm environment
-        Example: Bicarbonate ion concentration;2075 micromole per kilogram
-        Expected value: parameter name; measurement value
-        Item: miscellaneous parameter
-        MIXS ID: MIXS:0000752
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: misc_param
-        Value syntax: '{text};{float} {unit}'
-      soil:
-      - Definition: Any other measurement performed or parameter collected, that is
-          not listed here
-        Environmental package: soil
-        Example: Bicarbonate ion concentration;2075 micromole per kilogram
-        Expected value: parameter name;measurement value
-        Item: miscellaneous parameter
-        MIXS ID: MIXS:0000752
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: misc_param
-        Value syntax: '{text};{float} {unit}'
-      water:
-      - Definition: Any other measurement performed or parameter collected, that is
-          not listed here
-        Environmental package: water
-        Example: Bicarbonate ion concentration;2075 micromole per kilogram
-        Expected value: parameter name;measurement value
-        Item: miscellaneous parameter
-        MIXS ID: MIXS:0000752
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: misc_param
-        Value syntax: '{text};{float} {unit}'
-MIXS:0000754:
-  perturbation: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Type of perturbation, e.g. chemical administration, physical disturbance,
-          etc., coupled with perturbation regimen including how many times the perturbation
-          was repeated, how long each perturbation lasted, and the start and end time
-          of the entire perturbation period; can include multiple perturbation types.
-        Environmental package: food-farm environment
-        Example: antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M
-        Expected value: perturbation type name;perturbation interval and duration
-        Item: perturbation
-        MIXS ID: MIXS:0000754
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: perturbation
-        Value syntax: '{text};{Rn/start_time/end_time/duration}'
-      water:
-      - Definition: Type of perturbation, e.g. chemical administration, physical disturbance,
-          etc., coupled with perturbation regimen including how many times the perturbation
-          was repeated, how long each perturbation lasted, and the start and end time
-          of the entire perturbation period; can include multiple perturbation types
-        Environmental package: water
-        Example: antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M
-        Expected value: perturbation type name;perturbation interval and duration
-        Item: perturbation
-        MIXS ID: MIXS:0000754
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: perturbation
-        Value syntax: '{text};{Rn/start_time/end_time/duration}'
-MIXS:0001001:
-  ph: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: pH measurement of the sample, or liquid portion of sample, or
-          aqueous phase of the fluid.
-        Environmental package: food-farm environment
-        Example: '7.2'
-        Expected value: measurement value
-        Item: pH
-        MIXS ID: MIXS:0001001
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: ph
-        Value syntax: '{float}'
-      soil:
-      - Definition: Ph measurement of the sample, or liquid portion of sample, or
-          aqueous phase of the fluid
-        Environmental package: soil
-        Example: '7.2'
-        Expected value: measurement value
-        Item: pH
-        MIXS ID: MIXS:0001001
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: ph
-        Value syntax: '{float}'
-      water:
-      - Definition: Ph measurement of the sample, or liquid portion of sample, or
-          aqueous phase of the fluid
-        Environmental package: water
-        Example: '7.2'
-        Expected value: measurement value
-        Item: pH
-        MIXS ID: MIXS:0001001
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: ph
-        Value syntax: '{float}'
-MIXS:0001081:
-  tillage: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Note method(s) used for tilling
-        Environmental package: food-farm environment
-        Example: chisel
-        Expected value: enumeration
-        Item: history/tillage
-        MIXS ID: MIXS:0001081
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tillage
-        Value syntax: '[drill|cutting disc|ridge till|strip tillage|zonal tillage|chisel|tined|mouldboard|disc
-          plough]'
-      soil:
-      - Definition: Note method(s) used for tilling
-        Environmental package: soil
-        Example: chisel
-        Expected value: enumeration
-        Item: history/tillage
-        MIXS ID: MIXS:0001081
-        Occurrence: m
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: tillage
-        Value syntax: '[drill|cutting disc|ridge till|strip tillage|zonal tillage|chisel|tined|mouldboard|disc
-          plough]'
-MIXS:0001106:
-  ph_meth: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      food-farm environment:
-      - Definition: Reference or method used in determining pH.
-        Environmental package: food-farm environment
-        Example: https://www.epa.gov/sites/production/files/2015-12/documents/9040c.pdf
-        Expected value: PMID,DOI or url
-        Item: pH method
-        MIXS ID: MIXS:0001106
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: ph_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-      soil:
-      - Definition: Reference or method used in determining ph
-        Environmental package: soil
-        Example: ''
-        Expected value: PMID,DOI or url
-        Item: pH method
-        MIXS ID: MIXS:0001106
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: ph_meth
-        Value syntax: '{PMID}|{DOI}|{URL}'
-MIXS:0001107:
-  samp_name: !!python/object/apply:collections.defaultdict
-    args:
-    - *id001
-    dictitems:
-      ? ''
-      : - Definition: A local identifier or name that for the material sample used
-            for extracting nucleic acids, and subsequent sequencing. It can refer
-            either to the original material collected or to any derived sub-samples.
-            It can have any format, but we suggest that you make it concise, unique
-            and consistent within your lab, and as informative as possible. INSDC
-            requires every sample name from a single Submitter to be unique. Use of
-            a globally unique identifier for the field source_mat_id is recommended
-            in addition to sample_name.
-          Environmental package: ''
-          Example: ISDsoil1
-          Expected value: text
-          Item: 'sample name '
-          MIXS ID: MIXS:0001107
-          Occurrence: '1'
-          Preferred unit: ''
-          Section: investigation
-          Structured comment name: samp_name
-          Value syntax: '{text}'
-      food-farm environment:
-      - Definition: A local identifier or name that for the material sample used for
-          extracting nucleic acids, and subsequent sequencing. It can refer either
-          to the original material collected or to any derived sub-samples. It can
-          have any format, but we suggest that you make it concise, unique and consistent
-          within your lab, and as informative as possible. INSDC requires every sample
-          name from a single Submitter to be unique. Use of a globally unique identifier
-          for the field source_mat_id is recommended in addition to sample_name.
-        Environmental package: food-farm environment
-        Example: ISDsoil1
-        Expected value: text
-        Item: 'sample name '
-        MIXS ID: MIXS:0001107
-        Occurrence: '1'
-        Preferred unit: ' '
-        Section: ''
-        Structured comment name: samp_name
-        Value syntax: '{text}'
-      soil:
-      - Definition: A local identifier or name that for the material sample used for
-          extracting nucleic acids, and subsequent sequencing. It can refer either
-          to the original material collected or to any derived sub-samples. It can
-          have any format, but we suggest that you make it concise, unique and consistent
-          within your lab, and as informative as possible. INSDC requires every sample
-          name from a single Submitter to be unique. Use of a globally unique identifier
-          for the field source_mat_id is recommended in addition to sample_name.
-        Environmental package: soil
-        Example: ISDsoil1
-        Expected value: text
-        Item: 'sample name '
-        MIXS ID: MIXS:0001107
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: samp_name
-        Value syntax: '{text}'
-      water:
-      - Definition: A local identifier or name that for the material sample used for
-          extracting nucleic acids, and subsequent sequencing. It can refer either
-          to the original material collected or to any derived sub-samples. It can
-          have any format, but we suggest that you make it concise, unique and consistent
-          within your lab, and as informative as possible. INSDC requires every sample
-          name from a single Submitter to be unique. Use of a globally unique identifier
-          for the field source_mat_id is recommended in addition to sample_name.
-        Environmental package: water
-        Example: ISDsoil1
-        Expected value: text
-        Item: 'sample name '
-        MIXS ID: MIXS:0001107
-        Occurrence: '1'
-        Preferred unit: ''
-        Section: ''
-        Structured comment name: samp_name
-        Value syntax: '{text}'
+MIXS ID:
+  MIXS:0000002:
+    Structured comment name:
+      samp_collec_device:
+        Environmental package:
+        - ''
+        NCBI acknowledged: false
+      samp_collect_device:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000018:
+    Structured comment name:
+      depth:
+        Environmental package:
+        - ''
+        - host-associated
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - soil
+        - wastewater/sludge
+        - water
+        - symbiont-associated
+        - food-farm environment
+        NCBI acknowledged: true
+      soil_depth:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000056:
+    Structured comment name:
+      assembly_qual:
+        Environmental package:
+        - ''
+        NCBI acknowledged: false
+      assembly_software:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+        see_also:
+        - MIXS:0000058
+  MIXS:0000058:
+    Structured comment name:
+      assembly_quality:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      assembly_software:
+        Environmental package:
+        - ''
+        NCBI acknowledged: false
+        see_also:
+        - MIXS:0000056
+  MIXS:0000091:
+    Structured comment name:
+      associated resource:
+        Environmental package:
+        - ''
+        NCBI acknowledged: false
+      url:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+  MIXS:0000103:
+    Structured comment name:
+      organism_count:
+        Environmental package:
+        - air
+        - built environment
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        - hydrocarbon resources-cores
+        - hydrocarbon resources-fluids/swabs
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - wastewater/sludge
+        - water
+        - symbiont-associated
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        - agriculture
+        NCBI acknowledged: true
+      spikein_count:
+        Environmental package:
+        - food-animal and animal feed
+        - food-farm environment
+        NCBI acknowledged: true
+        see_also:
+        - MIXS:0001335
+  MIXS:0000108:
+    Structured comment name:
+      air particulate matter concentration:
+        Environmental package:
+        - air
+        NCBI acknowledged: false
+      air_PM_concen:
+        Environmental package:
+        - food-farm environment
+        NCBI acknowledged: false
+  MIXS:0000110:
+    Structured comment name:
+      samp_stor_temp:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        - agriculture
+        NCBI acknowledged: false
+      samp_store_temp:
+        Environmental package:
+        - air
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        - hydrocarbon resources-cores
+        - hydrocarbon resources-fluids/swabs
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - wastewater/sludge
+        - water
+        - symbiont-associated
+        NCBI acknowledged: true
+  MIXS:0000116:
+    Structured comment name:
+      samp_stor_dur:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        NCBI acknowledged: false
+      samp_store_dur:
+        Environmental package:
+        - air
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        - hydrocarbon resources-cores
+        - hydrocarbon resources-fluids/swabs
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - wastewater/sludge
+        - water
+        - symbiont-associated
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000316:
+    Structured comment name:
+      prev_land_use_meth:
+        Environmental package:
+        - soil
+        NCBI acknowledged: false
+      previous_land_use_meth:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000335:
+    Structured comment name:
+      soil_text_measure:
+        Environmental package:
+        - soil
+        NCBI acknowledged: true
+      texture:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+  MIXS:0000336:
+    Structured comment name:
+      soil_texture_meth:
+        Environmental package:
+        - soil
+        - food-farm environment
+        NCBI acknowledged: true
+      texture_meth:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+  MIXS:0000338:
+    Structured comment name:
+      tot_n_meth:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+      tot_nitro_cont_meth:
+        Environmental package:
+        - soil
+        - food-farm environment
+        NCBI acknowledged: true
+  MIXS:0000339:
+    Structured comment name:
+      micro_biomass_meth:
+        Environmental package:
+        - soil
+        NCBI acknowledged: false
+      microbial_biomass_meth:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000525:
+    Structured comment name:
+      tot_car:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      tot_carb:
+        Environmental package:
+        - microbial mat/biofilm
+        - sediment
+        NCBI acknowledged: true
+  MIXS:0000530:
+    Structured comment name:
+      tot_nitro:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+        see_also:
+        - MIXS:0000102
+      tot_nitro_content:
+        Environmental package:
+        - microbial mat/biofilm
+        - sediment
+        - soil
+        - food-farm environment
+        NCBI acknowledged: false
+  MIXS:0000571:
+    Structured comment name:
+      non_min_nutr_regm:
+        Environmental package:
+        - plant-associated
+        NCBI acknowledged: false
+      non_mineral_nutr_regm:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: true
+  MIXS:0000689:
+    Structured comment name:
+      tot_phos:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      tot_phosphate:
+        Environmental package:
+        - wastewater/sludge
+        NCBI acknowledged: true
+  MIXS:0000755:
+    Structured comment name:
+      samp_stor_loc:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        NCBI acknowledged: false
+      samp_store_loc:
+        Environmental package:
+        - air
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        - hydrocarbon resources-cores
+        - hydrocarbon resources-fluids/swabs
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - wastewater/sludge
+        - water
+        - symbiont-associated
+        - agriculture
+        NCBI acknowledged: true
+      samp_transport_cont:
+        Environmental package:
+        - food-animal and animal feed
+        NCBI acknowledged: true
+        see_also:
+        - MIXS:0001230
+  MIXS:0000872:
+    Structured comment name:
+      host_family_relation:
+        Environmental package:
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        NCBI acknowledged: false
+      host_family_relationship:
+        Environmental package:
+        - symbiont-associated
+        NCBI acknowledged: true
+  MIXS:0001082:
+    Structured comment name:
+      horizon:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      soil_horizon:
+        Environmental package:
+        - soil
+        NCBI acknowledged: true
+        see_also:
+        - MIXS:0001291
+  MIXS:0001107:
+    Structured comment name:
+      samp_name:
+        Environmental package:
+        - ''
+        - air
+        - built environment
+        - host-associated
+        - human-associated
+        - human-gut
+        - human-oral
+        - human-skin
+        - human-vaginal
+        - hydrocarbon resources-cores
+        - hydrocarbon resources-fluids/swabs
+        - microbial mat/biofilm
+        - miscellaneous natural or artificial environment
+        - plant-associated
+        - sediment
+        - soil
+        - wastewater/sludge
+        - water
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        NCBI acknowledged: false
+      sample_name:
+        Environmental package:
+        - symbiont-associated
+        NCBI acknowledged: true
+  MIXS:0001139:
+    Structured comment name:
+      Food_source:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      food_source:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        NCBI acknowledged: true
+  MIXS:0001184:
+    Structured comment name:
+      Food_Product_type:
+        Environmental package:
+        - agriculture
+        NCBI acknowledged: false
+      food_product_type:
+        Environmental package:
+        - food-human foods
+        - food-animal and animal feed
+        - food-food production facility
+        - food-farm environment
+        NCBI acknowledged: true
+  MIXS:0001225:
+    Structured comment name:
+      samp_collec_method:
+        Environmental package:
+        - ''
+        NCBI acknowledged: false
+      samp_collect_method:
+        Environmental package:
+        - food-animal and animal feed
+        - food-food production facility
+        - agriculture
+        NCBI acknowledged: true
+      sample_collec_method:
+        Environmental package:
+        - food-human foods
+        NCBI acknowledged: false
