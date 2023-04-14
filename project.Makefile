@@ -68,7 +68,7 @@ reports/contradiction_score_details.tsv: data/mixs_combined_all.tsv
 pre_modifications_reports: clean extract_all_sheets \
 reports/pre_column_alignment_diff_report.yaml column_alignment_all reports/post_column_alignment_diff_report.yaml \
 target/mixs_combined_filtered.tsv \
-reports/report_pre_id_scn_multi_pairings.out
+reports/report_pre_id_scn_multi_pairings.yaml
 
 # target/report_pre_sc_item_multi_pairings.out target/report_pre_id_item_multi_pairings.out
 
@@ -103,7 +103,7 @@ downloads_cleanup:
 #target/report_post_id_scn_multi_pairings.out \
 #target/report_post_sc_item_multi_pairings.out \
 #target/report_pre_id_item_multi_pairings.out \
-#reports/report_pre_id_scn_multi_pairings.out \
+#reports/report_pre_id_scn_multi_pairings.yaml \
 #target/report_pre_sc_item_multi_pairings.out \
 #target/report_post_id_item_scn_multi_pairings.out
 
@@ -211,13 +211,14 @@ target/mixs_combined_filtered.tsv: data/mixs_v6_MIxS_aligned_cols.tsv target/mix
 	  --column-order "MIXS ID","Structured comment name","Item","Environmental package","Section","Expected value","Value syntax","Occurrence","Preferred unit","Example","Definition" \
 	  --output-tsv $@
 
-reports/report_pre_id_scn_multi_pairings.yaml: target/mixs_combined_filtered.tsv
+#target/mixs_combined_filtered.tsv
+reports/report_pre_id_scn_multi_pairings.yaml: data/mixs_combined_all.tsv
 	$(RUN) find_contradictions \
 		--input-file $< \
 		--output-file $@ \
 		--key1 "MIXS ID" \
 		--key2 "Structured comment name" \
-		--append "Environmental package"
+		--context "Environmental package"
 
 #target/report_pre_sc_item_multi_pairings.out: target/mixs_combined_filtered.tsv
 #	$(RUN) find_contradictions \
