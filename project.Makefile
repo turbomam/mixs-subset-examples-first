@@ -72,8 +72,9 @@ reports/report_pre_id_scn_contradictions.yaml
 
 # target/report_pre_sc_item_contradictions.out target/report_pre_id_item_contradictions.out
 
-post_modifications: target/report_post_id_scn_contradictions.out target/report_post_sc_item_contradictions.out target/report_post_id_item_contradictions.out \
-target/mixs_uniform_terms.tsv target/mixs_combined_diff.html
+post_modifications: reports/report_post_id_scn_contradictions.yaml \
+target/mixs_uniform_terms.tsv \
+target/mixs_combined_diff.html
 
 target_cleanup:
 	rm -rf target
@@ -228,6 +229,18 @@ reports/report_pre_id_scn_contradictions.yaml: data/mixs_combined_all.tsv data/n
 		--key2 "Structured comment name" \
 		--output-file $@
 
+
+do_post_reports: clean_reports \
+reports/report_post_id_scn_contradictions.yaml \
+reports/report_post_id_item_contradictions.yaml \
+reports/report_post_id_occurrence_contradictions.yaml \
+reports/report_post_id_prefunit_contradictions.yaml \
+reports/report_post_id_example_contradictions.yaml \
+reports/report_post_id_description_contradictions.yaml
+
+clean_reports:
+	rm -rf reports/report_post_*_contradictions.yaml
+
 reports/report_post_id_scn_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
 	$(RUN) find_contradictions \
 		--attributes-file $(word 2, $^) \
@@ -248,17 +261,6 @@ reports/report_post_id_item_contradictions.yaml: data/mixs_combined_all_modified
 		--key2 "Item" \
 		--output-file $@
 
-reports/report_post_id_description_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
-	$(RUN) find_contradictions \
-		--attributes-file $(word 2, $^) \
-		--attributes-key Description \
-		--context "Environmental package" \
-		--input-file $< \
-		--key1 "MIXS ID" \
-		--key2 "Definition" \
-		--output-file $@
-
-
 reports/report_post_id_occurrence_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
 	$(RUN) find_contradictions \
 		--attributes-file $(word 2, $^) \
@@ -269,6 +271,40 @@ reports/report_post_id_occurrence_contradictions.yaml: data/mixs_combined_all_mo
 		--key2 "Occurrence" \
 		--no-check-ncbi \
 		--no-see-alsos \
+		--output-file $@
+
+reports/report_post_id_prefunit_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Name \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Preferred unit" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
+reports/report_post_id_example_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Name \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Example" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
+reports/report_post_id_description_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Description \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Definition" \
 		--output-file $@
 
 data/ncbi_biosample_attributes.xml:
