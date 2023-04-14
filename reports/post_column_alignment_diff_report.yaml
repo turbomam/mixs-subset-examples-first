@@ -1,0 +1,14 @@
+Intersection:
+- Item
+- MIXS ID
+- Definition
+- Value syntax
+- Preferred unit
+- Occurrence
+- Expected value
+- Structured comment name
+- Example
+data/mixs_v6_MIxS_aligned_cols.tsv only:
+- Section
+target/mixs_v6_environmental_packages_aligned_cols_filtered.tsv only:
+- Environmental package

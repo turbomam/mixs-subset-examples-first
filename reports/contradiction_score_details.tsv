@@ -1,0 +1,553 @@
+env_1	env_2	raw	normalized
+	food-animal and animal feed	1.0702702702702702	0.18738738738738725
+	human-vaginal	1.0217391304347827	0.05797101449275388
+	agriculture	1.1040723981900453	0.2775263951734542
+	hydrocarbon resources-cores	1.0171428571428571	0.04571428571428567
+	sediment	1.0246913580246915	0.06584362139917725
+	human-skin	1.023076923076923	0.06153846153846132
+	wastewater/sludge	1.0225563909774436	0.060150375939849475
+	human-oral	1.0232558139534884	0.0620155038759691
+	microbial mat/biofilm	1.0256410256410255	0.06837606837606813
+	symbiont-associated	1.0769230769230769	0.20512820512820498
+	human-gut	1.023076923076923	0.06153846153846132
+	built environment	1.003875968992248	0.010335917312661516
+	water	1.0225988700564972	0.060263653483992506
+	plant-associated	1.0301204819277108	0.08032128514056207
+	soil	1.0266666666666666	0.07111111111111097
+	host-associated	1.0357142857142858	0.0952380952380955
+	food-human foods	1.0463917525773196	0.12371134020618572
+	human-associated	1.0205479452054795	0.054794520547945424
+	food-food production facility	1.064516129032258	0.17204301075268802
+	hydrocarbon resources-fluids/swabs	1.011111111111111	0.029629629629629523
+	miscellaneous natural or artificial environment	1.0364963503649636	0.09732360097323618
+	air	1.024793388429752	0.06611570247933862
+	food-farm environment	1.048888888888889	0.1303703703703706
+food-animal and animal feed	human-vaginal	1.065217391304348	0.17391304347826106
+food-animal and animal feed	agriculture	1.0756302521008403	0.20168067226890743
+food-animal and animal feed	hydrocarbon resources-cores	1.0454545454545454	0.1212121212121211
+food-animal and animal feed	sediment	1.0552147239263803	0.14723926380368071
+food-animal and animal feed	human-skin	1.0692307692307692	0.18461538461538454
+food-animal and animal feed	wastewater/sludge	1.0676691729323309	0.180451127819549
+food-animal and animal feed	human-oral	1.069767441860465	0.18604651162790672
+food-animal and animal feed	microbial mat/biofilm	1.0573248407643312	0.15286624203821653
+food-animal and animal feed	symbiont-associated	1.0880503144654088	0.23480083857442344
+food-animal and animal feed	human-gut	1.0692307692307692	0.18461538461538454
+food-animal and animal feed	built environment	1.0114503816793894	0.030534351145038368
+food-animal and animal feed	water	1.050561797752809	0.13483146067415733
+food-animal and animal feed	plant-associated	1.0535714285714286	0.14285714285714293
+food-animal and animal feed	soil	1.032258064516129	0.08602150537634401
+food-animal and animal feed	host-associated	1.062937062937063	0.16783216783216778
+food-animal and animal feed	food-human foods	1.104	0.2773333333333336
+food-animal and animal feed	human-associated	1.0616438356164384	0.1643835616438357
+food-animal and animal feed	food-food production facility	1.0846153846153845	0.22564102564102542
+food-animal and animal feed	hydrocarbon resources-fluids/swabs	1.0444444444444445	0.11851851851851869
+food-animal and animal feed	miscellaneous natural or artificial environment	1.064748201438849	0.17266187050359724
+food-animal and animal feed	air	1.0737704918032787	0.19672131147540975
+food-animal and animal feed	food-farm environment	1.052910052910053	0.14109347442680806
+human-vaginal	agriculture	1.0421052631578946	0.11228070175438572
+human-vaginal	hydrocarbon resources-cores	1.0	0.0
+human-vaginal	sediment	1.0	0.0
+human-vaginal	human-skin	1.0	0.0
+human-vaginal	wastewater/sludge	1.0	0.0
+human-vaginal	human-oral	1.0212765957446808	0.05673758865248205
+human-vaginal	microbial mat/biofilm	1.0	0.0
+human-vaginal	symbiont-associated	1.2083333333333333	0.5555555555555554
+human-vaginal	human-gut	1.0	0.0
+human-vaginal	built environment	1.0	0.0
+human-vaginal	water	1.0085470085470085	0.02279202279202271
+human-vaginal	plant-associated	1.02	0.05333333333333338
+human-vaginal	soil	1.0	0.0
+human-vaginal	host-associated	1.0597014925373134	0.15920398009950235
+human-vaginal	food-human foods	1.0476190476190477	0.12698412698412712
+human-vaginal	human-associated	1.03125	0.08333333333333333
+human-vaginal	food-food production facility	1.0354609929078014	0.09456264775413696
+human-vaginal	hydrocarbon resources-fluids/swabs	1.0	0.0
+human-vaginal	miscellaneous natural or artificial environment	1.0	0.0
+human-vaginal	air	1.0	0.0
+human-vaginal	food-farm environment	1.0818713450292399	0.21832358674463967
+agriculture	hydrocarbon resources-cores	1.0300429184549356	0.0801144492131615
+agriculture	sediment	1.0511627906976744	0.13643410852713167
+agriculture	human-skin	1.043956043956044	0.1172161172161174
+agriculture	wastewater/sludge	1.0423280423280423	0.1128747795414462
+agriculture	human-oral	1.0441988950276244	0.11786372007366512
+agriculture	microbial mat/biofilm	1.0476190476190477	0.12698412698412712
+agriculture	symbiont-associated	1.105263157894737	0.2807017543859652
+agriculture	human-gut	1.043956043956044	0.1172161172161174
+agriculture	built environment	1.00625	0.016666666666666902
+agriculture	water	1.0344827586206897	0.09195402298850593
+agriculture	plant-associated	1.1354166666666667	0.3611111111111113
+agriculture	soil	1.1445086705202312	0.3853564547206165
+agriculture	host-associated	1.0702702702702702	0.18738738738738725
+agriculture	food-human foods	1.0772357723577235	0.205962059620596
+agriculture	human-associated	1.0454545454545454	0.1212121212121211
+agriculture	food-food production facility	1.070539419087137	0.1881051175656984
+agriculture	hydrocarbon resources-fluids/swabs	1.0209205020920502	0.05578800557880056
+agriculture	miscellaneous natural or artificial environment	1.041025641025641	0.10940170940170961
+agriculture	air	1.0508474576271187	0.13559322033898327
+agriculture	food-farm environment	1.2456140350877194	0.6549707602339184
+hydrocarbon resources-cores	sediment	1.0	0.0
+hydrocarbon resources-cores	human-skin	1.0	0.0
+hydrocarbon resources-cores	wastewater/sludge	1.0	0.0
+hydrocarbon resources-cores	human-oral	1.0	0.0
+hydrocarbon resources-cores	microbial mat/biofilm	1.0	0.0
+hydrocarbon resources-cores	symbiont-associated	1.06993006993007	0.1864801864801867
+hydrocarbon resources-cores	human-gut	1.0	0.0
+hydrocarbon resources-cores	built environment	1.0	0.0
+hydrocarbon resources-cores	water	1.007462686567164	0.01990049751243757
+hydrocarbon resources-cores	plant-associated	1.0	0.0
+hydrocarbon resources-cores	soil	1.0	0.0
+hydrocarbon resources-cores	host-associated	1.0	0.0
+hydrocarbon resources-cores	food-human foods	1.0324324324324323	0.0864864864864862
+hydrocarbon resources-cores	human-associated	1.0	0.0
+hydrocarbon resources-cores	food-food production facility	1.0282485875706215	0.07532956685499077
+hydrocarbon resources-cores	hydrocarbon resources-fluids/swabs	1.0208333333333333	0.05555555555555536
+hydrocarbon resources-cores	miscellaneous natural or artificial environment	1.0	0.0
+hydrocarbon resources-cores	air	1.0	0.0
+hydrocarbon resources-cores	food-farm environment	1.0373831775700935	0.09968847352024923
+sediment	human-skin	1.0	0.0
+sediment	wastewater/sludge	1.0	0.0
+sediment	human-oral	1.0	0.0
+sediment	microbial mat/biofilm	1.0	0.0
+sediment	symbiont-associated	1.1015625	0.2708333333333333
+sediment	human-gut	1.0	0.0
+sediment	built environment	1.0	0.0
+sediment	water	1.021505376344086	0.05734767025089601
+sediment	plant-associated	1.0	0.0
+sediment	soil	1.008695652173913	0.023188405797101314
+sediment	host-associated	1.0	0.0
+sediment	food-human foods	1.0406976744186047	0.10852713178294593
+sediment	human-associated	1.0	0.0
+sediment	food-food production facility	1.0301204819277108	0.08032128514056207
+sediment	hydrocarbon resources-fluids/swabs	1.0	0.0
+sediment	miscellaneous natural or artificial environment	1.0	0.0
+sediment	air	1.0	0.0
+sediment	food-farm environment	1.0659898477157361	0.175972927241963
+human-skin	wastewater/sludge	1.0	0.0
+human-skin	human-oral	1.0256410256410255	0.06837606837606813
+human-skin	microbial mat/biofilm	1.0	0.0
+human-skin	symbiont-associated	1.2134831460674158	0.5692883895131088
+human-skin	human-gut	1.0	0.0
+human-skin	built environment	1.0	0.0
+human-skin	water	1.0091743119266054	0.0244648318042812
+human-skin	plant-associated	1.0217391304347827	0.05797101449275388
+human-skin	soil	1.0	0.0
+human-skin	host-associated	1.0677966101694916	0.1807909604519775
+human-skin	food-human foods	1.0503597122302157	0.13429256594724195
+human-skin	human-associated	1.0357142857142858	0.0952380952380955
+human-skin	food-food production facility	1.037593984962406	0.10025062656641619
+human-skin	hydrocarbon resources-fluids/swabs	1.0	0.0
+human-skin	miscellaneous natural or artificial environment	1.0	0.0
+human-skin	air	1.0	0.0
+human-skin	food-farm environment	1.0858895705521472	0.22903885480572583
+wastewater/sludge	human-oral	1.0	0.0
+wastewater/sludge	microbial mat/biofilm	1.0	0.0
+wastewater/sludge	symbiont-associated	1.121212121212121	0.3232323232323229
+wastewater/sludge	human-gut	1.0	0.0
+wastewater/sludge	built environment	1.0	0.0
+wastewater/sludge	water	1.0095238095238095	0.025396825396825307
+wastewater/sludge	plant-associated	1.0	0.0
+wastewater/sludge	soil	1.0	0.0
+wastewater/sludge	host-associated	1.0	0.0
+wastewater/sludge	food-human foods	1.0492957746478873	0.13145539906103268
+wastewater/sludge	human-associated	1.0	0.0
+wastewater/sludge	food-food production facility	1.036764705882353	0.09803921568627476
+wastewater/sludge	hydrocarbon resources-fluids/swabs	1.0	0.0
+wastewater/sludge	miscellaneous natural or artificial environment	1.0	0.0
+wastewater/sludge	air	1.0	0.0
+wastewater/sludge	food-farm environment	1.0588235294117647	0.15686274509803924
+human-oral	microbial mat/biofilm	1.0	0.0
+human-oral	symbiont-associated	1.2159090909090908	0.5757575757575756
+human-oral	human-gut	1.0256410256410255	0.06837606837606813
+human-oral	built environment	1.0	0.0
+human-oral	water	1.0092592592592593	0.024691358024691468
+human-oral	plant-associated	1.021978021978022	0.0586080586080584
+human-oral	soil	1.0	0.0
+human-oral	host-associated	1.0517241379310345	0.1379310344827586
+human-oral	food-human foods	1.0507246376811594	0.1352657004830918
+human-oral	human-associated	1.018181818181818	0.04848484848484821
+human-oral	food-food production facility	1.0378787878787878	0.10101010101010093
+human-oral	hydrocarbon resources-fluids/swabs	1.0	0.0
+human-oral	miscellaneous natural or artificial environment	1.0	0.0
+human-oral	air	1.0	0.0
+human-oral	food-farm environment	1.0864197530864197	0.23045267489711918
+microbial mat/biofilm	symbiont-associated	1.1065573770491803	0.2841530054644809
+microbial mat/biofilm	human-gut	1.0	0.0
+microbial mat/biofilm	built environment	1.0	0.0
+microbial mat/biofilm	water	1.0222222222222221	0.059259259259259046
+microbial mat/biofilm	plant-associated	1.0	0.0
+microbial mat/biofilm	soil	1.0091743119266054	0.0244648318042812
+microbial mat/biofilm	host-associated	1.0	0.0
+microbial mat/biofilm	food-human foods	1.0421686746987953	0.11244979919678737
+microbial mat/biofilm	human-associated	1.0	0.0
+microbial mat/biofilm	food-food production facility	1.03125	0.08333333333333333
+microbial mat/biofilm	hydrocarbon resources-fluids/swabs	1.0	0.0
+microbial mat/biofilm	miscellaneous natural or artificial environment	1.0	0.0
+microbial mat/biofilm	air	1.0	0.0
+microbial mat/biofilm	food-farm environment	1.068062827225131	0.18150087260034908
+symbiont-associated	human-gut	1.2134831460674158	0.5692883895131088
+symbiont-associated	built environment	1.0086580086580086	0.023088023088022897
+symbiont-associated	water	1.0909090909090908	0.2424242424242422
+symbiont-associated	plant-associated	1.1869918699186992	0.49864498644986455
+symbiont-associated	soil	1.048780487804878	0.13008130081300825
+symbiont-associated	host-associated	1.375	1.0
+symbiont-associated	food-human foods	1.0773809523809523	0.2063492063492062
+symbiont-associated	human-associated	1.180952380952381	0.4825396825396826
+symbiont-associated	food-food production facility	1.0740740740740742	0.19753086419753116
+symbiont-associated	hydrocarbon resources-fluids/swabs	1.0608108108108107	0.16216216216216198
+symbiont-associated	miscellaneous natural or artificial environment	1.1359223300970873	0.3624595469255662
+symbiont-associated	air	1.1494252873563218	0.3984674329501914
+symbiont-associated	food-farm environment	1.1157894736842104	0.3087719298245612
+human-gut	built environment	1.0	0.0
+human-gut	water	1.0091743119266054	0.0244648318042812
+human-gut	plant-associated	1.0217391304347827	0.05797101449275388
+human-gut	soil	1.0	0.0
+human-gut	host-associated	1.0677966101694916	0.1807909604519775
+human-gut	food-human foods	1.0503597122302157	0.13429256594724195
+human-gut	human-associated	1.0357142857142858	0.0952380952380955
+human-gut	food-food production facility	1.037593984962406	0.10025062656641619
+human-gut	hydrocarbon resources-fluids/swabs	1.0	0.0
+human-gut	miscellaneous natural or artificial environment	1.0	0.0
+human-gut	air	1.0	0.0
+human-gut	food-farm environment	1.0858895705521472	0.22903885480572583
+built environment	water	1.0	0.0
+built environment	plant-associated	1.0	0.0
+built environment	soil	1.0	0.0
+built environment	host-associated	1.0	0.0
+built environment	food-human foods	1.003690036900369	0.009840098400983877
+built environment	human-associated	1.0	0.0
+built environment	food-food production facility	1.0274509803921568	0.07320261437908471
+built environment	hydrocarbon resources-fluids/swabs	1.0	0.0
+built environment	miscellaneous natural or artificial environment	1.0	0.0
+built environment	air	1.0	0.0
+built environment	food-farm environment	1.0133333333333334	0.035555555555555785
+water	plant-associated	1.006896551724138	0.018390804597701187
+water	soil	1.0	0.0
+water	host-associated	1.0083333333333333	0.022222222222222143
+water	food-human foods	1.0374331550802138	0.09982174688057022
+water	human-associated	1.008	0.021333333333333353
+water	food-food production facility	1.0276243093922652	0.07366482504604062
+water	hydrocarbon resources-fluids/swabs	1.0071942446043165	0.01918465227817734
+water	miscellaneous natural or artificial environment	1.0116279069767442	0.03100775193798455
+water	air	1.01	0.02666666666666669
+water	food-farm environment	1.0710900473933649	0.18957345971563969
+plant-associated	soil	1.0	0.0
+plant-associated	host-associated	1.0543478260869565	0.14492753623188412
+plant-associated	food-human foods	1.0454545454545454	0.1212121212121211
+plant-associated	human-associated	1.0277777777777777	0.0740740740740738
+plant-associated	food-food production facility	1.035294117647059	0.09411764705882379
+plant-associated	hydrocarbon resources-fluids/swabs	1.0	0.0
+plant-associated	miscellaneous natural or artificial environment	1.0	0.0
+plant-associated	air	1.0	0.0
+plant-associated	food-farm environment	1.1297297297297297	0.34594594594594597
+soil	host-associated	1.0	0.0
+soil	food-human foods	1.0182926829268293	0.04878048780487809
+soil	human-associated	1.0	0.0
+soil	food-food production facility	1.0127388535031847	0.03397027600849256
+soil	hydrocarbon resources-fluids/swabs	1.0	0.0
+soil	miscellaneous natural or artificial environment	1.0	0.0
+soil	air	1.0	0.0
+soil	food-farm environment	1.1055555555555556	0.28148148148148167
+host-associated	food-human foods	1.0529801324503312	0.14128035320088314
+host-associated	human-associated	1.0533333333333332	0.14222222222222194
+host-associated	food-food production facility	1.0413793103448277	0.11034482758620712
+host-associated	hydrocarbon resources-fluids/swabs	1.0	0.0
+host-associated	miscellaneous natural or artificial environment	1.0	0.0
+host-associated	air	1.015625	0.041666666666666664
+host-associated	food-farm environment	1.1183431952662721	0.31558185404339234
+food-human foods	human-associated	1.0451612903225806	0.12043010752688173
+food-human foods	food-food production facility	1.0746268656716418	0.1990049751243781
+food-human foods	hydrocarbon resources-fluids/swabs	1.0317460317460319	0.08465608465608494
+food-human foods	miscellaneous natural or artificial environment	1.0472972972972974	0.1261261261261263
+food-human foods	air	1.0534351145038168	0.14249363867684472
+food-human foods	food-farm environment	1.0398009950248757	0.10613598673300177
+human-associated	food-food production facility	1.0335570469798658	0.08948545861297556
+human-associated	hydrocarbon resources-fluids/swabs	1.0	0.0
+human-associated	miscellaneous natural or artificial environment	1.0	0.0
+human-associated	air	1.0	0.0
+human-associated	food-farm environment	1.0726256983240223	0.19366852886405952
+food-food production facility	hydrocarbon resources-fluids/swabs	1.0276243093922652	0.07366482504604062
+food-food production facility	miscellaneous natural or artificial environment	1.0352112676056338	0.09389671361502334
+food-food production facility	air	1.04	0.10666666666666676
+food-food production facility	food-farm environment	1.050251256281407	0.13400335008375208
+hydrocarbon resources-fluids/swabs	miscellaneous natural or artificial environment	1.0	0.0
+hydrocarbon resources-fluids/swabs	air	1.0	0.0
+hydrocarbon resources-fluids/swabs	food-farm environment	1.036697247706422	0.09785932721712538
+miscellaneous natural or artificial environment	air	1.0166666666666666	0.04444444444444429
+miscellaneous natural or artificial environment	food-farm environment	1.0568181818181819	0.15151515151515169
+air	food-farm environment	1.0974025974025974	0.25974025974025966
+food-animal and animal feed		1.0702702702702702	0.18738738738738725
+human-vaginal		1.0217391304347827	0.05797101449275388
+agriculture		1.1040723981900453	0.2775263951734542
+hydrocarbon resources-cores		1.0171428571428571	0.04571428571428567
+sediment		1.0246913580246915	0.06584362139917725
+human-skin		1.023076923076923	0.06153846153846132
+wastewater/sludge		1.0225563909774436	0.060150375939849475
+human-oral		1.0232558139534884	0.0620155038759691
+microbial mat/biofilm		1.0256410256410255	0.06837606837606813
+symbiont-associated		1.0769230769230769	0.20512820512820498
+human-gut		1.023076923076923	0.06153846153846132
+built environment		1.003875968992248	0.010335917312661516
+water		1.0225988700564972	0.060263653483992506
+plant-associated		1.0301204819277108	0.08032128514056207
+soil		1.0266666666666666	0.07111111111111097
+host-associated		1.0357142857142858	0.0952380952380955
+food-human foods		1.0463917525773196	0.12371134020618572
+human-associated		1.0205479452054795	0.054794520547945424
+food-food production facility		1.064516129032258	0.17204301075268802
+hydrocarbon resources-fluids/swabs		1.011111111111111	0.029629629629629523
+miscellaneous natural or artificial environment		1.0364963503649636	0.09732360097323618
+air		1.024793388429752	0.06611570247933862
+food-farm environment		1.048888888888889	0.1303703703703706
+human-vaginal	food-animal and animal feed	1.065217391304348	0.17391304347826106
+agriculture	food-animal and animal feed	1.0756302521008403	0.20168067226890743
+hydrocarbon resources-cores	food-animal and animal feed	1.0454545454545454	0.1212121212121211
+sediment	food-animal and animal feed	1.0552147239263803	0.14723926380368071
+human-skin	food-animal and animal feed	1.0692307692307692	0.18461538461538454
+wastewater/sludge	food-animal and animal feed	1.0676691729323309	0.180451127819549
+human-oral	food-animal and animal feed	1.069767441860465	0.18604651162790672
+microbial mat/biofilm	food-animal and animal feed	1.0573248407643312	0.15286624203821653
+symbiont-associated	food-animal and animal feed	1.0880503144654088	0.23480083857442344
+human-gut	food-animal and animal feed	1.0692307692307692	0.18461538461538454
+built environment	food-animal and animal feed	1.0114503816793894	0.030534351145038368
+water	food-animal and animal feed	1.050561797752809	0.13483146067415733
+plant-associated	food-animal and animal feed	1.0535714285714286	0.14285714285714293
+soil	food-animal and animal feed	1.032258064516129	0.08602150537634401
+host-associated	food-animal and animal feed	1.062937062937063	0.16783216783216778
+food-human foods	food-animal and animal feed	1.104	0.2773333333333336
+human-associated	food-animal and animal feed	1.0616438356164384	0.1643835616438357
+food-food production facility	food-animal and animal feed	1.0846153846153845	0.22564102564102542
+hydrocarbon resources-fluids/swabs	food-animal and animal feed	1.0444444444444445	0.11851851851851869
+miscellaneous natural or artificial environment	food-animal and animal feed	1.064748201438849	0.17266187050359724
+air	food-animal and animal feed	1.0737704918032787	0.19672131147540975
+food-farm environment	food-animal and animal feed	1.052910052910053	0.14109347442680806
+agriculture	human-vaginal	1.0421052631578946	0.11228070175438572
+hydrocarbon resources-cores	human-vaginal	1.0	0.0
+sediment	human-vaginal	1.0	0.0
+human-skin	human-vaginal	1.0	0.0
+wastewater/sludge	human-vaginal	1.0	0.0
+human-oral	human-vaginal	1.0212765957446808	0.05673758865248205
+microbial mat/biofilm	human-vaginal	1.0	0.0
+symbiont-associated	human-vaginal	1.2083333333333333	0.5555555555555554
+human-gut	human-vaginal	1.0	0.0
+built environment	human-vaginal	1.0	0.0
+water	human-vaginal	1.0085470085470085	0.02279202279202271
+plant-associated	human-vaginal	1.02	0.05333333333333338
+soil	human-vaginal	1.0	0.0
+host-associated	human-vaginal	1.0597014925373134	0.15920398009950235
+food-human foods	human-vaginal	1.0476190476190477	0.12698412698412712
+human-associated	human-vaginal	1.03125	0.08333333333333333
+food-food production facility	human-vaginal	1.0354609929078014	0.09456264775413696
+hydrocarbon resources-fluids/swabs	human-vaginal	1.0	0.0
+miscellaneous natural or artificial environment	human-vaginal	1.0	0.0
+air	human-vaginal	1.0	0.0
+food-farm environment	human-vaginal	1.0818713450292399	0.21832358674463967
+hydrocarbon resources-cores	agriculture	1.0300429184549356	0.0801144492131615
+sediment	agriculture	1.0511627906976744	0.13643410852713167
+human-skin	agriculture	1.043956043956044	0.1172161172161174
+wastewater/sludge	agriculture	1.0423280423280423	0.1128747795414462
+human-oral	agriculture	1.0441988950276244	0.11786372007366512
+microbial mat/biofilm	agriculture	1.0476190476190477	0.12698412698412712
+symbiont-associated	agriculture	1.105263157894737	0.2807017543859652
+human-gut	agriculture	1.043956043956044	0.1172161172161174
+built environment	agriculture	1.00625	0.016666666666666902
+water	agriculture	1.0344827586206897	0.09195402298850593
+plant-associated	agriculture	1.1354166666666667	0.3611111111111113
+soil	agriculture	1.1445086705202312	0.3853564547206165
+host-associated	agriculture	1.0702702702702702	0.18738738738738725
+food-human foods	agriculture	1.0772357723577235	0.205962059620596
+human-associated	agriculture	1.0454545454545454	0.1212121212121211
+food-food production facility	agriculture	1.070539419087137	0.1881051175656984
+hydrocarbon resources-fluids/swabs	agriculture	1.0209205020920502	0.05578800557880056
+miscellaneous natural or artificial environment	agriculture	1.041025641025641	0.10940170940170961
+air	agriculture	1.0508474576271187	0.13559322033898327
+food-farm environment	agriculture	1.2456140350877194	0.6549707602339184
+sediment	hydrocarbon resources-cores	1.0	0.0
+human-skin	hydrocarbon resources-cores	1.0	0.0
+wastewater/sludge	hydrocarbon resources-cores	1.0	0.0
+human-oral	hydrocarbon resources-cores	1.0	0.0
+microbial mat/biofilm	hydrocarbon resources-cores	1.0	0.0
+symbiont-associated	hydrocarbon resources-cores	1.06993006993007	0.1864801864801867
+human-gut	hydrocarbon resources-cores	1.0	0.0
+built environment	hydrocarbon resources-cores	1.0	0.0
+water	hydrocarbon resources-cores	1.007462686567164	0.01990049751243757
+plant-associated	hydrocarbon resources-cores	1.0	0.0
+soil	hydrocarbon resources-cores	1.0	0.0
+host-associated	hydrocarbon resources-cores	1.0	0.0
+food-human foods	hydrocarbon resources-cores	1.0324324324324323	0.0864864864864862
+human-associated	hydrocarbon resources-cores	1.0	0.0
+food-food production facility	hydrocarbon resources-cores	1.0282485875706215	0.07532956685499077
+hydrocarbon resources-fluids/swabs	hydrocarbon resources-cores	1.0208333333333333	0.05555555555555536
+miscellaneous natural or artificial environment	hydrocarbon resources-cores	1.0	0.0
+air	hydrocarbon resources-cores	1.0	0.0
+food-farm environment	hydrocarbon resources-cores	1.0373831775700935	0.09968847352024923
+human-skin	sediment	1.0	0.0
+wastewater/sludge	sediment	1.0	0.0
+human-oral	sediment	1.0	0.0
+microbial mat/biofilm	sediment	1.0	0.0
+symbiont-associated	sediment	1.1015625	0.2708333333333333
+human-gut	sediment	1.0	0.0
+built environment	sediment	1.0	0.0
+water	sediment	1.021505376344086	0.05734767025089601
+plant-associated	sediment	1.0	0.0
+soil	sediment	1.008695652173913	0.023188405797101314
+host-associated	sediment	1.0	0.0
+food-human foods	sediment	1.0406976744186047	0.10852713178294593
+human-associated	sediment	1.0	0.0
+food-food production facility	sediment	1.0301204819277108	0.08032128514056207
+hydrocarbon resources-fluids/swabs	sediment	1.0	0.0
+miscellaneous natural or artificial environment	sediment	1.0	0.0
+air	sediment	1.0	0.0
+food-farm environment	sediment	1.0659898477157361	0.175972927241963
+wastewater/sludge	human-skin	1.0	0.0
+human-oral	human-skin	1.0256410256410255	0.06837606837606813
+microbial mat/biofilm	human-skin	1.0	0.0
+symbiont-associated	human-skin	1.2134831460674158	0.5692883895131088
+human-gut	human-skin	1.0	0.0
+built environment	human-skin	1.0	0.0
+water	human-skin	1.0091743119266054	0.0244648318042812
+plant-associated	human-skin	1.0217391304347827	0.05797101449275388
+soil	human-skin	1.0	0.0
+host-associated	human-skin	1.0677966101694916	0.1807909604519775
+food-human foods	human-skin	1.0503597122302157	0.13429256594724195
+human-associated	human-skin	1.0357142857142858	0.0952380952380955
+food-food production facility	human-skin	1.037593984962406	0.10025062656641619
+hydrocarbon resources-fluids/swabs	human-skin	1.0	0.0
+miscellaneous natural or artificial environment	human-skin	1.0	0.0
+air	human-skin	1.0	0.0
+food-farm environment	human-skin	1.0858895705521472	0.22903885480572583
+human-oral	wastewater/sludge	1.0	0.0
+microbial mat/biofilm	wastewater/sludge	1.0	0.0
+symbiont-associated	wastewater/sludge	1.121212121212121	0.3232323232323229
+human-gut	wastewater/sludge	1.0	0.0
+built environment	wastewater/sludge	1.0	0.0
+water	wastewater/sludge	1.0095238095238095	0.025396825396825307
+plant-associated	wastewater/sludge	1.0	0.0
+soil	wastewater/sludge	1.0	0.0
+host-associated	wastewater/sludge	1.0	0.0
+food-human foods	wastewater/sludge	1.0492957746478873	0.13145539906103268
+human-associated	wastewater/sludge	1.0	0.0
+food-food production facility	wastewater/sludge	1.036764705882353	0.09803921568627476
+hydrocarbon resources-fluids/swabs	wastewater/sludge	1.0	0.0
+miscellaneous natural or artificial environment	wastewater/sludge	1.0	0.0
+air	wastewater/sludge	1.0	0.0
+food-farm environment	wastewater/sludge	1.0588235294117647	0.15686274509803924
+microbial mat/biofilm	human-oral	1.0	0.0
+symbiont-associated	human-oral	1.2159090909090908	0.5757575757575756
+human-gut	human-oral	1.0256410256410255	0.06837606837606813
+built environment	human-oral	1.0	0.0
+water	human-oral	1.0092592592592593	0.024691358024691468
+plant-associated	human-oral	1.021978021978022	0.0586080586080584
+soil	human-oral	1.0	0.0
+host-associated	human-oral	1.0517241379310345	0.1379310344827586
+food-human foods	human-oral	1.0507246376811594	0.1352657004830918
+human-associated	human-oral	1.018181818181818	0.04848484848484821
+food-food production facility	human-oral	1.0378787878787878	0.10101010101010093
+hydrocarbon resources-fluids/swabs	human-oral	1.0	0.0
+miscellaneous natural or artificial environment	human-oral	1.0	0.0
+air	human-oral	1.0	0.0
+food-farm environment	human-oral	1.0864197530864197	0.23045267489711918
+symbiont-associated	microbial mat/biofilm	1.1065573770491803	0.2841530054644809
+human-gut	microbial mat/biofilm	1.0	0.0
+built environment	microbial mat/biofilm	1.0	0.0
+water	microbial mat/biofilm	1.0222222222222221	0.059259259259259046
+plant-associated	microbial mat/biofilm	1.0	0.0
+soil	microbial mat/biofilm	1.0091743119266054	0.0244648318042812
+host-associated	microbial mat/biofilm	1.0	0.0
+food-human foods	microbial mat/biofilm	1.0421686746987953	0.11244979919678737
+human-associated	microbial mat/biofilm	1.0	0.0
+food-food production facility	microbial mat/biofilm	1.03125	0.08333333333333333
+hydrocarbon resources-fluids/swabs	microbial mat/biofilm	1.0	0.0
+miscellaneous natural or artificial environment	microbial mat/biofilm	1.0	0.0
+air	microbial mat/biofilm	1.0	0.0
+food-farm environment	microbial mat/biofilm	1.068062827225131	0.18150087260034908
+human-gut	symbiont-associated	1.2134831460674158	0.5692883895131088
+built environment	symbiont-associated	1.0086580086580086	0.023088023088022897
+water	symbiont-associated	1.0909090909090908	0.2424242424242422
+plant-associated	symbiont-associated	1.1869918699186992	0.49864498644986455
+soil	symbiont-associated	1.048780487804878	0.13008130081300825
+host-associated	symbiont-associated	1.375	1.0
+food-human foods	symbiont-associated	1.0773809523809523	0.2063492063492062
+human-associated	symbiont-associated	1.180952380952381	0.4825396825396826
+food-food production facility	symbiont-associated	1.0740740740740742	0.19753086419753116
+hydrocarbon resources-fluids/swabs	symbiont-associated	1.0608108108108107	0.16216216216216198
+miscellaneous natural or artificial environment	symbiont-associated	1.1359223300970873	0.3624595469255662
+air	symbiont-associated	1.1494252873563218	0.3984674329501914
+food-farm environment	symbiont-associated	1.1157894736842104	0.3087719298245612
+built environment	human-gut	1.0	0.0
+water	human-gut	1.0091743119266054	0.0244648318042812
+plant-associated	human-gut	1.0217391304347827	0.05797101449275388
+soil	human-gut	1.0	0.0
+host-associated	human-gut	1.0677966101694916	0.1807909604519775
+food-human foods	human-gut	1.0503597122302157	0.13429256594724195
+human-associated	human-gut	1.0357142857142858	0.0952380952380955
+food-food production facility	human-gut	1.037593984962406	0.10025062656641619
+hydrocarbon resources-fluids/swabs	human-gut	1.0	0.0
+miscellaneous natural or artificial environment	human-gut	1.0	0.0
+air	human-gut	1.0	0.0
+food-farm environment	human-gut	1.0858895705521472	0.22903885480572583
+water	built environment	1.0	0.0
+plant-associated	built environment	1.0	0.0
+soil	built environment	1.0	0.0
+host-associated	built environment	1.0	0.0
+food-human foods	built environment	1.003690036900369	0.009840098400983877
+human-associated	built environment	1.0	0.0
+food-food production facility	built environment	1.0274509803921568	0.07320261437908471
+hydrocarbon resources-fluids/swabs	built environment	1.0	0.0
+miscellaneous natural or artificial environment	built environment	1.0	0.0
+air	built environment	1.0	0.0
+food-farm environment	built environment	1.0133333333333334	0.035555555555555785
+plant-associated	water	1.006896551724138	0.018390804597701187
+soil	water	1.0	0.0
+host-associated	water	1.0083333333333333	0.022222222222222143
+food-human foods	water	1.0374331550802138	0.09982174688057022
+human-associated	water	1.008	0.021333333333333353
+food-food production facility	water	1.0276243093922652	0.07366482504604062
+hydrocarbon resources-fluids/swabs	water	1.0071942446043165	0.01918465227817734
+miscellaneous natural or artificial environment	water	1.0116279069767442	0.03100775193798455
+air	water	1.01	0.02666666666666669
+food-farm environment	water	1.0710900473933649	0.18957345971563969
+soil	plant-associated	1.0	0.0
+host-associated	plant-associated	1.0543478260869565	0.14492753623188412
+food-human foods	plant-associated	1.0454545454545454	0.1212121212121211
+human-associated	plant-associated	1.0277777777777777	0.0740740740740738
+food-food production facility	plant-associated	1.035294117647059	0.09411764705882379
+hydrocarbon resources-fluids/swabs	plant-associated	1.0	0.0
+miscellaneous natural or artificial environment	plant-associated	1.0	0.0
+air	plant-associated	1.0	0.0
+food-farm environment	plant-associated	1.1297297297297297	0.34594594594594597
+host-associated	soil	1.0	0.0
+food-human foods	soil	1.0182926829268293	0.04878048780487809
+human-associated	soil	1.0	0.0
+food-food production facility	soil	1.0127388535031847	0.03397027600849256
+hydrocarbon resources-fluids/swabs	soil	1.0	0.0
+miscellaneous natural or artificial environment	soil	1.0	0.0
+air	soil	1.0	0.0
+food-farm environment	soil	1.1055555555555556	0.28148148148148167
+food-human foods	host-associated	1.0529801324503312	0.14128035320088314
+human-associated	host-associated	1.0533333333333332	0.14222222222222194
+food-food production facility	host-associated	1.0413793103448277	0.11034482758620712
+hydrocarbon resources-fluids/swabs	host-associated	1.0	0.0
+miscellaneous natural or artificial environment	host-associated	1.0	0.0
+air	host-associated	1.015625	0.041666666666666664
+food-farm environment	host-associated	1.1183431952662721	0.31558185404339234
+human-associated	food-human foods	1.0451612903225806	0.12043010752688173
+food-food production facility	food-human foods	1.0746268656716418	0.1990049751243781
+hydrocarbon resources-fluids/swabs	food-human foods	1.0317460317460319	0.08465608465608494
+miscellaneous natural or artificial environment	food-human foods	1.0472972972972974	0.1261261261261263
+air	food-human foods	1.0534351145038168	0.14249363867684472
+food-farm environment	food-human foods	1.0398009950248757	0.10613598673300177
+food-food production facility	human-associated	1.0335570469798658	0.08948545861297556
+hydrocarbon resources-fluids/swabs	human-associated	1.0	0.0
+miscellaneous natural or artificial environment	human-associated	1.0	0.0
+air	human-associated	1.0	0.0
+food-farm environment	human-associated	1.0726256983240223	0.19366852886405952
+hydrocarbon resources-fluids/swabs	food-food production facility	1.0276243093922652	0.07366482504604062
+miscellaneous natural or artificial environment	food-food production facility	1.0352112676056338	0.09389671361502334
+air	food-food production facility	1.04	0.10666666666666676
+food-farm environment	food-food production facility	1.050251256281407	0.13400335008375208
+miscellaneous natural or artificial environment	hydrocarbon resources-fluids/swabs	1.0	0.0
+air	hydrocarbon resources-fluids/swabs	1.0	0.0
+food-farm environment	hydrocarbon resources-fluids/swabs	1.036697247706422	0.09785932721712538
+air	miscellaneous natural or artificial environment	1.0166666666666666	0.04444444444444429
+food-farm environment	miscellaneous natural or artificial environment	1.0568181818181819	0.15151515151515169
+food-farm environment	air	1.0974025974025974	0.25974025974025966
