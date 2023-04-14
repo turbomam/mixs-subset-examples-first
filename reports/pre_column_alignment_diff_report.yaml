@@ -1,0 +1,30 @@
+Intersection:
+- Value syntax
+- Expected value
+- Structured comment name
+- Example
+- Preferred unit
+- MIXS ID
+- Definition
+data/mixs_v6_MIxS.tsv only:
+- ' '
+- migs_vi
+- migs_ba
+- mimarks_s
+- miuvig
+- Occurence
+- mimag
+- migs_eu
+- migs_org
+- migs_pl
+- misag
+- mimarks_c
+- Item (rdfs:label)
+- Section
+- mims
+data/mixs_v6_environmental_packages.tsv only:
+- ''
+- Occurrence
+- Requirement
+- Environmental package
+- Package item

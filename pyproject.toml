@@ -38,12 +38,12 @@ linkml-json2dh = 'src.mixs_subset_examples_first.datamodel.linkml_json2dh:extrac
 
 combine_any_tsvs = 'src.mixs_subset_examples_first.datamodel.combine_any_tsvs:combine_tsvs'
 compare_headers = 'src.mixs_subset_examples_first.datamodel.compare_headers:cli'
-find_multi_pairings = 'src.mixs_subset_examples_first.datamodel.find_multi_pairings:main'
-tsv_key_management = 'src.mixs_subset_examples_first.datamodel.tsv_key_management:cli'
+find_contradictions = 'src.mixs_subset_examples_first.datamodel.find_contradictions:main'
+tsv_column_alignment = 'src.mixs_subset_examples_first.datamodel.tsv_column_alignment:cli'
 xlsx_tab_to_tsv = 'src.mixs_subset_examples_first.datamodel.xlsx_tab_to_tsv:cli'
 drop_then_remove_dupes = 'src.mixs_subset_examples_first.datamodel.drop_then_remove_dupes:main'
 
 filter_column = 'src.mixs_subset_examples_first.datamodel.filter_column:cli'
-worst_offenders = 'src.mixs_subset_examples_first.datamodel.worst_offenders:worst_offender'
+contradiction_score_reports = 'src.mixs_subset_examples_first.datamodel.contradiction_score_reports:main'
 
 
