@@ -229,6 +229,8 @@ reports/report_pre_id_scn_contradictions.yaml: data/mixs_combined_all.tsv data/n
 		--key2 "Structured comment name" \
 		--output-file $@
 
+####
+
 
 do_post_reports: clean_reports \
 reports/report_post_id_scn_contradictions.yaml \
@@ -316,6 +318,19 @@ reports/report_post_id_valsyn_contradictions.yaml: data/mixs_combined_all_modifi
 		--input-file $< \
 		--key1 "MIXS ID" \
 		--key2 "Value syntax" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
+
+reports/report_post_id_expval_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Description \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "Expected value" \
 		--no-check-ncbi \
 		--no-see-alsos \
 		--output-file $@
