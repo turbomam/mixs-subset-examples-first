@@ -1,0 +1,22 @@
+mimssoil_set:
+  - samp_name: xxx1
+    collection_date: xxx
+    env_broad_scale: xxx
+    env_local_scale: xxx
+    env_medium: xxx
+    geo_loc_name: xxx
+    lat_lon: xxx
+    project_name: xxx
+    samp_taxon_id: xxx
+    seq_meth: xxx
+  - samp_name: xxx2
+    collection_date: xxx
+    env_broad_scale: xxx
+    env_local_scale: xxx
+    env_medium: xxx
+    geo_loc_name: xxx
+    lat_lon: xxx
+    project_name: xxx
+    samp_taxon_id: xxx
+    seq_meth: xxx
+
