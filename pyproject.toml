@@ -46,5 +46,11 @@ drop_then_remove_dupes = 'src.mixs_subset_examples_first.datamodel.drop_then_rem
 
 filter_column = 'src.mixs_subset_examples_first.datamodel.filter_column:cli'
 contradiction_score_reports = 'src.mixs_subset_examples_first.datamodel.contradiction_score_reports:main'
+headers_as_lines = 'src.mixs_subset_examples_first.datamodel.headers_two:print_headers'
+extract_unique_column_vals = 'src.mixs_subset_examples_first.datamodel.unique_two:extract_unique_values'
+combine_checklists_and_env_packages = 'src.mixs_subset_examples_first.datamodel.combine_checklists_and_env_packages:generate_combined_dataframe'
+combine_same_col_schemasheets = 'src.mixs_subset_examples_first.datamodel.combine_same_col_schemasheets:combine_tsvs'
+melt_tsv = 'src.mixs_subset_examples_first.datamodel.melt_tsv:melt_tsv'
+
 
 

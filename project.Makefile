@@ -49,11 +49,14 @@ project/reports/slot_usage_esp_validation.tsv:
 # Define a list of sheet names to extract.
 SHEET_NAMES := MIxS environmental_packages
 
-.PHONY: clean report_contradiction_scores extract_all_sheets column_alignment_all modification_lifecycle post_column_alignment_diff_report pre_column_alignment_diff_report pre_modifications report_id_item_contradictions report_id_scn_contradictions report_sc_item_contradictions tsvs_cleanup
+.PHONY: proj_clean report_contradiction_scores extract_all_sheets column_alignment_all \
+modification_lifecycle \
+post_column_alignment_diff_report pre_column_alignment_diff_report \
+pre_modifications report_id_item_contradictions report_id_scn_contradictions report_sc_item_contradictions tsvs_cleanup
 
-clean: target_cleanup downloads_cleanup reports_cleanup
+proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 
-report_contradiction_scores: clean reports/contradiction_score_details.tsv
+report_contradiction_scores: proj_clean reports/contradiction_score_details.tsv
 
 reports/contradiction_score_details.tsv: data/mixs_combined_all.tsv
 	$(RUN) contradiction_score_reports \
@@ -65,7 +68,7 @@ reports/contradiction_score_details.tsv: data/mixs_combined_all.tsv
 		--excluded-cols "Section" \
 		--input-tsv $<
 
-pre_modifications_reports: clean extract_all_sheets \
+pre_modifications_reports: proj_clean extract_all_sheets \
 reports/pre_column_alignment_diff_report.yaml column_alignment_all reports/post_column_alignment_diff_report.yaml \
 target/mixs_combined_filtered.tsv \
 reports/report_pre_id_scn_contradictions.yaml
@@ -90,7 +93,19 @@ reports_cleanup:
 #	rm -rf downloads
 	mkdir -p downloads
 	touch downloads/.gitkeep
-	rm -rf reports/report_pre_id_scn_contradictions.yaml
+	rm -rf reports/report_pre_*_contradictions.yaml
+	rm -rf reports/report_post_*_contradictions.yaml
+	rm -rf reports/reports/Database-mimssoil_set-example.yaml.log
+
+data_cleanup:
+#	rm -rf downloads
+	mkdir -p downloads
+	touch downloads/.gitkeep
+	rm -rf data/core_requirements.tsv
+	rm -rf data/mixs_v6_asserted_and_combinations.tsv
+	rm -rf data/mixs_v6_checklists_env_packages_combination_classes.tsv
+	rm -rf data/mixs_v6_env_packages_checklists_classes.schema.json
+	rm -rf data/mixs_v6_env_packages_checklists_classes.yaml
 
 
 
@@ -335,6 +350,32 @@ reports/report_post_id_expval_contradictions.yaml: data/mixs_combined_all_modifi
 		--no-see-alsos \
 		--output-file $@
 
+
+reports/report_post_id_range_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Description \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "range" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
+
+reports/report_post_id_strucpat_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
+	$(RUN) find_contradictions \
+		--attributes-file $(word 2, $^) \
+		--attributes-key Description \
+		--context "Environmental package" \
+		--input-file $< \
+		--key1 "MIXS ID" \
+		--key2 "structured pattern" \
+		--no-check-ncbi \
+		--no-see-alsos \
+		--output-file $@
+
 data/ncbi_biosample_attributes.xml:
 	curl -o $@ https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml
 
@@ -435,3 +476,110 @@ target/0000103_vs_0001335_by_ID.tsv: data/mixs_combined_all.tsv
 		--accept-empties \
 		--output-tsv $@
 
+####
+
+data/mixs_v6_environmental_packages_for_classes.tsv: data/mixs_v6_environmental_packages.tsv
+	$(RUN) extract_unique_column_vals \
+		--input-tsv $< \
+		--output-tsv $@ \
+		--column "Environmental package"
+
+data/mixs_v6_checklists_plus_for_classes.tsv: data/mixs_v6_MIxS.tsv
+	$(RUN) headers_as_lines \
+		--input-tsv $< \
+		--output-tsv $@
+
+# creation of data/mixs_v6_checklists_env_packages_classes_curated.tsv
+# concatenate:
+#   from data/mixs_v6_checklists_plus_for_classes.tsv: migs_ba migs_eu migs_org migs_pl migs_vi mimag mimarks_c mimarks_s mims misag miuvig
+#   from data/mixs_v6_environmental_packages_for_classes.tsv: ALL ROWS
+# add the following two rows of tab-separated headers
+#class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
+#> class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
+# add rows with the follwoing two class names:
+#Checklist
+#EnvironmentalPackage
+# and assign those as the is_a parent to the rows from data/mixs_v6_environmental_packages_for_classes.tsv and data/mixs_v6_checklists_plus_for_classes.tsv
+# the mixin column for the checklist rows should be set to true
+#   Excel "TRUE" or "'true"?
+# sort by G (is_a) and then A (class) without sorting the two header rows
+# add class_uri values (from where?)
+#   this source is a cheat because I extracted it from some file LS shared with me
+#     https://github.com/GenomicsStandardsConsortium/mixs/blob/issue-511-tested-schemasheets/schemasheets/tsv_in/MIxS_6_term_updates_classdefs.tsv
+# I don't see any term with ID MIXS:0016017
+#   could create an UnknownTerm class as a palceholder
+# does this need to be added manually?
+#   Agriculture	agriculture		MIXS:0016018
+# add description values (from where?)
+
+data/mixs_v6_checklists_env_packages_combination_classes.tsv:
+	# assumes the curated file has two header rows
+	$(RUN) combine_checklists_and_env_packages \
+		--input-file data/mixs_v6_checklists_env_packages_classes_curated.tsv \
+		--output-file $@ \
+
+data/mixs_v6_asserted_and_combinations.tsv: data/mixs_v6_checklists_env_packages_combination_classes.tsv
+	# assumes the curated file has two header rows
+	#  and the combination file has one header row
+	$(RUN) combine_same_col_schemasheets \
+		--input1 data/mixs_v6_checklists_env_packages_classes_curated.tsv \
+		--input2 $< \
+		--output $@ \
+
+data/core_requirements.tsv: data/mixs_v6_MIxS.tsv
+	# https://github.com/GenomicsStandardsConsortium/mixs/wiki/5.-MIxS-checklists
+	$(RUN) melt_tsv \
+		--input-file $< \
+		--output-file $@ \
+		--id-vars "Structured comment name" \
+		--value-vars migs_ba \
+		--value-vars migs_eu \
+		--value-vars migs_org \
+		--value-vars migs_pl \
+		--value-vars migs_vi \
+		--value-vars mimag \
+		--value-vars mimarks_c \
+		--value-vars mimarks_s \
+		--value-vars mims \
+		--value-vars misag \
+		--value-vars miuvig \
+		--output-col-name-1 slot \
+		--output-col-name-2 class \
+		--output-col-name-3 mixs_requirement_value
+
+data/core_requirements_recommended_required.tsv: data/core_requirements.tsv data/mixs_requirement_codes.tsv
+	poetry run python src/mixs_subset_examples_first/datamodel/merge_tsvs.py \
+		--col-drop-col "not applicable" \
+		--col-drop-col mixs_citation \
+		--col-drop-col mixs_desc \
+		--col-drop-col mixs_name \
+		--col-drop-col optional \
+		--row-drop-col "not applicable" \
+		--file1 $(word 1,$^) \
+		--file2 $(word 2,$^) \
+		--on mixs_requirement_value \
+		--output $@
+
+#creation of data/core_requirements_recommended_required_curated.tsv
+#there should be two header rows, like this:
+#slot	class	mixs_requirement_value	recommended	required
+#> slot	class	ignore	recommended	required
+
+
+data/mixs_v6_env_packages_checklists_classes.yaml: data/mixs_v6_asserted_and_combinations.tsv \
+data/core_requirements_recommended_required_curated.tsv \
+data/Database.tsv
+	$(RUN) sheets2linkml $^ > $@
+
+reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_packages_checklists_classes.yaml
+	- $(RUN) linkml-lint $< > $@
+
+
+data/mixs_v6_env_packages_checklists_classes.schema.json: data/mixs_v6_env_packages_checklists_classes.yaml
+	$(RUN) gen-json-schema \
+		--closed $< > $@
+
+reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checklists_classes.schema.json examples/Database-mimssoil_set-example.yaml
+	$(RUN) check-jsonschema --schemafile $^ | tee $@
+
+minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
