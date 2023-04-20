@@ -569,7 +569,7 @@ data/core_requirements_recommended_required.tsv: data/core_requirements.tsv data
 
 data/mixs_v6_env_packages_checklists_classes.yaml: data/mixs_v6_asserted_and_combinations.tsv \
 data/core_requirements_recommended_required_curated.tsv \
-data/Database.tsv
+data/Database.tsv data/mixs_combined_all_modified_lossy_deduped.tsv
 	$(RUN) sheets2linkml $^ > $@
 
 reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_packages_checklists_classes.yaml
