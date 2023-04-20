@@ -1,6 +1,8 @@
 mimssoil_set:
   - samp_name: xxx1
     collection_date: xxx
+    depth: xxx
+    elev: xxx
     env_broad_scale: xxx
     env_local_scale: xxx
     env_medium: xxx
@@ -11,6 +13,8 @@ mimssoil_set:
     seq_meth: xxx
   - samp_name: xxx2
     collection_date: xxx
+    depth: xxx
+    elev: xxx
     env_broad_scale: xxx
     env_local_scale: xxx
     env_medium: xxx
@@ -19,4 +23,3 @@ mimssoil_set:
     project_name: xxx
     samp_taxon_id: xxx
     seq_meth: xxx
-

@@ -55,6 +55,8 @@ post_column_alignment_diff_report pre_column_alignment_diff_report \
 pre_modifications report_id_item_contradictions report_id_scn_contradictions report_sc_item_contradictions tsvs_cleanup
 
 proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
+	rm -rf data/codified_env_package_requirements.tsv
+	rm -rf data/mixs_v6_environmental_packages.tsv
 
 report_contradiction_scores: proj_clean reports/contradiction_score_details.tsv
 
@@ -561,15 +563,27 @@ data/core_requirements_recommended_required.tsv: data/core_requirements.tsv data
 		--on mixs_requirement_value \
 		--output $@
 
+
+data/codified_env_package_requirements.tsv: data/mixs_v6_environmental_packages.tsv data/mixs_requirement_codes.tsv
+	$(RUN) codify_env_package_requirements \
+		--ep-file $(word 1, $^) \
+		--pascal-case-file data/mixs_v6_checklists_env_packages_classes_curated.tsv \
+		--req-code-file $(word 2, $^) \
+		--output-file $@
+
 #creation of data/core_requirements_recommended_required_curated.tsv
 #there should be two header rows, like this:
 #slot	class	mixs_requirement_value	recommended	required
 #> slot	class	ignore	recommended	required
 
+# creating codified_env_package_requirements_curated.tsv
+# insert second header with LinkML column specifications
+
 
 data/mixs_v6_env_packages_checklists_classes.yaml: data/mixs_v6_asserted_and_combinations.tsv \
 data/core_requirements_recommended_required_curated.tsv \
-data/Database.tsv data/mixs_combined_all_modified_lossy_deduped.tsv
+data/Database.tsv data/mixs_combined_all_modified_lossy_deduped.tsv \
+data/codified_env_package_requirements_curated.tsv
 	$(RUN) sheets2linkml $^ > $@
 
 reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_packages_checklists_classes.yaml
@@ -584,10 +598,3 @@ reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checkl
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
 minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
-
-data/codified_env_package_requirements.tsv: data/mixs_v6_environmental_packages.tsv data/mixs_requirement_codes.tsv
-	$(RUN) codify_env_package_requirements \
-		--ep-file $(word 1, $^) \
-		--pascal-case-file data/mixs_v6_checklists_env_packages_classes_curated.tsv \
-		--req-code-file $(word 2, $^) \
-		--output-file $@

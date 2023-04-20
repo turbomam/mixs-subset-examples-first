@@ -1,8 +1,9 @@
 class	Structured comment name	recommended	required
-Air	samp_name		True
-Air	project_name		True
-Air	alt		True
-Air	elev	True	
+> class	slot	recommended	required
+Air	samp_name		TRUE
+Air	project_name		TRUE
+Air	alt		TRUE
+Air	elev	TRUE	
 Air	barometric_press		
 Air	carb_dioxide		
 Air	carb_monoxide		
@@ -28,34 +29,34 @@ Air	volatile_org_comp
 Air	wind_direction		
 Air	wind_speed		
 Air	misc_param		
-BuiltEnvironment	samp_name		True
-BuiltEnvironment	project_name		True
-BuiltEnvironment	surf_material	True	
-BuiltEnvironment	surf_air_cont	True	
-BuiltEnvironment	rel_air_humidity		True
-BuiltEnvironment	abs_air_humidity		True
-BuiltEnvironment	surf_humidity	True	
-BuiltEnvironment	air_temp		True
-BuiltEnvironment	surf_temp	True	
-BuiltEnvironment	surf_moisture_ph	True	
-BuiltEnvironment	build_occup_type		True
-BuiltEnvironment	surf_moisture	True	
+BuiltEnvironment	samp_name		TRUE
+BuiltEnvironment	project_name		TRUE
+BuiltEnvironment	surf_material	TRUE	
+BuiltEnvironment	surf_air_cont	TRUE	
+BuiltEnvironment	rel_air_humidity		TRUE
+BuiltEnvironment	abs_air_humidity		TRUE
+BuiltEnvironment	surf_humidity	TRUE	
+BuiltEnvironment	air_temp		TRUE
+BuiltEnvironment	surf_temp	TRUE	
+BuiltEnvironment	surf_moisture_ph	TRUE	
+BuiltEnvironment	build_occup_type		TRUE
+BuiltEnvironment	surf_moisture	TRUE	
 BuiltEnvironment	dew_point		
-BuiltEnvironment	carb_dioxide		True
-BuiltEnvironment	ventilation_type		True
-BuiltEnvironment	organism_count		True
-BuiltEnvironment	indoor_space		True
-BuiltEnvironment	indoor_surf	True	
-BuiltEnvironment	filter_type		True
-BuiltEnvironment	heat_cool_type		True
+BuiltEnvironment	carb_dioxide		TRUE
+BuiltEnvironment	ventilation_type		TRUE
+BuiltEnvironment	organism_count		TRUE
+BuiltEnvironment	indoor_space		TRUE
+BuiltEnvironment	indoor_surf	TRUE	
+BuiltEnvironment	filter_type		TRUE
+BuiltEnvironment	heat_cool_type		TRUE
 BuiltEnvironment	substructure_type		
-BuiltEnvironment	building_setting		True
-BuiltEnvironment	light_type		True
+BuiltEnvironment	building_setting		TRUE
+BuiltEnvironment	light_type		TRUE
 BuiltEnvironment	samp_sort_meth		
-BuiltEnvironment	space_typ_state		True
-BuiltEnvironment	typ_occup_density		True
-BuiltEnvironment	occup_samp		True
-BuiltEnvironment	occup_density_samp		True
+BuiltEnvironment	space_typ_state		TRUE
+BuiltEnvironment	typ_occup_density		TRUE
+BuiltEnvironment	occup_samp		TRUE
+BuiltEnvironment	occup_density_samp		TRUE
 BuiltEnvironment	address		
 BuiltEnvironment	adj_room		
 BuiltEnvironment	aero_struc		
@@ -190,11 +191,11 @@ BuiltEnvironment	window_water_mold
 BuiltEnvironment	window_status		
 BuiltEnvironment	window_type		
 BuiltEnvironment	window_vert_pos		
-HostAssociated	samp_name		True
-HostAssociated	project_name		True
-HostAssociated	alt	True	
-HostAssociated	depth	True	
-HostAssociated	elev	True	
+HostAssociated	samp_name		TRUE
+HostAssociated	project_name		TRUE
+HostAssociated	alt	TRUE	
+HostAssociated	depth	TRUE	
+HostAssociated	elev	TRUE	
 HostAssociated	ances_data		
 HostAssociated	biol_stat		
 HostAssociated	genetic_mod		
@@ -240,8 +241,8 @@ HostAssociated	samp_store_dur
 HostAssociated	samp_store_loc		
 HostAssociated	host_symbiont		
 HostAssociated	misc_param		
-HumanAssociated	samp_name		True
-HumanAssociated	project_name		True
+HumanAssociated	samp_name		TRUE
+HumanAssociated	project_name		TRUE
 HumanAssociated	host_subject_id		
 HumanAssociated	host_age		
 HumanAssociated	host_sex		
@@ -293,8 +294,8 @@ HumanAssociated	samp_store_dur
 HumanAssociated	host_symbiont		
 HumanAssociated	samp_store_loc		
 HumanAssociated	misc_param		
-HumanGut	samp_name		True
-HumanGut	project_name		True
+HumanGut	samp_name		TRUE
+HumanGut	project_name		TRUE
 HumanGut	gastrointest_disord		
 HumanGut	liver_disord		
 HumanGut	special_diet		
@@ -330,8 +331,8 @@ HumanGut	samp_store_dur
 HumanGut	host_symbiont		
 HumanGut	samp_store_loc		
 HumanGut	misc_param		
-HumanOral	samp_name		True
-HumanOral	project_name		True
+HumanOral	samp_name		TRUE
+HumanOral	project_name		TRUE
 HumanOral	nose_throat_disord		
 HumanOral	time_last_toothbrush		
 HumanOral	host_subject_id		
@@ -366,8 +367,8 @@ HumanOral	samp_store_dur
 HumanOral	host_symbiont		
 HumanOral	samp_store_loc		
 HumanOral	misc_param		
-HumanSkin	samp_name		True
-HumanSkin	project_name		True
+HumanSkin	samp_name		TRUE
+HumanSkin	project_name		TRUE
 HumanSkin	dermatology_disord		
 HumanSkin	time_since_last_wash		
 HumanSkin	dominant_hand		
@@ -403,8 +404,8 @@ HumanSkin	samp_store_dur
 HumanSkin	samp_store_loc		
 HumanSkin	host_symbiont		
 HumanSkin	misc_param		
-HumanVaginal	samp_name		True
-HumanVaginal	project_name		True
+HumanVaginal	samp_name		TRUE
+HumanVaginal	project_name		TRUE
 HumanVaginal	menarche		
 HumanVaginal	sexual_act		
 HumanVaginal	pregnancy		
@@ -448,37 +449,37 @@ HumanVaginal	samp_store_loc
 HumanVaginal	samp_store_dur		
 HumanVaginal	host_symbiont		
 HumanVaginal	misc_param		
-HydrocarbonResourcesCores	samp_name		True
-HydrocarbonResourcesCores	project_name		True
-HydrocarbonResourcesCores	hcr		True
-HydrocarbonResourcesCores	hc_produced		True
-HydrocarbonResourcesCores	basin		True
-HydrocarbonResourcesCores	field	True	
-HydrocarbonResourcesCores	reservoir	True	
-HydrocarbonResourcesCores	hcr_temp		True
+HydrocarbonResourcesCores	samp_name		TRUE
+HydrocarbonResourcesCores	project_name		TRUE
+HydrocarbonResourcesCores	hcr		TRUE
+HydrocarbonResourcesCores	hc_produced		TRUE
+HydrocarbonResourcesCores	basin		TRUE
+HydrocarbonResourcesCores	field	TRUE	
+HydrocarbonResourcesCores	reservoir	TRUE	
+HydrocarbonResourcesCores	hcr_temp		TRUE
 HydrocarbonResourcesCores	tvdss_of_hcr_temp		
 HydrocarbonResourcesCores	hcr_pressure		
 HydrocarbonResourcesCores	tvdss_of_hcr_press		
 HydrocarbonResourcesCores	permeability		
 HydrocarbonResourcesCores	porosity		
-HydrocarbonResourcesCores	lithology	True	
-HydrocarbonResourcesCores	depos_env	True	
-HydrocarbonResourcesCores	hcr_geol_age	True	
+HydrocarbonResourcesCores	lithology	TRUE	
+HydrocarbonResourcesCores	depos_env	TRUE	
+HydrocarbonResourcesCores	hcr_geol_age	TRUE	
 HydrocarbonResourcesCores	owc_tvdss		
-HydrocarbonResourcesCores	hcr_fw_salinity	True	
-HydrocarbonResourcesCores	sulfate_fw		True
-HydrocarbonResourcesCores	vfa_fw		True
+HydrocarbonResourcesCores	hcr_fw_salinity	TRUE	
+HydrocarbonResourcesCores	sulfate_fw		TRUE
+HydrocarbonResourcesCores	vfa_fw		TRUE
 HydrocarbonResourcesCores	sr_kerog_type		
 HydrocarbonResourcesCores	sr_lithology		
 HydrocarbonResourcesCores	sr_dep_env		
 HydrocarbonResourcesCores	sr_geol_age		
-HydrocarbonResourcesCores	samp_well_name	True	
-HydrocarbonResourcesCores	win	True	
-HydrocarbonResourcesCores	samp_type		True
-HydrocarbonResourcesCores	samp_subtype	True	
-HydrocarbonResourcesCores	temp		True
+HydrocarbonResourcesCores	samp_well_name	TRUE	
+HydrocarbonResourcesCores	win	TRUE	
+HydrocarbonResourcesCores	samp_type		TRUE
+HydrocarbonResourcesCores	samp_subtype	TRUE	
+HydrocarbonResourcesCores	temp		TRUE
 HydrocarbonResourcesCores	pressure		
-HydrocarbonResourcesCores	samp_tvdss	True	
+HydrocarbonResourcesCores	samp_tvdss	TRUE	
 HydrocarbonResourcesCores	samp_md		
 HydrocarbonResourcesCores	elev		
 HydrocarbonResourcesCores	oxy_stat_samp		
@@ -486,85 +487,85 @@ HydrocarbonResourcesCores	samp_transport_cond
 HydrocarbonResourcesCores	samp_store_temp		
 HydrocarbonResourcesCores	samp_store_dur		
 HydrocarbonResourcesCores	samp_store_loc		
-HydrocarbonResourcesCores	samp_vol_we_dna_ext	True	
-HydrocarbonResourcesCores	organism_count	True	
+HydrocarbonResourcesCores	samp_vol_we_dna_ext	TRUE	
+HydrocarbonResourcesCores	organism_count	TRUE	
 HydrocarbonResourcesCores	org_count_qpcr_info		
-HydrocarbonResourcesCores	ph	True	
+HydrocarbonResourcesCores	ph	TRUE	
 HydrocarbonResourcesCores	salinity		
 HydrocarbonResourcesCores	alkalinity		
 HydrocarbonResourcesCores	alkalinity_method		
-HydrocarbonResourcesCores	sulfate	True	
-HydrocarbonResourcesCores	sulfide	True	
-HydrocarbonResourcesCores	tot_sulfur	True	
-HydrocarbonResourcesCores	nitrate	True	
-HydrocarbonResourcesCores	nitrite	True	
-HydrocarbonResourcesCores	ammonium	True	
+HydrocarbonResourcesCores	sulfate	TRUE	
+HydrocarbonResourcesCores	sulfide	TRUE	
+HydrocarbonResourcesCores	tot_sulfur	TRUE	
+HydrocarbonResourcesCores	nitrate	TRUE	
+HydrocarbonResourcesCores	nitrite	TRUE	
+HydrocarbonResourcesCores	ammonium	TRUE	
 HydrocarbonResourcesCores	tot_nitro		
-HydrocarbonResourcesCores	diss_iron	True	
+HydrocarbonResourcesCores	diss_iron	TRUE	
 HydrocarbonResourcesCores	sodium		
 HydrocarbonResourcesCores	chloride		
 HydrocarbonResourcesCores	potassium		
 HydrocarbonResourcesCores	magnesium		
 HydrocarbonResourcesCores	calcium		
-HydrocarbonResourcesCores	tot_iron	True	
+HydrocarbonResourcesCores	tot_iron	TRUE	
 HydrocarbonResourcesCores	diss_org_carb		
 HydrocarbonResourcesCores	diss_inorg_carb		
-HydrocarbonResourcesCores	diss_inorg_phosp	True	
+HydrocarbonResourcesCores	diss_inorg_phosp	TRUE	
 HydrocarbonResourcesCores	tot_phosp		
 HydrocarbonResourcesCores	suspend_solids		
 HydrocarbonResourcesCores	density		
 HydrocarbonResourcesCores	diss_carb_dioxide		
 HydrocarbonResourcesCores	diss_oxygen_fluid		
-HydrocarbonResourcesCores	vfa	True	
-HydrocarbonResourcesCores	benzene	True	
-HydrocarbonResourcesCores	toluene	True	
-HydrocarbonResourcesCores	ethylbenzene	True	
-HydrocarbonResourcesCores	xylene	True	
-HydrocarbonResourcesCores	api		True
-HydrocarbonResourcesCores	tan	True	
+HydrocarbonResourcesCores	vfa	TRUE	
+HydrocarbonResourcesCores	benzene	TRUE	
+HydrocarbonResourcesCores	toluene	TRUE	
+HydrocarbonResourcesCores	ethylbenzene	TRUE	
+HydrocarbonResourcesCores	xylene	TRUE	
+HydrocarbonResourcesCores	api		TRUE
+HydrocarbonResourcesCores	tan	TRUE	
 HydrocarbonResourcesCores	viscosity		
 HydrocarbonResourcesCores	pour_point		
-HydrocarbonResourcesCores	saturates_pc	True	
-HydrocarbonResourcesCores	aromatics_pc	True	
-HydrocarbonResourcesCores	resins_pc	True	
-HydrocarbonResourcesCores	asphaltenes_pc	True	
+HydrocarbonResourcesCores	saturates_pc	TRUE	
+HydrocarbonResourcesCores	aromatics_pc	TRUE	
+HydrocarbonResourcesCores	resins_pc	TRUE	
+HydrocarbonResourcesCores	asphaltenes_pc	TRUE	
 HydrocarbonResourcesCores	misc_param		
 HydrocarbonResourcesCores	additional_info		
-HydrocarbonResourcesFluidsSwabs	samp_name		True
-HydrocarbonResourcesFluidsSwabs	project_name		True
-HydrocarbonResourcesFluidsSwabs	hcr		True
-HydrocarbonResourcesFluidsSwabs	hc_produced		True
-HydrocarbonResourcesFluidsSwabs	basin		True
-HydrocarbonResourcesFluidsSwabs	field	True	
-HydrocarbonResourcesFluidsSwabs	reservoir	True	
-HydrocarbonResourcesFluidsSwabs	hcr_temp	True	
+HydrocarbonResourcesFluidsSwabs	samp_name		TRUE
+HydrocarbonResourcesFluidsSwabs	project_name		TRUE
+HydrocarbonResourcesFluidsSwabs	hcr		TRUE
+HydrocarbonResourcesFluidsSwabs	hc_produced		TRUE
+HydrocarbonResourcesFluidsSwabs	basin		TRUE
+HydrocarbonResourcesFluidsSwabs	field	TRUE	
+HydrocarbonResourcesFluidsSwabs	reservoir	TRUE	
+HydrocarbonResourcesFluidsSwabs	hcr_temp	TRUE	
 HydrocarbonResourcesFluidsSwabs	tvdss_of_hcr_temp		
 HydrocarbonResourcesFluidsSwabs	hcr_pressure		
 HydrocarbonResourcesFluidsSwabs	tvdss_of_hcr_press		
-HydrocarbonResourcesFluidsSwabs	lithology	True	
-HydrocarbonResourcesFluidsSwabs	depos_env	True	
-HydrocarbonResourcesFluidsSwabs	hcr_geol_age	True	
-HydrocarbonResourcesFluidsSwabs	hcr_fw_salinity	True	
-HydrocarbonResourcesFluidsSwabs	sulfate_fw	True	
-HydrocarbonResourcesFluidsSwabs	vfa_fw	True	
-HydrocarbonResourcesFluidsSwabs	prod_start_date	True	
-HydrocarbonResourcesFluidsSwabs	prod_rate	True	
-HydrocarbonResourcesFluidsSwabs	water_prod_rate	True	
-HydrocarbonResourcesFluidsSwabs	water_cut		True
-HydrocarbonResourcesFluidsSwabs	iwf		True
-HydrocarbonResourcesFluidsSwabs	add_recov_method		True
+HydrocarbonResourcesFluidsSwabs	lithology	TRUE	
+HydrocarbonResourcesFluidsSwabs	depos_env	TRUE	
+HydrocarbonResourcesFluidsSwabs	hcr_geol_age	TRUE	
+HydrocarbonResourcesFluidsSwabs	hcr_fw_salinity	TRUE	
+HydrocarbonResourcesFluidsSwabs	sulfate_fw	TRUE	
+HydrocarbonResourcesFluidsSwabs	vfa_fw	TRUE	
+HydrocarbonResourcesFluidsSwabs	prod_start_date	TRUE	
+HydrocarbonResourcesFluidsSwabs	prod_rate	TRUE	
+HydrocarbonResourcesFluidsSwabs	water_prod_rate	TRUE	
+HydrocarbonResourcesFluidsSwabs	water_cut		TRUE
+HydrocarbonResourcesFluidsSwabs	iwf		TRUE
+HydrocarbonResourcesFluidsSwabs	add_recov_method		TRUE
 HydrocarbonResourcesFluidsSwabs	iw_bt_date_well		
-HydrocarbonResourcesFluidsSwabs	biocide	True	
-HydrocarbonResourcesFluidsSwabs	biocide_admin_method	True	
+HydrocarbonResourcesFluidsSwabs	biocide	TRUE	
+HydrocarbonResourcesFluidsSwabs	biocide_admin_method	TRUE	
 HydrocarbonResourcesFluidsSwabs	chem_treatment		
 HydrocarbonResourcesFluidsSwabs	chem_treat_method		
-HydrocarbonResourcesFluidsSwabs	samp_loc_corr_rate	True	
-HydrocarbonResourcesFluidsSwabs	samp_well_name	True	
-HydrocarbonResourcesFluidsSwabs	win	True	
-HydrocarbonResourcesFluidsSwabs	samp_type		True
-HydrocarbonResourcesFluidsSwabs	samp_subtype	True	
-HydrocarbonResourcesFluidsSwabs	samp_collect_point		True
-HydrocarbonResourcesFluidsSwabs	temp		True
+HydrocarbonResourcesFluidsSwabs	samp_loc_corr_rate	TRUE	
+HydrocarbonResourcesFluidsSwabs	samp_well_name	TRUE	
+HydrocarbonResourcesFluidsSwabs	win	TRUE	
+HydrocarbonResourcesFluidsSwabs	samp_type		TRUE
+HydrocarbonResourcesFluidsSwabs	samp_subtype	TRUE	
+HydrocarbonResourcesFluidsSwabs	samp_collect_point		TRUE
+HydrocarbonResourcesFluidsSwabs	temp		TRUE
 HydrocarbonResourcesFluidsSwabs	pressure		
 HydrocarbonResourcesFluidsSwabs	oxy_stat_samp		
 HydrocarbonResourcesFluidsSwabs	samp_preserv		
@@ -572,54 +573,54 @@ HydrocarbonResourcesFluidsSwabs	samp_transport_cond
 HydrocarbonResourcesFluidsSwabs	samp_store_temp		
 HydrocarbonResourcesFluidsSwabs	samp_store_dur		
 HydrocarbonResourcesFluidsSwabs	samp_store_loc		
-HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	True	
-HydrocarbonResourcesFluidsSwabs	organism_count	True	
+HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	TRUE	
+HydrocarbonResourcesFluidsSwabs	organism_count	TRUE	
 HydrocarbonResourcesFluidsSwabs	org_count_qpcr_info		
-HydrocarbonResourcesFluidsSwabs	ph	True	
+HydrocarbonResourcesFluidsSwabs	ph	TRUE	
 HydrocarbonResourcesFluidsSwabs	salinity		
 HydrocarbonResourcesFluidsSwabs	alkalinity		
 HydrocarbonResourcesFluidsSwabs	alkalinity_method		
-HydrocarbonResourcesFluidsSwabs	sulfate		True
-HydrocarbonResourcesFluidsSwabs	sulfide		True
-HydrocarbonResourcesFluidsSwabs	tot_sulfur	True	
-HydrocarbonResourcesFluidsSwabs	nitrate		True
-HydrocarbonResourcesFluidsSwabs	nitrite	True	
-HydrocarbonResourcesFluidsSwabs	ammonium	True	
+HydrocarbonResourcesFluidsSwabs	sulfate		TRUE
+HydrocarbonResourcesFluidsSwabs	sulfide		TRUE
+HydrocarbonResourcesFluidsSwabs	tot_sulfur	TRUE	
+HydrocarbonResourcesFluidsSwabs	nitrate		TRUE
+HydrocarbonResourcesFluidsSwabs	nitrite	TRUE	
+HydrocarbonResourcesFluidsSwabs	ammonium	TRUE	
 HydrocarbonResourcesFluidsSwabs	tot_nitro		
-HydrocarbonResourcesFluidsSwabs	diss_iron	True	
+HydrocarbonResourcesFluidsSwabs	diss_iron	TRUE	
 HydrocarbonResourcesFluidsSwabs	sodium		
 HydrocarbonResourcesFluidsSwabs	chloride		
 HydrocarbonResourcesFluidsSwabs	potassium		
 HydrocarbonResourcesFluidsSwabs	magnesium		
 HydrocarbonResourcesFluidsSwabs	calcium		
-HydrocarbonResourcesFluidsSwabs	tot_iron	True	
+HydrocarbonResourcesFluidsSwabs	tot_iron	TRUE	
 HydrocarbonResourcesFluidsSwabs	diss_org_carb		
 HydrocarbonResourcesFluidsSwabs	diss_inorg_carb		
-HydrocarbonResourcesFluidsSwabs	diss_inorg_phosp	True	
+HydrocarbonResourcesFluidsSwabs	diss_inorg_phosp	TRUE	
 HydrocarbonResourcesFluidsSwabs	tot_phosp		
 HydrocarbonResourcesFluidsSwabs	suspend_solids		
 HydrocarbonResourcesFluidsSwabs	density		
 HydrocarbonResourcesFluidsSwabs	diss_carb_dioxide		
 HydrocarbonResourcesFluidsSwabs	diss_oxygen_fluid		
-HydrocarbonResourcesFluidsSwabs	vfa	True	
-HydrocarbonResourcesFluidsSwabs	benzene	True	
-HydrocarbonResourcesFluidsSwabs	toluene	True	
-HydrocarbonResourcesFluidsSwabs	ethylbenzene	True	
-HydrocarbonResourcesFluidsSwabs	xylene	True	
-HydrocarbonResourcesFluidsSwabs	api		True
-HydrocarbonResourcesFluidsSwabs	tan	True	
+HydrocarbonResourcesFluidsSwabs	vfa	TRUE	
+HydrocarbonResourcesFluidsSwabs	benzene	TRUE	
+HydrocarbonResourcesFluidsSwabs	toluene	TRUE	
+HydrocarbonResourcesFluidsSwabs	ethylbenzene	TRUE	
+HydrocarbonResourcesFluidsSwabs	xylene	TRUE	
+HydrocarbonResourcesFluidsSwabs	api		TRUE
+HydrocarbonResourcesFluidsSwabs	tan	TRUE	
 HydrocarbonResourcesFluidsSwabs	viscosity		
 HydrocarbonResourcesFluidsSwabs	pour_point		
-HydrocarbonResourcesFluidsSwabs	saturates_pc	True	
-HydrocarbonResourcesFluidsSwabs	aromatics_pc	True	
-HydrocarbonResourcesFluidsSwabs	resins_pc	True	
-HydrocarbonResourcesFluidsSwabs	asphaltenes_pc	True	
+HydrocarbonResourcesFluidsSwabs	saturates_pc	TRUE	
+HydrocarbonResourcesFluidsSwabs	aromatics_pc	TRUE	
+HydrocarbonResourcesFluidsSwabs	resins_pc	TRUE	
+HydrocarbonResourcesFluidsSwabs	asphaltenes_pc	TRUE	
 HydrocarbonResourcesFluidsSwabs	misc_param		
 HydrocarbonResourcesFluidsSwabs	additional_info		
-MicrobialMatBiofilm	samp_name		True
-MicrobialMatBiofilm	project_name		True
-MicrobialMatBiofilm	depth	True	
-MicrobialMatBiofilm	elev	True	
+MicrobialMatBiofilm	samp_name		TRUE
+MicrobialMatBiofilm	project_name		TRUE
+MicrobialMatBiofilm	depth	TRUE	
+MicrobialMatBiofilm	elev	TRUE	
 MicrobialMatBiofilm	alkalinity		
 MicrobialMatBiofilm	alkyl_diethers		
 MicrobialMatBiofilm	aminopept_act		
@@ -680,11 +681,11 @@ MicrobialMatBiofilm	tot_nitro_content
 MicrobialMatBiofilm	tot_org_carb		
 MicrobialMatBiofilm	turbidity		
 MicrobialMatBiofilm	water_content		
-MiscellaneousNaturalOrArtificialEnvironment	samp_name		True
-MiscellaneousNaturalOrArtificialEnvironment	project_name		True
-MiscellaneousNaturalOrArtificialEnvironment	alt	True	
-MiscellaneousNaturalOrArtificialEnvironment	depth	True	
-MiscellaneousNaturalOrArtificialEnvironment	elev	True	
+MiscellaneousNaturalOrArtificialEnvironment	samp_name		TRUE
+MiscellaneousNaturalOrArtificialEnvironment	project_name		TRUE
+MiscellaneousNaturalOrArtificialEnvironment	alt	TRUE	
+MiscellaneousNaturalOrArtificialEnvironment	depth	TRUE	
+MiscellaneousNaturalOrArtificialEnvironment	elev	TRUE	
 MiscellaneousNaturalOrArtificialEnvironment	alkalinity		
 MiscellaneousNaturalOrArtificialEnvironment	ammonium		
 MiscellaneousNaturalOrArtificialEnvironment	biomass		
@@ -726,10 +727,10 @@ MiscellaneousNaturalOrArtificialEnvironment	sulfate
 MiscellaneousNaturalOrArtificialEnvironment	sulfide		
 MiscellaneousNaturalOrArtificialEnvironment	temp		
 MiscellaneousNaturalOrArtificialEnvironment	water_current		
-PlantAssociated	samp_name		True
-PlantAssociated	project_name		True
-PlantAssociated	depth	True	
-PlantAssociated	elev	True	
+PlantAssociated	samp_name		TRUE
+PlantAssociated	project_name		TRUE
+PlantAssociated	depth	TRUE	
+PlantAssociated	elev	TRUE	
 PlantAssociated	air_temp_regm		
 PlantAssociated	ances_data		
 PlantAssociated	antibiotic_regm		
@@ -802,10 +803,10 @@ PlantAssociated	water_temp_regm
 PlantAssociated	watering_regm		
 PlantAssociated	host_symbiont		
 PlantAssociated	misc_param		
-Sediment	samp_name		True
-Sediment	project_name		True
-Sediment	depth		True
-Sediment	elev	True	
+Sediment	samp_name		TRUE
+Sediment	project_name		TRUE
+Sediment	depth		TRUE
+Sediment	elev	TRUE	
 Sediment	alkalinity		
 Sediment	alkyl_diethers		
 Sediment	aminopept_act		
@@ -872,10 +873,10 @@ Sediment	tot_nitro_content
 Sediment	tot_org_carb		
 Sediment	turbidity		
 Sediment	water_content		
-Soil	samp_name		True
-Soil	project_name		True
-Soil	depth		True
-Soil	elev		True
+Soil	samp_name		TRUE
+Soil	project_name		TRUE
+Soil	depth		TRUE
+Soil	elev		TRUE
 Soil	cur_land_use		
 Soil	cur_vegetation		
 Soil	cur_vegetation_meth		
@@ -930,9 +931,9 @@ Soil	heavy_metals_meth
 Soil	al_sat		
 Soil	al_sat_meth		
 Soil	misc_param		
-WastewaterSludge	samp_name		True
-WastewaterSludge	project_name		True
-WastewaterSludge	depth	True	
+WastewaterSludge	samp_name		TRUE
+WastewaterSludge	project_name		TRUE
+WastewaterSludge	depth	TRUE	
 WastewaterSludge	alkalinity		
 WastewaterSludge	biochem_oxygen_dem		
 WastewaterSludge	chem_administration		
@@ -970,10 +971,10 @@ WastewaterSludge	tertiary_treatment
 WastewaterSludge	tot_nitro		
 WastewaterSludge	tot_phosphate		
 WastewaterSludge	wastewater_type		
-Water	samp_name		True
-Water	project_name		True
-Water	depth		True
-Water	elev	True	
+Water	samp_name		TRUE
+Water	project_name		TRUE
+Water	depth		TRUE
+Water	elev	TRUE	
 Water	alkalinity		
 Water	alkalinity_method		
 Water	alkyl_diethers		
@@ -1055,28 +1056,28 @@ Water	tot_part_carb
 Water	tot_phosp		
 Water	turbidity		
 Water	water_current		
-SymbiontAssociated	sample_name		True
-SymbiontAssociated	project_name		True
-SymbiontAssociated	lat_lon		True
-SymbiontAssociated	geo_loc_name		True
-SymbiontAssociated	collection_date		True
-SymbiontAssociated	env_broad_scale		True
-SymbiontAssociated	env_local_scale		True
-SymbiontAssociated	env_medium		True
-SymbiontAssociated	alt	True	
-SymbiontAssociated	depth	True	
-SymbiontAssociated	elev	True	
+SymbiontAssociated	sample_name		TRUE
+SymbiontAssociated	project_name		TRUE
+SymbiontAssociated	lat_lon		TRUE
+SymbiontAssociated	geo_loc_name		TRUE
+SymbiontAssociated	collection_date		TRUE
+SymbiontAssociated	env_broad_scale		TRUE
+SymbiontAssociated	env_local_scale		TRUE
+SymbiontAssociated	env_medium		TRUE
+SymbiontAssociated	alt	TRUE	
+SymbiontAssociated	depth	TRUE	
+SymbiontAssociated	elev	TRUE	
 SymbiontAssociated	host_subject_id		
 SymbiontAssociated	host_common_name		
 SymbiontAssociated	host_taxid		
 SymbiontAssociated	source_mat_id		
-SymbiontAssociated	host_dependence		True
-SymbiontAssociated	type_of_symbiosis	True	
-SymbiontAssociated	sym_life_cycle_type		True
-SymbiontAssociated	host_life_stage		True
+SymbiontAssociated	host_dependence		TRUE
+SymbiontAssociated	type_of_symbiosis	TRUE	
+SymbiontAssociated	sym_life_cycle_type		TRUE
+SymbiontAssociated	host_life_stage		TRUE
 SymbiontAssociated	host_age		
 SymbiontAssociated	host_sex		
-SymbiontAssociated	mode_transmission	True	
+SymbiontAssociated	mode_transmission	TRUE	
 SymbiontAssociated	route_transmission		
 SymbiontAssociated	host_body_habitat		
 SymbiontAssociated	host_body_site		
@@ -1097,9 +1098,9 @@ SymbiontAssociated	host_shape
 SymbiontAssociated	gravidity		
 SymbiontAssociated	host_number		
 SymbiontAssociated	host_symbiont		
-SymbiontAssociated	host_specificity	True	
-SymbiontAssociated	symbiont_host_role	True	
-SymbiontAssociated	host_cellular_loc	True	
+SymbiontAssociated	host_specificity	TRUE	
+SymbiontAssociated	symbiont_host_role	TRUE	
+SymbiontAssociated	host_cellular_loc	TRUE	
 SymbiontAssociated	association_duration		
 SymbiontAssociated	host_of_host_coinf		
 SymbiontAssociated	host_of_host_name		
@@ -1127,15 +1128,15 @@ SymbiontAssociated	samp_store_dur
 SymbiontAssociated	samp_store_loc		
 SymbiontAssociated	samp_store_sol		
 SymbiontAssociated	misc_param		
-FoodHumanFoods	samp_name		True
-FoodHumanFoods	project_name		True
-FoodHumanFoods	lat_lon		True
-FoodHumanFoods	geo_loc_name		True
-FoodHumanFoods	collection_date		True
-FoodHumanFoods	env_broad_scale		True
-FoodHumanFoods	env_local_scale		True
-FoodHumanFoods	env_medium		True
-FoodHumanFoods	seq_meth		True
+FoodHumanFoods	samp_name		TRUE
+FoodHumanFoods	project_name		TRUE
+FoodHumanFoods	lat_lon		TRUE
+FoodHumanFoods	geo_loc_name		TRUE
+FoodHumanFoods	collection_date		TRUE
+FoodHumanFoods	env_broad_scale		TRUE
+FoodHumanFoods	env_local_scale		TRUE
+FoodHumanFoods	env_medium		TRUE
+FoodHumanFoods	seq_meth		TRUE
 FoodHumanFoods	samp_size		
 FoodHumanFoods	samp_collect_device		
 FoodHumanFoods	experimental_factor		
@@ -1150,18 +1151,18 @@ FoodHumanFoods	temp
 FoodHumanFoods	samp_stor_loc		
 FoodHumanFoods	genetic_mod		
 FoodHumanFoods	perturbation		
-FoodHumanFoods	coll_site_geo_feat		True
-FoodHumanFoods	food_product_type		True
-FoodHumanFoods	IFSAC_category		True
-FoodHumanFoods	ferm_chem_add	True	
-FoodHumanFoods	ferm_chem_add_perc	True	
-FoodHumanFoods	ferm_headspace_oxy	True	
-FoodHumanFoods	ferm_medium	True	
-FoodHumanFoods	ferm_pH	True	
-FoodHumanFoods	ferm_rel_humidity	True	
-FoodHumanFoods	ferm_temp	True	
-FoodHumanFoods	ferm_time	True	
-FoodHumanFoods	ferm_vessel	True	
+FoodHumanFoods	coll_site_geo_feat		TRUE
+FoodHumanFoods	food_product_type		TRUE
+FoodHumanFoods	IFSAC_category		TRUE
+FoodHumanFoods	ferm_chem_add	TRUE	
+FoodHumanFoods	ferm_chem_add_perc	TRUE	
+FoodHumanFoods	ferm_headspace_oxy	TRUE	
+FoodHumanFoods	ferm_medium	TRUE	
+FoodHumanFoods	ferm_pH	TRUE	
+FoodHumanFoods	ferm_rel_humidity	TRUE	
+FoodHumanFoods	ferm_temp	TRUE	
+FoodHumanFoods	ferm_time	TRUE	
+FoodHumanFoods	ferm_vessel	TRUE	
 FoodHumanFoods	bacterial_density		
 FoodHumanFoods	cons_food_stor_dur		
 FoodHumanFoods	cons_food_stor_temp		
@@ -1239,15 +1240,15 @@ FoodHumanFoods	study_timecourse
 FoodHumanFoods	study_tmnt		
 FoodHumanFoods	timepoint		
 FoodHumanFoods	misc_param		
-FoodAnimalAndAnimalFeed	samp_name		True
-FoodAnimalAndAnimalFeed	project_name		True
-FoodAnimalAndAnimalFeed	lat_lon		True
-FoodAnimalAndAnimalFeed	geo_loc_name		True
-FoodAnimalAndAnimalFeed	collection_date		True
-FoodAnimalAndAnimalFeed	env_broad_scale		True
-FoodAnimalAndAnimalFeed	env_local_scale		True
-FoodAnimalAndAnimalFeed	env_medium		True
-FoodAnimalAndAnimalFeed	seq_meth		True
+FoodAnimalAndAnimalFeed	samp_name		TRUE
+FoodAnimalAndAnimalFeed	project_name		TRUE
+FoodAnimalAndAnimalFeed	lat_lon		TRUE
+FoodAnimalAndAnimalFeed	geo_loc_name		TRUE
+FoodAnimalAndAnimalFeed	collection_date		TRUE
+FoodAnimalAndAnimalFeed	env_broad_scale		TRUE
+FoodAnimalAndAnimalFeed	env_local_scale		TRUE
+FoodAnimalAndAnimalFeed	env_medium		TRUE
+FoodAnimalAndAnimalFeed	seq_meth		TRUE
 FoodAnimalAndAnimalFeed	samp_size		
 FoodAnimalAndAnimalFeed	samp_collect_device		
 FoodAnimalAndAnimalFeed	experimental_factor		
@@ -1262,14 +1263,14 @@ FoodAnimalAndAnimalFeed	temp
 FoodAnimalAndAnimalFeed	samp_stor_loc		
 FoodAnimalAndAnimalFeed	samp_transport_cont		
 FoodAnimalAndAnimalFeed	perturbation		
-FoodAnimalAndAnimalFeed	coll_site_geo_feat		True
-FoodAnimalAndAnimalFeed	food_origin		True
-FoodAnimalAndAnimalFeed	food_prod		True
-FoodAnimalAndAnimalFeed	food_product_type		True
+FoodAnimalAndAnimalFeed	coll_site_geo_feat		TRUE
+FoodAnimalAndAnimalFeed	food_origin		TRUE
+FoodAnimalAndAnimalFeed	food_prod		TRUE
+FoodAnimalAndAnimalFeed	food_product_type		TRUE
 FoodAnimalAndAnimalFeed	food_source		
-FoodAnimalAndAnimalFeed	IFSAC_category		True
-FoodAnimalAndAnimalFeed	intended_consumer		True
-FoodAnimalAndAnimalFeed	samp_purpose		True
+FoodAnimalAndAnimalFeed	IFSAC_category		TRUE
+FoodAnimalAndAnimalFeed	intended_consumer		TRUE
+FoodAnimalAndAnimalFeed	samp_purpose		TRUE
 FoodAnimalAndAnimalFeed	animal_am		
 FoodAnimalAndAnimalFeed	animal_am_dur		
 FoodAnimalAndAnimalFeed	animal_am_freq		
@@ -1344,15 +1345,15 @@ FoodAnimalAndAnimalFeed	study_timecourse
 FoodAnimalAndAnimalFeed	study_tmnt		
 FoodAnimalAndAnimalFeed	timepoint		
 FoodAnimalAndAnimalFeed	misc_param		
-FoodFoodProductionFacility	samp_name		True
-FoodFoodProductionFacility	project_name		True
-FoodFoodProductionFacility	lat_lon		True
-FoodFoodProductionFacility	geo_loc_name		True
-FoodFoodProductionFacility	collection_date		True
-FoodFoodProductionFacility	env_broad_scale		True
-FoodFoodProductionFacility	env_local_scale		True
-FoodFoodProductionFacility	env_medium		True
-FoodFoodProductionFacility	seq_meth		True
+FoodFoodProductionFacility	samp_name		TRUE
+FoodFoodProductionFacility	project_name		TRUE
+FoodFoodProductionFacility	lat_lon		TRUE
+FoodFoodProductionFacility	geo_loc_name		TRUE
+FoodFoodProductionFacility	collection_date		TRUE
+FoodFoodProductionFacility	env_broad_scale		TRUE
+FoodFoodProductionFacility	env_local_scale		TRUE
+FoodFoodProductionFacility	env_medium		TRUE
+FoodFoodProductionFacility	seq_meth		TRUE
 FoodFoodProductionFacility	samp_size		
 FoodFoodProductionFacility	samp_collect_device		
 FoodFoodProductionFacility	experimental_factor		
@@ -1372,15 +1373,15 @@ FoodFoodProductionFacility	indoor_surf
 FoodFoodProductionFacility	avg_occup		
 FoodFoodProductionFacility	samp_floor		
 FoodFoodProductionFacility	genetic_mod		
-FoodFoodProductionFacility	coll_site_geo_feat		True
-FoodFoodProductionFacility	samp_source_mat_cat		True
-FoodFoodProductionFacility	samp_type		True
-FoodFoodProductionFacility	samp_stor_media		True
-FoodFoodProductionFacility	samp_stor_device		True
-FoodFoodProductionFacility	food_product_type		True
-FoodFoodProductionFacility	IFSAC_category		True
-FoodFoodProductionFacility	food_product_qual		True
-FoodFoodProductionFacility	food_contact_surf		True
+FoodFoodProductionFacility	coll_site_geo_feat		TRUE
+FoodFoodProductionFacility	samp_source_mat_cat		TRUE
+FoodFoodProductionFacility	samp_type		TRUE
+FoodFoodProductionFacility	samp_stor_media		TRUE
+FoodFoodProductionFacility	samp_stor_device		TRUE
+FoodFoodProductionFacility	food_product_type		TRUE
+FoodFoodProductionFacility	IFSAC_category		TRUE
+FoodFoodProductionFacility	food_product_qual		TRUE
+FoodFoodProductionFacility	food_contact_surf		TRUE
 FoodFoodProductionFacility	facility_type		
 FoodFoodProductionFacility	food_trav_mode		
 FoodFoodProductionFacility	food_trav_vehic		
@@ -1448,15 +1449,15 @@ FoodFoodProductionFacility	repository_name
 FoodFoodProductionFacility	intended_consumer		
 FoodFoodProductionFacility	food_pack_integrity		
 FoodFoodProductionFacility	misc_param		
-FoodFarmEnvironment	samp_name		True
-FoodFarmEnvironment	project_name		True
-FoodFarmEnvironment	lat_lon		True
-FoodFarmEnvironment	geo_loc_name		True
-FoodFarmEnvironment	collection_date		True
-FoodFarmEnvironment	env_broad_scale		True
-FoodFarmEnvironment	env_local_scale		True
-FoodFarmEnvironment	env_medium		True
-FoodFarmEnvironment	seq_meth		True
+FoodFarmEnvironment	samp_name		TRUE
+FoodFarmEnvironment	project_name		TRUE
+FoodFarmEnvironment	lat_lon		TRUE
+FoodFarmEnvironment	geo_loc_name		TRUE
+FoodFarmEnvironment	collection_date		TRUE
+FoodFarmEnvironment	env_broad_scale		TRUE
+FoodFarmEnvironment	env_local_scale		TRUE
+FoodFarmEnvironment	env_medium		TRUE
+FoodFarmEnvironment	seq_meth		TRUE
 FoodFarmEnvironment	samp_size		
 FoodFarmEnvironment	samp_collect_device		
 FoodFarmEnvironment	nucl_acid_ext		
@@ -1484,7 +1485,7 @@ FoodFarmEnvironment	host_tot_mass
 FoodFarmEnvironment	root_med_carbon		
 FoodFarmEnvironment	root_med_macronutr		
 FoodFarmEnvironment	root_med_micronutr		
-FoodFarmEnvironment	depth		True
+FoodFarmEnvironment	depth		TRUE
 FoodFarmEnvironment	season_temp		
 FoodFarmEnvironment	season_precpt		
 FoodFarmEnvironment	tot_org_carb		
@@ -1500,10 +1501,10 @@ FoodFarmEnvironment	genetic_mod
 FoodFarmEnvironment	host_phenotype		
 FoodFarmEnvironment	ph		
 FoodFarmEnvironment	ances_data		
-FoodFarmEnvironment	biotic_regm		True
-FoodFarmEnvironment	chem_administration		True
+FoodFarmEnvironment	biotic_regm		TRUE
+FoodFarmEnvironment	chem_administration		TRUE
 FoodFarmEnvironment	growth_habit		
-FoodFarmEnvironment	host_disease_stat	True	
+FoodFarmEnvironment	host_disease_stat	TRUE	
 FoodFarmEnvironment	host_genotype		
 FoodFarmEnvironment	host_taxid		
 FoodFarmEnvironment	mechanical_damage		
@@ -1514,10 +1515,10 @@ FoodFarmEnvironment	tillage
 FoodFarmEnvironment	ph_meth		
 FoodFarmEnvironment	growth_medium		
 FoodFarmEnvironment	season		
-FoodFarmEnvironment	food_product_type		True
-FoodFarmEnvironment	samp_type		True
-FoodFarmEnvironment	farm_water_source	True	
-FoodFarmEnvironment	plant_water_method	True	
+FoodFarmEnvironment	food_product_type		TRUE
+FoodFarmEnvironment	samp_type		TRUE
+FoodFarmEnvironment	farm_water_source	TRUE	
+FoodFarmEnvironment	plant_water_method	TRUE	
 FoodFarmEnvironment	air_PM_concen		
 FoodFarmEnvironment	animal_feed_equip		
 FoodFarmEnvironment	animal_intrusion		
@@ -1587,33 +1588,33 @@ FoodFarmEnvironment	water_pH
 FoodFarmEnvironment	water_source_shared		
 FoodFarmEnvironment	enrichment_protocol		
 FoodFarmEnvironment	food_quality_date		
-FoodFarmEnvironment	IFSAC_category		True
+FoodFarmEnvironment	IFSAC_category		TRUE
 FoodFarmEnvironment	animal_housing		
 FoodFarmEnvironment	cult_isol_date		
 FoodFarmEnvironment	food_clean_proc		
 FoodFarmEnvironment	misc_param		
 Agriculture	plant_growth_med		
-Agriculture	soil_horizon	True	
-Agriculture	photosynt_activ	True	
-Agriculture	photosynt_activ_meth	True	
+Agriculture	soil_horizon	TRUE	
+Agriculture	photosynt_activ	TRUE	
+Agriculture	photosynt_activ_meth	TRUE	
 Agriculture	samp_collect_method		
-Agriculture	enrichment_protocol	True	
+Agriculture	enrichment_protocol	TRUE	
 Agriculture	library_prep_kit		
 Agriculture	sequencing_location		
 Agriculture	soil_temp		
 Agriculture	soil_pH		
 Agriculture	soil_conductivity		
-Agriculture	rel_location	True	
-Agriculture	soil_cover	True	
+Agriculture	rel_location	TRUE	
+Agriculture	soil_cover	TRUE	
 Agriculture	porosity		
 Agriculture	texture		
 Agriculture	texture_meth		
 Agriculture	host_symbiont		
-Agriculture	host_disease_stat	True	
+Agriculture	host_disease_stat	TRUE	
 Agriculture	pres_animal_insect		
-Agriculture	plant_water_method	True	
+Agriculture	plant_water_method	TRUE	
 Agriculture	anim_water_method		
-Agriculture	farm_water_source	True	
+Agriculture	farm_water_source	TRUE	
 Agriculture	water_source_shared		
 Agriculture	water_pH		
 Agriculture	elev		
@@ -1621,9 +1622,9 @@ Agriculture	season
 Agriculture	solar_irradiance		
 Agriculture	crop_yield		
 Agriculture	season_humidity		
-Agriculture	humidity	True	
+Agriculture	humidity	TRUE	
 Agriculture	adjacent_environment		
-Agriculture	chem_administration		True
+Agriculture	chem_administration		TRUE
 Agriculture	food_prod		
 Agriculture	lot_number		
 Agriculture	fertilizer_admin		
@@ -1634,122 +1635,122 @@ Agriculture	farm_equip_san
 Agriculture	farm_equip		
 Agriculture	farm_equip_shared		
 Agriculture	food_harvest_proc		
-Agriculture	plant_struc	True	
+Agriculture	plant_struc	TRUE	
 Agriculture	host_dry_mass		
 Agriculture	ances_data		
 Agriculture	genetic_mod		
 Agriculture	Food_Product_type		
-Agriculture	Food_source		True
+Agriculture	Food_source		TRUE
 Agriculture	spikein_strain		
-Agriculture	organism_count	True	
+Agriculture	organism_count	TRUE	
 Agriculture	size_frac_low		
 Agriculture	size_frac_up		
 Agriculture	cult_isol_date		
-Agriculture	samp_pooling	True	
+Agriculture	samp_pooling	TRUE	
 Agriculture	root_med_macronutr		
 Agriculture	root_med_carbon		
 Agriculture	root_med_ph		
-Agriculture	soil_depth	True	
-Agriculture	specific_host		True
-Agriculture	pathogenicity		True
-Agriculture	biotic_relationship	True	
-Agriculture	water_temp_regm	True	
-Agriculture	watering_regm	True	
-Agriculture	standing_water_regm	True	
-Agriculture	gaseous_environment	True	
-Agriculture	fungicide_regm	True	
-Agriculture	climate_environment	True	
-Agriculture	herbicide_regm	True	
-Agriculture	non_mineral_nutr_regm	True	
-Agriculture	pesticide_regm	True	
-Agriculture	ph_regm	True	
-Agriculture	salt_regm	True	
-Agriculture	season_environment	True	
-Agriculture	temp		True
-Agriculture	perturbation	True	
+Agriculture	soil_depth	TRUE	
+Agriculture	specific_host		TRUE
+Agriculture	pathogenicity		TRUE
+Agriculture	biotic_relationship	TRUE	
+Agriculture	water_temp_regm	TRUE	
+Agriculture	watering_regm	TRUE	
+Agriculture	standing_water_regm	TRUE	
+Agriculture	gaseous_environment	TRUE	
+Agriculture	fungicide_regm	TRUE	
+Agriculture	climate_environment	TRUE	
+Agriculture	herbicide_regm	TRUE	
+Agriculture	non_mineral_nutr_regm	TRUE	
+Agriculture	pesticide_regm	TRUE	
+Agriculture	ph_regm	TRUE	
+Agriculture	salt_regm	TRUE	
+Agriculture	season_environment	TRUE	
+Agriculture	temp		TRUE
+Agriculture	perturbation	TRUE	
 Agriculture	isol_growth_condt		
-Agriculture	samp_store_dur		True
-Agriculture	samp_store_loc		True
-Agriculture	samp_collect_device		True
-Agriculture	samp_mat_process		True
-Agriculture	host_age		True
-Agriculture	host_common_name		True
-Agriculture	host_genotype		True
-Agriculture	host_height		True
+Agriculture	samp_store_dur		TRUE
+Agriculture	samp_store_loc		TRUE
+Agriculture	samp_collect_device		TRUE
+Agriculture	samp_mat_process		TRUE
+Agriculture	host_age		TRUE
+Agriculture	host_common_name		TRUE
+Agriculture	host_genotype		TRUE
+Agriculture	host_height		TRUE
 Agriculture	host_subspecf_genlin		
-Agriculture	host_length		True
-Agriculture	host_life_stage		True
-Agriculture	host_phenotype		True
-Agriculture	host_taxid		True
-Agriculture	host_tot_mass		True
-Agriculture	host_spec_range		True
-Agriculture	trophic_level	True	
-Agriculture	plant_product	True	
-Agriculture	samp_size		True
-Agriculture	oxy_stat_samp	True	
-Agriculture	seq_meth		True
-Agriculture	samp_vol_we_dna_ext		True
-Agriculture	pcr_primers		True
-Agriculture	nucl_acid_ext		True
-Agriculture	nucl_acid_amp		True
+Agriculture	host_length		TRUE
+Agriculture	host_life_stage		TRUE
+Agriculture	host_phenotype		TRUE
+Agriculture	host_taxid		TRUE
+Agriculture	host_tot_mass		TRUE
+Agriculture	host_spec_range		TRUE
+Agriculture	trophic_level	TRUE	
+Agriculture	plant_product	TRUE	
+Agriculture	samp_size		TRUE
+Agriculture	oxy_stat_samp	TRUE	
+Agriculture	seq_meth		TRUE
+Agriculture	samp_vol_we_dna_ext		TRUE
+Agriculture	pcr_primers		TRUE
+Agriculture	nucl_acid_ext		TRUE
+Agriculture	nucl_acid_amp		TRUE
 Agriculture	lib_size		
-Agriculture	lib_reads_seqd		True
-Agriculture	lib_layout	True	
-Agriculture	lib_vector		True
-Agriculture	lib_screen		True
-Agriculture	target_gene		True
-Agriculture	target_subfragment		True
-Agriculture	mid		True
-Agriculture	adapters		True
-Agriculture	pcr_cond		True
+Agriculture	lib_reads_seqd		TRUE
+Agriculture	lib_layout	TRUE	
+Agriculture	lib_vector		TRUE
+Agriculture	lib_screen		TRUE
+Agriculture	target_gene		TRUE
+Agriculture	target_subfragment		TRUE
+Agriculture	mid		TRUE
+Agriculture	adapters		TRUE
+Agriculture	pcr_cond		TRUE
 Agriculture	seq_quality_check		
-Agriculture	chimera_check		True
-Agriculture	assembly_name		True
+Agriculture	chimera_check		TRUE
+Agriculture	assembly_name		TRUE
 Agriculture	assembly_software		
 Agriculture	assembly_quality		
-Agriculture	annot	True	
-Agriculture	url	True	
+Agriculture	annot	TRUE	
+Agriculture	url	TRUE	
 Agriculture	sop		
 Agriculture	source_mat_id		
-Agriculture	fao_class	True	
-Agriculture	local_class	True	
-Agriculture	local_class_meth	True	
-Agriculture	soil_type		True
-Agriculture	soil_type_meth		True
-Agriculture	horizon	True	
-Agriculture	horizon_meth	True	
+Agriculture	fao_class	TRUE	
+Agriculture	local_class	TRUE	
+Agriculture	local_class_meth	TRUE	
+Agriculture	soil_type		TRUE
+Agriculture	soil_type_meth		TRUE
+Agriculture	horizon	TRUE	
+Agriculture	horizon_meth	TRUE	
 Agriculture	link_class_info		
-Agriculture	previous_land_use	True	
-Agriculture	previous_land_use_meth	True	
-Agriculture	crop_rotation	True	
+Agriculture	previous_land_use	TRUE	
+Agriculture	previous_land_use_meth	TRUE	
+Agriculture	crop_rotation	TRUE	
 Agriculture	agrochem_addition		
-Agriculture	tillage	True	
-Agriculture	fire	True	
-Agriculture	flooding	True	
-Agriculture	extreme_event	True	
+Agriculture	tillage	TRUE	
+Agriculture	fire	TRUE	
+Agriculture	flooding	TRUE	
+Agriculture	extreme_event	TRUE	
 Agriculture	link_climate_info		
 Agriculture	annual_temp		
 Agriculture	season_temp		
 Agriculture	annual_precpt		
 Agriculture	season_precpt		
 Agriculture	cur_land_use		
-Agriculture	slope_gradient	True	
-Agriculture	slope_aspect	True	
-Agriculture	profile_position	True	
-Agriculture	drainage_class	True	
-Agriculture	store_cond		True
-Agriculture	ph_meth	True	
-Agriculture	cur_vegetation	True	
-Agriculture	cur_vegetation_meth	True	
-Agriculture	tot_org_carb	True	
-Agriculture	tot_org_c_meth	True	
-Agriculture	tot_nitro	True	
-Agriculture	tot_n_meth	True	
-Agriculture	microbial_biomass		True
-Agriculture	microbial_biomass_meth		True
-Agriculture	heavy_metals_meth	True	
-Agriculture	tot_car	True	
-Agriculture	tot_phos	True	
-Agriculture	sieving		True
-Agriculture	pool_dna_extracts		True
+Agriculture	slope_gradient	TRUE	
+Agriculture	slope_aspect	TRUE	
+Agriculture	profile_position	TRUE	
+Agriculture	drainage_class	TRUE	
+Agriculture	store_cond		TRUE
+Agriculture	ph_meth	TRUE	
+Agriculture	cur_vegetation	TRUE	
+Agriculture	cur_vegetation_meth	TRUE	
+Agriculture	tot_org_carb	TRUE	
+Agriculture	tot_org_c_meth	TRUE	
+Agriculture	tot_nitro	TRUE	
+Agriculture	tot_n_meth	TRUE	
+Agriculture	microbial_biomass		TRUE
+Agriculture	microbial_biomass_meth		TRUE
+Agriculture	heavy_metals_meth	TRUE	
+Agriculture	tot_car	TRUE	
+Agriculture	tot_phos	TRUE	
+Agriculture	sieving		TRUE
+Agriculture	pool_dna_extracts		TRUE
 Agriculture	misc_param		
