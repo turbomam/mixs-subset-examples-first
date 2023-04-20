@@ -584,3 +584,10 @@ reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checkl
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
 minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
+
+data/codified_env_package_requirements.tsv: data/mixs_v6_environmental_packages.tsv data/mixs_requirement_codes.tsv
+	$(RUN) codify_env_package_requirements \
+		--ep-file $(word 1, $^) \
+		--pascal-case-file data/mixs_v6_checklists_env_packages_classes_curated.tsv \
+		--req-code-file $(word 2, $^) \
+		--output-file $@
