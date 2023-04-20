@@ -12,6 +12,7 @@ python = "^3.9"
 linkml-runtime = "^1.1.24"
 oaklib = "^0.5.0"
 xmltodict = "^0.13.0"
+jupyter = "^1.0.0"
 
 [tool.poetry-dynamic-versioning]
 enable = false
@@ -51,6 +52,4 @@ extract_unique_column_vals = 'src.mixs_subset_examples_first.datamodel.unique_tw
 combine_checklists_and_env_packages = 'src.mixs_subset_examples_first.datamodel.combine_checklists_and_env_packages:generate_combined_dataframe'
 combine_same_col_schemasheets = 'src.mixs_subset_examples_first.datamodel.combine_same_col_schemasheets:combine_tsvs'
 melt_tsv = 'src.mixs_subset_examples_first.datamodel.melt_tsv:melt_tsv'
-
-
-
+codify_env_package_requirements = 'src.mixs_subset_examples_first.datamodel.codify_env_package_requirements:merge_dataframes'
