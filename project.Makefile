@@ -257,6 +257,7 @@ reports/report_post_id_description_contradictions.yaml
 
 clean_reports:
 	rm -rf reports/report_post_*_contradictions.yaml
+	rm -rf reports/Database-mimssoil_set-example.yaml.log
 
 reports/report_post_id_scn_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
 	$(RUN) find_contradictions \
