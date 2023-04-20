@@ -53,3 +53,4 @@ combine_checklists_and_env_packages = 'src.mixs_subset_examples_first.datamodel.
 combine_same_col_schemasheets = 'src.mixs_subset_examples_first.datamodel.combine_same_col_schemasheets:combine_tsvs'
 melt_tsv = 'src.mixs_subset_examples_first.datamodel.melt_tsv:melt_tsv'
 codify_env_package_requirements = 'src.mixs_subset_examples_first.datamodel.codify_env_package_requirements:merge_dataframes'
+create_database_slots = 'src.mixs_subset_examples_first.datamodel.create_database_slots:main'

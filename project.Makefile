@@ -497,9 +497,9 @@ data/mixs_v6_checklists_plus_for_classes.tsv: data/mixs_v6_MIxS.tsv
 #   from data/mixs_v6_checklists_plus_for_classes.tsv: migs_ba migs_eu migs_org migs_pl migs_vi mimag mimarks_c mimarks_s mims misag miuvig
 #   from data/mixs_v6_environmental_packages_for_classes.tsv: ALL ROWS
 # add the following two rows of tab-separated headers
-#class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
-#> class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
-# add rows with the follwoing two class names:
+#class title  aliases    class_uri  description    in_subset  is_a   mixin  mixins
+#> class   title  aliases    class_uri  description    in_subset  is_a   mixin  mixins
+# add rows with the following two class names:
 #Checklist
 #EnvironmentalPackage
 # and assign those as the is_a parent to the rows from data/mixs_v6_environmental_packages_for_classes.tsv and data/mixs_v6_checklists_plus_for_classes.tsv
@@ -510,10 +510,11 @@ data/mixs_v6_checklists_plus_for_classes.tsv: data/mixs_v6_MIxS.tsv
 #   this source is a cheat because I extracted it from some file LS shared with me
 #     https://github.com/GenomicsStandardsConsortium/mixs/blob/issue-511-tested-schemasheets/schemasheets/tsv_in/MIxS_6_term_updates_classdefs.tsv
 # I don't see any term with ID MIXS:0016017
-#   could create an UnknownTerm class as a palceholder
-# does this need to be added manually?
-#   Agriculture	agriculture		MIXS:0016018
+#   could create an UnknownTerm class as a placeholder
+# Does this need to be added manually?
+#   Agriculture    agriculture       MIXS:0016018
 # add description values (from where?)
+
 
 data/mixs_v6_checklists_env_packages_combination_classes.tsv:
 	# assumes the curated file has two header rows
@@ -579,11 +580,19 @@ data/codified_env_package_requirements.tsv: data/mixs_v6_environmental_packages.
 # creating codified_env_package_requirements_curated.tsv
 # insert second header with LinkML column specifications
 
+data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
+	$(RUN) create_database_slots \
+		--input-file $< \
+		--output-file $@
 
-data/mixs_v6_env_packages_checklists_classes.yaml: data/mixs_v6_asserted_and_combinations.tsv \
+# creating data/database_slots_curated.tsv
+# add a second header row with LinkML column specifications
+
+data/mixs_v6_env_packages_checklists_classes.yaml: data/database_slots_curated.tsv \
+data/codified_env_package_requirements_curated.tsv \
 data/core_requirements_recommended_required_curated.tsv \
-data/Database.tsv data/mixs_combined_all_modified_lossy_deduped.tsv \
-data/codified_env_package_requirements_curated.tsv
+data/mixs_combined_all_modified_lossy_deduped.tsv \
+data/mixs_v6_asserted_and_combinations.tsv
 	$(RUN) sheets2linkml $^ > $@
 
 reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_packages_checklists_classes.yaml
@@ -591,10 +600,15 @@ reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_
 
 
 data/mixs_v6_env_packages_checklists_classes.schema.json: data/mixs_v6_env_packages_checklists_classes.yaml
+	# 2.5 minutes
+	date
 	$(RUN) gen-json-schema \
 		--closed $< > $@
+	date
 
-reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checklists_classes.schema.json examples/Database-mimssoil_set-example.yaml
+reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checklists_classes.schema.json examples/Database-mims_soil_set-example.yaml
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
 minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
+
+
