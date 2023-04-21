@@ -4,45 +4,45 @@ RUN = poetry run
 
 .PHONY: check-jsonschema-example run-linkml-validation
 
-check-jsonschema-example: project/jsonschema/mixs_subset_examples_first.schema.json \
-	  src/data/examples/invalid/BiosampleCollection-undefined-slot.yaml
-	# showing ignore failures here
-	# this should be templated
-	- $(RUN) check-jsonschema \
-	  --schemafile $^
-
-run-linkml-validation: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
-src/data/examples/invalid/BiosampleCollection-undefined-slot.yaml
-	# PersonCollection is assumed as the target-class because it has been defined as the tree_root in the schema
-	- $(RUN) linkml-validate \
-	  --schema $^
-
-
-src/data/dh_vs_linkml_json/BiosampleCollection_linkml_raw.yaml: src/data/dh_vs_linkml_json/Biosample_dh.json
-	$(RUN) dh-json2linkml \
-		--input-file $< \
-		--output-file $@ \
-		--output-format yaml \
-		--key entries
+#check-jsonschema-example: project/jsonschema/mixs_subset_examples_first.schema.json \
+#	  src/data/examples/invalid/BiosampleCollection-undefined-slot.yaml
+#	# showing ignore failures here
+#	# this should be templated
+#	- $(RUN) check-jsonschema \
+#	  --schemafile $^
+#
+#run-linkml-validation: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
+#src/data/examples/invalid/BiosampleCollection-undefined-slot.yaml
+#	# PersonCollection is assumed as the target-class because it has been defined as the tree_root in the schema
+#	- $(RUN) linkml-validate \
+#	  --schema $^
 
 
-src/data/dh_vs_linkml_json/BiosampleCollection_linkml_normalized.yaml: src/data/dh_vs_linkml_json/BiosampleCollection_linkml_raw.yaml
-	$(RUN) linkml-normalize \
-		--schema src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
-		--output $@ \
-		--no-expand-all $<
+#src/data/dh_vs_linkml_json/BiosampleCollection_linkml_raw.yaml: src/data/dh_vs_linkml_json/Biosample_dh.json
+#	$(RUN) dh-json2linkml \
+#		--input-file $< \
+#		--output-file $@ \
+#		--output-format yaml \
+#		--key entries
+#
+#
+#src/data/dh_vs_linkml_json/BiosampleCollection_linkml_normalized.yaml: src/data/dh_vs_linkml_json/BiosampleCollection_linkml_raw.yaml
+#	$(RUN) linkml-normalize \
+#		--schema src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
+#		--output $@ \
+#		--no-expand-all $<
+#
+#src/data/dh_vs_linkml_json/entries.json: src/data/dh_vs_linkml_json/BiosampleCollection_linkml_normalized.yaml
+#	$(RUN) linkml-json2dh \
+#		--input-file $< \
+#		--input-format yaml \
+#		--output-dir $(dir $@)
 
-src/data/dh_vs_linkml_json/entries.json: src/data/dh_vs_linkml_json/BiosampleCollection_linkml_normalized.yaml
-	$(RUN) linkml-json2dh \
-		--input-file $< \
-		--input-format yaml \
-		--output-dir $(dir $@)
-
-project/reports/slot_usage_esp_validation.tsv:
-	linkml2sheets \
-		--schema src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
-		--output $@ \
-		src/local_schemasheets/templates/slot_usage_esp_validation.tsv
+#project/reports/slot_usage_esp_validation.tsv:
+#	linkml2sheets \
+#		--schema src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
+#		--output $@ \
+#		src/local_schemasheets/templates/slot_usage_esp_validation.tsv
 
 ###   ###   ###
 
@@ -58,7 +58,9 @@ proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 	rm -rf data/codified_env_package_requirements.tsv
 	rm -rf data/mixs_v6_environmental_packages.tsv
 	rm -rf project/mixs_v6_env_packages_checklists_classes.schema.json
+	rm -rf src/mixs_subset_examples_first/schema/*.yaml*
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first_materialized_patterns.yaml
 	mkdir -p src/mixs_subset_examples_first/schema
 	touch src/mixs_subset_examples_first/schema/.gitkeep
 
@@ -593,30 +595,47 @@ data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
 # creating data/database_slots_curated.tsv
 # add a second header row with LinkML column specifications
 
-src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: data/codified_env_package_requirements_curated.tsv \
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml: data/codified_env_package_requirements_curated.tsv \
 data/core_requirements_recommended_required_curated.tsv \
 data/database_slots_curated.tsv \
 data/mixs_combined_all_modified_lossy_deduped.tsv \
 data/mixs_v6_asserted_and_combinations.tsv \
 data/prefixes.tsv \
 data/schema.tsv
-	$(RUN) sheets2linkml $^ > $@
+	$(RUN) sheets2linkml $^ > $@.tmp
+	yq eval-all -i 'select(fileIndex==0).settings = select(fileIndex==1).settings | select(fileIndex==0)' $@.tmp data/settings.yaml
+	poetry run add_interpolations \
+		--input-file $@.tmp \
+		--output-file $@
+	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+	rm -rf $@.tmp
 
-reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml
+	$(RUN) gen-linkml \
+		--output $@ \
+		--materialize-patterns \
+		--no-materialize-attributes \
+		--format yaml $<
+	rm -rf $<
+
+reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	- $(RUN) linkml-lint $< > $@
 
 
-project/mixs_v6_env_packages_checklists_classes.schema.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+project/mixs_subset_examples_first_materialized_patterns.schema.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	# 4 minutes+
 	date
 	$(RUN) gen-json-schema \
 		--closed $< > $@
 	date
 
-reports/Database-mimssoil_set-example.yaml.log: project/mixs_v6_env_packages_checklists_classes.schema.json \
+# poetry run gen-json-schema --closed src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml > project/mixs_subset_examples_first_materialized_patterns.schema.json
+
+reports/Database-mimssoil_set-example.yaml.log: project/mixs_subset_examples_first_materialized_patterns.schema.json \
 src/data/examples/valid/Database-mims_soil_set-example.yaml
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
+# poetry run check-jsonschema --schemafile project/mixs_subset_examples_first_materialized_patterns.schema.json src/data/examples/valid/Database-mims_soil_set-example.yaml
+
 minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
-
-

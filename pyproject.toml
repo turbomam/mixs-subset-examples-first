@@ -54,3 +54,4 @@ combine_same_col_schemasheets = 'src.mixs_subset_examples_first.datamodel.combin
 melt_tsv = 'src.mixs_subset_examples_first.datamodel.melt_tsv:melt_tsv'
 codify_env_package_requirements = 'src.mixs_subset_examples_first.datamodel.codify_env_package_requirements:merge_dataframes'
 create_database_slots = 'src.mixs_subset_examples_first.datamodel.create_database_slots:main'
+add_interpolations = 'src.mixs_subset_examples_first.datamodel.add_interpolations:main'
