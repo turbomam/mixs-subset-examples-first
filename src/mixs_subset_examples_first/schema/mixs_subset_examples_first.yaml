@@ -178,38 +178,10 @@ types:
 slots:
   16s_recover:
     name: 16s_recover
-    annotations:
-      global_raw_definition:
-        tag: global_raw_definition
-        value: Can a 16S gene be recovered from the submitted SAG or MAG?
-      occurrence:
-        tag: occurrence
-        value: '1'
-    title: 16S recovered
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    slot_uri: MIXS:0000065
-    range: boolean
   16s_recover_software:
     name: 16s_recover_software
-    annotations:
-      global_expected_value:
-        tag: global_expected_value
-        value: names and versions of software(s), parameters used
-      global_raw_definition:
-        tag: global_raw_definition
-        value: Tools used for 16S rRNA gene extraction
-      occurrence:
-        tag: occurrence
-        value: '1'
-    title: 16S recovery software
-    examples:
-    - value: rambl;v2;default parameters
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    slot_uri: MIXS:0000066
-    range: string
-    pattern: '{software};{version};{parameters}'
-    structured_pattern:
-      syntax: '{software};{version};{parameters}'
   Food_Product_type:
     name: Food_Product_type
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
