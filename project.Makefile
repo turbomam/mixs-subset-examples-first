@@ -59,6 +59,8 @@ proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 	rm -rf data/mixs_v6_environmental_packages.tsv
 	rm -rf project/mixs_v6_env_packages_checklists_classes.schema.json
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+	mkdir -p src/mixs_subset_examples_first/schema
+	touch src/mixs_subset_examples_first/schema/.gitkeep
 
 
 report_contradiction_scores: proj_clean reports/contradiction_score_details.tsv
@@ -591,11 +593,13 @@ data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
 # creating data/database_slots_curated.tsv
 # add a second header row with LinkML column specifications
 
-src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: data/database_slots_curated.tsv \
-data/codified_env_package_requirements_curated.tsv \
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: data/codified_env_package_requirements_curated.tsv \
 data/core_requirements_recommended_required_curated.tsv \
+data/database_slots_curated.tsv \
 data/mixs_combined_all_modified_lossy_deduped.tsv \
-data/mixs_v6_asserted_and_combinations.tsv
+data/mixs_v6_asserted_and_combinations.tsv \
+data/prefixes.tsv \
+data/schema.tsv
 	$(RUN) sheets2linkml $^ > $@
 
 reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
