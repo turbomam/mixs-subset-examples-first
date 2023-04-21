@@ -1,0 +1,6 @@
+settings:
+  float: "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?"
+  unit: "[^s][^\\r\\n\\t]+" # same as free_text for now
+  term_label: "[^s][^\\r\\n\\t]+" # same as free_text for now
+  term_id: "[a-zA-Z]+:[0-9]+" # assumes term ids are curies with character-only prefixes and digit only local portions. constrain the number of digits more closely, like 6 though 9?
+  free_text: "[^s][^\\r\\n\\t]+" # at least one non-whitespace character. line feeds, carriage returns and horizontal tabs are never allowed

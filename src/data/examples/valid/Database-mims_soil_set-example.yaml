@@ -1,11 +1,11 @@
 mims_soil_set:
   - samp_name: xxx1
     collection_date: xxx
-    depth: xxx
-    elev: xxx
-    env_broad_scale: xxx
-    env_local_scale: xxx
-    env_medium: xxx
+    depth: 123 units
+    elev: 123 units
+    env_broad_scale: text [prefix:123]
+    env_local_scale: text [prefix:123]
+    env_medium: text [prefix:123]
     geo_loc_name: xxx
     lat_lon: xxx
     project_name: xxx
@@ -13,11 +13,11 @@ mims_soil_set:
     seq_meth: xxx
   - samp_name: xxx2
     collection_date: xxx
-    depth: xxx
-    elev: xxx
-    env_broad_scale: xxx
-    env_local_scale: xxx
-    env_medium: xxx
+    depth: 123 units
+    elev: 123 units
+    env_broad_scale: text [prefix:123]
+    env_local_scale: text [prefix:123]
+    env_medium: text [prefix:123]
     geo_loc_name: xxx
     lat_lon: xxx
     project_name: xxx
