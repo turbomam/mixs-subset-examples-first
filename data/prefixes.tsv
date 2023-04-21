@@ -1,0 +1,6 @@
+prefix	prefix_reference
+> prefix	prefix_reference
+linkml	https://w3id.org/linkml/
+MIXS	http://example.com/
+shex	http://www.w3.org/ns/shex#
+schema	http://schema.org/
