@@ -57,6 +57,9 @@ pre_modifications report_id_item_contradictions report_id_scn_contradictions rep
 proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 	rm -rf data/codified_env_package_requirements.tsv
 	rm -rf data/mixs_v6_environmental_packages.tsv
+	rm -rf project/mixs_v6_env_packages_checklists_classes.schema.json
+	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+
 
 report_contradiction_scores: proj_clean reports/contradiction_score_details.tsv
 
@@ -588,25 +591,26 @@ data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
 # creating data/database_slots_curated.tsv
 # add a second header row with LinkML column specifications
 
-data/mixs_v6_env_packages_checklists_classes.yaml: data/database_slots_curated.tsv \
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: data/database_slots_curated.tsv \
 data/codified_env_package_requirements_curated.tsv \
 data/core_requirements_recommended_required_curated.tsv \
 data/mixs_combined_all_modified_lossy_deduped.tsv \
 data/mixs_v6_asserted_and_combinations.tsv
 	$(RUN) sheets2linkml $^ > $@
 
-reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: data/mixs_v6_env_packages_checklists_classes.yaml
+reports/mixs_v6_env_packages_checklists_classes.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	- $(RUN) linkml-lint $< > $@
 
 
-data/mixs_v6_env_packages_checklists_classes.schema.json: data/mixs_v6_env_packages_checklists_classes.yaml
-	# 2.5 minutes
+project/mixs_v6_env_packages_checklists_classes.schema.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+	# 4 minutes+
 	date
 	$(RUN) gen-json-schema \
 		--closed $< > $@
 	date
 
-reports/Database-mimssoil_set-example.yaml.log: data/mixs_v6_env_packages_checklists_classes.schema.json examples/Database-mims_soil_set-example.yaml
+reports/Database-mimssoil_set-example.yaml.log: project/mixs_v6_env_packages_checklists_classes.schema.json \
+src/data/examples/valid/Database-mims_soil_set-example.yaml
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
 minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
