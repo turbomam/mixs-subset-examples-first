@@ -57,11 +57,22 @@ pre_modifications report_id_item_contradictions report_id_scn_contradictions rep
 proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 	rm -rf data/codified_env_package_requirements.tsv
 	rm -rf data/mixs_v6_environmental_packages.tsv
+	rm -rf docs
+	rm -rf project
 	rm -rf project/mixs_v6_env_packages_checklists_classes.schema.json
+	rm -rf site
+	rm -rf src/mixs_subset_examples_first/datamodel/mixs_subset_examples_first.py
 	rm -rf src/mixs_subset_examples_first/schema/*.yaml*
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first_materialized_patterns.yaml
+	mkdir -p docs
+	mkdir -p project
+	mkdir -p site
 	mkdir -p src/mixs_subset_examples_first/schema
+	touch docs/.gitkeep
+	touch project/.gitkeep
+	touch site/.gitkeep
+	touch src/mixs_subset_examples_first/datamodel/mixs_subset_examples_first.py
 	touch src/mixs_subset_examples_first/schema/.gitkeep
 
 
@@ -104,7 +115,7 @@ reports_cleanup:
 	touch downloads/.gitkeep
 	rm -rf reports/report_pre_*_contradictions.yaml
 	rm -rf reports/report_post_*_contradictions.yaml
-	rm -rf reports/reports/Database-mimssoil_set-example.yaml.log
+	rm -rf reports/Database-mimssoil_set-example.yaml.check-jsonschema.log
 
 data_cleanup:
 #	rm -rf downloads
@@ -266,7 +277,7 @@ reports/report_post_id_description_contradictions.yaml
 
 clean_reports:
 	rm -rf reports/report_post_*_contradictions.yaml
-	rm -rf reports/Database-mimssoil_set-example.yaml.log
+	rm -rf reports/Database-mimssoil_set-example.yaml.check-jsonschema.log
 
 reports/report_post_id_scn_contradictions.yaml: data/mixs_combined_all_modified.tsv data/ncbi_biosample_attributes.xml
 	$(RUN) find_contradictions \
@@ -522,6 +533,9 @@ data/mixs_v6_checklists_plus_for_classes.tsv: data/mixs_v6_MIxS.tsv
 #   Agriculture    agriculture       MIXS:0016018
 # add description values (from where?)
 
+# creation of data/mixs_v6_checklists_env_packages_combination_classes_curated.tsv
+# just pick a small subset of combination rows
+
 
 data/mixs_v6_checklists_env_packages_combination_classes.tsv:
 	# assumes the curated file has two header rows
@@ -529,12 +543,12 @@ data/mixs_v6_checklists_env_packages_combination_classes.tsv:
 		--input-file data/mixs_v6_checklists_env_packages_classes_curated.tsv \
 		--output-file $@ \
 
-data/mixs_v6_asserted_and_combinations.tsv: data/mixs_v6_checklists_env_packages_combination_classes.tsv
+data/mixs_v6_asserted_and_combinations.tsv:
 	# assumes the curated file has two header rows
 	#  and the combination file has one header row
 	$(RUN) combine_same_col_schemasheets \
 		--input1 data/mixs_v6_checklists_env_packages_classes_curated.tsv \
-		--input2 $< \
+		--input2 data/mixs_v6_checklists_env_packages_combination_classes_curated.tsv \
 		--output $@ \
 
 data/core_requirements.tsv: data/mixs_v6_MIxS.tsv
@@ -622,20 +636,13 @@ src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_
 reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	- $(RUN) linkml-lint $< > $@
 
-
-project/mixs_subset_examples_first_materialized_patterns.schema.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
-	# 4 minutes+
-	date
-	$(RUN) gen-json-schema \
-		--closed $< > $@
-	date
-
-# poetry run gen-json-schema --closed src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml > project/mixs_subset_examples_first_materialized_patterns.schema.json
-
-reports/Database-mimssoil_set-example.yaml.log: project/mixs_subset_examples_first_materialized_patterns.schema.json \
+reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonschema/mixs_subset_examples_first.schema.json \
 src/data/examples/valid/Database-mims_soil_set-example.yaml
 	$(RUN) check-jsonschema --schemafile $^ | tee $@
 
-# poetry run check-jsonschema --schemafile project/mixs_subset_examples_first_materialized_patterns.schema.json src/data/examples/valid/Database-mims_soil_set-example.yaml
-
-minimal_validation_report: proj_clean reports/Database-mimssoil_set-example.yaml.log
+project/json/mixs_subset_examples_first.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+	mkdir -p $(@D)
+	$(RUN) gen-linkml \
+		--format json  \
+		--materialize-attributes \
+		--materialize-patterns $< > $@

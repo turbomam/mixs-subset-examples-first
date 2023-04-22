@@ -105,8 +105,23 @@ gen-examples:
 # generates all project files
 
 gen-project: $(PYMODEL)
-	$(RUN) gen-project ${GEN_PARGS} -d $(DEST) $(SOURCE_SCHEMA_PATH) && mv $(DEST)/*.py $(PYMODEL)
+	$(RUN) gen-project ${GEN_PARGS} \
+		--exclude markdown \
+		--generator-arguments '{jsonschema: {not_closed: false}}' \
+		-d $(DEST) $(SOURCE_SCHEMA_PATH) && mv $(DEST)/*.py $(PYMODEL)
 
+  #		--exclude graphql \
+  #		--exclude jsonld \
+  #		--exclude jsonldcontext \
+  #		--exclude prefixmap \
+  #		--exclude proto \
+  #		--exclude shacl \
+  #		--exclude shex \
+  #		--include excel \
+  #		--include jsonschema \
+  #		--include owl \
+  #		--include python \
+  #		--include sqlddl \
 
 test: test-schema test-python test-examples
 
@@ -194,3 +209,20 @@ clean:
 	rm -fr docs/*
 
 include project.Makefile
+
+minimal_validation_report: proj_clean \
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
+gen-project project/json/mixs_subset_examples_first.json \
+reports/Database-mimssoil_set-example.yaml.check-jsonschema.log
+
+# generate documentation
+#   make testdoc
+#  renders OK, but reports non existent slots from database?
+#   make deploy?
+#   gh actions ?
+
+# instantiation tests
+
+# test-examples / run-linkml-examples
+
+# data harmonizer: templates have fillable columns?

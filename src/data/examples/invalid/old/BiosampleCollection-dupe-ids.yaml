@@ -1,0 +1,6 @@
+entries:
+  - id: example:Biosample001
+    name: foo bar
+  - id: example:Biosample001
+    name: foo bar
+    undefined: undefined

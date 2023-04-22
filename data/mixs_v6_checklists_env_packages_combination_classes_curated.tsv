@@ -1,0 +1,7 @@
+class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
+MigsBaPlantAssociated	plant-associated sample according to the MigsBa checklist		MIXS:0010003_0016010			PlantAssociated		MigsBa
+MigsBaSediment	sediment sample according to the MigsBa checklist		MIXS:0010003_0016011			Sediment		MigsBa
+MigsBaSoil	soil sample according to the MigsBa checklist		MIXS:0010003_0016012			Soil		MigsBa
+MimsPlantAssociated	plant-associated sample according to the Mims checklist		MIXS:0010007_0016010			PlantAssociated		Mims
+MimsSediment	sediment sample according to the Mims checklist		MIXS:0010007_0016011			Sediment		Mims
+MimsSoil	soil sample according to the Mims checklist		MIXS:0010007_0016012			Soil		Mims
