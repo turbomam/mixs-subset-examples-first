@@ -210,19 +210,25 @@ clean:
 
 include project.Makefile
 
+project/jsonschema/mixs_subset_examples_first.schema.json: gen-project
+
 minimal_validation_report: proj_clean \
 src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml \
-gen-project project/json/mixs_subset_examples_first.json \
-reports/Database-mimssoil_set-example.yaml.check-jsonschema.log
+project/jsonschema/mixs_subset_examples_first.schema.json \
+project/json/mixs_subset_examples_first.json \
+reports/Database-mimssoil_set-example.yaml.check-jsonschema.log \
+gendoc
+
+# make all (includes gen-project and gendoc)
 
 # generate documentation
-#   make testdoc
+#   make testdoc (gendoc and serve)
 #  renders OK, but reports non existent slots from database?
 #   make deploy?
 #   gh actions ?
 
 # instantiation tests
-
 # test-examples / run-linkml-examples
+# Agriculture class not defined?!
 
 # data harmonizer: templates have fillable columns?
