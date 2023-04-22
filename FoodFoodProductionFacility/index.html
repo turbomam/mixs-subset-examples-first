@@ -1,0 +1,4853 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://turbomam.github.io/mixs-subset-examples-first/FoodFoodProductionFacility/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Class: FoodFoodProductionFacility - mixs-subset-examples-first</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-foodfoodproductionfacility">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="mixs-subset-examples-first" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            mixs-subset-examples-first
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: FoodFoodProductionFacility
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="mixs-subset-examples-first" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    mixs-subset-examples-first
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+    Inheritance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+    Slots
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+    Usages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+    Identifier and Mapping Information
+  </a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+    Schema Source
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+    LinkML Source
+  </a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+    Direct
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+    Induced
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/FoodFoodProductionFacility.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="class-foodfoodproductionfacility">Class: FoodFoodProductionFacility</h1>
+<p>URI: <a href="http://example.com/0016021">MIXS:0016021</a></p>
+<div class="mermaid"> classDiagram
+    class FoodFoodProductionFacility
+      EnvironmentalPackage &lt;|-- FoodFoodProductionFacility
+
+      FoodFoodProductionFacility : air_temp
+
+      FoodFoodProductionFacility : area_samp_size
+
+      FoodFoodProductionFacility : avg_occup
+
+      FoodFoodProductionFacility : bacterial_density
+
+      FoodFoodProductionFacility : biocide_used
+
+      FoodFoodProductionFacility : coll_site_geo_feat
+
+      FoodFoodProductionFacility : collection_date
+
+      FoodFoodProductionFacility : cult_isol_date
+
+      FoodFoodProductionFacility : cult_result
+
+      FoodFoodProductionFacility : cult_result_org
+
+      FoodFoodProductionFacility : cult_target
+
+      FoodFoodProductionFacility : dietary_claim_use
+
+      FoodFoodProductionFacility : enrichment_protocol
+
+      FoodFoodProductionFacility : env_broad_scale
+
+      FoodFoodProductionFacility : env_local_scale
+
+      FoodFoodProductionFacility : env_medium
+
+      FoodFoodProductionFacility : env_monitoring_zone
+
+      FoodFoodProductionFacility : experimental_factor
+
+      FoodFoodProductionFacility : facility_type
+
+      FoodFoodProductionFacility : food_additive
+
+      FoodFoodProductionFacility : food_allergen_label
+
+      FoodFoodProductionFacility : food_contact_surf
+
+      FoodFoodProductionFacility : food_contain_wrap
+
+      FoodFoodProductionFacility : food_cooking_proc
+
+      FoodFoodProductionFacility : food_dis_point
+
+      FoodFoodProductionFacility : food_dis_point_city
+
+      FoodFoodProductionFacility : food_ingredient
+
+      FoodFoodProductionFacility : food_name_status
+
+      FoodFoodProductionFacility : food_origin
+
+      FoodFoodProductionFacility : food_pack_capacity
+
+      FoodFoodProductionFacility : food_pack_integrity
+
+      FoodFoodProductionFacility : food_pack_medium
+
+      FoodFoodProductionFacility : food_preserv_proc
+
+      FoodFoodProductionFacility : food_prior_contact
+
+      FoodFoodProductionFacility : food_prod
+
+      FoodFoodProductionFacility : food_prod_char
+
+      FoodFoodProductionFacility : food_prod_synonym
+
+      FoodFoodProductionFacility : food_product_qual
+
+      FoodFoodProductionFacility : food_product_type
+
+      FoodFoodProductionFacility : food_quality_date
+
+      FoodFoodProductionFacility : food_source
+
+      FoodFoodProductionFacility : food_trace_list
+
+      FoodFoodProductionFacility : food_trav_mode
+
+      FoodFoodProductionFacility : food_trav_vehic
+
+      FoodFoodProductionFacility : food_treat_proc
+
+      FoodFoodProductionFacility : freq_clean
+
+      FoodFoodProductionFacility : genetic_mod
+
+      FoodFoodProductionFacility : geo_loc_name
+
+      FoodFoodProductionFacility : HACCP_term
+
+      FoodFoodProductionFacility : hygienic_area
+
+      FoodFoodProductionFacility : IFSAC_category
+
+      FoodFoodProductionFacility : indoor_surf
+
+      FoodFoodProductionFacility : intended_consumer
+
+      FoodFoodProductionFacility : lat_lon
+
+      FoodFoodProductionFacility : library_prep_kit
+
+      FoodFoodProductionFacility : lot_number
+
+      FoodFoodProductionFacility : microb_cult_med
+
+      FoodFoodProductionFacility : misc_param
+
+      FoodFoodProductionFacility : nucl_acid_ext
+
+      FoodFoodProductionFacility : nucl_acid_ext_kit
+
+      FoodFoodProductionFacility : num_samp_collect
+
+      FoodFoodProductionFacility : organism_count
+
+      FoodFoodProductionFacility : part_plant_animal
+
+      FoodFoodProductionFacility : pool_dna_extracts
+
+      FoodFoodProductionFacility : prod_label_claims
+
+      FoodFoodProductionFacility : project_name
+
+      FoodFoodProductionFacility : repository_name
+
+      FoodFoodProductionFacility : room_dim
+
+      FoodFoodProductionFacility : samp_collect_device
+
+      FoodFoodProductionFacility : samp_collect_method
+
+      FoodFoodProductionFacility : samp_floor
+
+      FoodFoodProductionFacility : samp_loc_condition
+
+      FoodFoodProductionFacility : samp_name
+
+      FoodFoodProductionFacility : samp_pooling
+
+      FoodFoodProductionFacility : samp_purpose
+
+      FoodFoodProductionFacility : samp_rep_biol
+
+      FoodFoodProductionFacility : samp_rep_tech
+
+      FoodFoodProductionFacility : samp_room_id
+
+      FoodFoodProductionFacility : samp_size
+
+      FoodFoodProductionFacility : samp_source_mat_cat
+
+      FoodFoodProductionFacility : samp_stor_device
+
+      FoodFoodProductionFacility : samp_stor_dur
+
+      FoodFoodProductionFacility : samp_stor_loc
+
+      FoodFoodProductionFacility : samp_stor_media
+
+      FoodFoodProductionFacility : samp_stor_temp
+
+      FoodFoodProductionFacility : samp_surf_moisture
+
+      FoodFoodProductionFacility : samp_transport_cont
+
+      FoodFoodProductionFacility : samp_transport_dur
+
+      FoodFoodProductionFacility : samp_transport_temp
+
+      FoodFoodProductionFacility : samp_type
+
+      FoodFoodProductionFacility : samp_vol_we_dna_ext
+
+      FoodFoodProductionFacility : seq_meth
+
+      FoodFoodProductionFacility : sequencing_kit
+
+      FoodFoodProductionFacility : sequencing_location
+
+      FoodFoodProductionFacility : spec_intended_cons
+
+      FoodFoodProductionFacility : ster_meth_samp_room
+
+      FoodFoodProductionFacility : study_design
+
+      FoodFoodProductionFacility : study_inc_dur
+
+      FoodFoodProductionFacility : study_inc_temp
+
+      FoodFoodProductionFacility : study_timecourse
+
+      FoodFoodProductionFacility : study_tmnt
+
+      FoodFoodProductionFacility : subspecf_gen_lin
+
+      FoodFoodProductionFacility : surf_material
+
+      FoodFoodProductionFacility : timepoint
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../EnvironmentalPackage/">EnvironmentalPackage</a><ul>
+<li><strong>FoodFoodProductionFacility</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_collect_device/">samp_collect_device</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_temp/">samp_stor_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_dur/">samp_stor_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../air_temp/">air_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_dim/">room_dim</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../freq_clean/">freq_clean</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_room_id/">samp_room_id</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pool_dna_extracts/">pool_dna_extracts</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_loc/">samp_stor_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_material/">surf_material</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../indoor_surf/">indoor_surf</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../avg_occup/">avg_occup</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_floor/">samp_floor</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_mod/">genetic_mod</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../coll_site_geo_feat/">coll_site_geo_feat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_source_mat_cat/">samp_source_mat_cat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_type/">samp_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_media/">samp_stor_media</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_device/">samp_stor_device</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_product_type/">food_product_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../IFSAC_category/">IFSAC_category</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_product_qual/">food_product_qual</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_contact_surf/">food_contact_surf</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../facility_type/">facility_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_trav_mode/">food_trav_mode</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_trav_vehic/">food_trav_vehic</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_dur/">samp_transport_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_temp/">samp_transport_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_collect_method/">samp_collect_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../num_samp_collect/">num_samp_collect</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lot_number/">lot_number</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hygienic_area/">hygienic_area</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_monitoring_zone/">env_monitoring_zone</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../area_samp_size/">area_samp_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_surf_moisture/">samp_surf_moisture</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_loc_condition/">samp_loc_condition</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biocide_used/">biocide_used</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ster_meth_samp_room/">ster_meth_samp_room</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../enrichment_protocol/">enrichment_protocol</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../cult_target/">cult_target</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../microb_cult_med/">microb_cult_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../timepoint/">timepoint</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../bacterial_density/">bacterial_density</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../cult_isol_date/">cult_isol_date</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../cult_result/">cult_result</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../cult_result_org/">cult_result_org</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../subspecf_gen_lin/">subspecf_gen_lin</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_pooling/">samp_pooling</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_purpose/">samp_purpose</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_rep_tech/">samp_rep_tech</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_rep_biol/">samp_rep_biol</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_cont/">samp_transport_cont</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_design/">study_design</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_ext_kit/">nucl_acid_ext_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../library_prep_kit/">library_prep_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_kit/">sequencing_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_location/">sequencing_location</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_inc_temp/">study_inc_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_inc_dur/">study_inc_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_timecourse/">study_timecourse</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_tmnt/">study_tmnt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_source/">food_source</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_dis_point/">food_dis_point</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_dis_point_city/">food_dis_point_city</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_origin/">food_origin</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_prod_synonym/">food_prod_synonym</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_additive/">food_additive</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_trace_list/">food_trace_list</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../part_plant_animal/">part_plant_animal</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_ingredient/">food_ingredient</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spec_intended_cons/">spec_intended_cons</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../HACCP_term/">HACCP_term</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../dietary_claim_use/">dietary_claim_use</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_allergen_label/">food_allergen_label</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_prod_char/">food_prod_char</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../prod_label_claims/">prod_label_claims</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_name_status/">food_name_status</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_preserv_proc/">food_preserv_proc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_cooking_proc/">food_cooking_proc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_treat_proc/">food_treat_proc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_contain_wrap/">food_contain_wrap</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_pack_capacity/">food_pack_capacity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_pack_medium/">food_pack_medium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_prior_contact/">food_prior_contact</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_prod/">food_prod</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_quality_date/">food_quality_date</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../repository_name/">repository_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../intended_consumer/">intended_consumer</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_pack_integrity/">food_pack_integrity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../food_food_production_facility_set/">food_food_production_facility_set</a></td>
+<td>range</td>
+<td><a href="./">FoodFoodProductionFacility</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>MIXS:0016021</td>
+</tr>
+<tr>
+<td>native</td>
+<td>MIXS:FoodFoodProductionFacility</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: FoodFoodProductionFacility
+title: food-food production facility
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slots:
+- samp_name
+- project_name
+- lat_lon
+- geo_loc_name
+- collection_date
+- env_broad_scale
+- env_local_scale
+- env_medium
+- seq_meth
+- samp_size
+- samp_collect_device
+- experimental_factor
+- nucl_acid_ext
+- organism_count
+- samp_stor_temp
+- samp_stor_dur
+- air_temp
+- room_dim
+- freq_clean
+- samp_room_id
+- samp_vol_we_dna_ext
+- pool_dna_extracts
+- samp_stor_loc
+- surf_material
+- indoor_surf
+- avg_occup
+- samp_floor
+- genetic_mod
+- coll_site_geo_feat
+- samp_source_mat_cat
+- samp_type
+- samp_stor_media
+- samp_stor_device
+- food_product_type
+- IFSAC_category
+- food_product_qual
+- food_contact_surf
+- facility_type
+- food_trav_mode
+- food_trav_vehic
+- samp_transport_dur
+- samp_transport_temp
+- samp_collect_method
+- num_samp_collect
+- lot_number
+- hygienic_area
+- env_monitoring_zone
+- area_samp_size
+- samp_surf_moisture
+- samp_loc_condition
+- biocide_used
+- ster_meth_samp_room
+- enrichment_protocol
+- cult_target
+- microb_cult_med
+- timepoint
+- bacterial_density
+- cult_isol_date
+- cult_result
+- cult_result_org
+- subspecf_gen_lin
+- samp_pooling
+- samp_purpose
+- samp_rep_tech
+- samp_rep_biol
+- samp_transport_cont
+- study_design
+- nucl_acid_ext_kit
+- library_prep_kit
+- sequencing_kit
+- sequencing_location
+- study_inc_temp
+- study_inc_dur
+- study_timecourse
+- study_tmnt
+- food_source
+- food_dis_point
+- food_dis_point_city
+- food_origin
+- food_prod_synonym
+- food_additive
+- food_trace_list
+- part_plant_animal
+- food_ingredient
+- spec_intended_cons
+- HACCP_term
+- dietary_claim_use
+- food_allergen_label
+- food_prod_char
+- prod_label_claims
+- food_name_status
+- food_preserv_proc
+- food_cooking_proc
+- food_treat_proc
+- food_contain_wrap
+- food_pack_capacity
+- food_pack_medium
+- food_prior_contact
+- food_prod
+- food_quality_date
+- repository_name
+- intended_consumer
+- food_pack_integrity
+- misc_param
+slot_usage:
+  HACCP_term:
+    name: HACCP_term
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  IFSAC_category:
+    name: IFSAC_category
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  air_temp:
+    name: air_temp
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  area_samp_size:
+    name: area_samp_size
+    domain_of:
+    - FoodFoodProductionFacility
+  avg_occup:
+    name: avg_occup
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  bacterial_density:
+    name: bacterial_density
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  biocide_used:
+    name: biocide_used
+    domain_of:
+    - FoodFoodProductionFacility
+  coll_site_geo_feat:
+    name: coll_site_geo_feat
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  collection_date:
+    name: collection_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  cult_isol_date:
+    name: cult_isol_date
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_result:
+    name: cult_result
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_result_org:
+    name: cult_result_org
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_target:
+    name: cult_target
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  dietary_claim_use:
+    name: dietary_claim_use
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  enrichment_protocol:
+    name: enrichment_protocol
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  env_broad_scale:
+    name: env_broad_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_local_scale:
+    name: env_local_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_medium:
+    name: env_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_monitoring_zone:
+    name: env_monitoring_zone
+    domain_of:
+    - FoodFoodProductionFacility
+  experimental_factor:
+    name: experimental_factor
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  facility_type:
+    name: facility_type
+    domain_of:
+    - FoodFoodProductionFacility
+  food_additive:
+    name: food_additive
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_allergen_label:
+    name: food_allergen_label
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_contact_surf:
+    name: food_contact_surf
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_contain_wrap:
+    name: food_contain_wrap
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_cooking_proc:
+    name: food_cooking_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_dis_point:
+    name: food_dis_point
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_dis_point_city:
+    name: food_dis_point_city
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+  food_ingredient:
+    name: food_ingredient
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_name_status:
+    name: food_name_status
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_origin:
+    name: food_origin
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_capacity:
+    name: food_pack_capacity
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_integrity:
+    name: food_pack_integrity
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_medium:
+    name: food_pack_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_preserv_proc:
+    name: food_preserv_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prior_contact:
+    name: food_prior_contact
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prod:
+    name: food_prod
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prod_char:
+    name: food_prod_char
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+  food_prod_synonym:
+    name: food_prod_synonym
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_product_qual:
+    name: food_product_qual
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_product_type:
+    name: food_product_type
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_quality_date:
+    name: food_quality_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_source:
+    name: food_source
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trace_list:
+    name: food_trace_list
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trav_mode:
+    name: food_trav_mode
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trav_vehic:
+    name: food_trav_vehic
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_treat_proc:
+    name: food_treat_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  freq_clean:
+    name: freq_clean
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  genetic_mod:
+    name: genetic_mod
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - PlantAssociated
+  geo_loc_name:
+    name: geo_loc_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  hygienic_area:
+    name: hygienic_area
+    domain_of:
+    - FoodFoodProductionFacility
+  indoor_surf:
+    name: indoor_surf
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  intended_consumer:
+    name: intended_consumer
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  lat_lon:
+    name: lat_lon
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  library_prep_kit:
+    name: library_prep_kit
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  lot_number:
+    name: lot_number
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  microb_cult_med:
+    name: microb_cult_med
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  misc_param:
+    name: misc_param
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  nucl_acid_ext_kit:
+    name: nucl_acid_ext_kit
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  num_samp_collect:
+    name: num_samp_collect
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  part_plant_animal:
+    name: part_plant_animal
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  pool_dna_extracts:
+    name: pool_dna_extracts
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - Soil
+  prod_label_claims:
+    name: prod_label_claims
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  repository_name:
+    name: repository_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  room_dim:
+    name: room_dim
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_collect_device:
+    name: samp_collect_device
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_collect_method:
+    name: samp_collect_method
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+  samp_floor:
+    name: samp_floor
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_loc_condition:
+    name: samp_loc_condition
+    domain_of:
+    - FoodFoodProductionFacility
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_pooling:
+    name: samp_pooling
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_purpose:
+    name: samp_purpose
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_rep_biol:
+    name: samp_rep_biol
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_rep_tech:
+    name: samp_rep_tech
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_room_id:
+    name: samp_room_id
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_size:
+    name: samp_size
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  samp_source_mat_cat:
+    name: samp_source_mat_cat
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_device:
+    name: samp_stor_device
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_dur:
+    name: samp_stor_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_stor_loc:
+    name: samp_stor_loc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_stor_media:
+    name: samp_stor_media
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_temp:
+    name: samp_stor_temp
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_surf_moisture:
+    name: samp_surf_moisture
+    domain_of:
+    - FoodFoodProductionFacility
+  samp_transport_cont:
+    name: samp_transport_cont
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_transport_dur:
+    name: samp_transport_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_transport_temp:
+    name: samp_transport_temp
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_type:
+    name: samp_type
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  seq_meth:
+    name: seq_meth
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  sequencing_kit:
+    name: sequencing_kit
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  sequencing_location:
+    name: sequencing_location
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  spec_intended_cons:
+    name: spec_intended_cons
+    domain_of:
+    - FoodFoodProductionFacility
+  ster_meth_samp_room:
+    name: ster_meth_samp_room
+    domain_of:
+    - FoodFoodProductionFacility
+  study_design:
+    name: study_design
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_inc_dur:
+    name: study_inc_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_inc_temp:
+    name: study_inc_temp
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_timecourse:
+    name: study_timecourse
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_tmnt:
+    name: study_tmnt
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    domain_of:
+    - FoodFoodProductionFacility
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+  surf_material:
+    name: surf_material
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  timepoint:
+    name: timepoint
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+class_uri: MIXS:0016021
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: FoodFoodProductionFacility
+title: food-food production facility
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slot_usage:
+  HACCP_term:
+    name: HACCP_term
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  IFSAC_category:
+    name: IFSAC_category
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  air_temp:
+    name: air_temp
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  area_samp_size:
+    name: area_samp_size
+    domain_of:
+    - FoodFoodProductionFacility
+  avg_occup:
+    name: avg_occup
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  bacterial_density:
+    name: bacterial_density
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  biocide_used:
+    name: biocide_used
+    domain_of:
+    - FoodFoodProductionFacility
+  coll_site_geo_feat:
+    name: coll_site_geo_feat
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  collection_date:
+    name: collection_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  cult_isol_date:
+    name: cult_isol_date
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_result:
+    name: cult_result
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_result_org:
+    name: cult_result_org
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  cult_target:
+    name: cult_target
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  dietary_claim_use:
+    name: dietary_claim_use
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  enrichment_protocol:
+    name: enrichment_protocol
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  env_broad_scale:
+    name: env_broad_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_local_scale:
+    name: env_local_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_medium:
+    name: env_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_monitoring_zone:
+    name: env_monitoring_zone
+    domain_of:
+    - FoodFoodProductionFacility
+  experimental_factor:
+    name: experimental_factor
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  facility_type:
+    name: facility_type
+    domain_of:
+    - FoodFoodProductionFacility
+  food_additive:
+    name: food_additive
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_allergen_label:
+    name: food_allergen_label
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_contact_surf:
+    name: food_contact_surf
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_contain_wrap:
+    name: food_contain_wrap
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_cooking_proc:
+    name: food_cooking_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_dis_point:
+    name: food_dis_point
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_dis_point_city:
+    name: food_dis_point_city
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+  food_ingredient:
+    name: food_ingredient
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_name_status:
+    name: food_name_status
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_origin:
+    name: food_origin
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_capacity:
+    name: food_pack_capacity
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_integrity:
+    name: food_pack_integrity
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_pack_medium:
+    name: food_pack_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_preserv_proc:
+    name: food_preserv_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prior_contact:
+    name: food_prior_contact
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prod:
+    name: food_prod
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_prod_char:
+    name: food_prod_char
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+  food_prod_synonym:
+    name: food_prod_synonym
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_product_qual:
+    name: food_product_qual
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_product_type:
+    name: food_product_type
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  food_quality_date:
+    name: food_quality_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_source:
+    name: food_source
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trace_list:
+    name: food_trace_list
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trav_mode:
+    name: food_trav_mode
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_trav_vehic:
+    name: food_trav_vehic
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  food_treat_proc:
+    name: food_treat_proc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  freq_clean:
+    name: freq_clean
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  genetic_mod:
+    name: genetic_mod
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - PlantAssociated
+  geo_loc_name:
+    name: geo_loc_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  hygienic_area:
+    name: hygienic_area
+    domain_of:
+    - FoodFoodProductionFacility
+  indoor_surf:
+    name: indoor_surf
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  intended_consumer:
+    name: intended_consumer
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  lat_lon:
+    name: lat_lon
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  library_prep_kit:
+    name: library_prep_kit
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  lot_number:
+    name: lot_number
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  microb_cult_med:
+    name: microb_cult_med
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  misc_param:
+    name: misc_param
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  nucl_acid_ext_kit:
+    name: nucl_acid_ext_kit
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  num_samp_collect:
+    name: num_samp_collect
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  part_plant_animal:
+    name: part_plant_animal
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  pool_dna_extracts:
+    name: pool_dna_extracts
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - Soil
+  prod_label_claims:
+    name: prod_label_claims
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  repository_name:
+    name: repository_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  room_dim:
+    name: room_dim
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_collect_device:
+    name: samp_collect_device
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_collect_method:
+    name: samp_collect_method
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+  samp_floor:
+    name: samp_floor
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_loc_condition:
+    name: samp_loc_condition
+    domain_of:
+    - FoodFoodProductionFacility
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_pooling:
+    name: samp_pooling
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_purpose:
+    name: samp_purpose
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_rep_biol:
+    name: samp_rep_biol
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_rep_tech:
+    name: samp_rep_tech
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_room_id:
+    name: samp_room_id
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_size:
+    name: samp_size
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+  samp_source_mat_cat:
+    name: samp_source_mat_cat
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_device:
+    name: samp_stor_device
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_dur:
+    name: samp_stor_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_stor_loc:
+    name: samp_stor_loc
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_stor_media:
+    name: samp_stor_media
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    required: true
+  samp_stor_temp:
+    name: samp_stor_temp
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_surf_moisture:
+    name: samp_surf_moisture
+    domain_of:
+    - FoodFoodProductionFacility
+  samp_transport_cont:
+    name: samp_transport_cont
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_transport_dur:
+    name: samp_transport_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_transport_temp:
+    name: samp_transport_temp
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  samp_type:
+    name: samp_type
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  seq_meth:
+    name: seq_meth
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  sequencing_kit:
+    name: sequencing_kit
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  sequencing_location:
+    name: sequencing_location
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  spec_intended_cons:
+    name: spec_intended_cons
+    domain_of:
+    - FoodFoodProductionFacility
+  ster_meth_samp_room:
+    name: ster_meth_samp_room
+    domain_of:
+    - FoodFoodProductionFacility
+  study_design:
+    name: study_design
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_inc_dur:
+    name: study_inc_dur
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_inc_temp:
+    name: study_inc_temp
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_timecourse:
+    name: study_timecourse
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  study_tmnt:
+    name: study_tmnt
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    domain_of:
+    - FoodFoodProductionFacility
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+  surf_material:
+    name: surf_material
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  timepoint:
+    name: timepoint
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+attributes:
+  samp_name:
+    name: samp_name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_name
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  project_name:
+    name: project_name
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  lat_lon:
+    name: lat_lon
+    title: geographic location (latitude and longitude)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  geo_loc_name:
+    name: geo_loc_name
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  collection_date:
+    name: collection_date
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  env_broad_scale:
+    name: env_broad_scale
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  seq_meth:
+    name: seq_meth
+    title: sequencing method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000050
+    alias: seq_meth
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  samp_size:
+    name: samp_size
+    title: amount or size of sample collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_collect_device:
+    name: samp_collect_device
+    title: sample collection device
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000002
+    alias: samp_collect_device
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  experimental_factor:
+    name: experimental_factor
+    title: experimental factor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    title: nucleic acid extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}'
+  organism_count:
+    name: organism_count
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_stor_temp:
+    name: samp_stor_temp
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_stor_temp
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_stor_dur:
+    name: samp_stor_dur
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_stor_dur
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  air_temp:
+    name: air_temp
+    title: air temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000124
+    alias: air_temp
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  room_dim:
+    name: room_dim
+    title: room dimensions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000192
+    alias: room_dim
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  freq_clean:
+    name: freq_clean
+    title: frequency of cleaning
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000226
+    alias: freq_clean
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  samp_room_id:
+    name: samp_room_id
+    title: sampling room ID or name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000244
+    alias: samp_room_id
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: integer
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  pool_dna_extracts:
+    name: pool_dna_extracts
+    title: pooling of DNA extracts (if done)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000325
+    alias: pool_dna_extracts
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - Soil
+    range: string
+  samp_stor_loc:
+    name: samp_stor_loc
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_stor_loc
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  surf_material:
+    name: surf_material
+    title: surface material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000758
+    alias: surf_material
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  indoor_surf:
+    name: indoor_surf
+    title: indoor surface
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000764
+    alias: indoor_surf
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  avg_occup:
+    name: avg_occup
+    title: average daily occupancy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000775
+    alias: avg_occup
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: float
+  samp_floor:
+    name: samp_floor
+    title: sampling floor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000828
+    alias: samp_floor
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  genetic_mod:
+    name: genetic_mod
+    title: genetic modification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000859
+    alias: genetic_mod
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  coll_site_geo_feat:
+    name: coll_site_geo_feat
+    title: collection site geographic feature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001183
+    alias: coll_site_geo_feat
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  samp_source_mat_cat:
+    name: samp_source_mat_cat
+    title: sample source material category
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001154
+    alias: samp_source_mat_cat
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  samp_type:
+    name: samp_type
+    title: sample type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000998
+    alias: samp_type
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  samp_stor_media:
+    name: samp_stor_media
+    title: sample storage media
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001229
+    alias: samp_stor_media
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  samp_stor_device:
+    name: samp_stor_device
+    title: sample storage device
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001228
+    alias: samp_stor_device
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  food_product_type:
+    name: food_product_type
+    title: food product type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001184
+    alias: food_product_type
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  IFSAC_category:
+    name: IFSAC_category
+    title: Interagency Food Safety Analytics Collaboration (IFSAC) category
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001179
+    alias: IFSAC_category
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  food_product_qual:
+    name: food_product_qual
+    title: food product by quality
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001213
+    alias: food_product_qual
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_contact_surf:
+    name: food_contact_surf
+    title: food contact surface
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001131
+    alias: food_contact_surf
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  facility_type:
+    name: facility_type
+    title: facility type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001252
+    alias: facility_type
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+  food_trav_mode:
+    name: food_trav_mode
+    title: food shipping transportation method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001137
+    alias: food_trav_mode
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_trav_vehic:
+    name: food_trav_vehic
+    title: food shipping transportation vehicle
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001138
+    alias: food_trav_vehic
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_transport_dur:
+    name: samp_transport_dur
+    title: sample transport duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001231
+    alias: samp_transport_dur
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_transport_temp:
+    name: samp_transport_temp
+    title: sample transport temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001232
+    alias: samp_transport_temp
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_collect_method:
+    name: samp_collect_method
+    title: sample collection method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001225
+    alias: samp_collect_method
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  num_samp_collect:
+    name: num_samp_collect
+    title: number of samples collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001224
+    alias: num_samp_collect
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  lot_number:
+    name: lot_number
+    title: lot number
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001147
+    alias: lot_number
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  hygienic_area:
+    name: hygienic_area
+    title: hygienic food production area
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001253
+    alias: hygienic_area
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_monitoring_zone:
+    name: env_monitoring_zone
+    title: food production environmental monitoring zone
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001254
+    alias: env_monitoring_zone
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  area_samp_size:
+    name: area_samp_size
+    title: area sampled size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001255
+    alias: area_samp_size
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+  samp_surf_moisture:
+    name: samp_surf_moisture
+    title: sample surface moisture
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001256
+    alias: samp_surf_moisture
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+  samp_loc_condition:
+    name: samp_loc_condition
+    title: sample location condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001257
+    alias: samp_loc_condition
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+  biocide_used:
+    name: biocide_used
+    title: biocide
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001258
+    alias: biocide_used
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  ster_meth_samp_room:
+    name: ster_meth_samp_room
+    title: sampling room sterilization method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001259
+    alias: ster_meth_samp_room
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+  enrichment_protocol:
+    name: enrichment_protocol
+    title: enrichment protocol
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001177
+    alias: enrichment_protocol
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  cult_target:
+    name: cult_target
+    title: culture target microbial analyte
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001119
+    alias: cult_target
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  microb_cult_med:
+    name: microb_cult_med
+    title: microbiological culture medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001216
+    alias: microb_cult_med
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  timepoint:
+    name: timepoint
+    title: timepoint
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001173
+    alias: timepoint
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  bacterial_density:
+    name: bacterial_density
+    title: bacteria density
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001194
+    alias: bacterial_density
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  cult_isol_date:
+    name: cult_isol_date
+    title: culture isolation date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001181
+    alias: cult_isol_date
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  cult_result:
+    name: cult_result
+    title: culture result
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001117
+    alias: cult_result
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  cult_result_org:
+    name: cult_result_org
+    title: culture result organism
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001118
+    alias: cult_result_org
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    title: subspecific genetic lineage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000020
+    alias: subspecf_gen_lin
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    range: string
+  samp_pooling:
+    name: samp_pooling
+    title: sample pooling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001153
+    alias: samp_pooling
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_purpose:
+    name: samp_purpose
+    title: purpose of sampling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001151
+    alias: samp_purpose
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_rep_tech:
+    name: samp_rep_tech
+    title: technical sample replicate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001227
+    alias: samp_rep_tech
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_rep_biol:
+    name: samp_rep_biol
+    title: biological sample replicate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001226
+    alias: samp_rep_biol
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_transport_cont:
+    name: samp_transport_cont
+    title: sample transport container
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001230
+    alias: samp_transport_cont
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  study_design:
+    name: study_design
+    title: study design
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001236
+    alias: study_design
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  nucl_acid_ext_kit:
+    name: nucl_acid_ext_kit
+    title: nucleic acid extraction kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001223
+    alias: nucl_acid_ext_kit
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  library_prep_kit:
+    name: library_prep_kit
+    title: library preparation kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001145
+    alias: library_prep_kit
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  sequencing_kit:
+    name: sequencing_kit
+    title: sequencing kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001155
+    alias: sequencing_kit
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  sequencing_location:
+    name: sequencing_location
+    title: sequencing location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001156
+    alias: sequencing_location
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  study_inc_temp:
+    name: study_inc_temp
+    title: study incubation temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001238
+    alias: study_inc_temp
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  study_inc_dur:
+    name: study_inc_dur
+    title: study incubation duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001237
+    alias: study_inc_dur
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  study_timecourse:
+    name: study_timecourse
+    title: time-course duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001239
+    alias: study_timecourse
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  study_tmnt:
+    name: study_tmnt
+    title: study treatment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001240
+    alias: study_tmnt
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_source:
+    name: food_source
+    title: food source
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001139
+    alias: food_source
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_dis_point:
+    name: food_dis_point
+    title: food distribution point geographic location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001203
+    alias: food_dis_point
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_dis_point_city:
+    name: food_dis_point_city
+    title: food distribution point geographic location (city)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001204
+    alias: food_dis_point_city
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    range: string
+  food_origin:
+    name: food_origin
+    title: food product origin geographic location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001207
+    alias: food_origin
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_prod_synonym:
+    name: food_prod_synonym
+    title: food product synonym
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001212
+    alias: food_prod_synonym
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  food_additive:
+    name: food_additive
+    title: food additive
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001200
+    alias: food_additive
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_trace_list:
+    name: food_trace_list
+    title: food traceability list category
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001214
+    alias: food_trace_list
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  part_plant_animal:
+    name: part_plant_animal
+    title: part of plant or animal
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001149
+    alias: part_plant_animal
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_ingredient:
+    name: food_ingredient
+    title: food ingredient
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001205
+    alias: food_ingredient
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  spec_intended_cons:
+    name: spec_intended_cons
+    title: specific intended consumer
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001234
+    alias: spec_intended_cons
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  HACCP_term:
+    name: HACCP_term
+    title: Hazard Analysis Critical Control Points (HACCP) guide food safety term
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001215
+    alias: HACCP_term
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  dietary_claim_use:
+    name: dietary_claim_use
+    title: dietary claim or use
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001199
+    alias: dietary_claim_use
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_allergen_label:
+    name: food_allergen_label
+    title: food allergen labeling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001201
+    alias: food_allergen_label
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_prod_char:
+    name: food_prod_char
+    title: food production characteristics
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001136
+    alias: food_prod_char
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  prod_label_claims:
+    name: prod_label_claims
+    title: production labeling claims
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:9999999
+    alias: prod_label_claims
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  food_name_status:
+    name: food_name_status
+    title: food product name legal status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001206
+    alias: food_name_status
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_preserv_proc:
+    name: food_preserv_proc
+    title: food preservation process
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001135
+    alias: food_preserv_proc
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_cooking_proc:
+    name: food_cooking_proc
+    title: food cooking process
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001202
+    alias: food_cooking_proc
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_treat_proc:
+    name: food_treat_proc
+    title: food treatment process
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001140
+    alias: food_treat_proc
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_contain_wrap:
+    name: food_contain_wrap
+    title: food container or wrapping
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001132
+    alias: food_contain_wrap
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_pack_capacity:
+    name: food_pack_capacity
+    title: food package capacity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001208
+    alias: food_pack_capacity
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  food_pack_medium:
+    name: food_pack_medium
+    title: food packing medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001134
+    alias: food_pack_medium
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_prior_contact:
+    name: food_prior_contact
+    title: material of contact prior to food packaging
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001210
+    alias: food_prior_contact
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_prod:
+    name: food_prod
+    title: food production system characteristics
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001211
+    alias: food_prod
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_quality_date:
+    name: food_quality_date
+    title: food quality date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001178
+    alias: food_quality_date
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  repository_name:
+    name: repository_name
+    title: repository name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001152
+    alias: repository_name
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  intended_consumer:
+    name: intended_consumer
+    title: intended consumer
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001144
+    alias: intended_consumer
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  food_pack_integrity:
+    name: food_pack_integrity
+    title: food packing medium integrity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001209
+    alias: food_pack_integrity
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  misc_param:
+    name: misc_param
+    title: miscellaneous parameter
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000752
+    alias: misc_param
+    owner: FoodFoodProductionFacility
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+class_uri: MIXS:0016021
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>

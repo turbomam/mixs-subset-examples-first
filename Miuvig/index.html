@@ -1,0 +1,4736 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://turbomam.github.io/mixs-subset-examples-first/Miuvig/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Class: Miuvig - mixs-subset-examples-first</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-miuvig">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="mixs-subset-examples-first" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            mixs-subset-examples-first
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: Miuvig
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="mixs-subset-examples-first" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    mixs-subset-examples-first
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+    Inheritance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+    Slots
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mixin-usage">
+    Mixin Usage
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+    Identifier and Mapping Information
+  </a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+    Schema Source
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+    LinkML Source
+  </a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+    Direct
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+    Induced
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/Miuvig.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="class-miuvig">Class: Miuvig</h1>
+<p>URI: <a href="http://example.com/0010012">MIXS:0010012</a></p>
+<div class="mermaid"> classDiagram
+    class Miuvig
+      Checklist &lt;|-- Miuvig
+
+      Miuvig : adapters
+
+      Miuvig : alt
+
+      Miuvig : annot
+
+      Miuvig : assembly_name
+
+      Miuvig : assembly_qual
+
+      Miuvig : assembly_software
+
+      Miuvig : associated_resource
+
+      Miuvig : bin_param
+
+      Miuvig : bin_software
+
+      Miuvig : biotic_relationship
+
+      Miuvig : collection_date
+
+      Miuvig : compl_appr
+
+      Miuvig : compl_score
+
+      Miuvig : compl_software
+
+      Miuvig : depth
+
+      Miuvig : detec_type
+
+      Miuvig : elev
+
+      Miuvig : env_broad_scale
+
+      Miuvig : env_local_scale
+
+      Miuvig : env_medium
+
+      Miuvig : estimated_size
+
+      Miuvig : experimental_factor
+
+      Miuvig : feat_pred
+
+      Miuvig : geo_loc_name
+
+      Miuvig : host_disease_stat
+
+      Miuvig : host_pred_appr
+
+      Miuvig : host_pred_est_acc
+
+      Miuvig : host_spec_range
+
+      Miuvig : lat_lon
+
+      Miuvig : lib_layout
+
+      Miuvig : lib_reads_seqd
+
+      Miuvig : lib_screen
+
+      Miuvig : lib_size
+
+      Miuvig : lib_vector
+
+      Miuvig : mag_cov_software
+
+      Miuvig : mid
+
+      Miuvig : neg_cont_type
+
+      Miuvig : nucl_acid_amp
+
+      Miuvig : nucl_acid_ext
+
+      Miuvig : number_contig
+
+      Miuvig : otu_class_appr
+
+      Miuvig : otu_db
+
+      Miuvig : otu_seq_comp_appr
+
+      Miuvig : pathogenicity
+
+      Miuvig : pos_cont_type
+
+      Miuvig : pred_genome_struc
+
+      Miuvig : pred_genome_type
+
+      Miuvig : project_name
+
+      Miuvig : reassembly_bin
+
+      Miuvig : ref_biomaterial
+
+      Miuvig : ref_db
+
+      Miuvig : samp_collec_device
+
+      Miuvig : samp_collec_method
+
+      Miuvig : samp_mat_process
+
+      Miuvig : samp_name
+
+      Miuvig : samp_size
+
+      Miuvig : samp_taxon_id
+
+      Miuvig : samp_vol_we_dna_ext
+
+      Miuvig : seq_meth
+
+      Miuvig : sim_search_meth
+
+      Miuvig : single_cell_lysis_appr
+
+      Miuvig : single_cell_lysis_prot
+
+      Miuvig : size_frac
+
+      Miuvig : sop
+
+      Miuvig : sort_tech
+
+      Miuvig : source_mat_id
+
+      Miuvig : source_uvig
+
+      Miuvig : specific_host
+
+      Miuvig : tax_class
+
+      Miuvig : tax_ident
+
+      Miuvig : temp
+
+      Miuvig : trna_ext_software
+
+      Miuvig : trnas
+
+      Miuvig : vir_ident_software
+
+      Miuvig : virus_enrich_appr
+
+      Miuvig : wga_amp_appr
+
+      Miuvig : wga_amp_kit
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../Checklist/">Checklist</a><ul>
+<li><strong>Miuvig</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../adapters/">adapters</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../alt/">alt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../annot/">annot</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../assembly_name/">assembly_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../bin_param/">bin_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../bin_software/">bin_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biotic_relationship/">biotic_relationship</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../compl_appr/">compl_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../compl_score/">compl_score</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../compl_software/">compl_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../depth/">depth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../detec_type/">detec_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../elev/">elev</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../estimated_size/">estimated_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../feat_pred/">feat_pred</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_disease_stat/">host_disease_stat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_pred_appr/">host_pred_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_pred_est_acc/">host_pred_est_acc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_spec_range/">host_spec_range</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mag_cov_software/">mag_cov_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mid/">mid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../otu_class_appr/">otu_class_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../otu_db/">otu_db</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../otu_seq_comp_appr/">otu_seq_comp_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pathogenicity/">pathogenicity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pred_genome_struc/">pred_genome_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pred_genome_type/">pred_genome_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../reassembly_bin/">reassembly_bin</a></td>
+<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ref_db/">ref_db</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_collec_device/">samp_collec_device</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_collec_method/">samp_collec_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../single_cell_lysis_appr/">single_cell_lysis_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../single_cell_lysis_prot/">single_cell_lysis_prot</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../size_frac/">size_frac</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sop/">sop</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sort_tech/">sort_tech</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../source_uvig/">source_uvig</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../specific_host/">specific_host</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tax_ident/">tax_ident</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../trna_ext_software/">trna_ext_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../trnas/">trnas</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vir_ident_software/">vir_ident_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../virus_enrich_appr/">virus_enrich_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wga_amp_appr/">wga_amp_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wga_amp_kit/">wga_amp_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mixin-usage">Mixin Usage</h2>
+<table>
+<thead>
+<tr>
+<th>mixed into</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>MIXS:0010012</td>
+</tr>
+<tr>
+<td>native</td>
+<td>MIXS:Miuvig</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: Miuvig
+title: miuvig
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: Checklist
+mixin: true
+slots:
+- adapters
+- alt
+- annot
+- assembly_name
+- assembly_qual
+- assembly_software
+- associated resource
+- bin_param
+- bin_software
+- biotic_relationship
+- collection_date
+- compl_appr
+- compl_score
+- compl_software
+- depth
+- detec_type
+- elev
+- env_broad_scale
+- env_local_scale
+- env_medium
+- estimated_size
+- experimental_factor
+- feat_pred
+- geo_loc_name
+- host_disease_stat
+- host_pred_appr
+- host_pred_est_acc
+- host_spec_range
+- lat_lon
+- lib_layout
+- lib_reads_seqd
+- lib_screen
+- lib_size
+- lib_vector
+- mag_cov_software
+- mid
+- neg_cont_type
+- nucl_acid_amp
+- nucl_acid_ext
+- number_contig
+- otu_class_appr
+- otu_db
+- otu_seq_comp_appr
+- pathogenicity
+- pos_cont_type
+- pred_genome_struc
+- pred_genome_type
+- project_name
+- reassembly_bin
+- ref_biomaterial
+- ref_db
+- samp_collec_device
+- samp_collec_method
+- samp_mat_process
+- samp_name
+- samp_size
+- samp_taxon_id
+- samp_vol_we_dna_ext
+- seq_meth
+- sim_search_meth
+- single_cell_lysis_appr
+- single_cell_lysis_prot
+- size_frac
+- sop
+- sort_tech
+- source_mat_id
+- source_uvig
+- specific_host
+- tax_class
+- tax_ident
+- temp
+- trna_ext_software
+- trnas
+- vir_ident_software
+- virus_enrich_appr
+- wga_amp_appr
+- wga_amp_kit
+slot_usage:
+  adapters:
+    name: adapters
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  alt:
+    name: alt
+    domain_of:
+    - Air
+    - HostAssociated
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - SymbiontAssociated
+    recommended: true
+  annot:
+    name: annot
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+  assembly_name:
+    name: assembly_name
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  assembly_qual:
+    name: assembly_qual
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  assembly_software:
+    name: assembly_software
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  associated resource:
+    name: associated resource
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  bin_param:
+    name: bin_param
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  bin_software:
+    name: bin_software
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  biotic_relationship:
+    name: biotic_relationship
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+  collection_date:
+    name: collection_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  compl_appr:
+    name: compl_appr
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+    recommended: true
+  compl_score:
+    name: compl_score
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    recommended: true
+  compl_software:
+    name: compl_software
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+  depth:
+    name: depth
+    domain_of:
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  detec_type:
+    name: detec_type
+    domain_of:
+    - Miuvig
+    required: true
+  elev:
+    name: elev
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    recommended: true
+  env_broad_scale:
+    name: env_broad_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_local_scale:
+    name: env_local_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_medium:
+    name: env_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  estimated_size:
+    name: estimated_size
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  experimental_factor:
+    name: experimental_factor
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  feat_pred:
+    name: feat_pred
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  geo_loc_name:
+    name: geo_loc_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  host_disease_stat:
+    name: host_disease_stat
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - PlantAssociated
+    recommended: true
+  host_pred_appr:
+    name: host_pred_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  host_pred_est_acc:
+    name: host_pred_est_acc
+    domain_of:
+    - Miuvig
+    recommended: true
+  host_spec_range:
+    name: host_spec_range
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  lat_lon:
+    name: lat_lon
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  lib_layout:
+    name: lib_layout
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_screen:
+    name: lib_screen
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_size:
+    name: lib_size
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_vector:
+    name: lib_vector
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  mag_cov_software:
+    name: mag_cov_software
+    domain_of:
+    - Mimag
+    - Miuvig
+  mid:
+    name: mid
+    domain_of:
+    - Agriculture
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  neg_cont_type:
+    name: neg_cont_type
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  number_contig:
+    name: number_contig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  otu_class_appr:
+    name: otu_class_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  otu_db:
+    name: otu_db
+    domain_of:
+    - Miuvig
+    recommended: true
+  otu_seq_comp_appr:
+    name: otu_seq_comp_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  pathogenicity:
+    name: pathogenicity
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+  pos_cont_type:
+    name: pos_cont_type
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  pred_genome_struc:
+    name: pred_genome_struc
+    domain_of:
+    - Miuvig
+    required: true
+  pred_genome_type:
+    name: pred_genome_type
+    domain_of:
+    - Miuvig
+    required: true
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  reassembly_bin:
+    name: reassembly_bin
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  ref_biomaterial:
+    name: ref_biomaterial
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+  ref_db:
+    name: ref_db
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_collec_device:
+    name: samp_collec_device
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_collec_method:
+    name: samp_collec_method
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_mat_process:
+    name: samp_mat_process
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_size:
+    name: samp_size
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_taxon_id:
+    name: samp_taxon_id
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  seq_meth:
+    name: seq_meth
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  sim_search_meth:
+    name: sim_search_meth
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  single_cell_lysis_appr:
+    name: single_cell_lysis_appr
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  single_cell_lysis_prot:
+    name: single_cell_lysis_prot
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  size_frac:
+    name: size_frac
+    domain_of:
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  sop:
+    name: sop
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  sort_tech:
+    name: sort_tech
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  source_mat_id:
+    name: source_mat_id
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    recommended: true
+  source_uvig:
+    name: source_uvig
+    domain_of:
+    - Miuvig
+    required: true
+  specific_host:
+    name: specific_host
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  tax_class:
+    name: tax_class
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  tax_ident:
+    name: tax_ident
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+  temp:
+    name: temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  trna_ext_software:
+    name: trna_ext_software
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+  trnas:
+    name: trnas
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+  vir_ident_software:
+    name: vir_ident_software
+    domain_of:
+    - Miuvig
+    required: true
+  virus_enrich_appr:
+    name: virus_enrich_appr
+    domain_of:
+    - MigsVi
+    - Miuvig
+    required: true
+  wga_amp_appr:
+    name: wga_amp_appr
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  wga_amp_kit:
+    name: wga_amp_kit
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+class_uri: MIXS:0010012
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: Miuvig
+title: miuvig
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: Checklist
+mixin: true
+slot_usage:
+  adapters:
+    name: adapters
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  alt:
+    name: alt
+    domain_of:
+    - Air
+    - HostAssociated
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - SymbiontAssociated
+    recommended: true
+  annot:
+    name: annot
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+  assembly_name:
+    name: assembly_name
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  assembly_qual:
+    name: assembly_qual
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  assembly_software:
+    name: assembly_software
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  associated resource:
+    name: associated resource
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  bin_param:
+    name: bin_param
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  bin_software:
+    name: bin_software
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  biotic_relationship:
+    name: biotic_relationship
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+  collection_date:
+    name: collection_date
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  compl_appr:
+    name: compl_appr
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+    recommended: true
+  compl_score:
+    name: compl_score
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    recommended: true
+  compl_software:
+    name: compl_software
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+  depth:
+    name: depth
+    domain_of:
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  detec_type:
+    name: detec_type
+    domain_of:
+    - Miuvig
+    required: true
+  elev:
+    name: elev
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    recommended: true
+  env_broad_scale:
+    name: env_broad_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_local_scale:
+    name: env_local_scale
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  env_medium:
+    name: env_medium
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  estimated_size:
+    name: estimated_size
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  experimental_factor:
+    name: experimental_factor
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  feat_pred:
+    name: feat_pred
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  geo_loc_name:
+    name: geo_loc_name
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  host_disease_stat:
+    name: host_disease_stat
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - PlantAssociated
+    recommended: true
+  host_pred_appr:
+    name: host_pred_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  host_pred_est_acc:
+    name: host_pred_est_acc
+    domain_of:
+    - Miuvig
+    recommended: true
+  host_spec_range:
+    name: host_spec_range
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  lat_lon:
+    name: lat_lon
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    required: true
+  lib_layout:
+    name: lib_layout
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_screen:
+    name: lib_screen
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_size:
+    name: lib_size
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  lib_vector:
+    name: lib_vector
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  mag_cov_software:
+    name: mag_cov_software
+    domain_of:
+    - Mimag
+    - Miuvig
+  mid:
+    name: mid
+    domain_of:
+    - Agriculture
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  neg_cont_type:
+    name: neg_cont_type
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  number_contig:
+    name: number_contig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  otu_class_appr:
+    name: otu_class_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  otu_db:
+    name: otu_db
+    domain_of:
+    - Miuvig
+    recommended: true
+  otu_seq_comp_appr:
+    name: otu_seq_comp_appr
+    domain_of:
+    - Miuvig
+    recommended: true
+  pathogenicity:
+    name: pathogenicity
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+  pos_cont_type:
+    name: pos_cont_type
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  pred_genome_struc:
+    name: pred_genome_struc
+    domain_of:
+    - Miuvig
+    required: true
+  pred_genome_type:
+    name: pred_genome_type
+    domain_of:
+    - Miuvig
+    required: true
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  reassembly_bin:
+    name: reassembly_bin
+    domain_of:
+    - Mimag
+    - Miuvig
+    recommended: true
+  ref_biomaterial:
+    name: ref_biomaterial
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+  ref_db:
+    name: ref_db
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_collec_device:
+    name: samp_collec_device
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_collec_method:
+    name: samp_collec_method
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_mat_process:
+    name: samp_mat_process
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_size:
+    name: samp_size
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  samp_taxon_id:
+    name: samp_taxon_id
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  seq_meth:
+    name: seq_meth
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    required: true
+  sim_search_meth:
+    name: sim_search_meth
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  single_cell_lysis_appr:
+    name: single_cell_lysis_appr
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  single_cell_lysis_prot:
+    name: single_cell_lysis_prot
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  size_frac:
+    name: size_frac
+    domain_of:
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  sop:
+    name: sop
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  sort_tech:
+    name: sort_tech
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  source_mat_id:
+    name: source_mat_id
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    recommended: true
+  source_uvig:
+    name: source_uvig
+    domain_of:
+    - Miuvig
+    required: true
+  specific_host:
+    name: specific_host
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+  tax_class:
+    name: tax_class
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    recommended: true
+  tax_ident:
+    name: tax_ident
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+  temp:
+    name: temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  trna_ext_software:
+    name: trna_ext_software
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+  trnas:
+    name: trnas
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+  vir_ident_software:
+    name: vir_ident_software
+    domain_of:
+    - Miuvig
+    required: true
+  virus_enrich_appr:
+    name: virus_enrich_appr
+    domain_of:
+    - MigsVi
+    - Miuvig
+    required: true
+  wga_amp_appr:
+    name: wga_amp_appr
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+  wga_amp_kit:
+    name: wga_amp_kit
+    domain_of:
+    - Misag
+    - Miuvig
+    recommended: true
+attributes:
+  adapters:
+    name: adapters
+    title: adapters
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000048
+    alias: adapters
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  alt:
+    name: alt
+    title: altitude
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000094
+    alias: alt
+    owner: Miuvig
+    domain_of:
+    - Air
+    - HostAssociated
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  annot:
+    name: annot
+    title: annotation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000059
+    alias: annot
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  assembly_name:
+    name: assembly_name
+    title: assembly name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000057
+    alias: assembly_name
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  assembly_qual:
+    name: assembly_qual
+    title: assembly quality
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000056
+    alias: assembly_qual
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  assembly_software:
+    name: assembly_software
+    title: assembly software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000058
+    alias: assembly_software
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  associated resource:
+    name: associated resource
+    title: relevant electronic resources
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000091
+    alias: associated_resource
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  bin_param:
+    name: bin_param
+    title: binning parameters
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000077
+    alias: bin_param
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Miuvig
+    range: string
+    recommended: true
+  bin_software:
+    name: bin_software
+    title: binning software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000078
+    alias: bin_software
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Miuvig
+    range: string
+    recommended: true
+  biotic_relationship:
+    name: biotic_relationship
+    title: observed biotic relationship
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000028
+    alias: biotic_relationship
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+    range: string
+  collection_date:
+    name: collection_date
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  compl_appr:
+    name: compl_appr
+    title: completeness approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000071
+    alias: compl_appr
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  compl_score:
+    name: compl_score
+    title: completeness score
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000069
+    alias: compl_score
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  compl_software:
+    name: compl_software
+    title: completeness software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000070
+    alias: compl_software
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+  depth:
+    name: depth
+    title: depth
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000018
+    alias: depth
+    owner: Miuvig
+    domain_of:
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  detec_type:
+    name: detec_type
+    title: detection type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000084
+    alias: detec_type
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    required: true
+  elev:
+    name: elev
+    title: elevation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000093
+    alias: elev
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  env_broad_scale:
+    name: env_broad_scale
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  estimated_size:
+    name: estimated_size
+    title: estimated size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000024
+    alias: estimated_size
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+  experimental_factor:
+    name: experimental_factor
+    title: experimental factor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  feat_pred:
+    name: feat_pred
+    title: feature prediction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000061
+    alias: feat_pred
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  geo_loc_name:
+    name: geo_loc_name
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  host_disease_stat:
+    name: host_disease_stat
+    title: host disease status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000031
+    alias: host_disease_stat
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - PlantAssociated
+    range: string
+    recommended: true
+  host_pred_appr:
+    name: host_pred_appr
+    title: host prediction approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000088
+    alias: host_pred_appr
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    recommended: true
+  host_pred_est_acc:
+    name: host_pred_est_acc
+    title: host prediction estimated accuracy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000089
+    alias: host_pred_est_acc
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_spec_range:
+    name: host_spec_range
+    title: host specificity or range
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000030
+    alias: host_spec_range
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: integer
+  lat_lon:
+    name: lat_lon
+    title: geographic location (latitude and longitude)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: Miuvig
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  lib_layout:
+    name: lib_layout
+    title: library layout
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000041
+    alias: lib_layout
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    title: library reads sequenced
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000040
+    alias: lib_reads_seqd
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_screen:
+    name: lib_screen
+    title: library screening strategy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000043
+    alias: lib_screen
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  lib_size:
+    name: lib_size
+    title: library size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000039
+    alias: lib_size
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_vector:
+    name: lib_vector
+    title: library vector
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000042
+    alias: lib_vector
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  mag_cov_software:
+    name: mag_cov_software
+    title: MAG coverage software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000080
+    alias: mag_cov_software
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Miuvig
+    range: string
+  mid:
+    name: mid
+    title: multiplex identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000047
+    alias: mid
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  neg_cont_type:
+    name: neg_cont_type
+    title: negative control type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001321
+    alias: neg_cont_type
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    title: nucleic acid amplification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000038
+    alias: nucl_acid_amp
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    title: nucleic acid extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{PMID}|{DOI}|{URL}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}'
+  number_contig:
+    name: number_contig
+    title: number of contigs
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000060
+    alias: number_contig
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    required: true
+  otu_class_appr:
+    name: otu_class_appr
+    title: OTU classification approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000085
+    alias: otu_class_appr
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    recommended: true
+  otu_db:
+    name: otu_db
+    title: OTU database
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000087
+    alias: otu_db
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    recommended: true
+  otu_seq_comp_appr:
+    name: otu_seq_comp_appr
+    title: OTU sequence comparison approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000086
+    alias: otu_seq_comp_appr
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  pathogenicity:
+    name: pathogenicity
+    title: known pathogenicity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000027
+    alias: pathogenicity
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    range: string
+  pos_cont_type:
+    name: pos_cont_type
+    title: positive control type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001322
+    alias: pos_cont_type
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  pred_genome_struc:
+    name: pred_genome_struc
+    title: predicted genome structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000083
+    alias: pred_genome_struc
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    required: true
+  pred_genome_type:
+    name: pred_genome_type
+    title: predicted genome type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000082
+    alias: pred_genome_type
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    required: true
+  project_name:
+    name: project_name
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: Miuvig
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  reassembly_bin:
+    name: reassembly_bin
+    title: reassembly post binning
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000079
+    alias: reassembly_bin
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Miuvig
+    range: boolean
+    recommended: true
+  ref_biomaterial:
+    name: ref_biomaterial
+    title: reference for biomaterial
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000025
+    alias: ref_biomaterial
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}'
+  ref_db:
+    name: ref_db
+    title: reference database(s)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000062
+    alias: ref_db
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_collec_device:
+    name: samp_collec_device
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_collec_device
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_collec_method:
+    name: samp_collec_method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_collec_method
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_mat_process:
+    name: samp_mat_process
+    title: sample material processing
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000016
+    alias: samp_mat_process
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_name:
+    name: samp_name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_name
+    owner: Miuvig
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  samp_size:
+    name: samp_size
+    title: amount or size of sample collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_taxon_id:
+    name: samp_taxon_id
+    title: taxonomy ID of DNA sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001320
+    alias: samp_taxon_id
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  seq_meth:
+    name: seq_meth
+    title: sequencing method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000050
+    alias: seq_meth
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  sim_search_meth:
+    name: sim_search_meth
+    title: similarity search method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000063
+    alias: sim_search_meth
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  single_cell_lysis_appr:
+    name: single_cell_lysis_appr
+    title: single cell or viral particle lysis approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000076
+    alias: single_cell_lysis_appr
+    owner: Miuvig
+    domain_of:
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  single_cell_lysis_prot:
+    name: single_cell_lysis_prot
+    title: single cell or viral particle lysis kit protocol
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000054
+    alias: single_cell_lysis_prot
+    owner: Miuvig
+    domain_of:
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  size_frac:
+    name: size_frac
+    title: size fraction selected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000017
+    alias: size_frac
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float}-{float} {unit}'
+  sop:
+    name: sop
+    title: relevant standard operating procedures
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000090
+    alias: sop
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  sort_tech:
+    name: sort_tech
+    title: sorting technology
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000075
+    alias: sort_tech
+    owner: Miuvig
+    domain_of:
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  source_mat_id:
+    name: source_mat_id
+    title: source material identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000026
+    alias: source_mat_id
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  source_uvig:
+    name: source_uvig
+    title: source of UViGs
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000035
+    alias: source_uvig
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    required: true
+  specific_host:
+    name: specific_host
+    title: host scientific name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000029
+    alias: specific_host
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+  tax_class:
+    name: tax_class
+    title: taxonomic classification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000064
+    alias: tax_class
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  tax_ident:
+    name: tax_ident
+    title: taxonomic identity marker
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000053
+    alias: tax_ident
+    owner: Miuvig
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+  temp:
+    name: temp
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: Miuvig
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  trna_ext_software:
+    name: trna_ext_software
+    title: tRNA extraction software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000068
+    alias: trna_ext_software
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  trnas:
+    name: trnas
+    title: number of standard tRNAs extracted
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000067
+    alias: trnas
+    owner: Miuvig
+    domain_of:
+    - Mimag
+    - Misag
+    - Miuvig
+    range: integer
+    minimum_value: 0
+    maximum_value: 21
+  vir_ident_software:
+    name: vir_ident_software
+    title: viral identification software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000081
+    alias: vir_ident_software
+    owner: Miuvig
+    domain_of:
+    - Miuvig
+    range: string
+    required: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  virus_enrich_appr:
+    name: virus_enrich_appr
+    title: virus enrichment approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000036
+    alias: virus_enrich_appr
+    owner: Miuvig
+    domain_of:
+    - MigsVi
+    - Miuvig
+    range: string
+    required: true
+  wga_amp_appr:
+    name: wga_amp_appr
+    title: WGA amplification approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000055
+    alias: wga_amp_appr
+    owner: Miuvig
+    domain_of:
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  wga_amp_kit:
+    name: wga_amp_kit
+    title: WGA amplification kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000006
+    alias: wga_amp_kit
+    owner: Miuvig
+    domain_of:
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+class_uri: MIXS:0010012
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>

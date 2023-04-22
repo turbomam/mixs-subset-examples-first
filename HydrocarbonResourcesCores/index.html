@@ -1,0 +1,4154 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://turbomam.github.io/mixs-subset-examples-first/HydrocarbonResourcesCores/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Class: HydrocarbonResourcesCores - mixs-subset-examples-first</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-hydrocarbonresourcescores">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="mixs-subset-examples-first" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            mixs-subset-examples-first
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: HydrocarbonResourcesCores
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="mixs-subset-examples-first" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    mixs-subset-examples-first
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+    Inheritance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+    Slots
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+    Usages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+    Identifier and Mapping Information
+  </a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+    Schema Source
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+    LinkML Source
+  </a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+    Direct
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+    Induced
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/HydrocarbonResourcesCores.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="class-hydrocarbonresourcescores">Class: HydrocarbonResourcesCores</h1>
+<p>URI: <a href="http://example.com/0016015">MIXS:0016015</a></p>
+<div class="mermaid"> classDiagram
+    class HydrocarbonResourcesCores
+      EnvironmentalPackage &lt;|-- HydrocarbonResourcesCores
+
+      HydrocarbonResourcesCores : additional_info
+
+      HydrocarbonResourcesCores : alkalinity
+
+      HydrocarbonResourcesCores : alkalinity_method
+
+      HydrocarbonResourcesCores : ammonium
+
+      HydrocarbonResourcesCores : api
+
+      HydrocarbonResourcesCores : aromatics_pc
+
+      HydrocarbonResourcesCores : asphaltenes_pc
+
+      HydrocarbonResourcesCores : basin
+
+      HydrocarbonResourcesCores : benzene
+
+      HydrocarbonResourcesCores : calcium
+
+      HydrocarbonResourcesCores : chloride
+
+      HydrocarbonResourcesCores : density
+
+      HydrocarbonResourcesCores : depos_env
+
+      HydrocarbonResourcesCores : diss_carb_dioxide
+
+      HydrocarbonResourcesCores : diss_inorg_carb
+
+      HydrocarbonResourcesCores : diss_inorg_phosp
+
+      HydrocarbonResourcesCores : diss_iron
+
+      HydrocarbonResourcesCores : diss_org_carb
+
+      HydrocarbonResourcesCores : diss_oxygen_fluid
+
+      HydrocarbonResourcesCores : elev
+
+      HydrocarbonResourcesCores : ethylbenzene
+
+      HydrocarbonResourcesCores : field
+
+      HydrocarbonResourcesCores : hc_produced
+
+      HydrocarbonResourcesCores : hcr
+
+      HydrocarbonResourcesCores : hcr_fw_salinity
+
+      HydrocarbonResourcesCores : hcr_geol_age
+
+      HydrocarbonResourcesCores : hcr_pressure
+
+      HydrocarbonResourcesCores : hcr_temp
+
+      HydrocarbonResourcesCores : lithology
+
+      HydrocarbonResourcesCores : magnesium
+
+      HydrocarbonResourcesCores : misc_param
+
+      HydrocarbonResourcesCores : nitrate
+
+      HydrocarbonResourcesCores : nitrite
+
+      HydrocarbonResourcesCores : org_count_qpcr_info
+
+      HydrocarbonResourcesCores : organism_count
+
+      HydrocarbonResourcesCores : owc_tvdss
+
+      HydrocarbonResourcesCores : oxy_stat_samp
+
+      HydrocarbonResourcesCores : permeability
+
+      HydrocarbonResourcesCores : ph
+
+      HydrocarbonResourcesCores : porosity
+
+      HydrocarbonResourcesCores : potassium
+
+      HydrocarbonResourcesCores : pour_point
+
+      HydrocarbonResourcesCores : pressure
+
+      HydrocarbonResourcesCores : project_name
+
+      HydrocarbonResourcesCores : reservoir
+
+      HydrocarbonResourcesCores : resins_pc
+
+      HydrocarbonResourcesCores : salinity
+
+      HydrocarbonResourcesCores : samp_md
+
+      HydrocarbonResourcesCores : samp_name
+
+      HydrocarbonResourcesCores : samp_store_dur
+
+      HydrocarbonResourcesCores : samp_store_loc
+
+      HydrocarbonResourcesCores : samp_store_temp
+
+      HydrocarbonResourcesCores : samp_subtype
+
+      HydrocarbonResourcesCores : samp_transport_cond
+
+      HydrocarbonResourcesCores : samp_tvdss
+
+      HydrocarbonResourcesCores : samp_type
+
+      HydrocarbonResourcesCores : samp_vol_we_dna_ext
+
+      HydrocarbonResourcesCores : samp_well_name
+
+      HydrocarbonResourcesCores : saturates_pc
+
+      HydrocarbonResourcesCores : sodium
+
+      HydrocarbonResourcesCores : sr_dep_env
+
+      HydrocarbonResourcesCores : sr_geol_age
+
+      HydrocarbonResourcesCores : sr_kerog_type
+
+      HydrocarbonResourcesCores : sr_lithology
+
+      HydrocarbonResourcesCores : sulfate
+
+      HydrocarbonResourcesCores : sulfate_fw
+
+      HydrocarbonResourcesCores : sulfide
+
+      HydrocarbonResourcesCores : suspend_solids
+
+      HydrocarbonResourcesCores : tan
+
+      HydrocarbonResourcesCores : temp
+
+      HydrocarbonResourcesCores : toluene
+
+      HydrocarbonResourcesCores : tot_iron
+
+      HydrocarbonResourcesCores : tot_nitro
+
+      HydrocarbonResourcesCores : tot_phosp
+
+      HydrocarbonResourcesCores : tot_sulfur
+
+      HydrocarbonResourcesCores : tvdss_of_hcr_press
+
+      HydrocarbonResourcesCores : tvdss_of_hcr_temp
+
+      HydrocarbonResourcesCores : vfa
+
+      HydrocarbonResourcesCores : vfa_fw
+
+      HydrocarbonResourcesCores : viscosity
+
+      HydrocarbonResourcesCores : win
+
+      HydrocarbonResourcesCores : xylene
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../EnvironmentalPackage/">EnvironmentalPackage</a><ul>
+<li><strong>HydrocarbonResourcesCores</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr/">hcr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hc_produced/">hc_produced</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../basin/">basin</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../field/">field</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../reservoir/">reservoir</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_temp/">hcr_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tvdss_of_hcr_temp/">tvdss_of_hcr_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_pressure/">hcr_pressure</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tvdss_of_hcr_press/">tvdss_of_hcr_press</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../permeability/">permeability</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../porosity/">porosity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lithology/">lithology</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../depos_env/">depos_env</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_geol_age/">hcr_geol_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../owc_tvdss/">owc_tvdss</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_fw_salinity/">hcr_fw_salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfate_fw/">sulfate_fw</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vfa_fw/">vfa_fw</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sr_kerog_type/">sr_kerog_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sr_lithology/">sr_lithology</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sr_dep_env/">sr_dep_env</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sr_geol_age/">sr_geol_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_well_name/">samp_well_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../win/">win</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_type/">samp_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_subtype/">samp_subtype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pressure/">pressure</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_tvdss/">samp_tvdss</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_md/">samp_md</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../elev/">elev</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_cond/">samp_transport_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../org_count_qpcr_info/">org_count_qpcr_info</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ph/">ph</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../alkalinity/">alkalinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../alkalinity_method/">alkalinity_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfate/">sulfate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfide/">sulfide</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_sulfur/">tot_sulfur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nitrate/">nitrate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nitrite/">nitrite</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ammonium/">ammonium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_nitro/">tot_nitro</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_iron/">diss_iron</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sodium/">sodium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chloride/">chloride</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../potassium/">potassium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../magnesium/">magnesium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../calcium/">calcium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_iron/">tot_iron</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_org_carb/">diss_org_carb</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_inorg_carb/">diss_inorg_carb</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_inorg_phosp/">diss_inorg_phosp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_phosp/">tot_phosp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../suspend_solids/">suspend_solids</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../density/">density</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_carb_dioxide/">diss_carb_dioxide</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_oxygen_fluid/">diss_oxygen_fluid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vfa/">vfa</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../benzene/">benzene</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../toluene/">toluene</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ethylbenzene/">ethylbenzene</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../xylene/">xylene</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../api/">api</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tan/">tan</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../viscosity/">viscosity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pour_point/">pour_point</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../saturates_pc/">saturates_pc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../aromatics_pc/">aromatics_pc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../resins_pc/">resins_pc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../asphaltenes_pc/">asphaltenes_pc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../additional_info/">additional_info</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../hydrocarbon_resources_cores_set/">hydrocarbon_resources_cores_set</a></td>
+<td>range</td>
+<td><a href="./">HydrocarbonResourcesCores</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>MIXS:0016015</td>
+</tr>
+<tr>
+<td>native</td>
+<td>MIXS:HydrocarbonResourcesCores</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: HydrocarbonResourcesCores
+title: hydrocarbon resources-cores
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slots:
+- samp_name
+- project_name
+- hcr
+- hc_produced
+- basin
+- field
+- reservoir
+- hcr_temp
+- tvdss_of_hcr_temp
+- hcr_pressure
+- tvdss_of_hcr_press
+- permeability
+- porosity
+- lithology
+- depos_env
+- hcr_geol_age
+- owc_tvdss
+- hcr_fw_salinity
+- sulfate_fw
+- vfa_fw
+- sr_kerog_type
+- sr_lithology
+- sr_dep_env
+- sr_geol_age
+- samp_well_name
+- win
+- samp_type
+- samp_subtype
+- temp
+- pressure
+- samp_tvdss
+- samp_md
+- elev
+- oxy_stat_samp
+- samp_transport_cond
+- samp_store_temp
+- samp_store_dur
+- samp_store_loc
+- samp_vol_we_dna_ext
+- organism_count
+- org_count_qpcr_info
+- ph
+- salinity
+- alkalinity
+- alkalinity_method
+- sulfate
+- sulfide
+- tot_sulfur
+- nitrate
+- nitrite
+- ammonium
+- tot_nitro
+- diss_iron
+- sodium
+- chloride
+- potassium
+- magnesium
+- calcium
+- tot_iron
+- diss_org_carb
+- diss_inorg_carb
+- diss_inorg_phosp
+- tot_phosp
+- suspend_solids
+- density
+- diss_carb_dioxide
+- diss_oxygen_fluid
+- vfa
+- benzene
+- toluene
+- ethylbenzene
+- xylene
+- api
+- tan
+- viscosity
+- pour_point
+- saturates_pc
+- aromatics_pc
+- resins_pc
+- asphaltenes_pc
+- misc_param
+- additional_info
+slot_usage:
+  additional_info:
+    name: additional_info
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  alkalinity:
+    name: alkalinity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+  alkalinity_method:
+    name: alkalinity_method
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+  ammonium:
+    name: ammonium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  api:
+    name: api
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  aromatics_pc:
+    name: aromatics_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  asphaltenes_pc:
+    name: asphaltenes_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  basin:
+    name: basin
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  benzene:
+    name: benzene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  calcium:
+    name: calcium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  chloride:
+    name: chloride
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  density:
+    name: density
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  depos_env:
+    name: depos_env
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  diss_carb_dioxide:
+    name: diss_carb_dioxide
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  diss_inorg_carb:
+    name: diss_inorg_carb
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  diss_inorg_phosp:
+    name: diss_inorg_phosp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    recommended: true
+  diss_iron:
+    name: diss_iron
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  diss_org_carb:
+    name: diss_org_carb
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+  diss_oxygen_fluid:
+    name: diss_oxygen_fluid
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  elev:
+    name: elev
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+  ethylbenzene:
+    name: ethylbenzene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  field:
+    name: field
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hc_produced:
+    name: hc_produced
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  hcr:
+    name: hcr
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  hcr_fw_salinity:
+    name: hcr_fw_salinity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hcr_geol_age:
+    name: hcr_geol_age
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hcr_pressure:
+    name: hcr_pressure
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  hcr_temp:
+    name: hcr_temp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  lithology:
+    name: lithology
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  magnesium:
+    name: magnesium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+  misc_param:
+    name: misc_param
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  nitrate:
+    name: nitrate
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    recommended: true
+  nitrite:
+    name: nitrite
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  org_count_qpcr_info:
+    name: org_count_qpcr_info
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  owc_tvdss:
+    name: owc_tvdss
+    domain_of:
+    - HydrocarbonResourcesCores
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  permeability:
+    name: permeability
+    domain_of:
+    - HydrocarbonResourcesCores
+  ph:
+    name: ph
+    domain_of:
+    - FoodFarmEnvironment
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    recommended: true
+  porosity:
+    name: porosity
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - Sediment
+  potassium:
+    name: potassium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  pour_point:
+    name: pour_point
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  pressure:
+    name: pressure
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  reservoir:
+    name: reservoir
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  resins_pc:
+    name: resins_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  salinity:
+    name: salinity
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+  samp_md:
+    name: samp_md
+    domain_of:
+    - HydrocarbonResourcesCores
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_store_dur:
+    name: samp_store_dur
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_loc:
+    name: samp_store_loc
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_temp:
+    name: samp_store_temp
+    domain_of:
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_subtype:
+    name: samp_subtype
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  samp_transport_cond:
+    name: samp_transport_cond
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  samp_tvdss:
+    name: samp_tvdss
+    domain_of:
+    - HydrocarbonResourcesCores
+    recommended: true
+  samp_type:
+    name: samp_type
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  samp_well_name:
+    name: samp_well_name
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  saturates_pc:
+    name: saturates_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  sodium:
+    name: sodium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+  sr_dep_env:
+    name: sr_dep_env
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_geol_age:
+    name: sr_geol_age
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_kerog_type:
+    name: sr_kerog_type
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_lithology:
+    name: sr_lithology
+    domain_of:
+    - HydrocarbonResourcesCores
+  sulfate:
+    name: sulfate
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  sulfate_fw:
+    name: sulfate_fw
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  sulfide:
+    name: sulfide
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  suspend_solids:
+    name: suspend_solids
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+  tan:
+    name: tan
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  temp:
+    name: temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  toluene:
+    name: toluene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tot_iron:
+    name: tot_iron
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tot_nitro:
+    name: tot_nitro
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+    - Water
+  tot_phosp:
+    name: tot_phosp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+  tot_sulfur:
+    name: tot_sulfur
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tvdss_of_hcr_press:
+    name: tvdss_of_hcr_press
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  tvdss_of_hcr_temp:
+    name: tvdss_of_hcr_temp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  vfa:
+    name: vfa
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  vfa_fw:
+    name: vfa_fw
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  viscosity:
+    name: viscosity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  win:
+    name: win
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  xylene:
+    name: xylene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+class_uri: MIXS:0016015
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: HydrocarbonResourcesCores
+title: hydrocarbon resources-cores
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slot_usage:
+  additional_info:
+    name: additional_info
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  alkalinity:
+    name: alkalinity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+  alkalinity_method:
+    name: alkalinity_method
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+  ammonium:
+    name: ammonium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  api:
+    name: api
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  aromatics_pc:
+    name: aromatics_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  asphaltenes_pc:
+    name: asphaltenes_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  basin:
+    name: basin
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  benzene:
+    name: benzene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  calcium:
+    name: calcium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  chloride:
+    name: chloride
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  density:
+    name: density
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  depos_env:
+    name: depos_env
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  diss_carb_dioxide:
+    name: diss_carb_dioxide
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  diss_inorg_carb:
+    name: diss_inorg_carb
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  diss_inorg_phosp:
+    name: diss_inorg_phosp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    recommended: true
+  diss_iron:
+    name: diss_iron
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  diss_org_carb:
+    name: diss_org_carb
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+  diss_oxygen_fluid:
+    name: diss_oxygen_fluid
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  elev:
+    name: elev
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+  ethylbenzene:
+    name: ethylbenzene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  field:
+    name: field
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hc_produced:
+    name: hc_produced
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  hcr:
+    name: hcr
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  hcr_fw_salinity:
+    name: hcr_fw_salinity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hcr_geol_age:
+    name: hcr_geol_age
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  hcr_pressure:
+    name: hcr_pressure
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  hcr_temp:
+    name: hcr_temp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  lithology:
+    name: lithology
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  magnesium:
+    name: magnesium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+  misc_param:
+    name: misc_param
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  nitrate:
+    name: nitrate
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    recommended: true
+  nitrite:
+    name: nitrite
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  org_count_qpcr_info:
+    name: org_count_qpcr_info
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  owc_tvdss:
+    name: owc_tvdss
+    domain_of:
+    - HydrocarbonResourcesCores
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  permeability:
+    name: permeability
+    domain_of:
+    - HydrocarbonResourcesCores
+  ph:
+    name: ph
+    domain_of:
+    - FoodFarmEnvironment
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    recommended: true
+  porosity:
+    name: porosity
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - Sediment
+  potassium:
+    name: potassium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  pour_point:
+    name: pour_point
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  pressure:
+    name: pressure
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  reservoir:
+    name: reservoir
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  resins_pc:
+    name: resins_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  salinity:
+    name: salinity
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+  samp_md:
+    name: samp_md
+    domain_of:
+    - HydrocarbonResourcesCores
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_store_dur:
+    name: samp_store_dur
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_loc:
+    name: samp_store_loc
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_temp:
+    name: samp_store_temp
+    domain_of:
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_subtype:
+    name: samp_subtype
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  samp_transport_cond:
+    name: samp_transport_cond
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  samp_tvdss:
+    name: samp_tvdss
+    domain_of:
+    - HydrocarbonResourcesCores
+    recommended: true
+  samp_type:
+    name: samp_type
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    recommended: true
+  samp_well_name:
+    name: samp_well_name
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  saturates_pc:
+    name: saturates_pc
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  sodium:
+    name: sodium
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+  sr_dep_env:
+    name: sr_dep_env
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_geol_age:
+    name: sr_geol_age
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_kerog_type:
+    name: sr_kerog_type
+    domain_of:
+    - HydrocarbonResourcesCores
+  sr_lithology:
+    name: sr_lithology
+    domain_of:
+    - HydrocarbonResourcesCores
+  sulfate:
+    name: sulfate
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  sulfate_fw:
+    name: sulfate_fw
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  sulfide:
+    name: sulfide
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    recommended: true
+  suspend_solids:
+    name: suspend_solids
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+  tan:
+    name: tan
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  temp:
+    name: temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  toluene:
+    name: toluene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tot_iron:
+    name: tot_iron
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tot_nitro:
+    name: tot_nitro
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+    - Water
+  tot_phosp:
+    name: tot_phosp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+  tot_sulfur:
+    name: tot_sulfur
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  tvdss_of_hcr_press:
+    name: tvdss_of_hcr_press
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  tvdss_of_hcr_temp:
+    name: tvdss_of_hcr_temp
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  vfa:
+    name: vfa
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  vfa_fw:
+    name: vfa_fw
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    required: true
+  viscosity:
+    name: viscosity
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+  win:
+    name: win
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+  xylene:
+    name: xylene
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    recommended: true
+attributes:
+  samp_name:
+    name: samp_name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_name
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  project_name:
+    name: project_name
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  hcr:
+    name: hcr
+    title: hydrocarbon resource type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000988
+    alias: hcr
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  hc_produced:
+    name: hc_produced
+    title: hydrocarbon type produced
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000989
+    alias: hc_produced
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  basin:
+    name: basin
+    title: basin name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000290
+    alias: basin
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  field:
+    name: field
+    title: field name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000291
+    alias: field
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  reservoir:
+    name: reservoir
+    title: reservoir name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000303
+    alias: reservoir
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  hcr_temp:
+    name: hcr_temp
+    title: hydrocarbon resource original temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000393
+    alias: hcr_temp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  tvdss_of_hcr_temp:
+    name: tvdss_of_hcr_temp
+    title: depth (TVDSS) of hydrocarbon resource temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000394
+    alias: tvdss_of_hcr_temp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  hcr_pressure:
+    name: hcr_pressure
+    title: hydrocarbon resource original pressure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000395
+    alias: hcr_pressure
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  tvdss_of_hcr_press:
+    name: tvdss_of_hcr_press
+    title: depth (TVDSS) of hydrocarbon resource pressure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000397
+    alias: tvdss_of_hcr_press
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  permeability:
+    name: permeability
+    title: permeability
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000404
+    alias: permeability
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  porosity:
+    name: porosity
+    title: porosity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000211
+    alias: porosity
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - Sediment
+    range: string
+  lithology:
+    name: lithology
+    title: lithology
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000990
+    alias: lithology
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  depos_env:
+    name: depos_env
+    title: depositional environment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000992
+    alias: depos_env
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  hcr_geol_age:
+    name: hcr_geol_age
+    title: hydrocarbon resource geological age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000993
+    alias: hcr_geol_age
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  owc_tvdss:
+    name: owc_tvdss
+    title: oil water contact depth
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000405
+    alias: owc_tvdss
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  hcr_fw_salinity:
+    name: hcr_fw_salinity
+    title: formation water salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000406
+    alias: hcr_fw_salinity
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sulfate_fw:
+    name: sulfate_fw
+    title: sulfate in formation water
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000407
+    alias: sulfate_fw
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  vfa_fw:
+    name: vfa_fw
+    title: vfa in formation water
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000408
+    alias: vfa_fw
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sr_kerog_type:
+    name: sr_kerog_type
+    title: source rock kerogen type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000994
+    alias: sr_kerog_type
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  sr_lithology:
+    name: sr_lithology
+    title: source rock lithology
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000995
+    alias: sr_lithology
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  sr_dep_env:
+    name: sr_dep_env
+    title: source rock depositional environment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000996
+    alias: sr_dep_env
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  sr_geol_age:
+    name: sr_geol_age
+    title: source rock geological age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000997
+    alias: sr_geol_age
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  samp_well_name:
+    name: samp_well_name
+    title: sample well name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000296
+    alias: samp_well_name
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  win:
+    name: win
+    title: well identification number
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000297
+    alias: win
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_type:
+    name: samp_type
+    title: sample type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000998
+    alias: samp_type
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  samp_subtype:
+    name: samp_subtype
+    title: sample subtype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000999
+    alias: samp_subtype
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  temp:
+    name: temp
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  pressure:
+    name: pressure
+    title: pressure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000412
+    alias: pressure
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_tvdss:
+    name: samp_tvdss
+    title: sample true vertical depth subsea
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000409
+    alias: samp_tvdss
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+    recommended: true
+  samp_md:
+    name: samp_md
+    title: sample measured depth
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000413
+    alias: samp_md
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    range: string
+  elev:
+    name: elev
+    title: elevation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000093
+    alias: elev
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    title: oxygenation status of sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000753
+    alias: oxy_stat_samp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_transport_cond:
+    name: samp_transport_cond
+    title: sample transport conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000410
+    alias: samp_transport_cond
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  samp_store_temp:
+    name: samp_store_temp
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_store_dur:
+    name: samp_store_dur
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_store_loc:
+    name: samp_store_loc
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  organism_count:
+    name: organism_count
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+  org_count_qpcr_info:
+    name: org_count_qpcr_info
+    title: organism count qPCR information
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000099
+    alias: org_count_qpcr_info
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  ph:
+    name: ph
+    title: pH
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001001
+    alias: ph
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - FoodFarmEnvironment
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: float
+    recommended: true
+  salinity:
+    name: salinity
+    title: salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000183
+    alias: salinity
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  alkalinity:
+    name: alkalinity
+    title: alkalinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000421
+    alias: alkalinity
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  alkalinity_method:
+    name: alkalinity_method
+    title: alkalinity method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000298
+    alias: alkalinity_method
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  sulfate:
+    name: sulfate
+    title: sulfate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000423
+    alias: sulfate
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sulfide:
+    name: sulfide
+    title: sulfide
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000424
+    alias: sulfide
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_sulfur:
+    name: tot_sulfur
+    title: total sulfur
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000419
+    alias: tot_sulfur
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  nitrate:
+    name: nitrate
+    title: nitrate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000425
+    alias: nitrate
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  nitrite:
+    name: nitrite
+    title: nitrite
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000426
+    alias: nitrite
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ammonium:
+    name: ammonium
+    title: ammonium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000427
+    alias: ammonium
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_nitro:
+    name: tot_nitro
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: tot_nitro
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+    - Water
+    range: string
+  diss_iron:
+    name: diss_iron
+    title: dissolved iron
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000139
+    alias: diss_iron
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sodium:
+    name: sodium
+    title: sodium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000428
+    alias: sodium
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  chloride:
+    name: chloride
+    title: chloride
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000429
+    alias: chloride
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  potassium:
+    name: potassium
+    title: potassium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000430
+    alias: potassium
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  magnesium:
+    name: magnesium
+    title: magnesium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000431
+    alias: magnesium
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  calcium:
+    name: calcium
+    title: calcium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000432
+    alias: calcium
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_iron:
+    name: tot_iron
+    title: total iron
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000105
+    alias: tot_iron
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_org_carb:
+    name: diss_org_carb
+    title: dissolved organic carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000433
+    alias: diss_org_carb
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_inorg_carb:
+    name: diss_inorg_carb
+    title: dissolved inorganic carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000434
+    alias: diss_inorg_carb
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_inorg_phosp:
+    name: diss_inorg_phosp
+    title: dissolved inorganic phosphorus
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000106
+    alias: diss_inorg_phosp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_phosp:
+    name: tot_phosp
+    title: total phosphorus
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000117
+    alias: tot_phosp
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  suspend_solids:
+    name: suspend_solids
+    title: suspended solids
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000150
+    alias: suspend_solids
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  density:
+    name: density
+    title: density
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000435
+    alias: density
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_carb_dioxide:
+    name: diss_carb_dioxide
+    title: dissolved carbon dioxide
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000436
+    alias: diss_carb_dioxide
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_oxygen_fluid:
+    name: diss_oxygen_fluid
+    title: dissolved oxygen in fluids
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000438
+    alias: diss_oxygen_fluid
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  vfa:
+    name: vfa
+    title: volatile fatty acids
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000152
+    alias: vfa
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  benzene:
+    name: benzene
+    title: benzene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000153
+    alias: benzene
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  toluene:
+    name: toluene
+    title: toluene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000154
+    alias: toluene
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ethylbenzene:
+    name: ethylbenzene
+    title: ethylbenzene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000155
+    alias: ethylbenzene
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  xylene:
+    name: xylene
+    title: xylene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000156
+    alias: xylene
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  api:
+    name: api
+    title: API gravity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000157
+    alias: api
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tan:
+    name: tan
+    title: total acid number
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000120
+    alias: tan
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  viscosity:
+    name: viscosity
+    title: viscosity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000126
+    alias: viscosity
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  pour_point:
+    name: pour_point
+    title: pour point
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000127
+    alias: pour_point
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  saturates_pc:
+    name: saturates_pc
+    title: saturates wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000131
+    alias: saturates_pc
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  aromatics_pc:
+    name: aromatics_pc
+    title: aromatics wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000133
+    alias: aromatics_pc
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  resins_pc:
+    name: resins_pc
+    title: resins wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000134
+    alias: resins_pc
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  asphaltenes_pc:
+    name: asphaltenes_pc
+    title: asphaltenes wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000135
+    alias: asphaltenes_pc
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  misc_param:
+    name: misc_param
+    title: miscellaneous parameter
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000752
+    alias: misc_param
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  additional_info:
+    name: additional_info
+    title: additional info
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000300
+    alias: additional_info
+    owner: HydrocarbonResourcesCores
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+class_uri: MIXS:0016015
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>

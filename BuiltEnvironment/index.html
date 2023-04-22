@@ -1,0 +1,5352 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://turbomam.github.io/mixs-subset-examples-first/BuiltEnvironment/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Class: BuiltEnvironment - mixs-subset-examples-first</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-builtenvironment">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="mixs-subset-examples-first" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            mixs-subset-examples-first
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: BuiltEnvironment
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="mixs-subset-examples-first" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    mixs-subset-examples-first
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+    Inheritance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+    Slots
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+    Usages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+    Identifier and Mapping Information
+  </a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+    Schema Source
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+    LinkML Source
+  </a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+    Direct
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+    Induced
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/BuiltEnvironment.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="class-builtenvironment">Class: BuiltEnvironment</h1>
+<p>URI: <a href="http://example.com/0016001">MIXS:0016001</a></p>
+<div class="mermaid"> classDiagram
+    class BuiltEnvironment
+      EnvironmentalPackage &lt;|-- BuiltEnvironment
+
+      BuiltEnvironment : abs_air_humidity
+
+      BuiltEnvironment : address
+
+      BuiltEnvironment : adj_room
+
+      BuiltEnvironment : aero_struc
+
+      BuiltEnvironment : air_temp
+
+      BuiltEnvironment : amount_light
+
+      BuiltEnvironment : arch_struc
+
+      BuiltEnvironment : avg_dew_point
+
+      BuiltEnvironment : avg_occup
+
+      BuiltEnvironment : avg_temp
+
+      BuiltEnvironment : bathroom_count
+
+      BuiltEnvironment : bedroom_count
+
+      BuiltEnvironment : build_docs
+
+      BuiltEnvironment : build_occup_type
+
+      BuiltEnvironment : building_setting
+
+      BuiltEnvironment : built_struc_age
+
+      BuiltEnvironment : built_struc_set
+
+      BuiltEnvironment : built_struc_type
+
+      BuiltEnvironment : carb_dioxide
+
+      BuiltEnvironment : ceil_area
+
+      BuiltEnvironment : ceil_cond
+
+      BuiltEnvironment : ceil_finish_mat
+
+      BuiltEnvironment : ceil_struc
+
+      BuiltEnvironment : ceil_texture
+
+      BuiltEnvironment : ceil_thermal_mass
+
+      BuiltEnvironment : ceil_type
+
+      BuiltEnvironment : ceil_water_mold
+
+      BuiltEnvironment : cool_syst_id
+
+      BuiltEnvironment : date_last_rain
+
+      BuiltEnvironment : dew_point
+
+      BuiltEnvironment : door_comp_type
+
+      BuiltEnvironment : door_cond
+
+      BuiltEnvironment : door_direct
+
+      BuiltEnvironment : door_loc
+
+      BuiltEnvironment : door_mat
+
+      BuiltEnvironment : door_move
+
+      BuiltEnvironment : door_size
+
+      BuiltEnvironment : door_type
+
+      BuiltEnvironment : door_type_metal
+
+      BuiltEnvironment : door_type_wood
+
+      BuiltEnvironment : door_water_mold
+
+      BuiltEnvironment : drawings
+
+      BuiltEnvironment : elevator
+
+      BuiltEnvironment : escalator
+
+      BuiltEnvironment : exp_duct
+
+      BuiltEnvironment : exp_pipe
+
+      BuiltEnvironment : ext_door
+
+      BuiltEnvironment : ext_wall_orient
+
+      BuiltEnvironment : ext_window_orient
+
+      BuiltEnvironment : filter_type
+
+      BuiltEnvironment : fireplace_type
+
+      BuiltEnvironment : floor_age
+
+      BuiltEnvironment : floor_area
+
+      BuiltEnvironment : floor_cond
+
+      BuiltEnvironment : floor_count
+
+      BuiltEnvironment : floor_finish_mat
+
+      BuiltEnvironment : floor_struc
+
+      BuiltEnvironment : floor_thermal_mass
+
+      BuiltEnvironment : floor_water_mold
+
+      BuiltEnvironment : freq_clean
+
+      BuiltEnvironment : freq_cook
+
+      BuiltEnvironment : furniture
+
+      BuiltEnvironment : gender_restroom
+
+      BuiltEnvironment : hall_count
+
+      BuiltEnvironment : handidness
+
+      BuiltEnvironment : heat_cool_type
+
+      BuiltEnvironment : heat_deliv_loc
+
+      BuiltEnvironment : heat_sys_deliv_meth
+
+      BuiltEnvironment : heat_system_id
+
+      BuiltEnvironment : height_carper_fiber
+
+      BuiltEnvironment : indoor_space
+
+      BuiltEnvironment : indoor_surf
+
+      BuiltEnvironment : inside_lux
+
+      BuiltEnvironment : int_wall_cond
+
+      BuiltEnvironment : last_clean
+
+      BuiltEnvironment : light_type
+
+      BuiltEnvironment : max_occup
+
+      BuiltEnvironment : mech_struc
+
+      BuiltEnvironment : number_pets
+
+      BuiltEnvironment : number_plants
+
+      BuiltEnvironment : number_resident
+
+      BuiltEnvironment : occup_density_samp
+
+      BuiltEnvironment : occup_document
+
+      BuiltEnvironment : occup_samp
+
+      BuiltEnvironment : organism_count
+
+      BuiltEnvironment : pres_animal_insect
+
+      BuiltEnvironment : project_name
+
+      BuiltEnvironment : quad_pos
+
+      BuiltEnvironment : rel_air_humidity
+
+      BuiltEnvironment : rel_humidity_out
+
+      BuiltEnvironment : rel_samp_loc
+
+      BuiltEnvironment : room_air_exch_rate
+
+      BuiltEnvironment : room_architec_elem
+
+      BuiltEnvironment : room_condt
+
+      BuiltEnvironment : room_connected
+
+      BuiltEnvironment : room_count
+
+      BuiltEnvironment : room_dim
+
+      BuiltEnvironment : room_door_dist
+
+      BuiltEnvironment : room_door_share
+
+      BuiltEnvironment : room_hallway
+
+      BuiltEnvironment : room_loc
+
+      BuiltEnvironment : room_moist_dam_hist
+
+      BuiltEnvironment : room_net_area
+
+      BuiltEnvironment : room_occup
+
+      BuiltEnvironment : room_samp_pos
+
+      BuiltEnvironment : room_type
+
+      BuiltEnvironment : room_vol
+
+      BuiltEnvironment : room_wall_share
+
+      BuiltEnvironment : room_window_count
+
+      BuiltEnvironment : samp_floor
+
+      BuiltEnvironment : samp_name
+
+      BuiltEnvironment : samp_room_id
+
+      BuiltEnvironment : samp_sort_meth
+
+      BuiltEnvironment : samp_time_out
+
+      BuiltEnvironment : samp_weather
+
+      BuiltEnvironment : season
+
+      BuiltEnvironment : season_use
+
+      BuiltEnvironment : shad_dev_water_mold
+
+      BuiltEnvironment : shading_device_cond
+
+      BuiltEnvironment : shading_device_loc
+
+      BuiltEnvironment : shading_device_mat
+
+      BuiltEnvironment : shading_device_type
+
+      BuiltEnvironment : space_typ_state
+
+      BuiltEnvironment : specific
+
+      BuiltEnvironment : specific_humidity
+
+      BuiltEnvironment : substructure_type
+
+      BuiltEnvironment : surf_air_cont
+
+      BuiltEnvironment : surf_humidity
+
+      BuiltEnvironment : surf_material
+
+      BuiltEnvironment : surf_moisture
+
+      BuiltEnvironment : surf_moisture_ph
+
+      BuiltEnvironment : surf_temp
+
+      BuiltEnvironment : temp_out
+
+      BuiltEnvironment : train_line
+
+      BuiltEnvironment : train_stat_loc
+
+      BuiltEnvironment : train_stop_loc
+
+      BuiltEnvironment : typ_occup_density
+
+      BuiltEnvironment : ventilation_type
+
+      BuiltEnvironment : vis_media
+
+      BuiltEnvironment : wall_area
+
+      BuiltEnvironment : wall_const_type
+
+      BuiltEnvironment : wall_finish_mat
+
+      BuiltEnvironment : wall_height
+
+      BuiltEnvironment : wall_loc
+
+      BuiltEnvironment : wall_surf_treatment
+
+      BuiltEnvironment : wall_texture
+
+      BuiltEnvironment : wall_thermal_mass
+
+      BuiltEnvironment : wall_water_mold
+
+      BuiltEnvironment : water_feat_size
+
+      BuiltEnvironment : water_feat_type
+
+      BuiltEnvironment : weekday
+
+      BuiltEnvironment : window_cond
+
+      BuiltEnvironment : window_cover
+
+      BuiltEnvironment : window_horiz_pos
+
+      BuiltEnvironment : window_loc
+
+      BuiltEnvironment : window_mat
+
+      BuiltEnvironment : window_open_freq
+
+      BuiltEnvironment : window_size
+
+      BuiltEnvironment : window_status
+
+      BuiltEnvironment : window_type
+
+      BuiltEnvironment : window_vert_pos
+
+      BuiltEnvironment : window_water_mold
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../EnvironmentalPackage/">EnvironmentalPackage</a><ul>
+<li><strong>BuiltEnvironment</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_material/">surf_material</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_air_cont/">surf_air_cont</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../rel_air_humidity/">rel_air_humidity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../abs_air_humidity/">abs_air_humidity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_humidity/">surf_humidity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../air_temp/">air_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_temp/">surf_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_moisture_ph/">surf_moisture_ph</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../build_occup_type/">build_occup_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../surf_moisture/">surf_moisture</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../dew_point/">dew_point</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../carb_dioxide/">carb_dioxide</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ventilation_type/">ventilation_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../indoor_space/">indoor_space</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../indoor_surf/">indoor_surf</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../filter_type/">filter_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../heat_cool_type/">heat_cool_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../substructure_type/">substructure_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../building_setting/">building_setting</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../light_type/">light_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_sort_meth/">samp_sort_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../space_typ_state/">space_typ_state</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../typ_occup_density/">typ_occup_density</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../occup_samp/">occup_samp</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../occup_density_samp/">occup_density_samp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../address/">address</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../adj_room/">adj_room</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../aero_struc/">aero_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../amount_light/">amount_light</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../arch_struc/">arch_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../avg_occup/">avg_occup</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../avg_dew_point/">avg_dew_point</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../avg_temp/">avg_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../bathroom_count/">bathroom_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../bedroom_count/">bedroom_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../built_struc_age/">built_struc_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../built_struc_set/">built_struc_set</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../built_struc_type/">built_struc_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_area/">ceil_area</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_cond/">ceil_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_finish_mat/">ceil_finish_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_water_mold/">ceil_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_struc/">ceil_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_texture/">ceil_texture</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_thermal_mass/">ceil_thermal_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ceil_type/">ceil_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../cool_syst_id/">cool_syst_id</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../date_last_rain/">date_last_rain</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../build_docs/">build_docs</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_size/">door_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_cond/">door_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_direct/">door_direct</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_loc/">door_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_mat/">door_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_move/">door_move</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_water_mold/">door_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_type/">door_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_comp_type/">door_comp_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_type_metal/">door_type_metal</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../door_type_wood/">door_type_wood</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../drawings/">drawings</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../elevator/">elevator</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../escalator/">escalator</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../exp_duct/">exp_duct</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../exp_pipe/">exp_pipe</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ext_door/">ext_door</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../fireplace_type/">fireplace_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_age/">floor_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_area/">floor_area</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_cond/">floor_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_count/">floor_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_finish_mat/">floor_finish_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_water_mold/">floor_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_struc/">floor_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../floor_thermal_mass/">floor_thermal_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../freq_clean/">freq_clean</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../freq_cook/">freq_cook</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../furniture/">furniture</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../gender_restroom/">gender_restroom</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hall_count/">hall_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../handidness/">handidness</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../heat_deliv_loc/">heat_deliv_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../heat_sys_deliv_meth/">heat_sys_deliv_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../heat_system_id/">heat_system_id</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../height_carper_fiber/">height_carper_fiber</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../inside_lux/">inside_lux</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../int_wall_cond/">int_wall_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../last_clean/">last_clean</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../max_occup/">max_occup</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mech_struc/">mech_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../number_plants/">number_plants</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../number_pets/">number_pets</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../number_resident/">number_resident</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../occup_document/">occup_document</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ext_wall_orient/">ext_wall_orient</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ext_window_orient/">ext_window_orient</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../rel_humidity_out/">rel_humidity_out</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pres_animal_insect/">pres_animal_insect</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../quad_pos/">quad_pos</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../rel_samp_loc/">rel_samp_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_air_exch_rate/">room_air_exch_rate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_architec_elem/">room_architec_elem</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_condt/">room_condt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_count/">room_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_dim/">room_dim</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_door_dist/">room_door_dist</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_loc/">room_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_moist_dam_hist/">room_moist_dam_hist</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_net_area/">room_net_area</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_occup/">room_occup</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_samp_pos/">room_samp_pos</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_type/">room_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_vol/">room_vol</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_window_count/">room_window_count</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_connected/">room_connected</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_hallway/">room_hallway</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_door_share/">room_door_share</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../room_wall_share/">room_wall_share</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_weather/">samp_weather</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_floor/">samp_floor</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_room_id/">samp_room_id</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_time_out/">samp_time_out</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../season/">season</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../season_use/">season_use</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../shading_device_cond/">shading_device_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../shading_device_loc/">shading_device_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../shading_device_mat/">shading_device_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../shad_dev_water_mold/">shad_dev_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../shading_device_type/">shading_device_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../specific_humidity/">specific_humidity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../specific/">specific</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp_out/">temp_out</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../train_line/">train_line</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../train_stat_loc/">train_stat_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../train_stop_loc/">train_stop_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vis_media/">vis_media</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_area/">wall_area</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_const_type/">wall_const_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_finish_mat/">wall_finish_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_height/">wall_height</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_loc/">wall_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_water_mold/">wall_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_surf_treatment/">wall_surf_treatment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_texture/">wall_texture</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wall_thermal_mass/">wall_thermal_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../water_feat_size/">water_feat_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../water_feat_type/">water_feat_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../weekday/">weekday</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_size/">window_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_cond/">window_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_cover/">window_cover</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_horiz_pos/">window_horiz_pos</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_loc/">window_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_mat/">window_mat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_open_freq/">window_open_freq</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_water_mold/">window_water_mold</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_status/">window_status</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_type/">window_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../window_vert_pos/">window_vert_pos</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../built_environment_set/">built_environment_set</a></td>
+<td>range</td>
+<td><a href="./">BuiltEnvironment</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>MIXS:0016001</td>
+</tr>
+<tr>
+<td>native</td>
+<td>MIXS:BuiltEnvironment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: BuiltEnvironment
+title: built environment
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slots:
+- samp_name
+- project_name
+- surf_material
+- surf_air_cont
+- rel_air_humidity
+- abs_air_humidity
+- surf_humidity
+- air_temp
+- surf_temp
+- surf_moisture_ph
+- build_occup_type
+- surf_moisture
+- dew_point
+- carb_dioxide
+- ventilation_type
+- organism_count
+- indoor_space
+- indoor_surf
+- filter_type
+- heat_cool_type
+- substructure_type
+- building_setting
+- light_type
+- samp_sort_meth
+- space_typ_state
+- typ_occup_density
+- occup_samp
+- occup_density_samp
+- address
+- adj_room
+- aero_struc
+- amount_light
+- arch_struc
+- avg_occup
+- avg_dew_point
+- avg_temp
+- bathroom_count
+- bedroom_count
+- built_struc_age
+- built_struc_set
+- built_struc_type
+- ceil_area
+- ceil_cond
+- ceil_finish_mat
+- ceil_water_mold
+- ceil_struc
+- ceil_texture
+- ceil_thermal_mass
+- ceil_type
+- cool_syst_id
+- date_last_rain
+- build_docs
+- door_size
+- door_cond
+- door_direct
+- door_loc
+- door_mat
+- door_move
+- door_water_mold
+- door_type
+- door_comp_type
+- door_type_metal
+- door_type_wood
+- drawings
+- elevator
+- escalator
+- exp_duct
+- exp_pipe
+- ext_door
+- fireplace_type
+- floor_age
+- floor_area
+- floor_cond
+- floor_count
+- floor_finish_mat
+- floor_water_mold
+- floor_struc
+- floor_thermal_mass
+- freq_clean
+- freq_cook
+- furniture
+- gender_restroom
+- hall_count
+- handidness
+- heat_deliv_loc
+- heat_sys_deliv_meth
+- heat_system_id
+- height_carper_fiber
+- inside_lux
+- int_wall_cond
+- last_clean
+- max_occup
+- mech_struc
+- number_plants
+- number_pets
+- number_resident
+- occup_document
+- ext_wall_orient
+- ext_window_orient
+- rel_humidity_out
+- pres_animal_insect
+- quad_pos
+- rel_samp_loc
+- room_air_exch_rate
+- room_architec_elem
+- room_condt
+- room_count
+- room_dim
+- room_door_dist
+- room_loc
+- room_moist_dam_hist
+- room_net_area
+- room_occup
+- room_samp_pos
+- room_type
+- room_vol
+- room_window_count
+- room_connected
+- room_hallway
+- room_door_share
+- room_wall_share
+- samp_weather
+- samp_floor
+- samp_room_id
+- samp_time_out
+- season
+- season_use
+- shading_device_cond
+- shading_device_loc
+- shading_device_mat
+- shad_dev_water_mold
+- shading_device_type
+- specific_humidity
+- specific
+- temp_out
+- train_line
+- train_stat_loc
+- train_stop_loc
+- vis_media
+- wall_area
+- wall_const_type
+- wall_finish_mat
+- wall_height
+- wall_loc
+- wall_water_mold
+- wall_surf_treatment
+- wall_texture
+- wall_thermal_mass
+- water_feat_size
+- water_feat_type
+- weekday
+- window_size
+- window_cond
+- window_cover
+- window_horiz_pos
+- window_loc
+- window_mat
+- window_open_freq
+- window_water_mold
+- window_status
+- window_type
+- window_vert_pos
+slot_usage:
+  abs_air_humidity:
+    name: abs_air_humidity
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  address:
+    name: address
+    domain_of:
+    - BuiltEnvironment
+  adj_room:
+    name: adj_room
+    domain_of:
+    - BuiltEnvironment
+  aero_struc:
+    name: aero_struc
+    domain_of:
+    - BuiltEnvironment
+  air_temp:
+    name: air_temp
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    required: true
+  amount_light:
+    name: amount_light
+    domain_of:
+    - BuiltEnvironment
+  arch_struc:
+    name: arch_struc
+    domain_of:
+    - BuiltEnvironment
+  avg_dew_point:
+    name: avg_dew_point
+    domain_of:
+    - BuiltEnvironment
+  avg_occup:
+    name: avg_occup
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  avg_temp:
+    name: avg_temp
+    domain_of:
+    - BuiltEnvironment
+  bathroom_count:
+    name: bathroom_count
+    domain_of:
+    - BuiltEnvironment
+  bedroom_count:
+    name: bedroom_count
+    domain_of:
+    - BuiltEnvironment
+  build_docs:
+    name: build_docs
+    domain_of:
+    - BuiltEnvironment
+  build_occup_type:
+    name: build_occup_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  building_setting:
+    name: building_setting
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  built_struc_age:
+    name: built_struc_age
+    domain_of:
+    - BuiltEnvironment
+  built_struc_set:
+    name: built_struc_set
+    domain_of:
+    - BuiltEnvironment
+  built_struc_type:
+    name: built_struc_type
+    domain_of:
+    - BuiltEnvironment
+  carb_dioxide:
+    name: carb_dioxide
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    required: true
+  ceil_area:
+    name: ceil_area
+    domain_of:
+    - BuiltEnvironment
+  ceil_cond:
+    name: ceil_cond
+    domain_of:
+    - BuiltEnvironment
+  ceil_finish_mat:
+    name: ceil_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  ceil_struc:
+    name: ceil_struc
+    domain_of:
+    - BuiltEnvironment
+  ceil_texture:
+    name: ceil_texture
+    domain_of:
+    - BuiltEnvironment
+  ceil_thermal_mass:
+    name: ceil_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  ceil_type:
+    name: ceil_type
+    domain_of:
+    - BuiltEnvironment
+  ceil_water_mold:
+    name: ceil_water_mold
+    domain_of:
+    - BuiltEnvironment
+  cool_syst_id:
+    name: cool_syst_id
+    domain_of:
+    - BuiltEnvironment
+  date_last_rain:
+    name: date_last_rain
+    domain_of:
+    - BuiltEnvironment
+  dew_point:
+    name: dew_point
+    domain_of:
+    - BuiltEnvironment
+  door_comp_type:
+    name: door_comp_type
+    domain_of:
+    - BuiltEnvironment
+  door_cond:
+    name: door_cond
+    domain_of:
+    - BuiltEnvironment
+  door_direct:
+    name: door_direct
+    domain_of:
+    - BuiltEnvironment
+  door_loc:
+    name: door_loc
+    domain_of:
+    - BuiltEnvironment
+  door_mat:
+    name: door_mat
+    domain_of:
+    - BuiltEnvironment
+  door_move:
+    name: door_move
+    domain_of:
+    - BuiltEnvironment
+  door_size:
+    name: door_size
+    domain_of:
+    - BuiltEnvironment
+  door_type:
+    name: door_type
+    domain_of:
+    - BuiltEnvironment
+  door_type_metal:
+    name: door_type_metal
+    domain_of:
+    - BuiltEnvironment
+  door_type_wood:
+    name: door_type_wood
+    domain_of:
+    - BuiltEnvironment
+  door_water_mold:
+    name: door_water_mold
+    domain_of:
+    - BuiltEnvironment
+  drawings:
+    name: drawings
+    domain_of:
+    - BuiltEnvironment
+  elevator:
+    name: elevator
+    domain_of:
+    - BuiltEnvironment
+  escalator:
+    name: escalator
+    domain_of:
+    - BuiltEnvironment
+  exp_duct:
+    name: exp_duct
+    domain_of:
+    - BuiltEnvironment
+  exp_pipe:
+    name: exp_pipe
+    domain_of:
+    - BuiltEnvironment
+  ext_door:
+    name: ext_door
+    domain_of:
+    - BuiltEnvironment
+  ext_wall_orient:
+    name: ext_wall_orient
+    domain_of:
+    - BuiltEnvironment
+  ext_window_orient:
+    name: ext_window_orient
+    domain_of:
+    - BuiltEnvironment
+  filter_type:
+    name: filter_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  fireplace_type:
+    name: fireplace_type
+    domain_of:
+    - BuiltEnvironment
+  floor_age:
+    name: floor_age
+    domain_of:
+    - BuiltEnvironment
+  floor_area:
+    name: floor_area
+    domain_of:
+    - BuiltEnvironment
+  floor_cond:
+    name: floor_cond
+    domain_of:
+    - BuiltEnvironment
+  floor_count:
+    name: floor_count
+    domain_of:
+    - BuiltEnvironment
+  floor_finish_mat:
+    name: floor_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  floor_struc:
+    name: floor_struc
+    domain_of:
+    - BuiltEnvironment
+  floor_thermal_mass:
+    name: floor_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  floor_water_mold:
+    name: floor_water_mold
+    domain_of:
+    - BuiltEnvironment
+  freq_clean:
+    name: freq_clean
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  freq_cook:
+    name: freq_cook
+    domain_of:
+    - BuiltEnvironment
+  furniture:
+    name: furniture
+    domain_of:
+    - BuiltEnvironment
+  gender_restroom:
+    name: gender_restroom
+    domain_of:
+    - BuiltEnvironment
+  hall_count:
+    name: hall_count
+    domain_of:
+    - BuiltEnvironment
+  handidness:
+    name: handidness
+    domain_of:
+    - BuiltEnvironment
+  heat_cool_type:
+    name: heat_cool_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  heat_deliv_loc:
+    name: heat_deliv_loc
+    domain_of:
+    - BuiltEnvironment
+  heat_sys_deliv_meth:
+    name: heat_sys_deliv_meth
+    domain_of:
+    - BuiltEnvironment
+  heat_system_id:
+    name: heat_system_id
+    domain_of:
+    - BuiltEnvironment
+  height_carper_fiber:
+    name: height_carper_fiber
+    domain_of:
+    - BuiltEnvironment
+  indoor_space:
+    name: indoor_space
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  indoor_surf:
+    name: indoor_surf
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    recommended: true
+  inside_lux:
+    name: inside_lux
+    domain_of:
+    - BuiltEnvironment
+  int_wall_cond:
+    name: int_wall_cond
+    domain_of:
+    - BuiltEnvironment
+  last_clean:
+    name: last_clean
+    domain_of:
+    - BuiltEnvironment
+  light_type:
+    name: light_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  max_occup:
+    name: max_occup
+    domain_of:
+    - BuiltEnvironment
+  mech_struc:
+    name: mech_struc
+    domain_of:
+    - BuiltEnvironment
+  number_pets:
+    name: number_pets
+    domain_of:
+    - BuiltEnvironment
+  number_plants:
+    name: number_plants
+    domain_of:
+    - BuiltEnvironment
+  number_resident:
+    name: number_resident
+    domain_of:
+    - BuiltEnvironment
+  occup_density_samp:
+    name: occup_density_samp
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  occup_document:
+    name: occup_document
+    domain_of:
+    - BuiltEnvironment
+  occup_samp:
+    name: occup_samp
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  pres_animal_insect:
+    name: pres_animal_insect
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  quad_pos:
+    name: quad_pos
+    domain_of:
+    - BuiltEnvironment
+  rel_air_humidity:
+    name: rel_air_humidity
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  rel_humidity_out:
+    name: rel_humidity_out
+    domain_of:
+    - BuiltEnvironment
+  rel_samp_loc:
+    name: rel_samp_loc
+    domain_of:
+    - BuiltEnvironment
+  room_air_exch_rate:
+    name: room_air_exch_rate
+    domain_of:
+    - BuiltEnvironment
+  room_architec_elem:
+    name: room_architec_elem
+    domain_of:
+    - BuiltEnvironment
+  room_condt:
+    name: room_condt
+    domain_of:
+    - BuiltEnvironment
+  room_connected:
+    name: room_connected
+    domain_of:
+    - BuiltEnvironment
+  room_count:
+    name: room_count
+    domain_of:
+    - BuiltEnvironment
+  room_dim:
+    name: room_dim
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  room_door_dist:
+    name: room_door_dist
+    domain_of:
+    - BuiltEnvironment
+  room_door_share:
+    name: room_door_share
+    domain_of:
+    - BuiltEnvironment
+  room_hallway:
+    name: room_hallway
+    domain_of:
+    - BuiltEnvironment
+  room_loc:
+    name: room_loc
+    domain_of:
+    - BuiltEnvironment
+  room_moist_dam_hist:
+    name: room_moist_dam_hist
+    domain_of:
+    - BuiltEnvironment
+  room_net_area:
+    name: room_net_area
+    domain_of:
+    - BuiltEnvironment
+  room_occup:
+    name: room_occup
+    domain_of:
+    - BuiltEnvironment
+  room_samp_pos:
+    name: room_samp_pos
+    domain_of:
+    - BuiltEnvironment
+  room_type:
+    name: room_type
+    domain_of:
+    - BuiltEnvironment
+  room_vol:
+    name: room_vol
+    domain_of:
+    - BuiltEnvironment
+  room_wall_share:
+    name: room_wall_share
+    domain_of:
+    - BuiltEnvironment
+  room_window_count:
+    name: room_window_count
+    domain_of:
+    - BuiltEnvironment
+  samp_floor:
+    name: samp_floor
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_room_id:
+    name: samp_room_id
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_sort_meth:
+    name: samp_sort_meth
+    domain_of:
+    - BuiltEnvironment
+  samp_time_out:
+    name: samp_time_out
+    domain_of:
+    - BuiltEnvironment
+  samp_weather:
+    name: samp_weather
+    domain_of:
+    - BuiltEnvironment
+  season:
+    name: season
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+  season_use:
+    name: season_use
+    domain_of:
+    - BuiltEnvironment
+  shad_dev_water_mold:
+    name: shad_dev_water_mold
+    domain_of:
+    - BuiltEnvironment
+  shading_device_cond:
+    name: shading_device_cond
+    domain_of:
+    - BuiltEnvironment
+  shading_device_loc:
+    name: shading_device_loc
+    domain_of:
+    - BuiltEnvironment
+  shading_device_mat:
+    name: shading_device_mat
+    domain_of:
+    - BuiltEnvironment
+  shading_device_type:
+    name: shading_device_type
+    domain_of:
+    - BuiltEnvironment
+  space_typ_state:
+    name: space_typ_state
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  specific:
+    name: specific
+    domain_of:
+    - BuiltEnvironment
+  specific_humidity:
+    name: specific_humidity
+    domain_of:
+    - BuiltEnvironment
+  substructure_type:
+    name: substructure_type
+    domain_of:
+    - BuiltEnvironment
+  surf_air_cont:
+    name: surf_air_cont
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_humidity:
+    name: surf_humidity
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_material:
+    name: surf_material
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    recommended: true
+  surf_moisture:
+    name: surf_moisture
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_moisture_ph:
+    name: surf_moisture_ph
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_temp:
+    name: surf_temp
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  temp_out:
+    name: temp_out
+    domain_of:
+    - BuiltEnvironment
+  train_line:
+    name: train_line
+    domain_of:
+    - BuiltEnvironment
+  train_stat_loc:
+    name: train_stat_loc
+    domain_of:
+    - BuiltEnvironment
+  train_stop_loc:
+    name: train_stop_loc
+    domain_of:
+    - BuiltEnvironment
+  typ_occup_density:
+    name: typ_occup_density
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  ventilation_type:
+    name: ventilation_type
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+    required: true
+  vis_media:
+    name: vis_media
+    domain_of:
+    - BuiltEnvironment
+  wall_area:
+    name: wall_area
+    domain_of:
+    - BuiltEnvironment
+  wall_const_type:
+    name: wall_const_type
+    domain_of:
+    - BuiltEnvironment
+  wall_finish_mat:
+    name: wall_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  wall_height:
+    name: wall_height
+    domain_of:
+    - BuiltEnvironment
+  wall_loc:
+    name: wall_loc
+    domain_of:
+    - BuiltEnvironment
+  wall_surf_treatment:
+    name: wall_surf_treatment
+    domain_of:
+    - BuiltEnvironment
+  wall_texture:
+    name: wall_texture
+    domain_of:
+    - BuiltEnvironment
+  wall_thermal_mass:
+    name: wall_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  wall_water_mold:
+    name: wall_water_mold
+    domain_of:
+    - BuiltEnvironment
+  water_feat_size:
+    name: water_feat_size
+    domain_of:
+    - BuiltEnvironment
+  water_feat_type:
+    name: water_feat_type
+    domain_of:
+    - BuiltEnvironment
+  weekday:
+    name: weekday
+    domain_of:
+    - BuiltEnvironment
+  window_cond:
+    name: window_cond
+    domain_of:
+    - BuiltEnvironment
+  window_cover:
+    name: window_cover
+    domain_of:
+    - BuiltEnvironment
+  window_horiz_pos:
+    name: window_horiz_pos
+    domain_of:
+    - BuiltEnvironment
+  window_loc:
+    name: window_loc
+    domain_of:
+    - BuiltEnvironment
+  window_mat:
+    name: window_mat
+    domain_of:
+    - BuiltEnvironment
+  window_open_freq:
+    name: window_open_freq
+    domain_of:
+    - BuiltEnvironment
+  window_size:
+    name: window_size
+    domain_of:
+    - BuiltEnvironment
+  window_status:
+    name: window_status
+    domain_of:
+    - BuiltEnvironment
+  window_type:
+    name: window_type
+    domain_of:
+    - BuiltEnvironment
+  window_vert_pos:
+    name: window_vert_pos
+    domain_of:
+    - BuiltEnvironment
+  window_water_mold:
+    name: window_water_mold
+    domain_of:
+    - BuiltEnvironment
+class_uri: MIXS:0016001
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: BuiltEnvironment
+title: built environment
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: EnvironmentalPackage
+slot_usage:
+  abs_air_humidity:
+    name: abs_air_humidity
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  address:
+    name: address
+    domain_of:
+    - BuiltEnvironment
+  adj_room:
+    name: adj_room
+    domain_of:
+    - BuiltEnvironment
+  aero_struc:
+    name: aero_struc
+    domain_of:
+    - BuiltEnvironment
+  air_temp:
+    name: air_temp
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    required: true
+  amount_light:
+    name: amount_light
+    domain_of:
+    - BuiltEnvironment
+  arch_struc:
+    name: arch_struc
+    domain_of:
+    - BuiltEnvironment
+  avg_dew_point:
+    name: avg_dew_point
+    domain_of:
+    - BuiltEnvironment
+  avg_occup:
+    name: avg_occup
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  avg_temp:
+    name: avg_temp
+    domain_of:
+    - BuiltEnvironment
+  bathroom_count:
+    name: bathroom_count
+    domain_of:
+    - BuiltEnvironment
+  bedroom_count:
+    name: bedroom_count
+    domain_of:
+    - BuiltEnvironment
+  build_docs:
+    name: build_docs
+    domain_of:
+    - BuiltEnvironment
+  build_occup_type:
+    name: build_occup_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  building_setting:
+    name: building_setting
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  built_struc_age:
+    name: built_struc_age
+    domain_of:
+    - BuiltEnvironment
+  built_struc_set:
+    name: built_struc_set
+    domain_of:
+    - BuiltEnvironment
+  built_struc_type:
+    name: built_struc_type
+    domain_of:
+    - BuiltEnvironment
+  carb_dioxide:
+    name: carb_dioxide
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    required: true
+  ceil_area:
+    name: ceil_area
+    domain_of:
+    - BuiltEnvironment
+  ceil_cond:
+    name: ceil_cond
+    domain_of:
+    - BuiltEnvironment
+  ceil_finish_mat:
+    name: ceil_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  ceil_struc:
+    name: ceil_struc
+    domain_of:
+    - BuiltEnvironment
+  ceil_texture:
+    name: ceil_texture
+    domain_of:
+    - BuiltEnvironment
+  ceil_thermal_mass:
+    name: ceil_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  ceil_type:
+    name: ceil_type
+    domain_of:
+    - BuiltEnvironment
+  ceil_water_mold:
+    name: ceil_water_mold
+    domain_of:
+    - BuiltEnvironment
+  cool_syst_id:
+    name: cool_syst_id
+    domain_of:
+    - BuiltEnvironment
+  date_last_rain:
+    name: date_last_rain
+    domain_of:
+    - BuiltEnvironment
+  dew_point:
+    name: dew_point
+    domain_of:
+    - BuiltEnvironment
+  door_comp_type:
+    name: door_comp_type
+    domain_of:
+    - BuiltEnvironment
+  door_cond:
+    name: door_cond
+    domain_of:
+    - BuiltEnvironment
+  door_direct:
+    name: door_direct
+    domain_of:
+    - BuiltEnvironment
+  door_loc:
+    name: door_loc
+    domain_of:
+    - BuiltEnvironment
+  door_mat:
+    name: door_mat
+    domain_of:
+    - BuiltEnvironment
+  door_move:
+    name: door_move
+    domain_of:
+    - BuiltEnvironment
+  door_size:
+    name: door_size
+    domain_of:
+    - BuiltEnvironment
+  door_type:
+    name: door_type
+    domain_of:
+    - BuiltEnvironment
+  door_type_metal:
+    name: door_type_metal
+    domain_of:
+    - BuiltEnvironment
+  door_type_wood:
+    name: door_type_wood
+    domain_of:
+    - BuiltEnvironment
+  door_water_mold:
+    name: door_water_mold
+    domain_of:
+    - BuiltEnvironment
+  drawings:
+    name: drawings
+    domain_of:
+    - BuiltEnvironment
+  elevator:
+    name: elevator
+    domain_of:
+    - BuiltEnvironment
+  escalator:
+    name: escalator
+    domain_of:
+    - BuiltEnvironment
+  exp_duct:
+    name: exp_duct
+    domain_of:
+    - BuiltEnvironment
+  exp_pipe:
+    name: exp_pipe
+    domain_of:
+    - BuiltEnvironment
+  ext_door:
+    name: ext_door
+    domain_of:
+    - BuiltEnvironment
+  ext_wall_orient:
+    name: ext_wall_orient
+    domain_of:
+    - BuiltEnvironment
+  ext_window_orient:
+    name: ext_window_orient
+    domain_of:
+    - BuiltEnvironment
+  filter_type:
+    name: filter_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  fireplace_type:
+    name: fireplace_type
+    domain_of:
+    - BuiltEnvironment
+  floor_age:
+    name: floor_age
+    domain_of:
+    - BuiltEnvironment
+  floor_area:
+    name: floor_area
+    domain_of:
+    - BuiltEnvironment
+  floor_cond:
+    name: floor_cond
+    domain_of:
+    - BuiltEnvironment
+  floor_count:
+    name: floor_count
+    domain_of:
+    - BuiltEnvironment
+  floor_finish_mat:
+    name: floor_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  floor_struc:
+    name: floor_struc
+    domain_of:
+    - BuiltEnvironment
+  floor_thermal_mass:
+    name: floor_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  floor_water_mold:
+    name: floor_water_mold
+    domain_of:
+    - BuiltEnvironment
+  freq_clean:
+    name: freq_clean
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  freq_cook:
+    name: freq_cook
+    domain_of:
+    - BuiltEnvironment
+  furniture:
+    name: furniture
+    domain_of:
+    - BuiltEnvironment
+  gender_restroom:
+    name: gender_restroom
+    domain_of:
+    - BuiltEnvironment
+  hall_count:
+    name: hall_count
+    domain_of:
+    - BuiltEnvironment
+  handidness:
+    name: handidness
+    domain_of:
+    - BuiltEnvironment
+  heat_cool_type:
+    name: heat_cool_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  heat_deliv_loc:
+    name: heat_deliv_loc
+    domain_of:
+    - BuiltEnvironment
+  heat_sys_deliv_meth:
+    name: heat_sys_deliv_meth
+    domain_of:
+    - BuiltEnvironment
+  heat_system_id:
+    name: heat_system_id
+    domain_of:
+    - BuiltEnvironment
+  height_carper_fiber:
+    name: height_carper_fiber
+    domain_of:
+    - BuiltEnvironment
+  indoor_space:
+    name: indoor_space
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  indoor_surf:
+    name: indoor_surf
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    recommended: true
+  inside_lux:
+    name: inside_lux
+    domain_of:
+    - BuiltEnvironment
+  int_wall_cond:
+    name: int_wall_cond
+    domain_of:
+    - BuiltEnvironment
+  last_clean:
+    name: last_clean
+    domain_of:
+    - BuiltEnvironment
+  light_type:
+    name: light_type
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  max_occup:
+    name: max_occup
+    domain_of:
+    - BuiltEnvironment
+  mech_struc:
+    name: mech_struc
+    domain_of:
+    - BuiltEnvironment
+  number_pets:
+    name: number_pets
+    domain_of:
+    - BuiltEnvironment
+  number_plants:
+    name: number_plants
+    domain_of:
+    - BuiltEnvironment
+  number_resident:
+    name: number_resident
+    domain_of:
+    - BuiltEnvironment
+  occup_density_samp:
+    name: occup_density_samp
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  occup_document:
+    name: occup_document
+    domain_of:
+    - BuiltEnvironment
+  occup_samp:
+    name: occup_samp
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  organism_count:
+    name: organism_count
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  pres_animal_insect:
+    name: pres_animal_insect
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+  project_name:
+    name: project_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    required: true
+  quad_pos:
+    name: quad_pos
+    domain_of:
+    - BuiltEnvironment
+  rel_air_humidity:
+    name: rel_air_humidity
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  rel_humidity_out:
+    name: rel_humidity_out
+    domain_of:
+    - BuiltEnvironment
+  rel_samp_loc:
+    name: rel_samp_loc
+    domain_of:
+    - BuiltEnvironment
+  room_air_exch_rate:
+    name: room_air_exch_rate
+    domain_of:
+    - BuiltEnvironment
+  room_architec_elem:
+    name: room_architec_elem
+    domain_of:
+    - BuiltEnvironment
+  room_condt:
+    name: room_condt
+    domain_of:
+    - BuiltEnvironment
+  room_connected:
+    name: room_connected
+    domain_of:
+    - BuiltEnvironment
+  room_count:
+    name: room_count
+    domain_of:
+    - BuiltEnvironment
+  room_dim:
+    name: room_dim
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  room_door_dist:
+    name: room_door_dist
+    domain_of:
+    - BuiltEnvironment
+  room_door_share:
+    name: room_door_share
+    domain_of:
+    - BuiltEnvironment
+  room_hallway:
+    name: room_hallway
+    domain_of:
+    - BuiltEnvironment
+  room_loc:
+    name: room_loc
+    domain_of:
+    - BuiltEnvironment
+  room_moist_dam_hist:
+    name: room_moist_dam_hist
+    domain_of:
+    - BuiltEnvironment
+  room_net_area:
+    name: room_net_area
+    domain_of:
+    - BuiltEnvironment
+  room_occup:
+    name: room_occup
+    domain_of:
+    - BuiltEnvironment
+  room_samp_pos:
+    name: room_samp_pos
+    domain_of:
+    - BuiltEnvironment
+  room_type:
+    name: room_type
+    domain_of:
+    - BuiltEnvironment
+  room_vol:
+    name: room_vol
+    domain_of:
+    - BuiltEnvironment
+  room_wall_share:
+    name: room_wall_share
+    domain_of:
+    - BuiltEnvironment
+  room_window_count:
+    name: room_window_count
+    domain_of:
+    - BuiltEnvironment
+  samp_floor:
+    name: samp_floor
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_name:
+    name: samp_name
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    required: true
+  samp_room_id:
+    name: samp_room_id
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+  samp_sort_meth:
+    name: samp_sort_meth
+    domain_of:
+    - BuiltEnvironment
+  samp_time_out:
+    name: samp_time_out
+    domain_of:
+    - BuiltEnvironment
+  samp_weather:
+    name: samp_weather
+    domain_of:
+    - BuiltEnvironment
+  season:
+    name: season
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+  season_use:
+    name: season_use
+    domain_of:
+    - BuiltEnvironment
+  shad_dev_water_mold:
+    name: shad_dev_water_mold
+    domain_of:
+    - BuiltEnvironment
+  shading_device_cond:
+    name: shading_device_cond
+    domain_of:
+    - BuiltEnvironment
+  shading_device_loc:
+    name: shading_device_loc
+    domain_of:
+    - BuiltEnvironment
+  shading_device_mat:
+    name: shading_device_mat
+    domain_of:
+    - BuiltEnvironment
+  shading_device_type:
+    name: shading_device_type
+    domain_of:
+    - BuiltEnvironment
+  space_typ_state:
+    name: space_typ_state
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  specific:
+    name: specific
+    domain_of:
+    - BuiltEnvironment
+  specific_humidity:
+    name: specific_humidity
+    domain_of:
+    - BuiltEnvironment
+  substructure_type:
+    name: substructure_type
+    domain_of:
+    - BuiltEnvironment
+  surf_air_cont:
+    name: surf_air_cont
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_humidity:
+    name: surf_humidity
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_material:
+    name: surf_material
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    recommended: true
+  surf_moisture:
+    name: surf_moisture
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_moisture_ph:
+    name: surf_moisture_ph
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  surf_temp:
+    name: surf_temp
+    domain_of:
+    - BuiltEnvironment
+    recommended: true
+  temp_out:
+    name: temp_out
+    domain_of:
+    - BuiltEnvironment
+  train_line:
+    name: train_line
+    domain_of:
+    - BuiltEnvironment
+  train_stat_loc:
+    name: train_stat_loc
+    domain_of:
+    - BuiltEnvironment
+  train_stop_loc:
+    name: train_stop_loc
+    domain_of:
+    - BuiltEnvironment
+  typ_occup_density:
+    name: typ_occup_density
+    domain_of:
+    - BuiltEnvironment
+    required: true
+  ventilation_type:
+    name: ventilation_type
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+    required: true
+  vis_media:
+    name: vis_media
+    domain_of:
+    - BuiltEnvironment
+  wall_area:
+    name: wall_area
+    domain_of:
+    - BuiltEnvironment
+  wall_const_type:
+    name: wall_const_type
+    domain_of:
+    - BuiltEnvironment
+  wall_finish_mat:
+    name: wall_finish_mat
+    domain_of:
+    - BuiltEnvironment
+  wall_height:
+    name: wall_height
+    domain_of:
+    - BuiltEnvironment
+  wall_loc:
+    name: wall_loc
+    domain_of:
+    - BuiltEnvironment
+  wall_surf_treatment:
+    name: wall_surf_treatment
+    domain_of:
+    - BuiltEnvironment
+  wall_texture:
+    name: wall_texture
+    domain_of:
+    - BuiltEnvironment
+  wall_thermal_mass:
+    name: wall_thermal_mass
+    domain_of:
+    - BuiltEnvironment
+  wall_water_mold:
+    name: wall_water_mold
+    domain_of:
+    - BuiltEnvironment
+  water_feat_size:
+    name: water_feat_size
+    domain_of:
+    - BuiltEnvironment
+  water_feat_type:
+    name: water_feat_type
+    domain_of:
+    - BuiltEnvironment
+  weekday:
+    name: weekday
+    domain_of:
+    - BuiltEnvironment
+  window_cond:
+    name: window_cond
+    domain_of:
+    - BuiltEnvironment
+  window_cover:
+    name: window_cover
+    domain_of:
+    - BuiltEnvironment
+  window_horiz_pos:
+    name: window_horiz_pos
+    domain_of:
+    - BuiltEnvironment
+  window_loc:
+    name: window_loc
+    domain_of:
+    - BuiltEnvironment
+  window_mat:
+    name: window_mat
+    domain_of:
+    - BuiltEnvironment
+  window_open_freq:
+    name: window_open_freq
+    domain_of:
+    - BuiltEnvironment
+  window_size:
+    name: window_size
+    domain_of:
+    - BuiltEnvironment
+  window_status:
+    name: window_status
+    domain_of:
+    - BuiltEnvironment
+  window_type:
+    name: window_type
+    domain_of:
+    - BuiltEnvironment
+  window_vert_pos:
+    name: window_vert_pos
+    domain_of:
+    - BuiltEnvironment
+  window_water_mold:
+    name: window_water_mold
+    domain_of:
+    - BuiltEnvironment
+attributes:
+  samp_name:
+    name: samp_name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_name
+    owner: BuiltEnvironment
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  project_name:
+    name: project_name
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: BuiltEnvironment
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  surf_material:
+    name: surf_material
+    title: surface material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000758
+    alias: surf_material
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    recommended: true
+  surf_air_cont:
+    name: surf_air_cont
+    title: surface-air contaminant
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000759
+    alias: surf_air_cont
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    recommended: true
+  rel_air_humidity:
+    name: rel_air_humidity
+    title: relative air humidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000121
+    alias: rel_air_humidity
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  abs_air_humidity:
+    name: abs_air_humidity
+    title: absolute air humidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000122
+    alias: abs_air_humidity
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  surf_humidity:
+    name: surf_humidity
+    title: surface humidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000123
+    alias: surf_humidity
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  air_temp:
+    name: air_temp
+    title: air temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000124
+    alias: air_temp
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  surf_temp:
+    name: surf_temp
+    title: surface temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000125
+    alias: surf_temp
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  surf_moisture_ph:
+    name: surf_moisture_ph
+    title: surface moisture pH
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000760
+    alias: surf_moisture_ph
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: float
+    recommended: true
+  build_occup_type:
+    name: build_occup_type
+    title: building occupancy type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000761
+    alias: build_occup_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  surf_moisture:
+    name: surf_moisture
+    title: surface moisture
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000128
+    alias: surf_moisture
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  dew_point:
+    name: dew_point
+    title: dew point
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000129
+    alias: dew_point
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  carb_dioxide:
+    name: carb_dioxide
+    title: carbon dioxide
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000097
+    alias: carb_dioxide
+    owner: BuiltEnvironment
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ventilation_type:
+    name: ventilation_type
+    title: ventilation type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000756
+    alias: ventilation_type
+    owner: BuiltEnvironment
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  organism_count:
+    name: organism_count
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: BuiltEnvironment
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  indoor_space:
+    name: indoor_space
+    title: indoor space
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000763
+    alias: indoor_space
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  indoor_surf:
+    name: indoor_surf
+    title: indoor surface
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000764
+    alias: indoor_surf
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+    recommended: true
+  filter_type:
+    name: filter_type
+    title: filter type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000765
+    alias: filter_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  heat_cool_type:
+    name: heat_cool_type
+    title: heating and cooling system type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000766
+    alias: heat_cool_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  substructure_type:
+    name: substructure_type
+    title: substructure type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000767
+    alias: substructure_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  building_setting:
+    name: building_setting
+    title: building setting
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000768
+    alias: building_setting
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  light_type:
+    name: light_type
+    title: light type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000769
+    alias: light_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  samp_sort_meth:
+    name: samp_sort_meth
+    title: sample size sorting method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000216
+    alias: samp_sort_meth
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  space_typ_state:
+    name: space_typ_state
+    title: space typical state
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000770
+    alias: space_typ_state
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  typ_occup_density:
+    name: typ_occup_density
+    title: typical occupant density
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000771
+    alias: typ_occup_density
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: float
+    required: true
+  occup_samp:
+    name: occup_samp
+    title: occupancy at sampling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000772
+    alias: occup_samp
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+    required: true
+  occup_density_samp:
+    name: occup_density_samp
+    title: occupant density at sampling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000217
+    alias: occup_density_samp
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    required: true
+  address:
+    name: address
+    title: address
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000218
+    alias: address
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  adj_room:
+    name: adj_room
+    title: adjacent rooms
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000219
+    alias: adj_room
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  aero_struc:
+    name: aero_struc
+    title: aerospace structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000773
+    alias: aero_struc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  amount_light:
+    name: amount_light
+    title: amount of light
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000140
+    alias: amount_light
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  arch_struc:
+    name: arch_struc
+    title: architectural structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000774
+    alias: arch_struc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  avg_occup:
+    name: avg_occup
+    title: average daily occupancy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000775
+    alias: avg_occup
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: float
+  avg_dew_point:
+    name: avg_dew_point
+    title: average dew point
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000141
+    alias: avg_dew_point
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  avg_temp:
+    name: avg_temp
+    title: average temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000142
+    alias: avg_temp
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  bathroom_count:
+    name: bathroom_count
+    title: bathroom count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000776
+    alias: bathroom_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  bedroom_count:
+    name: bedroom_count
+    title: bedroom count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000777
+    alias: bedroom_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  built_struc_age:
+    name: built_struc_age
+    title: built structure age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000145
+    alias: built_struc_age
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  built_struc_set:
+    name: built_struc_set
+    title: built structure setting
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000778
+    alias: built_struc_set
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  built_struc_type:
+    name: built_struc_type
+    title: built structure type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000721
+    alias: built_struc_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  ceil_area:
+    name: ceil_area
+    title: ceiling area
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000148
+    alias: ceil_area
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ceil_cond:
+    name: ceil_cond
+    title: ceiling condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000779
+    alias: ceil_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ceil_finish_mat:
+    name: ceil_finish_mat
+    title: ceiling finish material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000780
+    alias: ceil_finish_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ceil_water_mold:
+    name: ceil_water_mold
+    title: ceiling signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000781
+    alias: ceil_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ceil_struc:
+    name: ceil_struc
+    title: ceiling structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000782
+    alias: ceil_struc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ceil_texture:
+    name: ceil_texture
+    title: ceiling texture
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000783
+    alias: ceil_texture
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ceil_thermal_mass:
+    name: ceil_thermal_mass
+    title: ceiling thermal mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000143
+    alias: ceil_thermal_mass
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ceil_type:
+    name: ceil_type
+    title: ceiling type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000784
+    alias: ceil_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  cool_syst_id:
+    name: cool_syst_id
+    title: cooling system identifier
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000785
+    alias: cool_syst_id
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  date_last_rain:
+    name: date_last_rain
+    title: date last rain
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000786
+    alias: date_last_rain
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  build_docs:
+    name: build_docs
+    title: design, construction, and operation documents
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000787
+    alias: build_docs
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_size:
+    name: door_size
+    title: door area or size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000158
+    alias: door_size
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  door_cond:
+    name: door_cond
+    title: door condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000788
+    alias: door_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_direct:
+    name: door_direct
+    title: door direction of opening
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000789
+    alias: door_direct
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_loc:
+    name: door_loc
+    title: door location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000790
+    alias: door_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_mat:
+    name: door_mat
+    title: door material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000791
+    alias: door_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_move:
+    name: door_move
+    title: door movement
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000792
+    alias: door_move
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_water_mold:
+    name: door_water_mold
+    title: door signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000793
+    alias: door_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_type:
+    name: door_type
+    title: door type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000794
+    alias: door_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_comp_type:
+    name: door_comp_type
+    title: door type, composite
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000795
+    alias: door_comp_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_type_metal:
+    name: door_type_metal
+    title: door type, metal
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000796
+    alias: door_type_metal
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  door_type_wood:
+    name: door_type_wood
+    title: door type, wood
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000797
+    alias: door_type_wood
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  drawings:
+    name: drawings
+    title: drawings
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000798
+    alias: drawings
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  elevator:
+    name: elevator
+    title: elevator count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000799
+    alias: elevator
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  escalator:
+    name: escalator
+    title: escalator count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000800
+    alias: escalator
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  exp_duct:
+    name: exp_duct
+    title: exposed ductwork
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000144
+    alias: exp_duct
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  exp_pipe:
+    name: exp_pipe
+    title: exposed pipes
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000220
+    alias: exp_pipe
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  ext_door:
+    name: ext_door
+    title: exterior door count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000170
+    alias: ext_door
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  fireplace_type:
+    name: fireplace_type
+    title: fireplace type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000802
+    alias: fireplace_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  floor_age:
+    name: floor_age
+    title: floor age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000164
+    alias: floor_age
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  floor_area:
+    name: floor_area
+    title: floor area
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000165
+    alias: floor_area
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  floor_cond:
+    name: floor_cond
+    title: floor condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000803
+    alias: floor_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  floor_count:
+    name: floor_count
+    title: floor count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000225
+    alias: floor_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  floor_finish_mat:
+    name: floor_finish_mat
+    title: floor finish material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000804
+    alias: floor_finish_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  floor_water_mold:
+    name: floor_water_mold
+    title: floor signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000805
+    alias: floor_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  floor_struc:
+    name: floor_struc
+    title: floor structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000806
+    alias: floor_struc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  floor_thermal_mass:
+    name: floor_thermal_mass
+    title: floor thermal mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000166
+    alias: floor_thermal_mass
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  freq_clean:
+    name: freq_clean
+    title: frequency of cleaning
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000226
+    alias: freq_clean
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  freq_cook:
+    name: freq_cook
+    title: frequency of cooking
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000227
+    alias: freq_cook
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  furniture:
+    name: furniture
+    title: furniture
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000807
+    alias: furniture
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  gender_restroom:
+    name: gender_restroom
+    title: gender of restroom
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000808
+    alias: gender_restroom
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  hall_count:
+    name: hall_count
+    title: hallway/corridor count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000228
+    alias: hall_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  handidness:
+    name: handidness
+    title: handidness
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000809
+    alias: handidness
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  heat_deliv_loc:
+    name: heat_deliv_loc
+    title: heating delivery locations
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000810
+    alias: heat_deliv_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  heat_sys_deliv_meth:
+    name: heat_sys_deliv_meth
+    title: heating system delivery method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000812
+    alias: heat_sys_deliv_meth
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  heat_system_id:
+    name: heat_system_id
+    title: heating system identifier
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000833
+    alias: heat_system_id
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  height_carper_fiber:
+    name: height_carper_fiber
+    title: height carpet fiber mat
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000167
+    alias: height_carper_fiber
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  inside_lux:
+    name: inside_lux
+    title: inside lux light
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000168
+    alias: inside_lux
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  int_wall_cond:
+    name: int_wall_cond
+    title: interior wall condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000813
+    alias: int_wall_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  last_clean:
+    name: last_clean
+    title: last time swept/mopped/vacuumed
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000814
+    alias: last_clean
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  max_occup:
+    name: max_occup
+    title: maximum occupancy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000229
+    alias: max_occup
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  mech_struc:
+    name: mech_struc
+    title: mechanical structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000815
+    alias: mech_struc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  number_plants:
+    name: number_plants
+    title: number of houseplants
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000230
+    alias: number_plants
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  number_pets:
+    name: number_pets
+    title: number of pets
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000231
+    alias: number_pets
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  number_resident:
+    name: number_resident
+    title: number of residents
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000232
+    alias: number_resident
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  occup_document:
+    name: occup_document
+    title: occupancy documentation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000816
+    alias: occup_document
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ext_wall_orient:
+    name: ext_wall_orient
+    title: orientations of exterior wall
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000817
+    alias: ext_wall_orient
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  ext_window_orient:
+    name: ext_window_orient
+    title: orientations of exterior window
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000818
+    alias: ext_window_orient
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  rel_humidity_out:
+    name: rel_humidity_out
+    title: outside relative humidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000188
+    alias: rel_humidity_out
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  pres_animal_insect:
+    name: pres_animal_insect
+    title: presence of pets, animals, or insects
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000819
+    alias: pres_animal_insect
+    owner: BuiltEnvironment
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+    range: string
+  quad_pos:
+    name: quad_pos
+    title: quadrant position
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000820
+    alias: quad_pos
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  rel_samp_loc:
+    name: rel_samp_loc
+    title: relative sampling location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000821
+    alias: rel_samp_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_air_exch_rate:
+    name: room_air_exch_rate
+    title: room air exchange rate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000169
+    alias: room_air_exch_rate
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  room_architec_elem:
+    name: room_architec_elem
+    title: room architectural elements
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000233
+    alias: room_architec_elem
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  room_condt:
+    name: room_condt
+    title: room condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000822
+    alias: room_condt
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_count:
+    name: room_count
+    title: room count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000234
+    alias: room_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  room_dim:
+    name: room_dim
+    title: room dimensions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000192
+    alias: room_dim
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  room_door_dist:
+    name: room_door_dist
+    title: room door distance
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000193
+    alias: room_door_dist
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '{integer} [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{integer} {unit}'
+  room_loc:
+    name: room_loc
+    title: room location in building
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000823
+    alias: room_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_moist_dam_hist:
+    name: room_moist_dam_hist
+    title: room moisture damage or mold history
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000235
+    alias: room_moist_dam_hist
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  room_net_area:
+    name: room_net_area
+    title: room net area
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000194
+    alias: room_net_area
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '{integer} [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{integer} {unit}'
+  room_occup:
+    name: room_occup
+    title: room occupancy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000236
+    alias: room_occup
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  room_samp_pos:
+    name: room_samp_pos
+    title: room sampling position
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000824
+    alias: room_samp_pos
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_type:
+    name: room_type
+    title: room type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000825
+    alias: room_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_vol:
+    name: room_vol
+    title: room volume
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000195
+    alias: room_vol
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '{integer} [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{integer} {unit}'
+  room_window_count:
+    name: room_window_count
+    title: room window count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000237
+    alias: room_window_count
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  room_connected:
+    name: room_connected
+    title: rooms connected by a doorway
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000826
+    alias: room_connected
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_hallway:
+    name: room_hallway
+    title: rooms that are on the same hallway
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000238
+    alias: room_hallway
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_door_share:
+    name: room_door_share
+    title: rooms that share a door with sampling room
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000242
+    alias: room_door_share
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  room_wall_share:
+    name: room_wall_share
+    title: rooms that share a wall with sampling room
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000243
+    alias: room_wall_share
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  samp_weather:
+    name: samp_weather
+    title: sampling day weather
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000827
+    alias: samp_weather
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  samp_floor:
+    name: samp_floor
+    title: sampling floor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000828
+    alias: samp_floor
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: string
+  samp_room_id:
+    name: samp_room_id
+    title: sampling room ID or name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000244
+    alias: samp_room_id
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    - FoodFoodProductionFacility
+    range: integer
+  samp_time_out:
+    name: samp_time_out
+    title: sampling time outside
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000196
+    alias: samp_time_out
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  season:
+    name: season
+    title: season
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000829
+    alias: season
+    owner: BuiltEnvironment
+    domain_of:
+    - Agriculture
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  season_use:
+    name: season_use
+    title: seasonal use
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000830
+    alias: season_use
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  shading_device_cond:
+    name: shading_device_cond
+    title: shading device condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000831
+    alias: shading_device_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  shading_device_loc:
+    name: shading_device_loc
+    title: shading device location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000832
+    alias: shading_device_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  shading_device_mat:
+    name: shading_device_mat
+    title: shading device material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000245
+    alias: shading_device_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  shad_dev_water_mold:
+    name: shad_dev_water_mold
+    title: shading device signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000834
+    alias: shad_dev_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  shading_device_type:
+    name: shading_device_type
+    title: shading device type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000835
+    alias: shading_device_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  specific_humidity:
+    name: specific_humidity
+    title: specific humidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000214
+    alias: specific_humidity
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  specific:
+    name: specific
+    title: specifications
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000836
+    alias: specific
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  temp_out:
+    name: temp_out
+    title: temperature outside house
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000197
+    alias: temp_out
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  train_line:
+    name: train_line
+    title: train line
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000837
+    alias: train_line
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  train_stat_loc:
+    name: train_stat_loc
+    title: train station collection location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000838
+    alias: train_stat_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  train_stop_loc:
+    name: train_stop_loc
+    title: train stop collection location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000839
+    alias: train_stop_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  vis_media:
+    name: vis_media
+    title: visual media
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000840
+    alias: vis_media
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_area:
+    name: wall_area
+    title: wall area
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000198
+    alias: wall_area
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  wall_const_type:
+    name: wall_const_type
+    title: wall construction type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000841
+    alias: wall_const_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_finish_mat:
+    name: wall_finish_mat
+    title: wall finish material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000842
+    alias: wall_finish_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_height:
+    name: wall_height
+    title: wall height
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000221
+    alias: wall_height
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  wall_loc:
+    name: wall_loc
+    title: wall location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000843
+    alias: wall_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_water_mold:
+    name: wall_water_mold
+    title: wall signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000844
+    alias: wall_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_surf_treatment:
+    name: wall_surf_treatment
+    title: wall surface treatment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000845
+    alias: wall_surf_treatment
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_texture:
+    name: wall_texture
+    title: wall texture
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000846
+    alias: wall_texture
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  wall_thermal_mass:
+    name: wall_thermal_mass
+    title: wall thermal mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000222
+    alias: wall_thermal_mass
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  water_feat_size:
+    name: water_feat_size
+    title: water feature size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000223
+    alias: water_feat_size
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  water_feat_type:
+    name: water_feat_type
+    title: water feature type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000847
+    alias: water_feat_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  weekday:
+    name: weekday
+    title: weekday
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000848
+    alias: weekday
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_size:
+    name: window_size
+    title: window area/size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000224
+    alias: window_size
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_cond:
+    name: window_cond
+    title: window condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000849
+    alias: window_cond
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_cover:
+    name: window_cover
+    title: window covering
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000850
+    alias: window_cover
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_horiz_pos:
+    name: window_horiz_pos
+    title: window horizontal position
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000851
+    alias: window_horiz_pos
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_loc:
+    name: window_loc
+    title: window location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000852
+    alias: window_loc
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_mat:
+    name: window_mat
+    title: window material
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000853
+    alias: window_mat
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_open_freq:
+    name: window_open_freq
+    title: window open frequency
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000246
+    alias: window_open_freq
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: integer
+  window_water_mold:
+    name: window_water_mold
+    title: window signs of water/mold
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000854
+    alias: window_water_mold
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_status:
+    name: window_status
+    title: window status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000855
+    alias: window_status
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_type:
+    name: window_type
+    title: window type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000856
+    alias: window_type
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+  window_vert_pos:
+    name: window_vert_pos
+    title: window vertical position
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000857
+    alias: window_vert_pos
+    owner: BuiltEnvironment
+    domain_of:
+    - BuiltEnvironment
+    range: string
+class_uri: MIXS:0016001
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>

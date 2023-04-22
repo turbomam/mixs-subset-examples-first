@@ -1,0 +1,3592 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://turbomam.github.io/mixs-subset-examples-first/MimsPlantAssociated/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Class: MimsPlantAssociated - mixs-subset-examples-first</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-mimsplantassociated">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="mixs-subset-examples-first" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            mixs-subset-examples-first
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: MimsPlantAssociated
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="mixs-subset-examples-first" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-subset-examples-first">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    mixs-subset-examples-first
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/turbomam/mixs-subset-examples-first" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Index
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+    Inheritance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+    Slots
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+    Usages
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+    Identifier and Mapping Information
+  </a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+    Schema Source
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+    LinkML Source
+  </a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+    Direct
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+    Induced
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/MimsPlantAssociated.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
+</a>
+<h1 id="class-mimsplantassociated">Class: MimsPlantAssociated</h1>
+<p>URI: <a href="http://example.com/0010007_0016010">MIXS:0010007_0016010</a></p>
+<div class="mermaid"> classDiagram
+    class MimsPlantAssociated
+      Mims &lt;|-- MimsPlantAssociated
+      PlantAssociated &lt;|-- MimsPlantAssociated
+
+      MimsPlantAssociated : adapters
+
+      MimsPlantAssociated : air_temp_regm
+
+      MimsPlantAssociated : alt
+
+      MimsPlantAssociated : ances_data
+
+      MimsPlantAssociated : annot
+
+      MimsPlantAssociated : antibiotic_regm
+
+      MimsPlantAssociated : assembly_name
+
+      MimsPlantAssociated : assembly_qual
+
+      MimsPlantAssociated : assembly_software
+
+      MimsPlantAssociated : associated_resource
+
+      MimsPlantAssociated : biol_stat
+
+      MimsPlantAssociated : biotic_regm
+
+      MimsPlantAssociated : chem_administration
+
+      MimsPlantAssociated : chem_mutagen
+
+      MimsPlantAssociated : climate_environment
+
+      MimsPlantAssociated : collection_date
+
+      MimsPlantAssociated : cult_root_med
+
+      MimsPlantAssociated : depth
+
+      MimsPlantAssociated : elev
+
+      MimsPlantAssociated : env_broad_scale
+
+      MimsPlantAssociated : env_local_scale
+
+      MimsPlantAssociated : env_medium
+
+      MimsPlantAssociated : experimental_factor
+
+      MimsPlantAssociated : feat_pred
+
+      MimsPlantAssociated : fertilizer_regm
+
+      MimsPlantAssociated : fungicide_regm
+
+      MimsPlantAssociated : gaseous_environment
+
+      MimsPlantAssociated : genetic_mod
+
+      MimsPlantAssociated : geo_loc_name
+
+      MimsPlantAssociated : gravity
+
+      MimsPlantAssociated : growth_facil
+
+      MimsPlantAssociated : growth_habit
+
+      MimsPlantAssociated : growth_hormone_regm
+
+      MimsPlantAssociated : herbicide_regm
+
+      MimsPlantAssociated : host_age
+
+      MimsPlantAssociated : host_common_name
+
+      MimsPlantAssociated : host_disease_stat
+
+      MimsPlantAssociated : host_dry_mass
+
+      MimsPlantAssociated : host_genotype
+
+      MimsPlantAssociated : host_height
+
+      MimsPlantAssociated : host_length
+
+      MimsPlantAssociated : host_life_stage
+
+      MimsPlantAssociated : host_phenotype
+
+      MimsPlantAssociated : host_subspecf_genlin
+
+      MimsPlantAssociated : host_symbiont
+
+      MimsPlantAssociated : host_taxid
+
+      MimsPlantAssociated : host_tot_mass
+
+      MimsPlantAssociated : host_wet_mass
+
+      MimsPlantAssociated : humidity_regm
+
+      MimsPlantAssociated : lat_lon
+
+      MimsPlantAssociated : lib_layout
+
+      MimsPlantAssociated : lib_reads_seqd
+
+      MimsPlantAssociated : lib_screen
+
+      MimsPlantAssociated : lib_size
+
+      MimsPlantAssociated : lib_vector
+
+      MimsPlantAssociated : light_regm
+
+      MimsPlantAssociated : mechanical_damage
+
+      MimsPlantAssociated : mid
+
+      MimsPlantAssociated : mineral_nutr_regm
+
+      MimsPlantAssociated : misc_param
+
+      MimsPlantAssociated : neg_cont_type
+
+      MimsPlantAssociated : non_min_nutr_regm
+
+      MimsPlantAssociated : nucl_acid_amp
+
+      MimsPlantAssociated : nucl_acid_ext
+
+      MimsPlantAssociated : number_contig
+
+      MimsPlantAssociated : organism_count
+
+      MimsPlantAssociated : oxy_stat_samp
+
+      MimsPlantAssociated : perturbation
+
+      MimsPlantAssociated : pesticide_regm
+
+      MimsPlantAssociated : ph_regm
+
+      MimsPlantAssociated : plant_growth_med
+
+      MimsPlantAssociated : plant_product
+
+      MimsPlantAssociated : plant_sex
+
+      MimsPlantAssociated : plant_struc
+
+      MimsPlantAssociated : pos_cont_type
+
+      MimsPlantAssociated : project_name
+
+      MimsPlantAssociated : radiation_regm
+
+      MimsPlantAssociated : rainfall_regm
+
+      MimsPlantAssociated : ref_biomaterial
+
+      MimsPlantAssociated : ref_db
+
+      MimsPlantAssociated : rel_to_oxygen
+
+      MimsPlantAssociated : root_cond
+
+      MimsPlantAssociated : root_med_carbon
+
+      MimsPlantAssociated : root_med_macronutr
+
+      MimsPlantAssociated : root_med_micronutr
+
+      MimsPlantAssociated : root_med_ph
+
+      MimsPlantAssociated : root_med_regl
+
+      MimsPlantAssociated : root_med_solid
+
+      MimsPlantAssociated : root_med_suppl
+
+      MimsPlantAssociated : salinity
+
+      MimsPlantAssociated : salt_regm
+
+      MimsPlantAssociated : samp_capt_status
+
+      MimsPlantAssociated : samp_collec_device
+
+      MimsPlantAssociated : samp_collec_method
+
+      MimsPlantAssociated : samp_dis_stage
+
+      MimsPlantAssociated : samp_mat_process
+
+      MimsPlantAssociated : samp_name
+
+      MimsPlantAssociated : samp_size
+
+      MimsPlantAssociated : samp_store_dur
+
+      MimsPlantAssociated : samp_store_loc
+
+      MimsPlantAssociated : samp_store_temp
+
+      MimsPlantAssociated : samp_taxon_id
+
+      MimsPlantAssociated : samp_vol_we_dna_ext
+
+      MimsPlantAssociated : season_environment
+
+      MimsPlantAssociated : seq_meth
+
+      MimsPlantAssociated : sim_search_meth
+
+      MimsPlantAssociated : size_frac
+
+      MimsPlantAssociated : sop
+
+      MimsPlantAssociated : source_mat_id
+
+      MimsPlantAssociated : standing_water_regm
+
+      MimsPlantAssociated : tax_class
+
+      MimsPlantAssociated : temp
+
+      MimsPlantAssociated : tiss_cult_growth_med
+
+      MimsPlantAssociated : water_temp_regm
+
+      MimsPlantAssociated : watering_regm
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../EnvironmentalPackage/">EnvironmentalPackage</a><ul>
+<li><a href="../PlantAssociated/">PlantAssociated</a><ul>
+<li><strong>MimsPlantAssociated</strong> [ <a href="../Mims/">Mims</a>]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../adapters/">adapters</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../alt/">alt</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../annot/">annot</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_name/">assembly_name</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../depth/">depth</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../elev/">elev</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../feat_pred/">feat_pred</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../mid/">mid</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../ref_db/">ref_db</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_collec_device/">samp_collec_device</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_collec_method/">samp_collec_method</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../size_frac/">size_frac</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../sop/">sop</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../Mims/">Mims</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../air_temp_regm/">air_temp_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../ances_data/">ances_data</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../antibiotic_regm/">antibiotic_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../biol_stat/">biol_stat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../biotic_regm/">biotic_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../chem_administration/">chem_administration</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../chem_mutagen/">chem_mutagen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../climate_environment/">climate_environment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../cult_root_med/">cult_root_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../fertilizer_regm/">fertilizer_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../fungicide_regm/">fungicide_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../gaseous_environment/">gaseous_environment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../genetic_mod/">genetic_mod</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../gravity/">gravity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_facil/">growth_facil</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_habit/">growth_habit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_hormone_regm/">growth_hormone_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../herbicide_regm/">herbicide_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_age/">host_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_common_name/">host_common_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_disease_stat/">host_disease_stat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_dry_mass/">host_dry_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_genotype/">host_genotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_height/">host_height</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_subspecf_genlin/">host_subspecf_genlin</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_length/">host_length</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_life_stage/">host_life_stage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_phenotype/">host_phenotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_taxid/">host_taxid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_tot_mass/">host_tot_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_wet_mass/">host_wet_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../humidity_regm/">humidity_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../light_regm/">light_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../mechanical_damage/">mechanical_damage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../mineral_nutr_regm/">mineral_nutr_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../non_min_nutr_regm/">non_min_nutr_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../ph_regm/">ph_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../pesticide_regm/">pesticide_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_growth_med/">plant_growth_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_product/">plant_product</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_sex/">plant_sex</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_struc/">plant_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../radiation_regm/">radiation_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../rainfall_regm/">rainfall_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_cond/">root_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_carbon/">root_med_carbon</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_macronutr/">root_med_macronutr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_micronutr/">root_med_micronutr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_suppl/">root_med_suppl</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_ph/">root_med_ph</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_regl/">root_med_regl</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_solid/">root_med_solid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../salt_regm/">salt_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_capt_status/">samp_capt_status</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_dis_stage/">samp_dis_stage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../season_environment/">season_environment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../standing_water_regm/">standing_water_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../tiss_cult_growth_med/">tiss_cult_growth_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../water_temp_regm/">water_temp_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../watering_regm/">watering_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_symbiont/">host_symbiont</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../mims_plant_associated_set/">mims_plant_associated_set</a></td>
+<td>range</td>
+<td><a href="./">MimsPlantAssociated</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>MIXS:0010007_0016010</td>
+</tr>
+<tr>
+<td>native</td>
+<td>MIXS:MimsPlantAssociated</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: MimsPlantAssociated
+title: plant-associated sample according to the Mims checklist
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: PlantAssociated
+mixins:
+- Mims
+class_uri: MIXS:0010007_0016010
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: MimsPlantAssociated
+title: plant-associated sample according to the Mims checklist
+from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+rank: 1000
+is_a: PlantAssociated
+mixins:
+- Mims
+attributes:
+  adapters:
+    name: adapters
+    title: adapters
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000048
+    alias: adapters
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  alt:
+    name: alt
+    title: altitude
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000094
+    alias: alt
+    owner: MimsPlantAssociated
+    domain_of:
+    - Air
+    - HostAssociated
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  annot:
+    name: annot
+    title: annotation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000059
+    alias: annot
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  assembly_name:
+    name: assembly_name
+    title: assembly name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000057
+    alias: assembly_name
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  assembly_qual:
+    name: assembly_qual
+    title: assembly quality
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000056
+    alias: assembly_qual
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  assembly_software:
+    name: assembly_software
+    title: assembly software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000058
+    alias: assembly_software
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  associated resource:
+    name: associated resource
+    title: relevant electronic resources
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000091
+    alias: associated_resource
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  collection_date:
+    name: collection_date
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  depth:
+    name: depth
+    title: depth
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000018
+    alias: depth
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  elev:
+    name: elev
+    title: elevation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000093
+    alias: elev
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  env_broad_scale:
+    name: env_broad_scale
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  experimental_factor:
+    name: experimental_factor
+    title: experimental factor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  feat_pred:
+    name: feat_pred
+    title: feature prediction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000061
+    alias: feat_pred
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  geo_loc_name:
+    name: geo_loc_name
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  lat_lon:
+    name: lat_lon
+    title: geographic location (latitude and longitude)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  lib_layout:
+    name: lib_layout
+    title: library layout
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000041
+    alias: lib_layout
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    title: library reads sequenced
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000040
+    alias: lib_reads_seqd
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_screen:
+    name: lib_screen
+    title: library screening strategy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000043
+    alias: lib_screen
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  lib_size:
+    name: lib_size
+    title: library size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000039
+    alias: lib_size
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_vector:
+    name: lib_vector
+    title: library vector
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000042
+    alias: lib_vector
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  mid:
+    name: mid
+    title: multiplex identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000047
+    alias: mid
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  neg_cont_type:
+    name: neg_cont_type
+    title: negative control type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001321
+    alias: neg_cont_type
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    title: nucleic acid amplification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000038
+    alias: nucl_acid_amp
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    title: nucleic acid extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '{PMID}|{DOI}|{URL}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}'
+  number_contig:
+    name: number_contig
+    title: number of contigs
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000060
+    alias: number_contig
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  pos_cont_type:
+    name: pos_cont_type
+    title: positive control type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001322
+    alias: pos_cont_type
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  project_name:
+    name: project_name
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: MimsPlantAssociated
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  ref_biomaterial:
+    name: ref_biomaterial
+    title: reference for biomaterial
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000025
+    alias: ref_biomaterial
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}'
+  ref_db:
+    name: ref_db
+    title: reference database(s)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000062
+    alias: ref_db
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+  rel_to_oxygen:
+    name: rel_to_oxygen
+    title: relationship to oxygen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000015
+    alias: rel_to_oxygen
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    range: string
+  samp_collec_device:
+    name: samp_collec_device
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_collec_device
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_collec_method:
+    name: samp_collec_method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_collec_method
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_mat_process:
+    name: samp_mat_process
+    title: sample material processing
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000016
+    alias: samp_mat_process
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  samp_name:
+    name: samp_name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: samp_name
+    owner: MimsPlantAssociated
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  samp_size:
+    name: samp_size
+    title: amount or size of sample collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_taxon_id:
+    name: samp_taxon_id
+    title: taxonomy ID of DNA sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001320
+    alias: samp_taxon_id
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  seq_meth:
+    name: seq_meth
+    title: sequencing method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000050
+    alias: seq_meth
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  sim_search_meth:
+    name: sim_search_meth
+    title: similarity search method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000063
+    alias: sim_search_meth
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '{software};{version};{parameters}'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  size_frac:
+    name: size_frac
+    title: size fraction selected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000017
+    alias: size_frac
+    owner: MimsPlantAssociated
+    domain_of:
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float}-{float} {unit}'
+  sop:
+    name: sop
+    title: relevant standard operating procedures
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000090
+    alias: sop
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  source_mat_id:
+    name: source_mat_id
+    title: source material identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000026
+    alias: source_mat_id
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  tax_class:
+    name: tax_class
+    title: taxonomic classification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000064
+    alias: tax_class
+    owner: MimsPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  temp:
+    name: temp
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  air_temp_regm:
+    name: air_temp_regm
+    title: air temperature regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000551
+    alias: air_temp_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  ances_data:
+    name: ances_data
+    title: ancestral data
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000247
+    alias: ances_data
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  antibiotic_regm:
+    name: antibiotic_regm
+    title: antibiotic regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000553
+    alias: antibiotic_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  biol_stat:
+    name: biol_stat
+    title: biological status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000858
+    alias: biol_stat
+    owner: MimsPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: string
+  biotic_regm:
+    name: biotic_regm
+    title: biotic regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001038
+    alias: biotic_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  chem_administration:
+    name: chem_administration
+    title: chemical administration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000751
+    alias: chem_administration
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  chem_mutagen:
+    name: chem_mutagen
+    title: chemical mutagen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000555
+    alias: chem_mutagen
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  climate_environment:
+    name: climate_environment
+    title: climate environment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001040
+    alias: climate_environment
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  cult_root_med:
+    name: cult_root_med
+    title: culture rooting medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001041
+    alias: cult_root_med
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  fertilizer_regm:
+    name: fertilizer_regm
+    title: fertilizer regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000556
+    alias: fertilizer_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  fungicide_regm:
+    name: fungicide_regm
+    title: fungicide regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000557
+    alias: fungicide_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  gaseous_environment:
+    name: gaseous_environment
+    title: gaseous environment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000558
+    alias: gaseous_environment
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  genetic_mod:
+    name: genetic_mod
+    title: genetic modification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000859
+    alias: genetic_mod
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  gravity:
+    name: gravity
+    title: gravity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000559
+    alias: gravity
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  growth_facil:
+    name: growth_facil
+    title: growth facility
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001043
+    alias: growth_facil
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  growth_habit:
+    name: growth_habit
+    title: growth habit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001044
+    alias: growth_habit
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+  growth_hormone_regm:
+    name: growth_hormone_regm
+    title: growth hormone regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000560
+    alias: growth_hormone_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  herbicide_regm:
+    name: herbicide_regm
+    title: herbicide regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000561
+    alias: herbicide_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  host_age:
+    name: host_age
+    title: host age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000255
+    alias: host_age
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_common_name:
+    name: host_common_name
+    title: host common name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000248
+    alias: host_common_name
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_disease_stat:
+    name: host_disease_stat
+    title: host disease status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000031
+    alias: host_disease_stat
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - PlantAssociated
+    range: string
+  host_dry_mass:
+    name: host_dry_mass
+    title: host dry mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000257
+    alias: host_dry_mass
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_genotype:
+    name: host_genotype
+    title: host genotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000365
+    alias: host_genotype
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_height:
+    name: host_height
+    title: host height
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000264
+    alias: host_height
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_subspecf_genlin:
+    name: host_subspecf_genlin
+    title: host subspecific genetic lineage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001318
+    alias: host_subspecf_genlin
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    range: string
+  host_length:
+    name: host_length
+    title: host length
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000256
+    alias: host_length
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_life_stage:
+    name: host_life_stage
+    title: host life stage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000251
+    alias: host_life_stage
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_phenotype:
+    name: host_phenotype
+    title: host phenotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000874
+    alias: host_phenotype
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  host_taxid:
+    name: host_taxid
+    title: host taxid
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000250
+    alias: host_taxid
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+  host_tot_mass:
+    name: host_tot_mass
+    title: host total mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000263
+    alias: host_tot_mass
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_wet_mass:
+    name: host_wet_mass
+    title: host wet mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000567
+    alias: host_wet_mass
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  humidity_regm:
+    name: humidity_regm
+    title: humidity regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000568
+    alias: humidity_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  light_regm:
+    name: light_regm
+    title: light regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000569
+    alias: light_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  mechanical_damage:
+    name: mechanical_damage
+    title: mechanical damage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001052
+    alias: mechanical_damage
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+  mineral_nutr_regm:
+    name: mineral_nutr_regm
+    title: mineral nutrient regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000570
+    alias: mineral_nutr_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  misc_param:
+    name: misc_param
+    title: miscellaneous parameter
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000752
+    alias: misc_param
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  non_min_nutr_regm:
+    name: non_min_nutr_regm
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: non_min_nutr_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  organism_count:
+    name: organism_count
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    title: oxygenation status of sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000753
+    alias: oxy_stat_samp
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  ph_regm:
+    name: ph_regm
+    title: pH regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001056
+    alias: ph_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  perturbation:
+    name: perturbation
+    title: perturbation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000754
+    alias: perturbation
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  pesticide_regm:
+    name: pesticide_regm
+    title: pesticide regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000573
+    alias: pesticide_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  plant_growth_med:
+    name: plant_growth_med
+    title: plant growth medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001057
+    alias: plant_growth_med
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+  plant_product:
+    name: plant_product
+    title: plant product
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001058
+    alias: plant_product
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  plant_sex:
+    name: plant_sex
+    title: plant sex
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001059
+    alias: plant_sex
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  plant_struc:
+    name: plant_struc
+    title: plant structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001060
+    alias: plant_struc
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  radiation_regm:
+    name: radiation_regm
+    title: radiation regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000575
+    alias: radiation_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  rainfall_regm:
+    name: rainfall_regm
+    title: rainfall regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000576
+    alias: rainfall_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+  root_cond:
+    name: root_cond
+    title: rooting conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001061
+    alias: root_cond
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  root_med_carbon:
+    name: root_med_carbon
+    title: rooting medium carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000577
+    alias: root_med_carbon
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+  root_med_macronutr:
+    name: root_med_macronutr
+    title: rooting medium macronutrients
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000578
+    alias: root_med_macronutr
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  root_med_micronutr:
+    name: root_med_micronutr
+    title: rooting medium micronutrients
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000579
+    alias: root_med_micronutr
+    owner: MimsPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  root_med_suppl:
+    name: root_med_suppl
+    title: rooting medium organic supplements
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000580
+    alias: root_med_suppl
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  root_med_ph:
+    name: root_med_ph
+    title: rooting medium pH
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001062
+    alias: root_med_ph
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: float
+  root_med_regl:
+    name: root_med_regl
+    title: rooting medium regulators
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000581
+    alias: root_med_regl
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{text};{float} {unit}'
+  root_med_solid:
+    name: root_med_solid
+    title: rooting medium solidifier
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001063
+    alias: root_med_solid
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  salt_regm:
+    name: salt_regm
+    title: salt regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000582
+    alias: salt_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    structured_pattern:
+      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+  samp_capt_status:
+    name: samp_capt_status
+    title: sample capture status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000860
+    alias: samp_capt_status
+    owner: MimsPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: string
+  samp_dis_stage:
+    name: samp_dis_stage
+    title: sample disease stage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000249
+    alias: samp_dis_stage
+    owner: MimsPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: string
+  salinity:
+    name: salinity
+    title: salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000183
+    alias: salinity
+    owner: MimsPlantAssociated
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_store_dur:
+    name: samp_store_dur
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  samp_store_loc:
+    name: samp_store_loc
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_store_temp:
+    name: samp_store_temp
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: MimsPlantAssociated
+    domain_of:
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  season_environment:
+    name: season_environment
+    title: seasonal environment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001068
+    alias: season_environment
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  standing_water_regm:
+    name: standing_water_regm
+    title: standing water regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001069
+    alias: standing_water_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  tiss_cult_growth_med:
+    name: tiss_cult_growth_med
+    title: tissue culture growth media
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001070
+    alias: tiss_cult_growth_med
+    owner: MimsPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    structured_pattern:
+      syntax: '{PMID}|{DOI}|{URL}|{text}'
+  water_temp_regm:
+    name: water_temp_regm
+    title: water temperature regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000590
+    alias: water_temp_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  watering_regm:
+    name: watering_regm
+    title: watering regimen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000591
+    alias: watering_regm
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+  host_symbiont:
+    name: host_symbiont
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    alias: host_symbiont
+    owner: MimsPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+class_uri: MIXS:0010007_0016010
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>
