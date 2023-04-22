@@ -1,0 +1,13 @@
+mims_soil_set:
+  - collection_date: xxx
+    depth: 123 units
+    elev: 123 units
+    env_broad_scale: text [prefix:123]
+    env_local_scale: text [prefix:123]
+    env_medium: text [prefix:123]
+    geo_loc_name: xxx
+    lat_lon: xxx
+    project_name: xxx
+    samp_taxon_id: xxx
+    seq_meth: xxx
+

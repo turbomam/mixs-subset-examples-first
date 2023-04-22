@@ -1,5 +1,6 @@
 mims_soil_set:
   - samp_name: xxx1
+#    sample_name: xxx1
     collection_date: xxx
     depth: 123 units
     elev: 123 units
@@ -12,6 +13,7 @@ mims_soil_set:
     samp_taxon_id: xxx
     seq_meth: xxx
   - samp_name: xxx2
+#    sample_name: xxx2
     collection_date: xxx
     depth: 123 units
     elev: 123 units
