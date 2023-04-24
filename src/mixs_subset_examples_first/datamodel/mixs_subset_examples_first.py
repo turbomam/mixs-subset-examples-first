@@ -1,5 +1,5 @@
 # Auto generated from mixs_subset_examples_first.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-21T22:09:11
+# Generation date: 2023-04-21T22:28:14
 # Schema: MIxS
 #
 # id: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -192,9 +192,9 @@ class Database(YAMLRoot):
     class_name: ClassVar[str] = "Database"
     class_model_uri: ClassVar[URIRef] = MIXS.Database
 
-    agriculture_set: Optional[Union[Union[dict, Agriculture], List[Union[dict, Agriculture]]]] = empty_list()
-    air_set: Optional[Union[Union[dict, Air], List[Union[dict, Air]]]] = empty_list()
-    built_environment_set: Optional[Union[Union[dict, BuiltEnvironment], List[Union[dict, BuiltEnvironment]]]] = empty_list()
+    agriculture_set: Optional[Union[Union[dict, "Agriculture"], List[Union[dict, "Agriculture"]]]] = empty_list()
+    air_set: Optional[Union[Union[dict, "Air"], List[Union[dict, "Air"]]]] = empty_list()
+    built_environment_set: Optional[Union[Union[dict, "BuiltEnvironment"], List[Union[dict, "BuiltEnvironment"]]]] = empty_list()
     checklist_set: Optional[Union[Union[dict, Checklist], List[Union[dict, Checklist]]]] = empty_list()
     environmental_package_set: Optional[Union[Union[dict, "EnvironmentalPackage"], List[Union[dict, "EnvironmentalPackage"]]]] = empty_list()
     food_animal_and_animal_feed_set: Optional[Union[Union[dict, "FoodAnimalAndAnimalFeed"], List[Union[dict, "FoodAnimalAndAnimalFeed"]]]] = empty_list()

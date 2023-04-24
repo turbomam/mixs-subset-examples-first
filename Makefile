@@ -222,9 +222,8 @@ gendoc
 # make all (includes gen-project and gendoc)
 
 # generate documentation
-#   make testdoc (gendoc and serve)
-#  renders OK, but reports non existent slots from database?
-#   make deploy?
+#   make testdoc (gendoc + serve)
+#   make deploy OK
 #   gh actions ?
 
 # instantiation tests
