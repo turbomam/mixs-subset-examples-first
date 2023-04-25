@@ -119,3 +119,39 @@ TIDAL_STAGE_ENUM	ebb tide
 TIDAL_STAGE_ENUM	flood tide															
 TIDAL_STAGE_ENUM	high tide															
 TIDAL_STAGE_ENUM	low tide															
+BIOTIC_RELATIONSHIP_ENUM	commensalism															
+BIOTIC_RELATIONSHIP_ENUM	free living															
+BIOTIC_RELATIONSHIP_ENUM	mutualism															
+BIOTIC_RELATIONSHIP_ENUM	parasitism															
+BIOTIC_RELATIONSHIP_ENUM	symbiotic															
+TROPHIC_LEVEL_ENUM	autotroph															
+TROPHIC_LEVEL_ENUM	carboxydotroph															
+TROPHIC_LEVEL_ENUM	chemoautolithotroph															
+TROPHIC_LEVEL_ENUM	chemoautotroph															
+TROPHIC_LEVEL_ENUM	chemoheterotroph															
+TROPHIC_LEVEL_ENUM	chemolithoautotroph															
+TROPHIC_LEVEL_ENUM	chemolithotroph															
+TROPHIC_LEVEL_ENUM	chemoorganoheterotroph															
+TROPHIC_LEVEL_ENUM	chemoorganotroph															
+TROPHIC_LEVEL_ENUM	chemosynthetic															
+TROPHIC_LEVEL_ENUM	chemotroph															
+TROPHIC_LEVEL_ENUM	copiotroph															
+TROPHIC_LEVEL_ENUM	diazotroph															
+TROPHIC_LEVEL_ENUM	facultative															
+TROPHIC_LEVEL_ENUM	heterotroph															
+TROPHIC_LEVEL_ENUM	lithoautotroph															
+TROPHIC_LEVEL_ENUM	lithoheterotroph															
+TROPHIC_LEVEL_ENUM	lithotroph															
+TROPHIC_LEVEL_ENUM	methanotroph															
+TROPHIC_LEVEL_ENUM	methylotroph															
+TROPHIC_LEVEL_ENUM	mixotroph															
+TROPHIC_LEVEL_ENUM	obligate															
+TROPHIC_LEVEL_ENUM	oligotroph															
+TROPHIC_LEVEL_ENUM	organoheterotroph															
+TROPHIC_LEVEL_ENUM	organotroph															
+TROPHIC_LEVEL_ENUM	photoautotroph															
+TROPHIC_LEVEL_ENUM	photoheterotroph															
+TROPHIC_LEVEL_ENUM	photolithoautotroph															
+TROPHIC_LEVEL_ENUM	photolithotroph															
+TROPHIC_LEVEL_ENUM	photosynthetic															
+TROPHIC_LEVEL_ENUM	phototroph															

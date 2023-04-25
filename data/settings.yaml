@@ -6,6 +6,7 @@ settings:
   dna: "[ACGT]+"
   float: "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?"
   free_text: "[^s\\|][^\\r\\n\\t\\|]+" # at least one non-whitespace character. line feeds, carriage returns and horizontal tabs are never allowed
+  integer: "[+-]?[1-9][0-9]*"
   lat: "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?)"
   lon: "[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)"
   ncbi_term_id: "NCBITaxon:[0-9]+"

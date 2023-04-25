@@ -662,6 +662,7 @@ reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs
 #        )
 
 reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonschema/mixs_subset_examples_first.schema.json
+	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-migs_ba_soil_set-exhaustive.yaml
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-exhaustive.yaml
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_water_set-exhaustive.yaml
