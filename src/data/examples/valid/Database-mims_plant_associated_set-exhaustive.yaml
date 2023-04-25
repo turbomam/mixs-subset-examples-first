@@ -1,0 +1,116 @@
+mims_plant_associated_set:
+  - samp_name: xxx1
+    #    associated resource:
+    adapters: AAA;TTT
+    air_temp_regm: xxx
+    alt: 123 units
+    ances_data: xxx
+    annot: xxx
+    antibiotic_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D|xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    assembly_name: xxx xxx
+    assembly_qual: Finished genome
+    assembly_software: xxx;xxx;xxx
+    biol_stat: xxx
+    biotic_regm: xxx
+    chem_administration: xxx
+    chem_mutagen: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    climate_environment: xxx
+    collection_date: xxx
+    cult_root_med: xxx
+    depth: 123 units
+    elev: 123 units
+    env_broad_scale: text [prefix:123]
+    env_local_scale: text [prefix:123]
+    env_medium: text [prefix:123]
+    experimental_factor: xxx
+    feat_pred: xxx;xxx;xxx
+    fertilizer_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    fungicide_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    gaseous_environment: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    genetic_mod: xxx
+    geo_loc_name: "xxx: xxx, xxx"
+    gravity: xxx
+    growth_facil: xxx
+    growth_habit: xxx
+    growth_hormone_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    herbicide_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    host_age: 123 units
+    host_common_name: xxx
+    host_disease_stat: xxx
+    host_dry_mass: 123 units
+    host_genotype: xxx
+    host_height: 123 units
+    host_length: 123 units
+    host_life_stage: xxx
+    host_phenotype: text [prefix:123]
+    host_subspecf_genlin: xxx
+    host_symbiont: xxx
+    host_taxid: xxx
+    host_tot_mass: 123 units
+    host_wet_mass: 123 units
+    humidity_regm: xxx;123.5 units;R1/xxx/xxx/P1D
+    lat_lon: 55.5 55.5
+    lib_layout: paired
+    lib_reads_seqd: 123
+    lib_screen: xxx
+    lib_size: 123
+    lib_vector: xxx
+    light_regm: xxx
+    mechanical_damage: xxx
+    mid: ACGT
+    mineral_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    misc_param: xxx;123 units|abc;123 units
+    neg_cont_type: distilled water
+    non_min_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    nucl_acid_amp: PMID:1234567
+    nucl_acid_ext: PMID:1234567
+    number_contig: 123
+    organism_count: xxx
+    oxy_stat_samp: aerobic
+    perturbation: xxx
+    pesticide_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    ph_regm: xxx
+    plant_growth_med: xxx
+    plant_product: xxx
+    plant_sex: xxx
+    plant_struc: text [prefix:123]
+    pos_cont_type: xxx
+    project_name: xxx
+    radiation_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    rainfall_regm: xxx
+    ref_biomaterial: PMID:1234567
+    ref_db: xxx;xxx;xxx
+    rel_to_oxygen: microaerophilic
+    root_cond: xxx
+    root_med_carbon: xxx
+    root_med_macronutr: xxx;123 units
+    root_med_micronutr: xxx;123 units
+    root_med_ph: 7.4
+    root_med_regl: xxx;123 units
+    root_med_solid: xxx
+    root_med_suppl: xxx;123 units
+    salinity: 123 units
+    salt_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    samp_capt_status: xxx
+    samp_collec_device: xxx
+    samp_collec_method: PMID:1234567
+    samp_dis_stage: xxx
+    samp_mat_process: xxx
+    samp_size: 123 units
+    samp_store_dur: P1D
+    samp_store_loc: xxx
+    samp_store_temp: 123 units
+    samp_taxon_id: xxx [NCBITaxon:10090]
+    samp_vol_we_dna_ext: 123 units
+    season_environment: xxx
+    seq_meth: PMID:1234567
+    sim_search_meth: xxx;xxx;xxx
+    size_frac: 123-555 units
+    sop: PMID:1234567|http://example.com/site|10.1093/ajae/aaq063
+    source_mat_id: xxx
+    standing_water_regm: xxx
+    tax_class: xxx
+    temp: 123 units
+    tiss_cult_growth_med: xxx
+    water_temp_regm: xxx
+    watering_regm: xxx
