@@ -324,6 +324,8 @@
 
       SymbiontAssociated : oxy_stat_samp
 
+          SymbiontAssociated ..&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
+
       SymbiontAssociated : perturbation
 
       SymbiontAssociated : project_name
@@ -754,7 +756,7 @@
 </tr>
 <tr>
 <td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -2556,7 +2558,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   project_name:
@@ -2603,7 +2605,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lat_lon:
@@ -2633,6 +2635,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   geo_loc_name:
     name: geo_loc_name
     title: geographic location (country and/or sea,region)
@@ -2660,6 +2665,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   collection_date:
     name: collection_date
     title: collection date
@@ -2714,7 +2722,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_local_scale:
@@ -2744,7 +2752,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_medium:
@@ -2774,7 +2782,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   alt:
@@ -2803,7 +2811,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   depth:
@@ -2838,7 +2846,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
@@ -2874,7 +2882,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_subject_id:
@@ -2894,7 +2902,7 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_common_name:
@@ -2911,7 +2919,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_taxid:
@@ -2952,7 +2960,7 @@ attributes:
     - Miuvig
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_dependence:
@@ -3006,7 +3014,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_age:
@@ -3029,7 +3037,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_sex:
@@ -3082,7 +3090,7 @@ attributes:
     - HostAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_body_site:
@@ -3102,7 +3110,7 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   host_body_product:
@@ -3140,7 +3148,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_height:
@@ -3163,7 +3171,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_length:
@@ -3181,7 +3189,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_growth_cond:
@@ -3208,7 +3216,7 @@ attributes:
     - HostAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_family_relationship:
@@ -3233,7 +3241,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_infra_specific_rank:
@@ -3247,7 +3255,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_genotype:
@@ -3270,7 +3278,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_phenotype:
@@ -3293,7 +3301,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   host_dry_mass:
@@ -3311,7 +3319,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_color:
@@ -3326,7 +3334,7 @@ attributes:
     - HostAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_shape:
@@ -3341,7 +3349,7 @@ attributes:
     - HostAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   gravidity:
@@ -3431,7 +3439,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_of_host_coinf:
@@ -3445,7 +3453,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_name:
@@ -3459,7 +3467,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_env_loc:
@@ -3473,7 +3481,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   host_of_host_env_med:
@@ -3487,7 +3495,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   host_of_host_taxid:
@@ -3512,7 +3520,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_disease:
@@ -3548,7 +3556,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_infrank:
@@ -3562,7 +3570,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_geno:
@@ -3576,7 +3584,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_of_host_pheno:
@@ -3612,7 +3620,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   chem_administration:
@@ -3681,7 +3689,7 @@ attributes:
     - HumanVaginal
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   oxy_stat_samp:
@@ -3710,7 +3718,7 @@ attributes:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    range: string
+    range: OXY_STAT_SAMP_ENUM
   temp:
     name: temp
     title: temperature
@@ -3753,7 +3761,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   organism_count:
@@ -3831,7 +3839,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_store_temp:
@@ -3860,7 +3868,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_store_dur:
@@ -3890,6 +3898,9 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
   samp_store_loc:
     name: samp_store_loc
     title: sample storage location
@@ -3917,7 +3928,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   samp_store_sol:
@@ -3931,7 +3942,7 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   misc_param:
@@ -3966,9 +3977,10 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
 class_uri: MIXS:0016023
 
 </code></pre>

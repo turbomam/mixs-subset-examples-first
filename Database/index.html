@@ -286,6 +286,10 @@
 
           Database ..&gt; MigsBaSoil : migs_ba_soil_set
 
+      Database : migs_ba_water_set
+
+          Database ..&gt; MigsBaWater : migs_ba_water_set
+
       Database : mims_plant_associated_set
 
           Database ..&gt; MimsPlantAssociated : mims_plant_associated_set
@@ -297,6 +301,10 @@
       Database : mims_soil_set
 
           Database ..&gt; MimsSoil : mims_soil_set
+
+      Database : mims_water_set
+
+          Database ..&gt; MimsWater : mims_water_set
 
       Database : plant_associated_set
 
@@ -532,6 +540,18 @@
 <td></td>
 <td>direct</td>
 </tr>
+<tr>
+<td><a href="../migs_ba_water_set/">migs_ba_water_set</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mims_water_set/">mims_water_set</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -598,6 +618,8 @@ slots:
 - unknown_term_set
 - wastewater_sludge_set
 - water_set
+- migs_ba_water_set
+- mims_water_set
 slot_usage:
   agriculture_set:
     name: agriculture_set
@@ -753,6 +775,13 @@ slot_usage:
     - Database
     range: MigsBaSoil
     inlined_as_list: true
+  migs_ba_water_set:
+    name: migs_ba_water_set
+    multivalued: true
+    domain_of:
+    - Database
+    range: MigsBaWater
+    inlined_as_list: true
   mims_plant_associated_set:
     name: mims_plant_associated_set
     multivalued: true
@@ -773,6 +802,13 @@ slot_usage:
     domain_of:
     - Database
     range: MimsSoil
+    inlined_as_list: true
+  mims_water_set:
+    name: mims_water_set
+    multivalued: true
+    domain_of:
+    - Database
+    range: MimsWater
     inlined_as_list: true
   plant_associated_set:
     name: plant_associated_set
@@ -987,6 +1023,13 @@ slot_usage:
     - Database
     range: MigsBaSoil
     inlined_as_list: true
+  migs_ba_water_set:
+    name: migs_ba_water_set
+    multivalued: true
+    domain_of:
+    - Database
+    range: MigsBaWater
+    inlined_as_list: true
   mims_plant_associated_set:
     name: mims_plant_associated_set
     multivalued: true
@@ -1007,6 +1050,13 @@ slot_usage:
     domain_of:
     - Database
     range: MimsSoil
+    inlined_as_list: true
+  mims_water_set:
+    name: mims_water_set
+    multivalued: true
+    domain_of:
+    - Database
+    range: MimsWater
     inlined_as_list: true
   plant_associated_set:
     name: plant_associated_set
@@ -1441,6 +1491,28 @@ attributes:
     - Database
     range: Water
     inlined: true
+    inlined_as_list: true
+  migs_ba_water_set:
+    name: migs_ba_water_set
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    multivalued: true
+    alias: migs_ba_water_set
+    owner: Database
+    domain_of:
+    - Database
+    range: MigsBaWater
+    inlined_as_list: true
+  mims_water_set:
+    name: mims_water_set
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    multivalued: true
+    alias: mims_water_set
+    owner: Database
+    domain_of:
+    - Database
+    range: MimsWater
     inlined_as_list: true
 tree_root: true
 

@@ -227,6 +227,8 @@
 
       MigsBaPlantAssociated : assembly_qual
 
+          MigsBaPlantAssociated ..&gt; ASSEMBLY_QUAL_ENUM : assembly_qual
+
       MigsBaPlantAssociated : assembly_software
 
       MigsBaPlantAssociated : associated_resource
@@ -236,6 +238,8 @@
       MigsBaPlantAssociated : biotic_regm
 
       MigsBaPlantAssociated : biotic_relationship
+
+          MigsBaPlantAssociated ..&gt; BIOTIC_RELATIONSHIP_ENUM : biotic_relationship
 
       MigsBaPlantAssociated : chem_administration
 
@@ -329,6 +333,8 @@
 
       MigsBaPlantAssociated : lib_layout
 
+          MigsBaPlantAssociated ..&gt; LIB_LAYOUT_ENUM : lib_layout
+
       MigsBaPlantAssociated : lib_reads_seqd
 
       MigsBaPlantAssociated : lib_screen
@@ -347,6 +353,8 @@
 
       MigsBaPlantAssociated : neg_cont_type
 
+          MigsBaPlantAssociated ..&gt; NEG_CONT_TYPE_ENUM : neg_cont_type
+
       MigsBaPlantAssociated : non_min_nutr_regm
 
       MigsBaPlantAssociated : nucl_acid_amp
@@ -360,6 +368,8 @@
       MigsBaPlantAssociated : organism_count
 
       MigsBaPlantAssociated : oxy_stat_samp
+
+          MigsBaPlantAssociated ..&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
 
       MigsBaPlantAssociated : pathogenicity
 
@@ -461,6 +471,8 @@
 
       MigsBaPlantAssociated : trophic_level
 
+          MigsBaPlantAssociated ..&gt; TROPHIC_LEVEL_ENUM : trophic_level
+
       MigsBaPlantAssociated : water_temp_regm
 
       MigsBaPlantAssociated : watering_regm
@@ -514,7 +526,7 @@
 </tr>
 <tr>
 <td><a href="../assembly_qual/">assembly_qual</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>1..1 <br/> <a href="../ASSEMBLYQUALENUM/">ASSEMBLYQUALENUM</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -532,7 +544,7 @@
 </tr>
 <tr>
 <td><a href="../biotic_relationship/">biotic_relationship</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -558,13 +570,13 @@
 <td><a href="../depth/">depth</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../elev/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../encoded_traits/">encoded_traits</a></td>
@@ -624,11 +636,11 @@
 <td><a href="../host_disease_stat/">host_disease_stat</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../host_spec_range/">host_spec_range</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -646,7 +658,7 @@
 </tr>
 <tr>
 <td><a href="../lib_layout/">lib_layout</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -676,7 +688,7 @@
 </tr>
 <tr>
 <td><a href="../neg_cont_type/">neg_cont_type</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -720,7 +732,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
@@ -762,7 +774,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../samp_size/">samp_size</a></td>
@@ -780,7 +792,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../seq_meth/">seq_meth</a></td>
@@ -834,11 +846,11 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../MigsBa/">MigsBa</a>, <a href="../PlantAssociated/">PlantAssociated</a></td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
 </tr>
 <tr>
 <td><a href="../trophic_level/">trophic_level</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
 <td></td>
 <td><a href="../MigsBa/">MigsBa</a></td>
 </tr>
@@ -1066,7 +1078,7 @@
 </tr>
 <tr>
 <td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
 <td></td>
 <td><a href="../PlantAssociated/">PlantAssociated</a></td>
 </tr>
@@ -1342,6 +1354,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[ACGT]+;[ACGT]+'
+    structured_pattern:
+      syntax: '{dna};{dna}'
   alt:
     name: alt
     title: altitude
@@ -1368,7 +1383,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   annot:
@@ -1392,7 +1407,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   assembly_name:
@@ -1416,6 +1431,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+ [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text} {free_text}'
   assembly_qual:
     name: assembly_qual
     title: assembly quality
@@ -1434,7 +1452,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: ASSEMBLY_QUAL_ENUM
     required: true
   assembly_software:
     name: assembly_software
@@ -1458,7 +1476,7 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   associated resource:
@@ -1498,7 +1516,7 @@ attributes:
     - MigsVi
     - MimarksC
     - Miuvig
-    range: string
+    range: BIOTIC_RELATIONSHIP_ENUM
     recommended: true
   collection_date:
     name: collection_date
@@ -1563,6 +1581,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{software};{version}'
   depth:
     name: depth
     title: depth
@@ -1595,7 +1616,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
@@ -1631,7 +1652,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   encoded_traits:
@@ -1647,7 +1668,7 @@ attributes:
     - MigsPl
     - MigsVi
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   env_broad_scale:
@@ -1677,7 +1698,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_local_scale:
@@ -1707,7 +1728,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_medium:
@@ -1737,7 +1758,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   estimated_size:
@@ -1756,6 +1777,9 @@ attributes:
     - MigsVi
     - Miuvig
     range: string
+    pattern: '[+-]?[1-9][0-9]* bp'
+    structured_pattern:
+      syntax: '{integer} bp'
   experimental_factor:
     name: experimental_factor
     title: experimental factor
@@ -1814,7 +1838,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   geo_loc_name:
@@ -1844,6 +1868,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   host_disease_stat:
     name: host_disease_stat
     title: host disease status
@@ -1868,6 +1895,10 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
+    pattern: ((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+
+      [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)
+    structured_pattern:
+      syntax: ((({term_label} [{term_id}])|{free_text})\|)*(({term_label} [{term_id}])|{free_text})
   host_spec_range:
     name: host_spec_range
     title: host specificity or range
@@ -1883,7 +1914,10 @@ attributes:
     - MigsPl
     - MigsVi
     - Miuvig
-    range: integer
+    range: string
+    pattern: ([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*
+    structured_pattern:
+      syntax: ({integer}\|)*{integer}
   isol_growth_condt:
     name: isol_growth_condt
     title: isolation and growth condition
@@ -1902,9 +1936,9 @@ attributes:
     - MimarksC
     range: string
     required: true
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   lat_lon:
     name: lat_lon
     title: geographic location (latitude and longitude)
@@ -1932,6 +1966,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   lib_layout:
     name: lib_layout
     title: library layout
@@ -1952,7 +1989,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: LIB_LAYOUT_ENUM
   lib_reads_seqd:
     name: lib_reads_seqd
     title: library reads sequenced
@@ -1995,7 +2032,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lib_size:
@@ -2040,7 +2077,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   neg_cont_type:
@@ -2063,7 +2100,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: NEG_CONT_TYPE_ENUM
     recommended: true
   nucl_acid_amp:
     name: nucl_acid_amp
@@ -2088,6 +2125,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext:
     name: nucl_acid_ext
     title: nucleic acid extraction
@@ -2115,9 +2155,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   num_replicons:
     name: num_replicons
     title: number of replicons
@@ -2168,6 +2208,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text}'
   pos_cont_type:
     name: pos_cont_type
     title: positive control type
@@ -2234,7 +2277,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   ref_biomaterial:
@@ -2257,9 +2300,9 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   ref_db:
     name: ref_db
     title: reference database(s)
@@ -2279,6 +2322,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{database};{version};{reference}'
   rel_to_oxygen:
     name: rel_to_oxygen
     title: relationship to oxygen
@@ -2356,6 +2402,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
+    pattern: '[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text}'
   samp_name:
     name: samp_name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -2423,7 +2472,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_taxon_id:
@@ -2448,6 +2497,9 @@ attributes:
     - Miuvig
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+ [NCBITaxon:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{ncbi_term_id}]'
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     title: sample volume or weight for DNA extraction
@@ -2491,7 +2543,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   seq_meth:
@@ -2540,7 +2592,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   sop:
@@ -2566,6 +2618,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    structured_pattern:
+      syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
   source_mat_id:
     name: source_mat_id
     title: source material identifiers
@@ -2590,7 +2645,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   specific_host:
@@ -2610,6 +2665,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'
+    structured_pattern:
+      syntax: '{free_text}|{ncbi_term_id}'
   subspecf_gen_lin:
     name: subspecf_gen_lin
     title: subspecific genetic lineage
@@ -2647,7 +2705,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   tax_ident:
@@ -2712,7 +2770,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   trophic_level:
@@ -2728,7 +2786,7 @@ attributes:
     - MigsBa
     - MigsEu
     - MimarksC
-    range: string
+    range: TROPHIC_LEVEL_ENUM
     recommended: true
   air_temp_regm:
     name: air_temp_regm
@@ -2755,7 +2813,7 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   antibiotic_regm:
@@ -2769,9 +2827,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   biol_stat:
     name: biol_stat
     title: biological status
@@ -2796,7 +2854,7 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   chem_administration:
@@ -2836,9 +2894,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   climate_environment:
     name: climate_environment
     title: climate environment
@@ -2873,9 +2931,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   fungicide_regm:
     name: fungicide_regm
     title: fungicide regimen
@@ -2888,9 +2946,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   gaseous_environment:
     name: gaseous_environment
     title: gaseous environment
@@ -2903,9 +2961,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   genetic_mod:
     name: genetic_mod
     title: genetic modification
@@ -2922,9 +2980,9 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: ({DOI})|({PMID})|({URL})|({free_text})
   gravity:
     name: gravity
     title: gravity
@@ -2970,9 +3028,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   herbicide_regm:
     name: herbicide_regm
     title: herbicide regimen
@@ -2985,9 +3043,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   host_age:
     name: host_age
     title: host age
@@ -3008,7 +3066,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_common_name:
@@ -3025,7 +3083,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_dry_mass:
@@ -3043,7 +3101,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_genotype:
@@ -3066,7 +3124,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_height:
@@ -3089,7 +3147,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_subspecf_genlin:
@@ -3121,7 +3179,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_life_stage:
@@ -3138,7 +3196,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   host_phenotype:
@@ -3161,7 +3219,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   host_taxid:
@@ -3199,7 +3257,7 @@ attributes:
     - PlantAssociated
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   host_wet_mass:
@@ -3213,7 +3271,7 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   humidity_regm:
@@ -3261,9 +3319,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   misc_param:
     name: misc_param
     title: miscellaneous parameter
@@ -3296,9 +3354,10 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
   non_min_nutr_regm:
     name: non_min_nutr_regm
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -3366,7 +3425,7 @@ attributes:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-    range: string
+    range: OXY_STAT_SAMP_ENUM
   ph_regm:
     name: ph_regm
     title: pH regimen
@@ -3419,9 +3478,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   plant_growth_med:
     name: plant_growth_med
     title: plant growth medium
@@ -3447,7 +3506,7 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   plant_sex:
@@ -3473,7 +3532,7 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   radiation_regm:
@@ -3487,9 +3546,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   rainfall_regm:
     name: rainfall_regm
     title: rainfall regimen
@@ -3513,9 +3572,9 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: ({DOI})|({PMID})|({URL})|({free_text})
   root_med_carbon:
     name: root_med_carbon
     title: rooting medium carbon
@@ -3542,9 +3601,9 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_micronutr:
     name: root_med_micronutr
     title: rooting medium micronutrients
@@ -3557,9 +3616,9 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_suppl:
     name: root_med_suppl
     title: rooting medium organic supplements
@@ -3571,9 +3630,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_ph:
     name: root_med_ph
     title: rooting medium pH
@@ -3598,9 +3657,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_solid:
     name: root_med_solid
     title: rooting medium solidifier
@@ -3612,7 +3671,7 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   salt_regm:
@@ -3627,9 +3686,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   samp_capt_status:
     name: samp_capt_status
     title: sample capture status
@@ -3680,7 +3739,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_store_dur:
@@ -3710,6 +3769,9 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
   samp_store_loc:
     name: samp_store_loc
     title: sample storage location
@@ -3737,7 +3799,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   samp_store_temp:
@@ -3766,7 +3828,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   season_environment:
@@ -3804,9 +3866,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: ({DOI})|({PMID})|({URL})|({free_text})
   water_temp_regm:
     name: water_temp_regm
     title: water temperature regimen

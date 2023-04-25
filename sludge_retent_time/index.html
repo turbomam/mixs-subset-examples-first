@@ -388,7 +388,7 @@ alias: sludge_retent_time
 domain_of:
 - WastewaterSludge
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
 structured_pattern:
   syntax: '{float} {unit}'
 

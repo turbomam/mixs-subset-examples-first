@@ -3234,7 +3234,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lat_lon:
@@ -3264,6 +3264,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   geo_loc_name:
     name: geo_loc_name
     title: geographic location (country and/or sea,region)
@@ -3291,6 +3294,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   collection_date:
     name: collection_date
     title: collection date
@@ -3345,7 +3351,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_local_scale:
@@ -3375,7 +3381,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_medium:
@@ -3405,7 +3411,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   seq_meth:
@@ -3461,7 +3467,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_collect_device:
@@ -3529,9 +3535,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   organism_count:
     name: organism_count
     title: organism count
@@ -3645,7 +3651,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   pool_dna_extracts:
@@ -3705,7 +3711,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_stor_loc:
@@ -3803,7 +3809,7 @@ attributes:
     - FoodHumanFoods
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   food_product_type:
@@ -3835,7 +3841,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   IFSAC_category:
@@ -3853,7 +3859,7 @@ attributes:
     - FoodHumanFoods
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   intended_consumer:
@@ -3897,7 +3903,7 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   animal_am_dur:
@@ -3922,7 +3928,7 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   animal_am_route:
@@ -3936,7 +3942,7 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   animal_am_use:
@@ -3950,7 +3956,7 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   animal_body_cond:
@@ -3976,7 +3982,7 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   animal_feed_equip:
@@ -4015,7 +4021,7 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   animal_sex:
@@ -4042,7 +4048,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   cons_food_stor_dur:
@@ -4093,7 +4099,7 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    pattern: '{integer} [^s][^\r\n\t]+'
+    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{integer} {unit}'
   cult_isol_date:
@@ -4168,9 +4174,9 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: ({DOI})|({PMID})|({URL})|({free_text})
   food_additive:
     name: food_additive
     title: food additive
@@ -4276,7 +4282,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   food_pack_integrity:
@@ -4346,7 +4352,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   food_product_qual:
@@ -4362,7 +4368,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   food_quality_date:
@@ -4418,7 +4424,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   food_trav_vehic:
@@ -4463,7 +4469,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   library_prep_kit:
@@ -4481,7 +4487,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lot_number:
@@ -4540,7 +4546,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   samp_collect_method:
@@ -4556,9 +4562,9 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: ({DOI})|({PMID})|({URL})|({free_text})
   samp_pooling:
     name: samp_pooling
     title: sample pooling
@@ -4574,7 +4580,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   samp_rep_biol:
@@ -4590,7 +4596,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_rep_tech:
@@ -4606,7 +4612,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_source_mat_cat:
@@ -4623,7 +4629,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   samp_stor_device:
@@ -4692,7 +4698,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   sequencing_location:
@@ -4710,7 +4716,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   serovar_or_serotype:
@@ -4856,7 +4862,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   study_timecourse:
@@ -4872,7 +4878,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   study_tmnt:
@@ -4934,9 +4940,10 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
 class_uri: MIXS:0016019
 
 </code></pre>

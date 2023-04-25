@@ -433,9 +433,9 @@ domain_of:
 - Agriculture
 - Soil
 range: string
-pattern: '{text};{period}'
+pattern: '[^s\|][^\r\n\t\|]+;P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
 structured_pattern:
-  syntax: '{text};{period}'
+  syntax: '{free_text};{period}'
 
 </code></pre>
 

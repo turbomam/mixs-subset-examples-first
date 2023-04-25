@@ -402,7 +402,7 @@ alias: rel_air_humidity
 domain_of:
 - BuiltEnvironment
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
 structured_pattern:
   syntax: '{float} {unit}'
 

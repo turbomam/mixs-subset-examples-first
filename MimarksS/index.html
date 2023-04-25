@@ -240,6 +240,8 @@
 
       MimarksS : lib_layout
 
+          MimarksS ..&gt; LIB_LAYOUT_ENUM : lib_layout
+
       MimarksS : lib_reads_seqd
 
       MimarksS : lib_screen
@@ -251,6 +253,8 @@
       MimarksS : mid
 
       MimarksS : neg_cont_type
+
+          MimarksS ..&gt; NEG_CONT_TYPE_ENUM : neg_cont_type
 
       MimarksS : nucl_acid_amp
 
@@ -402,7 +406,7 @@
 </tr>
 <tr>
 <td><a href="../lib_layout/">lib_layout</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -438,7 +442,7 @@
 </tr>
 <tr>
 <td><a href="../neg_cont_type/">neg_cont_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td></td>
 <td>direct</td>
 </tr>
@@ -2190,6 +2194,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[ACGT]+;[ACGT]+'
+    structured_pattern:
+      syntax: '{dna};{dna}'
   alt:
     name: alt
     title: altitude
@@ -2216,7 +2223,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   assembly_software:
@@ -2241,7 +2248,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   associated resource:
@@ -2339,7 +2346,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
@@ -2375,7 +2382,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   env_broad_scale:
@@ -2405,7 +2412,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_local_scale:
@@ -2435,7 +2442,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_medium:
@@ -2465,7 +2472,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   experimental_factor:
@@ -2520,6 +2527,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   lat_lon:
     name: lat_lon
     title: geographic location (latitude and longitude)
@@ -2547,6 +2557,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   lib_layout:
     name: lib_layout
     title: library layout
@@ -2567,7 +2580,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: LIB_LAYOUT_ENUM
     recommended: true
   lib_reads_seqd:
     name: lib_reads_seqd
@@ -2613,7 +2626,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lib_size:
@@ -2660,7 +2673,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   mid:
@@ -2680,6 +2693,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[ACGT]+'
+    structured_pattern:
+      syntax: '{dna}'
   neg_cont_type:
     name: neg_cont_type
     title: negative control type
@@ -2700,7 +2716,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: NEG_CONT_TYPE_ENUM
     recommended: true
   nucl_acid_amp:
     name: nucl_acid_amp
@@ -2725,6 +2741,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext:
     name: nucl_acid_ext
     title: nucleic acid extraction
@@ -2752,9 +2771,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   pcr_cond:
     name: pcr_cond
     title: pcr conditions
@@ -2849,7 +2868,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   rel_to_oxygen:
@@ -2931,6 +2950,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text}'
   samp_name:
     name: samp_name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -2999,7 +3021,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_taxon_id:
@@ -3024,6 +3046,9 @@ attributes:
     - Miuvig
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+ [NCBITaxon:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{ncbi_term_id}]'
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     title: sample volume or weight for DNA extraction
@@ -3067,7 +3092,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   seq_meth:
@@ -3127,7 +3152,7 @@ attributes:
     - Miuvig
     range: string
     pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s][^\r\n\t]+'
+      [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float}-{float} {unit}'
   sop:
@@ -3153,6 +3178,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    structured_pattern:
+      syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
   source_mat_id:
     name: source_mat_id
     title: source material identifiers
@@ -3177,7 +3205,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   target_gene:
@@ -3194,7 +3222,7 @@ attributes:
     - MimarksS
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   target_subfragment:
@@ -3211,7 +3239,7 @@ attributes:
     - MimarksS
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   temp:
@@ -3257,7 +3285,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
 class_uri: MIXS:0010008

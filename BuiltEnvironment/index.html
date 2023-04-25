@@ -3384,7 +3384,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   surf_material:
@@ -3424,7 +3424,7 @@ attributes:
     - BuiltEnvironment
     range: string
     required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   abs_air_humidity:
@@ -3439,7 +3439,7 @@ attributes:
     - BuiltEnvironment
     range: string
     required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   surf_humidity:
@@ -3454,7 +3454,7 @@ attributes:
     - BuiltEnvironment
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   air_temp:
@@ -3470,7 +3470,7 @@ attributes:
     - FoodFoodProductionFacility
     range: string
     required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   surf_temp:
@@ -3485,7 +3485,7 @@ attributes:
     - BuiltEnvironment
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   surf_moisture_ph:
@@ -3524,7 +3524,7 @@ attributes:
     - BuiltEnvironment
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   dew_point:
@@ -3538,7 +3538,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   carb_dioxide:
@@ -3554,7 +3554,7 @@ attributes:
     - BuiltEnvironment
     range: string
     required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   ventilation_type:
@@ -3571,7 +3571,7 @@ attributes:
     - FoodFarmEnvironment
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   organism_count:
@@ -3702,7 +3702,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   space_typ_state:
@@ -3797,7 +3797,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   arch_struc:
@@ -3834,7 +3834,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   avg_temp:
@@ -3848,7 +3848,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   bathroom_count:
@@ -3884,7 +3884,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   built_struc_set:
@@ -3909,7 +3909,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   ceil_area:
@@ -3923,7 +3923,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   ceil_cond:
@@ -3992,7 +3992,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   ceil_type:
@@ -4050,7 +4050,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   door_cond:
@@ -4207,7 +4207,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   exp_pipe:
@@ -4254,7 +4254,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   floor_area:
@@ -4268,7 +4268,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   floor_cond:
@@ -4337,7 +4337,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   freq_clean:
@@ -4451,7 +4451,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   inside_lux:
@@ -4465,7 +4465,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   int_wall_cond:
@@ -4589,7 +4589,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   pres_animal_insect:
@@ -4637,7 +4637,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   room_architec_elem:
@@ -4651,7 +4651,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   room_condt:
@@ -4699,7 +4699,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '{integer} [^s][^\r\n\t]+'
+    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{integer} {unit}'
   room_loc:
@@ -4735,7 +4735,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '{integer} [^s][^\r\n\t]+'
+    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{integer} {unit}'
   room_occup:
@@ -4782,7 +4782,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '{integer} [^s][^\r\n\t]+'
+    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{integer} {unit}'
   room_window_count:
@@ -4899,7 +4899,7 @@ attributes:
     - BuiltEnvironment
     - FoodFarmEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   season_use:
@@ -4946,7 +4946,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   shad_dev_water_mold:
@@ -4982,7 +4982,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   specific:
@@ -5007,7 +5007,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   train_line:
@@ -5065,7 +5065,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   wall_const_type:
@@ -5101,7 +5101,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   wall_loc:
@@ -5159,7 +5159,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   water_feat_size:
@@ -5173,7 +5173,7 @@ attributes:
     domain_of:
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   water_feat_type:

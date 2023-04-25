@@ -388,7 +388,7 @@ alias: room_net_area
 domain_of:
 - BuiltEnvironment
 range: string
-pattern: '{integer} [^s][^\r\n\t]+'
+pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
 structured_pattern:
   syntax: '{integer} {unit}'
 

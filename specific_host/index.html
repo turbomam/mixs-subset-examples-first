@@ -372,6 +372,10 @@
 <td><a href="../MigsBaSoil/">MigsBaSoil</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="../MigsBaWater/">MigsBaWater</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -428,6 +432,9 @@ domain_of:
 - MigsVi
 - Miuvig
 range: string
+pattern: '[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'
+structured_pattern:
+  syntax: '{free_text}|{ncbi_term_id}'
 
 </code></pre>
 

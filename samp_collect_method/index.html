@@ -421,9 +421,9 @@ domain_of:
 - FoodAnimalAndAnimalFeed
 - FoodFoodProductionFacility
 range: string
-pattern: '{PMID}|{DOI}|{URL}|{text}'
+pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
 structured_pattern:
-  syntax: '{PMID}|{DOI}|{URL}|{text}'
+  syntax: ({DOI})|({PMID})|({URL})|({free_text})
 
 </code></pre>
 

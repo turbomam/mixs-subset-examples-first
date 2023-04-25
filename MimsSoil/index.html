@@ -231,6 +231,8 @@
 
       MimsSoil : assembly_qual
 
+          MimsSoil ..&gt; ASSEMBLY_QUAL_ENUM : assembly_qual
+
       MimsSoil : assembly_software
 
       MimsSoil : associated_resource
@@ -241,6 +243,8 @@
 
       MimsSoil : cur_land_use
 
+          MimsSoil ..&gt; CUR_LAND_USE_ENUM : cur_land_use
+
       MimsSoil : cur_vegetation
 
       MimsSoil : cur_vegetation_meth
@@ -248,6 +252,8 @@
       MimsSoil : depth
 
       MimsSoil : drainage_class
+
+          MimsSoil ..&gt; DRAINAGE_CLASS_ENUM : drainage_class
 
       MimsSoil : elev
 
@@ -262,6 +268,8 @@
       MimsSoil : extreme_event
 
       MimsSoil : fao_class
+
+          MimsSoil ..&gt; FAO_CLASS_ENUM : fao_class
 
       MimsSoil : feat_pred
 
@@ -280,6 +288,8 @@
       MimsSoil : lat_lon
 
       MimsSoil : lib_layout
+
+          MimsSoil ..&gt; LIB_LAYOUT_ENUM : lib_layout
 
       MimsSoil : lib_reads_seqd
 
@@ -309,6 +319,8 @@
 
       MimsSoil : neg_cont_type
 
+          MimsSoil ..&gt; NEG_CONT_TYPE_ENUM : neg_cont_type
+
       MimsSoil : nucl_acid_amp
 
       MimsSoil : nucl_acid_ext
@@ -332,6 +344,8 @@
       MimsSoil : previous_land_use
 
       MimsSoil : profile_position
+
+          MimsSoil ..&gt; PROFILE_POSITION_ENUM : profile_position
 
       MimsSoil : project_name
 
@@ -395,6 +409,8 @@
 
       MimsSoil : tillage
 
+          MimsSoil ..&gt; TILLAGE_ENUM : tillage
+
       MimsSoil : tot_nitro_cont_meth
 
       MimsSoil : tot_nitro_content
@@ -456,7 +472,7 @@
 </tr>
 <tr>
 <td><a href="../assembly_qual/">assembly_qual</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../ASSEMBLYQUALENUM/">ASSEMBLYQUALENUM</a></td>
 <td></td>
 <td><a href="../Mims/">Mims</a></td>
 </tr>
@@ -482,13 +498,13 @@
 <td><a href="../depth/">depth</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../elev/">elev</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../env_broad_scale/">env_broad_scale</a></td>
@@ -534,7 +550,7 @@
 </tr>
 <tr>
 <td><a href="../lib_layout/">lib_layout</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
 <td></td>
 <td><a href="../Mims/">Mims</a></td>
 </tr>
@@ -570,7 +586,7 @@
 </tr>
 <tr>
 <td><a href="../neg_cont_type/">neg_cont_type</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
 <td></td>
 <td><a href="../Mims/">Mims</a></td>
 </tr>
@@ -602,7 +618,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
@@ -644,7 +660,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../samp_size/">samp_size</a></td>
@@ -662,7 +678,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../seq_meth/">seq_meth</a></td>
@@ -704,11 +720,11 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Mims/">Mims</a>, <a href="../Soil/">Soil</a></td>
+<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../cur_land_use/">cur_land_use</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../CURLANDUSEENUM/">CURLANDUSEENUM</a></td>
 <td></td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
@@ -750,7 +766,7 @@
 </tr>
 <tr>
 <td><a href="../tillage/">tillage</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..* <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
 <td></td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
@@ -852,7 +868,7 @@
 </tr>
 <tr>
 <td><a href="../fao_class/">fao_class</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../FAOCLASSENUM/">FAOCLASSENUM</a></td>
 <td></td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
@@ -900,13 +916,13 @@
 </tr>
 <tr>
 <td><a href="../profile_position/">profile_position</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../PROFILEPOSITIONENUM/">PROFILEPOSITIONENUM</a></td>
 <td></td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../drainage_class/">drainage_class</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>0..1 <br/> <a href="../DRAINAGECLASSENUM/">DRAINAGECLASSENUM</a></td>
 <td></td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
@@ -1110,6 +1126,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[ACGT]+;[ACGT]+'
+    structured_pattern:
+      syntax: '{dna};{dna}'
   alt:
     name: alt
     title: altitude
@@ -1136,7 +1155,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   annot:
@@ -1160,7 +1179,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   assembly_name:
@@ -1184,6 +1203,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+ [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text} {free_text}'
   assembly_qual:
     name: assembly_qual
     title: assembly quality
@@ -1202,7 +1224,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: ASSEMBLY_QUAL_ENUM
     recommended: true
   assembly_software:
     name: assembly_software
@@ -1226,7 +1248,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   associated resource:
@@ -1311,7 +1333,7 @@ attributes:
     range: string
     required: true
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
@@ -1348,7 +1370,7 @@ attributes:
     range: string
     required: true
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   env_broad_scale:
@@ -1378,7 +1400,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_local_scale:
@@ -1408,7 +1430,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   env_medium:
@@ -1438,7 +1460,7 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   experimental_factor:
@@ -1485,7 +1507,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   geo_loc_name:
@@ -1515,6 +1537,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   lat_lon:
     name: lat_lon
     title: geographic location (latitude and longitude)
@@ -1542,6 +1567,9 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   lib_layout:
     name: lib_layout
     title: library layout
@@ -1562,7 +1590,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: LIB_LAYOUT_ENUM
     recommended: true
   lib_reads_seqd:
     name: lib_reads_seqd
@@ -1608,7 +1636,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   lib_size:
@@ -1655,7 +1683,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   mid:
@@ -1675,6 +1703,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[ACGT]+'
+    structured_pattern:
+      syntax: '{dna}'
   neg_cont_type:
     name: neg_cont_type
     title: negative control type
@@ -1695,7 +1726,7 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: NEG_CONT_TYPE_ENUM
     recommended: true
   nucl_acid_amp:
     name: nucl_acid_amp
@@ -1720,6 +1751,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext:
     name: nucl_acid_ext
     title: nucleic acid extraction
@@ -1747,9 +1781,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   number_contig:
     name: number_contig
     title: number of contigs
@@ -1836,7 +1870,7 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   ref_biomaterial:
@@ -1858,9 +1892,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   ref_db:
     name: ref_db
     title: reference database(s)
@@ -1880,6 +1914,9 @@ attributes:
     - Misag
     - Miuvig
     range: string
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{database};{version};{reference}'
   rel_to_oxygen:
     name: rel_to_oxygen
     title: relationship to oxygen
@@ -1959,6 +1996,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: '[^s\|][^\r\n\t\|]+'
+    structured_pattern:
+      syntax: '{free_text}'
   samp_name:
     name: samp_name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -2027,7 +2067,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   samp_taxon_id:
@@ -2052,6 +2092,9 @@ attributes:
     - Miuvig
     range: string
     required: true
+    pattern: '[^s\|][^\r\n\t\|]+ [NCBITaxon:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{ncbi_term_id}]'
   samp_vol_we_dna_ext:
     name: samp_vol_we_dna_ext
     title: sample volume or weight for DNA extraction
@@ -2095,7 +2138,7 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   seq_meth:
@@ -2144,7 +2187,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   size_frac:
@@ -2163,7 +2206,7 @@ attributes:
     - Miuvig
     range: string
     pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s][^\r\n\t]+'
+      [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float}-{float} {unit}'
   sop:
@@ -2189,6 +2232,9 @@ attributes:
     - Miuvig
     range: string
     recommended: true
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    structured_pattern:
+      syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
   source_mat_id:
     name: source_mat_id
     title: source material identifiers
@@ -2213,7 +2259,7 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   tax_class:
@@ -2235,7 +2281,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   temp:
@@ -2281,7 +2327,7 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   cur_land_use:
@@ -2295,7 +2341,7 @@ attributes:
     domain_of:
     - Agriculture
     - Soil
-    range: string
+    range: CUR_LAND_USE_ENUM
   cur_vegetation:
     name: cur_vegetation
     title: current vegetation
@@ -2308,7 +2354,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   cur_vegetation_meth:
@@ -2323,9 +2369,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   previous_land_use:
     name: previous_land_use
     title: history/previous land use
@@ -2379,13 +2425,14 @@ attributes:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     slot_uri: MIXS:0001081
+    multivalued: true
     alias: tillage
     owner: MimsSoil
     domain_of:
     - Agriculture
     - FoodFarmEnvironment
     - Soil
-    range: string
+    range: TILLAGE_ENUM
   fire:
     name: fire
     title: history/fire
@@ -2444,9 +2491,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   sieving:
     name: sieving
     title: composite design/sieving
@@ -2472,7 +2519,7 @@ attributes:
     - Sediment
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   water_cont_soil_meth:
@@ -2486,9 +2533,9 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   pool_dna_extracts:
     name: pool_dna_extracts
     title: pooling of DNA extracts (if done)
@@ -2516,9 +2563,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{text};{period}'
+    pattern: '[^s\|][^\r\n\t\|]+;P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{text};{period}'
+      syntax: '{free_text};{period}'
   link_climate_info:
     name: link_climate_info
     title: link to climate information
@@ -2531,9 +2578,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   annual_temp:
     name: annual_temp
     title: mean annual temperature
@@ -2546,7 +2593,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   season_temp:
@@ -2562,7 +2609,7 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   annual_precpt:
@@ -2577,7 +2624,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   season_precpt:
@@ -2593,7 +2640,7 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   link_class_info:
@@ -2608,9 +2655,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   fao_class:
     name: fao_class
     title: soil_taxonomic/FAO classification
@@ -2622,7 +2669,7 @@ attributes:
     domain_of:
     - Agriculture
     - Soil
-    range: string
+    range: FAO_CLASS_ENUM
   local_class:
     name: local_class
     title: soil_taxonomic/local classification
@@ -2635,7 +2682,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[^s][^\r\n\t]+'
+    pattern: '[^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{free_text}'
   local_class_meth:
@@ -2650,9 +2697,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   org_nitro:
     name: org_nitro
     title: organic nitrogen
@@ -2668,7 +2715,7 @@ attributes:
     - Soil
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   soil_type:
@@ -2684,6 +2731,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
+    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
   soil_type_meth:
     name: soil_type_meth
     title: soil type method
@@ -2697,9 +2747,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   slope_gradient:
     name: slope_gradient
     title: slope gradient
@@ -2712,7 +2762,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   slope_aspect:
@@ -2727,7 +2777,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   profile_position:
@@ -2741,7 +2791,7 @@ attributes:
     domain_of:
     - Agriculture
     - Soil
-    range: string
+    range: PROFILE_POSITION_ENUM
   drainage_class:
     name: drainage_class
     title: drainage classification
@@ -2753,7 +2803,7 @@ attributes:
     domain_of:
     - Agriculture
     - Soil
-    range: string
+    range: DRAINAGE_CLASS_ENUM
   soil_text_measure:
     name: soil_text_measure
     title: soil texture measurement
@@ -2765,7 +2815,7 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   soil_texture_meth:
@@ -2780,9 +2830,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   ph:
     name: ph
     title: pH
@@ -2815,9 +2865,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   org_matter:
     name: org_matter
     title: organic matter
@@ -2833,7 +2883,7 @@ attributes:
     - Soil
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   tot_org_carb:
@@ -2864,9 +2914,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   tot_nitro_content:
     name: tot_nitro_content
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -2891,9 +2941,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   microbial_biomass:
     name: microbial_biomass
     title: microbial biomass
@@ -2906,7 +2956,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   micro_biomass_meth:
@@ -2920,9 +2970,9 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   link_addit_analys:
     name: link_addit_analys
     title: links to additional analysis
@@ -2934,9 +2984,9 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   salinity_meth:
     name: salinity_meth
     title: salinity method
@@ -2949,9 +2999,9 @@ attributes:
     - FoodFarmEnvironment
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   heavy_metals:
     name: heavy_metals
     title: extreme_unusual_properties/heavy metals
@@ -2963,9 +3013,10 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
   heavy_metals_meth:
     name: heavy_metals_meth
     title: extreme_unusual_properties/heavy metals method
@@ -2978,9 +3029,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   al_sat:
     name: al_sat
     title: extreme_unusual_properties/Al saturation
@@ -2992,7 +3043,7 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
     structured_pattern:
       syntax: '{float} {unit}'
   al_sat_meth:
@@ -3006,9 +3057,9 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   misc_param:
     name: misc_param
     title: miscellaneous parameter
@@ -3041,9 +3092,10 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+)
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
 class_uri: MIXS:0010007_0016012
 
 </code></pre>

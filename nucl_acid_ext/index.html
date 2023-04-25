@@ -413,6 +413,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="../MigsBaWater/">MigsBaWater</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
 <td></td>
 </tr>
@@ -422,6 +426,10 @@
 </tr>
 <tr>
 <td><a href="../MimsSoil/">MimsSoil</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../MimsWater/">MimsWater</a></td>
 <td></td>
 </tr>
 </tbody>
@@ -486,9 +494,9 @@ domain_of:
 - Misag
 - Miuvig
 range: string
-pattern: '{PMID}|{DOI}|{URL}'
+pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
 structured_pattern:
-  syntax: '{PMID}|{DOI}|{URL}'
+  syntax: ({DOI})|({PMID})|({URL})
 
 </code></pre>
 

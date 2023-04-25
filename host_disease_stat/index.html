@@ -401,6 +401,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="../MigsBaWater/">MigsBaWater</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
 <td></td>
 </tr>
@@ -467,6 +471,10 @@ domain_of:
 - Miuvig
 - PlantAssociated
 range: string
+pattern: ((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+
+  [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)
+structured_pattern:
+  syntax: ((({term_label} [{term_id}])|{free_text})\|)*(({term_label} [{term_id}])|{free_text})
 
 </code></pre>
 

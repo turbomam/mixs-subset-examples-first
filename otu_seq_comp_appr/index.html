@@ -411,7 +411,7 @@ alias: otu_seq_comp_appr
 domain_of:
 - Miuvig
 range: string
-pattern: '{software};{version};{parameters}'
+pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
 structured_pattern:
   syntax: '{software};{version};{parameters}'
 
