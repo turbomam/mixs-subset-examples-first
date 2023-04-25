@@ -1,5 +1,17 @@
 {
     "$defs": {
+        "ASSEMBLYQUALENUM": {
+            "description": "",
+            "enum": [
+                "Finished genome",
+                "Genome fragment(s)",
+                "High-quality draft genome",
+                "Low-quality draft genome",
+                "Medium-quality draft genome"
+            ],
+            "title": "ASSEMBLYQUALENUM",
+            "type": "string"
+        },
         "Agriculture": {
             "additionalProperties": false,
             "description": "",
@@ -11,6 +23,7 @@
                     "type": "string"
                 },
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "adjacent_environment": {
@@ -40,13 +53,14 @@
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_quality": {
                     "type": "string"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "biotic_relationship": {
@@ -72,32 +86,32 @@
                     "type": "string"
                 },
                 "cur_land_use": {
-                    "type": "string"
+                    "$ref": "#/$defs/CURLANDUSEENUM"
                 },
                 "cur_vegetation": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "drainage_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/DRAINAGECLASSENUM"
                 },
                 "elev": {
                     "pattern": "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "extreme_event": {
                     "type": "string"
                 },
                 "fao_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/FAOCLASSENUM"
                 },
                 "farm_equip": {
                     "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
@@ -139,30 +153,30 @@
                     "type": "string"
                 },
                 "fungicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "gaseous_environment": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "herbicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "horizon": {
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "host_age": {
@@ -221,11 +235,11 @@
                     "type": "string"
                 },
                 "isol_growth_condt": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -246,11 +260,11 @@
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "local_class": {
@@ -258,7 +272,7 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lot_number": {
@@ -272,21 +286,23 @@
                     "type": "string"
                 },
                 "mid": {
+                    "pattern": "[ACGT]+",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "non_mineral_nutr_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "organism_count": {
@@ -308,11 +324,11 @@
                     "type": "string"
                 },
                 "pesticide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "ph_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ph_regm": {
@@ -323,7 +339,7 @@
                     "type": "string"
                 },
                 "photosynt_activ_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "plant_growth_med": {
@@ -354,11 +370,11 @@
                     "type": "string"
                 },
                 "previous_land_use_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "profile_position": {
-                    "type": "string"
+                    "$ref": "#/$defs/PROFILEPOSITIONENUM"
                 },
                 "rel_location": {
                     "pattern": "[^s][^\\r\\n\\t]+",
@@ -368,24 +384,25 @@
                     "type": "string"
                 },
                 "root_med_macronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_ph": {
                     "type": "number"
                 },
                 "salt_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "samp_collect_device": {
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_pooling": {
@@ -480,10 +497,11 @@
                     "type": "string"
                 },
                 "soil_type": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "solar_irradiance": {
@@ -491,6 +509,7 @@
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -507,7 +526,7 @@
                     "type": "string"
                 },
                 "store_cond": {
-                    "pattern": "{text};{period}",
+                    "pattern": "[^s][^\\r\\n\\t]+;P(?=\\d+[YMWD])(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d+[HMS])(\\d+H)?(\\d+M)?(\\d+S)?)?",
                     "type": "string"
                 },
                 "target_gene": {
@@ -529,7 +548,7 @@
                     "type": "string"
                 },
                 "tillage": {
-                    "type": "string"
+                    "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_car": {
                     "type": "string"
@@ -541,7 +560,7 @@
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -655,7 +674,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -672,7 +691,7 @@
                     "type": "string"
                 },
                 "pollutants": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "project_name": {
@@ -718,7 +737,7 @@
                     "type": "string"
                 },
                 "volatile_org_comp": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "wind_direction": {
@@ -1291,11 +1310,66 @@
             "title": "BuiltEnvironment",
             "type": "object"
         },
+        "CURLANDUSEENUM": {
+            "description": "",
+            "enum": [
+                "badlands",
+                "cities",
+                "conifers (e.g. pine, spruce, fir, cypress)",
+                "crop trees (nuts, fruit, christmas trees, nursery trees)",
+                "farmstead",
+                "gravel",
+                "hardwoods (e.g. oak, hickory, elm, aspen)",
+                "hayland",
+                "horticultural plants (e.g. tulips)",
+                "industrial areas",
+                "intermixed hardwood and conifers",
+                "marshlands (grass, sedges, rushes)",
+                "meadows (grasses, alfalfa, fescue, bromegrass, timothy)",
+                "mines or quarries",
+                "mudflats",
+                "oil waste areas",
+                "pastureland (grasslands used for livestock grazing)",
+                "permanent snow or ice",
+                "rainforest (evergreen forest receiving greater than 406 cm annual rainfall)",
+                "rangeland",
+                "roads or railroads",
+                "rock",
+                "row crops",
+                "saline seeps",
+                "salt flats",
+                "sand",
+                "shrub crops (blueberries, nursery ornamentals, filberts)",
+                "shrub land (e.g. mesquite, sage-brush, creosote bush, shrub oak, eucalyptus)",
+                "small grains",
+                "successional shrub land (tree saplings, hazels, sumacs, chokecherry, shrub dogwoods, blackberries)",
+                "swamp (permanent or semi-permanent water body dominated by woody plants)",
+                "tropical (e.g. mangrove, palms)",
+                "tundra (mosses, lichens)",
+                "vegetable crops",
+                "vine crops (grapes)"
+            ],
+            "title": "CURLANDUSEENUM",
+            "type": "string"
+        },
         "Checklist": {
             "additionalProperties": false,
             "description": "",
             "title": "Checklist",
             "type": "object"
+        },
+        "DRAINAGECLASSENUM": {
+            "description": "",
+            "enum": [
+                "excessively drained",
+                "moderately well",
+                "poorly",
+                "somewhat poorly",
+                "very poorly",
+                "well"
+            ],
+            "title": "DRAINAGECLASSENUM",
+            "type": "string"
         },
         "Database": {
             "additionalProperties": false,
@@ -1503,6 +1577,39 @@
             "title": "EnvironmentalPackage",
             "type": "object"
         },
+        "FAOCLASSENUM": {
+            "description": "",
+            "enum": [
+                "Acrisols",
+                "Andosols",
+                "Arenosols",
+                "Cambisols",
+                "Chernozems",
+                "Ferralsols",
+                "Fluvisols",
+                "Gleysols",
+                "Greyzems",
+                "Gypsisols",
+                "Histosols",
+                "Kastanozems",
+                "Lithosols",
+                "Luvisols",
+                "Nitosols",
+                "Phaeozems",
+                "Planosols",
+                "Podzols",
+                "Podzoluvisols",
+                "Rankers",
+                "Regosols",
+                "Rendzinas",
+                "Solonchaks",
+                "Solonetz",
+                "Vertisols",
+                "Yermosols"
+            ],
+            "title": "FAOCLASSENUM",
+            "type": "string"
+        },
         "FoodAnimalAndAnimalFeed": {
             "additionalProperties": false,
             "description": "",
@@ -1590,7 +1697,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -1687,12 +1794,14 @@
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "intended_consumer": {
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "library_prep_kit": {
@@ -1706,11 +1815,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "organism_count": {
@@ -1737,7 +1846,7 @@
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -1890,7 +1999,7 @@
                     "type": "string"
                 },
                 "air_PM_concen": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "air_flow_impede": {
@@ -1962,7 +2071,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -2049,10 +2158,11 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "growth_habit": {
@@ -2107,6 +2217,7 @@
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "library_prep_kit": {
@@ -2120,11 +2231,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "organism_count": {
@@ -2140,7 +2251,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "plant_growth_med": {
@@ -2177,18 +2288,18 @@
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
                     "type": "string"
                 },
                 "root_med_macronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_micronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_ph": {
@@ -2199,7 +2310,7 @@
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "samp_collect_device": {
@@ -2297,14 +2408,15 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "soil_type": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "solar_irradiance": {
@@ -2337,20 +2449,20 @@
                     "type": "string"
                 },
                 "tillage": {
-                    "type": "string"
+                    "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "timepoint": {
                     "type": "string"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -2462,7 +2574,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -2577,10 +2689,11 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "hygienic_area": {
@@ -2594,6 +2707,7 @@
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "library_prep_kit": {
@@ -2607,11 +2721,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext_kit": {
@@ -2650,7 +2764,7 @@
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_floor": {
@@ -2842,7 +2956,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -2971,16 +3085,18 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "intended_consumer": {
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "library_prep_kit": {
@@ -3015,11 +3131,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext_kit": {
@@ -3225,7 +3341,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravidity": {
@@ -3327,7 +3443,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -3499,7 +3615,7 @@
                     "type": "boolean"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nose_throat_disord": {
@@ -3673,7 +3789,7 @@
                     "type": "boolean"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -3809,7 +3925,7 @@
                     "type": "boolean"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nose_throat_disord": {
@@ -3955,7 +4071,7 @@
                     "type": "boolean"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -4114,7 +4230,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -4204,11 +4320,11 @@
                     "type": "string"
                 },
                 "aromatics_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "asphaltenes_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "basin": {
@@ -4297,7 +4413,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -4351,7 +4467,7 @@
                     "type": "string"
                 },
                 "resins_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity": {
@@ -4397,7 +4513,7 @@
                     "type": "string"
                 },
                 "saturates_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "sodium": {
@@ -4429,7 +4545,7 @@
                     "type": "string"
                 },
                 "suspend_solids": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "tan": {
@@ -4531,11 +4647,11 @@
                     "type": "string"
                 },
                 "aromatics_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "asphaltenes_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "basin": {
@@ -4639,7 +4755,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -4690,7 +4806,7 @@
                     "type": "string"
                 },
                 "resins_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity": {
@@ -4707,7 +4823,7 @@
                     "type": "string"
                 },
                 "samp_preserv": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_store_dur": {
@@ -4740,7 +4856,7 @@
                     "type": "string"
                 },
                 "saturates_pc": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "sodium": {
@@ -4760,7 +4876,7 @@
                     "type": "string"
                 },
                 "suspend_solids": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "tan": {
@@ -4846,6 +4962,17 @@
             "title": "HydrocarbonResourcesFluidsSwabs",
             "type": "object"
         },
+        "LIBLAYOUTENUM": {
+            "description": "",
+            "enum": [
+                "other",
+                "paired",
+                "single",
+                "vector"
+            ],
+            "title": "LIBLAYOUTENUM",
+            "type": "string"
+        },
         "MicrobialMatBiofilm": {
             "additionalProperties": false,
             "description": "",
@@ -4871,7 +4998,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bishomohopanol": {
@@ -4956,11 +5083,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "n_alkanes": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -5106,6 +5233,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "air_temp_regm": {
@@ -5124,17 +5252,18 @@
                     "type": "string"
                 },
                 "antibiotic_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -5154,7 +5283,7 @@
                     "type": "string"
                 },
                 "chem_mutagen": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "climate_environment": {
@@ -5206,26 +5335,27 @@
                     "type": "integer"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "fertilizer_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "fungicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "gaseous_environment": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravity": {
@@ -5238,11 +5368,11 @@
                     "type": "string"
                 },
                 "growth_hormone_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "herbicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "host_age": {
@@ -5304,14 +5434,15 @@
                     "type": "string"
                 },
                 "isol_growth_condt": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -5334,11 +5465,11 @@
                     "type": "string"
                 },
                 "mineral_nutr_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
@@ -5348,10 +5479,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -5373,7 +5505,7 @@
                     "type": "string"
                 },
                 "pesticide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "ph_regm": {
@@ -5401,42 +5533,43 @@
                     "type": "string"
                 },
                 "radiation_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "rainfall_regm": {
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
                     "type": "string"
                 },
                 "root_med_macronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_micronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_ph": {
                     "type": "number"
                 },
                 "root_med_regl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_solid": {
@@ -5444,7 +5577,7 @@
                     "type": "string"
                 },
                 "root_med_suppl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity": {
@@ -5452,7 +5585,7 @@
                     "type": "string"
                 },
                 "salt_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "samp_capt_status": {
@@ -5468,6 +5601,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -5489,6 +5623,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -5502,10 +5637,11 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -5533,7 +5669,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "trophic_level": {
@@ -5572,6 +5708,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "alkalinity": {
@@ -5599,13 +5736,14 @@
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -5616,7 +5754,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "biotic_relationship": {
@@ -5722,10 +5860,11 @@
                     "type": "integer"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "glucosidase_act": {
@@ -5739,14 +5878,15 @@
                     "type": "integer"
                 },
                 "isol_growth_condt": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -5779,11 +5919,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "n_alkanes": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
@@ -5802,10 +5942,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -5837,7 +5978,7 @@
                     "type": "string"
                 },
                 "particle_class": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "pathogenicity": {
@@ -5886,10 +6027,11 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
@@ -5906,6 +6048,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -5927,6 +6070,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -5944,7 +6088,7 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "sodium": {
@@ -5952,6 +6096,7 @@
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -6039,6 +6184,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "agrochem_addition": {
@@ -6049,7 +6195,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "alt": {
@@ -6069,13 +6215,14 @@
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -6097,14 +6244,14 @@
                     "type": "string"
                 },
                 "cur_land_use": {
-                    "type": "string"
+                    "$ref": "#/$defs/CURLANDUSEENUM"
                 },
                 "cur_vegetation": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "depth": {
@@ -6112,7 +6259,7 @@
                     "type": "string"
                 },
                 "drainage_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/DRAINAGECLASSENUM"
                 },
                 "elev": {
                     "pattern": "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
@@ -6147,10 +6294,10 @@
                     "type": "string"
                 },
                 "fao_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/FAOCLASSENUM"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "fire": {
@@ -6160,18 +6307,19 @@
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "host_disease_stat": {
@@ -6181,14 +6329,15 @@
                     "type": "integer"
                 },
                 "isol_growth_condt": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -6205,15 +6354,15 @@
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "local_class": {
@@ -6221,11 +6370,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -6233,17 +6382,18 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -6267,7 +6417,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -6283,24 +6433,25 @@
                     "type": "string"
                 },
                 "profile_position": {
-                    "type": "string"
+                    "$ref": "#/$defs/PROFILEPOSITIONENUM"
                 },
                 "project_name": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "samp_collec_device": {
@@ -6310,6 +6461,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -6320,6 +6472,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -6341,7 +6494,7 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "slope_aspect": {
@@ -6360,17 +6513,19 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "soil_type": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -6381,7 +6536,7 @@
                     "type": "string"
                 },
                 "store_cond": {
-                    "pattern": "{text};{period}",
+                    "pattern": "[^s][^\\r\\n\\t]+;P(?=\\d+[YMWD])(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d+[HMS])(\\d+H)?(\\d+M)?(\\d+S)?)?",
                     "type": "string"
                 },
                 "subspecf_gen_lin": {
@@ -6399,17 +6554,17 @@
                     "type": "string"
                 },
                 "tillage": {
-                    "type": "string"
+                    "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -6419,7 +6574,7 @@
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
                     "type": "string"
                 },
                 "water_content": {
@@ -6455,6 +6610,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "air_temp_regm": {
@@ -6473,17 +6629,18 @@
                     "type": "string"
                 },
                 "antibiotic_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -6500,7 +6657,7 @@
                     "type": "string"
                 },
                 "chem_mutagen": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "climate_environment": {
@@ -6536,26 +6693,27 @@
                     "type": "string"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "fertilizer_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "fungicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "gaseous_environment": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravity": {
@@ -6568,11 +6726,11 @@
                     "type": "string"
                 },
                 "growth_hormone_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "herbicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "host_age": {
@@ -6631,10 +6789,11 @@
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -6657,14 +6816,15 @@
                     "type": "string"
                 },
                 "mid": {
+                    "pattern": "[ACGT]+",
                     "type": "string"
                 },
                 "mineral_nutr_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
@@ -6674,10 +6834,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "number_contig": {
@@ -6693,7 +6854,7 @@
                     "type": "string"
                 },
                 "pesticide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "ph_regm": {
@@ -6721,42 +6882,43 @@
                     "type": "string"
                 },
                 "radiation_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "rainfall_regm": {
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
                     "type": "string"
                 },
                 "root_med_macronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_micronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_ph": {
                     "type": "number"
                 },
                 "root_med_regl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_solid": {
@@ -6764,7 +6926,7 @@
                     "type": "string"
                 },
                 "root_med_suppl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity": {
@@ -6772,7 +6934,7 @@
                     "type": "string"
                 },
                 "salt_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "samp_capt_status": {
@@ -6788,6 +6950,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -6809,6 +6972,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -6822,7 +6986,7 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "size_frac": {
@@ -6830,6 +6994,7 @@
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -6848,7 +7013,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "water_temp_regm": {
@@ -6878,6 +7043,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "alkalinity": {
@@ -6905,13 +7071,14 @@
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -6922,7 +7089,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bishomohopanol": {
@@ -7009,10 +7176,11 @@
                     "type": "string"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "glucosidase_act": {
@@ -7020,10 +7188,11 @@
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -7056,14 +7225,15 @@
                     "type": "string"
                 },
                 "mid": {
+                    "pattern": "[ACGT]+",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "n_alkanes": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
@@ -7082,10 +7252,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "number_contig": {
@@ -7114,7 +7285,7 @@
                     "type": "string"
                 },
                 "particle_class": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "perturbation": {
@@ -7160,10 +7331,11 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
@@ -7180,6 +7352,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -7201,6 +7374,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -7218,7 +7392,7 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "size_frac": {
@@ -7230,6 +7404,7 @@
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -7299,6 +7474,7 @@
             "description": "",
             "properties": {
                 "adapters": {
+                    "pattern": "[ACGT]+;[ACGT]+",
                     "type": "string"
                 },
                 "agrochem_addition": {
@@ -7309,7 +7485,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "alt": {
@@ -7329,13 +7505,14 @@
                     "type": "string"
                 },
                 "assembly_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "assembly_qual": {
-                    "type": "string"
+                    "$ref": "#/$defs/ASSEMBLYQUALENUM"
                 },
                 "assembly_software": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "associated_resource": {
@@ -7348,14 +7525,14 @@
                     "type": "string"
                 },
                 "cur_land_use": {
-                    "type": "string"
+                    "$ref": "#/$defs/CURLANDUSEENUM"
                 },
                 "cur_vegetation": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "depth": {
@@ -7363,7 +7540,7 @@
                     "type": "string"
                 },
                 "drainage_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/DRAINAGECLASSENUM"
                 },
                 "elev": {
                     "pattern": "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
@@ -7388,10 +7565,10 @@
                     "type": "string"
                 },
                 "fao_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/FAOCLASSENUM"
                 },
                 "feat_pred": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "fire": {
@@ -7401,25 +7578,27 @@
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "lib_layout": {
-                    "type": "string"
+                    "$ref": "#/$defs/LIBLAYOUTENUM"
                 },
                 "lib_reads_seqd": {
                     "type": "integer"
@@ -7436,15 +7615,15 @@
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "local_class": {
@@ -7452,11 +7631,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -7464,20 +7643,22 @@
                     "type": "string"
                 },
                 "mid": {
+                    "pattern": "[ACGT]+",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "neg_cont_type": {
                     "type": "string"
                 },
                 "nucl_acid_amp": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "number_contig": {
@@ -7495,7 +7676,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -7511,24 +7692,25 @@
                     "type": "string"
                 },
                 "profile_position": {
-                    "type": "string"
+                    "$ref": "#/$defs/PROFILEPOSITIONENUM"
                 },
                 "project_name": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "ref_db": {
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "rel_to_oxygen": {
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "samp_collec_device": {
@@ -7538,6 +7720,7 @@
                     "type": "string"
                 },
                 "samp_mat_process": {
+                    "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -7548,6 +7731,7 @@
                     "type": "string"
                 },
                 "samp_taxon_id": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [NCBITaxon:[0-9]+]",
                     "type": "string"
                 },
                 "samp_vol_we_dna_ext": {
@@ -7569,7 +7753,7 @@
                     "type": "string"
                 },
                 "sim_search_meth": {
-                    "pattern": "{software};{version};{parameters}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+;[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "size_frac": {
@@ -7592,17 +7776,19 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "soil_type": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "sop": {
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -7610,7 +7796,7 @@
                     "type": "string"
                 },
                 "store_cond": {
-                    "pattern": "{text};{period}",
+                    "pattern": "[^s][^\\r\\n\\t]+;P(?=\\d+[YMWD])(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d+[HMS])(\\d+H)?(\\d+M)?(\\d+S)?)?",
                     "type": "string"
                 },
                 "tax_class": {
@@ -7622,24 +7808,24 @@
                     "type": "string"
                 },
                 "tillage": {
-                    "type": "string"
+                    "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_org_carb": {
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
                     "type": "string"
                 },
                 "water_content": {
@@ -7681,7 +7867,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bromide": {
@@ -7739,7 +7925,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -7851,6 +8037,18 @@
             "title": "MiscellaneousNaturalOrArtificialEnvironment",
             "type": "object"
         },
+        "PROFILEPOSITIONENUM": {
+            "description": "",
+            "enum": [
+                "backslope",
+                "footslope",
+                "shoulder",
+                "summit",
+                "toeslope"
+            ],
+            "title": "PROFILEPOSITIONENUM",
+            "type": "string"
+        },
         "PlantAssociated": {
             "additionalProperties": false,
             "description": "",
@@ -7863,7 +8061,7 @@
                     "type": "string"
                 },
                 "antibiotic_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "biol_stat": {
@@ -7877,7 +8075,7 @@
                     "type": "string"
                 },
                 "chem_mutagen": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "climate_environment": {
@@ -7895,19 +8093,19 @@
                     "type": "string"
                 },
                 "fertilizer_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "fungicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "gaseous_environment": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravity": {
@@ -7920,11 +8118,11 @@
                     "type": "string"
                 },
                 "growth_hormone_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "herbicide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "host_age": {
@@ -7989,11 +8187,11 @@
                     "type": "string"
                 },
                 "mineral_nutr_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "non_min_nutr_regm": {
@@ -8009,7 +8207,7 @@
                     "type": "string"
                 },
                 "pesticide_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "ph_regm": {
@@ -8034,32 +8232,32 @@
                     "type": "string"
                 },
                 "radiation_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "rainfall_regm": {
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
                     "type": "string"
                 },
                 "root_med_macronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_micronutr": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_ph": {
                     "type": "number"
                 },
                 "root_med_regl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_solid": {
@@ -8067,7 +8265,7 @@
                     "type": "string"
                 },
                 "root_med_suppl": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity": {
@@ -8075,7 +8273,7 @@
                     "type": "string"
                 },
                 "salt_regm": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+;{Rn/start_time/end_time/duration}",
                     "type": "string"
                 },
                 "samp_capt_status": {
@@ -8113,7 +8311,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "{PMID}|{DOI}|{URL}|{text}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "water_temp_regm": {
@@ -8129,6 +8327,34 @@
             ],
             "title": "PlantAssociated",
             "type": "object"
+        },
+        "RELTOOXYGENENUM": {
+            "description": "",
+            "enum": [
+                "aerobe",
+                "anaerobe",
+                "facultative",
+                "microaerophilic",
+                "microanaerobe",
+                "obligate aerobe",
+                "obligate anaerobe"
+            ],
+            "title": "RELTOOXYGENENUM",
+            "type": "string"
+        },
+        "SOILHORIZONENUM": {
+            "description": "",
+            "enum": [
+                "A horizon",
+                "B horizon",
+                "C horizon",
+                "E horizon",
+                "O horizon",
+                "Permafrost",
+                "R layer"
+            ],
+            "title": "SOILHORIZONENUM",
+            "type": "string"
         },
         "Sediment": {
             "additionalProperties": false,
@@ -8155,7 +8381,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bishomohopanol": {
@@ -8244,11 +8470,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "n_alkanes": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -8286,7 +8512,7 @@
                     "type": "string"
                 },
                 "particle_class": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "perturbation": {
@@ -8419,7 +8645,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "annual_precpt": {
@@ -8434,14 +8660,14 @@
                     "type": "string"
                 },
                 "cur_land_use": {
-                    "type": "string"
+                    "$ref": "#/$defs/CURLANDUSEENUM"
                 },
                 "cur_vegetation": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "depth": {
@@ -8449,7 +8675,7 @@
                     "type": "string"
                 },
                 "drainage_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/DRAINAGECLASSENUM"
                 },
                 "elev": {
                     "pattern": "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
@@ -8459,7 +8685,7 @@
                     "type": "string"
                 },
                 "fao_class": {
-                    "type": "string"
+                    "$ref": "#/$defs/FAOCLASSENUM"
                 },
                 "fire": {
                     "type": "string"
@@ -8468,27 +8694,27 @@
                     "type": "string"
                 },
                 "heavy_metals": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "local_class": {
@@ -8496,11 +8722,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -8508,7 +8734,7 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "org_matter": {
@@ -8523,7 +8749,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -8536,14 +8762,14 @@
                     "type": "string"
                 },
                 "profile_position": {
-                    "type": "string"
+                    "$ref": "#/$defs/PROFILEPOSITIONENUM"
                 },
                 "project_name": {
                     "pattern": "[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "samp_name": {
@@ -8580,18 +8806,19 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "soil_type": {
+                    "pattern": "[^s][^\\r\\n\\t]+ [[a-zA-Z]+:[0-9]+]",
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "store_cond": {
-                    "pattern": "{text};{period}",
+                    "pattern": "[^s][^\\r\\n\\t]+;P(?=\\d+[YMWD])(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d+[HMS])(\\d+H)?(\\d+M)?(\\d+S)?)?",
                     "type": "string"
                 },
                 "temp": {
@@ -8599,24 +8826,24 @@
                     "type": "string"
                 },
                 "tillage": {
-                    "type": "string"
+                    "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})",
                     "type": "string"
                 },
                 "tot_org_carb": {
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "{PMID}|{DOI}|{URL}",
+                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
                     "type": "string"
                 },
                 "water_content": {
@@ -8672,6 +8899,7 @@
                     "type": "string"
                 },
                 "geo_loc_name": {
+                    "pattern": "[^s][^\\r\\n\\t]+: [^s][^\\r\\n\\t]+, [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravidity": {
@@ -8827,10 +9055,11 @@
                     "type": "string"
                 },
                 "lat_lon": {
+                    "pattern": "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?) [-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "mode_transmission": {
@@ -8913,6 +9142,22 @@
             "title": "SymbiontAssociated",
             "type": "object"
         },
+        "TILLAGEENUM": {
+            "description": "",
+            "enum": [
+                "chisel",
+                "cutting disc",
+                "disc plough",
+                "drill",
+                "mouldboard",
+                "ridge till",
+                "strip tillage",
+                "tined",
+                "zonal tillage"
+            ],
+            "title": "TILLAGEENUM",
+            "type": "string"
+        },
         "UnknownTerm": {
             "additionalProperties": false,
             "description": "",
@@ -8947,11 +9192,11 @@
                     "type": "string"
                 },
                 "emulsions": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gaseous_substances": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "indust_eff_percent": {
@@ -8959,11 +9204,11 @@
                     "type": "string"
                 },
                 "inorg_particles": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {
@@ -8971,7 +9216,7 @@
                     "type": "string"
                 },
                 "org_particles": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "organism_count": {
@@ -9045,15 +9290,15 @@
                     "type": "string"
                 },
                 "soluble_inorg_mat": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "soluble_org_mat": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "suspend_solids": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "temp": {
@@ -9108,7 +9353,7 @@
                     "type": "string"
                 },
                 "atmospheric_data": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bac_prod": {
@@ -9124,7 +9369,7 @@
                     "type": "string"
                 },
                 "biomass": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "bishomohopanol": {
@@ -9233,11 +9478,11 @@
                     "type": "string"
                 },
                 "misc_param": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "n_alkanes": {
-                    "pattern": "{text};[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
+                    "pattern": "[^s][^\\r\\n\\t]+;[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "nitrate": {

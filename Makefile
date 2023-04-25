@@ -106,22 +106,23 @@ gen-examples:
 
 gen-project: $(PYMODEL)
 	$(RUN) gen-project ${GEN_PARGS} \
-		--exclude markdown \
+		--exclude excel \
+		--exclude graphql \
+		--exclude jsonld \
+		--exclude jsonldcontext \
+		--exclude markdown  \
+		--exclude owl \
+		--exclude prefixmap \
+		--exclude proto \
+		--include python \
+		--exclude shex \
+		--exclude sqlddl \
+  		--include jsonschema \
+  		--exclude shacl \
 		--generator-arguments '{jsonschema: {not_closed: false}}' \
 		-d $(DEST) $(SOURCE_SCHEMA_PATH) && mv $(DEST)/*.py $(PYMODEL)
 
-  #		--exclude graphql \
-  #		--exclude jsonld \
-  #		--exclude jsonldcontext \
-  #		--exclude prefixmap \
-  #		--exclude proto \
-  #		--exclude shacl \
-  #		--exclude shex \
-  #		--include excel \
-  #		--include jsonschema \
-  #		--include owl \
-  #		--include python \
-  #		--include sqlddl \
+
 
 test: test-schema test-python test-examples
 
