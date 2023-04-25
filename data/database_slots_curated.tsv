@@ -65,3 +65,5 @@ Database	TRUE
 		unknown_term_set	UnknownTerm	TRUE	TRUE
 		wastewater_sludge_set	WastewaterSludge	TRUE	TRUE
 		water_set	Water	TRUE	TRUE
+Database		migs_ba_water_set	MigsBaWater	TRUE	TRUE
+Database		mims_water_set	MimsWater	TRUE	TRUE

@@ -106,7 +106,7 @@ gen-examples:
 
 gen-project: $(PYMODEL)
 	$(RUN) gen-project ${GEN_PARGS} \
-		--exclude excel \
+		--include excel \
 		--exclude graphql \
 		--exclude jsonld \
 		--exclude jsonldcontext \

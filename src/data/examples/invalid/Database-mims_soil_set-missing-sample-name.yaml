@@ -10,4 +10,3 @@ mims_soil_set:
     project_name: xxx
     samp_taxon_id: xxx [NCBITaxon:10090]
     seq_meth: PMID:1234567
-

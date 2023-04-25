@@ -43,3 +43,5 @@ MigsBaSoil	soil sample according to the MigsBa checklist		MIXS:0010003_0016012		
 MimsPlantAssociated	plant-associated sample according to the Mims checklist		MIXS:0010007_0016010			PlantAssociated		Mims
 MimsSediment	sediment sample according to the Mims checklist		MIXS:0010007_0016011			Sediment		Mims
 MimsSoil	soil sample according to the Mims checklist		MIXS:0010007_0016012			Soil		Mims
+MimsWater	soil sample according to the Mims checklist		MIXS:0010007_0016012			Water		Mims
+MigsBaWater	soil sample according to the MigsBa checklist		MIXS:0010003_0016012			Water		MigsBa

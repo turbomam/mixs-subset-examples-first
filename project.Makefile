@@ -662,11 +662,11 @@ reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs
 #        )
 
 reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonschema/mixs_subset_examples_first.schema.json
-# \ src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
-	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
-#> | tee $@
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-exhaustive.yaml
-	#
+	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
+	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_water_set-exhaustive.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-assembly_name-has-pipe.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-assembly_name-multivalued.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-adapters-dna.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-al_sat-float-unit.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-al_sat_meth-pmid.yaml
@@ -680,8 +680,11 @@ reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonsch
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-feat_pred.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-geo_loc_name.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-heavy_metals.yaml
-	#! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-lat_lon.yaml
 	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-missing-sample-name.yaml
+	#
+	#! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-lat_lon.yaml
+# \ src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
+#> | tee $@
 
 project/json/mixs_subset_examples_first.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	mkdir -p $(@D)
