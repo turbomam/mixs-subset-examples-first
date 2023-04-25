@@ -2,7 +2,7 @@ mims_soil_set:
   - samp_name: xxx1
     #    associated resource: xxx
     #    sample_name: xxx1
-    adapters: AAA;TTT
+    adapters: xxx
     agrochem_addition: xxx
     al_sat: 123 units
     al_sat_meth: http://example.com/site

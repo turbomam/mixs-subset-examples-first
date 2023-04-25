@@ -27,7 +27,7 @@ mims_soil_set:
     experimental_factor: xxx
     extreme_event: xxx
     fao_class: Acrisols
-    feat_pred: xxx;xxx;xxx
+    feat_pred: xxx
     fire: xxx
     flooding: xxx
     geo_loc_name: "xxx: xxx, xxx"

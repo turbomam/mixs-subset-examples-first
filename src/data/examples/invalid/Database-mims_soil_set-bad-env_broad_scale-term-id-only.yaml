@@ -21,7 +21,7 @@ mims_soil_set:
     depth: 123 units
     drainage_class: moderately well
     elev: 123 units
-    env_broad_scale: text [prefix:123]
+    env_broad_scale: prefix:123
     env_local_scale: text [prefix:123]
     env_medium: text [prefix:123]
     experimental_factor: xxx

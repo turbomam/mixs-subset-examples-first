@@ -1044,9 +1044,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000324",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "alkalinity": {
@@ -4015,9 +4015,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000314",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "date_extr_weath": {
@@ -5129,7 +5129,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001177",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -7353,7 +7353,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000859",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -7944,9 +7944,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000343",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "height_carper_fiber": {
@@ -8028,9 +8028,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000321",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "host_age": {
@@ -9800,9 +9800,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000003",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "iw_bt_date_well": {
@@ -10191,9 +10191,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000340",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "link_class_info": {
@@ -10212,9 +10212,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000329",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "link_climate_info": {
@@ -10233,9 +10233,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000328",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "lithology": {
@@ -10329,9 +10329,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000331",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "lot_number": {
@@ -10664,9 +10664,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000339",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "microb_cult_med": {
@@ -11260,9 +11260,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000038",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "nucl_acid_ext": {
@@ -11281,9 +11281,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000037",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "nucl_acid_ext_kit": {
@@ -12207,9 +12207,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001106",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "ph_regm": {
@@ -12396,7 +12396,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001336",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -12955,9 +12955,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000316",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "primary_prod": {
@@ -13354,9 +13354,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000025",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "ref_db": {
@@ -13979,7 +13979,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001061",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -14280,9 +14280,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000341",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "salt_regm": {
@@ -14396,7 +14396,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001225",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -16452,9 +16452,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000336",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "soil_type": {
@@ -16502,9 +16502,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000334",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "solar_irradiance": {
@@ -16649,9 +16649,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000090",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "sort_tech": {
@@ -18154,7 +18154,7 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0001070",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+      "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
       "structured_pattern": {
         "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
       }
@@ -18357,9 +18357,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000338",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "tot_nitro_content": {
@@ -18387,9 +18387,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000337",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "tot_org_carb": {
@@ -19416,9 +19416,9 @@
       "from_schema": "https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first",
       "slot_uri": "MIXS:0000323",
       "range": "string",
-      "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+      "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
       "structured_pattern": {
-        "syntax": "{PMID}|{DOI}|{URL}"
+        "syntax": "({DOI})|({PMID})|({URL})"
       }
     },
     "water_content": {
@@ -22145,7 +22145,7 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -22163,7 +22163,7 @@
             "FoodFoodProductionFacility"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -22184,7 +22184,7 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -22883,7 +22883,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -23427,9 +23427,9 @@
             "MimarksC"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "samp_store_dur": {
@@ -23994,9 +23994,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_amp": {
@@ -24022,9 +24022,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lib_size": {
@@ -24401,9 +24401,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -24479,9 +24479,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "soil_type": {
@@ -24517,9 +24517,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "horizon": {
@@ -24546,9 +24546,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "link_class_info": {
@@ -24563,9 +24563,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "previous_land_use": {
@@ -24595,9 +24595,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "crop_rotation": {
@@ -24697,9 +24697,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "annual_temp": {
@@ -24881,9 +24881,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "cur_vegetation": {
@@ -24917,9 +24917,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_org_carb": {
@@ -24953,9 +24953,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_nitro": {
@@ -25026,9 +25026,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_car": {
@@ -32328,9 +32328,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "organism_count": {
@@ -33020,7 +33020,7 @@
             "FoodHumanFoods"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -33443,7 +33443,7 @@
             "FoodFoodProductionFacility"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -35941,9 +35941,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "humidity": {
@@ -36210,9 +36210,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_org_c_meth": {
@@ -36228,9 +36228,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_nitro_cont_meth": {
@@ -36245,9 +36245,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "salinity_meth": {
@@ -36262,9 +36262,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "host_age": {
@@ -36703,7 +36703,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -36951,7 +36951,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -36997,9 +36997,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "growth_medium": {
@@ -37975,9 +37975,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "soil_type": {
@@ -38151,7 +38151,7 @@
             "FoodHumanFoods"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -39917,9 +39917,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "organism_count": {
@@ -40182,7 +40182,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -40432,7 +40432,7 @@
             "FoodFoodProductionFacility"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -40581,7 +40581,7 @@
             "FoodHumanFoods"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -43173,9 +43173,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "organism_count": {
@@ -43391,7 +43391,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -43772,7 +43772,7 @@
             "FoodHumanFoods"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -45916,7 +45916,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -65168,9 +65168,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -65369,9 +65369,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -65401,9 +65401,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -65551,9 +65551,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -65888,9 +65888,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -66707,9 +66707,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -66908,9 +66908,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -66940,9 +66940,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -67090,9 +67090,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -67427,9 +67427,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -67817,7 +67817,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -68462,7 +68462,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -68780,7 +68780,7 @@
             "PlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -69495,9 +69495,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -69704,9 +69704,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -69737,9 +69737,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -69893,9 +69893,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -70242,9 +70242,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -72421,9 +72421,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -72638,9 +72638,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -72672,9 +72672,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -72834,9 +72834,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -73195,9 +73195,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -73430,9 +73430,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "previous_land_use": {
@@ -73562,9 +73562,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "sieving": {
@@ -73610,9 +73610,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}|{DOI}|{URL}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "pool_dna_extracts": {
@@ -73660,9 +73660,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "annual_temp": {
@@ -73747,9 +73747,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "fao_class": {
@@ -73794,9 +73794,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_nitro": {
@@ -73851,9 +73851,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "slope_gradient": {
@@ -73944,9 +73944,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ph": {
@@ -73983,9 +73983,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_matter": {
@@ -74039,9 +74039,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_nitro_content": {
@@ -74070,9 +74070,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "microbial_biomass": {
@@ -74103,9 +74103,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "link_addit_analys": {
@@ -74119,9 +74119,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "salinity_meth": {
@@ -74136,9 +74136,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "heavy_metals": {
@@ -74169,9 +74169,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "al_sat": {
@@ -74201,9 +74201,9 @@
             "Soil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "misc_param": {
@@ -76212,9 +76212,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -76437,9 +76437,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -76472,9 +76472,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -76673,9 +76673,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -77025,9 +77025,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -78998,9 +78998,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -79223,9 +79223,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -79258,9 +79258,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -79386,9 +79386,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -79738,9 +79738,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -81735,9 +81735,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -81960,9 +81960,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -81995,9 +81995,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -82142,9 +82142,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -82494,9 +82494,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -84637,9 +84637,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -84862,9 +84862,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -84897,9 +84897,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "num_replicons": {
@@ -85082,9 +85082,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -85434,9 +85434,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -87783,9 +87783,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -87818,9 +87818,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -87959,9 +87959,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -88355,9 +88355,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -89835,9 +89835,9 @@
           ],
           "range": "string",
           "required": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "lat_lon": {
@@ -89927,9 +89927,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -89962,9 +89962,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "pcr_cond": {
@@ -90405,9 +90405,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -92225,9 +92225,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -92260,9 +92260,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "pcr_cond": {
@@ -92725,9 +92725,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -94798,9 +94798,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -94833,9 +94833,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -94962,9 +94962,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -95358,9 +95358,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -96242,9 +96242,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -96277,9 +96277,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -96406,9 +96406,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -96802,9 +96802,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -97142,7 +97142,7 @@
             "MigsBaPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -97854,7 +97854,7 @@
             "MigsBaPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -98193,7 +98193,7 @@
             "MigsBaPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -99040,9 +99040,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -99076,9 +99076,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -99209,9 +99209,9 @@
             "MimsPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -99618,9 +99618,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -101938,9 +101938,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -101975,9 +101975,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -102112,9 +102112,9 @@
             "MimsSediment"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -102534,9 +102534,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "source_mat_id": {
@@ -102700,9 +102700,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "previous_land_use": {
@@ -102842,9 +102842,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "sieving": {
@@ -102894,9 +102894,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}|{DOI}|{URL}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "pool_dna_extracts": {
@@ -102947,9 +102947,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "annual_temp": {
@@ -103039,9 +103039,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "fao_class": {
@@ -103089,9 +103089,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_nitro": {
@@ -103150,9 +103150,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "slope_gradient": {
@@ -103249,9 +103249,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ph": {
@@ -103291,9 +103291,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_matter": {
@@ -103352,9 +103352,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_nitro_content": {
@@ -103386,9 +103386,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "microbial_biomass": {
@@ -103421,9 +103421,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "link_addit_analys": {
@@ -103438,9 +103438,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "salinity_meth": {
@@ -103456,9 +103456,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "heavy_metals": {
@@ -103491,9 +103491,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "al_sat": {
@@ -103525,9 +103525,9 @@
             "MigsBaSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "misc_param": {
@@ -105907,9 +105907,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -105945,9 +105945,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -106085,9 +106085,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -106551,9 +106551,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "sort_tech": {
@@ -111660,9 +111660,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "nucl_acid_ext": {
@@ -111698,9 +111698,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "number_contig": {
@@ -111941,9 +111941,9 @@
             "Miuvig"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ref_db": {
@@ -112388,9 +112388,9 @@
           ],
           "range": "string",
           "recommended": true,
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "sort_tech": {
@@ -114288,7 +114288,7 @@
             "MimsPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -115041,7 +115041,7 @@
             "MimsPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -115508,7 +115508,7 @@
             "MimsPlantAssociated"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+          "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
           "structured_pattern": {
             "syntax": "{PMID}|{DOI}|{URL}|{free_text}"
           }
@@ -119591,9 +119591,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "previous_land_use": {
@@ -119743,9 +119743,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "sieving": {
@@ -119798,9 +119798,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}|{DOI}|{URL}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "samp_vol_we_dna_ext": {
@@ -119908,9 +119908,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "annual_temp": {
@@ -120005,9 +120005,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "fao_class": {
@@ -120058,9 +120058,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_nitro": {
@@ -120175,9 +120175,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "slope_gradient": {
@@ -120280,9 +120280,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "ph": {
@@ -120324,9 +120324,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "org_matter": {
@@ -120388,9 +120388,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "tot_nitro_content": {
@@ -120424,9 +120424,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "microbial_biomass": {
@@ -120461,9 +120461,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "link_addit_analys": {
@@ -120479,9 +120479,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "salinity_meth": {
@@ -120498,9 +120498,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "heavy_metals": {
@@ -120535,9 +120535,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "al_sat": {
@@ -120571,9 +120571,9 @@
             "MimsSoil"
           ],
           "range": "string",
-          "pattern": "PMID:(\\d{7,8})",
+          "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
           "structured_pattern": {
-            "syntax": "{PMID}"
+            "syntax": "({DOI})|({PMID})|({URL})"
           }
         },
         "misc_param": {
@@ -128471,9 +128471,17 @@
   },
   "source_file": "src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml",
   "settings": {
+    "DOI": {
+      "setting_key": "DOI",
+      "setting_value": "10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+"
+    },
     "PMID": {
       "setting_key": "PMID",
       "setting_value": "PMID:(\\d{7,8})"
+    },
+    "URL": {
+      "setting_key": "URL",
+      "setting_value": "(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]"
     },
     "database": {
       "setting_key": "database",

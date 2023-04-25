@@ -34,7 +34,7 @@ mims_soil_set:
     heavy_metals: zinc;123 units
     heavy_metals_meth: PMID:1234567
     horizon_meth: PMID:1234567
-    lat_lon: 55.5 55.5
+    lat_lon: 12345 12345
     lib_layout: paired
     lib_reads_seqd: 123
     lib_screen: xxx

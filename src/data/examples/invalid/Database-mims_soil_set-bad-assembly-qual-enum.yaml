@@ -11,7 +11,7 @@ mims_soil_set:
     annual_precpt: 123 units
     annual_temp: 123 units
     assembly_name: xxx xxx # {free_text} {free_text} is moot, because {free_text} alone allows non-initial whitespace
-    assembly_qual: Finished genome
+    assembly_qual: xxx
     assembly_software: xxx;xxx;xxx
     collection_date: xxx
     crop_rotation: xxx

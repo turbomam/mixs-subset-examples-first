@@ -93,7 +93,7 @@
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "drainage_class": {
@@ -104,7 +104,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "extreme_event": {
@@ -161,11 +161,11 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "herbicide_regm": {
@@ -176,7 +176,7 @@
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "host_age": {
@@ -235,7 +235,7 @@
                     "type": "string"
                 },
                 "isol_growth_condt": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lib_layout": {
@@ -260,11 +260,11 @@
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "local_class": {
@@ -272,7 +272,7 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lot_number": {
@@ -298,11 +298,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "organism_count": {
@@ -328,7 +328,7 @@
                     "type": "string"
                 },
                 "ph_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ph_regm": {
@@ -339,7 +339,7 @@
                     "type": "string"
                 },
                 "photosynt_activ_meth": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "plant_growth_med": {
@@ -370,7 +370,7 @@
                     "type": "string"
                 },
                 "previous_land_use_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "profile_position": {
@@ -398,7 +398,7 @@
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_mat_process": {
@@ -501,7 +501,7 @@
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "solar_irradiance": {
@@ -509,7 +509,7 @@
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -560,7 +560,7 @@
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -1697,7 +1697,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -1819,7 +1819,7 @@
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "organism_count": {
@@ -1846,7 +1846,7 @@
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_name": {
@@ -2071,7 +2071,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -2158,7 +2158,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
@@ -2235,7 +2235,7 @@
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "organism_count": {
@@ -2251,7 +2251,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "plant_growth_med": {
@@ -2288,7 +2288,7 @@
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
@@ -2310,7 +2310,7 @@
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "samp_collect_device": {
@@ -2408,7 +2408,7 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "soil_type": {
@@ -2416,7 +2416,7 @@
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "solar_irradiance": {
@@ -2455,14 +2455,14 @@
                     "type": "string"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -2574,7 +2574,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -2689,7 +2689,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
@@ -2725,7 +2725,7 @@
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext_kit": {
@@ -2764,7 +2764,7 @@
                     "type": "string"
                 },
                 "samp_collect_method": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "samp_floor": {
@@ -2956,7 +2956,7 @@
                     "type": "string"
                 },
                 "enrichment_protocol": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "env_broad_scale": {
@@ -3085,7 +3085,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
@@ -3135,7 +3135,7 @@
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext_kit": {
@@ -3341,7 +3341,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravidity": {
@@ -5351,7 +5351,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
@@ -5434,7 +5434,7 @@
                     "type": "string"
                 },
                 "isol_growth_condt": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lat_lon": {
@@ -5479,11 +5479,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -5540,7 +5540,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -5551,7 +5551,7 @@
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
@@ -5641,7 +5641,7 @@
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -5669,7 +5669,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "trophic_level": {
@@ -5878,7 +5878,7 @@
                     "type": "integer"
                 },
                 "isol_growth_condt": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lat_lon": {
@@ -5942,11 +5942,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -6027,7 +6027,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -6096,7 +6096,7 @@
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -6195,7 +6195,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "alt": {
@@ -6251,7 +6251,7 @@
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "depth": {
@@ -6315,11 +6315,11 @@
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "host_disease_stat": {
@@ -6329,7 +6329,7 @@
                     "type": "integer"
                 },
                 "isol_growth_condt": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lat_lon": {
@@ -6354,15 +6354,15 @@
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "local_class": {
@@ -6370,11 +6370,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -6389,11 +6389,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "num_replicons": {
@@ -6417,7 +6417,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -6440,7 +6440,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -6451,7 +6451,7 @@
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "samp_collec_device": {
@@ -6513,7 +6513,7 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "soil_type": {
@@ -6521,11 +6521,11 @@
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -6557,14 +6557,14 @@
                     "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_org_carb": {
@@ -6574,7 +6574,7 @@
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "water_content": {
@@ -6709,7 +6709,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "geo_loc_name": {
@@ -6834,11 +6834,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "number_contig": {
@@ -6889,7 +6889,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -6900,7 +6900,7 @@
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
@@ -6994,7 +6994,7 @@
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -7013,7 +7013,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "water_temp_regm": {
@@ -7252,11 +7252,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "number_contig": {
@@ -7331,7 +7331,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -7404,7 +7404,7 @@
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -7485,7 +7485,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "alt": {
@@ -7532,7 +7532,7 @@
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "depth": {
@@ -7586,11 +7586,11 @@
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "lat_lon": {
@@ -7615,15 +7615,15 @@
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "local_class": {
@@ -7631,11 +7631,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -7654,11 +7654,11 @@
                     "type": "string"
                 },
                 "nucl_acid_amp": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "nucl_acid_ext": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "number_contig": {
@@ -7676,7 +7676,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -7699,7 +7699,7 @@
                     "type": "string"
                 },
                 "ref_biomaterial": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "ref_db": {
@@ -7710,7 +7710,7 @@
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "samp_collec_device": {
@@ -7776,7 +7776,7 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "soil_type": {
@@ -7784,11 +7784,11 @@
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "sop": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "source_mat_id": {
@@ -7811,21 +7811,21 @@
                     "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_org_carb": {
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "water_content": {
@@ -8105,7 +8105,7 @@
                     "type": "string"
                 },
                 "genetic_mod": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "gravity": {
@@ -8239,7 +8239,7 @@
                     "type": "string"
                 },
                 "root_cond": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "root_med_carbon": {
@@ -8311,7 +8311,7 @@
                     "type": "string"
                 },
                 "tiss_cult_growth_med": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}|[^s][^\\r\\n\\t]+",
+                    "pattern": "PMID:(\\d{7,8})|10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]|[^s][^\\r\\n\\t]+",
                     "type": "string"
                 },
                 "water_temp_regm": {
@@ -8645,7 +8645,7 @@
                     "type": "string"
                 },
                 "al_sat_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "annual_precpt": {
@@ -8667,7 +8667,7 @@
                     "type": "string"
                 },
                 "cur_vegetation_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "depth": {
@@ -8698,23 +8698,23 @@
                     "type": "string"
                 },
                 "heavy_metals_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "horizon_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_addit_analys": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_class_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "link_climate_info": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "local_class": {
@@ -8722,11 +8722,11 @@
                     "type": "string"
                 },
                 "local_class_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "micro_biomass_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "microbial_biomass": {
@@ -8749,7 +8749,7 @@
                     "type": "number"
                 },
                 "ph_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "pool_dna_extracts": {
@@ -8769,7 +8769,7 @@
                     "type": "string"
                 },
                 "salinity_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "samp_name": {
@@ -8806,7 +8806,7 @@
                     "type": "string"
                 },
                 "soil_texture_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "soil_type": {
@@ -8814,7 +8814,7 @@
                     "type": "string"
                 },
                 "soil_type_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "store_cond": {
@@ -8829,21 +8829,21 @@
                     "$ref": "#/$defs/TILLAGEENUM"
                 },
                 "tot_nitro_cont_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_nitro_content": {
                     "type": "string"
                 },
                 "tot_org_c_meth": {
-                    "pattern": "PMID:(\\d{7,8})",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "tot_org_carb": {
                     "type": "string"
                 },
                 "water_cont_soil_meth": {
-                    "pattern": "PMID:(\\d{7,8})|{DOI}|{URL}",
+                    "pattern": "(10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\\d{7,8}))|((?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-])",
                     "type": "string"
                 },
                 "water_content": {

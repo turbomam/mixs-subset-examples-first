@@ -30,7 +30,7 @@ mims_soil_set:
     feat_pred: xxx;xxx;xxx
     fire: xxx
     flooding: xxx
-    geo_loc_name: "xxx: xxx, xxx"
+    geo_loc_name: xxx
     heavy_metals: zinc;123 units
     heavy_metals_meth: PMID:1234567
     horizon_meth: PMID:1234567

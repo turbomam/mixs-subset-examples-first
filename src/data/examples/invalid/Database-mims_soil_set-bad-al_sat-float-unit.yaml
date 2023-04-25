@@ -4,7 +4,7 @@ mims_soil_set:
     #    sample_name: xxx1
     adapters: AAA;TTT
     agrochem_addition: xxx
-    al_sat: 123 units
+    al_sat: 123
     al_sat_meth: http://example.com/site
     alt: 123 units
     annot: xxx
