@@ -108,17 +108,17 @@ gen-project: $(PYMODEL)
 	$(RUN) gen-project ${GEN_PARGS} \
 		--include excel \
 		--exclude graphql \
-		--exclude jsonld \
-		--exclude jsonldcontext \
+		--include jsonld \
+		--include jsonldcontext \
 		--exclude markdown  \
-		--exclude owl \
-		--exclude prefixmap \
+		--include owl \
+		--include prefixmap \
 		--exclude proto \
 		--include python \
-		--exclude shex \
-		--exclude sqlddl \
+		--include shex \
+		--include sqlddl \
   		--include jsonschema \
-  		--exclude shacl \
+  		--include shacl \
 		--generator-arguments '{jsonschema: {not_closed: false}}' \
 		-d $(DEST) $(SOURCE_SCHEMA_PATH) && mv $(DEST)/*.py $(PYMODEL)
 

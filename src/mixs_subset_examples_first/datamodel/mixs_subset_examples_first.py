@@ -1,5 +1,5 @@
 # Auto generated from mixs_subset_examples_first.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-25T16:46:25
+# Generation date: 2023-04-25T17:01:10
 # Schema: MIxS
 #
 # id: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first

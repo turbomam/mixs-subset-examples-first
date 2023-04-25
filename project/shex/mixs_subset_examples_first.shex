@@ -1,0 +1,3193 @@
+BASE <http://example.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX linkml: <https://w3id.org/linkml/>
+
+
+<String> xsd:string
+
+<Integer> xsd:integer
+
+<Boolean> xsd:boolean
+
+<Float> xsd:float
+
+<Double> xsd:double
+
+<Decimal> xsd:decimal
+
+<Time> xsd:dateTime
+
+<Date> xsd:date
+
+<Datetime> xsd:dateTime
+
+<DateOrDatetime> linkml:DateOrDatetime
+
+<Uriorcurie> IRI
+
+<Curie> xsd:string
+
+<Uri> IRI
+
+<Ncname> xsd:string
+
+<Objectidentifier> IRI
+
+<Nodeidentifier> NONLITERAL
+
+<Agriculture> CLOSED {
+    (  $<Agriculture_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <0001057> @<String> ? ;
+          <soil_horizon> @<String> ? ;
+          <0001296> @<String> ? ;
+          <0001336> @<String> ? ;
+          <0001225> @<String> ? ;
+          <0001177> @<String> ? ;
+          <0001145> @<String> ? ;
+          <0001156> @<String> ? ;
+          <0001163> @<String> ? ;
+          <0001160> @<Float> ? ;
+          <0001158> @<String> ? ;
+          <0001161> @<String> ? ;
+          <0001159> @<String> ? ;
+          <0000211> @<String> ? ;
+          <texture> @<String> ? ;
+          <texture_meth> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000819> @<String> ? ;
+          <0001111> @<String> ? ;
+          <0001115> @<String> ? ;
+          <0001110> @<String> ? ;
+          <0001176> @<String> ? ;
+          <0001175> @<Float> ? ;
+          <0000093> @<String> ? ;
+          <0000829> @<String> ? ;
+          <0000112> @<String> ? ;
+          <0001116> @<String> ? ;
+          <0001148> @<String> ? ;
+          <0000100> @<String> ? ;
+          <0001121> @<String> ? ;
+          <0000751> @<String> ;
+          <0001211> @<String> ? ;
+          <0001147> @<String> ? ;
+          <0001127> @<String> ? ;
+          <samp_stor_temp> @<String> ? ;
+          <0001137> @<String> ? ;
+          <0001138> @<String> ? ;
+          <0001124> @<String> ? ;
+          <0001126> @<String> ? ;
+          <0001123> @<String> ? ;
+          <0001133> @<String> ? ;
+          <0001060> @<String> ? ;
+          <0000257> @<String> ? ;
+          <0000247> @<String> ? ;
+          <0000859> @<String> ? ;
+          <Food_Product_type> @<String> ? ;
+          <Food_source> @<String> ;
+          <0001170> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000735> @<String> ? ;
+          <0000736> @<String> ? ;
+          <0001181> @<String> ? ;
+          <0001153> @<String> ? ;
+          <0000578> @<String> ? ;
+          <0000577> @<String> ? ;
+          <0001062> @<Float> ? ;
+          <soil_depth> @<String> ? ;
+          <0000029> @<String> ;
+          <0000027> @<String> ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000590> @<String> ? ;
+          <0000591> @<String> ? ;
+          <0001069> @<String> ? ;
+          <0000558> @<String> ? ;
+          <0000557> @<String> ? ;
+          <0001040> @<String> ? ;
+          <0000561> @<String> ? ;
+          <0000571> @<String> ? ;
+          <0000573> @<String> ? ;
+          <0001056> @<String> ? ;
+          <0000582> @<String> ? ;
+          <0001068> @<String> ? ;
+          <0000113> @<String> ;
+          <0000754> @<String> ? ;
+          <0000003> @<String> ? ;
+          <0000116> @<String> ;
+          <0000755> @<String> ;
+          <0000002> @<String> ;
+          <0000016> @<String> ;
+          <0000255> @<String> ;
+          <0000248> @<String> ;
+          <0000365> @<String> ;
+          <0000264> @<String> ;
+          <0001318> @<String> ? ;
+          <0000256> @<String> ;
+          <0000251> @<String> ;
+          <0000874> @<String> ;
+          <0000250> @<String> ;
+          <0000263> @<String> ;
+          <0000030> @<String> ;
+          <0000032> @<TROPHICLEVELENUM> ? ;
+          <0001058> @<String> ? ;
+          <0000001> @<String> ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000050> @<String> ;
+          <0000111> @<String> ;
+          <0000046> @<String> ;
+          <0000037> @<String> ;
+          <0000038> @<String> ;
+          <0000039> @<Integer> ? ;
+          <0000040> @<Integer> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000042> @<String> ;
+          <0000043> @<String> ;
+          <0000044> @<String> ;
+          <0000045> @<String> ;
+          <0000047> @<String> ;
+          <0000048> @<String> ;
+          <0000049> @<String> ;
+          <0000051> @<String> ? ;
+          <0000052> @<String> ;
+          <0000057> @<String> ;
+          <0000058> @<String> ? ;
+          <assembly_quality> @<String> ? ;
+          <0000059> @<String> ? ;
+          <url> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0001083> @<FAOCLASSENUM> ? ;
+          <0000330> @<String> ? ;
+          <0000331> @<String> ? ;
+          <0000332> @<String> ;
+          <0000334> @<String> ;
+          <horizon> @<String> ? ;
+          <0000321> @<String> ? ;
+          <0000329> @<String> ? ;
+          <0000315> @<String> ? ;
+          <0000316> @<String> ? ;
+          <0000318> @<String> ? ;
+          <0000639> @<String> ? ;
+          <0001081> @<TILLAGEENUM> * ;
+          <0001086> @<String> ? ;
+          <0000319> @<String> ? ;
+          <0000320> @<String> ? ;
+          <0000328> @<String> ? ;
+          <0000642> @<String> ? ;
+          <0000643> @<String> ? ;
+          <0000644> @<String> ? ;
+          <0000645> @<String> ? ;
+          <0001080> @<CURLANDUSEENUM> ? ;
+          <0000646> @<String> ? ;
+          <0000647> @<String> ? ;
+          <0001084> @<PROFILEPOSITIONENUM> ? ;
+          <0001085> @<DRAINAGECLASSENUM> ? ;
+          <0000327> @<String> ;
+          <0001106> @<String> ? ;
+          <0000312> @<String> ? ;
+          <0000314> @<String> ? ;
+          <0000533> @<String> ? ;
+          <0000337> @<String> ? ;
+          <tot_nitro> @<String> ? ;
+          <tot_n_meth> @<String> ? ;
+          <0000650> @<String> ;
+          <microbial_biomass_meth> @<String> ;
+          <0000343> @<String> ? ;
+          <tot_car> @<String> ? ;
+          <tot_phos> @<String> ? ;
+          <0000322> @<String> ;
+          <0000325> @<String> ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016018> ] ?
+    )
+}
+
+<Air> CLOSED {
+    (  $<Air_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000094> @<String> ;
+          <0000093> @<String> ? ;
+          <0000096> @<String> ? ;
+          <0000097> @<String> ? ;
+          <0000098> @<String> ? ;
+          <0000751> @<String> ? ;
+          <0000100> @<String> ? ;
+          <0000101> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000104> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000754> @<String> ? ;
+          <0000107> @<String> ? ;
+          <air_particulate_matter_concentration> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000112> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000114> @<String> ? ;
+          <0000756> @<String> ? ;
+          <0000115> @<String> ? ;
+          <0000757> @<String> ? ;
+          <0000118> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016000> ] ?
+    )
+}
+
+<BuiltEnvironment> CLOSED {
+    (  $<BuiltEnvironment_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000758> @<String> ? ;
+          <0000759> @<String> ? ;
+          <0000121> @<String> ;
+          <0000122> @<String> ;
+          <0000123> @<String> ? ;
+          <0000124> @<String> ;
+          <0000125> @<String> ? ;
+          <0000760> @<Float> ? ;
+          <0000761> @<String> ;
+          <0000128> @<String> ? ;
+          <0000129> @<String> ? ;
+          <0000097> @<String> ;
+          <0000756> @<String> ;
+          <0000103> @<String> ;
+          <0000763> @<String> ;
+          <0000764> @<String> ? ;
+          <0000765> @<String> ;
+          <0000766> @<String> ;
+          <0000767> @<String> ? ;
+          <0000768> @<String> ;
+          <0000769> @<String> ;
+          <0000216> @<String> ? ;
+          <0000770> @<String> ;
+          <0000771> @<Float> ;
+          <0000772> @<Integer> ;
+          <0000217> @<String> ;
+          <0000218> @<String> ? ;
+          <0000219> @<String> ? ;
+          <0000773> @<String> ? ;
+          <0000140> @<String> ? ;
+          <0000774> @<String> ? ;
+          <0000775> @<Float> ? ;
+          <0000141> @<String> ? ;
+          <0000142> @<String> ? ;
+          <0000776> @<Integer> ? ;
+          <0000777> @<Integer> ? ;
+          <0000145> @<String> ? ;
+          <0000778> @<String> ? ;
+          <0000721> @<String> ? ;
+          <0000148> @<String> ? ;
+          <0000779> @<String> ? ;
+          <0000780> @<String> ? ;
+          <0000781> @<String> ? ;
+          <0000782> @<String> ? ;
+          <0000783> @<String> ? ;
+          <0000143> @<String> ? ;
+          <0000784> @<String> ? ;
+          <0000785> @<Integer> ? ;
+          <0000786> @<String> ? ;
+          <0000787> @<String> ? ;
+          <0000158> @<String> ? ;
+          <0000788> @<String> ? ;
+          <0000789> @<String> ? ;
+          <0000790> @<String> ? ;
+          <0000791> @<String> ? ;
+          <0000792> @<String> ? ;
+          <0000793> @<String> ? ;
+          <0000794> @<String> ? ;
+          <0000795> @<String> ? ;
+          <0000796> @<String> ? ;
+          <0000797> @<String> ? ;
+          <0000798> @<String> ? ;
+          <0000799> @<Integer> ? ;
+          <0000800> @<Integer> ? ;
+          <0000144> @<String> ? ;
+          <0000220> @<Integer> ? ;
+          <0000170> @<Integer> ? ;
+          <0000802> @<String> ? ;
+          <0000164> @<String> ? ;
+          <0000165> @<String> ? ;
+          <0000803> @<String> ? ;
+          <0000225> @<Integer> ? ;
+          <0000804> @<String> ? ;
+          <0000805> @<String> ? ;
+          <0000806> @<String> ? ;
+          <0000166> @<String> ? ;
+          <0000226> @<String> ? ;
+          <0000227> @<Integer> ? ;
+          <0000807> @<String> ? ;
+          <0000808> @<String> ? ;
+          <0000228> @<Integer> ? ;
+          <0000809> @<String> ? ;
+          <0000810> @<String> ? ;
+          <0000812> @<String> ? ;
+          <0000833> @<Integer> ? ;
+          <0000167> @<String> ? ;
+          <0000168> @<String> ? ;
+          <0000813> @<String> ? ;
+          <0000814> @<String> ? ;
+          <0000229> @<Integer> ? ;
+          <0000815> @<String> ? ;
+          <0000230> @<Integer> ? ;
+          <0000231> @<Integer> ? ;
+          <0000232> @<Integer> ? ;
+          <0000816> @<String> ? ;
+          <0000817> @<String> ? ;
+          <0000818> @<String> ? ;
+          <0000188> @<String> ? ;
+          <0000819> @<String> ? ;
+          <0000820> @<String> ? ;
+          <0000821> @<String> ? ;
+          <0000169> @<String> ? ;
+          <0000233> @<String> ? ;
+          <0000822> @<String> ? ;
+          <0000234> @<Integer> ? ;
+          <0000192> @<String> ? ;
+          <0000193> @<String> ? ;
+          <0000823> @<String> ? ;
+          <0000235> @<Integer> ? ;
+          <0000194> @<String> ? ;
+          <0000236> @<Integer> ? ;
+          <0000824> @<String> ? ;
+          <0000825> @<String> ? ;
+          <0000195> @<String> ? ;
+          <0000237> @<Integer> ? ;
+          <0000826> @<String> ? ;
+          <0000238> @<String> ? ;
+          <0000242> @<String> ? ;
+          <0000243> @<String> ? ;
+          <0000827> @<String> ? ;
+          <0000828> @<String> ? ;
+          <0000244> @<Integer> ? ;
+          <0000196> @<String> ? ;
+          <0000829> @<String> ? ;
+          <0000830> @<String> ? ;
+          <0000831> @<String> ? ;
+          <0000832> @<String> ? ;
+          <0000245> @<String> ? ;
+          <0000834> @<String> ? ;
+          <0000835> @<String> ? ;
+          <0000214> @<String> ? ;
+          <0000836> @<String> ? ;
+          <0000197> @<String> ? ;
+          <0000837> @<String> ? ;
+          <0000838> @<String> ? ;
+          <0000839> @<String> ? ;
+          <0000840> @<String> ? ;
+          <0000198> @<String> ? ;
+          <0000841> @<String> ? ;
+          <0000842> @<String> ? ;
+          <0000221> @<String> ? ;
+          <0000843> @<String> ? ;
+          <0000844> @<String> ? ;
+          <0000845> @<String> ? ;
+          <0000846> @<String> ? ;
+          <0000222> @<String> ? ;
+          <0000223> @<String> ? ;
+          <0000847> @<String> ? ;
+          <0000848> @<String> ? ;
+          <0000224> @<String> ? ;
+          <0000849> @<String> ? ;
+          <0000850> @<String> ? ;
+          <0000851> @<String> ? ;
+          <0000852> @<String> ? ;
+          <0000853> @<String> ? ;
+          <0000246> @<Integer> ? ;
+          <0000854> @<String> ? ;
+          <0000855> @<String> ? ;
+          <0000856> @<String> ? ;
+          <0000857> @<String> ?
+       ) ;
+       rdf:type [ <0016001> ] ?
+    )
+}
+
+<Checklist>  (
+    CLOSED {
+       (  $<Checklist_tes> rdf:type . * ;
+          rdf:type [ <Checklist> ] ?
+       )
+    } OR @<MigsBa> OR @<MigsEu> OR @<MigsOrg> OR @<MigsPl> OR @<MigsVi> OR @<Mimag> OR @<MimarksC> OR @<MimarksS> OR @<Mims> OR
+    @<Misag> OR @<Miuvig>
+)
+
+<Database> CLOSED {
+    (  $<Database_tes> (  <agriculture_set> @<Agriculture> * ;
+          <air_set> @<Air> * ;
+          <built_environment_set> @<BuiltEnvironment> * ;
+          <checklist_set> @<Checklist> * ;
+          <environmental_package_set> @<EnvironmentalPackage> * ;
+          <food_animal_and_animal_feed_set> @<FoodAnimalAndAnimalFeed> * ;
+          <food_farm_environment_set> @<FoodFarmEnvironment> * ;
+          <food_food_production_facility_set> @<FoodFoodProductionFacility> * ;
+          <food_human_foods_set> @<FoodHumanFoods> * ;
+          <host_associated_set> @<HostAssociated> * ;
+          <human_associated_set> @<HumanAssociated> * ;
+          <human_gut_set> @<HumanGut> * ;
+          <human_oral_set> @<HumanOral> * ;
+          <human_skin_set> @<HumanSkin> * ;
+          <human_vaginal_set> @<HumanVaginal> * ;
+          <hydrocarbon_resources_cores_set> @<HydrocarbonResourcesCores> * ;
+          <hydrocarbon_resources_fluids_swabs_set> @<HydrocarbonResourcesFluidsSwabs> * ;
+          <microbial_mat_biofilm_set> @<MicrobialMatBiofilm> * ;
+          <migs_ba_set> @<MigsBa> * ;
+          <migs_ba_plant_associated_set> @<MigsBaPlantAssociated> * ;
+          <migs_ba_sediment_set> @<MigsBaSediment> * ;
+          <migs_ba_soil_set> @<MigsBaSoil> * ;
+          <mims_plant_associated_set> @<MimsPlantAssociated> * ;
+          <mims_sediment_set> @<MimsSediment> * ;
+          <mims_soil_set> @<MimsSoil> * ;
+          <plant_associated_set> @<PlantAssociated> * ;
+          <sediment_set> @<Sediment> * ;
+          <soil_set> @<Soil> * ;
+          <symbiont_associated_set> @<SymbiontAssociated> * ;
+          <unknown_term_set> @<UnknownTerm> * ;
+          <wastewater_sludge_set> @<WastewaterSludge> * ;
+          <water_set> @<Water> * ;
+          <migs_ba_water_set> @<MigsBaWater> * ;
+          <mims_water_set> @<MimsWater> *
+       ) ;
+       rdf:type [ <Database> ] ?
+    )
+}
+
+<EnvironmentalPackage>  (
+    CLOSED {
+       (  $<EnvironmentalPackage_tes> rdf:type . * ;
+          rdf:type [ <EnvironmentalPackage> ] ?
+       )
+    } OR @<Agriculture> OR @<Air> OR @<BuiltEnvironment> OR @<FoodAnimalAndAnimalFeed> OR @<FoodFarmEnvironment> OR
+    @<FoodFoodProductionFacility> OR @<FoodHumanFoods> OR @<HostAssociated> OR @<HumanAssociated> OR @<HumanGut> OR @<HumanOral> OR
+    @<HumanSkin> OR @<HumanVaginal> OR @<HydrocarbonResourcesCores> OR @<HydrocarbonResourcesFluidsSwabs> OR @<MicrobialMatBiofilm>
+    OR @<MiscellaneousNaturalOrArtificialEnvironment> OR @<PlantAssociated> OR @<Sediment> OR @<Soil> OR @<SymbiontAssociated> OR
+    @<WastewaterSludge> OR @<Water>
+)
+
+<FoodAnimalAndAnimalFeed> CLOSED {
+    (  $<FoodAnimalAndAnimalFeed_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000009> @<String> ;
+          <0000010> @<String> ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000050> @<String> ;
+          <0000001> @<String> ? ;
+          <0000002> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0001335> @<String> ? ;
+          <samp_stor_temp> @<String> ? ;
+          <samp_stor_dur> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000325> @<String> ? ;
+          <0000113> @<String> ? ;
+          <samp_stor_loc> @<String> ? ;
+          <0001230> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0001183> @<String> ;
+          <0001207> @<String> ;
+          <0001211> @<String> ;
+          <0001184> @<String> ;
+          <0001139> @<String> ? ;
+          <0001179> @<String> ;
+          <0001144> @<String> ;
+          <0001151> @<String> ;
+          <0001243> @<String> ? ;
+          <0001244> @<String> ? ;
+          <0001245> @<String> ? ;
+          <0001246> @<String> ? ;
+          <0001247> @<String> ? ;
+          <0001248> @<String> ? ;
+          <0001130> @<String> ? ;
+          <0001113> @<String> ? ;
+          <0001129> @<Integer> ? ;
+          <0001180> @<String> ? ;
+          <0001249> @<String> ? ;
+          <0001194> @<String> ? ;
+          <0001195> @<String> ? ;
+          <0001196> @<String> ? ;
+          <0001197> @<String> ? ;
+          <0001198> @<String> ? ;
+          <0001181> @<String> ? ;
+          <0001117> @<String> ? ;
+          <0001118> @<String> ? ;
+          <0001119> @<String> ? ;
+          <0001177> @<String> ? ;
+          <0001200> @<String> ? ;
+          <0001131> @<String> ? ;
+          <0001132> @<String> ? ;
+          <0001202> @<String> ? ;
+          <0001203> @<String> ? ;
+          <0001204> @<String> ? ;
+          <0001205> @<String> ? ;
+          <0001208> @<String> ? ;
+          <0001209> @<String> ? ;
+          <0001134> @<String> ? ;
+          <0001135> @<String> ? ;
+          <0001210> @<String> ? ;
+          <0001212> @<String> ? ;
+          <0001213> @<String> ? ;
+          <0001178> @<String> ? ;
+          <0001251> @<String> ? ;
+          <0001214> @<String> ? ;
+          <0001137> @<String> ? ;
+          <0001138> @<String> ? ;
+          <0001140> @<String> ? ;
+          <0001215> @<String> ? ;
+          <0001145> @<String> ? ;
+          <0001147> @<String> ? ;
+          <0001216> @<String> ? ;
+          <0001149> @<String> ? ;
+          <0001152> @<String> ? ;
+          <0001225> @<String> ? ;
+          <0001153> @<String> ? ;
+          <0001226> @<String> ? ;
+          <0001227> @<String> ? ;
+          <0001154> @<String> ? ;
+          <0001228> @<String> ? ;
+          <0001229> @<String> ? ;
+          <0001231> @<String> ? ;
+          <0001232> @<String> ? ;
+          <0001155> @<String> ? ;
+          <0001156> @<String> ? ;
+          <0001157> @<String> ? ;
+          <0001235> @<String> ? ;
+          <0001171> @<String> ? ;
+          <0001169> @<String> ? ;
+          <0001172> @<String> ? ;
+          <0001167> @<String> ? ;
+          <0001168> @<String> ? ;
+          <0001170> @<String> ? ;
+          <0001236> @<String> ? ;
+          <0001237> @<String> ? ;
+          <0001238> @<String> ? ;
+          <0001239> @<String> ? ;
+          <0001240> @<String> ? ;
+          <0001173> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016019> ] ?
+    )
+}
+
+<FoodFarmEnvironment> CLOSED {
+    (  $<FoodFarmEnvironment_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000009> @<String> ;
+          <0000010> @<String> ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000050> @<String> ;
+          <0000001> @<String> ? ;
+          <0000002> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000100> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0001335> @<String> ? ;
+          <samp_stor_temp> @<String> ? ;
+          <0000112> @<String> ? ;
+          <0000114> @<String> ? ;
+          <samp_stor_dur> @<String> ? ;
+          <0000118> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000315> @<String> ? ;
+          <0000318> @<String> ? ;
+          <0000334> @<String> ? ;
+          <0000337> @<String> ? ;
+          <0000338> @<String> ? ;
+          <0000341> @<String> ? ;
+          <0000255> @<String> ? ;
+          <0000257> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000256> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000577> @<String> ? ;
+          <0000578> @<String> ? ;
+          <0000579> @<String> ? ;
+          <0000018> @<String> ;
+          <0000643> @<String> ? ;
+          <0000645> @<String> ? ;
+          <0000533> @<String> ? ;
+          <tot_nitro_content> @<String> ? ;
+          <0000692> @<String> ? ;
+          <0000191> @<String> ? ;
+          <0000735> @<String> ? ;
+          <0000736> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000756> @<String> ? ;
+          <0000757> @<String> ? ;
+          <0000859> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0001001> @<Float> ? ;
+          <0000247> @<String> ? ;
+          <0001038> @<String> ;
+          <0000751> @<String> ;
+          <0001044> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000250> @<String> ? ;
+          <0001052> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0001061> @<String> ? ;
+          <0001062> @<Float> ? ;
+          <0001081> @<TILLAGEENUM> * ;
+          <0001106> @<String> ? ;
+          <0001108> @<String> ? ;
+          <0000829> @<String> ? ;
+          <0001184> @<String> ;
+          <0000998> @<String> ;
+          <0001110> @<String> ? ;
+          <0001111> @<String> ? ;
+          <0000108> @<String> ? ;
+          <0001113> @<String> ? ;
+          <0001114> @<String> ? ;
+          <0001115> @<String> ? ;
+          <0001116> @<String> ? ;
+          <0001117> @<String> ? ;
+          <0001118> @<String> ? ;
+          <0001119> @<String> ? ;
+          <0001120> @<String> ? ;
+          <0001121> @<String> ? ;
+          <0001122> @<String> ? ;
+          <0001123> @<String> ? ;
+          <0001124> @<String> ? ;
+          <0001125> @<String> ? ;
+          <0001126> @<String> ? ;
+          <0001127> @<String> ? ;
+          <0001128> @<String> ? ;
+          <0001129> @<Integer> ? ;
+          <0001130> @<String> ? ;
+          <0001131> @<String> ? ;
+          <0001132> @<String> ? ;
+          <0001133> @<String> ? ;
+          <0001134> @<String> ? ;
+          <0001135> @<String> ? ;
+          <0001136> @<String> ? ;
+          <9999999> @<String> ? ;
+          <0001137> @<String> ? ;
+          <0001138> @<String> ? ;
+          <0001139> @<String> ? ;
+          <0001140> @<String> ? ;
+          <0001141> @<String> ? ;
+          <0001142> @<String> ? ;
+          <0001318> @<String> ? ;
+          <0001144> @<String> ? ;
+          <0001145> @<String> ? ;
+          <0001146> @<String> ? ;
+          <0001147> @<String> ? ;
+          <0001148> @<String> ? ;
+          <0001149> @<String> ? ;
+          <0001057> @<String> ? ;
+          <0001150> @<String> ? ;
+          <0001151> @<String> ? ;
+          <0001152> @<String> ? ;
+          <0001153> @<String> ? ;
+          <0001154> @<String> ? ;
+          <0001155> @<String> ? ;
+          <0001156> @<String> ? ;
+          <0001157> @<String> ? ;
+          <0001158> @<String> ? ;
+          <0001159> @<String> ? ;
+          <0001160> @<Float> ? ;
+          <0001161> @<String> ? ;
+          <0001162> @<String> ? ;
+          <0001163> @<String> ? ;
+          <0001164> @<String> ? ;
+          <0000336> @<String> ? ;
+          <0000332> @<String> ? ;
+          <0001167> @<String> ? ;
+          <0001168> @<String> ? ;
+          <0001169> @<String> ? ;
+          <0001170> @<String> ? ;
+          <0001171> @<String> ? ;
+          <0001172> @<String> ? ;
+          <0001173> @<String> ? ;
+          <0001174> @<String> ? ;
+          <0001175> @<Float> ? ;
+          <0001176> @<String> ? ;
+          <0001177> @<String> ? ;
+          <0001178> @<String> ? ;
+          <0001179> @<String> ;
+          <0001180> @<String> ? ;
+          <0001181> @<String> ? ;
+          <0001182> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016020> ] ?
+    )
+}
+
+<FoodFoodProductionFacility> CLOSED {
+    (  $<FoodFoodProductionFacility_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000009> @<String> ;
+          <0000010> @<String> ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000050> @<String> ;
+          <0000001> @<String> ? ;
+          <0000002> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000103> @<String> ? ;
+          <samp_stor_temp> @<String> ? ;
+          <samp_stor_dur> @<String> ? ;
+          <0000124> @<String> ? ;
+          <0000192> @<String> ? ;
+          <0000226> @<String> ? ;
+          <0000244> @<Integer> ? ;
+          <0000111> @<String> ? ;
+          <0000325> @<String> ? ;
+          <samp_stor_loc> @<String> ? ;
+          <0000758> @<String> ? ;
+          <0000764> @<String> ? ;
+          <0000775> @<Float> ? ;
+          <0000828> @<String> ? ;
+          <0000859> @<String> ? ;
+          <0001183> @<String> ;
+          <0001154> @<String> ;
+          <0000998> @<String> ;
+          <0001229> @<String> ;
+          <0001228> @<String> ;
+          <0001184> @<String> ;
+          <0001179> @<String> ;
+          <0001213> @<String> ;
+          <0001131> @<String> ;
+          <0001252> @<String> ? ;
+          <0001137> @<String> ? ;
+          <0001138> @<String> ? ;
+          <0001231> @<String> ? ;
+          <0001232> @<String> ? ;
+          <0001225> @<String> ? ;
+          <0001224> @<String> ? ;
+          <0001147> @<String> ? ;
+          <0001253> @<String> ? ;
+          <0001254> @<String> ? ;
+          <0001255> @<String> ? ;
+          <0001256> @<String> ? ;
+          <0001257> @<String> ? ;
+          <0001258> @<String> ? ;
+          <0001259> @<String> ? ;
+          <0001177> @<String> ? ;
+          <0001119> @<String> ? ;
+          <0001216> @<String> ? ;
+          <0001173> @<String> ? ;
+          <0001194> @<String> ? ;
+          <0001181> @<String> ? ;
+          <0001117> @<String> ? ;
+          <0001118> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0001153> @<String> ? ;
+          <0001151> @<String> ? ;
+          <0001227> @<String> ? ;
+          <0001226> @<String> ? ;
+          <0001230> @<String> ? ;
+          <0001236> @<String> ? ;
+          <0001223> @<String> ? ;
+          <0001145> @<String> ? ;
+          <0001155> @<String> ? ;
+          <0001156> @<String> ? ;
+          <0001238> @<String> ? ;
+          <0001237> @<String> ? ;
+          <0001239> @<String> ? ;
+          <0001240> @<String> ? ;
+          <0001139> @<String> ? ;
+          <0001203> @<String> ? ;
+          <0001204> @<String> ? ;
+          <0001207> @<String> ? ;
+          <0001212> @<String> ? ;
+          <0001200> @<String> ? ;
+          <0001214> @<String> ? ;
+          <0001149> @<String> ? ;
+          <0001205> @<String> ? ;
+          <0001234> @<String> ? ;
+          <0001215> @<String> ? ;
+          <0001199> @<String> ? ;
+          <0001201> @<String> ? ;
+          <0001136> @<String> ? ;
+          <9999999> @<String> ? ;
+          <0001206> @<String> ? ;
+          <0001135> @<String> ? ;
+          <0001202> @<String> ? ;
+          <0001140> @<String> ? ;
+          <0001132> @<String> ? ;
+          <0001208> @<String> ? ;
+          <0001134> @<String> ? ;
+          <0001210> @<String> ? ;
+          <0001211> @<String> ? ;
+          <0001178> @<String> ? ;
+          <0001152> @<String> ? ;
+          <0001144> @<String> ? ;
+          <0001209> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016021> ] ?
+    )
+}
+
+<FoodHumanFoods> CLOSED {
+    (  $<FoodHumanFoods_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000009> @<String> ;
+          <0000010> @<String> ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000050> @<String> ;
+          <0000001> @<String> ? ;
+          <0000002> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0001335> @<String> ? ;
+          <samp_stor_temp> @<String> ? ;
+          <samp_stor_dur> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000325> @<String> ? ;
+          <0000113> @<String> ? ;
+          <samp_stor_loc> @<String> ? ;
+          <0000859> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0001183> @<String> ;
+          <0001184> @<String> ;
+          <0001179> @<String> ;
+          <0001185> @<String> ? ;
+          <0001186> @<String> ? ;
+          <0001187> @<String> ? ;
+          <0001188> @<String> ? ;
+          <0001189> @<Float> ? ;
+          <0001190> @<String> ? ;
+          <0001191> @<String> ? ;
+          <0001192> @<String> ? ;
+          <0001193> @<String> ? ;
+          <0001194> @<String> ? ;
+          <0001195> @<String> ? ;
+          <0001196> @<String> ? ;
+          <0001197> @<String> ? ;
+          <0001198> @<String> ? ;
+          <0001181> @<String> ? ;
+          <0001117> @<String> ? ;
+          <0001118> @<String> ? ;
+          <0001119> @<String> ? ;
+          <0001199> @<String> ? ;
+          <0001177> @<String> ? ;
+          <0001200> @<String> ? ;
+          <0001201> @<String> ? ;
+          <0001131> @<String> ? ;
+          <0001132> @<String> ? ;
+          <0001202> @<String> ? ;
+          <0001203> @<String> ? ;
+          <0001205> @<String> ? ;
+          <0001206> @<String> ? ;
+          <0001207> @<String> ? ;
+          <0001208> @<String> ? ;
+          <0001209> @<String> ? ;
+          <0001134> @<String> ? ;
+          <0001135> @<String> ? ;
+          <0001210> @<String> ? ;
+          <0001211> @<String> ? ;
+          <0001212> @<String> ? ;
+          <0001213> @<String> ? ;
+          <0001178> @<String> ? ;
+          <0001139> @<String> ? ;
+          <0001214> @<String> ? ;
+          <0001137> @<String> ? ;
+          <0001138> @<String> ? ;
+          <0001140> @<String> ? ;
+          <0001215> @<String> ? ;
+          <0001144> @<String> ? ;
+          <0001145> @<String> ? ;
+          <0001147> @<String> ? ;
+          <0001216> @<String> ? ;
+          <0001217> @<String> ? ;
+          <0001218> @<String> ? ;
+          <0001219> @<String> ? ;
+          <0001220> @<String> ? ;
+          <0001221> @<String> ? ;
+          <0001222> @<String> ? ;
+          <0001223> @<String> ? ;
+          <0001224> @<String> ? ;
+          <0001149> @<String> ? ;
+          <0001152> @<String> ? ;
+          <sample_collec_method> @<String> ? ;
+          <0001153> @<String> ? ;
+          <0001226> @<String> ? ;
+          <0001227> @<String> ? ;
+          <0001154> @<String> ? ;
+          <0001228> @<String> ? ;
+          <0001229> @<String> ? ;
+          <0001230> @<String> ? ;
+          <0001231> @<String> ? ;
+          <0001232> @<String> ? ;
+          <0001151> @<String> ? ;
+          <0001155> @<String> ? ;
+          <0001156> @<String> ? ;
+          <0001157> @<String> ? ;
+          <0001235> @<String> ? ;
+          <0001171> @<String> ? ;
+          <0001169> @<String> ? ;
+          <0001172> @<String> ? ;
+          <0001167> @<String> ? ;
+          <0001168> @<String> ? ;
+          <0001170> @<String> ? ;
+          <0001236> @<String> ? ;
+          <0001237> @<String> ? ;
+          <0001238> @<String> ? ;
+          <0001239> @<String> ? ;
+          <0001240> @<String> ? ;
+          <0001173> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016022> ] ?
+    )
+}
+
+<HostAssociated> CLOSED {
+    (  $<HostAssociated_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000094> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000247> @<String> ? ;
+          <0000858> @<String> ? ;
+          <0000859> @<String> ? ;
+          <0000248> @<String> ? ;
+          <0000860> @<String> ? ;
+          <0000249> @<String> ? ;
+          <0000250> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <0000251> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000751> @<String> ? ;
+          <0000866> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000256> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <0000871> @<String> ? ;
+          <0000252> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0001318> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000257> @<String> ? ;
+          <0000258> @<String> ? ;
+          <0000259> @<String> ? ;
+          <0000260> @<String> ? ;
+          <0000261> @<String> ? ;
+          <0000875> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016002> ] ?
+    )
+}
+
+<HumanAssociated> CLOSED {
+    (  $<HumanAssociated_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000884> @<Integer> ? ;
+          <0000751> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000262> @<Boolean> ? ;
+          <0000265> @<String> ? ;
+          <0000894> @<String> ? ;
+          <0000317> @<String> ? ;
+          <0000266> @<String> ? ;
+          <0000295> @<String> ? ;
+          <0000895> @<String> ? ;
+          <0000896> @<String> ? ;
+          <0000267> @<String> ? ;
+          <0000268> @<String> ? ;
+          <0000326> @<Boolean> ? ;
+          <0000897> @<Boolean> ? ;
+          <0000898> @<String> ? ;
+          <0000269> @<String> ? ;
+          <nose_throat_disord> @<String> ? ;
+          <0000271> @<String> ? ;
+          <0000333> @<String> ? ;
+          <0000272> @<String> ? ;
+          <0000273> @<String> ? ;
+          <0000275> @<String> ? ;
+          <0000276> @<String> ? ;
+          <0000277> @<String> ? ;
+          <0000278> @<String> ? ;
+          <0000899> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016003> ] ?
+    )
+}
+
+<HumanGut> CLOSED {
+    (  $<HumanGut_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000280> @<String> ? ;
+          <0000282> @<String> ? ;
+          <0000905> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000884> @<Integer> ? ;
+          <0000751> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000317> @<String> ? ;
+          <0000895> @<String> ? ;
+          <0000896> @<String> ? ;
+          <0000897> @<Boolean> ? ;
+          <0000333> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000116> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016004> ] ?
+    )
+}
+
+<HumanOral> CLOSED {
+    (  $<HumanOral_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <nose_throat_disord> @<String> ? ;
+          <0000924> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000884> @<Integer> ? ;
+          <0000751> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000317> @<String> ? ;
+          <0000895> @<String> ? ;
+          <0000896> @<String> ? ;
+          <0000897> @<Boolean> ? ;
+          <0000333> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016005> ] ?
+    )
+}
+
+<HumanSkin> CLOSED {
+    (  $<HumanSkin_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000284> @<String> ? ;
+          <0000943> @<String> ? ;
+          <0000944> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000884> @<Integer> ? ;
+          <0000751> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000317> @<String> ? ;
+          <0000895> @<String> ? ;
+          <0000896> @<String> ? ;
+          <0000897> @<Boolean> ? ;
+          <0000333> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016006> ] ?
+    )
+}
+
+<HumanVaginal> CLOSED {
+    (  $<HumanVaginal_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000965> @<String> ? ;
+          <0000285> @<String> ? ;
+          <0000966> @<String> ? ;
+          <0000967> @<String> ? ;
+          <0000286> @<String> ? ;
+          <0000968> @<String> ? ;
+          <0000969> @<String> ? ;
+          <0000287> @<Boolean> ? ;
+          <0000288> @<String> ? ;
+          <0000289> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0000031> @<String> ? ;
+          <0000884> @<Integer> ? ;
+          <0000751> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000869> @<String> ? ;
+          <0000870> @<String> ? ;
+          <host_family_relation> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000274> @<String> ? ;
+          <0000317> @<String> ? ;
+          <0000895> @<String> ? ;
+          <0000896> @<String> ? ;
+          <0000897> @<Boolean> ? ;
+          <0000333> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000109> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000116> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016007> ] ?
+    )
+}
+
+<HydrocarbonResourcesCores> CLOSED {
+    (  $<HydrocarbonResourcesCores_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000988> @<String> ;
+          <0000989> @<String> ;
+          <0000290> @<String> ;
+          <0000291> @<String> ? ;
+          <0000303> @<String> ? ;
+          <0000393> @<String> ;
+          <0000394> @<String> ? ;
+          <0000395> @<String> ? ;
+          <0000397> @<String> ? ;
+          <0000404> @<String> ? ;
+          <0000211> @<String> ? ;
+          <0000990> @<String> ? ;
+          <0000992> @<String> ? ;
+          <0000993> @<String> ? ;
+          <0000405> @<String> ? ;
+          <0000406> @<String> ? ;
+          <0000407> @<String> ;
+          <0000408> @<String> ;
+          <0000994> @<String> ? ;
+          <0000995> @<String> ? ;
+          <0000996> @<String> ? ;
+          <0000997> @<String> ? ;
+          <0000296> @<String> ? ;
+          <0000297> @<String> ? ;
+          <0000998> @<String> ;
+          <0000999> @<String> ? ;
+          <0000113> @<String> ;
+          <0000412> @<String> ? ;
+          <0000409> @<String> ? ;
+          <0000413> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000410> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000099> @<String> ? ;
+          <0001001> @<Float> ? ;
+          <0000183> @<String> ? ;
+          <0000421> @<String> ? ;
+          <0000298> @<String> ? ;
+          <0000423> @<String> ? ;
+          <0000424> @<String> ? ;
+          <0000419> @<String> ? ;
+          <0000425> @<String> ? ;
+          <0000426> @<String> ? ;
+          <0000427> @<String> ? ;
+          <tot_nitro> @<String> ? ;
+          <0000139> @<String> ? ;
+          <0000428> @<String> ? ;
+          <0000429> @<String> ? ;
+          <0000430> @<String> ? ;
+          <0000431> @<String> ? ;
+          <0000432> @<String> ? ;
+          <0000105> @<String> ? ;
+          <0000433> @<String> ? ;
+          <0000434> @<String> ? ;
+          <0000106> @<String> ? ;
+          <0000117> @<String> ? ;
+          <0000150> @<String> ? ;
+          <0000435> @<String> ? ;
+          <0000436> @<String> ? ;
+          <0000438> @<String> ? ;
+          <0000152> @<String> ? ;
+          <0000153> @<String> ? ;
+          <0000154> @<String> ? ;
+          <0000155> @<String> ? ;
+          <0000156> @<String> ? ;
+          <0000157> @<String> ;
+          <0000120> @<String> ? ;
+          <0000126> @<String> ? ;
+          <0000127> @<String> ? ;
+          <0000131> @<String> ? ;
+          <0000133> @<String> ? ;
+          <0000134> @<String> ? ;
+          <0000135> @<String> ? ;
+          <0000752> @<String> ? ;
+          <0000300> @<String> ?
+       ) ;
+       rdf:type [ <0016015> ] ?
+    )
+}
+
+<HydrocarbonResourcesFluidsSwabs> CLOSED {
+    (  $<HydrocarbonResourcesFluidsSwabs_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000988> @<String> ;
+          <0000989> @<String> ;
+          <0000290> @<String> ;
+          <0000291> @<String> ? ;
+          <0000303> @<String> ? ;
+          <0000393> @<String> ? ;
+          <0000394> @<String> ? ;
+          <0000395> @<String> ? ;
+          <0000397> @<String> ? ;
+          <0000990> @<String> ? ;
+          <0000992> @<String> ? ;
+          <0000993> @<String> ? ;
+          <0000406> @<String> ? ;
+          <0000407> @<String> ? ;
+          <0000408> @<String> ? ;
+          <0001008> @<String> ? ;
+          <0000452> @<String> ? ;
+          <0000453> @<String> ? ;
+          <0000454> @<String> ;
+          <0000455> @<String> ;
+          <0001009> @<String> ;
+          <0001010> @<String> ? ;
+          <0001011> @<String> ? ;
+          <0000456> @<String> ? ;
+          <0001012> @<String> ? ;
+          <0000457> @<String> ? ;
+          <0000136> @<String> ? ;
+          <0000296> @<String> ? ;
+          <0000297> @<String> ? ;
+          <0000998> @<String> ;
+          <0000999> @<String> ? ;
+          <0001015> @<String> ;
+          <0000113> @<String> ;
+          <0000412> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000463> @<String> ? ;
+          <0000410> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000099> @<String> ? ;
+          <0001001> @<Float> ? ;
+          <0000183> @<String> ? ;
+          <0000421> @<String> ? ;
+          <0000298> @<String> ? ;
+          <0000423> @<String> ;
+          <0000424> @<String> ;
+          <0000419> @<String> ? ;
+          <0000425> @<String> ;
+          <0000426> @<String> ? ;
+          <0000427> @<String> ? ;
+          <tot_nitro> @<String> ? ;
+          <0000139> @<String> ? ;
+          <0000428> @<String> ? ;
+          <0000429> @<String> ? ;
+          <0000430> @<String> ? ;
+          <0000431> @<String> ? ;
+          <0000432> @<String> ? ;
+          <0000105> @<String> ? ;
+          <0000433> @<String> ? ;
+          <0000434> @<String> ? ;
+          <0000106> @<String> ? ;
+          <0000117> @<String> ? ;
+          <0000150> @<String> ? ;
+          <0000435> @<String> ? ;
+          <0000436> @<String> ? ;
+          <0000438> @<String> ? ;
+          <0000152> @<String> ? ;
+          <0000153> @<String> ? ;
+          <0000154> @<String> ? ;
+          <0000155> @<String> ? ;
+          <0000156> @<String> ? ;
+          <0000157> @<String> ;
+          <0000120> @<String> ? ;
+          <0000126> @<String> ? ;
+          <0000127> @<String> ? ;
+          <0000131> @<String> ? ;
+          <0000133> @<String> ? ;
+          <0000134> @<String> ? ;
+          <0000135> @<String> ? ;
+          <0000752> @<String> ? ;
+          <0000300> @<String> ?
+       ) ;
+       rdf:type [ <0016016> ] ?
+    )
+}
+
+<MicrobialMatBiofilm> CLOSED {
+    (  $<MicrobialMatBiofilm_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000421> @<String> ? ;
+          <0000490> @<String> ? ;
+          <0000172> @<String> ? ;
+          <0000427> @<String> ? ;
+          <0000173> @<String> ? ;
+          <0000174> @<String> ? ;
+          <0000175> @<String> ? ;
+          <0000176> @<String> ? ;
+          <0000432> @<String> ? ;
+          <0000310> @<Float> ? ;
+          <0000751> @<String> ? ;
+          <0000429> @<String> ? ;
+          <0000177> @<String> ? ;
+          <0000178> @<String> ? ;
+          <0000436> @<String> ? ;
+          <0000179> @<String> ? ;
+          <0000434> @<String> ? ;
+          <0000433> @<String> ? ;
+          <0000162> @<String> ? ;
+          <0000119> @<String> ? ;
+          <0000137> @<String> ? ;
+          <0000431> @<String> ? ;
+          <0000498> @<String> ? ;
+          <0000502> @<String> ? ;
+          <0000101> @<String> ? ;
+          <0000752> @<String> ? ;
+          <0000503> @<String> ? ;
+          <0000425> @<String> ? ;
+          <0000426> @<String> ? ;
+          <0000504> @<String> ? ;
+          <0000508> @<String> ? ;
+          <0000204> @<String> ? ;
+          <0000205> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0001001> @<Float> ? ;
+          <0000515> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000516> @<String> ? ;
+          <0000180> @<String> ? ;
+          <0000505> @<String> ? ;
+          <0000181> @<String> ? ;
+          <0000430> @<String> ? ;
+          <0000412> @<String> ? ;
+          <0000182> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000184> @<String> ? ;
+          <0000428> @<String> ? ;
+          <0000423> @<String> ? ;
+          <0000424> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000525> @<String> ? ;
+          <tot_nitro_content> @<String> ? ;
+          <0000533> @<String> ? ;
+          <0000191> @<String> ? ;
+          <0000185> @<String> ?
+       ) ;
+       rdf:type [ <0016008> ] ?
+    )
+}
+
+<MigsBa> {
+    (  $<MigsBa_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000025> @<String> ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010003> ] ?
+    )
+}
+
+<MigsBaPlantAssociated> CLOSED {
+    (  $<MigsBaPlantAssociated_tes> (  &<PlantAssociated_tes> ;
+          rdf:type [ <0016010> ] ? ;
+          &<MigsBa_tes> ;
+          rdf:type [ <0010003> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010003_0016010> ] ?
+    )
+}
+
+<MigsBaSediment> CLOSED {
+    (  $<MigsBaSediment_tes> (  &<Sediment_tes> ;
+          rdf:type [ <0016011> ] ? ;
+          &<MigsBa_tes> ;
+          rdf:type [ <0010003> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010003_0016011> ] ?
+    )
+}
+
+<MigsBaSoil> CLOSED {
+    (  $<MigsBaSoil_tes> (  &<Soil_tes> ;
+          rdf:type [ <0016012> ] ? ;
+          &<MigsBa_tes> ;
+          rdf:type [ <0010003> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010003_0016012> ] ?
+    )
+}
+
+<MigsBaWater> CLOSED {
+    (  $<MigsBaWater_tes> (  &<Water_tes> ;
+          rdf:type [ <0016014> ] ? ;
+          &<MigsBa_tes> ;
+          rdf:type [ <0010003> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010003_0016012> ] ?
+    )
+}
+
+<MigsEu> {
+    (  $<MigsEu_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ? ;
+          <0000060> @<Integer> ;
+          <0000027> @<String> ? ;
+          <0000021> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000033> @<String> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010002> ] ?
+    )
+}
+
+<MigsOrg> {
+    (  $<MigsOrg_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ?
+       ) ;
+       rdf:type [ <0010006> ] ?
+    )
+}
+
+<MigsPl> {
+    (  $<MigsPl_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000033> @<String> ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ?
+       ) ;
+       rdf:type [ <0010004> ] ?
+    )
+}
+
+<MigsVi> {
+    (  $<MigsVi_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000034> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000022> @<Integer> ? ;
+          <0000060> @<Integer> ? ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000033> @<String> ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000029> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000036> @<String> ?
+       ) ;
+       rdf:type [ <0010005> ] ?
+    )
+}
+
+<Mimag> {
+    (  $<Mimag_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000077> @<String> ;
+          <0000078> @<String> ;
+          <0000011> @<String> ;
+          <0000071> @<String> ? ;
+          <0000069> @<String> ;
+          <0000070> @<String> ;
+          <0000072> @<String> ;
+          <0000005> @<String> ? ;
+          <0000073> @<String> ? ;
+          <0000074> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000080> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000079> @<Boolean> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ;
+          <0000113> @<String> ? ;
+          <0000068> @<String> ? ;
+          <0000067> @<Integer> ?
+       ) ;
+       rdf:type [ <0010011> ] ?
+    )
+}
+
+<MimarksC> {
+    (  $<MimarksC_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000094> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000052> @<String> ? ;
+          <0000011> @<String> ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000023> @<Integer> ? ;
+          <0000010> @<String> ;
+          <0000003> @<String> ;
+          <0000009> @<String> ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000049> @<String> ? ;
+          <0000046> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000051> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000020> @<String> ? ;
+          <0000044> @<String> ;
+          <0000045> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000032> @<TROPHICLEVELENUM> ?
+       ) ;
+       rdf:type [ <0010009> ] ?
+    )
+}
+
+<MimarksS> {
+    (  $<MimarksS_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000052> @<String> ? ;
+          <0000011> @<String> ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000049> @<String> ? ;
+          <0000046> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000051> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000044> @<String> ;
+          <0000045> @<String> ? ;
+          <0000113> @<String> ?
+       ) ;
+       rdf:type [ <0010008> ] ?
+    )
+}
+
+<Mims> {
+    (  $<Mims_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000113> @<String> ?
+       ) ;
+       rdf:type [ <0010007> ] ?
+    )
+}
+
+<MimsPlantAssociated> CLOSED {
+    (  $<MimsPlantAssociated_tes> (  &<PlantAssociated_tes> ;
+          rdf:type [ <0016010> ] ? ;
+          &<Mims_tes> ;
+          rdf:type [ <0010007> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ?
+       ) ;
+       rdf:type [ <0010007_0016010> ] ?
+    )
+}
+
+<MimsSediment> CLOSED {
+    (  $<MimsSediment_tes> (  &<Sediment_tes> ;
+          rdf:type [ <0016011> ] ? ;
+          &<Mims_tes> ;
+          rdf:type [ <0010007> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ?
+       ) ;
+       rdf:type [ <0010007_0016011> ] ?
+    )
+}
+
+<MimsSoil> CLOSED {
+    (  $<MimsSoil_tes> (  &<Soil_tes> ;
+          rdf:type [ <0016012> ] ? ;
+          &<Mims_tes> ;
+          rdf:type [ <0010007> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ?
+       ) ;
+       rdf:type [ <0010007_0016012> ] ?
+    )
+}
+
+<MimsWater> CLOSED {
+    (  $<MimsWater_tes> (  &<Water_tes> ;
+          rdf:type [ <0016014> ] ? ;
+          &<Mims_tes> ;
+          rdf:type [ <0010007> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ? ;
+          <0000058> @<String> ? ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ?
+       ) ;
+       rdf:type [ <0010007_0016012> ] ?
+    )
+}
+
+<Misag> {
+    (  $<Misag_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000011> @<String> ;
+          <0000071> @<String> ? ;
+          <0000069> @<String> ;
+          <0000070> @<String> ;
+          <0000072> @<String> ;
+          <0000005> @<String> ? ;
+          <0000073> @<String> ? ;
+          <0000074> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ? ;
+          <0001322> @<String> ? ;
+          <0000092> @<String> ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <0000015> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000076> @<String> ;
+          <0000054> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000075> @<String> ;
+          <0000026> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ;
+          <0000113> @<String> ? ;
+          <0000068> @<String> ? ;
+          <0000067> @<Integer> ? ;
+          <0000055> @<String> ;
+          <0000006> @<String> ?
+       ) ;
+       rdf:type [ <0010010> ] ?
+    )
+}
+
+<MiscellaneousNaturalOrArtificialEnvironment> CLOSED {
+    (  $<MiscellaneousNaturalOrArtificialEnvironment_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000094> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000421> @<String> ? ;
+          <0000427> @<String> ? ;
+          <0000174> @<String> ? ;
+          <0000176> @<String> ? ;
+          <0000432> @<String> ? ;
+          <0000751> @<String> ? ;
+          <0000429> @<String> ? ;
+          <0000177> @<String> ? ;
+          <0000435> @<String> ? ;
+          <0000178> @<String> ? ;
+          <0000436> @<String> ? ;
+          <0000179> @<String> ? ;
+          <0000434> @<String> ? ;
+          <0000162> @<String> ? ;
+          <0000119> @<String> ? ;
+          <0000752> @<String> ? ;
+          <0000425> @<String> ? ;
+          <0000426> @<String> ? ;
+          <0000504> @<String> ? ;
+          <0000508> @<String> ? ;
+          <0000204> @<String> ? ;
+          <0000205> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0001001> @<Float> ? ;
+          <0000754> @<String> ? ;
+          <0000505> @<String> ? ;
+          <0000181> @<String> ? ;
+          <0000430> @<String> ? ;
+          <0000412> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000184> @<String> ? ;
+          <0000428> @<String> ? ;
+          <0000423> @<String> ? ;
+          <0000424> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000203> @<String> ?
+       ) ;
+       rdf:type [ <0016009> ] ?
+    )
+}
+
+<Miuvig> {
+    (  $<Miuvig_tes> (  &<Checklist_tes> ;
+          rdf:type [ <Checklist> ] ? ;
+          <0000048> @<String> ? ;
+          <0000094> @<String> ? ;
+          <0000059> @<String> ? ;
+          <0000057> @<String> ? ;
+          <0000056> @<ASSEMBLYQUALENUM> ;
+          <0000058> @<String> ;
+          <0000091> @<String> ? ;
+          <0000077> @<String> ? ;
+          <0000078> @<String> ? ;
+          <0000028> @<BIOTICRELATIONSHIPENUM> ? ;
+          <0000011> @<String> ;
+          <0000071> @<String> ? ;
+          <0000069> @<String> ? ;
+          <0000070> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000084> @<String> ;
+          <0000093> @<String> ? ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000024> @<String> ? ;
+          <0000008> @<String> ? ;
+          <0000061> @<String> ? ;
+          <0000010> @<String> ;
+          <0000031> @<String> ? ;
+          <0000088> @<String> ? ;
+          <0000089> @<String> ? ;
+          <0000030> @<String> ? ;
+          <0000009> @<String> ;
+          <0000041> @<LIBLAYOUTENUM> ? ;
+          <0000040> @<Integer> ? ;
+          <0000043> @<String> ? ;
+          <0000039> @<Integer> ? ;
+          <0000042> @<String> ? ;
+          <0000080> @<String> ? ;
+          <0000047> @<String> ? ;
+          <0001321> @<NEGCONTTYPEENUM> ? ;
+          <0000038> @<String> ? ;
+          <0000037> @<String> ? ;
+          <0000060> @<Integer> ;
+          <0000085> @<String> ? ;
+          <0000087> @<String> ? ;
+          <0000086> @<String> ? ;
+          <0000027> @<String> ? ;
+          <0001322> @<String> ? ;
+          <0000083> @<String> ;
+          <0000082> @<String> ;
+          <0000092> @<String> ;
+          <0000079> @<Boolean> ? ;
+          <0000025> @<String> ? ;
+          <0000062> @<String> ? ;
+          <samp_collec_device> @<String> ? ;
+          <samp_collec_method> @<String> ? ;
+          <0000016> @<String> ? ;
+          <samp_name> @<String> ;
+          <0000001> @<String> ? ;
+          <0001320> @<String> ;
+          <0000111> @<String> ? ;
+          <0000050> @<String> ;
+          <0000063> @<String> ? ;
+          <0000076> @<String> ? ;
+          <0000054> @<String> ? ;
+          <0000017> @<String> ? ;
+          <0000090> @<String> ? ;
+          <0000075> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0000035> @<String> ;
+          <0000029> @<String> ? ;
+          <0000064> @<String> ? ;
+          <0000053> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000068> @<String> ? ;
+          <0000067> @<Integer> ? ;
+          <0000081> @<String> ;
+          <0000036> @<String> ;
+          <0000055> @<String> ? ;
+          <0000006> @<String> ?
+       ) ;
+       rdf:type [ <0010012> ] ?
+    )
+}
+
+<PlantAssociated>  (
+    CLOSED {
+       (  $<PlantAssociated_tes> (  &<EnvironmentalPackage_tes> ;
+             rdf:type [ <EnvironmentalPackage> ] ? ;
+             <samp_name> @<String> ;
+             <0000092> @<String> ;
+             <0000018> @<String> ? ;
+             <0000093> @<String> ? ;
+             <0000551> @<String> ? ;
+             <0000247> @<String> ? ;
+             <0000553> @<String> ? ;
+             <0000858> @<String> ? ;
+             <0001038> @<String> ? ;
+             <0000751> @<String> ? ;
+             <0000555> @<String> ? ;
+             <0001040> @<String> ? ;
+             <0001041> @<String> ? ;
+             <0000556> @<String> ? ;
+             <0000557> @<String> ? ;
+             <0000558> @<String> ? ;
+             <0000859> @<String> ? ;
+             <0000559> @<String> ? ;
+             <0001043> @<String> ? ;
+             <0001044> @<String> ? ;
+             <0000560> @<String> ? ;
+             <0000561> @<String> ? ;
+             <0000255> @<String> ? ;
+             <0000248> @<String> ? ;
+             <0000031> @<String> ? ;
+             <0000257> @<String> ? ;
+             <0000365> @<String> ? ;
+             <0000264> @<String> ? ;
+             <0001318> @<String> ? ;
+             <0000256> @<String> ? ;
+             <0000251> @<String> ? ;
+             <0000874> @<String> ? ;
+             <0000250> @<String> ? ;
+             <0000263> @<String> ? ;
+             <0000567> @<String> ? ;
+             <0000568> @<String> ? ;
+             <0000569> @<String> ? ;
+             <0001052> @<String> ? ;
+             <0000570> @<String> ? ;
+             <0000752> @<String> ? ;
+             <non_min_nutr_regm> @<String> ? ;
+             <0000103> @<String> ? ;
+             <0000753> @<OXYSTATSAMPENUM> ? ;
+             <0001056> @<String> ? ;
+             <0000754> @<String> ? ;
+             <0000573> @<String> ? ;
+             <0001057> @<String> ? ;
+             <0001058> @<String> ? ;
+             <0001059> @<String> ? ;
+             <0001060> @<String> ? ;
+             <0000575> @<String> ? ;
+             <0000576> @<String> ? ;
+             <0001061> @<String> ? ;
+             <0000577> @<String> ? ;
+             <0000578> @<String> ? ;
+             <0000579> @<String> ? ;
+             <0000580> @<String> ? ;
+             <0001062> @<Float> ? ;
+             <0000581> @<String> ? ;
+             <0001063> @<String> ? ;
+             <0000582> @<String> ? ;
+             <0000860> @<String> ? ;
+             <0000249> @<String> ? ;
+             <0000183> @<String> ? ;
+             <0000116> @<String> ? ;
+             <0000755> @<String> ? ;
+             <0000110> @<String> ? ;
+             <0000111> @<String> ? ;
+             <0001068> @<String> ? ;
+             <0001069> @<String> ? ;
+             <0000113> @<String> ? ;
+             <0001070> @<String> ? ;
+             <0000590> @<String> ? ;
+             <0000591> @<String> ? ;
+             <host_symbiont> @<String> ?
+          ) ;
+          rdf:type [ <0016010> ] ?
+       )
+    } OR @<MigsBaPlantAssociated> OR @<MimsPlantAssociated>
+)
+
+<Sediment>  (
+    CLOSED {
+       (  $<Sediment_tes> (  &<EnvironmentalPackage_tes> ;
+             rdf:type [ <EnvironmentalPackage> ] ? ;
+             <samp_name> @<String> ;
+             <0000092> @<String> ;
+             <0000018> @<String> ;
+             <0000093> @<String> ? ;
+             <0000421> @<String> ? ;
+             <0000490> @<String> ? ;
+             <0000172> @<String> ? ;
+             <0000427> @<String> ? ;
+             <0000173> @<String> ? ;
+             <0000174> @<String> ? ;
+             <0000175> @<String> ? ;
+             <0000176> @<String> ? ;
+             <0000432> @<String> ? ;
+             <0000310> @<Float> ? ;
+             <0000751> @<String> ? ;
+             <0000429> @<String> ? ;
+             <0000177> @<String> ? ;
+             <0000435> @<String> ? ;
+             <0000178> @<String> ? ;
+             <0000436> @<String> ? ;
+             <0000179> @<String> ? ;
+             <0000434> @<String> ? ;
+             <0000433> @<String> ? ;
+             <0000162> @<String> ? ;
+             <0000119> @<String> ? ;
+             <0000137> @<String> ? ;
+             <0000431> @<String> ? ;
+             <0000498> @<String> ? ;
+             <0000502> @<String> ? ;
+             <0000101> @<String> ? ;
+             <0000752> @<String> ? ;
+             <0000503> @<String> ? ;
+             <0000425> @<String> ? ;
+             <0000426> @<String> ? ;
+             <0000504> @<String> ? ;
+             <0000508> @<String> ? ;
+             <0000204> @<String> ? ;
+             <0000205> @<String> ? ;
+             <0000103> @<String> ? ;
+             <0000753> @<OXYSTATSAMPENUM> ? ;
+             <0001001> @<Float> ? ;
+             <0000206> @<String> ? ;
+             <0000515> @<String> ? ;
+             <0000754> @<String> ? ;
+             <0000516> @<String> ? ;
+             <0000180> @<String> ? ;
+             <0000505> @<String> ? ;
+             <0000181> @<String> ? ;
+             <0000211> @<String> ? ;
+             <0000430> @<String> ? ;
+             <0000412> @<String> ? ;
+             <0000182> @<String> ? ;
+             <0000183> @<String> ? ;
+             <0000116> @<String> ? ;
+             <0000755> @<String> ? ;
+             <0000110> @<String> ? ;
+             <0000111> @<String> ? ;
+             <0001078> @<String> ? ;
+             <0000184> @<String> ? ;
+             <0000428> @<String> ? ;
+             <0000423> @<String> ? ;
+             <0000424> @<String> ? ;
+             <0000113> @<String> ? ;
+             <0000750> @<TIDALSTAGEENUM> ? ;
+             <0000525> @<String> ? ;
+             <0000634> @<String> ? ;
+             <tot_nitro_content> @<String> ? ;
+             <0000533> @<String> ? ;
+             <0000191> @<String> ? ;
+             <0000185> @<String> ?
+          ) ;
+          rdf:type [ <0016011> ] ?
+       )
+    } OR @<MigsBaSediment> OR @<MimsSediment>
+)
+
+<Soil>  (
+    CLOSED {
+       (  $<Soil_tes> (  &<EnvironmentalPackage_tes> ;
+             rdf:type [ <EnvironmentalPackage> ] ? ;
+             <samp_name> @<String> ;
+             <0000092> @<String> ;
+             <0000018> @<String> ;
+             <0000093> @<String> ;
+             <0001080> @<CURLANDUSEENUM> ? ;
+             <0000312> @<String> ? ;
+             <0000314> @<String> ? ;
+             <0000315> @<String> ? ;
+             <prev_land_use_meth> @<String> ? ;
+             <0000318> @<String> ? ;
+             <0000639> @<String> ? ;
+             <0001081> @<TILLAGEENUM> * ;
+             <0001086> @<String> ? ;
+             <0000319> @<String> ? ;
+             <0000320> @<String> ? ;
+             <soil_horizon> @<String> ? ;
+             <0000321> @<String> ? ;
+             <0000322> @<String> ? ;
+             <0000185> @<String> ? ;
+             <0000323> @<String> ? ;
+             <0000111> @<String> ? ;
+             <0000325> @<String> ? ;
+             <0000327> @<String> ? ;
+             <0000328> @<String> ? ;
+             <0000642> @<String> ? ;
+             <0000643> @<String> ? ;
+             <0000644> @<String> ? ;
+             <0000645> @<String> ? ;
+             <0000329> @<String> ? ;
+             <0001083> @<FAOCLASSENUM> ? ;
+             <0000330> @<String> ? ;
+             <0000331> @<String> ? ;
+             <0000205> @<String> ? ;
+             <0000113> @<String> ? ;
+             <0000332> @<String> ? ;
+             <0000334> @<String> ? ;
+             <0000646> @<String> ? ;
+             <0000647> @<String> ? ;
+             <0001084> @<PROFILEPOSITIONENUM> ? ;
+             <0001085> @<DRAINAGECLASSENUM> ? ;
+             <0000335> @<String> ? ;
+             <0000336> @<String> ? ;
+             <0001001> @<Float> ? ;
+             <0001106> @<String> ? ;
+             <0000204> @<String> ? ;
+             <0000533> @<String> ? ;
+             <0000337> @<String> ? ;
+             <tot_nitro_content> @<String> ? ;
+             <0000338> @<String> ? ;
+             <0000650> @<String> ? ;
+             <0000339> @<String> ? ;
+             <0000340> @<String> ? ;
+             <0000341> @<String> ? ;
+             <0000652> @<String> ? ;
+             <0000343> @<String> ? ;
+             <0000607> @<String> ? ;
+             <0000324> @<String> ? ;
+             <0000752> @<String> ?
+          ) ;
+          rdf:type [ <0016012> ] ?
+       )
+    } OR @<MigsBaSoil> OR @<MimsSoil>
+)
+
+<SymbiontAssociated> CLOSED {
+    (  $<SymbiontAssociated_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <0000092> @<String> ;
+          <0000009> @<String> ;
+          <0000010> @<String> ;
+          <0000011> @<String> ;
+          <0000012> @<String> ;
+          <0000013> @<String> ;
+          <0000014> @<String> ;
+          <0000094> @<String> ? ;
+          <0000018> @<String> ? ;
+          <0000093> @<String> ? ;
+          <0000861> @<String> ? ;
+          <0000248> @<String> ? ;
+          <0000250> @<String> ? ;
+          <0000026> @<String> ? ;
+          <0001315> @<String> ;
+          <0001307> @<String> ? ;
+          <0001300> @<String> ;
+          <0000251> @<String> ;
+          <0000255> @<String> ? ;
+          <host_sex> @<String> ? ;
+          <0001312> @<String> ? ;
+          <0001316> @<String> ? ;
+          <0000866> @<String> ? ;
+          <0000867> @<String> ? ;
+          <host_body_product> @<String> ? ;
+          <0000263> @<String> ? ;
+          <0000264> @<String> ? ;
+          <0000256> @<String> ? ;
+          <0000871> @<String> ? ;
+          <0000252> @<String> ? ;
+          <0000872> @<String> ? ;
+          <0000253> @<String> ? ;
+          <0000254> @<String> ? ;
+          <0000365> @<String> ? ;
+          <0000874> @<String> ? ;
+          <0000257> @<String> ? ;
+          <0000260> @<String> ? ;
+          <0000261> @<String> ? ;
+          <0000875> @<String> ? ;
+          <0001305> @<String> ? ;
+          <host_symbiont> @<String> ? ;
+          <0001308> @<String> ? ;
+          <0001303> @<String> ? ;
+          <0001313> @<String> ? ;
+          <0001299> @<String> ? ;
+          <0001310> @<String> ? ;
+          <0001324> @<String> ? ;
+          <0001325> @<String> ? ;
+          <0001326> @<String> ? ;
+          <0001306> @<Integer> ? ;
+          <0001327> @<String> ? ;
+          <0001319> @<String> ? ;
+          <0001328> @<String> ? ;
+          <0001329> @<String> ? ;
+          <0001330> @<String> ? ;
+          <0001331> @<String> ? ;
+          <0001332> @<String> ? ;
+          <0001333> @<String> ? ;
+          <0001334> @<String> ? ;
+          <0000751> @<String> ? ;
+          <0000754> @<String> ? ;
+          <0000109> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0000113> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0001317> @<String> ? ;
+          <0000752> @<String> ?
+       ) ;
+       rdf:type [ <0016023> ]
+    )
+}
+
+<UnknownTerm> CLOSED {
+    (  $<UnknownTerm_tes> rdf:type . * ;
+       rdf:type [ <0016017> ] ?
+    )
+}
+
+<WastewaterSludge> CLOSED {
+    (  $<WastewaterSludge_tes> (  &<EnvironmentalPackage_tes> ;
+          rdf:type [ <EnvironmentalPackage> ] ? ;
+          <samp_name> @<String> ;
+          <0000092> @<String> ;
+          <0000018> @<String> ? ;
+          <0000421> @<String> ? ;
+          <0000653> @<String> ? ;
+          <0000751> @<String> ? ;
+          <0000656> @<String> ? ;
+          <0000657> @<String> ? ;
+          <0000660> @<String> ? ;
+          <0000661> @<String> ? ;
+          <0000662> @<String> ? ;
+          <0000664> @<String> ? ;
+          <0000752> @<String> ? ;
+          <0000425> @<String> ? ;
+          <0000665> @<String> ? ;
+          <0000103> @<String> ? ;
+          <0000753> @<OXYSTATSAMPENUM> ? ;
+          <0001001> @<Float> ? ;
+          <0000754> @<String> ? ;
+          <0000505> @<String> ? ;
+          <0000348> @<String> ? ;
+          <0000349> @<String> ? ;
+          <0000350> @<String> ? ;
+          <0000183> @<String> ? ;
+          <0000116> @<String> ? ;
+          <0000755> @<String> ? ;
+          <0000110> @<String> ? ;
+          <0000111> @<String> ? ;
+          <0000351> @<String> ? ;
+          <0000215> @<String> ? ;
+          <0000669> @<String> ? ;
+          <0000428> @<String> ? ;
+          <0000672> @<String> ? ;
+          <0000673> @<String> ? ;
+          <0000150> @<String> ? ;
+          <0000113> @<String> ? ;
+          <0000352> @<String> ? ;
+          <tot_nitro> @<String> ? ;
+          <0000689> @<String> ? ;
+          <0000353> @<String> ?
+       ) ;
+       rdf:type [ <0016013> ] ?
+    )
+}
+
+<Water>  (
+    CLOSED {
+       (  $<Water_tes> (  &<EnvironmentalPackage_tes> ;
+             rdf:type [ <EnvironmentalPackage> ] ? ;
+             <samp_name> @<String> ;
+             <0000092> @<String> ;
+             <0000018> @<String> ;
+             <0000093> @<String> ? ;
+             <0000421> @<String> ? ;
+             <0000298> @<String> ? ;
+             <0000490> @<String> ? ;
+             <0000172> @<String> ? ;
+             <0000427> @<String> ? ;
+             <0001097> @<String> ? ;
+             <0000173> @<String> ? ;
+             <0000683> @<String> ? ;
+             <0000684> @<String> ? ;
+             <0000174> @<String> ? ;
+             <0000175> @<String> ? ;
+             <0000176> @<String> ? ;
+             <0000432> @<String> ? ;
+             <0000310> @<Float> ? ;
+             <0000751> @<String> ? ;
+             <0000429> @<String> ? ;
+             <0000177> @<String> ? ;
+             <0000692> @<String> ? ;
+             <0000435> @<String> ? ;
+             <0000178> @<String> ? ;
+             <0000436> @<String> ? ;
+             <0000179> @<String> ? ;
+             <0000434> @<String> ? ;
+             <0000698> @<String> ? ;
+             <0000106> @<String> ? ;
+             <0000433> @<String> ? ;
+             <0000162> @<String> ? ;
+             <0000119> @<String> ? ;
+             <0000703> @<String> ? ;
+             <0000704> @<String> ? ;
+             <0000137> @<String> ? ;
+             <0000706> @<String> ? ;
+             <0000431> @<String> ? ;
+             <0000498> @<String> ? ;
+             <0000502> @<String> ? ;
+             <0000752> @<String> ? ;
+             <0000503> @<String> ? ;
+             <0000425> @<String> ? ;
+             <0000426> @<String> ? ;
+             <0000504> @<String> ? ;
+             <0000508> @<String> ? ;
+             <0000204> @<String> ? ;
+             <0000205> @<String> ? ;
+             <0000103> @<String> ? ;
+             <0000753> @<OXYSTATSAMPENUM> ? ;
+             <0001001> @<Float> ? ;
+             <0000515> @<String> ? ;
+             <0000719> @<String> ? ;
+             <0000754> @<String> ? ;
+             <0000516> @<String> ? ;
+             <0000180> @<String> ? ;
+             <0000505> @<String> ? ;
+             <0000181> @<String> ? ;
+             <0000725> @<String> ? ;
+             <0000430> @<String> ? ;
+             <0000412> @<String> ? ;
+             <0000728> @<String> ? ;
+             <0000182> @<String> ? ;
+             <0000183> @<String> ? ;
+             <0000116> @<String> ? ;
+             <0000755> @<String> ? ;
+             <0000110> @<String> ? ;
+             <0000111> @<String> ? ;
+             <0000184> @<String> ? ;
+             <0000735> @<String> ? ;
+             <0000736> @<String> ? ;
+             <0000428> @<String> ? ;
+             <0000738> @<String> ? ;
+             <0000423> @<String> ? ;
+             <0000424> @<String> ? ;
+             <0000741> @<String> ? ;
+             <0000113> @<String> ? ;
+             <0000750> @<TIDALSTAGEENUM> ? ;
+             <0000634> @<String> ? ;
+             <0000744> @<String> ? ;
+             <0000745> @<String> ? ;
+             <tot_nitro> @<String> ? ;
+             <0000747> @<String> ? ;
+             <0000117> @<String> ? ;
+             <0000191> @<String> ? ;
+             <0000203> @<String> ?
+          ) ;
+          rdf:type [ <0016014> ] ?
+       )
+    } OR @<MigsBaWater> OR @<MimsWater>
+)
+
+
