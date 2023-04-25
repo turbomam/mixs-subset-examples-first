@@ -175,6 +175,252 @@ types:
     base: NodeIdentifier
     uri: shex:nonLiteral
     repr: str
+enums:
+  ASSEMBLY_QUAL_ENUM:
+    name: ASSEMBLY_QUAL_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      Finished genome:
+        text: Finished genome
+      Genome fragment(s):
+        text: Genome fragment(s)
+      High-quality draft genome:
+        text: High-quality draft genome
+      Low-quality draft genome:
+        text: Low-quality draft genome
+      Medium-quality draft genome:
+        text: Medium-quality draft genome
+  CUR_LAND_USE_ENUM:
+    name: CUR_LAND_USE_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      badlands:
+        text: badlands
+      cities:
+        text: cities
+      conifers (e.g. pine, spruce, fir, cypress):
+        text: conifers (e.g. pine, spruce, fir, cypress)
+      crop trees (nuts, fruit, christmas trees, nursery trees):
+        text: crop trees (nuts, fruit, christmas trees, nursery trees)
+      farmstead:
+        text: farmstead
+      gravel:
+        text: gravel
+      hardwoods (e.g. oak, hickory, elm, aspen):
+        text: hardwoods (e.g. oak, hickory, elm, aspen)
+      hayland:
+        text: hayland
+      horticultural plants (e.g. tulips):
+        text: horticultural plants (e.g. tulips)
+      industrial areas:
+        text: industrial areas
+      intermixed hardwood and conifers:
+        text: intermixed hardwood and conifers
+      marshlands (grass, sedges, rushes):
+        text: marshlands (grass, sedges, rushes)
+      meadows (grasses, alfalfa, fescue, bromegrass, timothy):
+        text: meadows (grasses, alfalfa, fescue, bromegrass, timothy)
+      mines or quarries:
+        text: mines or quarries
+      mudflats:
+        text: mudflats
+      oil waste areas:
+        text: oil waste areas
+      pastureland (grasslands used for livestock grazing):
+        text: pastureland (grasslands used for livestock grazing)
+      permanent snow or ice:
+        text: permanent snow or ice
+      rainforest (evergreen forest receiving greater than 406 cm annual rainfall):
+        text: rainforest (evergreen forest receiving greater than 406 cm annual rainfall)
+      rangeland:
+        text: rangeland
+      roads or railroads:
+        text: roads or railroads
+      rock:
+        text: rock
+      row crops:
+        text: row crops
+      saline seeps:
+        text: saline seeps
+      salt flats:
+        text: salt flats
+      sand:
+        text: sand
+      shrub crops (blueberries, nursery ornamentals, filberts):
+        text: shrub crops (blueberries, nursery ornamentals, filberts)
+      shrub land (e.g. mesquite, sage-brush, creosote bush, shrub oak, eucalyptus):
+        text: shrub land (e.g. mesquite, sage-brush, creosote bush, shrub oak, eucalyptus)
+      small grains:
+        text: small grains
+      successional shrub land (tree saplings, hazels, sumacs, chokecherry, shrub dogwoods, blackberries):
+        text: successional shrub land (tree saplings, hazels, sumacs, chokecherry,
+          shrub dogwoods, blackberries)
+      swamp (permanent or semi-permanent water body dominated by woody plants):
+        text: swamp (permanent or semi-permanent water body dominated by woody plants)
+      tropical (e.g. mangrove, palms):
+        text: tropical (e.g. mangrove, palms)
+      tundra (mosses, lichens):
+        text: tundra (mosses, lichens)
+      vegetable crops:
+        text: vegetable crops
+      vine crops (grapes):
+        text: vine crops (grapes)
+  DRAINAGE_CLASS_ENUM:
+    name: DRAINAGE_CLASS_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      excessively drained:
+        text: excessively drained
+      moderately well:
+        text: moderately well
+      poorly:
+        text: poorly
+      somewhat poorly:
+        text: somewhat poorly
+      very poorly:
+        text: very poorly
+      well:
+        text: well
+  FAO_CLASS_ENUM:
+    name: FAO_CLASS_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      Acrisols:
+        text: Acrisols
+      Andosols:
+        text: Andosols
+      Arenosols:
+        text: Arenosols
+      Cambisols:
+        text: Cambisols
+      Chernozems:
+        text: Chernozems
+      Ferralsols:
+        text: Ferralsols
+      Fluvisols:
+        text: Fluvisols
+      Gleysols:
+        text: Gleysols
+      Greyzems:
+        text: Greyzems
+      Gypsisols:
+        text: Gypsisols
+      Histosols:
+        text: Histosols
+      Kastanozems:
+        text: Kastanozems
+      Lithosols:
+        text: Lithosols
+      Luvisols:
+        text: Luvisols
+      Nitosols:
+        text: Nitosols
+      Phaeozems:
+        text: Phaeozems
+      Planosols:
+        text: Planosols
+      Podzols:
+        text: Podzols
+      Podzoluvisols:
+        text: Podzoluvisols
+      Rankers:
+        text: Rankers
+      Regosols:
+        text: Regosols
+      Rendzinas:
+        text: Rendzinas
+      Solonchaks:
+        text: Solonchaks
+      Solonetz:
+        text: Solonetz
+      Vertisols:
+        text: Vertisols
+      Yermosols:
+        text: Yermosols
+  LIB_LAYOUT_ENUM:
+    name: LIB_LAYOUT_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      other:
+        text: other
+      paired:
+        text: paired
+      single:
+        text: single
+      vector:
+        text: vector
+  PROFILE_POSITION_ENUM:
+    name: PROFILE_POSITION_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      backslope:
+        text: backslope
+      footslope:
+        text: footslope
+      shoulder:
+        text: shoulder
+      summit:
+        text: summit
+      toeslope:
+        text: toeslope
+  REL_TO_OXYGEN_ENUM:
+    name: REL_TO_OXYGEN_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      aerobe:
+        text: aerobe
+      anaerobe:
+        text: anaerobe
+      facultative:
+        text: facultative
+      microaerophilic:
+        text: microaerophilic
+      microanaerobe:
+        text: microanaerobe
+      obligate aerobe:
+        text: obligate aerobe
+      obligate anaerobe:
+        text: obligate anaerobe
+  SOIL_HORIZON_ENUM:
+    name: SOIL_HORIZON_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      A horizon:
+        text: A horizon
+      B horizon:
+        text: B horizon
+      C horizon:
+        text: C horizon
+      E horizon:
+        text: E horizon
+      O horizon:
+        text: O horizon
+      Permafrost:
+        text: Permafrost
+      R layer:
+        text: R layer
+  TILLAGE_ENUM:
+    name: TILLAGE_ENUM
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    permissible_values:
+      chisel:
+        text: chisel
+      cutting disc:
+        text: cutting disc
+      disc plough:
+        text: disc plough
+      drill:
+        text: drill
+      mouldboard:
+        text: mouldboard
+      ridge till:
+        text: ridge till
+      strip tillage:
+        text: strip tillage
+      tined:
+        text: tined
+      zonal tillage:
+        text: zonal tillage
 slots:
   Food_Product_type:
     name: Food_Product_type
@@ -276,6 +522,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000048
     range: string
+    pattern: '[ACGT]+;[ACGT]+'
+    structured_pattern:
+      syntax: '{dna};{dna}'
   add_recov_method:
     name: add_recov_method
     annotations:
@@ -440,9 +689,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000108
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   air_flow_impede:
     name: air_flow_impede
     annotations:
@@ -547,9 +796,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000324
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   alkalinity:
     name: alkalinity
     annotations:
@@ -1069,9 +1318,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000553
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   api:
     name: api
     annotations:
@@ -1153,9 +1402,9 @@ slots:
     - https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene
     slot_uri: MIXS:0000133
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   asphaltenes_pc:
     name: asphaltenes_pc
     annotations:
@@ -1180,9 +1429,9 @@ slots:
     - https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene
     slot_uri: MIXS:0000135
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   assembly_name:
     name: assembly_name
     annotations:
@@ -1203,6 +1452,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000057
     range: string
+    pattern: '[^s][^\r\n\t]+ [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text} {free_text}'
   assembly_qual:
     name: assembly_qual
     annotations:
@@ -1232,6 +1484,7 @@ slots:
     title: assembly quality
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000056
+    range: ASSEMBLY_QUAL_ENUM
   assembly_quality:
     name: assembly_quality
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -1253,7 +1506,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000058
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   associated resource:
@@ -1314,9 +1567,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001097
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   avg_dew_point:
     name: avg_dew_point
     annotations:
@@ -1714,9 +1967,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000174
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   biotic_regm:
     name: biotic_regm
     annotations:
@@ -2248,9 +2501,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000555
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   chem_oxygen_dem:
     name: chem_oxygen_dem
     annotations:
@@ -2825,6 +3078,7 @@ slots:
     title: current land use
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001080
+    range: CUR_LAND_USE_ENUM
   cur_vegetation:
     name: cur_vegetation
     annotations:
@@ -2857,9 +3111,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000314
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   date_extr_weath:
     name: date_extr_weath
     annotations:
@@ -3552,6 +3806,7 @@ slots:
     title: drainage classification
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001085
+    range: DRAINAGE_CLASS_ENUM
   drawings:
     name: drawings
     annotations:
@@ -3665,9 +3920,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000660
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   encoded_traits:
     name: encoded_traits
     annotations:
@@ -3706,9 +3961,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001177
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   env_broad_scale:
     name: env_broad_scale
     annotations:
@@ -4091,6 +4346,7 @@ slots:
     see_also:
     - http://www.fao.org/nr/land/sols/soil/wrb-soil-maps/reference-groups
     slot_uri: MIXS:0001083
+    range: FAO_CLASS_ENUM
   farm_equip:
     name: farm_equip
     annotations:
@@ -4209,7 +4465,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000061
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   ferm_chem_add:
@@ -4443,9 +4699,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000556
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   field:
     name: field
     annotations:
@@ -5382,9 +5638,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000557
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   furniture:
     name: furniture
     annotations:
@@ -5424,9 +5680,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000558
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   gaseous_substances:
     name: gaseous_substances
     annotations:
@@ -5447,9 +5703,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000661
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   gastrointest_disord:
     name: gastrointest_disord
     annotations:
@@ -5506,9 +5762,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000859
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   geo_loc_name:
     name: geo_loc_name
     annotations:
@@ -5534,6 +5790,9 @@ slots:
     - http://purl.bioontology.org/ontology/GAZ
     slot_uri: MIXS:0000010
     range: string
+    pattern: '[^s][^\r\n\t]+: [^s][^\r\n\t]+, [^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
   gestation_state:
     name: gestation_state
     annotations:
@@ -5680,9 +5939,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000560
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   growth_medium:
     name: growth_medium
     annotations:
@@ -5955,9 +6214,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000652
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   heavy_metals_meth:
     name: heavy_metals_meth
     annotations:
@@ -5971,9 +6230,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000343
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   height_carper_fiber:
     name: height_carper_fiber
     annotations:
@@ -6018,9 +6277,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000561
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   horizon:
     name: horizon
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -6037,9 +6296,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000321
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   host_age:
     name: host_age
     annotations:
@@ -7304,9 +7563,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000664
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   inside_lux:
     name: inside_lux
     annotations:
@@ -7377,9 +7636,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000003
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   iw_bt_date_well:
     name: iw_bt_date_well
     annotations:
@@ -7475,6 +7734,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000009
     range: string
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
   lib_layout:
     name: lib_layout
     annotations:
@@ -7490,6 +7752,7 @@ slots:
     title: library layout
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000041
+    range: LIB_LAYOUT_ENUM
   lib_reads_seqd:
     name: lib_reads_seqd
     annotations:
@@ -7668,9 +7931,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000340
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   link_class_info:
     name: link_class_info
     annotations:
@@ -7684,9 +7947,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000329
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   link_climate_info:
     name: link_climate_info
     annotations:
@@ -7700,9 +7963,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000328
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   lithology:
     name: lithology
     annotations:
@@ -7774,9 +8037,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000331
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   lot_number:
     name: lot_number
     annotations:
@@ -8024,9 +8287,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000339
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   microb_cult_med:
     name: microb_cult_med
     annotations:
@@ -8214,6 +8477,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000047
     range: string
+    pattern: '[ACGT]+'
+    structured_pattern:
+      syntax: '{dna}'
   migs_ba_plant_associated_set:
     name: migs_ba_plant_associated_set
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -8281,9 +8547,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000570
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   misc_param:
     name: misc_param
     annotations:
@@ -8303,9 +8569,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000752
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   mode_transmission:
     name: mode_transmission
     annotations:
@@ -8341,9 +8607,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000503
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   neg_cont_type:
     name: neg_cont_type
     annotations:
@@ -8455,9 +8721,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000571
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   nose_throat_disord:
     name: nose_throat_disord
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -8482,6 +8748,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000038
     range: string
+    pattern: PMID:(\d{7,8})
+    structured_pattern:
+      syntax: '{PMID}'
   nucl_acid_ext:
     name: nucl_acid_ext
     annotations:
@@ -8497,9 +8766,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000037
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   nucl_acid_ext_kit:
     name: nucl_acid_ext_kit
     annotations:
@@ -8769,9 +9038,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000665
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   organism_count:
     name: organism_count
     annotations:
@@ -8857,7 +9126,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000086
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   owc_tvdss:
@@ -8998,9 +9267,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000206
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   pathogenicity:
     name: pathogenicity
     annotations:
@@ -9132,9 +9401,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000573
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   pet_farm_animal:
     name: pet_farm_animal
     annotations:
@@ -9207,9 +9476,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001106
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   ph_regm:
     name: ph_regm
     annotations:
@@ -9352,9 +9621,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001336
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   plant_associated_set:
     name: plant_associated_set
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -9541,9 +9810,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000107
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   pool_dna_extracts:
     name: pool_dna_extracts
     annotations:
@@ -9790,9 +10059,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000316
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   primary_prod:
     name: primary_prod
     annotations:
@@ -9901,6 +10170,7 @@ slots:
     title: profile position
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001084
+    range: PROFILE_POSITION_ENUM
   project_name:
     name: project_name
     annotations:
@@ -10005,9 +10275,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000575
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   rainfall_regm:
     name: rainfall_regm
     annotations:
@@ -10102,9 +10372,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000025
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   ref_db:
     name: ref_db
     annotations:
@@ -10122,6 +10392,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000062
     range: string
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{database};{version};{reference}'
   rel_air_humidity:
     name: rel_air_humidity
     annotations:
@@ -10278,9 +10551,9 @@ slots:
     - https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene
     slot_uri: MIXS:0000134
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   room_air_exch_rate:
     name: room_air_exch_rate
     annotations:
@@ -10590,9 +10863,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001061
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   root_med_carbon:
     name: root_med_carbon
     annotations:
@@ -10637,9 +10910,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000578
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_micronutr:
     name: root_med_micronutr
     annotations:
@@ -10661,9 +10934,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000579
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_ph:
     name: root_med_ph
     annotations:
@@ -10703,9 +10976,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000581
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   root_med_solid:
     name: root_med_solid
     annotations:
@@ -10746,9 +11019,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000580
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   route_transmission:
     name: route_transmission
     annotations:
@@ -10809,9 +11082,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000341
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   salt_regm:
     name: salt_regm
     annotations:
@@ -10836,9 +11109,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000582
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+;{Rn/start_time/end_time/duration}'
     structured_pattern:
-      syntax: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
   samp_capt_status:
     name: samp_capt_status
     annotations:
@@ -10896,9 +11169,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001225
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   samp_collect_point:
     name: samp_collect_point
     annotations:
@@ -11014,6 +11287,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000016
     range: string
+    pattern: '[^s][^\r\n\t]+'
+    structured_pattern:
+      syntax: '{free_text}'
   samp_md:
     name: samp_md
     annotations:
@@ -11085,9 +11361,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000463
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   samp_purpose:
     name: samp_purpose
     annotations:
@@ -11431,6 +11707,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001320
     range: string
+    pattern: '[^s][^\r\n\t]+ [NCBITaxon:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{ncbi_term_id}]'
   samp_time_out:
     name: samp_time_out
     annotations:
@@ -11682,9 +11961,9 @@ slots:
     - https://en.wikipedia.org/wiki/Saturate,_aromatic,_resin_and_asphaltene
     slot_uri: MIXS:0000131
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   season:
     name: season
     annotations:
@@ -12134,7 +12413,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000063
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   single_cell_lysis_appr:
@@ -12500,9 +12779,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000336
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   soil_type:
     name: soil_type
     annotations:
@@ -12522,6 +12801,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000332
     range: string
+    pattern: '[^s][^\r\n\t]+ [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
   soil_type_meth:
     name: soil_type_meth
     annotations:
@@ -12536,9 +12818,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000334
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   solar_irradiance:
     name: solar_irradiance
     annotations:
@@ -12582,9 +12864,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000672
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   soluble_org_mat:
     name: soluble_org_mat
     annotations:
@@ -12605,9 +12887,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000673
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   soluble_react_phosp:
     name: soluble_react_phosp
     annotations:
@@ -12649,6 +12931,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000090
     range: string
+    pattern: PMID:(\d{7,8})
+    structured_pattern:
+      syntax: '{PMID}'
   sort_tech:
     name: sort_tech
     annotations:
@@ -13143,9 +13428,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000327
     range: string
-    pattern: '{text};{period}'
+    pattern: '[^s][^\r\n\t]+;P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{text};{period}'
+      syntax: '{free_text};{period}'
   study_complt_stat:
     name: study_complt_stat
     annotations:
@@ -13526,9 +13811,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000150
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   sym_life_cycle_type:
     name: sym_life_cycle_type
     annotations:
@@ -13771,6 +14056,7 @@ slots:
     title: history/tillage
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001081
+    range: TILLAGE_ENUM
   time_last_toothbrush:
     name: time_last_toothbrush
     annotations:
@@ -13837,9 +14123,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001070
     range: string
-    pattern: '{PMID}|{DOI}|{URL}|{text}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}|{text}'
+      syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   toluene:
     name: toluene
     annotations:
@@ -13985,9 +14271,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000338
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   tot_nitro_content:
     name: tot_nitro_content
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -14006,9 +14292,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000337
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: '{PMID}'
   tot_org_carb:
     name: tot_org_carb
     annotations:
@@ -14200,7 +14486,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000068
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   trnas:
@@ -14516,7 +14802,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000081
     range: string
-    pattern: '{software};{version};{parameters}'
+    pattern: '[^s][^\r\n\t]+;[^s][^\r\n\t]+;[^s][^\r\n\t]+'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
   virus_enrich_appr:
@@ -14595,9 +14881,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000115
     range: string
-    pattern: '{text};[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
+    pattern: '[^s][^\r\n\t]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s][^\r\n\t]+'
     structured_pattern:
-      syntax: '{text};{float} {unit}'
+      syntax: '{free_text};{float} {unit}'
   wall_area:
     name: wall_area
     annotations:
@@ -14788,7 +15074,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000323
     range: string
-    pattern: '{PMID}|{DOI}|{URL}'
+    pattern: PMID:(\d{7,8})|{DOI}|{URL}
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}'
   water_content:
@@ -23760,11 +24046,44 @@ classes:
     class_uri: MIXS:0016014
 source_file: src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml
 settings:
+  PMID:
+    setting_key: PMID
+    setting_value: PMID:(\d{7,8})
+  database:
+    setting_key: database
+    setting_value: '[^s][^\r\n\t]+'
+  dna:
+    setting_key: dna
+    setting_value: '[ACGT]+'
   float:
     setting_key: float
     setting_value: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?'
   free_text:
     setting_key: free_text
+    setting_value: '[^s][^\r\n\t]+'
+  lat:
+    setting_key: lat
+    setting_value: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)'
+  lon:
+    setting_key: lon
+    setting_value: '[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+  ncbi_term_id:
+    setting_key: ncbi_term_id
+    setting_value: NCBITaxon:[0-9]+
+  parameters:
+    setting_key: parameters
+    setting_value: '[^s][^\r\n\t]+'
+  period:
+    setting_key: period
+    setting_value: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+  reference:
+    setting_key: reference
+    setting_value: '[^s][^\r\n\t]+'
+  software:
+    setting_key: software
+    setting_value: '[^s][^\r\n\t]+'
+  term:
+    setting_key: term
     setting_value: '[^s][^\r\n\t]+'
   term_id:
     setting_key: term_id
@@ -23774,4 +24093,7 @@ settings:
     setting_value: '[^s][^\r\n\t]+'
   unit:
     setting_key: unit
+    setting_value: '[^s][^\r\n\t]+'
+  version:
+    setting_key: version
     setting_value: '[^s][^\r\n\t]+'

@@ -5,9 +5,9 @@ mims_soil_set:
     env_broad_scale: text [prefix:123]
     env_local_scale: text [prefix:123]
     env_medium: text [prefix:123]
-    geo_loc_name: xxx
-    lat_lon: xxx
+    geo_loc_name: "xxx: xxx, xxx"
+    lat_lon: 55.5 55.5
     project_name: xxx
-    samp_taxon_id: xxx
-    seq_meth: xxx
+    samp_taxon_id: xxx [NCBITaxon:10090]
+    seq_meth: PMID:1234567
 

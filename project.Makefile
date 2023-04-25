@@ -612,6 +612,7 @@ data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
 src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml: data/codified_env_package_requirements_curated.tsv \
 data/core_requirements_recommended_required_curated.tsv \
 data/database_slots_curated.tsv \
+data/enums.tsv \
 data/mixs_combined_all_modified_lossy_deduped.tsv \
 data/mixs_v6_asserted_and_combinations.tsv \
 data/prefixes.tsv \
@@ -634,11 +635,37 @@ src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_
 	rm -rf $<
 
 reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
-	- $(RUN) linkml-lint $< > $@
+	- $(RUN) linkml-lint \
+ 		--format tsv $< > $@
 
-reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonschema/mixs_subset_examples_first.schema.json \
-src/data/examples/valid/Database-mims_soil_set-example.yaml
-	$(RUN) check-jsonschema --schemafile $^ | tee $@
+#  -f, --format [terminal|markdown|json|tsv]
+#                                  Report format.  [default: terminal]
+#  -o, --output FILENAME           Report file name.
+
+#class StandardNamingRule(LinterRule):
+#
+#    id = "standard_naming"
+#
+#    def __init__(self, config: StandardNamingConfig) -> None:
+#        self.config = config
+#
+#    def check(
+#        self, schema_view: SchemaView, fix: bool = False
+#    ) -> Iterable[LinterProblem]:
+#        class_pattern = self.PATTERNS["uppercamel"]
+#        slot_pattern = self.PATTERNS["snake"]
+#        enum_pattern = self.PATTERNS["uppercamel"]
+#        permissible_value_pattern = (
+#            self.PATTERNS["uppersnake"]
+#            if self.config.permissible_values_upper_case
+#            else self.PATTERNS["snake"]
+#        )
+
+reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonschema/mixs_subset_examples_first.schema.json
+# \ src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
+	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
+#> | tee $@
+	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-exhaustive.yaml
 
 project/json/mixs_subset_examples_first.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	mkdir -p $(@D)
@@ -646,3 +673,8 @@ project/json/mixs_subset_examples_first.json: src/mixs_subset_examples_first/sch
 		--format json  \
 		--materialize-attributes \
 		--materialize-patterns $< > $@
+
+data/class_reverse_engineered.tsv:
+	$(RUN) linkml2sheets \
+		--output $@ \
+		--schema src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml data/class_template.tsv

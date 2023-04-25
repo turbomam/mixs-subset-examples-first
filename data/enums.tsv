@@ -1,0 +1,107 @@
+enum	permissible_value	aliases	broad_mappings	close_mappings	comments	description	enum_uri	exact_mappings	mappings	meaning	narrow_mappings	notes	related_mappings	see_also	title	todos
+> enum	permissible_value	aliases	broad_mappings	close_mappings	comments	description	enum_uri	exact_mappings	mappings	meaning	narrow_mappings	notes	related_mappings	see_also	title	todos
+>		internal_separator: “|”	internal_separator: “|”	internal_separator: “|”	internal_separator: “|”			internal_separator: “|”	internal_separator: “|”		internal_separator: “|”	internal_separator: “|”	internal_separator: “|”	internal_separator: “|”		internal_separator: “|”
+ASSEMBLY_QUAL_ENUM	Finished genome															
+ASSEMBLY_QUAL_ENUM	Genome fragment(s)															
+ASSEMBLY_QUAL_ENUM	High-quality draft genome															
+ASSEMBLY_QUAL_ENUM	Low-quality draft genome															
+ASSEMBLY_QUAL_ENUM	Medium-quality draft genome															
+CUR_LAND_USE_ENUM	badlands															
+CUR_LAND_USE_ENUM	cities															
+CUR_LAND_USE_ENUM	conifers (e.g. pine, spruce, fir, cypress)															
+CUR_LAND_USE_ENUM	crop trees (nuts, fruit, christmas trees, nursery trees)															
+CUR_LAND_USE_ENUM	farmstead															
+CUR_LAND_USE_ENUM	gravel															
+CUR_LAND_USE_ENUM	hardwoods (e.g. oak, hickory, elm, aspen)															
+CUR_LAND_USE_ENUM	hayland															
+CUR_LAND_USE_ENUM	horticultural plants (e.g. tulips)															
+CUR_LAND_USE_ENUM	industrial areas															
+CUR_LAND_USE_ENUM	intermixed hardwood and conifers															
+CUR_LAND_USE_ENUM	marshlands (grass, sedges, rushes)															
+CUR_LAND_USE_ENUM	meadows (grasses, alfalfa, fescue, bromegrass, timothy)															
+CUR_LAND_USE_ENUM	mines or quarries															
+CUR_LAND_USE_ENUM	mudflats															
+CUR_LAND_USE_ENUM	oil waste areas															
+CUR_LAND_USE_ENUM	pastureland (grasslands used for livestock grazing)															
+CUR_LAND_USE_ENUM	permanent snow or ice															
+CUR_LAND_USE_ENUM	rainforest (evergreen forest receiving greater than 406 cm annual rainfall)															
+CUR_LAND_USE_ENUM	rangeland															
+CUR_LAND_USE_ENUM	roads or railroads															
+CUR_LAND_USE_ENUM	rock															
+CUR_LAND_USE_ENUM	row crops															
+CUR_LAND_USE_ENUM	saline seeps															
+CUR_LAND_USE_ENUM	salt flats															
+CUR_LAND_USE_ENUM	sand															
+CUR_LAND_USE_ENUM	shrub crops (blueberries, nursery ornamentals, filberts)															
+CUR_LAND_USE_ENUM	shrub land (e.g. mesquite, sage-brush, creosote bush, shrub oak, eucalyptus)															
+CUR_LAND_USE_ENUM	small grains															
+CUR_LAND_USE_ENUM	successional shrub land (tree saplings, hazels, sumacs, chokecherry, shrub dogwoods, blackberries)															
+CUR_LAND_USE_ENUM	swamp (permanent or semi-permanent water body dominated by woody plants)															
+CUR_LAND_USE_ENUM	tropical (e.g. mangrove, palms)															
+CUR_LAND_USE_ENUM	tundra (mosses, lichens)															
+CUR_LAND_USE_ENUM	vegetable crops															
+CUR_LAND_USE_ENUM	vine crops (grapes)															
+DRAINAGE_CLASS_ENUM	excessively drained															
+DRAINAGE_CLASS_ENUM	moderately well															
+DRAINAGE_CLASS_ENUM	poorly															
+DRAINAGE_CLASS_ENUM	somewhat poorly															
+DRAINAGE_CLASS_ENUM	very poorly															
+DRAINAGE_CLASS_ENUM	well															
+FAO_CLASS_ENUM	Acrisols															
+FAO_CLASS_ENUM	Andosols															
+FAO_CLASS_ENUM	Arenosols															
+FAO_CLASS_ENUM	Cambisols															
+FAO_CLASS_ENUM	Chernozems															
+FAO_CLASS_ENUM	Ferralsols															
+FAO_CLASS_ENUM	Fluvisols															
+FAO_CLASS_ENUM	Gleysols															
+FAO_CLASS_ENUM	Greyzems															
+FAO_CLASS_ENUM	Gypsisols															
+FAO_CLASS_ENUM	Histosols															
+FAO_CLASS_ENUM	Kastanozems															
+FAO_CLASS_ENUM	Lithosols															
+FAO_CLASS_ENUM	Luvisols															
+FAO_CLASS_ENUM	Nitosols															
+FAO_CLASS_ENUM	Phaeozems															
+FAO_CLASS_ENUM	Planosols															
+FAO_CLASS_ENUM	Podzols															
+FAO_CLASS_ENUM	Podzoluvisols															
+FAO_CLASS_ENUM	Rankers															
+FAO_CLASS_ENUM	Regosols															
+FAO_CLASS_ENUM	Rendzinas															
+FAO_CLASS_ENUM	Solonchaks															
+FAO_CLASS_ENUM	Solonetz															
+FAO_CLASS_ENUM	Vertisols															
+FAO_CLASS_ENUM	Yermosols															
+LIB_LAYOUT_ENUM	other															
+LIB_LAYOUT_ENUM	paired															
+LIB_LAYOUT_ENUM	single															
+LIB_LAYOUT_ENUM	vector															
+PROFILE_POSITION_ENUM	backslope															
+PROFILE_POSITION_ENUM	footslope															
+PROFILE_POSITION_ENUM	shoulder															
+PROFILE_POSITION_ENUM	summit															
+PROFILE_POSITION_ENUM	toeslope															
+REL_TO_OXYGEN_ENUM	aerobe															
+REL_TO_OXYGEN_ENUM	anaerobe															
+REL_TO_OXYGEN_ENUM	facultative															
+REL_TO_OXYGEN_ENUM	microaerophilic															
+REL_TO_OXYGEN_ENUM	microanaerobe															
+REL_TO_OXYGEN_ENUM	obligate aerobe															
+REL_TO_OXYGEN_ENUM	obligate anaerobe															
+SOIL_HORIZON_ENUM	A horizon															
+SOIL_HORIZON_ENUM	B horizon															
+SOIL_HORIZON_ENUM	C horizon															
+SOIL_HORIZON_ENUM	E horizon															
+SOIL_HORIZON_ENUM	O horizon															
+SOIL_HORIZON_ENUM	Permafrost															
+SOIL_HORIZON_ENUM	R layer															
+TILLAGE_ENUM	chisel															
+TILLAGE_ENUM	cutting disc															
+TILLAGE_ENUM	disc plough															
+TILLAGE_ENUM	drill															
+TILLAGE_ENUM	mouldboard															
+TILLAGE_ENUM	ridge till															
+TILLAGE_ENUM	strip tillage															
+TILLAGE_ENUM	tined															
+TILLAGE_ENUM	zonal tillage															
