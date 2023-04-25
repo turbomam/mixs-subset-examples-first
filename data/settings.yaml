@@ -1,7 +1,7 @@
 settings:
-  # DOI: "10\\.\\d{4,9}/[-._;()/:A-Z0-9]+" # modified from https://www.regextester.com/115618
-  # URL: "https?://(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)" # modified from https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url see also https://daringfireball.net/2010/07/improved_regex_for_matching_urls
+  DOI: "10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+" # modified from https://www.crossref.org/blog/dois-and-matching-regular-expressions/
   PMID: "PMID:(\\d{7,8})" # https://www.regextester.com/115618
+  URL: "(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]"
   database: "[^s][^\\r\\n\\t]+" # same as free_text for now
   dna: "[ACGT]+"
   float: "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?"
@@ -18,3 +18,4 @@ settings:
   term_label: "[^s][^\\r\\n\\t]+" # same as free_text for now
   unit: "[^s][^\\r\\n\\t]+" # same as free_text for now
   version: "[^s][^\\r\\n\\t]+" # same as free_text for now
+#  URL: "(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]" # from chatgpt. see also https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url and https://daringfireball.net/2010/07/improved_regex_for_matching_urls

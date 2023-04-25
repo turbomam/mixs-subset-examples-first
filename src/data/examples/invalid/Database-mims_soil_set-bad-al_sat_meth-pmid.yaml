@@ -5,7 +5,7 @@ mims_soil_set:
     adapters: AAA;TTT
     agrochem_addition: xxx
     al_sat: 123 units
-    al_sat_meth: http://example.com/site
+    al_sat_meth: "PMID:xxx"
     alt: 123 units
     annot: xxx
     annual_precpt: 123 units

@@ -15,7 +15,7 @@ mims_soil_set:
     assembly_software: xxx;xxx;xxx
     collection_date: xxx
     crop_rotation: xxx
-    cur_land_use: badlands
+    cur_land_use: xxx
     cur_vegetation: xxx
     cur_vegetation_meth: 10.1093/ajae/aaq063
     depth: 123 units

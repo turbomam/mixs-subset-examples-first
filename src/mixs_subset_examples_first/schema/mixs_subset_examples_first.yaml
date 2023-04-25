@@ -796,9 +796,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000324
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   alkalinity:
     name: alkalinity
     annotations:
@@ -3111,9 +3111,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000314
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   date_extr_weath:
     name: date_extr_weath
     annotations:
@@ -3961,7 +3961,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001177
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   env_broad_scale:
@@ -5762,7 +5762,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000859
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   geo_loc_name:
@@ -6230,9 +6230,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000343
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   height_carper_fiber:
     name: height_carper_fiber
     annotations:
@@ -6296,9 +6296,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000321
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   host_age:
     name: host_age
     annotations:
@@ -7636,9 +7636,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000003
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   iw_bt_date_well:
     name: iw_bt_date_well
     annotations:
@@ -7931,9 +7931,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000340
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   link_class_info:
     name: link_class_info
     annotations:
@@ -7947,9 +7947,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000329
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   link_climate_info:
     name: link_climate_info
     annotations:
@@ -7963,9 +7963,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000328
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   lithology:
     name: lithology
     annotations:
@@ -8037,9 +8037,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000331
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   lot_number:
     name: lot_number
     annotations:
@@ -8287,9 +8287,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000339
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   microb_cult_med:
     name: microb_cult_med
     annotations:
@@ -8748,9 +8748,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000038
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext:
     name: nucl_acid_ext
     annotations:
@@ -8766,9 +8766,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000037
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext_kit:
     name: nucl_acid_ext_kit
     annotations:
@@ -9476,9 +9476,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001106
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   ph_regm:
     name: ph_regm
     annotations:
@@ -9621,7 +9621,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001336
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   plant_associated_set:
@@ -10059,9 +10059,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000316
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   primary_prod:
     name: primary_prod
     annotations:
@@ -10372,9 +10372,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000025
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   ref_db:
     name: ref_db
     annotations:
@@ -10863,7 +10863,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001061
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   root_med_carbon:
@@ -11082,9 +11082,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000341
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   salt_regm:
     name: salt_regm
     annotations:
@@ -11169,7 +11169,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001225
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   samp_collect_point:
@@ -12779,9 +12779,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000336
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   soil_type:
     name: soil_type
     annotations:
@@ -12818,9 +12818,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000334
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   solar_irradiance:
     name: solar_irradiance
     annotations:
@@ -12931,9 +12931,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000090
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   sort_tech:
     name: sort_tech
     annotations:
@@ -14123,7 +14123,7 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0001070
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}|[^s][^\r\n\t]+
+    pattern: PMID:(\d{7,8})|10.\d{4,9}/[-._;()/:a-zA-Z0-9]+|(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]|[^s][^\r\n\t]+
     structured_pattern:
       syntax: '{PMID}|{DOI}|{URL}|{free_text}'
   toluene:
@@ -14271,9 +14271,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000338
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   tot_nitro_content:
     name: tot_nitro_content
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -14292,9 +14292,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000337
     range: string
-    pattern: PMID:(\d{7,8})
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}'
+      syntax: ({DOI})|({PMID})|({URL})
   tot_org_carb:
     name: tot_org_carb
     annotations:
@@ -15074,9 +15074,9 @@ slots:
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     slot_uri: MIXS:0000323
     range: string
-    pattern: PMID:(\d{7,8})|{DOI}|{URL}
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])
     structured_pattern:
-      syntax: '{PMID}|{DOI}|{URL}'
+      syntax: ({DOI})|({PMID})|({URL})
   water_content:
     name: water_content
     annotations:
@@ -24046,9 +24046,15 @@ classes:
     class_uri: MIXS:0016014
 source_file: src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml
 settings:
+  DOI:
+    setting_key: DOI
+    setting_value: 10.\d{4,9}/[-._;()/:a-zA-Z0-9]+
   PMID:
     setting_key: PMID
     setting_value: PMID:(\d{7,8})
+  URL:
+    setting_key: URL
+    setting_value: (?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]
   database:
     setting_key: database
     setting_value: '[^s][^\r\n\t]+'

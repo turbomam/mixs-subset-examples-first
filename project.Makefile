@@ -666,6 +666,22 @@ reports/Database-mimssoil_set-example.yaml.check-jsonschema.log: project/jsonsch
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-minimalQ.yaml
 #> | tee $@
 	$(RUN) check-jsonschema --schemafile $< src/data/examples/valid/Database-mims_soil_set-exhaustive.yaml
+	#
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-adapters-dna.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-al_sat-float-unit.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-al_sat_meth-pmid.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-assembly-qual-enum.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-assembly_software.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-cur_land_use.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-drainage_class.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-env_broad_scale-term-id-only.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-env_broad_scale-term-lab-only.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-fao_class.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-feat_pred.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-geo_loc_name.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-heavy_metals.yaml
+	#! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-bad-lat_lon.yaml
+	! $(RUN) check-jsonschema --schemafile $< src/data/examples/invalid/Database-mims_soil_set-missing-sample-name.yaml
 
 project/json/mixs_subset_examples_first.json: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	mkdir -p $(@D)
