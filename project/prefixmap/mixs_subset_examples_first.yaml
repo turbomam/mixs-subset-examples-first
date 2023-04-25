@@ -1,7 +1,0 @@
-{
-   "MIXS": "http://example.com/",
-   "linkml": "https://w3id.org/linkml/",
-   "schema": "http://schema.org/",
-   "shex": "http://www.w3.org/ns/shex#",
-   "xsd": "http://www.w3.org/2001/XMLSchema#"
-}

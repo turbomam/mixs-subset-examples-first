@@ -1,5 +1,5 @@
 # Auto generated from mixs_subset_examples_first.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-25T17:01:10
+# Generation date: 2023-04-25T19:47:22
 # Schema: MIxS
 #
 # id: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -13196,7 +13196,7 @@ slots.al_sat = Slot(uri=MIXS['0000607'], name="al_sat", curie=MIXS.curie('000060
 
 slots.al_sat_meth = Slot(uri=MIXS['0000324'], name="al_sat_meth", curie=MIXS.curie('0000324'),
                    model_uri=MIXS.al_sat_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.alkalinity = Slot(uri=MIXS['0000421'], name="alkalinity", curie=MIXS.curie('0000421'),
                    model_uri=MIXS.alkalinity, domain=None, range=Optional[str],
@@ -13294,7 +13294,7 @@ slots.annual_temp = Slot(uri=MIXS['0000642'], name="annual_temp", curie=MIXS.cur
 
 slots.antibiotic_regm = Slot(uri=MIXS['0000553'], name="antibiotic_regm", curie=MIXS.curie('0000553'),
                    model_uri=MIXS.antibiotic_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'(([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?)\|)*[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.api = Slot(uri=MIXS['0000157'], name="api", curie=MIXS.curie('0000157'),
                    model_uri=MIXS.api, domain=None, range=Optional[str],
@@ -13514,7 +13514,7 @@ slots.chem_administration = Slot(uri=MIXS['0000751'], name="chem_administration"
 
 slots.chem_mutagen = Slot(uri=MIXS['0000555'], name="chem_mutagen", curie=MIXS.curie('0000555'),
                    model_uri=MIXS.chem_mutagen, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.chem_oxygen_dem = Slot(uri=MIXS['0000656'], name="chem_oxygen_dem", curie=MIXS.curie('0000656'),
                    model_uri=MIXS.chem_oxygen_dem, domain=None, range=Optional[str],
@@ -13616,7 +13616,7 @@ slots.cur_vegetation = Slot(uri=MIXS['0000312'], name="cur_vegetation", curie=MI
 
 slots.cur_vegetation_meth = Slot(uri=MIXS['0000314'], name="cur_vegetation_meth", curie=MIXS.curie('0000314'),
                    model_uri=MIXS.cur_vegetation_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.date_extr_weath = Slot(uri=MIXS['0001142'], name="date_extr_weath", curie=MIXS.curie('0001142'),
                    model_uri=MIXS.date_extr_weath, domain=None, range=Optional[str])
@@ -13773,7 +13773,7 @@ slots.encoded_traits = Slot(uri=MIXS['0000034'], name="encoded_traits", curie=MI
 
 slots.enrichment_protocol = Slot(uri=MIXS['0001177'], name="enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.enrichment_protocol, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.env_broad_scale = Slot(uri=MIXS['0000012'], name="env_broad_scale", curie=MIXS.curie('0000012'),
                    model_uri=MIXS.env_broad_scale, domain=None, range=Optional[str],
@@ -13905,7 +13905,7 @@ slots.fertilizer_date = Slot(uri=MIXS['0001128'], name="fertilizer_date", curie=
 
 slots.fertilizer_regm = Slot(uri=MIXS['0000556'], name="fertilizer_regm", curie=MIXS.curie('0000556'),
                    model_uri=MIXS.fertilizer_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.field = Slot(uri=MIXS['0000291'], name="field", curie=MIXS.curie('0000291'),
                    model_uri=MIXS.field, domain=None, range=Optional[str],
@@ -14074,14 +14074,14 @@ slots.freq_cook = Slot(uri=MIXS['0000227'], name="freq_cook", curie=MIXS.curie('
 
 slots.fungicide_regm = Slot(uri=MIXS['0000557'], name="fungicide_regm", curie=MIXS.curie('0000557'),
                    model_uri=MIXS.fungicide_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.furniture = Slot(uri=MIXS['0000807'], name="furniture", curie=MIXS.curie('0000807'),
                    model_uri=MIXS.furniture, domain=None, range=Optional[str])
 
 slots.gaseous_environment = Slot(uri=MIXS['0000558'], name="gaseous_environment", curie=MIXS.curie('0000558'),
                    model_uri=MIXS.gaseous_environment, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.gaseous_substances = Slot(uri=MIXS['0000661'], name="gaseous_substances", curie=MIXS.curie('0000661'),
                    model_uri=MIXS.gaseous_substances, domain=None, range=Optional[str],
@@ -14096,7 +14096,7 @@ slots.gender_restroom = Slot(uri=MIXS['0000808'], name="gender_restroom", curie=
 
 slots.genetic_mod = Slot(uri=MIXS['0000859'], name="genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.genetic_mod, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.geo_loc_name = Slot(uri=MIXS['0000010'], name="geo_loc_name", curie=MIXS.curie('0000010'),
                    model_uri=MIXS.geo_loc_name, domain=None, range=Optional[str],
@@ -14124,7 +14124,7 @@ slots.growth_habit = Slot(uri=MIXS['0001044'], name="growth_habit", curie=MIXS.c
 
 slots.growth_hormone_regm = Slot(uri=MIXS['0000560'], name="growth_hormone_regm", curie=MIXS.curie('0000560'),
                    model_uri=MIXS.growth_hormone_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.growth_medium = Slot(uri=MIXS['0001108'], name="growth_medium", curie=MIXS.curie('0001108'),
                    model_uri=MIXS.growth_medium, domain=None, range=Optional[str],
@@ -14177,7 +14177,7 @@ slots.heavy_metals = Slot(uri=MIXS['0000652'], name="heavy_metals", curie=MIXS.c
 
 slots.heavy_metals_meth = Slot(uri=MIXS['0000343'], name="heavy_metals_meth", curie=MIXS.curie('0000343'),
                    model_uri=MIXS.heavy_metals_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.height_carper_fiber = Slot(uri=MIXS['0000167'], name="height_carper_fiber", curie=MIXS.curie('0000167'),
                    model_uri=MIXS.height_carper_fiber, domain=None, range=Optional[str],
@@ -14185,14 +14185,14 @@ slots.height_carper_fiber = Slot(uri=MIXS['0000167'], name="height_carper_fiber"
 
 slots.herbicide_regm = Slot(uri=MIXS['0000561'], name="herbicide_regm", curie=MIXS.curie('0000561'),
                    model_uri=MIXS.herbicide_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.horizon = Slot(uri=MIXS.horizon, name="horizon", curie=MIXS.curie('horizon'),
                    model_uri=MIXS.horizon, domain=None, range=Optional[str])
 
 slots.horizon_meth = Slot(uri=MIXS['0000321'], name="horizon_meth", curie=MIXS.curie('0000321'),
                    model_uri=MIXS.horizon_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.host_age = Slot(uri=MIXS['0000255'], name="host_age", curie=MIXS.curie('0000255'),
                    model_uri=MIXS.host_age, domain=None, range=Optional[str],
@@ -14463,7 +14463,7 @@ slots.intended_consumer = Slot(uri=MIXS['0001144'], name="intended_consumer", cu
 
 slots.isol_growth_condt = Slot(uri=MIXS['0000003'], name="isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.isol_growth_condt, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.iw_bt_date_well = Slot(uri=MIXS['0001010'], name="iw_bt_date_well", curie=MIXS.curie('0001010'),
                    model_uri=MIXS.iw_bt_date_well, domain=None, range=Optional[str])
@@ -14516,15 +14516,15 @@ slots.light_type = Slot(uri=MIXS['0000769'], name="light_type", curie=MIXS.curie
 
 slots.link_addit_analys = Slot(uri=MIXS['0000340'], name="link_addit_analys", curie=MIXS.curie('0000340'),
                    model_uri=MIXS.link_addit_analys, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.link_class_info = Slot(uri=MIXS['0000329'], name="link_class_info", curie=MIXS.curie('0000329'),
                    model_uri=MIXS.link_class_info, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.link_climate_info = Slot(uri=MIXS['0000328'], name="link_climate_info", curie=MIXS.curie('0000328'),
                    model_uri=MIXS.link_climate_info, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.lithology = Slot(uri=MIXS['0000990'], name="lithology", curie=MIXS.curie('0000990'),
                    model_uri=MIXS.lithology, domain=None, range=Optional[str])
@@ -14539,7 +14539,7 @@ slots.local_class = Slot(uri=MIXS['0000330'], name="local_class", curie=MIXS.cur
 
 slots.local_class_meth = Slot(uri=MIXS['0000331'], name="local_class_meth", curie=MIXS.curie('0000331'),
                    model_uri=MIXS.local_class_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.lot_number = Slot(uri=MIXS['0001147'], name="lot_number", curie=MIXS.curie('0001147'),
                    model_uri=MIXS.lot_number, domain=None, range=Optional[str])
@@ -14587,7 +14587,7 @@ slots.methane = Slot(uri=MIXS['0000101'], name="methane", curie=MIXS.curie('0000
 
 slots.micro_biomass_meth = Slot(uri=MIXS['0000339'], name="micro_biomass_meth", curie=MIXS.curie('0000339'),
                    model_uri=MIXS.micro_biomass_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.microb_cult_med = Slot(uri=MIXS['0001216'], name="microb_cult_med", curie=MIXS.curie('0001216'),
                    model_uri=MIXS.microb_cult_med, domain=None, range=Optional[str])
@@ -14656,7 +14656,7 @@ slots.mims_water_set = Slot(uri=MIXS.mims_water_set, name="mims_water_set", curi
 
 slots.mineral_nutr_regm = Slot(uri=MIXS['0000570'], name="mineral_nutr_regm", curie=MIXS.curie('0000570'),
                    model_uri=MIXS.mineral_nutr_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.misc_param = Slot(uri=MIXS['0000752'], name="misc_param", curie=MIXS.curie('0000752'),
                    model_uri=MIXS.misc_param, domain=None, range=Optional[str],
@@ -14689,18 +14689,18 @@ slots.non_min_nutr_regm = Slot(uri=MIXS.non_min_nutr_regm, name="non_min_nutr_re
 
 slots.non_mineral_nutr_regm = Slot(uri=MIXS['0000571'], name="non_mineral_nutr_regm", curie=MIXS.curie('0000571'),
                    model_uri=MIXS.non_mineral_nutr_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.nose_throat_disord = Slot(uri=MIXS.nose_throat_disord, name="nose_throat_disord", curie=MIXS.curie('nose_throat_disord'),
                    model_uri=MIXS.nose_throat_disord, domain=None, range=Optional[str])
 
 slots.nucl_acid_amp = Slot(uri=MIXS['0000038'], name="nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.nucl_acid_ext = Slot(uri=MIXS['0000037'], name="nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.nucl_acid_ext_kit = Slot(uri=MIXS['0001223'], name="nucl_acid_ext_kit", curie=MIXS.curie('0001223'),
                    model_uri=MIXS.nucl_acid_ext_kit, domain=None, range=Optional[str],
@@ -14810,7 +14810,7 @@ slots.perturbation = Slot(uri=MIXS['0000754'], name="perturbation", curie=MIXS.c
 
 slots.pesticide_regm = Slot(uri=MIXS['0000573'], name="pesticide_regm", curie=MIXS.curie('0000573'),
                    model_uri=MIXS.pesticide_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.pet_farm_animal = Slot(uri=MIXS['0000267'], name="pet_farm_animal", curie=MIXS.curie('0000267'),
                    model_uri=MIXS.pet_farm_animal, domain=None, range=Optional[str])
@@ -14824,7 +14824,7 @@ slots.ph = Slot(uri=MIXS['0001001'], name="ph", curie=MIXS.curie('0001001'),
 
 slots.ph_meth = Slot(uri=MIXS['0001106'], name="ph_meth", curie=MIXS.curie('0001106'),
                    model_uri=MIXS.ph_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.ph_regm = Slot(uri=MIXS['0001056'], name="ph_regm", curie=MIXS.curie('0001056'),
                    model_uri=MIXS.ph_regm, domain=None, range=Optional[str])
@@ -14851,7 +14851,7 @@ slots.photosynt_activ = Slot(uri=MIXS['0001296'], name="photosynt_activ", curie=
 
 slots.photosynt_activ_meth = Slot(uri=MIXS['0001336'], name="photosynt_activ_meth", curie=MIXS.curie('0001336'),
                    model_uri=MIXS.photosynt_activ_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.plant_associated_set = Slot(uri=MIXS.plant_associated_set, name="plant_associated_set", curie=MIXS.curie('plant_associated_set'),
                    model_uri=MIXS.plant_associated_set, domain=None, range=Optional[Union[Union[dict, PlantAssociated], List[Union[dict, PlantAssociated]]]])
@@ -14934,7 +14934,7 @@ slots.previous_land_use = Slot(uri=MIXS['0000315'], name="previous_land_use", cu
 
 slots.previous_land_use_meth = Slot(uri=MIXS['0000316'], name="previous_land_use_meth", curie=MIXS.curie('0000316'),
                    model_uri=MIXS.previous_land_use_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.primary_prod = Slot(uri=MIXS['0000728'], name="primary_prod", curie=MIXS.curie('0000728'),
                    model_uri=MIXS.primary_prod, domain=None, range=Optional[str],
@@ -14975,7 +14975,7 @@ slots.quad_pos = Slot(uri=MIXS['0000820'], name="quad_pos", curie=MIXS.curie('00
 
 slots.radiation_regm = Slot(uri=MIXS['0000575'], name="radiation_regm", curie=MIXS.curie('0000575'),
                    model_uri=MIXS.radiation_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.rainfall_regm = Slot(uri=MIXS['0000576'], name="rainfall_regm", curie=MIXS.curie('0000576'),
                    model_uri=MIXS.rainfall_regm, domain=None, range=Optional[str])
@@ -14993,7 +14993,7 @@ slots.redox_potential = Slot(uri=MIXS['0000182'], name="redox_potential", curie=
 
 slots.ref_biomaterial = Slot(uri=MIXS['0000025'], name="ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.ref_db = Slot(uri=MIXS['0000062'], name="ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.ref_db, domain=None, range=Optional[str],
@@ -15090,7 +15090,7 @@ slots.room_window_count = Slot(uri=MIXS['0000237'], name="room_window_count", cu
 
 slots.root_cond = Slot(uri=MIXS['0001061'], name="root_cond", curie=MIXS.curie('0001061'),
                    model_uri=MIXS.root_cond, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.root_med_carbon = Slot(uri=MIXS['0000577'], name="root_med_carbon", curie=MIXS.curie('0000577'),
                    model_uri=MIXS.root_med_carbon, domain=None, range=Optional[str])
@@ -15127,11 +15127,11 @@ slots.salinity = Slot(uri=MIXS['0000183'], name="salinity", curie=MIXS.curie('00
 
 slots.salinity_meth = Slot(uri=MIXS['0000341'], name="salinity_meth", curie=MIXS.curie('0000341'),
                    model_uri=MIXS.salinity_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.salt_regm = Slot(uri=MIXS['0000582'], name="salt_regm", curie=MIXS.curie('0000582'),
                    model_uri=MIXS.salt_regm, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.samp_capt_status = Slot(uri=MIXS['0000860'], name="samp_capt_status", curie=MIXS.curie('0000860'),
                    model_uri=MIXS.samp_capt_status, domain=None, range=Optional[str])
@@ -15147,7 +15147,7 @@ slots.samp_collect_device = Slot(uri=MIXS['0000002'], name="samp_collect_device"
 
 slots.samp_collect_method = Slot(uri=MIXS['0001225'], name="samp_collect_method", curie=MIXS.curie('0001225'),
                    model_uri=MIXS.samp_collect_method, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.samp_collect_point = Slot(uri=MIXS['0001015'], name="samp_collect_point", curie=MIXS.curie('0001015'),
                    model_uri=MIXS.samp_collect_point, domain=None, range=Optional[str])
@@ -15455,7 +15455,7 @@ slots.soil_texture_class = Slot(uri=MIXS['0001164'], name="soil_texture_class", 
 
 slots.soil_texture_meth = Slot(uri=MIXS['0000336'], name="soil_texture_meth", curie=MIXS.curie('0000336'),
                    model_uri=MIXS.soil_texture_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.soil_type = Slot(uri=MIXS['0000332'], name="soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.soil_type, domain=None, range=Optional[str],
@@ -15463,7 +15463,7 @@ slots.soil_type = Slot(uri=MIXS['0000332'], name="soil_type", curie=MIXS.curie('
 
 slots.soil_type_meth = Slot(uri=MIXS['0000334'], name="soil_type_meth", curie=MIXS.curie('0000334'),
                    model_uri=MIXS.soil_type_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.solar_irradiance = Slot(uri=MIXS['0000112'], name="solar_irradiance", curie=MIXS.curie('0000112'),
                    model_uri=MIXS.solar_irradiance, domain=None, range=Optional[str],
@@ -15483,7 +15483,7 @@ slots.soluble_react_phosp = Slot(uri=MIXS['0000738'], name="soluble_react_phosp"
 
 slots.sop = Slot(uri=MIXS['0000090'], name="sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.sort_tech = Slot(uri=MIXS['0000075'], name="sort_tech", curie=MIXS.curie('0000075'),
                    model_uri=MIXS.sort_tech, domain=None, range=Optional[str])
@@ -15692,7 +15692,7 @@ slots.timepoint = Slot(uri=MIXS['0001173'], name="timepoint", curie=MIXS.curie('
 
 slots.tiss_cult_growth_med = Slot(uri=MIXS['0001070'], name="tiss_cult_growth_med", curie=MIXS.curie('0001070'),
                    model_uri=MIXS.tiss_cult_growth_med, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.toluene = Slot(uri=MIXS['0000154'], name="toluene", curie=MIXS.curie('0000154'),
                    model_uri=MIXS.toluene, domain=None, range=Optional[str],
@@ -15729,14 +15729,14 @@ slots.tot_nitro = Slot(uri=MIXS.tot_nitro, name="tot_nitro", curie=MIXS.curie('t
 
 slots.tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
                    model_uri=MIXS.tot_nitro_cont_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
                    model_uri=MIXS.tot_nitro_content, domain=None, range=Optional[str])
 
 slots.tot_org_c_meth = Slot(uri=MIXS['0000337'], name="tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.tot_org_c_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.tot_org_carb = Slot(uri=MIXS['0000533'], name="tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.tot_org_carb, domain=None, range=Optional[str])
@@ -15893,7 +15893,7 @@ slots.wastewater_type = Slot(uri=MIXS['0000353'], name="wastewater_type", curie=
 
 slots.water_cont_soil_meth = Slot(uri=MIXS['0000323'], name="water_cont_soil_meth", curie=MIXS.curie('0000323'),
                    model_uri=MIXS.water_cont_soil_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.water_content = Slot(uri=MIXS['0000185'], name="water_content", curie=MIXS.curie('0000185'),
                    model_uri=MIXS.water_content, domain=None, range=Optional[str],
@@ -16080,7 +16080,7 @@ slots.Agriculture_cur_vegetation = Slot(uri=MIXS['0000312'], name="Agriculture_c
 
 slots.Agriculture_cur_vegetation_meth = Slot(uri=MIXS['0000314'], name="Agriculture_cur_vegetation_meth", curie=MIXS.curie('0000314'),
                    model_uri=MIXS.Agriculture_cur_vegetation_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_drainage_class = Slot(uri=MIXS['0001085'], name="Agriculture_drainage_class", curie=MIXS.curie('0001085'),
                    model_uri=MIXS.Agriculture_drainage_class, domain=Agriculture, range=Optional[Union[str, "DRAINAGECLASSENUM"]])
@@ -16091,7 +16091,7 @@ slots.Agriculture_elev = Slot(uri=MIXS['0000093'], name="Agriculture_elev", curi
 
 slots.Agriculture_enrichment_protocol = Slot(uri=MIXS['0001177'], name="Agriculture_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.Agriculture_enrichment_protocol, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.Agriculture_extreme_event = Slot(uri=MIXS['0000320'], name="Agriculture_extreme_event", curie=MIXS.curie('0000320'),
                    model_uri=MIXS.Agriculture_extreme_event, domain=Agriculture, range=Optional[str])
@@ -16140,30 +16140,30 @@ slots.Agriculture_food_trav_vehic = Slot(uri=MIXS['0001138'], name="Agriculture_
 
 slots.Agriculture_fungicide_regm = Slot(uri=MIXS['0000557'], name="Agriculture_fungicide_regm", curie=MIXS.curie('0000557'),
                    model_uri=MIXS.Agriculture_fungicide_regm, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_gaseous_environment = Slot(uri=MIXS['0000558'], name="Agriculture_gaseous_environment", curie=MIXS.curie('0000558'),
                    model_uri=MIXS.Agriculture_gaseous_environment, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_genetic_mod = Slot(uri=MIXS['0000859'], name="Agriculture_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.Agriculture_genetic_mod, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.Agriculture_heavy_metals_meth = Slot(uri=MIXS['0000343'], name="Agriculture_heavy_metals_meth", curie=MIXS.curie('0000343'),
                    model_uri=MIXS.Agriculture_heavy_metals_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_herbicide_regm = Slot(uri=MIXS['0000561'], name="Agriculture_herbicide_regm", curie=MIXS.curie('0000561'),
                    model_uri=MIXS.Agriculture_herbicide_regm, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_horizon = Slot(uri=MIXS.horizon, name="Agriculture_horizon", curie=MIXS.curie('horizon'),
                    model_uri=MIXS.Agriculture_horizon, domain=Agriculture, range=Optional[str])
 
 slots.Agriculture_horizon_meth = Slot(uri=MIXS['0000321'], name="Agriculture_horizon_meth", curie=MIXS.curie('0000321'),
                    model_uri=MIXS.Agriculture_horizon_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_host_age = Slot(uri=MIXS['0000255'], name="Agriculture_host_age", curie=MIXS.curie('0000255'),
                    model_uri=MIXS.Agriculture_host_age, domain=Agriculture, range=str,
@@ -16224,7 +16224,7 @@ slots.Agriculture_humidity = Slot(uri=MIXS['0000100'], name="Agriculture_humidit
 
 slots.Agriculture_isol_growth_condt = Slot(uri=MIXS['0000003'], name="Agriculture_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.Agriculture_isol_growth_condt, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_lib_layout = Slot(uri=MIXS['0000041'], name="Agriculture_lib_layout", curie=MIXS.curie('0000041'),
                    model_uri=MIXS.Agriculture_lib_layout, domain=Agriculture, range=Optional[Union[str, "LIBLAYOUTENUM"]])
@@ -16249,11 +16249,11 @@ slots.Agriculture_library_prep_kit = Slot(uri=MIXS['0001145'], name="Agriculture
 
 slots.Agriculture_link_class_info = Slot(uri=MIXS['0000329'], name="Agriculture_link_class_info", curie=MIXS.curie('0000329'),
                    model_uri=MIXS.Agriculture_link_class_info, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_link_climate_info = Slot(uri=MIXS['0000328'], name="Agriculture_link_climate_info", curie=MIXS.curie('0000328'),
                    model_uri=MIXS.Agriculture_link_climate_info, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_local_class = Slot(uri=MIXS['0000330'], name="Agriculture_local_class", curie=MIXS.curie('0000330'),
                    model_uri=MIXS.Agriculture_local_class, domain=Agriculture, range=Optional[str],
@@ -16261,7 +16261,7 @@ slots.Agriculture_local_class = Slot(uri=MIXS['0000330'], name="Agriculture_loca
 
 slots.Agriculture_local_class_meth = Slot(uri=MIXS['0000331'], name="Agriculture_local_class_meth", curie=MIXS.curie('0000331'),
                    model_uri=MIXS.Agriculture_local_class_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_lot_number = Slot(uri=MIXS['0001147'], name="Agriculture_lot_number", curie=MIXS.curie('0001147'),
                    model_uri=MIXS.Agriculture_lot_number, domain=Agriculture, range=Optional[str])
@@ -16283,15 +16283,15 @@ slots.Agriculture_misc_param = Slot(uri=MIXS['0000752'], name="Agriculture_misc_
 
 slots.Agriculture_non_mineral_nutr_regm = Slot(uri=MIXS['0000571'], name="Agriculture_non_mineral_nutr_regm", curie=MIXS.curie('0000571'),
                    model_uri=MIXS.Agriculture_non_mineral_nutr_regm, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Agriculture_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.Agriculture_nucl_acid_amp, domain=Agriculture, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Agriculture_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.Agriculture_nucl_acid_ext, domain=Agriculture, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_organism_count = Slot(uri=MIXS['0000103'], name="Agriculture_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.Agriculture_organism_count, domain=Agriculture, range=Optional[str])
@@ -16314,11 +16314,11 @@ slots.Agriculture_perturbation = Slot(uri=MIXS['0000754'], name="Agriculture_per
 
 slots.Agriculture_pesticide_regm = Slot(uri=MIXS['0000573'], name="Agriculture_pesticide_regm", curie=MIXS.curie('0000573'),
                    model_uri=MIXS.Agriculture_pesticide_regm, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_ph_meth = Slot(uri=MIXS['0001106'], name="Agriculture_ph_meth", curie=MIXS.curie('0001106'),
                    model_uri=MIXS.Agriculture_ph_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_ph_regm = Slot(uri=MIXS['0001056'], name="Agriculture_ph_regm", curie=MIXS.curie('0001056'),
                    model_uri=MIXS.Agriculture_ph_regm, domain=Agriculture, range=Optional[str])
@@ -16329,7 +16329,7 @@ slots.Agriculture_photosynt_activ = Slot(uri=MIXS['0001296'], name="Agriculture_
 
 slots.Agriculture_photosynt_activ_meth = Slot(uri=MIXS['0001336'], name="Agriculture_photosynt_activ_meth", curie=MIXS.curie('0001336'),
                    model_uri=MIXS.Agriculture_photosynt_activ_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.Agriculture_plant_growth_med = Slot(uri=MIXS['0001057'], name="Agriculture_plant_growth_med", curie=MIXS.curie('0001057'),
                    model_uri=MIXS.Agriculture_plant_growth_med, domain=Agriculture, range=Optional[str])
@@ -16360,7 +16360,7 @@ slots.Agriculture_previous_land_use = Slot(uri=MIXS['0000315'], name="Agricultur
 
 slots.Agriculture_previous_land_use_meth = Slot(uri=MIXS['0000316'], name="Agriculture_previous_land_use_meth", curie=MIXS.curie('0000316'),
                    model_uri=MIXS.Agriculture_previous_land_use_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_profile_position = Slot(uri=MIXS['0001084'], name="Agriculture_profile_position", curie=MIXS.curie('0001084'),
                    model_uri=MIXS.Agriculture_profile_position, domain=Agriculture, range=Optional[Union[str, "PROFILEPOSITIONENUM"]])
@@ -16381,14 +16381,14 @@ slots.Agriculture_root_med_ph = Slot(uri=MIXS['0001062'], name="Agriculture_root
 
 slots.Agriculture_salt_regm = Slot(uri=MIXS['0000582'], name="Agriculture_salt_regm", curie=MIXS.curie('0000582'),
                    model_uri=MIXS.Agriculture_salt_regm, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.Agriculture_samp_collect_device = Slot(uri=MIXS['0000002'], name="Agriculture_samp_collect_device", curie=MIXS.curie('0000002'),
                    model_uri=MIXS.Agriculture_samp_collect_device, domain=Agriculture, range=str)
 
 slots.Agriculture_samp_collect_method = Slot(uri=MIXS['0001225'], name="Agriculture_samp_collect_method", curie=MIXS.curie('0001225'),
                    model_uri=MIXS.Agriculture_samp_collect_method, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.Agriculture_samp_mat_process = Slot(uri=MIXS['0000016'], name="Agriculture_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Agriculture_samp_mat_process, domain=Agriculture, range=str,
@@ -16492,7 +16492,7 @@ slots.Agriculture_soil_type = Slot(uri=MIXS['0000332'], name="Agriculture_soil_t
 
 slots.Agriculture_soil_type_meth = Slot(uri=MIXS['0000334'], name="Agriculture_soil_type_meth", curie=MIXS.curie('0000334'),
                    model_uri=MIXS.Agriculture_soil_type_meth, domain=Agriculture, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_solar_irradiance = Slot(uri=MIXS['0000112'], name="Agriculture_solar_irradiance", curie=MIXS.curie('0000112'),
                    model_uri=MIXS.Agriculture_solar_irradiance, domain=Agriculture, range=Optional[str],
@@ -16500,7 +16500,7 @@ slots.Agriculture_solar_irradiance = Slot(uri=MIXS['0000112'], name="Agriculture
 
 slots.Agriculture_sop = Slot(uri=MIXS['0000090'], name="Agriculture_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.Agriculture_sop, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.Agriculture_source_mat_id = Slot(uri=MIXS['0000026'], name="Agriculture_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.Agriculture_source_mat_id, domain=Agriculture, range=Optional[str],
@@ -16552,7 +16552,7 @@ slots.Agriculture_tot_nitro = Slot(uri=MIXS.tot_nitro, name="Agriculture_tot_nit
 
 slots.Agriculture_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="Agriculture_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.Agriculture_tot_org_c_meth, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Agriculture_tot_org_carb = Slot(uri=MIXS['0000533'], name="Agriculture_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.Agriculture_tot_org_carb, domain=Agriculture, range=Optional[str])
@@ -17399,7 +17399,7 @@ slots.FoodAnimalAndAnimalFeed_cult_target = Slot(uri=MIXS['0001119'], name="Food
 
 slots.FoodAnimalAndAnimalFeed_enrichment_protocol = Slot(uri=MIXS['0001177'], name="FoodAnimalAndAnimalFeed_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_enrichment_protocol, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodAnimalAndAnimalFeed_env_broad_scale = Slot(uri=MIXS['0000012'], name="FoodAnimalAndAnimalFeed_env_broad_scale", curie=MIXS.curie('0000012'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_env_broad_scale, domain=FoodAnimalAndAnimalFeed, range=str,
@@ -17521,7 +17521,7 @@ slots.FoodAnimalAndAnimalFeed_misc_param = Slot(uri=MIXS['0000752'], name="FoodA
 
 slots.FoodAnimalAndAnimalFeed_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="FoodAnimalAndAnimalFeed_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_nucl_acid_ext, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodAnimalAndAnimalFeed_organism_count = Slot(uri=MIXS['0000103'], name="FoodAnimalAndAnimalFeed_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_organism_count, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
@@ -17548,7 +17548,7 @@ slots.FoodAnimalAndAnimalFeed_samp_collect_device = Slot(uri=MIXS['0000002'], na
 
 slots.FoodAnimalAndAnimalFeed_samp_collect_method = Slot(uri=MIXS['0001225'], name="FoodAnimalAndAnimalFeed_samp_collect_method", curie=MIXS.curie('0001225'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_collect_method, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodAnimalAndAnimalFeed_samp_name = Slot(uri=MIXS.samp_name, name="FoodAnimalAndAnimalFeed_samp_name", curie=MIXS.curie('samp_name'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_name, domain=FoodAnimalAndAnimalFeed, range=str)
@@ -17747,7 +17747,7 @@ slots.FoodFarmEnvironment_depth = Slot(uri=MIXS['0000018'], name="FoodFarmEnviro
 
 slots.FoodFarmEnvironment_enrichment_protocol = Slot(uri=MIXS['0001177'], name="FoodFarmEnvironment_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.FoodFarmEnvironment_enrichment_protocol, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFarmEnvironment_env_broad_scale = Slot(uri=MIXS['0000012'], name="FoodFarmEnvironment_env_broad_scale", curie=MIXS.curie('0000012'),
                    model_uri=MIXS.FoodFarmEnvironment_env_broad_scale, domain=FoodFarmEnvironment, range=str,
@@ -17834,7 +17834,7 @@ slots.FoodFarmEnvironment_food_treat_proc = Slot(uri=MIXS['0001140'], name="Food
 
 slots.FoodFarmEnvironment_genetic_mod = Slot(uri=MIXS['0000859'], name="FoodFarmEnvironment_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.FoodFarmEnvironment_genetic_mod, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFarmEnvironment_geo_loc_name = Slot(uri=MIXS['0000010'], name="FoodFarmEnvironment_geo_loc_name", curie=MIXS.curie('0000010'),
                    model_uri=MIXS.FoodFarmEnvironment_geo_loc_name, domain=FoodFarmEnvironment, range=str,
@@ -17912,7 +17912,7 @@ slots.FoodFarmEnvironment_misc_param = Slot(uri=MIXS['0000752'], name="FoodFarmE
 
 slots.FoodFarmEnvironment_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="FoodFarmEnvironment_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.FoodFarmEnvironment_nucl_acid_ext, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_organism_count = Slot(uri=MIXS['0000103'], name="FoodFarmEnvironment_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.FoodFarmEnvironment_organism_count, domain=FoodFarmEnvironment, range=Optional[str])
@@ -17928,7 +17928,7 @@ slots.FoodFarmEnvironment_ph = Slot(uri=MIXS['0001001'], name="FoodFarmEnvironme
 
 slots.FoodFarmEnvironment_ph_meth = Slot(uri=MIXS['0001106'], name="FoodFarmEnvironment_ph_meth", curie=MIXS.curie('0001106'),
                    model_uri=MIXS.FoodFarmEnvironment_ph_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_plant_growth_med = Slot(uri=MIXS['0001057'], name="FoodFarmEnvironment_plant_growth_med", curie=MIXS.curie('0001057'),
                    model_uri=MIXS.FoodFarmEnvironment_plant_growth_med, domain=FoodFarmEnvironment, range=Optional[str])
@@ -17965,7 +17965,7 @@ slots.FoodFarmEnvironment_repository_name = Slot(uri=MIXS['0001152'], name="Food
 
 slots.FoodFarmEnvironment_root_cond = Slot(uri=MIXS['0001061'], name="FoodFarmEnvironment_root_cond", curie=MIXS.curie('0001061'),
                    model_uri=MIXS.FoodFarmEnvironment_root_cond, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFarmEnvironment_root_med_carbon = Slot(uri=MIXS['0000577'], name="FoodFarmEnvironment_root_med_carbon", curie=MIXS.curie('0000577'),
                    model_uri=MIXS.FoodFarmEnvironment_root_med_carbon, domain=FoodFarmEnvironment, range=Optional[str])
@@ -17987,7 +17987,7 @@ slots.FoodFarmEnvironment_salinity = Slot(uri=MIXS['0000183'], name="FoodFarmEnv
 
 slots.FoodFarmEnvironment_salinity_meth = Slot(uri=MIXS['0000341'], name="FoodFarmEnvironment_salinity_meth", curie=MIXS.curie('0000341'),
                    model_uri=MIXS.FoodFarmEnvironment_salinity_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_samp_collect_device = Slot(uri=MIXS['0000002'], name="FoodFarmEnvironment_samp_collect_device", curie=MIXS.curie('0000002'),
                    model_uri=MIXS.FoodFarmEnvironment_samp_collect_device, domain=FoodFarmEnvironment, range=Optional[str])
@@ -18085,7 +18085,7 @@ slots.FoodFarmEnvironment_soil_texture_class = Slot(uri=MIXS['0001164'], name="F
 
 slots.FoodFarmEnvironment_soil_texture_meth = Slot(uri=MIXS['0000336'], name="FoodFarmEnvironment_soil_texture_meth", curie=MIXS.curie('0000336'),
                    model_uri=MIXS.FoodFarmEnvironment_soil_texture_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_soil_type = Slot(uri=MIXS['0000332'], name="FoodFarmEnvironment_soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.FoodFarmEnvironment_soil_type, domain=FoodFarmEnvironment, range=Optional[str],
@@ -18093,7 +18093,7 @@ slots.FoodFarmEnvironment_soil_type = Slot(uri=MIXS['0000332'], name="FoodFarmEn
 
 slots.FoodFarmEnvironment_soil_type_meth = Slot(uri=MIXS['0000334'], name="FoodFarmEnvironment_soil_type_meth", curie=MIXS.curie('0000334'),
                    model_uri=MIXS.FoodFarmEnvironment_soil_type_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_solar_irradiance = Slot(uri=MIXS['0000112'], name="FoodFarmEnvironment_solar_irradiance", curie=MIXS.curie('0000112'),
                    model_uri=MIXS.FoodFarmEnvironment_solar_irradiance, domain=FoodFarmEnvironment, range=Optional[str],
@@ -18132,14 +18132,14 @@ slots.FoodFarmEnvironment_timepoint = Slot(uri=MIXS['0001173'], name="FoodFarmEn
 
 slots.FoodFarmEnvironment_tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="FoodFarmEnvironment_tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
                    model_uri=MIXS.FoodFarmEnvironment_tot_nitro_cont_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="FoodFarmEnvironment_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
                    model_uri=MIXS.FoodFarmEnvironment_tot_nitro_content, domain=FoodFarmEnvironment, range=Optional[str])
 
 slots.FoodFarmEnvironment_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="FoodFarmEnvironment_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.FoodFarmEnvironment_tot_org_c_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFarmEnvironment_tot_org_carb = Slot(uri=MIXS['0000533'], name="FoodFarmEnvironment_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.FoodFarmEnvironment_tot_org_carb, domain=FoodFarmEnvironment, range=Optional[str])
@@ -18226,7 +18226,7 @@ slots.FoodFoodProductionFacility_dietary_claim_use = Slot(uri=MIXS['0001199'], n
 
 slots.FoodFoodProductionFacility_enrichment_protocol = Slot(uri=MIXS['0001177'], name="FoodFoodProductionFacility_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.FoodFoodProductionFacility_enrichment_protocol, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFoodProductionFacility_env_broad_scale = Slot(uri=MIXS['0000012'], name="FoodFoodProductionFacility_env_broad_scale", curie=MIXS.curie('0000012'),
                    model_uri=MIXS.FoodFoodProductionFacility_env_broad_scale, domain=FoodFoodProductionFacility, range=str,
@@ -18341,7 +18341,7 @@ slots.FoodFoodProductionFacility_freq_clean = Slot(uri=MIXS['0000226'], name="Fo
 
 slots.FoodFoodProductionFacility_genetic_mod = Slot(uri=MIXS['0000859'], name="FoodFoodProductionFacility_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.FoodFoodProductionFacility_genetic_mod, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFoodProductionFacility_geo_loc_name = Slot(uri=MIXS['0000010'], name="FoodFoodProductionFacility_geo_loc_name", curie=MIXS.curie('0000010'),
                    model_uri=MIXS.FoodFoodProductionFacility_geo_loc_name, domain=FoodFoodProductionFacility, range=str,
@@ -18377,7 +18377,7 @@ slots.FoodFoodProductionFacility_misc_param = Slot(uri=MIXS['0000752'], name="Fo
 
 slots.FoodFoodProductionFacility_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="FoodFoodProductionFacility_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.FoodFoodProductionFacility_nucl_acid_ext, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodFoodProductionFacility_nucl_acid_ext_kit = Slot(uri=MIXS['0001223'], name="FoodFoodProductionFacility_nucl_acid_ext_kit", curie=MIXS.curie('0001223'),
                    model_uri=MIXS.FoodFoodProductionFacility_nucl_acid_ext_kit, domain=FoodFoodProductionFacility, range=Optional[str],
@@ -18416,7 +18416,7 @@ slots.FoodFoodProductionFacility_samp_collect_device = Slot(uri=MIXS['0000002'],
 
 slots.FoodFoodProductionFacility_samp_collect_method = Slot(uri=MIXS['0001225'], name="FoodFoodProductionFacility_samp_collect_method", curie=MIXS.curie('0001225'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_collect_method, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFoodProductionFacility_samp_floor = Slot(uri=MIXS['0000828'], name="FoodFoodProductionFacility_samp_floor", curie=MIXS.curie('0000828'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_floor, domain=FoodFoodProductionFacility, range=Optional[str])
@@ -18580,7 +18580,7 @@ slots.FoodHumanFoods_dietary_claim_use = Slot(uri=MIXS['0001199'], name="FoodHum
 
 slots.FoodHumanFoods_enrichment_protocol = Slot(uri=MIXS['0001177'], name="FoodHumanFoods_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.FoodHumanFoods_enrichment_protocol, domain=FoodHumanFoods, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodHumanFoods_env_broad_scale = Slot(uri=MIXS['0000012'], name="FoodHumanFoods_env_broad_scale", curie=MIXS.curie('0000012'),
                    model_uri=MIXS.FoodHumanFoods_env_broad_scale, domain=FoodHumanFoods, range=str,
@@ -18709,7 +18709,7 @@ slots.FoodHumanFoods_food_treat_proc = Slot(uri=MIXS['0001140'], name="FoodHuman
 
 slots.FoodHumanFoods_genetic_mod = Slot(uri=MIXS['0000859'], name="FoodHumanFoods_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.FoodHumanFoods_genetic_mod, domain=FoodHumanFoods, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.FoodHumanFoods_geo_loc_name = Slot(uri=MIXS['0000010'], name="FoodHumanFoods_geo_loc_name", curie=MIXS.curie('0000010'),
                    model_uri=MIXS.FoodHumanFoods_geo_loc_name, domain=FoodHumanFoods, range=str,
@@ -18759,7 +18759,7 @@ slots.FoodHumanFoods_misc_param = Slot(uri=MIXS['0000752'], name="FoodHumanFoods
 
 slots.FoodHumanFoods_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="FoodHumanFoods_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.FoodHumanFoods_nucl_acid_ext, domain=FoodHumanFoods, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.FoodHumanFoods_nucl_acid_ext_kit = Slot(uri=MIXS['0001223'], name="FoodHumanFoods_nucl_acid_ext_kit", curie=MIXS.curie('0001223'),
                    model_uri=MIXS.FoodHumanFoods_nucl_acid_ext_kit, domain=FoodHumanFoods, range=Optional[str],
@@ -18943,7 +18943,7 @@ slots.HostAssociated_elev = Slot(uri=MIXS['0000093'], name="HostAssociated_elev"
 
 slots.HostAssociated_genetic_mod = Slot(uri=MIXS['0000859'], name="HostAssociated_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.HostAssociated_genetic_mod, domain=HostAssociated, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.HostAssociated_gravidity = Slot(uri=MIXS['0000875'], name="HostAssociated_gravidity", curie=MIXS.curie('0000875'),
                    model_uri=MIXS.HostAssociated_gravidity, domain=HostAssociated, range=Optional[str])
@@ -20801,7 +20801,7 @@ slots.MigsBa_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsBa_host_spec_
 
 slots.MigsBa_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsBa_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsBa_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsBa_lat_lon = Slot(uri=MIXS['0000009'], name="MigsBa_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MigsBa_lat_lon, domain=None, range=str,
@@ -20829,11 +20829,11 @@ slots.MigsBa_neg_cont_type = Slot(uri=MIXS['0001321'], name="MigsBa_neg_cont_typ
 
 slots.MigsBa_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MigsBa_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MigsBa_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsBa_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MigsBa_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MigsBa_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsBa_num_replicons = Slot(uri=MIXS['0000022'], name="MigsBa_num_replicons", curie=MIXS.curie('0000022'),
                    model_uri=MIXS.MigsBa_num_replicons, domain=None, range=int)
@@ -20854,7 +20854,7 @@ slots.MigsBa_project_name = Slot(uri=MIXS['0000092'], name="MigsBa_project_name"
 
 slots.MigsBa_ref_biomaterial = Slot(uri=MIXS['0000025'], name="MigsBa_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.MigsBa_ref_biomaterial, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsBa_ref_db = Slot(uri=MIXS['0000062'], name="MigsBa_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.MigsBa_ref_db, domain=None, range=Optional[str],
@@ -20897,7 +20897,7 @@ slots.MigsBa_sim_search_meth = Slot(uri=MIXS['0000063'], name="MigsBa_sim_search
 
 slots.MigsBa_sop = Slot(uri=MIXS['0000090'], name="MigsBa_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MigsBa_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MigsBa_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsBa_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MigsBa_source_mat_id, domain=None, range=Optional[str],
@@ -21011,7 +21011,7 @@ slots.MigsEu_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsEu_host_spec_
 
 slots.MigsEu_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsEu_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsEu_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsEu_lat_lon = Slot(uri=MIXS['0000009'], name="MigsEu_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MigsEu_lat_lon, domain=None, range=str,
@@ -21039,11 +21039,11 @@ slots.MigsEu_neg_cont_type = Slot(uri=MIXS['0001321'], name="MigsEu_neg_cont_typ
 
 slots.MigsEu_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MigsEu_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MigsEu_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsEu_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MigsEu_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MigsEu_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsEu_num_replicons = Slot(uri=MIXS['0000022'], name="MigsEu_num_replicons", curie=MIXS.curie('0000022'),
                    model_uri=MIXS.MigsEu_num_replicons, domain=None, range=Optional[int])
@@ -21072,7 +21072,7 @@ slots.MigsEu_propagation = Slot(uri=MIXS['0000033'], name="MigsEu_propagation", 
 
 slots.MigsEu_ref_biomaterial = Slot(uri=MIXS['0000025'], name="MigsEu_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.MigsEu_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsEu_ref_db = Slot(uri=MIXS['0000062'], name="MigsEu_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.MigsEu_ref_db, domain=None, range=Optional[str],
@@ -21112,7 +21112,7 @@ slots.MigsEu_sim_search_meth = Slot(uri=MIXS['0000063'], name="MigsEu_sim_search
 
 slots.MigsEu_sop = Slot(uri=MIXS['0000090'], name="MigsEu_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MigsEu_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MigsEu_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsEu_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MigsEu_source_mat_id, domain=None, range=Optional[str],
@@ -21215,7 +21215,7 @@ slots.MigsOrg_geo_loc_name = Slot(uri=MIXS['0000010'], name="MigsOrg_geo_loc_nam
 
 slots.MigsOrg_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsOrg_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsOrg_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsOrg_lat_lon = Slot(uri=MIXS['0000009'], name="MigsOrg_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MigsOrg_lat_lon, domain=None, range=str,
@@ -21243,11 +21243,11 @@ slots.MigsOrg_neg_cont_type = Slot(uri=MIXS['0001321'], name="MigsOrg_neg_cont_t
 
 slots.MigsOrg_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MigsOrg_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MigsOrg_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsOrg_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MigsOrg_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MigsOrg_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsOrg_number_contig = Slot(uri=MIXS['0000060'], name="MigsOrg_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.MigsOrg_number_contig, domain=None, range=Optional[int])
@@ -21261,7 +21261,7 @@ slots.MigsOrg_project_name = Slot(uri=MIXS['0000092'], name="MigsOrg_project_nam
 
 slots.MigsOrg_ref_biomaterial = Slot(uri=MIXS['0000025'], name="MigsOrg_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.MigsOrg_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsOrg_ref_db = Slot(uri=MIXS['0000062'], name="MigsOrg_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.MigsOrg_ref_db, domain=None, range=Optional[str],
@@ -21301,7 +21301,7 @@ slots.MigsOrg_sim_search_meth = Slot(uri=MIXS['0000063'], name="MigsOrg_sim_sear
 
 slots.MigsOrg_sop = Slot(uri=MIXS['0000090'], name="MigsOrg_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MigsOrg_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MigsOrg_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsOrg_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MigsOrg_source_mat_id, domain=None, range=Optional[str],
@@ -21402,7 +21402,7 @@ slots.MigsPl_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsPl_host_spec_
 
 slots.MigsPl_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsPl_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsPl_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsPl_lat_lon = Slot(uri=MIXS['0000009'], name="MigsPl_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MigsPl_lat_lon, domain=None, range=str,
@@ -21430,11 +21430,11 @@ slots.MigsPl_neg_cont_type = Slot(uri=MIXS['0001321'], name="MigsPl_neg_cont_typ
 
 slots.MigsPl_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MigsPl_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MigsPl_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsPl_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MigsPl_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MigsPl_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsPl_number_contig = Slot(uri=MIXS['0000060'], name="MigsPl_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.MigsPl_number_contig, domain=None, range=Optional[int])
@@ -21452,7 +21452,7 @@ slots.MigsPl_propagation = Slot(uri=MIXS['0000033'], name="MigsPl_propagation", 
 
 slots.MigsPl_ref_biomaterial = Slot(uri=MIXS['0000025'], name="MigsPl_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.MigsPl_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsPl_ref_db = Slot(uri=MIXS['0000062'], name="MigsPl_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.MigsPl_ref_db, domain=None, range=Optional[str],
@@ -21492,7 +21492,7 @@ slots.MigsPl_sim_search_meth = Slot(uri=MIXS['0000063'], name="MigsPl_sim_search
 
 slots.MigsPl_sop = Slot(uri=MIXS['0000090'], name="MigsPl_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MigsPl_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MigsPl_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsPl_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MigsPl_source_mat_id, domain=None, range=Optional[str],
@@ -21604,7 +21604,7 @@ slots.MigsVi_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsVi_host_spec_
 
 slots.MigsVi_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsVi_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsVi_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsVi_lat_lon = Slot(uri=MIXS['0000009'], name="MigsVi_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MigsVi_lat_lon, domain=None, range=str,
@@ -21632,11 +21632,11 @@ slots.MigsVi_neg_cont_type = Slot(uri=MIXS['0001321'], name="MigsVi_neg_cont_typ
 
 slots.MigsVi_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MigsVi_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MigsVi_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsVi_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MigsVi_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MigsVi_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsVi_num_replicons = Slot(uri=MIXS['0000022'], name="MigsVi_num_replicons", curie=MIXS.curie('0000022'),
                    model_uri=MIXS.MigsVi_num_replicons, domain=None, range=Optional[int])
@@ -21661,7 +21661,7 @@ slots.MigsVi_propagation = Slot(uri=MIXS['0000033'], name="MigsVi_propagation", 
 
 slots.MigsVi_ref_biomaterial = Slot(uri=MIXS['0000025'], name="MigsVi_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.MigsVi_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MigsVi_ref_db = Slot(uri=MIXS['0000062'], name="MigsVi_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.MigsVi_ref_db, domain=None, range=Optional[str],
@@ -21701,7 +21701,7 @@ slots.MigsVi_sim_search_meth = Slot(uri=MIXS['0000063'], name="MigsVi_sim_search
 
 slots.MigsVi_sop = Slot(uri=MIXS['0000090'], name="MigsVi_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MigsVi_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MigsVi_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsVi_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MigsVi_source_mat_id, domain=None, range=Optional[str],
@@ -21849,11 +21849,11 @@ slots.Mimag_neg_cont_type = Slot(uri=MIXS['0001321'], name="Mimag_neg_cont_type"
 
 slots.Mimag_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Mimag_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.Mimag_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mimag_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Mimag_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.Mimag_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mimag_number_contig = Slot(uri=MIXS['0000060'], name="Mimag_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.Mimag_number_contig, domain=None, range=Optional[int])
@@ -21870,7 +21870,7 @@ slots.Mimag_reassembly_bin = Slot(uri=MIXS['0000079'], name="Mimag_reassembly_bi
 
 slots.Mimag_ref_biomaterial = Slot(uri=MIXS['0000025'], name="Mimag_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.Mimag_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mimag_ref_db = Slot(uri=MIXS['0000062'], name="Mimag_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.Mimag_ref_db, domain=None, range=Optional[str],
@@ -21917,7 +21917,7 @@ slots.Mimag_size_frac = Slot(uri=MIXS['0000017'], name="Mimag_size_frac", curie=
 
 slots.Mimag_sop = Slot(uri=MIXS['0000090'], name="Mimag_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.Mimag_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.Mimag_source_mat_id = Slot(uri=MIXS['0000026'], name="Mimag_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.Mimag_source_mat_id, domain=None, range=Optional[str],
@@ -21989,7 +21989,7 @@ slots.MimarksC_geo_loc_name = Slot(uri=MIXS['0000010'], name="MimarksC_geo_loc_n
 
 slots.MimarksC_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MimarksC_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MimarksC_isol_growth_condt, domain=None, range=str,
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MimarksC_lat_lon = Slot(uri=MIXS['0000009'], name="MimarksC_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.MimarksC_lat_lon, domain=None, range=str,
@@ -22000,11 +22000,11 @@ slots.MimarksC_neg_cont_type = Slot(uri=MIXS['0001321'], name="MimarksC_neg_cont
 
 slots.MimarksC_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MimarksC_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MimarksC_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MimarksC_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MimarksC_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MimarksC_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MimarksC_pcr_cond = Slot(uri=MIXS['0000049'], name="MimarksC_pcr_cond", curie=MIXS.curie('0000049'),
                    model_uri=MIXS.MimarksC_pcr_cond, domain=None, range=Optional[str])
@@ -22055,7 +22055,7 @@ slots.MimarksC_seq_quality_check = Slot(uri=MIXS['0000051'], name="MimarksC_seq_
 
 slots.MimarksC_sop = Slot(uri=MIXS['0000090'], name="MimarksC_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MimarksC_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MimarksC_source_mat_id = Slot(uri=MIXS['0000026'], name="MimarksC_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MimarksC_source_mat_id, domain=None, range=Optional[str],
@@ -22157,11 +22157,11 @@ slots.MimarksS_neg_cont_type = Slot(uri=MIXS['0001321'], name="MimarksS_neg_cont
 
 slots.MimarksS_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="MimarksS_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.MimarksS_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MimarksS_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="MimarksS_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.MimarksS_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.MimarksS_pcr_cond = Slot(uri=MIXS['0000049'], name="MimarksS_pcr_cond", curie=MIXS.curie('0000049'),
                    model_uri=MIXS.MimarksS_pcr_cond, domain=None, range=Optional[str])
@@ -22216,7 +22216,7 @@ slots.MimarksS_size_frac = Slot(uri=MIXS['0000017'], name="MimarksS_size_frac", 
 
 slots.MimarksS_sop = Slot(uri=MIXS['0000090'], name="MimarksS_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.MimarksS_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.MimarksS_source_mat_id = Slot(uri=MIXS['0000026'], name="MimarksS_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.MimarksS_source_mat_id, domain=None, range=Optional[str],
@@ -22324,11 +22324,11 @@ slots.Mims_neg_cont_type = Slot(uri=MIXS['0001321'], name="Mims_neg_cont_type", 
 
 slots.Mims_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Mims_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.Mims_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mims_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Mims_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.Mims_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mims_number_contig = Slot(uri=MIXS['0000060'], name="Mims_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.Mims_number_contig, domain=None, range=Optional[int])
@@ -22342,7 +22342,7 @@ slots.Mims_project_name = Slot(uri=MIXS['0000092'], name="Mims_project_name", cu
 
 slots.Mims_ref_biomaterial = Slot(uri=MIXS['0000025'], name="Mims_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.Mims_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Mims_ref_db = Slot(uri=MIXS['0000062'], name="Mims_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.Mims_ref_db, domain=None, range=Optional[str],
@@ -22389,7 +22389,7 @@ slots.Mims_size_frac = Slot(uri=MIXS['0000017'], name="Mims_size_frac", curie=MI
 
 slots.Mims_sop = Slot(uri=MIXS['0000090'], name="Mims_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.Mims_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.Mims_source_mat_id = Slot(uri=MIXS['0000026'], name="Mims_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.Mims_source_mat_id, domain=None, range=Optional[str],
@@ -22515,11 +22515,11 @@ slots.Misag_neg_cont_type = Slot(uri=MIXS['0001321'], name="Misag_neg_cont_type"
 
 slots.Misag_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Misag_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.Misag_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Misag_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Misag_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.Misag_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Misag_number_contig = Slot(uri=MIXS['0000060'], name="Misag_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.Misag_number_contig, domain=None, range=Optional[int])
@@ -22533,7 +22533,7 @@ slots.Misag_project_name = Slot(uri=MIXS['0000092'], name="Misag_project_name", 
 
 slots.Misag_ref_biomaterial = Slot(uri=MIXS['0000025'], name="Misag_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.Misag_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Misag_ref_db = Slot(uri=MIXS['0000062'], name="Misag_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.Misag_ref_db, domain=None, range=Optional[str],
@@ -22587,7 +22587,7 @@ slots.Misag_size_frac = Slot(uri=MIXS['0000017'], name="Misag_size_frac", curie=
 
 slots.Misag_sop = Slot(uri=MIXS['0000090'], name="Misag_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.Misag_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.Misag_sort_tech = Slot(uri=MIXS['0000075'], name="Misag_sort_tech", curie=MIXS.curie('0000075'),
                    model_uri=MIXS.Misag_sort_tech, domain=None, range=str)
@@ -22933,11 +22933,11 @@ slots.Miuvig_neg_cont_type = Slot(uri=MIXS['0001321'], name="Miuvig_neg_cont_typ
 
 slots.Miuvig_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Miuvig_nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.Miuvig_nucl_acid_amp, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Miuvig_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Miuvig_nucl_acid_ext", curie=MIXS.curie('0000037'),
                    model_uri=MIXS.Miuvig_nucl_acid_ext, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Miuvig_number_contig = Slot(uri=MIXS['0000060'], name="Miuvig_number_contig", curie=MIXS.curie('0000060'),
                    model_uri=MIXS.Miuvig_number_contig, domain=None, range=int)
@@ -22974,7 +22974,7 @@ slots.Miuvig_reassembly_bin = Slot(uri=MIXS['0000079'], name="Miuvig_reassembly_
 
 slots.Miuvig_ref_biomaterial = Slot(uri=MIXS['0000025'], name="Miuvig_ref_biomaterial", curie=MIXS.curie('0000025'),
                    model_uri=MIXS.Miuvig_ref_biomaterial, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Miuvig_ref_db = Slot(uri=MIXS['0000062'], name="Miuvig_ref_db", curie=MIXS.curie('0000062'),
                    model_uri=MIXS.Miuvig_ref_db, domain=None, range=Optional[str],
@@ -23025,7 +23025,7 @@ slots.Miuvig_size_frac = Slot(uri=MIXS['0000017'], name="Miuvig_size_frac", curi
 
 slots.Miuvig_sop = Slot(uri=MIXS['0000090'], name="Miuvig_sop", curie=MIXS.curie('0000090'),
                    model_uri=MIXS.Miuvig_sop, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
 
 slots.Miuvig_sort_tech = Slot(uri=MIXS['0000075'], name="Miuvig_sort_tech", curie=MIXS.curie('0000075'),
                    model_uri=MIXS.Miuvig_sort_tech, domain=None, range=Optional[str])
@@ -23082,7 +23082,7 @@ slots.PlantAssociated_ances_data = Slot(uri=MIXS['0000247'], name="PlantAssociat
 
 slots.PlantAssociated_antibiotic_regm = Slot(uri=MIXS['0000553'], name="PlantAssociated_antibiotic_regm", curie=MIXS.curie('0000553'),
                    model_uri=MIXS.PlantAssociated_antibiotic_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'(([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?)\|)*[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_biol_stat = Slot(uri=MIXS['0000858'], name="PlantAssociated_biol_stat", curie=MIXS.curie('0000858'),
                    model_uri=MIXS.PlantAssociated_biol_stat, domain=PlantAssociated, range=Optional[str])
@@ -23096,7 +23096,7 @@ slots.PlantAssociated_chem_administration = Slot(uri=MIXS['0000751'], name="Plan
 
 slots.PlantAssociated_chem_mutagen = Slot(uri=MIXS['0000555'], name="PlantAssociated_chem_mutagen", curie=MIXS.curie('0000555'),
                    model_uri=MIXS.PlantAssociated_chem_mutagen, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_climate_environment = Slot(uri=MIXS['0001040'], name="PlantAssociated_climate_environment", curie=MIXS.curie('0001040'),
                    model_uri=MIXS.PlantAssociated_climate_environment, domain=PlantAssociated, range=Optional[str])
@@ -23114,19 +23114,19 @@ slots.PlantAssociated_elev = Slot(uri=MIXS['0000093'], name="PlantAssociated_ele
 
 slots.PlantAssociated_fertilizer_regm = Slot(uri=MIXS['0000556'], name="PlantAssociated_fertilizer_regm", curie=MIXS.curie('0000556'),
                    model_uri=MIXS.PlantAssociated_fertilizer_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_fungicide_regm = Slot(uri=MIXS['0000557'], name="PlantAssociated_fungicide_regm", curie=MIXS.curie('0000557'),
                    model_uri=MIXS.PlantAssociated_fungicide_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_gaseous_environment = Slot(uri=MIXS['0000558'], name="PlantAssociated_gaseous_environment", curie=MIXS.curie('0000558'),
                    model_uri=MIXS.PlantAssociated_gaseous_environment, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_genetic_mod = Slot(uri=MIXS['0000859'], name="PlantAssociated_genetic_mod", curie=MIXS.curie('0000859'),
                    model_uri=MIXS.PlantAssociated_genetic_mod, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.PlantAssociated_gravity = Slot(uri=MIXS['0000559'], name="PlantAssociated_gravity", curie=MIXS.curie('0000559'),
                    model_uri=MIXS.PlantAssociated_gravity, domain=PlantAssociated, range=Optional[str])
@@ -23139,11 +23139,11 @@ slots.PlantAssociated_growth_habit = Slot(uri=MIXS['0001044'], name="PlantAssoci
 
 slots.PlantAssociated_growth_hormone_regm = Slot(uri=MIXS['0000560'], name="PlantAssociated_growth_hormone_regm", curie=MIXS.curie('0000560'),
                    model_uri=MIXS.PlantAssociated_growth_hormone_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_herbicide_regm = Slot(uri=MIXS['0000561'], name="PlantAssociated_herbicide_regm", curie=MIXS.curie('0000561'),
                    model_uri=MIXS.PlantAssociated_herbicide_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_host_age = Slot(uri=MIXS['0000255'], name="PlantAssociated_host_age", curie=MIXS.curie('0000255'),
                    model_uri=MIXS.PlantAssociated_host_age, domain=PlantAssociated, range=Optional[str],
@@ -23209,7 +23209,7 @@ slots.PlantAssociated_mechanical_damage = Slot(uri=MIXS['0001052'], name="PlantA
 
 slots.PlantAssociated_mineral_nutr_regm = Slot(uri=MIXS['0000570'], name="PlantAssociated_mineral_nutr_regm", curie=MIXS.curie('0000570'),
                    model_uri=MIXS.PlantAssociated_mineral_nutr_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_misc_param = Slot(uri=MIXS['0000752'], name="PlantAssociated_misc_param", curie=MIXS.curie('0000752'),
                    model_uri=MIXS.PlantAssociated_misc_param, domain=PlantAssociated, range=Optional[str],
@@ -23229,7 +23229,7 @@ slots.PlantAssociated_perturbation = Slot(uri=MIXS['0000754'], name="PlantAssoci
 
 slots.PlantAssociated_pesticide_regm = Slot(uri=MIXS['0000573'], name="PlantAssociated_pesticide_regm", curie=MIXS.curie('0000573'),
                    model_uri=MIXS.PlantAssociated_pesticide_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_ph_regm = Slot(uri=MIXS['0001056'], name="PlantAssociated_ph_regm", curie=MIXS.curie('0001056'),
                    model_uri=MIXS.PlantAssociated_ph_regm, domain=PlantAssociated, range=Optional[str])
@@ -23254,14 +23254,14 @@ slots.PlantAssociated_project_name = Slot(uri=MIXS['0000092'], name="PlantAssoci
 
 slots.PlantAssociated_radiation_regm = Slot(uri=MIXS['0000575'], name="PlantAssociated_radiation_regm", curie=MIXS.curie('0000575'),
                    model_uri=MIXS.PlantAssociated_radiation_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_rainfall_regm = Slot(uri=MIXS['0000576'], name="PlantAssociated_rainfall_regm", curie=MIXS.curie('0000576'),
                    model_uri=MIXS.PlantAssociated_rainfall_regm, domain=PlantAssociated, range=Optional[str])
 
 slots.PlantAssociated_root_cond = Slot(uri=MIXS['0001061'], name="PlantAssociated_root_cond", curie=MIXS.curie('0001061'),
                    model_uri=MIXS.PlantAssociated_root_cond, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.PlantAssociated_root_med_carbon = Slot(uri=MIXS['0000577'], name="PlantAssociated_root_med_carbon", curie=MIXS.curie('0000577'),
                    model_uri=MIXS.PlantAssociated_root_med_carbon, domain=PlantAssociated, range=Optional[str])
@@ -23295,7 +23295,7 @@ slots.PlantAssociated_salinity = Slot(uri=MIXS['0000183'], name="PlantAssociated
 
 slots.PlantAssociated_salt_regm = Slot(uri=MIXS['0000582'], name="PlantAssociated_salt_regm", curie=MIXS.curie('0000582'),
                    model_uri=MIXS.PlantAssociated_salt_regm, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'))
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_samp_capt_status = Slot(uri=MIXS['0000860'], name="PlantAssociated_samp_capt_status", curie=MIXS.curie('0000860'),
                    model_uri=MIXS.PlantAssociated_samp_capt_status, domain=PlantAssociated, range=Optional[str])
@@ -23334,7 +23334,7 @@ slots.PlantAssociated_temp = Slot(uri=MIXS['0000113'], name="PlantAssociated_tem
 
 slots.PlantAssociated_tiss_cult_growth_med = Slot(uri=MIXS['0001070'], name="PlantAssociated_tiss_cult_growth_med", curie=MIXS.curie('0001070'),
                    model_uri=MIXS.PlantAssociated_tiss_cult_growth_med, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]+)'))
 
 slots.PlantAssociated_water_temp_regm = Slot(uri=MIXS['0000590'], name="PlantAssociated_water_temp_regm", curie=MIXS.curie('0000590'),
                    model_uri=MIXS.PlantAssociated_water_temp_regm, domain=PlantAssociated, range=Optional[str])
@@ -23619,7 +23619,7 @@ slots.Soil_al_sat = Slot(uri=MIXS['0000607'], name="Soil_al_sat", curie=MIXS.cur
 
 slots.Soil_al_sat_meth = Slot(uri=MIXS['0000324'], name="Soil_al_sat_meth", curie=MIXS.curie('0000324'),
                    model_uri=MIXS.Soil_al_sat_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_annual_precpt = Slot(uri=MIXS['0000644'], name="Soil_annual_precpt", curie=MIXS.curie('0000644'),
                    model_uri=MIXS.Soil_annual_precpt, domain=Soil, range=Optional[str],
@@ -23641,7 +23641,7 @@ slots.Soil_cur_vegetation = Slot(uri=MIXS['0000312'], name="Soil_cur_vegetation"
 
 slots.Soil_cur_vegetation_meth = Slot(uri=MIXS['0000314'], name="Soil_cur_vegetation_meth", curie=MIXS.curie('0000314'),
                    model_uri=MIXS.Soil_cur_vegetation_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_depth = Slot(uri=MIXS['0000018'], name="Soil_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.Soil_depth, domain=Soil, range=str,
@@ -23672,23 +23672,23 @@ slots.Soil_heavy_metals = Slot(uri=MIXS['0000652'], name="Soil_heavy_metals", cu
 
 slots.Soil_heavy_metals_meth = Slot(uri=MIXS['0000343'], name="Soil_heavy_metals_meth", curie=MIXS.curie('0000343'),
                    model_uri=MIXS.Soil_heavy_metals_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_horizon_meth = Slot(uri=MIXS['0000321'], name="Soil_horizon_meth", curie=MIXS.curie('0000321'),
                    model_uri=MIXS.Soil_horizon_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_link_addit_analys = Slot(uri=MIXS['0000340'], name="Soil_link_addit_analys", curie=MIXS.curie('0000340'),
                    model_uri=MIXS.Soil_link_addit_analys, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_link_class_info = Slot(uri=MIXS['0000329'], name="Soil_link_class_info", curie=MIXS.curie('0000329'),
                    model_uri=MIXS.Soil_link_class_info, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_link_climate_info = Slot(uri=MIXS['0000328'], name="Soil_link_climate_info", curie=MIXS.curie('0000328'),
                    model_uri=MIXS.Soil_link_climate_info, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_local_class = Slot(uri=MIXS['0000330'], name="Soil_local_class", curie=MIXS.curie('0000330'),
                    model_uri=MIXS.Soil_local_class, domain=Soil, range=Optional[str],
@@ -23696,11 +23696,11 @@ slots.Soil_local_class = Slot(uri=MIXS['0000330'], name="Soil_local_class", curi
 
 slots.Soil_local_class_meth = Slot(uri=MIXS['0000331'], name="Soil_local_class_meth", curie=MIXS.curie('0000331'),
                    model_uri=MIXS.Soil_local_class_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_micro_biomass_meth = Slot(uri=MIXS['0000339'], name="Soil_micro_biomass_meth", curie=MIXS.curie('0000339'),
                    model_uri=MIXS.Soil_micro_biomass_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_microbial_biomass = Slot(uri=MIXS['0000650'], name="Soil_microbial_biomass", curie=MIXS.curie('0000650'),
                    model_uri=MIXS.Soil_microbial_biomass, domain=Soil, range=Optional[str],
@@ -23723,7 +23723,7 @@ slots.Soil_ph = Slot(uri=MIXS['0001001'], name="Soil_ph", curie=MIXS.curie('0001
 
 slots.Soil_ph_meth = Slot(uri=MIXS['0001106'], name="Soil_ph_meth", curie=MIXS.curie('0001106'),
                    model_uri=MIXS.Soil_ph_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_pool_dna_extracts = Slot(uri=MIXS['0000325'], name="Soil_pool_dna_extracts", curie=MIXS.curie('0000325'),
                    model_uri=MIXS.Soil_pool_dna_extracts, domain=Soil, range=Optional[str])
@@ -23743,7 +23743,7 @@ slots.Soil_project_name = Slot(uri=MIXS['0000092'], name="Soil_project_name", cu
 
 slots.Soil_salinity_meth = Slot(uri=MIXS['0000341'], name="Soil_salinity_meth", curie=MIXS.curie('0000341'),
                    model_uri=MIXS.Soil_salinity_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_samp_name = Slot(uri=MIXS.samp_name, name="Soil_samp_name", curie=MIXS.curie('samp_name'),
                    model_uri=MIXS.Soil_samp_name, domain=Soil, range=str)
@@ -23780,7 +23780,7 @@ slots.Soil_soil_text_measure = Slot(uri=MIXS['0000335'], name="Soil_soil_text_me
 
 slots.Soil_soil_texture_meth = Slot(uri=MIXS['0000336'], name="Soil_soil_texture_meth", curie=MIXS.curie('0000336'),
                    model_uri=MIXS.Soil_soil_texture_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_soil_type = Slot(uri=MIXS['0000332'], name="Soil_soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.Soil_soil_type, domain=Soil, range=Optional[str],
@@ -23788,7 +23788,7 @@ slots.Soil_soil_type = Slot(uri=MIXS['0000332'], name="Soil_soil_type", curie=MI
 
 slots.Soil_soil_type_meth = Slot(uri=MIXS['0000334'], name="Soil_soil_type_meth", curie=MIXS.curie('0000334'),
                    model_uri=MIXS.Soil_soil_type_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_store_cond = Slot(uri=MIXS['0000327'], name="Soil_store_cond", curie=MIXS.curie('0000327'),
                    model_uri=MIXS.Soil_store_cond, domain=Soil, range=Optional[str],
@@ -23803,21 +23803,21 @@ slots.Soil_tillage = Slot(uri=MIXS['0001081'], name="Soil_tillage", curie=MIXS.c
 
 slots.Soil_tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="Soil_tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
                    model_uri=MIXS.Soil_tot_nitro_cont_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="Soil_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
                    model_uri=MIXS.Soil_tot_nitro_content, domain=Soil, range=Optional[str])
 
 slots.Soil_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="Soil_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.Soil_tot_org_c_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_tot_org_carb = Slot(uri=MIXS['0000533'], name="Soil_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.Soil_tot_org_carb, domain=Soil, range=Optional[str])
 
 slots.Soil_water_cont_soil_meth = Slot(uri=MIXS['0000323'], name="Soil_water_cont_soil_meth", curie=MIXS.curie('0000323'),
                    model_uri=MIXS.Soil_water_cont_soil_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_water_content = Slot(uri=MIXS['0000185'], name="Soil_water_content", curie=MIXS.curie('0000185'),
                    model_uri=MIXS.Soil_water_content, domain=Soil, range=Optional[str],
