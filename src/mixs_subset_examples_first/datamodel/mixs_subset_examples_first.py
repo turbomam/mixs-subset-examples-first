@@ -1,5 +1,5 @@
 # Auto generated from mixs_subset_examples_first.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-25T15:50:22
+# Generation date: 2023-04-25T16:46:25
 # Schema: MIxS
 #
 # id: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -401,7 +401,7 @@ class Agriculture(EnvironmentalPackage):
     host_phenotype: str = None
     host_taxid: str = None
     host_tot_mass: str = None
-    host_spec_range: int = None
+    host_spec_range: str = None
     samp_size: str = None
     seq_meth: str = None
     samp_vol_we_dna_ext: str = None
@@ -481,7 +481,7 @@ class Agriculture(EnvironmentalPackage):
     root_med_carbon: Optional[str] = None
     root_med_ph: Optional[float] = None
     soil_depth: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     water_temp_regm: Optional[str] = None
     watering_regm: Optional[str] = None
     standing_water_regm: Optional[str] = None
@@ -497,7 +497,7 @@ class Agriculture(EnvironmentalPackage):
     perturbation: Optional[str] = None
     isol_growth_condt: Optional[str] = None
     host_subspecf_genlin: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     plant_product: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
     lib_size: Optional[int] = None
@@ -638,8 +638,8 @@ class Agriculture(EnvironmentalPackage):
 
         if self._is_empty(self.host_spec_range):
             self.MissingRequiredField("host_spec_range")
-        if not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self._is_empty(self.samp_size):
             self.MissingRequiredField("samp_size")
@@ -924,8 +924,8 @@ class Agriculture(EnvironmentalPackage):
         if self.soil_depth is not None and not isinstance(self.soil_depth, str):
             self.soil_depth = str(self.soil_depth)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.water_temp_regm is not None and not isinstance(self.water_temp_regm, str):
             self.water_temp_regm = str(self.water_temp_regm)
@@ -972,8 +972,8 @@ class Agriculture(EnvironmentalPackage):
         if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
             self.host_subspecf_genlin = str(self.host_subspecf_genlin)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         if self.plant_product is not None and not isinstance(self.plant_product, str):
             self.plant_product = str(self.plant_product)
@@ -6182,7 +6182,7 @@ class MigsBa(Checklist):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     depth: Optional[str] = None
@@ -6193,7 +6193,7 @@ class MigsBa(Checklist):
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -6219,7 +6219,7 @@ class MigsBa(Checklist):
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
     temp: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -6317,8 +6317,8 @@ class MigsBa(Checklist):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -6350,8 +6350,8 @@ class MigsBa(Checklist):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -6428,8 +6428,8 @@ class MigsBa(Checklist):
         if self.temp is not None and not isinstance(self.temp, str):
             self.temp = str(self.temp)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -6462,7 +6462,7 @@ class MigsEu(Checklist):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     depth: Optional[str] = None
@@ -6472,7 +6472,7 @@ class MigsEu(Checklist):
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -6501,7 +6501,7 @@ class MigsEu(Checklist):
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
     temp: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -6589,8 +6589,8 @@ class MigsEu(Checklist):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -6619,8 +6619,8 @@ class MigsEu(Checklist):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -6706,8 +6706,8 @@ class MigsEu(Checklist):
         if self.temp is not None and not isinstance(self.temp, str):
             self.temp = str(self.temp)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -6986,7 +6986,7 @@ class MigsPl(Checklist):
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
     feat_pred: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -7121,8 +7121,8 @@ class MigsPl(Checklist):
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -7230,7 +7230,7 @@ class MigsVi(Checklist):
     assembly_name: Optional[str] = None
     assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     depth: Optional[str] = None
@@ -7240,7 +7240,7 @@ class MigsVi(Checklist):
     experimental_factor: Optional[str] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -7354,8 +7354,8 @@ class MigsVi(Checklist):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -7384,8 +7384,8 @@ class MigsVi(Checklist):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -7787,7 +7787,7 @@ class MimarksC(Checklist):
     target_gene: str = None
     alt: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     chimera_check: Optional[str] = None
     depth: Optional[str] = None
     elev: Optional[str] = None
@@ -7811,7 +7811,7 @@ class MimarksC(Checklist):
     subspecf_gen_lin: Optional[str] = None
     target_subfragment: Optional[str] = None
     temp: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.collection_date):
@@ -7880,8 +7880,8 @@ class MimarksC(Checklist):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.chimera_check is not None and not isinstance(self.chimera_check, str):
             self.chimera_check = str(self.chimera_check)
@@ -7952,8 +7952,8 @@ class MimarksC(Checklist):
         if self.temp is not None and not isinstance(self.temp, str):
             self.temp = str(self.temp)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -8917,7 +8917,7 @@ class Miuvig(Checklist):
     associated_resource: Optional[str] = None
     bin_param: Optional[str] = None
     bin_software: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_appr: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
@@ -8929,7 +8929,7 @@ class Miuvig(Checklist):
     host_disease_stat: Optional[str] = None
     host_pred_appr: Optional[str] = None
     host_pred_est_acc: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -9086,8 +9086,8 @@ class Miuvig(Checklist):
         if self.bin_software is not None and not isinstance(self.bin_software, str):
             self.bin_software = str(self.bin_software)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_appr is not None and not isinstance(self.compl_appr, str):
             self.compl_appr = str(self.compl_appr)
@@ -9122,8 +9122,8 @@ class Miuvig(Checklist):
         if self.host_pred_est_acc is not None and not isinstance(self.host_pred_est_acc, str):
             self.host_pred_est_acc = str(self.host_pred_est_acc)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -9590,7 +9590,7 @@ class MigsBaPlantAssociated(PlantAssociated):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     encoded_traits: Optional[str] = None
@@ -9598,7 +9598,7 @@ class MigsBaPlantAssociated(PlantAssociated):
     experimental_factor: Optional[str] = None
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -9622,7 +9622,7 @@ class MigsBaPlantAssociated(PlantAssociated):
     subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -9710,8 +9710,8 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -9734,8 +9734,8 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -9806,8 +9806,8 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.tax_ident is not None and not isinstance(self.tax_ident, str):
             self.tax_ident = str(self.tax_ident)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -10335,7 +10335,7 @@ class MigsBaSediment(Sediment):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     encoded_traits: Optional[str] = None
@@ -10344,7 +10344,7 @@ class MigsBaSediment(Sediment):
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -10368,7 +10368,7 @@ class MigsBaSediment(Sediment):
     subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -10456,8 +10456,8 @@ class MigsBaSediment(Sediment):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -10483,8 +10483,8 @@ class MigsBaSediment(Sediment):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -10555,8 +10555,8 @@ class MigsBaSediment(Sediment):
         if self.tax_ident is not None and not isinstance(self.tax_ident, str):
             self.tax_ident = str(self.tax_ident)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -11041,7 +11041,7 @@ class MigsBaSoil(Soil):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     encoded_traits: Optional[str] = None
@@ -11050,7 +11050,7 @@ class MigsBaSoil(Soil):
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -11074,7 +11074,7 @@ class MigsBaSoil(Soil):
     subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -11162,8 +11162,8 @@ class MigsBaSoil(Soil):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -11189,8 +11189,8 @@ class MigsBaSoil(Soil):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -11261,8 +11261,8 @@ class MigsBaSoil(Soil):
         if self.tax_ident is not None and not isinstance(self.tax_ident, str):
             self.tax_ident = str(self.tax_ident)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -12363,7 +12363,7 @@ class MigsBaWater(Water):
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
     associated_resource: Optional[str] = None
-    biotic_relationship: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
     encoded_traits: Optional[str] = None
@@ -12372,7 +12372,7 @@ class MigsBaWater(Water):
     extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[int] = None
+    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
@@ -12396,7 +12396,7 @@ class MigsBaWater(Water):
     subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
     tax_ident: Optional[str] = None
-    trophic_level: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -12484,8 +12484,8 @@ class MigsBaWater(Water):
         if self.associated_resource is not None and not isinstance(self.associated_resource, str):
             self.associated_resource = str(self.associated_resource)
 
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, str):
-            self.biotic_relationship = str(self.biotic_relationship)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -12511,8 +12511,8 @@ class MigsBaWater(Water):
         if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
             self.host_disease_stat = str(self.host_disease_stat)
 
-        if self.host_spec_range is not None and not isinstance(self.host_spec_range, int):
-            self.host_spec_range = int(self.host_spec_range)
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -12583,8 +12583,8 @@ class MigsBaWater(Water):
         if self.tax_ident is not None and not isinstance(self.tax_ident, str):
             self.tax_ident = str(self.tax_ident)
 
-        if self.trophic_level is not None and not isinstance(self.trophic_level, str):
-            self.trophic_level = str(self.trophic_level)
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         super().__post_init__(**kwargs)
 
@@ -12801,6 +12801,22 @@ class ASSEMBLYQUALENUM(EnumDefinitionImpl):
                 PermissibleValue(text="Low-quality draft genome") )
         setattr(cls, "Medium-quality draft genome",
                 PermissibleValue(text="Medium-quality draft genome") )
+
+class BIOTICRELATIONSHIPENUM(EnumDefinitionImpl):
+
+    commensalism = PermissibleValue(text="commensalism")
+    mutualism = PermissibleValue(text="mutualism")
+    parasitism = PermissibleValue(text="parasitism")
+    symbiotic = PermissibleValue(text="symbiotic")
+
+    _defn = EnumDefinition(
+        name="BIOTICRELATIONSHIPENUM",
+    )
+
+    @classmethod
+    def _addvals(cls):
+        setattr(cls, "free living",
+                PermissibleValue(text="free living") )
 
 class CURLANDUSEENUM(EnumDefinitionImpl):
 
@@ -13064,6 +13080,44 @@ class TILLAGEENUM(EnumDefinitionImpl):
                 PermissibleValue(text="strip tillage") )
         setattr(cls, "zonal tillage",
                 PermissibleValue(text="zonal tillage") )
+
+class TROPHICLEVELENUM(EnumDefinitionImpl):
+
+    autotroph = PermissibleValue(text="autotroph")
+    carboxydotroph = PermissibleValue(text="carboxydotroph")
+    chemoautolithotroph = PermissibleValue(text="chemoautolithotroph")
+    chemoautotroph = PermissibleValue(text="chemoautotroph")
+    chemoheterotroph = PermissibleValue(text="chemoheterotroph")
+    chemolithoautotroph = PermissibleValue(text="chemolithoautotroph")
+    chemolithotroph = PermissibleValue(text="chemolithotroph")
+    chemoorganoheterotroph = PermissibleValue(text="chemoorganoheterotroph")
+    chemoorganotroph = PermissibleValue(text="chemoorganotroph")
+    chemosynthetic = PermissibleValue(text="chemosynthetic")
+    chemotroph = PermissibleValue(text="chemotroph")
+    copiotroph = PermissibleValue(text="copiotroph")
+    diazotroph = PermissibleValue(text="diazotroph")
+    facultative = PermissibleValue(text="facultative")
+    heterotroph = PermissibleValue(text="heterotroph")
+    lithoautotroph = PermissibleValue(text="lithoautotroph")
+    lithoheterotroph = PermissibleValue(text="lithoheterotroph")
+    lithotroph = PermissibleValue(text="lithotroph")
+    methanotroph = PermissibleValue(text="methanotroph")
+    methylotroph = PermissibleValue(text="methylotroph")
+    mixotroph = PermissibleValue(text="mixotroph")
+    obligate = PermissibleValue(text="obligate")
+    oligotroph = PermissibleValue(text="oligotroph")
+    organoheterotroph = PermissibleValue(text="organoheterotroph")
+    organotroph = PermissibleValue(text="organotroph")
+    photoautotroph = PermissibleValue(text="photoautotroph")
+    photoheterotroph = PermissibleValue(text="photoheterotroph")
+    photolithoautotroph = PermissibleValue(text="photolithoautotroph")
+    photolithotroph = PermissibleValue(text="photolithotroph")
+    photosynthetic = PermissibleValue(text="photosynthetic")
+    phototroph = PermissibleValue(text="phototroph")
+
+    _defn = EnumDefinition(
+        name="TROPHICLEVELENUM",
+    )
 
 # Slots
 class slots:
@@ -13362,7 +13416,7 @@ slots.biotic_regm = Slot(uri=MIXS['0001038'], name="biotic_regm", curie=MIXS.cur
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.biotic_relationship = Slot(uri=MIXS['0000028'], name="biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.birth_control = Slot(uri=MIXS['0000286'], name="birth_control", curie=MIXS.curie('0000286'),
                    model_uri=MIXS.birth_control, domain=None, range=Optional[str],
@@ -13499,7 +13553,8 @@ slots.compl_score = Slot(uri=MIXS['0000069'], name="compl_score", curie=MIXS.cur
                    model_uri=MIXS.compl_score, domain=None, range=Optional[str])
 
 slots.compl_software = Slot(uri=MIXS['0000070'], name="compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.conduc = Slot(uri=MIXS['0000692'], name="conduc", curie=MIXS.curie('0000692'),
                    model_uri=MIXS.conduc, domain=None, range=Optional[str],
@@ -13516,7 +13571,7 @@ slots.cons_purch_date = Slot(uri=MIXS['0001197'], name="cons_purch_date", curie=
 
 slots.cons_qty_purchased = Slot(uri=MIXS['0001198'], name="cons_qty_purchased", curie=MIXS.curie('0001198'),
                    model_uri=MIXS.cons_qty_purchased, domain=None, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.contam_score = Slot(uri=MIXS['0000072'], name="contam_score", curie=MIXS.curie('0000072'),
                    model_uri=MIXS.contam_score, domain=None, range=Optional[str])
@@ -13743,7 +13798,8 @@ slots.escalator = Slot(uri=MIXS['0000800'], name="escalator", curie=MIXS.curie('
                    model_uri=MIXS.escalator, domain=None, range=Optional[int])
 
 slots.estimated_size = Slot(uri=MIXS['0000024'], name="estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.ethnicity = Slot(uri=MIXS['0000895'], name="ethnicity", curie=MIXS.curie('0000895'),
                    model_uri=MIXS.ethnicity, domain=None, range=Optional[str],
@@ -14183,7 +14239,8 @@ slots.host_diet = Slot(uri=MIXS['0000869'], name="host_diet", curie=MIXS.curie('
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.host_disease_stat = Slot(uri=MIXS['0000031'], name="host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.host_disease_stat, domain=None, range=Optional[str])
+                   model_uri=MIXS.host_disease_stat, domain=None, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.host_dry_mass = Slot(uri=MIXS['0000257'], name="host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.host_dry_mass, domain=None, range=Optional[str],
@@ -14308,7 +14365,8 @@ slots.host_shape = Slot(uri=MIXS['0000261'], name="host_shape", curie=MIXS.curie
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.host_spec_range = Slot(uri=MIXS['0000030'], name="host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.host_specificity = Slot(uri=MIXS['0001308'], name="host_specificity", curie=MIXS.curie('0001308'),
                    model_uri=MIXS.host_specificity, domain=None, range=Optional[str])
@@ -14735,7 +14793,8 @@ slots.particle_class = Slot(uri=MIXS['0000206'], name="particle_class", curie=MI
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'))
 
 slots.pathogenicity = Slot(uri=MIXS['0000027'], name="pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.pathogenicity, domain=None, range=Optional[str])
+                   model_uri=MIXS.pathogenicity, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.pcr_cond = Slot(uri=MIXS['0000049'], name="pcr_cond", curie=MIXS.curie('0000049'),
                    model_uri=MIXS.pcr_cond, domain=None, range=Optional[str])
@@ -14992,7 +15051,7 @@ slots.room_dim = Slot(uri=MIXS['0000192'], name="room_dim", curie=MIXS.curie('00
 
 slots.room_door_dist = Slot(uri=MIXS['0000193'], name="room_door_dist", curie=MIXS.curie('0000193'),
                    model_uri=MIXS.room_door_dist, domain=None, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.room_door_share = Slot(uri=MIXS['0000242'], name="room_door_share", curie=MIXS.curie('0000242'),
                    model_uri=MIXS.room_door_share, domain=None, range=Optional[str])
@@ -15008,7 +15067,7 @@ slots.room_moist_dam_hist = Slot(uri=MIXS['0000235'], name="room_moist_dam_hist"
 
 slots.room_net_area = Slot(uri=MIXS['0000194'], name="room_net_area", curie=MIXS.curie('0000194'),
                    model_uri=MIXS.room_net_area, domain=None, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.room_occup = Slot(uri=MIXS['0000236'], name="room_occup", curie=MIXS.curie('0000236'),
                    model_uri=MIXS.room_occup, domain=None, range=Optional[int])
@@ -15021,7 +15080,7 @@ slots.room_type = Slot(uri=MIXS['0000825'], name="room_type", curie=MIXS.curie('
 
 slots.room_vol = Slot(uri=MIXS['0000195'], name="room_vol", curie=MIXS.curie('0000195'),
                    model_uri=MIXS.room_vol, domain=None, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.room_wall_share = Slot(uri=MIXS['0000243'], name="room_wall_share", curie=MIXS.curie('0000243'),
                    model_uri=MIXS.room_wall_share, domain=None, range=Optional[str])
@@ -15450,7 +15509,8 @@ slots.specific = Slot(uri=MIXS['0000836'], name="specific", curie=MIXS.curie('00
                    model_uri=MIXS.specific, domain=None, range=Optional[str])
 
 slots.specific_host = Slot(uri=MIXS['0000029'], name="specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.specific_humidity = Slot(uri=MIXS['0000214'], name="specific_humidity", curie=MIXS.curie('0000214'),
                    model_uri=MIXS.specific_humidity, domain=None, range=Optional[str],
@@ -15721,7 +15781,7 @@ slots.trnas = Slot(uri=MIXS['0000067'], name="trnas", curie=MIXS.curie('0000067'
                    model_uri=MIXS.trnas, domain=None, range=Optional[int])
 
 slots.trophic_level = Slot(uri=MIXS['0000032'], name="trophic_level", curie=MIXS.curie('0000032'),
-                   model_uri=MIXS.trophic_level, domain=None, range=Optional[str])
+                   model_uri=MIXS.trophic_level, domain=None, range=Optional[Union[str, "TROPHICLEVELENUM"]])
 
 slots.turbidity = Slot(uri=MIXS['0000191'], name="turbidity", curie=MIXS.curie('0000191'),
                    model_uri=MIXS.turbidity, domain=None, range=Optional[str],
@@ -15990,7 +16050,7 @@ slots.Agriculture_assembly_software = Slot(uri=MIXS['0000058'], name="Agricultur
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.Agriculture_biotic_relationship = Slot(uri=MIXS['0000028'], name="Agriculture_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.Agriculture_biotic_relationship, domain=Agriculture, range=Optional[str])
+                   model_uri=MIXS.Agriculture_biotic_relationship, domain=Agriculture, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.Agriculture_chem_administration = Slot(uri=MIXS['0000751'], name="Agriculture_chem_administration", curie=MIXS.curie('0000751'),
                    model_uri=MIXS.Agriculture_chem_administration, domain=Agriculture, range=str)
@@ -16114,7 +16174,8 @@ slots.Agriculture_host_common_name = Slot(uri=MIXS['0000248'], name="Agriculture
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.Agriculture_host_disease_stat = Slot(uri=MIXS['0000031'], name="Agriculture_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.Agriculture_host_disease_stat, domain=Agriculture, range=Optional[str])
+                   model_uri=MIXS.Agriculture_host_disease_stat, domain=Agriculture, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.Agriculture_host_dry_mass = Slot(uri=MIXS['0000257'], name="Agriculture_host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.Agriculture_host_dry_mass, domain=Agriculture, range=Optional[str],
@@ -16141,7 +16202,8 @@ slots.Agriculture_host_phenotype = Slot(uri=MIXS['0000874'], name="Agriculture_h
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.Agriculture_host_spec_range = Slot(uri=MIXS['0000030'], name="Agriculture_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.Agriculture_host_spec_range, domain=Agriculture, range=int)
+                   model_uri=MIXS.Agriculture_host_spec_range, domain=Agriculture, range=str,
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.Agriculture_host_subspecf_genlin = Slot(uri=MIXS['0001318'], name="Agriculture_host_subspecf_genlin", curie=MIXS.curie('0001318'),
                    model_uri=MIXS.Agriculture_host_subspecf_genlin, domain=Agriculture, range=Optional[str])
@@ -16238,7 +16300,8 @@ slots.Agriculture_oxy_stat_samp = Slot(uri=MIXS['0000753'], name="Agriculture_ox
                    model_uri=MIXS.Agriculture_oxy_stat_samp, domain=Agriculture, range=Optional[Union[str, "OXYSTATSAMPENUM"]])
 
 slots.Agriculture_pathogenicity = Slot(uri=MIXS['0000027'], name="Agriculture_pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.Agriculture_pathogenicity, domain=Agriculture, range=str)
+                   model_uri=MIXS.Agriculture_pathogenicity, domain=Agriculture, range=str,
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.Agriculture_pcr_cond = Slot(uri=MIXS['0000049'], name="Agriculture_pcr_cond", curie=MIXS.curie('0000049'),
                    model_uri=MIXS.Agriculture_pcr_cond, domain=Agriculture, range=str)
@@ -16444,7 +16507,8 @@ slots.Agriculture_source_mat_id = Slot(uri=MIXS['0000026'], name="Agriculture_so
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.Agriculture_specific_host = Slot(uri=MIXS['0000029'], name="Agriculture_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.Agriculture_specific_host, domain=Agriculture, range=str)
+                   model_uri=MIXS.Agriculture_specific_host, domain=Agriculture, range=str,
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.Agriculture_spikein_strain = Slot(uri=MIXS['0001170'], name="Agriculture_spikein_strain", curie=MIXS.curie('0001170'),
                    model_uri=MIXS.Agriculture_spikein_strain, domain=Agriculture, range=Optional[str])
@@ -16497,7 +16561,7 @@ slots.Agriculture_tot_phos = Slot(uri=MIXS.tot_phos, name="Agriculture_tot_phos"
                    model_uri=MIXS.Agriculture_tot_phos, domain=Agriculture, range=Optional[str])
 
 slots.Agriculture_trophic_level = Slot(uri=MIXS['0000032'], name="Agriculture_trophic_level", curie=MIXS.curie('0000032'),
-                   model_uri=MIXS.Agriculture_trophic_level, domain=Agriculture, range=Optional[str])
+                   model_uri=MIXS.Agriculture_trophic_level, domain=Agriculture, range=Optional[Union[str, "TROPHICLEVELENUM"]])
 
 slots.Agriculture_url = Slot(uri=MIXS.url, name="Agriculture_url", curie=MIXS.curie('url'),
                    model_uri=MIXS.Agriculture_url, domain=Agriculture, range=Optional[str])
@@ -16940,7 +17004,7 @@ slots.BuiltEnvironment_room_dim = Slot(uri=MIXS['0000192'], name="BuiltEnvironme
 
 slots.BuiltEnvironment_room_door_dist = Slot(uri=MIXS['0000193'], name="BuiltEnvironment_room_door_dist", curie=MIXS.curie('0000193'),
                    model_uri=MIXS.BuiltEnvironment_room_door_dist, domain=BuiltEnvironment, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.BuiltEnvironment_room_door_share = Slot(uri=MIXS['0000242'], name="BuiltEnvironment_room_door_share", curie=MIXS.curie('0000242'),
                    model_uri=MIXS.BuiltEnvironment_room_door_share, domain=BuiltEnvironment, range=Optional[str])
@@ -16956,7 +17020,7 @@ slots.BuiltEnvironment_room_moist_dam_hist = Slot(uri=MIXS['0000235'], name="Bui
 
 slots.BuiltEnvironment_room_net_area = Slot(uri=MIXS['0000194'], name="BuiltEnvironment_room_net_area", curie=MIXS.curie('0000194'),
                    model_uri=MIXS.BuiltEnvironment_room_net_area, domain=BuiltEnvironment, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.BuiltEnvironment_room_occup = Slot(uri=MIXS['0000236'], name="BuiltEnvironment_room_occup", curie=MIXS.curie('0000236'),
                    model_uri=MIXS.BuiltEnvironment_room_occup, domain=BuiltEnvironment, range=Optional[int])
@@ -16969,7 +17033,7 @@ slots.BuiltEnvironment_room_type = Slot(uri=MIXS['0000825'], name="BuiltEnvironm
 
 slots.BuiltEnvironment_room_vol = Slot(uri=MIXS['0000195'], name="BuiltEnvironment_room_vol", curie=MIXS.curie('0000195'),
                    model_uri=MIXS.BuiltEnvironment_room_vol, domain=BuiltEnvironment, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.BuiltEnvironment_room_wall_share = Slot(uri=MIXS['0000243'], name="BuiltEnvironment_room_wall_share", curie=MIXS.curie('0000243'),
                    model_uri=MIXS.BuiltEnvironment_room_wall_share, domain=BuiltEnvironment, range=Optional[str])
@@ -17319,7 +17383,7 @@ slots.FoodAnimalAndAnimalFeed_cons_purch_date = Slot(uri=MIXS['0001197'], name="
 
 slots.FoodAnimalAndAnimalFeed_cons_qty_purchased = Slot(uri=MIXS['0001198'], name="FoodAnimalAndAnimalFeed_cons_qty_purchased", curie=MIXS.curie('0001198'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_cons_qty_purchased, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.FoodAnimalAndAnimalFeed_cult_isol_date = Slot(uri=MIXS['0001181'], name="FoodAnimalAndAnimalFeed_cult_isol_date", curie=MIXS.curie('0001181'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_cult_isol_date, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
@@ -17788,7 +17852,8 @@ slots.FoodFarmEnvironment_host_age = Slot(uri=MIXS['0000255'], name="FoodFarmEnv
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'))
 
 slots.FoodFarmEnvironment_host_disease_stat = Slot(uri=MIXS['0000031'], name="FoodFarmEnvironment_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.FoodFarmEnvironment_host_disease_stat, domain=FoodFarmEnvironment, range=Optional[str])
+                   model_uri=MIXS.FoodFarmEnvironment_host_disease_stat, domain=FoodFarmEnvironment, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.FoodFarmEnvironment_host_dry_mass = Slot(uri=MIXS['0000257'], name="FoodFarmEnvironment_host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.FoodFarmEnvironment_host_dry_mass, domain=FoodFarmEnvironment, range=Optional[str],
@@ -18496,7 +18561,7 @@ slots.FoodHumanFoods_cons_purch_date = Slot(uri=MIXS['0001197'], name="FoodHuman
 
 slots.FoodHumanFoods_cons_qty_purchased = Slot(uri=MIXS['0001198'], name="FoodHumanFoods_cons_qty_purchased", curie=MIXS.curie('0001198'),
                    model_uri=MIXS.FoodHumanFoods_cons_qty_purchased, domain=FoodHumanFoods, range=Optional[str],
-                   pattern=re.compile(r'{integer} [^s\|][^\r\n\t\|]+'))
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'))
 
 slots.FoodHumanFoods_cult_isol_date = Slot(uri=MIXS['0001181'], name="FoodHumanFoods_cult_isol_date", curie=MIXS.curie('0001181'),
                    model_uri=MIXS.FoodHumanFoods_cult_isol_date, domain=FoodHumanFoods, range=Optional[str])
@@ -18915,7 +18980,8 @@ slots.HostAssociated_host_diet = Slot(uri=MIXS['0000869'], name="HostAssociated_
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HostAssociated_host_disease_stat = Slot(uri=MIXS['0000031'], name="HostAssociated_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HostAssociated_host_disease_stat, domain=HostAssociated, range=Optional[str])
+                   model_uri=MIXS.HostAssociated_host_disease_stat, domain=HostAssociated, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HostAssociated_host_dry_mass = Slot(uri=MIXS['0000257'], name="HostAssociated_host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.HostAssociated_host_dry_mass, domain=HostAssociated, range=Optional[str],
@@ -19081,7 +19147,8 @@ slots.HumanAssociated_host_diet = Slot(uri=MIXS['0000869'], name="HumanAssociate
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HumanAssociated_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanAssociated_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HumanAssociated_host_disease_stat, domain=HumanAssociated, range=Optional[str])
+                   model_uri=MIXS.HumanAssociated_host_disease_stat, domain=HumanAssociated, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HumanAssociated_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanAssociated_host_family_relation", curie=MIXS.curie('host_family_relation'),
                    model_uri=MIXS.HumanAssociated_host_family_relation, domain=HumanAssociated, range=Optional[str])
@@ -19251,7 +19318,8 @@ slots.HumanGut_host_diet = Slot(uri=MIXS['0000869'], name="HumanGut_host_diet", 
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HumanGut_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanGut_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HumanGut_host_disease_stat, domain=HumanGut, range=Optional[str])
+                   model_uri=MIXS.HumanGut_host_disease_stat, domain=HumanGut, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HumanGut_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanGut_host_family_relation", curie=MIXS.curie('host_family_relation'),
                    model_uri=MIXS.HumanGut_host_family_relation, domain=HumanGut, range=Optional[str])
@@ -19380,7 +19448,8 @@ slots.HumanOral_host_diet = Slot(uri=MIXS['0000869'], name="HumanOral_host_diet"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HumanOral_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanOral_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HumanOral_host_disease_stat, domain=HumanOral, range=Optional[str])
+                   model_uri=MIXS.HumanOral_host_disease_stat, domain=HumanOral, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HumanOral_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanOral_host_family_relation", curie=MIXS.curie('host_family_relation'),
                    model_uri=MIXS.HumanOral_host_family_relation, domain=HumanOral, range=Optional[str])
@@ -19515,7 +19584,8 @@ slots.HumanSkin_host_diet = Slot(uri=MIXS['0000869'], name="HumanSkin_host_diet"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HumanSkin_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanSkin_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HumanSkin_host_disease_stat, domain=HumanSkin, range=Optional[str])
+                   model_uri=MIXS.HumanSkin_host_disease_stat, domain=HumanSkin, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HumanSkin_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanSkin_host_family_relation", curie=MIXS.curie('host_family_relation'),
                    model_uri=MIXS.HumanSkin_host_family_relation, domain=HumanSkin, range=Optional[str])
@@ -19651,7 +19721,8 @@ slots.HumanVaginal_host_diet = Slot(uri=MIXS['0000869'], name="HumanVaginal_host
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.HumanVaginal_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanVaginal_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.HumanVaginal_host_disease_stat, domain=HumanVaginal, range=Optional[str])
+                   model_uri=MIXS.HumanVaginal_host_disease_stat, domain=HumanVaginal, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.HumanVaginal_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanVaginal_host_family_relation", curie=MIXS.curie('host_family_relation'),
                    model_uri=MIXS.HumanVaginal_host_family_relation, domain=HumanVaginal, range=Optional[str])
@@ -20666,7 +20737,7 @@ slots.MigsBa_associated_resource = Slot(uri=MIXS['0000091'], name="MigsBa_associ
                    model_uri=MIXS.MigsBa_associated_resource, domain=None, range=Optional[str])
 
 slots.MigsBa_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsBa_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.MigsBa_biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.MigsBa_collection_date = Slot(uri=MIXS['0000011'], name="MigsBa_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MigsBa_collection_date, domain=None, range=str)
@@ -20675,7 +20746,8 @@ slots.MigsBa_compl_score = Slot(uri=MIXS['0000069'], name="MigsBa_compl_score", 
                    model_uri=MIXS.MigsBa_compl_score, domain=None, range=Optional[str])
 
 slots.MigsBa_compl_software = Slot(uri=MIXS['0000070'], name="MigsBa_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.MigsBa_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.MigsBa_depth = Slot(uri=MIXS['0000018'], name="MigsBa_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.MigsBa_depth, domain=None, range=Optional[str],
@@ -20702,7 +20774,8 @@ slots.MigsBa_env_medium = Slot(uri=MIXS['0000014'], name="MigsBa_env_medium", cu
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.MigsBa_estimated_size = Slot(uri=MIXS['0000024'], name="MigsBa_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.MigsBa_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.MigsBa_experimental_factor = Slot(uri=MIXS['0000008'], name="MigsBa_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.MigsBa_experimental_factor, domain=None, range=Optional[str])
@@ -20719,10 +20792,12 @@ slots.MigsBa_geo_loc_name = Slot(uri=MIXS['0000010'], name="MigsBa_geo_loc_name"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'))
 
 slots.MigsBa_host_disease_stat = Slot(uri=MIXS['0000031'], name="MigsBa_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.MigsBa_host_disease_stat, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_host_disease_stat, domain=None, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.MigsBa_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsBa_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.MigsBa_host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.MigsBa_host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.MigsBa_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsBa_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsBa_isol_growth_condt, domain=None, range=str,
@@ -20767,7 +20842,8 @@ slots.MigsBa_number_contig = Slot(uri=MIXS['0000060'], name="MigsBa_number_conti
                    model_uri=MIXS.MigsBa_number_contig, domain=None, range=int)
 
 slots.MigsBa_pathogenicity = Slot(uri=MIXS['0000027'], name="MigsBa_pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.MigsBa_pathogenicity, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_pathogenicity, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsBa_pos_cont_type = Slot(uri=MIXS['0001322'], name="MigsBa_pos_cont_type", curie=MIXS.curie('0001322'),
                    model_uri=MIXS.MigsBa_pos_cont_type, domain=None, range=Optional[str])
@@ -20828,7 +20904,8 @@ slots.MigsBa_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsBa_source_mat_i
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsBa_specific_host = Slot(uri=MIXS['0000029'], name="MigsBa_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.MigsBa_specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.MigsBa_subspecf_gen_lin = Slot(uri=MIXS['0000020'], name="MigsBa_subspecf_gen_lin", curie=MIXS.curie('0000020'),
                    model_uri=MIXS.MigsBa_subspecf_gen_lin, domain=None, range=Optional[str])
@@ -20845,7 +20922,7 @@ slots.MigsBa_temp = Slot(uri=MIXS['0000113'], name="MigsBa_temp", curie=MIXS.cur
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'))
 
 slots.MigsBa_trophic_level = Slot(uri=MIXS['0000032'], name="MigsBa_trophic_level", curie=MIXS.curie('0000032'),
-                   model_uri=MIXS.MigsBa_trophic_level, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsBa_trophic_level, domain=None, range=Optional[Union[str, "TROPHICLEVELENUM"]])
 
 slots.MigsEu_adapters = Slot(uri=MIXS['0000048'], name="MigsEu_adapters", curie=MIXS.curie('0000048'),
                    model_uri=MIXS.MigsEu_adapters, domain=None, range=Optional[str],
@@ -20874,7 +20951,7 @@ slots.MigsEu_associated_resource = Slot(uri=MIXS['0000091'], name="MigsEu_associ
                    model_uri=MIXS.MigsEu_associated_resource, domain=None, range=Optional[str])
 
 slots.MigsEu_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsEu_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.MigsEu_biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.MigsEu_collection_date = Slot(uri=MIXS['0000011'], name="MigsEu_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MigsEu_collection_date, domain=None, range=str)
@@ -20883,7 +20960,8 @@ slots.MigsEu_compl_score = Slot(uri=MIXS['0000069'], name="MigsEu_compl_score", 
                    model_uri=MIXS.MigsEu_compl_score, domain=None, range=Optional[str])
 
 slots.MigsEu_compl_software = Slot(uri=MIXS['0000070'], name="MigsEu_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.MigsEu_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.MigsEu_depth = Slot(uri=MIXS['0000018'], name="MigsEu_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.MigsEu_depth, domain=None, range=Optional[str],
@@ -20906,7 +20984,8 @@ slots.MigsEu_env_medium = Slot(uri=MIXS['0000014'], name="MigsEu_env_medium", cu
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.MigsEu_estimated_size = Slot(uri=MIXS['0000024'], name="MigsEu_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.MigsEu_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.MigsEu_experimental_factor = Slot(uri=MIXS['0000008'], name="MigsEu_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.MigsEu_experimental_factor, domain=None, range=Optional[str])
@@ -20923,10 +21002,12 @@ slots.MigsEu_geo_loc_name = Slot(uri=MIXS['0000010'], name="MigsEu_geo_loc_name"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'))
 
 slots.MigsEu_host_disease_stat = Slot(uri=MIXS['0000031'], name="MigsEu_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.MigsEu_host_disease_stat, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_host_disease_stat, domain=None, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.MigsEu_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsEu_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.MigsEu_host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.MigsEu_host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.MigsEu_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsEu_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsEu_isol_growth_condt, domain=None, range=str,
@@ -20971,7 +21052,8 @@ slots.MigsEu_number_contig = Slot(uri=MIXS['0000060'], name="MigsEu_number_conti
                    model_uri=MIXS.MigsEu_number_contig, domain=None, range=int)
 
 slots.MigsEu_pathogenicity = Slot(uri=MIXS['0000027'], name="MigsEu_pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.MigsEu_pathogenicity, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_pathogenicity, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsEu_ploidy = Slot(uri=MIXS['0000021'], name="MigsEu_ploidy", curie=MIXS.curie('0000021'),
                    model_uri=MIXS.MigsEu_ploidy, domain=None, range=Optional[str],
@@ -21037,7 +21119,8 @@ slots.MigsEu_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsEu_source_mat_i
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsEu_specific_host = Slot(uri=MIXS['0000029'], name="MigsEu_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.MigsEu_specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.MigsEu_subspecf_gen_lin = Slot(uri=MIXS['0000020'], name="MigsEu_subspecf_gen_lin", curie=MIXS.curie('0000020'),
                    model_uri=MIXS.MigsEu_subspecf_gen_lin, domain=None, range=Optional[str])
@@ -21054,7 +21137,7 @@ slots.MigsEu_temp = Slot(uri=MIXS['0000113'], name="MigsEu_temp", curie=MIXS.cur
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'))
 
 slots.MigsEu_trophic_level = Slot(uri=MIXS['0000032'], name="MigsEu_trophic_level", curie=MIXS.curie('0000032'),
-                   model_uri=MIXS.MigsEu_trophic_level, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsEu_trophic_level, domain=None, range=Optional[Union[str, "TROPHICLEVELENUM"]])
 
 slots.MigsOrg_adapters = Slot(uri=MIXS['0000048'], name="MigsOrg_adapters", curie=MIXS.curie('0000048'),
                    model_uri=MIXS.MigsOrg_adapters, domain=None, range=Optional[str],
@@ -21089,7 +21172,8 @@ slots.MigsOrg_compl_score = Slot(uri=MIXS['0000069'], name="MigsOrg_compl_score"
                    model_uri=MIXS.MigsOrg_compl_score, domain=None, range=Optional[str])
 
 slots.MigsOrg_compl_software = Slot(uri=MIXS['0000070'], name="MigsOrg_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.MigsOrg_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsOrg_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.MigsOrg_depth = Slot(uri=MIXS['0000018'], name="MigsOrg_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.MigsOrg_depth, domain=None, range=Optional[str],
@@ -21112,7 +21196,8 @@ slots.MigsOrg_env_medium = Slot(uri=MIXS['0000014'], name="MigsOrg_env_medium", 
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.MigsOrg_estimated_size = Slot(uri=MIXS['0000024'], name="MigsOrg_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.MigsOrg_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsOrg_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.MigsOrg_experimental_factor = Slot(uri=MIXS['0000008'], name="MigsOrg_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.MigsOrg_experimental_factor, domain=None, range=Optional[str])
@@ -21269,7 +21354,8 @@ slots.MigsPl_compl_score = Slot(uri=MIXS['0000069'], name="MigsPl_compl_score", 
                    model_uri=MIXS.MigsPl_compl_score, domain=None, range=Optional[str])
 
 slots.MigsPl_compl_software = Slot(uri=MIXS['0000070'], name="MigsPl_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.MigsPl_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsPl_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.MigsPl_depth = Slot(uri=MIXS['0000018'], name="MigsPl_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.MigsPl_depth, domain=None, range=Optional[str],
@@ -21296,7 +21382,8 @@ slots.MigsPl_env_medium = Slot(uri=MIXS['0000014'], name="MigsPl_env_medium", cu
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.MigsPl_estimated_size = Slot(uri=MIXS['0000024'], name="MigsPl_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.MigsPl_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsPl_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.MigsPl_experimental_factor = Slot(uri=MIXS['0000008'], name="MigsPl_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.MigsPl_experimental_factor, domain=None, range=Optional[str])
@@ -21310,7 +21397,8 @@ slots.MigsPl_geo_loc_name = Slot(uri=MIXS['0000010'], name="MigsPl_geo_loc_name"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'))
 
 slots.MigsPl_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsPl_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.MigsPl_host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.MigsPl_host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.MigsPl_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsPl_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsPl_isol_growth_condt, domain=None, range=str,
@@ -21411,7 +21499,8 @@ slots.MigsPl_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsPl_source_mat_i
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsPl_specific_host = Slot(uri=MIXS['0000029'], name="MigsPl_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.MigsPl_specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsPl_specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.MigsPl_subspecf_gen_lin = Slot(uri=MIXS['0000020'], name="MigsPl_subspecf_gen_lin", curie=MIXS.curie('0000020'),
                    model_uri=MIXS.MigsPl_subspecf_gen_lin, domain=None, range=Optional[str])
@@ -21454,7 +21543,7 @@ slots.MigsVi_associated_resource = Slot(uri=MIXS['0000091'], name="MigsVi_associ
                    model_uri=MIXS.MigsVi_associated_resource, domain=None, range=Optional[str])
 
 slots.MigsVi_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsVi_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.MigsVi_biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.MigsVi_collection_date = Slot(uri=MIXS['0000011'], name="MigsVi_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MigsVi_collection_date, domain=None, range=str)
@@ -21463,7 +21552,8 @@ slots.MigsVi_compl_score = Slot(uri=MIXS['0000069'], name="MigsVi_compl_score", 
                    model_uri=MIXS.MigsVi_compl_score, domain=None, range=Optional[str])
 
 slots.MigsVi_compl_software = Slot(uri=MIXS['0000070'], name="MigsVi_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.MigsVi_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.MigsVi_depth = Slot(uri=MIXS['0000018'], name="MigsVi_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.MigsVi_depth, domain=None, range=Optional[str],
@@ -21490,7 +21580,8 @@ slots.MigsVi_env_medium = Slot(uri=MIXS['0000014'], name="MigsVi_env_medium", cu
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.MigsVi_estimated_size = Slot(uri=MIXS['0000024'], name="MigsVi_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.MigsVi_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.MigsVi_experimental_factor = Slot(uri=MIXS['0000008'], name="MigsVi_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.MigsVi_experimental_factor, domain=None, range=Optional[str])
@@ -21504,10 +21595,12 @@ slots.MigsVi_geo_loc_name = Slot(uri=MIXS['0000010'], name="MigsVi_geo_loc_name"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'))
 
 slots.MigsVi_host_disease_stat = Slot(uri=MIXS['0000031'], name="MigsVi_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.MigsVi_host_disease_stat, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_host_disease_stat, domain=None, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.MigsVi_host_spec_range = Slot(uri=MIXS['0000030'], name="MigsVi_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.MigsVi_host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.MigsVi_host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.MigsVi_isol_growth_condt = Slot(uri=MIXS['0000003'], name="MigsVi_isol_growth_condt", curie=MIXS.curie('0000003'),
                    model_uri=MIXS.MigsVi_isol_growth_condt, domain=None, range=str,
@@ -21552,7 +21645,8 @@ slots.MigsVi_number_contig = Slot(uri=MIXS['0000060'], name="MigsVi_number_conti
                    model_uri=MIXS.MigsVi_number_contig, domain=None, range=Optional[int])
 
 slots.MigsVi_pathogenicity = Slot(uri=MIXS['0000027'], name="MigsVi_pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.MigsVi_pathogenicity, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_pathogenicity, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsVi_pos_cont_type = Slot(uri=MIXS['0001322'], name="MigsVi_pos_cont_type", curie=MIXS.curie('0001322'),
                    model_uri=MIXS.MigsVi_pos_cont_type, domain=None, range=Optional[str])
@@ -21614,7 +21708,8 @@ slots.MigsVi_source_mat_id = Slot(uri=MIXS['0000026'], name="MigsVi_source_mat_i
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.MigsVi_specific_host = Slot(uri=MIXS['0000029'], name="MigsVi_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.MigsVi_specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.MigsVi_specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.MigsVi_subspecf_gen_lin = Slot(uri=MIXS['0000020'], name="MigsVi_subspecf_gen_lin", curie=MIXS.curie('0000020'),
                    model_uri=MIXS.MigsVi_subspecf_gen_lin, domain=None, range=Optional[str])
@@ -21675,7 +21770,8 @@ slots.Mimag_compl_score = Slot(uri=MIXS['0000069'], name="Mimag_compl_score", cu
                    model_uri=MIXS.Mimag_compl_score, domain=None, range=str)
 
 slots.Mimag_compl_software = Slot(uri=MIXS['0000070'], name="Mimag_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.Mimag_compl_software, domain=None, range=str)
+                   model_uri=MIXS.Mimag_compl_software, domain=None, range=str,
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.Mimag_contam_score = Slot(uri=MIXS['0000072'], name="Mimag_contam_score", curie=MIXS.curie('0000072'),
                    model_uri=MIXS.Mimag_contam_score, domain=None, range=str)
@@ -21853,7 +21949,7 @@ slots.MimarksC_associated_resource = Slot(uri=MIXS['0000091'], name="MimarksC_as
                    model_uri=MIXS.MimarksC_associated_resource, domain=None, range=Optional[str])
 
 slots.MimarksC_biotic_relationship = Slot(uri=MIXS['0000028'], name="MimarksC_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.MimarksC_biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.MimarksC_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.MimarksC_chimera_check = Slot(uri=MIXS['0000052'], name="MimarksC_chimera_check", curie=MIXS.curie('0000052'),
                    model_uri=MIXS.MimarksC_chimera_check, domain=None, range=Optional[str])
@@ -21981,7 +22077,7 @@ slots.MimarksC_temp = Slot(uri=MIXS['0000113'], name="MimarksC_temp", curie=MIXS
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'))
 
 slots.MimarksC_trophic_level = Slot(uri=MIXS['0000032'], name="MimarksC_trophic_level", curie=MIXS.curie('0000032'),
-                   model_uri=MIXS.MimarksC_trophic_level, domain=None, range=Optional[str])
+                   model_uri=MIXS.MimarksC_trophic_level, domain=None, range=Optional[Union[str, "TROPHICLEVELENUM"]])
 
 slots.MimarksS_adapters = Slot(uri=MIXS['0000048'], name="MimarksS_adapters", curie=MIXS.curie('0000048'),
                    model_uri=MIXS.MimarksS_adapters, domain=None, range=Optional[str],
@@ -22343,7 +22439,8 @@ slots.Misag_compl_score = Slot(uri=MIXS['0000069'], name="Misag_compl_score", cu
                    model_uri=MIXS.Misag_compl_score, domain=None, range=str)
 
 slots.Misag_compl_software = Slot(uri=MIXS['0000070'], name="Misag_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.Misag_compl_software, domain=None, range=str)
+                   model_uri=MIXS.Misag_compl_software, domain=None, range=str,
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.Misag_contam_score = Slot(uri=MIXS['0000072'], name="Misag_contam_score", curie=MIXS.curie('0000072'),
                    model_uri=MIXS.Misag_contam_score, domain=None, range=str)
@@ -22735,7 +22832,7 @@ slots.Miuvig_bin_software = Slot(uri=MIXS['0000078'], name="Miuvig_bin_software"
                    model_uri=MIXS.Miuvig_bin_software, domain=None, range=Optional[str])
 
 slots.Miuvig_biotic_relationship = Slot(uri=MIXS['0000028'], name="Miuvig_biotic_relationship", curie=MIXS.curie('0000028'),
-                   model_uri=MIXS.Miuvig_biotic_relationship, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
 slots.Miuvig_collection_date = Slot(uri=MIXS['0000011'], name="Miuvig_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.Miuvig_collection_date, domain=None, range=str)
@@ -22747,7 +22844,8 @@ slots.Miuvig_compl_score = Slot(uri=MIXS['0000069'], name="Miuvig_compl_score", 
                    model_uri=MIXS.Miuvig_compl_score, domain=None, range=Optional[str])
 
 slots.Miuvig_compl_software = Slot(uri=MIXS['0000070'], name="Miuvig_compl_software", curie=MIXS.curie('0000070'),
-                   model_uri=MIXS.Miuvig_compl_software, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_compl_software, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.Miuvig_depth = Slot(uri=MIXS['0000018'], name="Miuvig_depth", curie=MIXS.curie('0000018'),
                    model_uri=MIXS.Miuvig_depth, domain=None, range=Optional[str],
@@ -22773,7 +22871,8 @@ slots.Miuvig_env_medium = Slot(uri=MIXS['0000014'], name="Miuvig_env_medium", cu
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'))
 
 slots.Miuvig_estimated_size = Slot(uri=MIXS['0000024'], name="Miuvig_estimated_size", curie=MIXS.curie('0000024'),
-                   model_uri=MIXS.Miuvig_estimated_size, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_estimated_size, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
 
 slots.Miuvig_experimental_factor = Slot(uri=MIXS['0000008'], name="Miuvig_experimental_factor", curie=MIXS.curie('0000008'),
                    model_uri=MIXS.Miuvig_experimental_factor, domain=None, range=Optional[str])
@@ -22787,7 +22886,8 @@ slots.Miuvig_geo_loc_name = Slot(uri=MIXS['0000010'], name="Miuvig_geo_loc_name"
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'))
 
 slots.Miuvig_host_disease_stat = Slot(uri=MIXS['0000031'], name="Miuvig_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.Miuvig_host_disease_stat, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_host_disease_stat, domain=None, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.Miuvig_host_pred_appr = Slot(uri=MIXS['0000088'], name="Miuvig_host_pred_appr", curie=MIXS.curie('0000088'),
                    model_uri=MIXS.Miuvig_host_pred_appr, domain=None, range=Optional[str])
@@ -22797,7 +22897,8 @@ slots.Miuvig_host_pred_est_acc = Slot(uri=MIXS['0000089'], name="Miuvig_host_pre
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.Miuvig_host_spec_range = Slot(uri=MIXS['0000030'], name="Miuvig_host_spec_range", curie=MIXS.curie('0000030'),
-                   model_uri=MIXS.Miuvig_host_spec_range, domain=None, range=Optional[int])
+                   model_uri=MIXS.Miuvig_host_spec_range, domain=None, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
 
 slots.Miuvig_lat_lon = Slot(uri=MIXS['0000009'], name="Miuvig_lat_lon", curie=MIXS.curie('0000009'),
                    model_uri=MIXS.Miuvig_lat_lon, domain=None, range=str,
@@ -22852,7 +22953,8 @@ slots.Miuvig_otu_seq_comp_appr = Slot(uri=MIXS['0000086'], name="Miuvig_otu_seq_
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'))
 
 slots.Miuvig_pathogenicity = Slot(uri=MIXS['0000027'], name="Miuvig_pathogenicity", curie=MIXS.curie('0000027'),
-                   model_uri=MIXS.Miuvig_pathogenicity, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_pathogenicity, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.Miuvig_pos_cont_type = Slot(uri=MIXS['0001322'], name="Miuvig_pos_cont_type", curie=MIXS.curie('0001322'),
                    model_uri=MIXS.Miuvig_pos_cont_type, domain=None, range=Optional[str])
@@ -22936,7 +23038,8 @@ slots.Miuvig_source_uvig = Slot(uri=MIXS['0000035'], name="Miuvig_source_uvig", 
                    model_uri=MIXS.Miuvig_source_uvig, domain=None, range=str)
 
 slots.Miuvig_specific_host = Slot(uri=MIXS['0000029'], name="Miuvig_specific_host", curie=MIXS.curie('0000029'),
-                   model_uri=MIXS.Miuvig_specific_host, domain=None, range=Optional[str])
+                   model_uri=MIXS.Miuvig_specific_host, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+|NCBITaxon:[0-9]+'))
 
 slots.Miuvig_tax_class = Slot(uri=MIXS['0000064'], name="Miuvig_tax_class", curie=MIXS.curie('0000064'),
                    model_uri=MIXS.Miuvig_tax_class, domain=None, range=Optional[str],
@@ -23051,7 +23154,8 @@ slots.PlantAssociated_host_common_name = Slot(uri=MIXS['0000248'], name="PlantAs
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+'))
 
 slots.PlantAssociated_host_disease_stat = Slot(uri=MIXS['0000031'], name="PlantAssociated_host_disease_stat", curie=MIXS.curie('0000031'),
-                   model_uri=MIXS.PlantAssociated_host_disease_stat, domain=PlantAssociated, range=Optional[str])
+                   model_uri=MIXS.PlantAssociated_host_disease_stat, domain=PlantAssociated, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)\|)*(([^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]+)'))
 
 slots.PlantAssociated_host_dry_mass = Slot(uri=MIXS['0000257'], name="PlantAssociated_host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.PlantAssociated_host_dry_mass, domain=PlantAssociated, range=Optional[str],
