@@ -10,7 +10,9 @@ mims_soil_set:
     annot: xxx
     annual_precpt: 123 units
     annual_temp: 123 units
-    assembly_name: xxx xxx # {free_text} {free_text} is moot, because {free_text} alone allows non-initial whitespace
+    assembly_name:
+      - xxx xxx
+      - abc xyz
     assembly_qual: Finished genome
     assembly_software: xxx;xxx;xxx
     collection_date: xxx
@@ -19,7 +21,7 @@ mims_soil_set:
     cur_vegetation: xxx
     cur_vegetation_meth: 10.1093/ajae/aaq063
     depth: 123 units
-    drainage_class: xxx
+    drainage_class: moderately well
     elev: 123 units
     env_broad_scale: text [prefix:123]
     env_local_scale: text [prefix:123]

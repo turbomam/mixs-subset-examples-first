@@ -10,7 +10,7 @@ mims_soil_set:
     annot: xxx
     annual_precpt: 123 units
     annual_temp: 123 units
-    assembly_name: xxx xxx # {free_text} {free_text} is moot, because {free_text} alone allows non-initial whitespace
+    assembly_name: xxx x|x
     assembly_qual: Finished genome
     assembly_software: xxx;xxx;xxx
     collection_date: xxx
@@ -49,7 +49,7 @@ mims_soil_set:
     microbial_biomass: 123 units
     mid: ACGT
     misc_param: xxx;123 units
-    neg_cont_type: xxx
+distilled water
     nucl_acid_amp: PMID:1234567
     nucl_acid_ext: PMID:1234567
     number_contig: 123
@@ -91,7 +91,8 @@ mims_soil_set:
     store_cond: xxx;P1D
     tax_class: xxx
     temp: 123 units
-    tillage: disc plough
+    tillage:
+      - disc plough
     tot_nitro_cont_meth: PMID:1234567
     tot_nitro_content: xxx
     tot_org_c_meth: PMID:1234567

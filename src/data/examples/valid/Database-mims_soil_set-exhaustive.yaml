@@ -10,7 +10,7 @@ mims_soil_set:
     annot: xxx
     annual_precpt: 123 units
     annual_temp: 123 units
-    assembly_name: xxx xxx # {free_text} {free_text} is moot, because {free_text} alone allows non-initial whitespace
+    assembly_name: xxx xxx
     assembly_qual: Finished genome
     assembly_software: xxx;xxx;xxx
     collection_date: xxx
@@ -31,7 +31,7 @@ mims_soil_set:
     fire: xxx
     flooding: xxx
     geo_loc_name: "xxx: xxx, xxx"
-    heavy_metals: zinc;123 units
+    heavy_metals: zinc;123 units|cadmium;123 units
     heavy_metals_meth: PMID:1234567
     horizon_meth: PMID:1234567
     lat_lon: 55.5 55.5
@@ -48,8 +48,8 @@ mims_soil_set:
     micro_biomass_meth: PMID:1234567
     microbial_biomass: 123 units
     mid: ACGT
-    misc_param: xxx;123 units
-    neg_cont_type: xxx
+    misc_param: xxx;123 units|abc;123 units
+    neg_cont_type: distilled water
     nucl_acid_amp: PMID:1234567
     nucl_acid_ext: PMID:1234567
     number_contig: 123
@@ -86,12 +86,13 @@ mims_soil_set:
     soil_texture_meth: PMID:1234567
     soil_type: xxx [xxx:0000000]
     soil_type_meth: PMID:1234567
-    sop: PMID:1234567
+    sop: PMID:1234567|http://example.com/site|10.1093/ajae/aaq063
     source_mat_id: xxx
     store_cond: xxx;P1D
     tax_class: xxx
     temp: 123 units
-    tillage: disc plough
+    tillage:
+      - disc plough
     tot_nitro_cont_meth: PMID:1234567
     tot_nitro_content: xxx
     tot_org_c_meth: PMID:1234567

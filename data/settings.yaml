@@ -2,20 +2,20 @@ settings:
   DOI: "10.\\d{4,9}/[-._;()/:a-zA-Z0-9]+" # modified from https://www.crossref.org/blog/dois-and-matching-regular-expressions/
   PMID: "PMID:(\\d{7,8})" # https://www.regextester.com/115618
   URL: "(?:https?:\\/\\/)?(?:www\\.)?[\\w-]+(?:\\.[\\w-]+)+[\\w.,@?^=%&:/~+#-]*[\\w@?^=%&/~+#-]"
-  database: "[^s][^\\r\\n\\t]+" # same as free_text for now
+  database: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
   dna: "[ACGT]+"
   float: "[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?"
-  free_text: "[^s][^\\r\\n\\t]+" # at least one non-whitespace character. line feeds, carriage returns and horizontal tabs are never allowed
+  free_text: "[^s\\|][^\\r\\n\\t\\|]+" # at least one non-whitespace character. line feeds, carriage returns and horizontal tabs are never allowed
   lat: "[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?)"
   lon: "[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)"
   ncbi_term_id: "NCBITaxon:[0-9]+"
-  parameters: "[^s][^\\r\\n\\t]+" # same as free_text for now
+  parameters: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
   period: "P(?=\\d+[YMWD])(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d+[HMS])(\\d+H)?(\\d+M)?(\\d+S)?)?" # https://stackoverflow.com/questions/32044846/regex-for-iso-8601-durations
-  reference: "[^s][^\\r\\n\\t]+" # same as free_text for now
-  software: "[^s][^\\r\\n\\t]+" # same as free_text for now
-  term: "[^s][^\\r\\n\\t]+" # same as free_text for now. https://github.com/GenomicsStandardsConsortium/mixs/wiki/7.-MIxS-syntax-data-types seems to imply that these should be ontology term labels.
+  reference: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
+  software: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
+  term: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now. https://github.com/GenomicsStandardsConsortium/mixs/wiki/7.-MIxS-syntax-data-types seems to imply that these should be ontology term labels.
   term_id: "[a-zA-Z]+:[0-9]+" # assumes term ids are curies with character-only prefixes and digit only local portions. constrain the number of digits more closely, like 6 though 9?
-  term_label: "[^s][^\\r\\n\\t]+" # same as free_text for now
-  unit: "[^s][^\\r\\n\\t]+" # same as free_text for now
-  version: "[^s][^\\r\\n\\t]+" # same as free_text for now
+  term_label: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
+  unit: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
+  version: "[^s\\|][^\\r\\n\\t\\|]+" # same as free_text for now
 #  URL: "(?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]" # from chatgpt. see also https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url and https://daringfireball.net/2010/07/improved_regex_for_matching_urls

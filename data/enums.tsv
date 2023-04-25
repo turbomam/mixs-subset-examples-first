@@ -82,13 +82,13 @@ PROFILE_POSITION_ENUM	footslope
 PROFILE_POSITION_ENUM	shoulder															
 PROFILE_POSITION_ENUM	summit															
 PROFILE_POSITION_ENUM	toeslope															
-REL_TO_OXYGEN_ENUM	aerobe															
-REL_TO_OXYGEN_ENUM	anaerobe															
-REL_TO_OXYGEN_ENUM	facultative															
-REL_TO_OXYGEN_ENUM	microaerophilic															
-REL_TO_OXYGEN_ENUM	microanaerobe															
-REL_TO_OXYGEN_ENUM	obligate aerobe															
-REL_TO_OXYGEN_ENUM	obligate anaerobe															
+REL_TO_OXYGEN_ENUM	aerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/94		
+REL_TO_OXYGEN_ENUM	anaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/95		
+REL_TO_OXYGEN_ENUM	facultative													https://github.com/turbomam/mixs-subset-examples-first/issues/96		
+REL_TO_OXYGEN_ENUM	microaerophilic													https://github.com/turbomam/mixs-subset-examples-first/issues/97		
+REL_TO_OXYGEN_ENUM	microanaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/98		
+REL_TO_OXYGEN_ENUM	obligate aerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/99		
+REL_TO_OXYGEN_ENUM	obligate anaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/100		
 SOIL_HORIZON_ENUM	A horizon															
 SOIL_HORIZON_ENUM	B horizon															
 SOIL_HORIZON_ENUM	C horizon															
@@ -105,3 +105,17 @@ TILLAGE_ENUM	ridge till
 TILLAGE_ENUM	strip tillage															
 TILLAGE_ENUM	tined															
 TILLAGE_ENUM	zonal tillage															
+NEG_CONT_TYPE_ENUM	distilled water															
+NEG_CONT_TYPE_ENUM	DNA-free PCR mix															
+NEG_CONT_TYPE_ENUM	empty collection device															
+NEG_CONT_TYPE_ENUM	empty collection tube															
+NEG_CONT_TYPE_ENUM	phosphate buffer															
+NEG_CONT_TYPE_ENUM	sterile swab															
+NEG_CONT_TYPE_ENUM	sterile syringe															
+OXY_STAT_SAMP_ENUM	aerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/94		
+OXY_STAT_SAMP_ENUM	anaerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/95		
+OXY_STAT_SAMP_ENUM	other													https://github.com/turbomam/mixs-subset-examples-first/issues/96		
+TIDAL_STAGE_ENUM	ebb tide															
+TIDAL_STAGE_ENUM	flood tide															
+TIDAL_STAGE_ENUM	high tide															
+TIDAL_STAGE_ENUM	low tide															
