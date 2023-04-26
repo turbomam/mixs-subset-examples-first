@@ -12,7 +12,7 @@ settings:
   float: |-
     [-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
   free_text: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   integer: |-
     [+-]?[1-9][0-9]*
   lat: |-
@@ -22,23 +22,23 @@ settings:
   ncbi_term_id: |-
     NCBITaxon:[0-9]+
   parameters: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   period: |-
     P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
   reference: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   software: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   term: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   term_id: |-
     [a-zA-Z]+:[0-9]+
   term_label: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   unit: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   version: |-
-    [^s\|][^\r\n\t\|]+
+    [^s\|][^\r\n\t\|]*
   start_time: |-
     \d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?
   end_time: |-
