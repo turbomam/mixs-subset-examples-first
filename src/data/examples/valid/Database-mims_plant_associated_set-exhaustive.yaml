@@ -24,7 +24,6 @@ mims_plant_associated_set:
     env_medium: text [prefix:123]
     experimental_factor: time series design [EFO:0001779]
     feat_pred: Prodigal;2.6.3;default parameters
-#    fertilizer_regm: urea;0.6 milligram per liter;R2/2018-05-11:T14:30/2018-05-11T19:30/P1D
     fertilizer_regm: urea;0.6 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
     fungicide_regm: bifonazole;1 mole per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
     gaseous_environment: nitric oxide;0.5 micromole per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
@@ -85,13 +84,11 @@ mims_plant_associated_set:
     root_cond: http://himedialabs.com/TD/PT158.pdf
     root_med_carbon: sucrose
     root_med_macronutr: xxx;123 units
-    #    root_med_micronutr: H3BO3 (6.2 mg/L)
-    root_med_micronutr: H3BO3;6.2 mg/L
+    root_med_micronutr: H3BO3;6.2 milligram per liter
     root_med_ph: 7.4
     root_med_regl: xxx;123 units
     root_med_solid: xxx
-    #    root_med_suppl: nicotinic acid (0.5 mg/L)
-    root_med_suppl: nicotinic acid;0.5 mg/L
+    root_med_suppl: nicotinic acid;0.5 milligram per liter
     salinity: 123 units
     salt_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
     samp_capt_status: farm sample
@@ -103,7 +100,6 @@ mims_plant_associated_set:
     samp_store_dur: P1Y6M
     samp_store_loc: xxx
     samp_store_temp: 123 units
-    #    samp_taxon_id: Gut Metagenome [NCBI:txid749906]
     samp_taxon_id: Gut Metagenome [NCBITaxon:749906]
     samp_vol_we_dna_ext: 123 units
     season_environment: rainy;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
