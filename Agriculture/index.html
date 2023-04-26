@@ -4663,7 +4663,7 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   samp_collect_method:
@@ -4679,7 +4679,7 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   enrichment_protocol:
@@ -4698,7 +4698,7 @@ attributes:
     - FoodHumanFoods
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   library_prep_kit:
@@ -5337,7 +5337,7 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   Food_Product_type:
@@ -5632,9 +5632,9 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   fungicide_regm:
     name: fungicide_regm
     title: fungicide regimen
@@ -5648,9 +5648,9 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   climate_environment:
     name: climate_environment
     title: climate environment
@@ -5677,9 +5677,9 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   non_mineral_nutr_regm:
     name: non_mineral_nutr_regm
     title: non-mineral nutrient regimen
@@ -5692,9 +5692,9 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   pesticide_regm:
     name: pesticide_regm
     title: pesticide regimen
@@ -5708,9 +5708,9 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   ph_regm:
     name: ph_regm
     title: pH regimen
@@ -5737,9 +5737,9 @@ attributes:
     - PlantAssociated
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   season_environment:
     name: season_environment
     title: seasonal environment
@@ -5845,7 +5845,7 @@ attributes:
     - MigsVi
     - MimarksC
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   samp_store_dur:
@@ -6381,7 +6381,7 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_amp:
@@ -6407,7 +6407,7 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   lib_size:
@@ -6758,7 +6758,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
     structured_pattern:
       syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
   source_mat_id:
@@ -6829,7 +6829,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   soil_type:
@@ -6863,7 +6863,7 @@ attributes:
     - Soil
     range: string
     required: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   horizon:
@@ -6889,7 +6889,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   link_class_info:
@@ -6904,7 +6904,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   previous_land_use:
@@ -6933,7 +6933,7 @@ attributes:
     - Agriculture
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   crop_rotation:
@@ -7028,7 +7028,7 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   annual_temp:
@@ -7193,7 +7193,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   cur_vegetation:
@@ -7225,7 +7225,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   tot_org_carb:
@@ -7258,7 +7258,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   tot_nitro:
@@ -7324,7 +7324,7 @@ attributes:
     - Soil
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   tot_car:

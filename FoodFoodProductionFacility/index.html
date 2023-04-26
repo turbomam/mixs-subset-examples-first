@@ -3449,7 +3449,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   organism_count:
@@ -3696,7 +3696,7 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   coll_site_geo_feat:
@@ -3925,7 +3925,7 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   num_samp_collect:
@@ -4059,7 +4059,7 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   cult_target:

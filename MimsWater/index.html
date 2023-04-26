@@ -546,13 +546,13 @@
 <td><a href="../depth/">depth</a></td>
 <td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../elev/">elev</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../env_broad_scale/">env_broad_scale</a></td>
@@ -666,7 +666,7 @@
 <td><a href="../project_name/">project_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
@@ -708,7 +708,7 @@
 <td><a href="../samp_name/">samp_name</a></td>
 <td>1..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../samp_size/">samp_size</a></td>
@@ -726,7 +726,7 @@
 <td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../seq_meth/">seq_meth</a></td>
@@ -768,7 +768,7 @@
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
 <td></td>
-<td><a href="../Water/">Water</a>, <a href="../Mims/">Mims</a></td>
+<td><a href="../Mims/">Mims</a>, <a href="../Water/">Water</a></td>
 </tr>
 <tr>
 <td><a href="../alkalinity/">alkalinity</a></td>
@@ -1960,7 +1960,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   nucl_acid_ext:
@@ -1990,7 +1990,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   number_contig:
@@ -2101,7 +2101,7 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
   ref_db:
@@ -2441,7 +2441,7 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
     structured_pattern:
       syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
   source_mat_id:

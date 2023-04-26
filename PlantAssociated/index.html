@@ -2675,9 +2675,11 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?)\|)*[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: (({free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period})\|)*{free_text};{float}
+        {unit};R{integer}/{start_time}/{end_time}/{period}
   biol_stat:
     name: biol_stat
     title: biological status
@@ -2742,9 +2744,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   climate_environment:
     name: climate_environment
     title: climate environment
@@ -2779,9 +2781,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   fungicide_regm:
     name: fungicide_regm
     title: fungicide regimen
@@ -2794,9 +2796,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   gaseous_environment:
     name: gaseous_environment
     title: gaseous environment
@@ -2809,9 +2811,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   genetic_mod:
     name: genetic_mod
     title: genetic modification
@@ -2828,7 +2830,7 @@ attributes:
     - HostAssociated
     - PlantAssociated
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   gravity:
@@ -2876,9 +2878,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   herbicide_regm:
     name: herbicide_regm
     title: herbicide regimen
@@ -2891,9 +2893,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   host_age:
     name: host_age
     title: host age
@@ -3194,9 +3196,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   misc_param:
     name: misc_param
     title: miscellaneous parameter
@@ -3353,9 +3355,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   plant_growth_med:
     name: plant_growth_med
     title: plant growth medium
@@ -3421,9 +3423,9 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   rainfall_regm:
     name: rainfall_regm
     title: rainfall regimen
@@ -3447,7 +3449,7 @@ attributes:
     - FoodFarmEnvironment
     - PlantAssociated
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   root_med_carbon:
@@ -3561,9 +3563,9 @@ attributes:
     - Agriculture
     - PlantAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;{Rn/start_time/end_time/duration}'
+    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
     structured_pattern:
-      syntax: '{free_text};{float} {unit};{Rn/start_time/end_time/duration}'
+      syntax: '{free_text};{float} {unit};R{integer}/{start_time}/{end_time}/{period}'
   samp_capt_status:
     name: samp_capt_status
     title: sample capture status
@@ -3832,7 +3834,7 @@ attributes:
     domain_of:
     - PlantAssociated
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?:\/\/)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
   water_temp_regm:
