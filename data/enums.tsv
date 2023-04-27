@@ -6,6 +6,13 @@ ASSEMBLY_QUAL_ENUM	Genome fragment(s)
 ASSEMBLY_QUAL_ENUM	High-quality draft genome															
 ASSEMBLY_QUAL_ENUM	Low-quality draft genome															
 ASSEMBLY_QUAL_ENUM	Medium-quality draft genome															
+ASSEMBLY_QUAL_ENUM						placeholder description; linter will ignore this										
+BIOTIC_RELATIONSHIP_ENUM	commensalism															
+BIOTIC_RELATIONSHIP_ENUM	free living															
+BIOTIC_RELATIONSHIP_ENUM	mutualism															
+BIOTIC_RELATIONSHIP_ENUM	parasitism															
+BIOTIC_RELATIONSHIP_ENUM	symbiotic															
+BIOTIC_RELATIONSHIP_ENUM						placeholder description; linter will ignore this										
 CUR_LAND_USE_ENUM	badlands															
 CUR_LAND_USE_ENUM	cities															
 CUR_LAND_USE_ENUM	conifers (e.g. pine, spruce, fir, cypress)															
@@ -41,12 +48,14 @@ CUR_LAND_USE_ENUM	tropical (e.g. mangrove, palms)
 CUR_LAND_USE_ENUM	tundra (mosses, lichens)															
 CUR_LAND_USE_ENUM	vegetable crops															
 CUR_LAND_USE_ENUM	vine crops (grapes)															
+CUR_LAND_USE_ENUM						placeholder description; linter will ignore this										
 DRAINAGE_CLASS_ENUM	excessively drained															
 DRAINAGE_CLASS_ENUM	moderately well															
 DRAINAGE_CLASS_ENUM	poorly															
 DRAINAGE_CLASS_ENUM	somewhat poorly															
 DRAINAGE_CLASS_ENUM	very poorly															
 DRAINAGE_CLASS_ENUM	well															
+DRAINAGE_CLASS_ENUM						placeholder description; linter will ignore this										
 FAO_CLASS_ENUM	Acrisols															
 FAO_CLASS_ENUM	Andosols															
 FAO_CLASS_ENUM	Arenosols															
@@ -73,15 +82,30 @@ FAO_CLASS_ENUM	Solonchaks
 FAO_CLASS_ENUM	Solonetz															
 FAO_CLASS_ENUM	Vertisols															
 FAO_CLASS_ENUM	Yermosols															
+FAO_CLASS_ENUM						placeholder description; linter will ignore this										
 LIB_LAYOUT_ENUM	other															
 LIB_LAYOUT_ENUM	paired															
 LIB_LAYOUT_ENUM	single															
 LIB_LAYOUT_ENUM	vector															
+LIB_LAYOUT_ENUM						placeholder description; linter will ignore this										
+NEG_CONT_TYPE_ENUM	distilled water															
+NEG_CONT_TYPE_ENUM	DNA-free PCR mix															
+NEG_CONT_TYPE_ENUM	empty collection device															
+NEG_CONT_TYPE_ENUM	empty collection tube															
+NEG_CONT_TYPE_ENUM	phosphate buffer															
+NEG_CONT_TYPE_ENUM	sterile swab															
+NEG_CONT_TYPE_ENUM	sterile syringe															
+NEG_CONT_TYPE_ENUM						placeholder description; linter will ignore this										
+OXY_STAT_SAMP_ENUM	aerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/94		
+OXY_STAT_SAMP_ENUM	anaerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/95		
+OXY_STAT_SAMP_ENUM	other													https://github.com/turbomam/mixs-subset-examples-first/issues/96		
+OXY_STAT_SAMP_ENUM						placeholder description; linter will ignore this										
 PROFILE_POSITION_ENUM	backslope															
 PROFILE_POSITION_ENUM	footslope															
 PROFILE_POSITION_ENUM	shoulder															
 PROFILE_POSITION_ENUM	summit															
 PROFILE_POSITION_ENUM	toeslope															
+PROFILE_POSITION_ENUM						placeholder description; linter will ignore this										
 REL_TO_OXYGEN_ENUM	aerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/94		
 REL_TO_OXYGEN_ENUM	anaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/95		
 REL_TO_OXYGEN_ENUM	facultative													https://github.com/turbomam/mixs-subset-examples-first/issues/96		
@@ -89,6 +113,7 @@ REL_TO_OXYGEN_ENUM	microaerophilic													https://github.com/turbomam/mixs-
 REL_TO_OXYGEN_ENUM	microanaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/98		
 REL_TO_OXYGEN_ENUM	obligate aerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/99		
 REL_TO_OXYGEN_ENUM	obligate anaerobe													https://github.com/turbomam/mixs-subset-examples-first/issues/100		
+REL_TO_OXYGEN_ENUM						placeholder description; linter will ignore this										
 SOIL_HORIZON_ENUM	A horizon															
 SOIL_HORIZON_ENUM	B horizon															
 SOIL_HORIZON_ENUM	C horizon															
@@ -96,6 +121,12 @@ SOIL_HORIZON_ENUM	E horizon
 SOIL_HORIZON_ENUM	O horizon															
 SOIL_HORIZON_ENUM	Permafrost															
 SOIL_HORIZON_ENUM	R layer															
+SOIL_HORIZON_ENUM						placeholder description; linter will ignore this										
+TIDAL_STAGE_ENUM	ebb tide															
+TIDAL_STAGE_ENUM	flood tide															
+TIDAL_STAGE_ENUM	high tide															
+TIDAL_STAGE_ENUM	low tide															
+TIDAL_STAGE_ENUM						placeholder description; linter will ignore this										
 TILLAGE_ENUM	chisel															
 TILLAGE_ENUM	cutting disc															
 TILLAGE_ENUM	disc plough															
@@ -105,25 +136,7 @@ TILLAGE_ENUM	ridge till
 TILLAGE_ENUM	strip tillage															
 TILLAGE_ENUM	tined															
 TILLAGE_ENUM	zonal tillage															
-NEG_CONT_TYPE_ENUM	distilled water															
-NEG_CONT_TYPE_ENUM	DNA-free PCR mix															
-NEG_CONT_TYPE_ENUM	empty collection device															
-NEG_CONT_TYPE_ENUM	empty collection tube															
-NEG_CONT_TYPE_ENUM	phosphate buffer															
-NEG_CONT_TYPE_ENUM	sterile swab															
-NEG_CONT_TYPE_ENUM	sterile syringe															
-OXY_STAT_SAMP_ENUM	aerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/94		
-OXY_STAT_SAMP_ENUM	anaerobic													https://github.com/turbomam/mixs-subset-examples-first/issues/95		
-OXY_STAT_SAMP_ENUM	other													https://github.com/turbomam/mixs-subset-examples-first/issues/96		
-TIDAL_STAGE_ENUM	ebb tide															
-TIDAL_STAGE_ENUM	flood tide															
-TIDAL_STAGE_ENUM	high tide															
-TIDAL_STAGE_ENUM	low tide															
-BIOTIC_RELATIONSHIP_ENUM	commensalism															
-BIOTIC_RELATIONSHIP_ENUM	free living															
-BIOTIC_RELATIONSHIP_ENUM	mutualism															
-BIOTIC_RELATIONSHIP_ENUM	parasitism															
-BIOTIC_RELATIONSHIP_ENUM	symbiotic															
+TILLAGE_ENUM						placeholder description; linter will ignore this										
 TROPHIC_LEVEL_ENUM	autotroph															
 TROPHIC_LEVEL_ENUM	carboxydotroph															
 TROPHIC_LEVEL_ENUM	chemoautolithotroph															
@@ -155,3 +168,4 @@ TROPHIC_LEVEL_ENUM	photolithoautotroph
 TROPHIC_LEVEL_ENUM	photolithotroph															
 TROPHIC_LEVEL_ENUM	photosynthetic															
 TROPHIC_LEVEL_ENUM	phototroph															
+TROPHIC_LEVEL_ENUM						placeholder description; linter will ignore this										

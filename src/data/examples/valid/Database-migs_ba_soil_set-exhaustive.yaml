@@ -1,6 +1,6 @@
 migs_ba_soil_set:
-  - samp_name: xxx1
-    adapters: AAA;TTT
+  - adapters: AAA;TTT
+#    samp_name: xxx1
     agrochem_addition: xxx
     al_sat: 123 units
     al_sat_meth: http://example.com/site
@@ -20,7 +20,7 @@ migs_ba_soil_set:
     cur_land_use: badlands
     cur_vegetation: xxx
     cur_vegetation_meth: 10.1093/ajae/aaq063
-    depth: 123 units
+#    depth: 123 units
     drainage_class: moderately well
     elev: 123 units
     encoded_traits: xxx
@@ -53,7 +53,7 @@ migs_ba_soil_set:
     link_climate_info: PMID:1234567
     local_class: xxx
     local_class_meth: PMID:1234567
-    micro_biomass_meth: PMID:1234567
+#    micro_biomass_meth: PMID:1234567
     microbial_biomass: 123 units
     misc_param: xxx;123 units|abc;123 units
     neg_cont_type: distilled water
@@ -68,7 +68,7 @@ migs_ba_soil_set:
     ph_meth: PMID:1234567
     pool_dna_extracts: xxx
     pos_cont_type: xxx
-    prev_land_use_meth: PMID:1234567
+#    prev_land_use_meth: PMID:1234567
     previous_land_use: xxx
     profile_position: summit
     project_name: xxx
@@ -76,8 +76,8 @@ migs_ba_soil_set:
     ref_db: xxx;xxx;xxx
     rel_to_oxygen: microaerophilic
     salinity_meth: PMID:1234567
-    samp_collec_device: xxx
-    samp_collec_method: PMID:1234567
+#    samp_collec_device: xxx
+#    samp_collec_method: PMID:1234567
     samp_mat_process: xxx
     samp_size: 123 units
     samp_taxon_id: xxx [NCBITaxon:10090]
@@ -89,9 +89,9 @@ migs_ba_soil_set:
     sim_search_meth: xxx;xxx;xxx
     slope_aspect: 123 units
     slope_gradient: 123 units
-    soil_horizon: xxx
-    soil_text_measure: 123 units
-    soil_texture_meth: PMID:1234567
+#    soil_horizon: xxx
+#    soil_text_measure: 123 units
+#    soil_texture_meth: PMID:1234567
     soil_type: xxx [xxx:0000000]
     soil_type_meth: PMID:1234567
     sop: PMID:1234567|http://example.com/site|10.1093/ajae/aaq063
@@ -104,8 +104,8 @@ migs_ba_soil_set:
     temp: 123 units
     tillage:
       - disc plough
-    tot_nitro_cont_meth: PMID:1234567
-    tot_nitro_content: xxx
+#    tot_nitro_cont_meth: PMID:1234567
+#    tot_nitro_content: xxx
     tot_org_c_meth: PMID:1234567
     tot_org_carb: xxx
     trophic_level: autotroph

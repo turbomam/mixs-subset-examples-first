@@ -1,7 +1,7 @@
 mims_soil_set:
-  - samp_name: xxx1
-    collection_date: xxx
-    depth: 123 units
+  - collection_date: xxx
+#    samp_name: xxx1
+#    depth: 123 units
     elev: 123 units
     env_broad_scale: text [prefix:123]
     env_local_scale: text [prefix:123]
@@ -11,9 +11,9 @@ mims_soil_set:
     project_name: xxx
     samp_taxon_id: xxx [NCBITaxon:10090]
     seq_meth: xxx
-  - samp_name: xxx2
-    collection_date: xxx
-    depth: 123 units
+  - collection_date: xxx
+#    samp_name: xxx1
+#    depth: 123 units
     elev: 123 units
     env_broad_scale: text [prefix:123]
     env_local_scale: text [prefix:123]
