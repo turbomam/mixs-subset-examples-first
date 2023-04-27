@@ -220,6 +220,8 @@ project/json/mixs_subset_examples_first.json \
 reports/Database-mimssoil_set-example.yaml.check-jsonschema.log \
 gendoc
 
+# make minimal_validation_report all testdoc test create-data-harmonizer deploy
+
 # make all (includes gen-project and gendoc)
 
 # generate documentation

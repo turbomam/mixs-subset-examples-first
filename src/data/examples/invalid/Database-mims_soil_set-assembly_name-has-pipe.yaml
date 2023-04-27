@@ -49,7 +49,6 @@ mims_soil_set:
     microbial_biomass: 123 units
     mid: ACGT
     misc_param: xxx;123 units
-distilled water
     nucl_acid_amp: PMID:1234567
     nucl_acid_ext: PMID:1234567
     number_contig: 123

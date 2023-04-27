@@ -1,0 +1,120 @@
+mims_water_set:
+- project_name: xxx
+  elev: 123 units
+  alkalinity: 123 units
+  alkalinity_method: xxx
+  alkyl_diethers: 123 units
+  aminopept_act: 123 units
+  ammonium: 123 units
+  atmospheric_data: xxx;123 units
+  bac_prod: 123 units
+  bac_resp: 123 units
+  bacteria_carb_prod: 123 units
+  biomass: xxx;123 units
+  bishomohopanol: 123 units
+  bromide: 123 units
+  calcium: 123 units
+  carb_nitro_ratio: 1.2
+  chem_administration: xxx
+  chloride: 123 units
+  chlorophyll: 123 units
+  conduc: 123 units
+  density: 123 units
+  diether_lipids: xxx;123 units|abc;123 units
+  diss_carb_dioxide: 123 units
+  diss_hydrogen: 123 units
+  diss_inorg_carb: 123 units
+  diss_inorg_nitro: 123 units
+  diss_inorg_phosp: 123 units
+  diss_org_carb: 123 units
+  diss_org_nitro: 123 units
+  diss_oxygen: 123 units
+  down_par: 123 units
+  fluor: 123 units
+  glucosidase_act: 123 units
+  light_intensity: 123 units
+  magnesium: 123 units
+  mean_frict_vel: 123 units
+  mean_peak_frict_vel: 123 units
+  misc_param: xxx;123 units|abc;123 units
+  n_alkanes: xxx;123 units
+  nitrate: 123 units
+  nitrite: 123 units
+  nitro: 123 units
+  org_carb: 123 units
+  org_matter: 123 units
+  org_nitro: 123 units
+  organism_count: xxx
+  oxy_stat_samp: aerobic
+  part_org_carb: 123 units
+  part_org_nitro: 123 units
+  perturbation: xxx
+  petroleum_hydrocarb: 123 units
+  ph: 7.4
+  phaeopigments: xxx;123 units|abc;123 units
+  phosphate: 123 units
+  phosplipid_fatt_acid: xxx|xxx|xxx
+  photon_flux: 123 units
+  potassium: 123 units
+  pressure: 123 units
+  primary_prod: 123 units
+  redox_potential: 123 units
+  salinity: 123 units
+  samp_store_dur: P1D
+  samp_store_loc: xxx
+  samp_store_temp: 123 units
+  samp_vol_we_dna_ext: 123 units
+  silicate: 123 units
+  size_frac_low: 123 units
+  size_frac_up: 123 units
+  sodium: 123 units
+  soluble_react_phosp: 123 units
+  sulfate: 123 units
+  sulfide: 123 units
+  suspend_part_matter: 123 units
+  temp: 123 units
+  tidal_stage: ebb tide
+  tot_depth_water_col: 123 units
+  tot_diss_nitro: 123 units
+  tot_inorg_nitro: 123 units
+  tot_part_carb: 123 units
+  tot_phosp: 123 units
+  turbidity: 123 units
+  water_current: 123 units
+  mid: ACGT
+  adapters: AAA;TTT
+  annot: xxx
+  assembly_name: xxx xxx
+  neg_cont_type: empty collection tube
+  nucl_acid_amp: PMID:1234567
+  nucl_acid_ext: PMID:1234567
+  pos_cont_type: xxx
+  sop: PMID:1234567|http://example.com/site|10.1093/ajae/aaq063
+  source_mat_id: xxx
+  assembly_qual: Finished genome
+  assembly_software: xxx;xxx;xxx
+  number_contig: 123
+  experimental_factor: xxx
+  lib_layout: paired
+  lib_reads_seqd: 123
+  lib_screen: xxx
+  lib_size: 123
+  lib_vector: xxx
+  samp_mat_process: xxx
+  samp_size: 123 units
+  alt: 123 units
+  rel_to_oxygen: microaerophilic
+  size_frac: 123-555 units
+  feat_pred: xxx;xxx;xxx
+  ref_biomaterial: PMID:1234567
+  ref_db: xxx;xxx;xxx
+  sim_search_meth: xxx;xxx;xxx
+  tax_class: xxx
+  collection_date: xxx
+  env_broad_scale: text [prefix:123]
+  env_local_scale: text [prefix:123]
+  env_medium: text [prefix:123]
+  geo_loc_name: 'xxx: xxx, xxx'
+  lat_lon: 55.5 55.5
+  samp_taxon_id: xxx [NCBITaxon:10090]
+  seq_meth: PMID:1234567
