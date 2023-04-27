@@ -1,69 +1,21 @@
-class	tree_root	slot	range	multivalued	inlined_as_list
-> class	tree_root	slot	range	multivalued	inlined_as_list
-Database		agriculture_set	Agriculture	TRUE	TRUE
-Database		air_set	Air	TRUE	TRUE
-Database		built_environment_set	BuiltEnvironment	TRUE	TRUE
-Database		checklist_set	Checklist	TRUE	TRUE
-Database		environmental_package_set	EnvironmentalPackage	TRUE	TRUE
-Database		food_animal_and_animal_feed_set	FoodAnimalAndAnimalFeed	TRUE	TRUE
-Database		food_farm_environment_set	FoodFarmEnvironment	TRUE	TRUE
-Database		food_food_production_facility_set	FoodFoodProductionFacility	TRUE	TRUE
-Database		food_human_foods_set	FoodHumanFoods	TRUE	TRUE
-Database		host_associated_set	HostAssociated	TRUE	TRUE
-Database		human_associated_set	HumanAssociated	TRUE	TRUE
-Database		human_gut_set	HumanGut	TRUE	TRUE
-Database		human_oral_set	HumanOral	TRUE	TRUE
-Database		human_skin_set	HumanSkin	TRUE	TRUE
-Database		human_vaginal_set	HumanVaginal	TRUE	TRUE
-Database		hydrocarbon_resources_cores_set	HydrocarbonResourcesCores	TRUE	TRUE
-Database		hydrocarbon_resources_fluids_swabs_set	HydrocarbonResourcesFluidsSwabs	TRUE	TRUE
-Database		microbial_mat_biofilm_set	MicrobialMatBiofilm	TRUE	TRUE
-Database		migs_ba_set	MigsBa	TRUE	TRUE
-Database		migs_ba_plant_associated_set	MigsBaPlantAssociated	TRUE	TRUE
-Database		migs_ba_sediment_set	MigsBaSediment	TRUE	TRUE
-Database		migs_ba_soil_set	MigsBaSoil	TRUE	TRUE
-Database		mims_plant_associated_set	MimsPlantAssociated	TRUE	TRUE
-Database		mims_sediment_set	MimsSediment	TRUE	TRUE
-Database		mims_soil_set	MimsSoil	TRUE	TRUE
-Database		plant_associated_set	PlantAssociated	TRUE	TRUE
-Database		sediment_set	Sediment	TRUE	TRUE
-Database		soil_set	Soil	TRUE	TRUE
-Database		symbiont_associated_set	SymbiontAssociated	TRUE	TRUE
-Database		unknown_term_set	UnknownTerm	TRUE	TRUE
-Database		wastewater_sludge_set	WastewaterSludge	TRUE	TRUE
-Database		water_set	Water	TRUE	TRUE
-Database	TRUE				
-		agriculture_set	Agriculture	TRUE	TRUE
-		air_set	Air	TRUE	TRUE
-		built_environment_set	BuiltEnvironment	TRUE	TRUE
-		checklist_set	Checklist	TRUE	TRUE
-		environmental_package_set	EnvironmentalPackage	TRUE	TRUE
-		food_animal_and_animal_feed_set	FoodAnimalAndAnimalFeed	TRUE	TRUE
-		food_farm_environment_set	FoodFarmEnvironment	TRUE	TRUE
-		food_food_production_facility_set	FoodFoodProductionFacility	TRUE	TRUE
-		food_human_foods_set	FoodHumanFoods	TRUE	TRUE
-		host_associated_set	HostAssociated	TRUE	TRUE
-		human_associated_set	HumanAssociated	TRUE	TRUE
-		human_gut_set	HumanGut	TRUE	TRUE
-		human_oral_set	HumanOral	TRUE	TRUE
-		human_skin_set	HumanSkin	TRUE	TRUE
-		human_vaginal_set	HumanVaginal	TRUE	TRUE
-		hydrocarbon_resources_cores_set	HydrocarbonResourcesCores	TRUE	TRUE
-		hydrocarbon_resources_fluids_swabs_set	HydrocarbonResourcesFluidsSwabs	TRUE	TRUE
-		microbial_mat_biofilm_set	MicrobialMatBiofilm	TRUE	TRUE
-		migs_ba_set	MigsBa	TRUE	TRUE
-		migs_ba_plant_associated_set	MigsBaPlantAssociated	TRUE	TRUE
-		migs_ba_sediment_set	MigsBaSediment	TRUE	TRUE
-		migs_ba_soil_set	MigsBaSoil	TRUE	TRUE
-		mims_plant_associated_set	MimsPlantAssociated	TRUE	TRUE
-		mims_sediment_set	MimsSediment	TRUE	TRUE
-		mims_soil_set	MimsSoil	TRUE	TRUE
-		plant_associated_set	PlantAssociated	TRUE	TRUE
-		sediment_set	Sediment	TRUE	TRUE
-		soil_set	Soil	TRUE	TRUE
-		symbiont_associated_set	SymbiontAssociated	TRUE	TRUE
-		unknown_term_set	UnknownTerm	TRUE	TRUE
-		wastewater_sludge_set	WastewaterSludge	TRUE	TRUE
-		water_set	Water	TRUE	TRUE
-Database		migs_ba_water_set	MigsBaWater	TRUE	TRUE
-Database		mims_water_set	MimsWater	TRUE	TRUE
+class	tree_root	slot	range	multivalued	inlined_as_list	description
+> class	tree_root	slot	range	multivalued	inlined_as_list	description
+Database		migs_ba_plant_associated_set				
+Database		migs_ba_sediment_set				
+Database		migs_ba_set				
+Database		migs_ba_soil_set				
+Database		migs_ba_water_set				
+Database		mims_plant_associated_set				
+Database		mims_sediment_set				
+Database		mims_soil_set				
+Database		mims_water_set				
+Database	TRUE					placeholder description; linter will ignore this
+		migs_ba_plant_associated_set	MigsBaPlantAssociated	TRUE	TRUE	placeholder description; linter will ignore this
+		migs_ba_sediment_set	MigsBaSediment	TRUE	TRUE	placeholder description; linter will ignore this
+		migs_ba_set	MigsBa	TRUE	TRUE	placeholder description; linter will ignore this
+		migs_ba_soil_set	MigsBaSoil	TRUE	TRUE	placeholder description; linter will ignore this
+		migs_ba_water_set	MigsBaWater	TRUE	TRUE	placeholder description; linter will ignore this
+		mims_plant_associated_set	MimsPlantAssociated	TRUE	TRUE	placeholder description; linter will ignore this
+		mims_sediment_set	MimsSediment	TRUE	TRUE	placeholder description; linter will ignore this
+		mims_soil_set	MimsSoil	TRUE	TRUE	placeholder description; linter will ignore this
+		mims_water_set	MimsWater	TRUE	TRUE	placeholder description; linter will ignore this

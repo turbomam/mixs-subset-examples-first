@@ -1,0 +1,26 @@
+@prefix MIXS: <http://example.com/> .
+
+[] a MIXS:Database ;
+    MIXS:mims_soil_set [ a MIXS:0010007_0016012 ;
+            MIXS:0000009 "55.5 55.5" ;
+            MIXS:0000010 "xxx: xxx, xxx" ;
+            MIXS:0000011 "xxx" ;
+            MIXS:0000012 "text [prefix:123]" ;
+            MIXS:0000013 "text [prefix:123]" ;
+            MIXS:0000014 "text [prefix:123]" ;
+            MIXS:0000050 "xxx" ;
+            MIXS:0000092 "xxx" ;
+            MIXS:0000093 "123 units" ;
+            MIXS:0001320 "xxx [NCBITaxon:10090]" ],
+        [ a MIXS:0010007_0016012 ;
+            MIXS:0000009 "55.5 55.5" ;
+            MIXS:0000010 "xxx: xxx, xxx" ;
+            MIXS:0000011 "xxx" ;
+            MIXS:0000012 "text [prefix:123]" ;
+            MIXS:0000013 "text [prefix:123]" ;
+            MIXS:0000014 "text [prefix:123]" ;
+            MIXS:0000050 "xxx" ;
+            MIXS:0000092 "xxx" ;
+            MIXS:0000093 "123 units" ;
+            MIXS:0001320 "xxx [NCBITaxon:10090]" ] .
+

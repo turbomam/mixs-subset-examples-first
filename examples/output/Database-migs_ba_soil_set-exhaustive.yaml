@@ -1,0 +1,101 @@
+migs_ba_soil_set:
+- elev: 123 units
+  project_name: xxx
+  agrochem_addition: xxx
+  al_sat: 123 units
+  al_sat_meth: http://example.com/site
+  annual_precpt: 123 units
+  annual_temp: 123 units
+  crop_rotation: xxx
+  cur_land_use: badlands
+  cur_vegetation: xxx
+  cur_vegetation_meth: 10.1093/ajae/aaq063
+  drainage_class: moderately well
+  extreme_event: xxx
+  fao_class: Acrisols
+  fire: xxx
+  flooding: xxx
+  heavy_metals: zinc;123 units|cadmium;123 units
+  heavy_metals_meth: PMID:1234567
+  horizon_meth: PMID:1234567
+  link_addit_analys: PMID:1234567
+  link_class_info: PMID:1234567
+  link_climate_info: PMID:1234567
+  local_class: xxx
+  local_class_meth: PMID:1234567
+  microbial_biomass: 123 units
+  misc_param: xxx;123 units|abc;123 units
+  org_matter: 123 units
+  org_nitro: 123 units
+  ph: 7.4
+  ph_meth: PMID:1234567
+  pool_dna_extracts: xxx
+  previous_land_use: xxx
+  profile_position: summit
+  salinity_meth: PMID:1234567
+  samp_vol_we_dna_ext: 123 units
+  season_precpt: 123 units
+  season_temp: 123 units
+  sieving: xxx
+  slope_aspect: 123 units
+  slope_gradient: 123 units
+  soil_type: xxx [xxx:0000000]
+  soil_type_meth: PMID:1234567
+  store_cond: xxx;P1D
+  temp: 123 units
+  tillage:
+  - disc plough
+  tot_org_c_meth: PMID:1234567
+  tot_org_carb: xxx
+  water_cont_soil_meth: PMID:1234567
+  water_content: 123 units
+  rel_to_oxygen: microaerophilic
+  adapters: AAA;TTT
+  annot: xxx
+  assembly_name: xxx xxx
+  neg_cont_type: distilled water
+  nucl_acid_amp: PMID:1234567
+  nucl_acid_ext: PMID:1234567
+  pathogenicity: xxx
+  pos_cont_type: xxx
+  sop: PMID:1234567|http://example.com/site|10.1093/ajae/aaq063
+  source_mat_id: xxx
+  subspecf_gen_lin: xxx
+  tax_ident: xxx
+  trophic_level: autotroph
+  biotic_relationship: free living
+  extrachrom_elements: 123
+  host_disease_stat: xxx
+  specific_host: xxx
+  alt: 123 units
+  encoded_traits: xxx
+  compl_score: xxx
+  compl_software: xxx;xxx
+  estimated_size: 123 bp
+  experimental_factor: xxx
+  feat_pred: xxx;xxx;xxx
+  host_spec_range: 123|555
+  lib_layout: paired
+  lib_reads_seqd: 123
+  lib_screen: xxx
+  lib_size: 123
+  lib_vector: xxx
+  ref_db: xxx;xxx;xxx
+  samp_mat_process: xxx
+  samp_size: 123 units
+  sim_search_meth: xxx;xxx;xxx
+  tax_class: xxx
+  assembly_qual: Finished genome
+  assembly_software: xxx;xxx;xxx
+  collection_date: xxx
+  env_broad_scale: text [prefix:123]
+  env_local_scale: text [prefix:123]
+  env_medium: text [prefix:123]
+  geo_loc_name: 'xxx: xxx, xxx'
+  isol_growth_condt: PMID:1234567
+  lat_lon: 55.5 55.5
+  number_contig: 123
+  samp_taxon_id: xxx [NCBITaxon:10090]
+  seq_meth: PMID:1234567
+  num_replicons: 123
+  ref_biomaterial: PMID:1234567

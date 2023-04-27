@@ -1,0 +1,110 @@
+mims_plant_associated_set:
+- project_name: xxx
+  elev: 100 meter
+  air_temp_regm: 25 degree Celsius;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  ances_data: A/3*B
+  antibiotic_regm: penicillin;5 milligram;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
+  biol_stat: natural
+  biotic_regm: sample inoculated with Rhizobium spp. Culture
+  chem_administration: agar [CHEBI:2509];2018-05-11T20:00Z
+  chem_mutagen: nitrous acid;0.5 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
+  climate_environment: tropical climate;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  cult_root_med: http://himedialabs.com/TD/PT158.pdf
+  fertilizer_regm: urea;0.6 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
+  fungicide_regm: bifonazole;1 mole per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
+  gaseous_environment: nitric oxide;0.5 micromole per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
+  genetic_mod: aox1A transgenic
+  gravity: 12 g;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  growth_facil: Growth chamber [CO_715:0000189]
+  growth_habit: spreading
+  growth_hormone_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  herbicide_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  host_age: 123 units
+  host_common_name: human
+  host_disease_stat: downy mildew
+  host_dry_mass: 123 units
+  host_genotype: C57BL/6
+  host_height: 123 units
+  host_length: 123 units
+  host_life_stage: adult
+  host_phenotype: text [prefix:123]
+  host_subspecf_genlin: serovar:Newport
+  host_taxid: 9606
+  host_tot_mass: 123 units
+  host_wet_mass: 123 units
+  humidity_regm: 25 gram per cubic meter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  light_regm: incandescant light;10 lux;450 nanometer
+  mechanical_damage: pruning
+  mineral_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  misc_param: xxx;123 units|abc;123 units
+  organism_count: total prokaryotes;3.5e7 cells per milliliter;qPCR
+  oxy_stat_samp: aerobic
+  perturbation: antibiotic addition;R2/2018-05-11T14:30Z/2018-05-11T19:30Z/P1H30M
+  pesticide_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  ph_regm: 7.6;R2/2018-05-11:T14:30/2018-05-11T19:30/P1H30M
+  plant_growth_med: hydroponic plant culture media [EO:0007067]
+  plant_product: xxx
+  plant_sex: Hermaphroditic
+  plant_struc: epidermis [PO:0005679]
+  radiation_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  rainfall_regm: 15 millimeter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  root_cond: http://himedialabs.com/TD/PT158.pdf
+  root_med_carbon: sucrose
+  root_med_macronutr: xxx;123 units
+  root_med_micronutr: H3BO3;6.2 milligram per liter
+  root_med_ph: 7.4
+  root_med_regl: xxx;123 units
+  root_med_solid: xxx
+  root_med_suppl: nicotinic acid;0.5 milligram per liter
+  salinity: 123 units
+  salt_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+  samp_capt_status: farm sample
+  samp_dis_stage: infection
+  samp_store_dur: P1Y6M
+  samp_store_loc: xxx
+  samp_store_temp: 123 units
+  samp_vol_we_dna_ext: 123 units
+  season_environment: rainy;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  standing_water_regm: standing water;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  temp: 123 units
+  tiss_cult_growth_med: xxx
+  water_temp_regm: 15 degree Celsius;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  watering_regm: 1 liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+  mid: ACGT
+  adapters: AATGATACGGCGACCACCGAGATCTACACGCT;CAAGCAGAAGACGGCATACGAGAT
+  annot: prokka
+  assembly_name: HuRef, JCVI_ISG_i3_1.0
+  neg_cont_type: distilled water
+  nucl_acid_amp: https://phylogenomics.me/protocols/16s-pcr-protocol/
+  nucl_acid_ext: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf
+  pos_cont_type: xxx
+  sop: http://press.igsb.anl.gov/earthmicrobiome/protocols-and-standards/its/
+  source_mat_id: xxx
+  assembly_qual: Finished genome
+  assembly_software: metaSPAdes;3.11.0;kmer set 21,33,55,77,99,121, default parameters
+    otherwise
+  number_contig: 123
+  experimental_factor: time series design [EFO:0001779]
+  lib_layout: paired
+  lib_reads_seqd: 123
+  lib_screen: xxx
+  lib_size: 123
+  lib_vector: xxx
+  samp_mat_process: xxx
+  samp_size: 123 units
+  alt: 100 meter
+  rel_to_oxygen: microaerophilic
+  size_frac: 123-555 units
+  feat_pred: Prodigal;2.6.3;default parameters
+  ref_biomaterial: PMID:1234567
+  ref_db: pVOGs;5;http://dmk-brain.ecn.uiowa.edu/pVOGs/ Grazziotin et al. 2017 doi:10.1093/nar/gkw975
+  sim_search_meth: xxx;xxx;xxx
+  tax_class: xxx
+  collection_date: '2018-05-11T10:00:00+01:00'
+  env_broad_scale: text [prefix:123]
+  env_local_scale: text [prefix:123]
+  env_medium: text [prefix:123]
+  geo_loc_name: 'USA: Maryland, Bethesda'
+  lat_lon: 50.586825 6.408977
+  samp_taxon_id: Gut Metagenome [NCBITaxon:749906]
+  seq_meth: 454 Genome Sequencer FLX [OBI:0000702]

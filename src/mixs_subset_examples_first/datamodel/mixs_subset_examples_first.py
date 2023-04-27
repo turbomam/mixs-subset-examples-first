@@ -1,5 +1,5 @@
 # Auto generated from mixs_subset_examples_first.yaml by pythongen.py version: 0.9.0
-# Generation date: 2023-04-25T20:44:49
+# Generation date: 2023-04-27T14:56:06
 # Schema: MIxS
 #
 # id: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
@@ -170,11 +170,14 @@ class Nodeidentifier(NodeIdentifier):
 
 
 # Class references
-class SymbiontAssociatedSampleName(extended_str):
-    pass
 
 
+
+@dataclass
 class Checklist(YAMLRoot):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS.Checklist
@@ -182,9 +185,380 @@ class Checklist(YAMLRoot):
     class_name: ClassVar[str] = "Checklist"
     class_model_uri: ClassVar[URIRef] = MIXS.Checklist
 
+    adapters: Optional[str] = None
+    alt: Optional[str] = None
+    annot: Optional[str] = None
+    assembly_name: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    bin_param: Optional[str] = None
+    bin_software: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    chimera_check: Optional[str] = None
+    collection_date: Optional[str] = None
+    compl_appr: Optional[str] = None
+    compl_score: Optional[str] = None
+    compl_software: Optional[str] = None
+    contam_score: Optional[str] = None
+    contam_screen_input: Optional[str] = None
+    contam_screen_param: Optional[str] = None
+    decontam_software: Optional[str] = None
+    detec_type: Optional[str] = None
+    elev: Optional[str] = None
+    encoded_traits: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    estimated_size: Optional[str] = None
+    experimental_factor: Optional[str] = None
+    extrachrom_elements: Optional[int] = None
+    feat_pred: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_pred_appr: Optional[str] = None
+    host_pred_est_acc: Optional[str] = None
+    host_spec_range: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    lib_reads_seqd: Optional[int] = None
+    lib_screen: Optional[str] = None
+    lib_size: Optional[int] = None
+    lib_vector: Optional[str] = None
+    mag_cov_software: Optional[str] = None
+    mid: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    num_replicons: Optional[int] = None
+    number_contig: Optional[int] = None
+    otu_class_appr: Optional[str] = None
+    otu_db: Optional[str] = None
+    otu_seq_comp_appr: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pcr_cond: Optional[str] = None
+    pcr_primers: Optional[str] = None
+    ploidy: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    pred_genome_struc: Optional[str] = None
+    pred_genome_type: Optional[str] = None
+    project_name: Optional[str] = None
+    propagation: Optional[str] = None
+    reassembly_bin: Optional[Union[bool, Bool]] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    samp_mat_process: Optional[str] = None
+    samp_size: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    seq_meth: Optional[str] = None
+    seq_quality_check: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    single_cell_lysis_appr: Optional[str] = None
+    single_cell_lysis_prot: Optional[str] = None
+    size_frac: Optional[str] = None
+    sop: Optional[str] = None
+    sort_tech: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    source_uvig: Optional[str] = None
+    specific_host: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    target_gene: Optional[str] = None
+    target_subfragment: Optional[str] = None
+    tax_class: Optional[str] = None
+    tax_ident: Optional[str] = None
+    temp: Optional[str] = None
+    trna_ext_software: Optional[str] = None
+    trnas: Optional[int] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    vir_ident_software: Optional[str] = None
+    virus_enrich_appr: Optional[str] = None
+    wga_amp_appr: Optional[str] = None
+    wga_amp_kit: Optional[str] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.bin_param is not None and not isinstance(self.bin_param, str):
+            self.bin_param = str(self.bin_param)
+
+        if self.bin_software is not None and not isinstance(self.bin_software, str):
+            self.bin_software = str(self.bin_software)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.chimera_check is not None and not isinstance(self.chimera_check, str):
+            self.chimera_check = str(self.chimera_check)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.compl_appr is not None and not isinstance(self.compl_appr, str):
+            self.compl_appr = str(self.compl_appr)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.contam_score is not None and not isinstance(self.contam_score, str):
+            self.contam_score = str(self.contam_score)
+
+        if self.contam_screen_input is not None and not isinstance(self.contam_screen_input, str):
+            self.contam_screen_input = str(self.contam_screen_input)
+
+        if self.contam_screen_param is not None and not isinstance(self.contam_screen_param, str):
+            self.contam_screen_param = str(self.contam_screen_param)
+
+        if self.decontam_software is not None and not isinstance(self.decontam_software, str):
+            self.decontam_software = str(self.decontam_software)
+
+        if self.detec_type is not None and not isinstance(self.detec_type, str):
+            self.detec_type = str(self.detec_type)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_pred_appr is not None and not isinstance(self.host_pred_appr, str):
+            self.host_pred_appr = str(self.host_pred_appr)
+
+        if self.host_pred_est_acc is not None and not isinstance(self.host_pred_est_acc, str):
+            self.host_pred_est_acc = str(self.host_pred_est_acc)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.mag_cov_software is not None and not isinstance(self.mag_cov_software, str):
+            self.mag_cov_software = str(self.mag_cov_software)
+
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.otu_class_appr is not None and not isinstance(self.otu_class_appr, str):
+            self.otu_class_appr = str(self.otu_class_appr)
+
+        if self.otu_db is not None and not isinstance(self.otu_db, str):
+            self.otu_db = str(self.otu_db)
+
+        if self.otu_seq_comp_appr is not None and not isinstance(self.otu_seq_comp_appr, str):
+            self.otu_seq_comp_appr = str(self.otu_seq_comp_appr)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pcr_cond is not None and not isinstance(self.pcr_cond, str):
+            self.pcr_cond = str(self.pcr_cond)
+
+        if self.pcr_primers is not None and not isinstance(self.pcr_primers, str):
+            self.pcr_primers = str(self.pcr_primers)
+
+        if self.ploidy is not None and not isinstance(self.ploidy, str):
+            self.ploidy = str(self.ploidy)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.pred_genome_struc is not None and not isinstance(self.pred_genome_struc, str):
+            self.pred_genome_struc = str(self.pred_genome_struc)
+
+        if self.pred_genome_type is not None and not isinstance(self.pred_genome_type, str):
+            self.pred_genome_type = str(self.pred_genome_type)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.propagation is not None and not isinstance(self.propagation, str):
+            self.propagation = str(self.propagation)
+
+        if self.reassembly_bin is not None and not isinstance(self.reassembly_bin, Bool):
+            self.reassembly_bin = Bool(self.reassembly_bin)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.seq_quality_check is not None and not isinstance(self.seq_quality_check, str):
+            self.seq_quality_check = str(self.seq_quality_check)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.single_cell_lysis_appr is not None and not isinstance(self.single_cell_lysis_appr, str):
+            self.single_cell_lysis_appr = str(self.single_cell_lysis_appr)
+
+        if self.single_cell_lysis_prot is not None and not isinstance(self.single_cell_lysis_prot, str):
+            self.single_cell_lysis_prot = str(self.single_cell_lysis_prot)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.sort_tech is not None and not isinstance(self.sort_tech, str):
+            self.sort_tech = str(self.sort_tech)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.source_uvig is not None and not isinstance(self.source_uvig, str):
+            self.source_uvig = str(self.source_uvig)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.target_gene is not None and not isinstance(self.target_gene, str):
+            self.target_gene = str(self.target_gene)
+
+        if self.target_subfragment is not None and not isinstance(self.target_subfragment, str):
+            self.target_subfragment = str(self.target_subfragment)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.trna_ext_software is not None and not isinstance(self.trna_ext_software, str):
+            self.trna_ext_software = str(self.trna_ext_software)
+
+        if self.trnas is not None and not isinstance(self.trnas, int):
+            self.trnas = int(self.trnas)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
+
+        if self.vir_ident_software is not None and not isinstance(self.vir_ident_software, str):
+            self.vir_ident_software = str(self.vir_ident_software)
+
+        if self.virus_enrich_appr is not None and not isinstance(self.virus_enrich_appr, str):
+            self.virus_enrich_appr = str(self.virus_enrich_appr)
+
+        if self.wga_amp_appr is not None and not isinstance(self.wga_amp_appr, str):
+            self.wga_amp_appr = str(self.wga_amp_appr)
+
+        if self.wga_amp_kit is not None and not isinstance(self.wga_amp_kit, str):
+            self.wga_amp_kit = str(self.wga_amp_kit)
+
+        super().__post_init__(**kwargs)
+
 
 @dataclass
 class Database(YAMLRoot):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS.Database
@@ -192,118 +566,17 @@ class Database(YAMLRoot):
     class_name: ClassVar[str] = "Database"
     class_model_uri: ClassVar[URIRef] = MIXS.Database
 
-    agriculture_set: Optional[Union[Union[dict, Agriculture], List[Union[dict, Agriculture]]]] = empty_list()
-    air_set: Optional[Union[Union[dict, Air], List[Union[dict, Air]]]] = empty_list()
-    built_environment_set: Optional[Union[Union[dict, BuiltEnvironment], List[Union[dict, BuiltEnvironment]]]] = empty_list()
-    checklist_set: Optional[Union[Union[dict, Checklist], List[Union[dict, Checklist]]]] = empty_list()
-    environmental_package_set: Optional[Union[Union[dict, "EnvironmentalPackage"], List[Union[dict, "EnvironmentalPackage"]]]] = empty_list()
-    food_animal_and_animal_feed_set: Optional[Union[Union[dict, "FoodAnimalAndAnimalFeed"], List[Union[dict, "FoodAnimalAndAnimalFeed"]]]] = empty_list()
-    food_farm_environment_set: Optional[Union[Union[dict, "FoodFarmEnvironment"], List[Union[dict, "FoodFarmEnvironment"]]]] = empty_list()
-    food_food_production_facility_set: Optional[Union[Union[dict, "FoodFoodProductionFacility"], List[Union[dict, "FoodFoodProductionFacility"]]]] = empty_list()
-    food_human_foods_set: Optional[Union[Union[dict, "FoodHumanFoods"], List[Union[dict, "FoodHumanFoods"]]]] = empty_list()
-    host_associated_set: Optional[Union[Union[dict, "HostAssociated"], List[Union[dict, "HostAssociated"]]]] = empty_list()
-    human_associated_set: Optional[Union[Union[dict, "HumanAssociated"], List[Union[dict, "HumanAssociated"]]]] = empty_list()
-    human_gut_set: Optional[Union[Union[dict, "HumanGut"], List[Union[dict, "HumanGut"]]]] = empty_list()
-    human_oral_set: Optional[Union[Union[dict, "HumanOral"], List[Union[dict, "HumanOral"]]]] = empty_list()
-    human_skin_set: Optional[Union[Union[dict, "HumanSkin"], List[Union[dict, "HumanSkin"]]]] = empty_list()
-    human_vaginal_set: Optional[Union[Union[dict, "HumanVaginal"], List[Union[dict, "HumanVaginal"]]]] = empty_list()
-    hydrocarbon_resources_cores_set: Optional[Union[Union[dict, "HydrocarbonResourcesCores"], List[Union[dict, "HydrocarbonResourcesCores"]]]] = empty_list()
-    hydrocarbon_resources_fluids_swabs_set: Optional[Union[Union[dict, "HydrocarbonResourcesFluidsSwabs"], List[Union[dict, "HydrocarbonResourcesFluidsSwabs"]]]] = empty_list()
-    microbial_mat_biofilm_set: Optional[Union[Union[dict, "MicrobialMatBiofilm"], List[Union[dict, "MicrobialMatBiofilm"]]]] = empty_list()
-    migs_ba_set: Optional[Union[Union[dict, "MigsBa"], List[Union[dict, "MigsBa"]]]] = empty_list()
     migs_ba_plant_associated_set: Optional[Union[Union[dict, "MigsBaPlantAssociated"], List[Union[dict, "MigsBaPlantAssociated"]]]] = empty_list()
     migs_ba_sediment_set: Optional[Union[Union[dict, "MigsBaSediment"], List[Union[dict, "MigsBaSediment"]]]] = empty_list()
+    migs_ba_set: Optional[Union[Union[dict, "MigsBa"], List[Union[dict, "MigsBa"]]]] = empty_list()
     migs_ba_soil_set: Optional[Union[Union[dict, "MigsBaSoil"], List[Union[dict, "MigsBaSoil"]]]] = empty_list()
+    migs_ba_water_set: Optional[Union[Union[dict, "MigsBaWater"], List[Union[dict, "MigsBaWater"]]]] = empty_list()
     mims_plant_associated_set: Optional[Union[Union[dict, "MimsPlantAssociated"], List[Union[dict, "MimsPlantAssociated"]]]] = empty_list()
     mims_sediment_set: Optional[Union[Union[dict, "MimsSediment"], List[Union[dict, "MimsSediment"]]]] = empty_list()
     mims_soil_set: Optional[Union[Union[dict, "MimsSoil"], List[Union[dict, "MimsSoil"]]]] = empty_list()
-    plant_associated_set: Optional[Union[Union[dict, "PlantAssociated"], List[Union[dict, "PlantAssociated"]]]] = empty_list()
-    sediment_set: Optional[Union[Union[dict, "Sediment"], List[Union[dict, "Sediment"]]]] = empty_list()
-    soil_set: Optional[Union[Union[dict, "Soil"], List[Union[dict, "Soil"]]]] = empty_list()
-    symbiont_associated_set: Optional[Union[Dict[Union[str, SymbiontAssociatedSampleName], Union[dict, "SymbiontAssociated"]], List[Union[dict, "SymbiontAssociated"]]]] = empty_dict()
-    unknown_term_set: Optional[Union[Union[dict, "UnknownTerm"], List[Union[dict, "UnknownTerm"]]]] = empty_list()
-    wastewater_sludge_set: Optional[Union[Union[dict, "WastewaterSludge"], List[Union[dict, "WastewaterSludge"]]]] = empty_list()
-    water_set: Optional[Union[Union[dict, "Water"], List[Union[dict, "Water"]]]] = empty_list()
-    migs_ba_water_set: Optional[Union[Union[dict, "MigsBaWater"], List[Union[dict, "MigsBaWater"]]]] = empty_list()
     mims_water_set: Optional[Union[Union[dict, "MimsWater"], List[Union[dict, "MimsWater"]]]] = empty_list()
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if not isinstance(self.agriculture_set, list):
-            self.agriculture_set = [self.agriculture_set] if self.agriculture_set is not None else []
-        self.agriculture_set = [v if isinstance(v, Agriculture) else Agriculture(**as_dict(v)) for v in self.agriculture_set]
-
-        if not isinstance(self.air_set, list):
-            self.air_set = [self.air_set] if self.air_set is not None else []
-        self.air_set = [v if isinstance(v, Air) else Air(**as_dict(v)) for v in self.air_set]
-
-        if not isinstance(self.built_environment_set, list):
-            self.built_environment_set = [self.built_environment_set] if self.built_environment_set is not None else []
-        self.built_environment_set = [v if isinstance(v, BuiltEnvironment) else BuiltEnvironment(**as_dict(v)) for v in self.built_environment_set]
-
-        if not isinstance(self.checklist_set, list):
-            self.checklist_set = [self.checklist_set] if self.checklist_set is not None else []
-        self.checklist_set = [v if isinstance(v, Checklist) else Checklist(**as_dict(v)) for v in self.checklist_set]
-
-        if not isinstance(self.environmental_package_set, list):
-            self.environmental_package_set = [self.environmental_package_set] if self.environmental_package_set is not None else []
-        self.environmental_package_set = [v if isinstance(v, EnvironmentalPackage) else EnvironmentalPackage(**as_dict(v)) for v in self.environmental_package_set]
-
-        if not isinstance(self.food_animal_and_animal_feed_set, list):
-            self.food_animal_and_animal_feed_set = [self.food_animal_and_animal_feed_set] if self.food_animal_and_animal_feed_set is not None else []
-        self.food_animal_and_animal_feed_set = [v if isinstance(v, FoodAnimalAndAnimalFeed) else FoodAnimalAndAnimalFeed(**as_dict(v)) for v in self.food_animal_and_animal_feed_set]
-
-        if not isinstance(self.food_farm_environment_set, list):
-            self.food_farm_environment_set = [self.food_farm_environment_set] if self.food_farm_environment_set is not None else []
-        self.food_farm_environment_set = [v if isinstance(v, FoodFarmEnvironment) else FoodFarmEnvironment(**as_dict(v)) for v in self.food_farm_environment_set]
-
-        if not isinstance(self.food_food_production_facility_set, list):
-            self.food_food_production_facility_set = [self.food_food_production_facility_set] if self.food_food_production_facility_set is not None else []
-        self.food_food_production_facility_set = [v if isinstance(v, FoodFoodProductionFacility) else FoodFoodProductionFacility(**as_dict(v)) for v in self.food_food_production_facility_set]
-
-        if not isinstance(self.food_human_foods_set, list):
-            self.food_human_foods_set = [self.food_human_foods_set] if self.food_human_foods_set is not None else []
-        self.food_human_foods_set = [v if isinstance(v, FoodHumanFoods) else FoodHumanFoods(**as_dict(v)) for v in self.food_human_foods_set]
-
-        if not isinstance(self.host_associated_set, list):
-            self.host_associated_set = [self.host_associated_set] if self.host_associated_set is not None else []
-        self.host_associated_set = [v if isinstance(v, HostAssociated) else HostAssociated(**as_dict(v)) for v in self.host_associated_set]
-
-        if not isinstance(self.human_associated_set, list):
-            self.human_associated_set = [self.human_associated_set] if self.human_associated_set is not None else []
-        self.human_associated_set = [v if isinstance(v, HumanAssociated) else HumanAssociated(**as_dict(v)) for v in self.human_associated_set]
-
-        if not isinstance(self.human_gut_set, list):
-            self.human_gut_set = [self.human_gut_set] if self.human_gut_set is not None else []
-        self.human_gut_set = [v if isinstance(v, HumanGut) else HumanGut(**as_dict(v)) for v in self.human_gut_set]
-
-        if not isinstance(self.human_oral_set, list):
-            self.human_oral_set = [self.human_oral_set] if self.human_oral_set is not None else []
-        self.human_oral_set = [v if isinstance(v, HumanOral) else HumanOral(**as_dict(v)) for v in self.human_oral_set]
-
-        if not isinstance(self.human_skin_set, list):
-            self.human_skin_set = [self.human_skin_set] if self.human_skin_set is not None else []
-        self.human_skin_set = [v if isinstance(v, HumanSkin) else HumanSkin(**as_dict(v)) for v in self.human_skin_set]
-
-        if not isinstance(self.human_vaginal_set, list):
-            self.human_vaginal_set = [self.human_vaginal_set] if self.human_vaginal_set is not None else []
-        self.human_vaginal_set = [v if isinstance(v, HumanVaginal) else HumanVaginal(**as_dict(v)) for v in self.human_vaginal_set]
-
-        if not isinstance(self.hydrocarbon_resources_cores_set, list):
-            self.hydrocarbon_resources_cores_set = [self.hydrocarbon_resources_cores_set] if self.hydrocarbon_resources_cores_set is not None else []
-        self.hydrocarbon_resources_cores_set = [v if isinstance(v, HydrocarbonResourcesCores) else HydrocarbonResourcesCores(**as_dict(v)) for v in self.hydrocarbon_resources_cores_set]
-
-        if not isinstance(self.hydrocarbon_resources_fluids_swabs_set, list):
-            self.hydrocarbon_resources_fluids_swabs_set = [self.hydrocarbon_resources_fluids_swabs_set] if self.hydrocarbon_resources_fluids_swabs_set is not None else []
-        self.hydrocarbon_resources_fluids_swabs_set = [v if isinstance(v, HydrocarbonResourcesFluidsSwabs) else HydrocarbonResourcesFluidsSwabs(**as_dict(v)) for v in self.hydrocarbon_resources_fluids_swabs_set]
-
-        if not isinstance(self.microbial_mat_biofilm_set, list):
-            self.microbial_mat_biofilm_set = [self.microbial_mat_biofilm_set] if self.microbial_mat_biofilm_set is not None else []
-        self.microbial_mat_biofilm_set = [v if isinstance(v, MicrobialMatBiofilm) else MicrobialMatBiofilm(**as_dict(v)) for v in self.microbial_mat_biofilm_set]
-
-        if not isinstance(self.migs_ba_set, list):
-            self.migs_ba_set = [self.migs_ba_set] if self.migs_ba_set is not None else []
-        self.migs_ba_set = [v if isinstance(v, MigsBa) else MigsBa(**as_dict(v)) for v in self.migs_ba_set]
-
         if not isinstance(self.migs_ba_plant_associated_set, list):
             self.migs_ba_plant_associated_set = [self.migs_ba_plant_associated_set] if self.migs_ba_plant_associated_set is not None else []
         self.migs_ba_plant_associated_set = [v if isinstance(v, MigsBaPlantAssociated) else MigsBaPlantAssociated(**as_dict(v)) for v in self.migs_ba_plant_associated_set]
@@ -312,9 +585,17 @@ class Database(YAMLRoot):
             self.migs_ba_sediment_set = [self.migs_ba_sediment_set] if self.migs_ba_sediment_set is not None else []
         self.migs_ba_sediment_set = [v if isinstance(v, MigsBaSediment) else MigsBaSediment(**as_dict(v)) for v in self.migs_ba_sediment_set]
 
+        if not isinstance(self.migs_ba_set, list):
+            self.migs_ba_set = [self.migs_ba_set] if self.migs_ba_set is not None else []
+        self.migs_ba_set = [v if isinstance(v, MigsBa) else MigsBa(**as_dict(v)) for v in self.migs_ba_set]
+
         if not isinstance(self.migs_ba_soil_set, list):
             self.migs_ba_soil_set = [self.migs_ba_soil_set] if self.migs_ba_soil_set is not None else []
         self.migs_ba_soil_set = [v if isinstance(v, MigsBaSoil) else MigsBaSoil(**as_dict(v)) for v in self.migs_ba_soil_set]
+
+        if not isinstance(self.migs_ba_water_set, list):
+            self.migs_ba_water_set = [self.migs_ba_water_set] if self.migs_ba_water_set is not None else []
+        self.migs_ba_water_set = [v if isinstance(v, MigsBaWater) else MigsBaWater(**as_dict(v)) for v in self.migs_ba_water_set]
 
         if not isinstance(self.mims_plant_associated_set, list):
             self.mims_plant_associated_set = [self.mims_plant_associated_set] if self.mims_plant_associated_set is not None else []
@@ -328,36 +609,6 @@ class Database(YAMLRoot):
             self.mims_soil_set = [self.mims_soil_set] if self.mims_soil_set is not None else []
         self.mims_soil_set = [v if isinstance(v, MimsSoil) else MimsSoil(**as_dict(v)) for v in self.mims_soil_set]
 
-        if not isinstance(self.plant_associated_set, list):
-            self.plant_associated_set = [self.plant_associated_set] if self.plant_associated_set is not None else []
-        self.plant_associated_set = [v if isinstance(v, PlantAssociated) else PlantAssociated(**as_dict(v)) for v in self.plant_associated_set]
-
-        if not isinstance(self.sediment_set, list):
-            self.sediment_set = [self.sediment_set] if self.sediment_set is not None else []
-        self.sediment_set = [v if isinstance(v, Sediment) else Sediment(**as_dict(v)) for v in self.sediment_set]
-
-        if not isinstance(self.soil_set, list):
-            self.soil_set = [self.soil_set] if self.soil_set is not None else []
-        self.soil_set = [v if isinstance(v, Soil) else Soil(**as_dict(v)) for v in self.soil_set]
-
-        self._normalize_inlined_as_list(slot_name="symbiont_associated_set", slot_type=SymbiontAssociated, key_name="sample_name", keyed=True)
-
-        if not isinstance(self.unknown_term_set, list):
-            self.unknown_term_set = [self.unknown_term_set] if self.unknown_term_set is not None else []
-        self.unknown_term_set = [v if isinstance(v, UnknownTerm) else UnknownTerm(**as_dict(v)) for v in self.unknown_term_set]
-
-        if not isinstance(self.wastewater_sludge_set, list):
-            self.wastewater_sludge_set = [self.wastewater_sludge_set] if self.wastewater_sludge_set is not None else []
-        self.wastewater_sludge_set = [v if isinstance(v, WastewaterSludge) else WastewaterSludge(**as_dict(v)) for v in self.wastewater_sludge_set]
-
-        if not isinstance(self.water_set, list):
-            self.water_set = [self.water_set] if self.water_set is not None else []
-        self.water_set = [v if isinstance(v, Water) else Water(**as_dict(v)) for v in self.water_set]
-
-        if not isinstance(self.migs_ba_water_set, list):
-            self.migs_ba_water_set = [self.migs_ba_water_set] if self.migs_ba_water_set is not None else []
-        self.migs_ba_water_set = [v if isinstance(v, MigsBaWater) else MigsBaWater(**as_dict(v)) for v in self.migs_ba_water_set]
-
         if not isinstance(self.mims_water_set, list):
             self.mims_water_set = [self.mims_water_set] if self.mims_water_set is not None else []
         self.mims_water_set = [v if isinstance(v, MimsWater) else MimsWater(**as_dict(v)) for v in self.mims_water_set]
@@ -366,6 +617,9 @@ class Database(YAMLRoot):
 
 
 class EnvironmentalPackage(YAMLRoot):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS.EnvironmentalPackage
@@ -376,6 +630,9 @@ class EnvironmentalPackage(YAMLRoot):
 
 @dataclass
 class Agriculture(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016018"]
@@ -383,15 +640,11 @@ class Agriculture(EnvironmentalPackage):
     class_name: ClassVar[str] = "Agriculture"
     class_model_uri: ClassVar[URIRef] = MIXS.Agriculture
 
+    adapters: str = None
+    assembly_name: str = None
     chem_administration: str = None
-    Food_source: str = None
-    specific_host: str = None
-    pathogenicity: str = None
-    temp: str = None
-    samp_store_dur: str = None
-    samp_store_loc: str = None
-    samp_collect_device: str = None
-    samp_mat_process: str = None
+    chimera_check: str = None
+    food_source: str = None
     host_age: str = None
     host_common_name: str = None
     host_genotype: str = None
@@ -399,197 +652,168 @@ class Agriculture(EnvironmentalPackage):
     host_length: str = None
     host_life_stage: str = None
     host_phenotype: str = None
+    host_spec_range: str = None
     host_taxid: int = None
     host_tot_mass: str = None
-    host_spec_range: str = None
-    samp_size: str = None
-    seq_meth: str = None
-    samp_vol_we_dna_ext: str = None
-    pcr_primers: str = None
-    nucl_acid_ext: str = None
-    nucl_acid_amp: str = None
     lib_reads_seqd: int = None
-    lib_vector: str = None
     lib_screen: str = None
-    target_gene: str = None
-    target_subfragment: str = None
+    lib_vector: str = None
+    microbial_biomass: str = None
     mid: str = None
-    adapters: str = None
+    nucl_acid_amp: str = None
+    nucl_acid_ext: str = None
+    pathogenicity: str = None
     pcr_cond: str = None
-    chimera_check: str = None
-    assembly_name: str = None
+    pcr_primers: str = None
+    pool_dna_extracts: str = None
+    samp_mat_process: str = None
+    samp_size: str = None
+    samp_store_dur: str = None
+    samp_store_loc: str = None
+    samp_vol_we_dna_ext: str = None
+    seq_meth: str = None
+    sieving: str = None
     soil_type: str = None
     soil_type_meth: str = None
+    specific_host: str = None
     store_cond: str = None
-    microbial_biomass: str = None
-    microbial_biomass_meth: str = None
-    sieving: str = None
-    pool_dna_extracts: str = None
-    plant_growth_med: Optional[str] = None
-    soil_horizon: Optional[str] = None
-    photosynt_activ: Optional[str] = None
-    photosynt_activ_meth: Optional[str] = None
-    samp_collect_method: Optional[str] = None
-    enrichment_protocol: Optional[str] = None
-    library_prep_kit: Optional[str] = None
-    sequencing_location: Optional[str] = None
-    soil_temp: Optional[str] = None
-    soil_pH: Optional[float] = None
-    soil_conductivity: Optional[str] = None
-    rel_location: Optional[str] = None
-    soil_cover: Optional[str] = None
-    porosity: Optional[str] = None
-    texture: Optional[str] = None
-    texture_meth: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    pres_animal_insect: Optional[str] = None
-    plant_water_method: Optional[str] = None
-    anim_water_method: Optional[str] = None
-    farm_water_source: Optional[str] = None
-    water_source_shared: Optional[str] = None
-    water_pH: Optional[float] = None
-    elev: Optional[str] = None
-    season: Optional[str] = None
-    solar_irradiance: Optional[str] = None
-    crop_yield: Optional[str] = None
-    season_humidity: Optional[str] = None
-    humidity: Optional[str] = None
-    adjacent_environment: Optional[str] = None
-    food_prod: Optional[str] = None
-    lot_number: Optional[str] = None
-    fertilizer_admin: Optional[str] = None
-    samp_stor_temp: Optional[str] = None
-    food_trav_mode: Optional[str] = None
-    food_trav_vehic: Optional[str] = None
-    farm_equip_san: Optional[str] = None
-    farm_equip: Optional[str] = None
-    farm_equip_shared: Optional[str] = None
-    food_harvest_proc: Optional[str] = None
-    plant_struc: Optional[str] = None
-    host_dry_mass: Optional[str] = None
-    ances_data: Optional[str] = None
-    genetic_mod: Optional[str] = None
-    Food_Product_type: Optional[str] = None
-    spikein_strain: Optional[str] = None
-    organism_count: Optional[str] = None
-    size_frac_low: Optional[str] = None
-    size_frac_up: Optional[str] = None
-    cult_isol_date: Optional[str] = None
-    samp_pooling: Optional[str] = None
-    root_med_macronutr: Optional[str] = None
-    root_med_carbon: Optional[str] = None
-    root_med_ph: Optional[float] = None
-    soil_depth: Optional[str] = None
-    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
-    water_temp_regm: Optional[str] = None
-    watering_regm: Optional[str] = None
-    standing_water_regm: Optional[str] = None
-    gaseous_environment: Optional[str] = None
-    fungicide_regm: Optional[str] = None
-    climate_environment: Optional[str] = None
-    herbicide_regm: Optional[str] = None
-    non_mineral_nutr_regm: Optional[str] = None
-    pesticide_regm: Optional[str] = None
-    ph_regm: Optional[str] = None
-    salt_regm: Optional[str] = None
-    season_environment: Optional[str] = None
-    perturbation: Optional[str] = None
-    isol_growth_condt: Optional[str] = None
-    host_subspecf_genlin: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
-    plant_product: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    lib_size: Optional[int] = None
-    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
-    seq_quality_check: Optional[str] = None
-    assembly_software: Optional[str] = None
-    assembly_quality: Optional[str] = None
+    target_gene: str = None
+    target_subfragment: str = None
+    temp: str = None
     annot: Optional[str] = None
-    url: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    fao_class: Optional[Union[str, "FAOCLASSENUM"]] = None
-    local_class: Optional[str] = None
-    local_class_meth: Optional[str] = None
-    horizon: Optional[str] = None
-    horizon_meth: Optional[str] = None
-    link_class_info: Optional[str] = None
-    previous_land_use: Optional[str] = None
-    previous_land_use_meth: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    climate_environment: Optional[str] = None
     crop_rotation: Optional[str] = None
-    agrochem_addition: Optional[str] = None
-    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
-    fire: Optional[str] = None
-    flooding: Optional[str] = None
-    extreme_event: Optional[str] = None
-    link_climate_info: Optional[str] = None
-    annual_temp: Optional[str] = None
-    season_temp: Optional[str] = None
-    annual_precpt: Optional[str] = None
-    season_precpt: Optional[str] = None
-    cur_land_use: Optional[Union[str, "CURLANDUSEENUM"]] = None
-    slope_gradient: Optional[str] = None
-    slope_aspect: Optional[str] = None
-    profile_position: Optional[Union[str, "PROFILEPOSITIONENUM"]] = None
-    drainage_class: Optional[Union[str, "DRAINAGECLASSENUM"]] = None
-    ph_meth: Optional[str] = None
     cur_vegetation: Optional[str] = None
     cur_vegetation_meth: Optional[str] = None
-    tot_org_carb: Optional[str] = None
-    tot_org_c_meth: Optional[str] = None
-    tot_nitro: Optional[str] = None
-    tot_n_meth: Optional[str] = None
+    drainage_class: Optional[Union[str, "DRAINAGECLASSENUM"]] = None
+    enrichment_protocol: Optional[str] = None
+    extreme_event: Optional[str] = None
+    fao_class: Optional[Union[str, "FAOCLASSENUM"]] = None
+    farm_water_source: Optional[str] = None
+    fire: Optional[str] = None
+    flooding: Optional[str] = None
+    fungicide_regm: Optional[str] = None
+    gaseous_environment: Optional[str] = None
     heavy_metals_meth: Optional[str] = None
-    tot_car: Optional[str] = None
-    tot_phos: Optional[str] = None
+    herbicide_regm: Optional[str] = None
+    horizon_meth: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    humidity: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    local_class: Optional[str] = None
+    local_class_meth: Optional[str] = None
+    non_mineral_nutr_regm: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    perturbation: Optional[str] = None
+    pesticide_regm: Optional[str] = None
+    ph_meth: Optional[str] = None
+    ph_regm: Optional[str] = None
+    photosynt_activ: Optional[str] = None
+    photosynt_activ_meth: Optional[str] = None
+    plant_product: Optional[str] = None
+    plant_struc: Optional[str] = None
+    plant_water_method: Optional[str] = None
+    previous_land_use: Optional[str] = None
+    previous_land_use_meth: Optional[str] = None
+    profile_position: Optional[Union[str, "PROFILEPOSITIONENUM"]] = None
+    rel_location: Optional[str] = None
+    salt_regm: Optional[str] = None
+    samp_pooling: Optional[str] = None
+    season_environment: Optional[str] = None
+    slope_aspect: Optional[str] = None
+    slope_gradient: Optional[str] = None
+    soil_cover: Optional[str] = None
+    standing_water_regm: Optional[str] = None
+    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
+    tot_carb: Optional[str] = None
+    tot_org_c_meth: Optional[str] = None
+    tot_org_carb: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    water_temp_regm: Optional[str] = None
+    watering_regm: Optional[str] = None
+    adjacent_environment: Optional[str] = None
+    agrochem_addition: Optional[str] = None
+    ances_data: Optional[str] = None
+    anim_water_method: Optional[str] = None
+    annual_precpt: Optional[str] = None
+    annual_temp: Optional[str] = None
+    crop_yield: Optional[str] = None
+    cult_isol_date: Optional[str] = None
+    cur_land_use: Optional[Union[str, "CURLANDUSEENUM"]] = None
+    elev: Optional[str] = None
+    farm_equip: Optional[str] = None
+    farm_equip_san: Optional[str] = None
+    farm_equip_shared: Optional[str] = None
+    fertilizer_admin: Optional[str] = None
+    food_harvest_proc: Optional[str] = None
+    food_prod: Optional[str] = None
+    food_product_type: Optional[str] = None
+    food_trav_mode: Optional[str] = None
+    food_trav_vehic: Optional[str] = None
+    genetic_mod: Optional[str] = None
+    host_dry_mass: Optional[str] = None
+    host_subspecf_genlin: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lib_size: Optional[int] = None
+    library_prep_kit: Optional[str] = None
+    link_class_info: Optional[str] = None
+    link_climate_info: Optional[str] = None
+    lot_number: Optional[str] = None
     misc_param: Optional[str] = None
+    plant_growth_med: Optional[str] = None
+    porosity: Optional[str] = None
+    pres_animal_insect: Optional[str] = None
+    root_med_carbon: Optional[str] = None
+    root_med_macronutr: Optional[str] = None
+    root_med_ph: Optional[float] = None
+    samp_store_temp: Optional[str] = None
+    season: Optional[str] = None
+    season_humidity: Optional[str] = None
+    season_precpt: Optional[str] = None
+    season_temp: Optional[str] = None
+    seq_quality_check: Optional[str] = None
+    sequencing_location: Optional[str] = None
+    size_frac_low: Optional[str] = None
+    size_frac_up: Optional[str] = None
+    soil_conductivity: Optional[str] = None
+    soil_pH: Optional[float] = None
+    soil_temp: Optional[str] = None
+    solar_irradiance: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    spikein_strain: Optional[str] = None
+    water_pH: Optional[float] = None
+    water_source_shared: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self._is_empty(self.adapters):
+            self.MissingRequiredField("adapters")
+        if not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self._is_empty(self.assembly_name):
+            self.MissingRequiredField("assembly_name")
+        if not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
         if self._is_empty(self.chem_administration):
             self.MissingRequiredField("chem_administration")
         if not isinstance(self.chem_administration, str):
             self.chem_administration = str(self.chem_administration)
 
-        if self._is_empty(self.Food_source):
-            self.MissingRequiredField("Food_source")
-        if not isinstance(self.Food_source, str):
-            self.Food_source = str(self.Food_source)
+        if self._is_empty(self.chimera_check):
+            self.MissingRequiredField("chimera_check")
+        if not isinstance(self.chimera_check, str):
+            self.chimera_check = str(self.chimera_check)
 
-        if self._is_empty(self.specific_host):
-            self.MissingRequiredField("specific_host")
-        if not isinstance(self.specific_host, str):
-            self.specific_host = str(self.specific_host)
-
-        if self._is_empty(self.pathogenicity):
-            self.MissingRequiredField("pathogenicity")
-        if not isinstance(self.pathogenicity, str):
-            self.pathogenicity = str(self.pathogenicity)
-
-        if self._is_empty(self.temp):
-            self.MissingRequiredField("temp")
-        if not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self._is_empty(self.samp_store_dur):
-            self.MissingRequiredField("samp_store_dur")
-        if not isinstance(self.samp_store_dur, str):
-            self.samp_store_dur = str(self.samp_store_dur)
-
-        if self._is_empty(self.samp_store_loc):
-            self.MissingRequiredField("samp_store_loc")
-        if not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
-
-        if self._is_empty(self.samp_collect_device):
-            self.MissingRequiredField("samp_collect_device")
-        if not isinstance(self.samp_collect_device, str):
-            self.samp_collect_device = str(self.samp_collect_device)
-
-        if self._is_empty(self.samp_mat_process):
-            self.MissingRequiredField("samp_mat_process")
-        if not isinstance(self.samp_mat_process, str):
-            self.samp_mat_process = str(self.samp_mat_process)
+        if self._is_empty(self.food_source):
+            self.MissingRequiredField("food_source")
+        if not isinstance(self.food_source, str):
+            self.food_source = str(self.food_source)
 
         if self._is_empty(self.host_age):
             self.MissingRequiredField("host_age")
@@ -626,6 +850,11 @@ class Agriculture(EnvironmentalPackage):
         if not isinstance(self.host_phenotype, str):
             self.host_phenotype = str(self.host_phenotype)
 
+        if self._is_empty(self.host_spec_range):
+            self.MissingRequiredField("host_spec_range")
+        if not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
         if self._is_empty(self.host_taxid):
             self.MissingRequiredField("host_taxid")
         if not isinstance(self.host_taxid, int):
@@ -636,90 +865,95 @@ class Agriculture(EnvironmentalPackage):
         if not isinstance(self.host_tot_mass, str):
             self.host_tot_mass = str(self.host_tot_mass)
 
-        if self._is_empty(self.host_spec_range):
-            self.MissingRequiredField("host_spec_range")
-        if not isinstance(self.host_spec_range, str):
-            self.host_spec_range = str(self.host_spec_range)
-
-        if self._is_empty(self.samp_size):
-            self.MissingRequiredField("samp_size")
-        if not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self._is_empty(self.samp_vol_we_dna_ext):
-            self.MissingRequiredField("samp_vol_we_dna_ext")
-        if not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self._is_empty(self.pcr_primers):
-            self.MissingRequiredField("pcr_primers")
-        if not isinstance(self.pcr_primers, str):
-            self.pcr_primers = str(self.pcr_primers)
-
-        if self._is_empty(self.nucl_acid_ext):
-            self.MissingRequiredField("nucl_acid_ext")
-        if not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self._is_empty(self.nucl_acid_amp):
-            self.MissingRequiredField("nucl_acid_amp")
-        if not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
-
         if self._is_empty(self.lib_reads_seqd):
             self.MissingRequiredField("lib_reads_seqd")
         if not isinstance(self.lib_reads_seqd, int):
             self.lib_reads_seqd = int(self.lib_reads_seqd)
-
-        if self._is_empty(self.lib_vector):
-            self.MissingRequiredField("lib_vector")
-        if not isinstance(self.lib_vector, str):
-            self.lib_vector = str(self.lib_vector)
 
         if self._is_empty(self.lib_screen):
             self.MissingRequiredField("lib_screen")
         if not isinstance(self.lib_screen, str):
             self.lib_screen = str(self.lib_screen)
 
-        if self._is_empty(self.target_gene):
-            self.MissingRequiredField("target_gene")
-        if not isinstance(self.target_gene, str):
-            self.target_gene = str(self.target_gene)
+        if self._is_empty(self.lib_vector):
+            self.MissingRequiredField("lib_vector")
+        if not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
 
-        if self._is_empty(self.target_subfragment):
-            self.MissingRequiredField("target_subfragment")
-        if not isinstance(self.target_subfragment, str):
-            self.target_subfragment = str(self.target_subfragment)
+        if self._is_empty(self.microbial_biomass):
+            self.MissingRequiredField("microbial_biomass")
+        if not isinstance(self.microbial_biomass, str):
+            self.microbial_biomass = str(self.microbial_biomass)
 
         if self._is_empty(self.mid):
             self.MissingRequiredField("mid")
         if not isinstance(self.mid, str):
             self.mid = str(self.mid)
 
-        if self._is_empty(self.adapters):
-            self.MissingRequiredField("adapters")
-        if not isinstance(self.adapters, str):
-            self.adapters = str(self.adapters)
+        if self._is_empty(self.nucl_acid_amp):
+            self.MissingRequiredField("nucl_acid_amp")
+        if not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self._is_empty(self.nucl_acid_ext):
+            self.MissingRequiredField("nucl_acid_ext")
+        if not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self._is_empty(self.pathogenicity):
+            self.MissingRequiredField("pathogenicity")
+        if not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
 
         if self._is_empty(self.pcr_cond):
             self.MissingRequiredField("pcr_cond")
         if not isinstance(self.pcr_cond, str):
             self.pcr_cond = str(self.pcr_cond)
 
-        if self._is_empty(self.chimera_check):
-            self.MissingRequiredField("chimera_check")
-        if not isinstance(self.chimera_check, str):
-            self.chimera_check = str(self.chimera_check)
+        if self._is_empty(self.pcr_primers):
+            self.MissingRequiredField("pcr_primers")
+        if not isinstance(self.pcr_primers, str):
+            self.pcr_primers = str(self.pcr_primers)
 
-        if self._is_empty(self.assembly_name):
-            self.MissingRequiredField("assembly_name")
-        if not isinstance(self.assembly_name, str):
-            self.assembly_name = str(self.assembly_name)
+        if self._is_empty(self.pool_dna_extracts):
+            self.MissingRequiredField("pool_dna_extracts")
+        if not isinstance(self.pool_dna_extracts, str):
+            self.pool_dna_extracts = str(self.pool_dna_extracts)
+
+        if self._is_empty(self.samp_mat_process):
+            self.MissingRequiredField("samp_mat_process")
+        if not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self._is_empty(self.samp_size):
+            self.MissingRequiredField("samp_size")
+        if not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self._is_empty(self.samp_store_dur):
+            self.MissingRequiredField("samp_store_dur")
+        if not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self._is_empty(self.samp_store_loc):
+            self.MissingRequiredField("samp_store_loc")
+        if not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self._is_empty(self.samp_vol_we_dna_ext):
+            self.MissingRequiredField("samp_vol_we_dna_ext")
+        if not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self._is_empty(self.seq_meth):
+            self.MissingRequiredField("seq_meth")
+        if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self._is_empty(self.sieving):
+            self.MissingRequiredField("sieving")
+        if not isinstance(self.sieving, str):
+            self.sieving = str(self.sieving)
 
         if self._is_empty(self.soil_type):
             self.MissingRequiredField("soil_type")
@@ -731,358 +965,42 @@ class Agriculture(EnvironmentalPackage):
         if not isinstance(self.soil_type_meth, str):
             self.soil_type_meth = str(self.soil_type_meth)
 
+        if self._is_empty(self.specific_host):
+            self.MissingRequiredField("specific_host")
+        if not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
         if self._is_empty(self.store_cond):
             self.MissingRequiredField("store_cond")
         if not isinstance(self.store_cond, str):
             self.store_cond = str(self.store_cond)
 
-        if self._is_empty(self.microbial_biomass):
-            self.MissingRequiredField("microbial_biomass")
-        if not isinstance(self.microbial_biomass, str):
-            self.microbial_biomass = str(self.microbial_biomass)
-
-        if self._is_empty(self.microbial_biomass_meth):
-            self.MissingRequiredField("microbial_biomass_meth")
-        if not isinstance(self.microbial_biomass_meth, str):
-            self.microbial_biomass_meth = str(self.microbial_biomass_meth)
-
-        if self._is_empty(self.sieving):
-            self.MissingRequiredField("sieving")
-        if not isinstance(self.sieving, str):
-            self.sieving = str(self.sieving)
-
-        if self._is_empty(self.pool_dna_extracts):
-            self.MissingRequiredField("pool_dna_extracts")
-        if not isinstance(self.pool_dna_extracts, str):
-            self.pool_dna_extracts = str(self.pool_dna_extracts)
-
-        if self.plant_growth_med is not None and not isinstance(self.plant_growth_med, str):
-            self.plant_growth_med = str(self.plant_growth_med)
-
-        if self.soil_horizon is not None and not isinstance(self.soil_horizon, str):
-            self.soil_horizon = str(self.soil_horizon)
-
-        if self.photosynt_activ is not None and not isinstance(self.photosynt_activ, str):
-            self.photosynt_activ = str(self.photosynt_activ)
-
-        if self.photosynt_activ_meth is not None and not isinstance(self.photosynt_activ_meth, str):
-            self.photosynt_activ_meth = str(self.photosynt_activ_meth)
-
-        if self.samp_collect_method is not None and not isinstance(self.samp_collect_method, str):
-            self.samp_collect_method = str(self.samp_collect_method)
-
-        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
-            self.enrichment_protocol = str(self.enrichment_protocol)
-
-        if self.library_prep_kit is not None and not isinstance(self.library_prep_kit, str):
-            self.library_prep_kit = str(self.library_prep_kit)
-
-        if self.sequencing_location is not None and not isinstance(self.sequencing_location, str):
-            self.sequencing_location = str(self.sequencing_location)
-
-        if self.soil_temp is not None and not isinstance(self.soil_temp, str):
-            self.soil_temp = str(self.soil_temp)
-
-        if self.soil_pH is not None and not isinstance(self.soil_pH, float):
-            self.soil_pH = float(self.soil_pH)
-
-        if self.soil_conductivity is not None and not isinstance(self.soil_conductivity, str):
-            self.soil_conductivity = str(self.soil_conductivity)
-
-        if self.rel_location is not None and not isinstance(self.rel_location, str):
-            self.rel_location = str(self.rel_location)
-
-        if self.soil_cover is not None and not isinstance(self.soil_cover, str):
-            self.soil_cover = str(self.soil_cover)
-
-        if self.porosity is not None and not isinstance(self.porosity, str):
-            self.porosity = str(self.porosity)
-
-        if self.texture is not None and not isinstance(self.texture, str):
-            self.texture = str(self.texture)
-
-        if self.texture_meth is not None and not isinstance(self.texture_meth, str):
-            self.texture_meth = str(self.texture_meth)
-
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.pres_animal_insect is not None and not isinstance(self.pres_animal_insect, str):
-            self.pres_animal_insect = str(self.pres_animal_insect)
-
-        if self.plant_water_method is not None and not isinstance(self.plant_water_method, str):
-            self.plant_water_method = str(self.plant_water_method)
-
-        if self.anim_water_method is not None and not isinstance(self.anim_water_method, str):
-            self.anim_water_method = str(self.anim_water_method)
-
-        if self.farm_water_source is not None and not isinstance(self.farm_water_source, str):
-            self.farm_water_source = str(self.farm_water_source)
-
-        if self.water_source_shared is not None and not isinstance(self.water_source_shared, str):
-            self.water_source_shared = str(self.water_source_shared)
-
-        if self.water_pH is not None and not isinstance(self.water_pH, float):
-            self.water_pH = float(self.water_pH)
-
-        if self.elev is not None and not isinstance(self.elev, str):
-            self.elev = str(self.elev)
-
-        if self.season is not None and not isinstance(self.season, str):
-            self.season = str(self.season)
-
-        if self.solar_irradiance is not None and not isinstance(self.solar_irradiance, str):
-            self.solar_irradiance = str(self.solar_irradiance)
-
-        if self.crop_yield is not None and not isinstance(self.crop_yield, str):
-            self.crop_yield = str(self.crop_yield)
-
-        if self.season_humidity is not None and not isinstance(self.season_humidity, str):
-            self.season_humidity = str(self.season_humidity)
-
-        if self.humidity is not None and not isinstance(self.humidity, str):
-            self.humidity = str(self.humidity)
-
-        if self.adjacent_environment is not None and not isinstance(self.adjacent_environment, str):
-            self.adjacent_environment = str(self.adjacent_environment)
-
-        if self.food_prod is not None and not isinstance(self.food_prod, str):
-            self.food_prod = str(self.food_prod)
-
-        if self.lot_number is not None and not isinstance(self.lot_number, str):
-            self.lot_number = str(self.lot_number)
-
-        if self.fertilizer_admin is not None and not isinstance(self.fertilizer_admin, str):
-            self.fertilizer_admin = str(self.fertilizer_admin)
-
-        if self.samp_stor_temp is not None and not isinstance(self.samp_stor_temp, str):
-            self.samp_stor_temp = str(self.samp_stor_temp)
-
-        if self.food_trav_mode is not None and not isinstance(self.food_trav_mode, str):
-            self.food_trav_mode = str(self.food_trav_mode)
-
-        if self.food_trav_vehic is not None and not isinstance(self.food_trav_vehic, str):
-            self.food_trav_vehic = str(self.food_trav_vehic)
-
-        if self.farm_equip_san is not None and not isinstance(self.farm_equip_san, str):
-            self.farm_equip_san = str(self.farm_equip_san)
-
-        if self.farm_equip is not None and not isinstance(self.farm_equip, str):
-            self.farm_equip = str(self.farm_equip)
-
-        if self.farm_equip_shared is not None and not isinstance(self.farm_equip_shared, str):
-            self.farm_equip_shared = str(self.farm_equip_shared)
-
-        if self.food_harvest_proc is not None and not isinstance(self.food_harvest_proc, str):
-            self.food_harvest_proc = str(self.food_harvest_proc)
-
-        if self.plant_struc is not None and not isinstance(self.plant_struc, str):
-            self.plant_struc = str(self.plant_struc)
-
-        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
-            self.host_dry_mass = str(self.host_dry_mass)
-
-        if self.ances_data is not None and not isinstance(self.ances_data, str):
-            self.ances_data = str(self.ances_data)
-
-        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
-            self.genetic_mod = str(self.genetic_mod)
-
-        if self.Food_Product_type is not None and not isinstance(self.Food_Product_type, str):
-            self.Food_Product_type = str(self.Food_Product_type)
-
-        if self.spikein_strain is not None and not isinstance(self.spikein_strain, str):
-            self.spikein_strain = str(self.spikein_strain)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.size_frac_low is not None and not isinstance(self.size_frac_low, str):
-            self.size_frac_low = str(self.size_frac_low)
-
-        if self.size_frac_up is not None and not isinstance(self.size_frac_up, str):
-            self.size_frac_up = str(self.size_frac_up)
-
-        if self.cult_isol_date is not None and not isinstance(self.cult_isol_date, str):
-            self.cult_isol_date = str(self.cult_isol_date)
-
-        if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
-            self.samp_pooling = str(self.samp_pooling)
-
-        if self.root_med_macronutr is not None and not isinstance(self.root_med_macronutr, str):
-            self.root_med_macronutr = str(self.root_med_macronutr)
-
-        if self.root_med_carbon is not None and not isinstance(self.root_med_carbon, str):
-            self.root_med_carbon = str(self.root_med_carbon)
-
-        if self.root_med_ph is not None and not isinstance(self.root_med_ph, float):
-            self.root_med_ph = float(self.root_med_ph)
-
-        if self.soil_depth is not None and not isinstance(self.soil_depth, str):
-            self.soil_depth = str(self.soil_depth)
-
-        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
-            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
-
-        if self.water_temp_regm is not None and not isinstance(self.water_temp_regm, str):
-            self.water_temp_regm = str(self.water_temp_regm)
-
-        if self.watering_regm is not None and not isinstance(self.watering_regm, str):
-            self.watering_regm = str(self.watering_regm)
-
-        if self.standing_water_regm is not None and not isinstance(self.standing_water_regm, str):
-            self.standing_water_regm = str(self.standing_water_regm)
-
-        if self.gaseous_environment is not None and not isinstance(self.gaseous_environment, str):
-            self.gaseous_environment = str(self.gaseous_environment)
-
-        if self.fungicide_regm is not None and not isinstance(self.fungicide_regm, str):
-            self.fungicide_regm = str(self.fungicide_regm)
-
-        if self.climate_environment is not None and not isinstance(self.climate_environment, str):
-            self.climate_environment = str(self.climate_environment)
-
-        if self.herbicide_regm is not None and not isinstance(self.herbicide_regm, str):
-            self.herbicide_regm = str(self.herbicide_regm)
-
-        if self.non_mineral_nutr_regm is not None and not isinstance(self.non_mineral_nutr_regm, str):
-            self.non_mineral_nutr_regm = str(self.non_mineral_nutr_regm)
-
-        if self.pesticide_regm is not None and not isinstance(self.pesticide_regm, str):
-            self.pesticide_regm = str(self.pesticide_regm)
-
-        if self.ph_regm is not None and not isinstance(self.ph_regm, str):
-            self.ph_regm = str(self.ph_regm)
-
-        if self.salt_regm is not None and not isinstance(self.salt_regm, str):
-            self.salt_regm = str(self.salt_regm)
-
-        if self.season_environment is not None and not isinstance(self.season_environment, str):
-            self.season_environment = str(self.season_environment)
-
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
-
-        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
-            self.isol_growth_condt = str(self.isol_growth_condt)
-
-        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
-            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
-
-        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
-            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
-
-        if self.plant_product is not None and not isinstance(self.plant_product, str):
-            self.plant_product = str(self.plant_product)
-
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.lib_size is not None and not isinstance(self.lib_size, int):
-            self.lib_size = int(self.lib_size)
-
-        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
-            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
-
-        if self.seq_quality_check is not None and not isinstance(self.seq_quality_check, str):
-            self.seq_quality_check = str(self.seq_quality_check)
-
-        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
-            self.assembly_software = str(self.assembly_software)
-
-        if self.assembly_quality is not None and not isinstance(self.assembly_quality, str):
-            self.assembly_quality = str(self.assembly_quality)
+        if self._is_empty(self.target_gene):
+            self.MissingRequiredField("target_gene")
+        if not isinstance(self.target_gene, str):
+            self.target_gene = str(self.target_gene)
+
+        if self._is_empty(self.target_subfragment):
+            self.MissingRequiredField("target_subfragment")
+        if not isinstance(self.target_subfragment, str):
+            self.target_subfragment = str(self.target_subfragment)
+
+        if self._is_empty(self.temp):
+            self.MissingRequiredField("temp")
+        if not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         if self.annot is not None and not isinstance(self.annot, str):
             self.annot = str(self.annot)
 
-        if self.url is not None and not isinstance(self.url, str):
-            self.url = str(self.url)
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.fao_class is not None and not isinstance(self.fao_class, FAOCLASSENUM):
-            self.fao_class = FAOCLASSENUM(self.fao_class)
-
-        if self.local_class is not None and not isinstance(self.local_class, str):
-            self.local_class = str(self.local_class)
-
-        if self.local_class_meth is not None and not isinstance(self.local_class_meth, str):
-            self.local_class_meth = str(self.local_class_meth)
-
-        if self.horizon is not None and not isinstance(self.horizon, str):
-            self.horizon = str(self.horizon)
-
-        if self.horizon_meth is not None and not isinstance(self.horizon_meth, str):
-            self.horizon_meth = str(self.horizon_meth)
-
-        if self.link_class_info is not None and not isinstance(self.link_class_info, str):
-            self.link_class_info = str(self.link_class_info)
-
-        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
-            self.previous_land_use = str(self.previous_land_use)
-
-        if self.previous_land_use_meth is not None and not isinstance(self.previous_land_use_meth, str):
-            self.previous_land_use_meth = str(self.previous_land_use_meth)
+        if self.climate_environment is not None and not isinstance(self.climate_environment, str):
+            self.climate_environment = str(self.climate_environment)
 
         if self.crop_rotation is not None and not isinstance(self.crop_rotation, str):
             self.crop_rotation = str(self.crop_rotation)
-
-        if self.agrochem_addition is not None and not isinstance(self.agrochem_addition, str):
-            self.agrochem_addition = str(self.agrochem_addition)
-
-        if not isinstance(self.tillage, list):
-            self.tillage = [self.tillage] if self.tillage is not None else []
-        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
-
-        if self.fire is not None and not isinstance(self.fire, str):
-            self.fire = str(self.fire)
-
-        if self.flooding is not None and not isinstance(self.flooding, str):
-            self.flooding = str(self.flooding)
-
-        if self.extreme_event is not None and not isinstance(self.extreme_event, str):
-            self.extreme_event = str(self.extreme_event)
-
-        if self.link_climate_info is not None and not isinstance(self.link_climate_info, str):
-            self.link_climate_info = str(self.link_climate_info)
-
-        if self.annual_temp is not None and not isinstance(self.annual_temp, str):
-            self.annual_temp = str(self.annual_temp)
-
-        if self.season_temp is not None and not isinstance(self.season_temp, str):
-            self.season_temp = str(self.season_temp)
-
-        if self.annual_precpt is not None and not isinstance(self.annual_precpt, str):
-            self.annual_precpt = str(self.annual_precpt)
-
-        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
-            self.season_precpt = str(self.season_precpt)
-
-        if self.cur_land_use is not None and not isinstance(self.cur_land_use, CURLANDUSEENUM):
-            self.cur_land_use = CURLANDUSEENUM(self.cur_land_use)
-
-        if self.slope_gradient is not None and not isinstance(self.slope_gradient, str):
-            self.slope_gradient = str(self.slope_gradient)
-
-        if self.slope_aspect is not None and not isinstance(self.slope_aspect, str):
-            self.slope_aspect = str(self.slope_aspect)
-
-        if self.profile_position is not None and not isinstance(self.profile_position, PROFILEPOSITIONENUM):
-            self.profile_position = PROFILEPOSITIONENUM(self.profile_position)
-
-        if self.drainage_class is not None and not isinstance(self.drainage_class, DRAINAGECLASSENUM):
-            self.drainage_class = DRAINAGECLASSENUM(self.drainage_class)
-
-        if self.ph_meth is not None and not isinstance(self.ph_meth, str):
-            self.ph_meth = str(self.ph_meth)
 
         if self.cur_vegetation is not None and not isinstance(self.cur_vegetation, str):
             self.cur_vegetation = str(self.cur_vegetation)
@@ -1090,35 +1008,321 @@ class Agriculture(EnvironmentalPackage):
         if self.cur_vegetation_meth is not None and not isinstance(self.cur_vegetation_meth, str):
             self.cur_vegetation_meth = str(self.cur_vegetation_meth)
 
-        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
-            self.tot_org_carb = str(self.tot_org_carb)
+        if self.drainage_class is not None and not isinstance(self.drainage_class, DRAINAGECLASSENUM):
+            self.drainage_class = DRAINAGECLASSENUM(self.drainage_class)
 
-        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
-            self.tot_org_c_meth = str(self.tot_org_c_meth)
+        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
+            self.enrichment_protocol = str(self.enrichment_protocol)
 
-        if self.tot_nitro is not None and not isinstance(self.tot_nitro, str):
-            self.tot_nitro = str(self.tot_nitro)
+        if self.extreme_event is not None and not isinstance(self.extreme_event, str):
+            self.extreme_event = str(self.extreme_event)
 
-        if self.tot_n_meth is not None and not isinstance(self.tot_n_meth, str):
-            self.tot_n_meth = str(self.tot_n_meth)
+        if self.fao_class is not None and not isinstance(self.fao_class, FAOCLASSENUM):
+            self.fao_class = FAOCLASSENUM(self.fao_class)
+
+        if self.farm_water_source is not None and not isinstance(self.farm_water_source, str):
+            self.farm_water_source = str(self.farm_water_source)
+
+        if self.fire is not None and not isinstance(self.fire, str):
+            self.fire = str(self.fire)
+
+        if self.flooding is not None and not isinstance(self.flooding, str):
+            self.flooding = str(self.flooding)
+
+        if self.fungicide_regm is not None and not isinstance(self.fungicide_regm, str):
+            self.fungicide_regm = str(self.fungicide_regm)
+
+        if self.gaseous_environment is not None and not isinstance(self.gaseous_environment, str):
+            self.gaseous_environment = str(self.gaseous_environment)
 
         if self.heavy_metals_meth is not None and not isinstance(self.heavy_metals_meth, str):
             self.heavy_metals_meth = str(self.heavy_metals_meth)
 
-        if self.tot_car is not None and not isinstance(self.tot_car, str):
-            self.tot_car = str(self.tot_car)
+        if self.herbicide_regm is not None and not isinstance(self.herbicide_regm, str):
+            self.herbicide_regm = str(self.herbicide_regm)
 
-        if self.tot_phos is not None and not isinstance(self.tot_phos, str):
-            self.tot_phos = str(self.tot_phos)
+        if self.horizon_meth is not None and not isinstance(self.horizon_meth, str):
+            self.horizon_meth = str(self.horizon_meth)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.humidity is not None and not isinstance(self.humidity, str):
+            self.humidity = str(self.humidity)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.local_class is not None and not isinstance(self.local_class, str):
+            self.local_class = str(self.local_class)
+
+        if self.local_class_meth is not None and not isinstance(self.local_class_meth, str):
+            self.local_class_meth = str(self.local_class_meth)
+
+        if self.non_mineral_nutr_regm is not None and not isinstance(self.non_mineral_nutr_regm, str):
+            self.non_mineral_nutr_regm = str(self.non_mineral_nutr_regm)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
+        if self.pesticide_regm is not None and not isinstance(self.pesticide_regm, str):
+            self.pesticide_regm = str(self.pesticide_regm)
+
+        if self.ph_meth is not None and not isinstance(self.ph_meth, str):
+            self.ph_meth = str(self.ph_meth)
+
+        if self.ph_regm is not None and not isinstance(self.ph_regm, str):
+            self.ph_regm = str(self.ph_regm)
+
+        if self.photosynt_activ is not None and not isinstance(self.photosynt_activ, str):
+            self.photosynt_activ = str(self.photosynt_activ)
+
+        if self.photosynt_activ_meth is not None and not isinstance(self.photosynt_activ_meth, str):
+            self.photosynt_activ_meth = str(self.photosynt_activ_meth)
+
+        if self.plant_product is not None and not isinstance(self.plant_product, str):
+            self.plant_product = str(self.plant_product)
+
+        if self.plant_struc is not None and not isinstance(self.plant_struc, str):
+            self.plant_struc = str(self.plant_struc)
+
+        if self.plant_water_method is not None and not isinstance(self.plant_water_method, str):
+            self.plant_water_method = str(self.plant_water_method)
+
+        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
+            self.previous_land_use = str(self.previous_land_use)
+
+        if self.previous_land_use_meth is not None and not isinstance(self.previous_land_use_meth, str):
+            self.previous_land_use_meth = str(self.previous_land_use_meth)
+
+        if self.profile_position is not None and not isinstance(self.profile_position, PROFILEPOSITIONENUM):
+            self.profile_position = PROFILEPOSITIONENUM(self.profile_position)
+
+        if self.rel_location is not None and not isinstance(self.rel_location, str):
+            self.rel_location = str(self.rel_location)
+
+        if self.salt_regm is not None and not isinstance(self.salt_regm, str):
+            self.salt_regm = str(self.salt_regm)
+
+        if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
+            self.samp_pooling = str(self.samp_pooling)
+
+        if self.season_environment is not None and not isinstance(self.season_environment, str):
+            self.season_environment = str(self.season_environment)
+
+        if self.slope_aspect is not None and not isinstance(self.slope_aspect, str):
+            self.slope_aspect = str(self.slope_aspect)
+
+        if self.slope_gradient is not None and not isinstance(self.slope_gradient, str):
+            self.slope_gradient = str(self.slope_gradient)
+
+        if self.soil_cover is not None and not isinstance(self.soil_cover, str):
+            self.soil_cover = str(self.soil_cover)
+
+        if self.standing_water_regm is not None and not isinstance(self.standing_water_regm, str):
+            self.standing_water_regm = str(self.standing_water_regm)
+
+        if not isinstance(self.tillage, list):
+            self.tillage = [self.tillage] if self.tillage is not None else []
+        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
+
+        if self.tot_carb is not None and not isinstance(self.tot_carb, str):
+            self.tot_carb = str(self.tot_carb)
+
+        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
+            self.tot_org_c_meth = str(self.tot_org_c_meth)
+
+        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
+            self.tot_org_carb = str(self.tot_org_carb)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
+
+        if self.water_temp_regm is not None and not isinstance(self.water_temp_regm, str):
+            self.water_temp_regm = str(self.water_temp_regm)
+
+        if self.watering_regm is not None and not isinstance(self.watering_regm, str):
+            self.watering_regm = str(self.watering_regm)
+
+        if self.adjacent_environment is not None and not isinstance(self.adjacent_environment, str):
+            self.adjacent_environment = str(self.adjacent_environment)
+
+        if self.agrochem_addition is not None and not isinstance(self.agrochem_addition, str):
+            self.agrochem_addition = str(self.agrochem_addition)
+
+        if self.ances_data is not None and not isinstance(self.ances_data, str):
+            self.ances_data = str(self.ances_data)
+
+        if self.anim_water_method is not None and not isinstance(self.anim_water_method, str):
+            self.anim_water_method = str(self.anim_water_method)
+
+        if self.annual_precpt is not None and not isinstance(self.annual_precpt, str):
+            self.annual_precpt = str(self.annual_precpt)
+
+        if self.annual_temp is not None and not isinstance(self.annual_temp, str):
+            self.annual_temp = str(self.annual_temp)
+
+        if self.crop_yield is not None and not isinstance(self.crop_yield, str):
+            self.crop_yield = str(self.crop_yield)
+
+        if self.cult_isol_date is not None and not isinstance(self.cult_isol_date, str):
+            self.cult_isol_date = str(self.cult_isol_date)
+
+        if self.cur_land_use is not None and not isinstance(self.cur_land_use, CURLANDUSEENUM):
+            self.cur_land_use = CURLANDUSEENUM(self.cur_land_use)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.farm_equip is not None and not isinstance(self.farm_equip, str):
+            self.farm_equip = str(self.farm_equip)
+
+        if self.farm_equip_san is not None and not isinstance(self.farm_equip_san, str):
+            self.farm_equip_san = str(self.farm_equip_san)
+
+        if self.farm_equip_shared is not None and not isinstance(self.farm_equip_shared, str):
+            self.farm_equip_shared = str(self.farm_equip_shared)
+
+        if self.fertilizer_admin is not None and not isinstance(self.fertilizer_admin, str):
+            self.fertilizer_admin = str(self.fertilizer_admin)
+
+        if self.food_harvest_proc is not None and not isinstance(self.food_harvest_proc, str):
+            self.food_harvest_proc = str(self.food_harvest_proc)
+
+        if self.food_prod is not None and not isinstance(self.food_prod, str):
+            self.food_prod = str(self.food_prod)
+
+        if self.food_product_type is not None and not isinstance(self.food_product_type, str):
+            self.food_product_type = str(self.food_product_type)
+
+        if self.food_trav_mode is not None and not isinstance(self.food_trav_mode, str):
+            self.food_trav_mode = str(self.food_trav_mode)
+
+        if self.food_trav_vehic is not None and not isinstance(self.food_trav_vehic, str):
+            self.food_trav_vehic = str(self.food_trav_vehic)
+
+        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
+            self.genetic_mod = str(self.genetic_mod)
+
+        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
+            self.host_dry_mass = str(self.host_dry_mass)
+
+        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
+            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.library_prep_kit is not None and not isinstance(self.library_prep_kit, str):
+            self.library_prep_kit = str(self.library_prep_kit)
+
+        if self.link_class_info is not None and not isinstance(self.link_class_info, str):
+            self.link_class_info = str(self.link_class_info)
+
+        if self.link_climate_info is not None and not isinstance(self.link_climate_info, str):
+            self.link_climate_info = str(self.link_climate_info)
+
+        if self.lot_number is not None and not isinstance(self.lot_number, str):
+            self.lot_number = str(self.lot_number)
 
         if self.misc_param is not None and not isinstance(self.misc_param, str):
             self.misc_param = str(self.misc_param)
+
+        if self.plant_growth_med is not None and not isinstance(self.plant_growth_med, str):
+            self.plant_growth_med = str(self.plant_growth_med)
+
+        if self.porosity is not None and not isinstance(self.porosity, str):
+            self.porosity = str(self.porosity)
+
+        if self.pres_animal_insect is not None and not isinstance(self.pres_animal_insect, str):
+            self.pres_animal_insect = str(self.pres_animal_insect)
+
+        if self.root_med_carbon is not None and not isinstance(self.root_med_carbon, str):
+            self.root_med_carbon = str(self.root_med_carbon)
+
+        if self.root_med_macronutr is not None and not isinstance(self.root_med_macronutr, str):
+            self.root_med_macronutr = str(self.root_med_macronutr)
+
+        if self.root_med_ph is not None and not isinstance(self.root_med_ph, float):
+            self.root_med_ph = float(self.root_med_ph)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.season is not None and not isinstance(self.season, str):
+            self.season = str(self.season)
+
+        if self.season_humidity is not None and not isinstance(self.season_humidity, str):
+            self.season_humidity = str(self.season_humidity)
+
+        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
+            self.season_precpt = str(self.season_precpt)
+
+        if self.season_temp is not None and not isinstance(self.season_temp, str):
+            self.season_temp = str(self.season_temp)
+
+        if self.seq_quality_check is not None and not isinstance(self.seq_quality_check, str):
+            self.seq_quality_check = str(self.seq_quality_check)
+
+        if self.sequencing_location is not None and not isinstance(self.sequencing_location, str):
+            self.sequencing_location = str(self.sequencing_location)
+
+        if self.size_frac_low is not None and not isinstance(self.size_frac_low, str):
+            self.size_frac_low = str(self.size_frac_low)
+
+        if self.size_frac_up is not None and not isinstance(self.size_frac_up, str):
+            self.size_frac_up = str(self.size_frac_up)
+
+        if self.soil_conductivity is not None and not isinstance(self.soil_conductivity, str):
+            self.soil_conductivity = str(self.soil_conductivity)
+
+        if self.soil_pH is not None and not isinstance(self.soil_pH, float):
+            self.soil_pH = float(self.soil_pH)
+
+        if self.soil_temp is not None and not isinstance(self.soil_temp, str):
+            self.soil_temp = str(self.soil_temp)
+
+        if self.solar_irradiance is not None and not isinstance(self.solar_irradiance, str):
+            self.solar_irradiance = str(self.solar_irradiance)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.spikein_strain is not None and not isinstance(self.spikein_strain, str):
+            self.spikein_strain = str(self.spikein_strain)
+
+        if self.water_pH is not None and not isinstance(self.water_pH, float):
+            self.water_pH = float(self.water_pH)
+
+        if self.water_source_shared is not None and not isinstance(self.water_source_shared, str):
+            self.water_source_shared = str(self.water_source_shared)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class Air(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016000"]
@@ -1126,22 +1330,22 @@ class Air(EnvironmentalPackage):
     class_name: ClassVar[str] = "Air"
     class_model_uri: ClassVar[URIRef] = MIXS.Air
 
-    samp_name: str = None
-    project_name: str = None
     alt: str = None
+    project_name: str = None
     elev: Optional[str] = None
+    air_pm_concen: Optional[str] = None
     barometric_press: Optional[str] = None
     carb_dioxide: Optional[str] = None
     carb_monoxide: Optional[str] = None
     chem_administration: Optional[str] = None
     humidity: Optional[str] = None
     methane: Optional[str] = None
+    misc_param: Optional[str] = None
     organism_count: Optional[str] = None
-    oxygen: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    oxygen: Optional[str] = None
     perturbation: Optional[str] = None
     pollutants: Optional[str] = None
-    air_particulate_matter_concentration: Optional[str] = None
     salinity: Optional[str] = None
     samp_store_dur: Optional[str] = None
     samp_store_loc: Optional[str] = None
@@ -1154,26 +1358,23 @@ class Air(EnvironmentalPackage):
     volatile_org_comp: Optional[str] = None
     wind_direction: Optional[str] = None
     wind_speed: Optional[str] = None
-    misc_param: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
+        if self._is_empty(self.alt):
+            self.MissingRequiredField("alt")
+        if not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.alt):
-            self.MissingRequiredField("alt")
-        if not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
+
+        if self.air_pm_concen is not None and not isinstance(self.air_pm_concen, str):
+            self.air_pm_concen = str(self.air_pm_concen)
 
         if self.barometric_press is not None and not isinstance(self.barometric_press, str):
             self.barometric_press = str(self.barometric_press)
@@ -1193,23 +1394,23 @@ class Air(EnvironmentalPackage):
         if self.methane is not None and not isinstance(self.methane, str):
             self.methane = str(self.methane)
 
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
         if self.organism_count is not None and not isinstance(self.organism_count, str):
             self.organism_count = str(self.organism_count)
 
-        if self.oxygen is not None and not isinstance(self.oxygen, str):
-            self.oxygen = str(self.oxygen)
-
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+
+        if self.oxygen is not None and not isinstance(self.oxygen, str):
+            self.oxygen = str(self.oxygen)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
 
         if self.pollutants is not None and not isinstance(self.pollutants, str):
             self.pollutants = str(self.pollutants)
-
-        if self.air_particulate_matter_concentration is not None and not isinstance(self.air_particulate_matter_concentration, str):
-            self.air_particulate_matter_concentration = str(self.air_particulate_matter_concentration)
 
         if self.salinity is not None and not isinstance(self.salinity, str):
             self.salinity = str(self.salinity)
@@ -1247,14 +1448,14 @@ class Air(EnvironmentalPackage):
         if self.wind_speed is not None and not isinstance(self.wind_speed, str):
             self.wind_speed = str(self.wind_speed)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
-
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class BuiltEnvironment(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016001"]
@@ -1262,84 +1463,83 @@ class BuiltEnvironment(EnvironmentalPackage):
     class_name: ClassVar[str] = "BuiltEnvironment"
     class_model_uri: ClassVar[URIRef] = MIXS.BuiltEnvironment
 
-    samp_name: str = None
-    project_name: str = None
-    rel_air_humidity: str = None
     abs_air_humidity: str = None
     air_temp: str = None
     build_occup_type: str = None
+    building_setting: str = None
     carb_dioxide: str = None
-    ventilation_type: str = None
-    organism_count: str = None
-    indoor_space: str = None
     filter_type: str = None
     heat_cool_type: str = None
-    building_setting: str = None
+    indoor_space: str = None
     light_type: str = None
+    occup_density_samp: str = None
+    occup_samp: int = None
+    organism_count: str = None
+    project_name: str = None
+    rel_air_humidity: str = None
     space_typ_state: str = None
     typ_occup_density: float = None
-    occup_samp: int = None
-    occup_density_samp: str = None
-    surf_material: Optional[str] = None
+    ventilation_type: str = None
+    indoor_surf: Optional[str] = None
     surf_air_cont: Optional[str] = None
     surf_humidity: Optional[str] = None
-    surf_temp: Optional[str] = None
-    surf_moisture_ph: Optional[float] = None
+    surf_material: Optional[str] = None
     surf_moisture: Optional[str] = None
-    dew_point: Optional[str] = None
-    indoor_surf: Optional[str] = None
-    substructure_type: Optional[str] = None
-    samp_sort_meth: Optional[str] = None
+    surf_moisture_ph: Optional[float] = None
+    surf_temp: Optional[str] = None
     address: Optional[str] = None
     adj_room: Optional[str] = None
     aero_struc: Optional[str] = None
     amount_light: Optional[str] = None
     arch_struc: Optional[str] = None
-    avg_occup: Optional[float] = None
     avg_dew_point: Optional[str] = None
+    avg_occup: Optional[float] = None
     avg_temp: Optional[str] = None
     bathroom_count: Optional[int] = None
     bedroom_count: Optional[int] = None
+    build_docs: Optional[str] = None
     built_struc_age: Optional[str] = None
     built_struc_set: Optional[str] = None
     built_struc_type: Optional[str] = None
     ceil_area: Optional[str] = None
     ceil_cond: Optional[str] = None
     ceil_finish_mat: Optional[str] = None
-    ceil_water_mold: Optional[str] = None
     ceil_struc: Optional[str] = None
     ceil_texture: Optional[str] = None
     ceil_thermal_mass: Optional[str] = None
     ceil_type: Optional[str] = None
+    ceil_water_mold: Optional[str] = None
     cool_syst_id: Optional[int] = None
     date_last_rain: Optional[str] = None
-    build_docs: Optional[str] = None
-    door_size: Optional[str] = None
+    dew_point: Optional[str] = None
+    door_comp_type: Optional[str] = None
     door_cond: Optional[str] = None
     door_direct: Optional[str] = None
     door_loc: Optional[str] = None
     door_mat: Optional[str] = None
     door_move: Optional[str] = None
-    door_water_mold: Optional[str] = None
+    door_size: Optional[str] = None
     door_type: Optional[str] = None
-    door_comp_type: Optional[str] = None
     door_type_metal: Optional[str] = None
     door_type_wood: Optional[str] = None
+    door_water_mold: Optional[str] = None
     drawings: Optional[str] = None
     elevator: Optional[int] = None
     escalator: Optional[int] = None
     exp_duct: Optional[str] = None
     exp_pipe: Optional[int] = None
     ext_door: Optional[int] = None
+    ext_wall_orient: Optional[str] = None
+    ext_window_orient: Optional[str] = None
     fireplace_type: Optional[str] = None
     floor_age: Optional[str] = None
     floor_area: Optional[str] = None
     floor_cond: Optional[str] = None
     floor_count: Optional[int] = None
     floor_finish_mat: Optional[str] = None
-    floor_water_mold: Optional[str] = None
     floor_struc: Optional[str] = None
     floor_thermal_mass: Optional[str] = None
+    floor_water_mold: Optional[str] = None
     freq_clean: Optional[str] = None
     freq_cook: Optional[int] = None
     furniture: Optional[str] = None
@@ -1355,22 +1555,23 @@ class BuiltEnvironment(EnvironmentalPackage):
     last_clean: Optional[str] = None
     max_occup: Optional[int] = None
     mech_struc: Optional[str] = None
-    number_plants: Optional[int] = None
     number_pets: Optional[int] = None
+    number_plants: Optional[int] = None
     number_resident: Optional[int] = None
     occup_document: Optional[str] = None
-    ext_wall_orient: Optional[str] = None
-    ext_window_orient: Optional[str] = None
-    rel_humidity_out: Optional[str] = None
     pres_animal_insect: Optional[str] = None
     quad_pos: Optional[str] = None
+    rel_humidity_out: Optional[str] = None
     rel_samp_loc: Optional[str] = None
     room_air_exch_rate: Optional[str] = None
     room_architec_elem: Optional[str] = None
     room_condt: Optional[str] = None
+    room_connected: Optional[str] = None
     room_count: Optional[int] = None
     room_dim: Optional[str] = None
     room_door_dist: Optional[str] = None
+    room_door_share: Optional[str] = None
+    room_hallway: Optional[str] = None
     room_loc: Optional[str] = None
     room_moist_dam_hist: Optional[int] = None
     room_net_area: Optional[str] = None
@@ -1378,24 +1579,23 @@ class BuiltEnvironment(EnvironmentalPackage):
     room_samp_pos: Optional[str] = None
     room_type: Optional[str] = None
     room_vol: Optional[str] = None
-    room_window_count: Optional[int] = None
-    room_connected: Optional[str] = None
-    room_hallway: Optional[str] = None
-    room_door_share: Optional[str] = None
     room_wall_share: Optional[str] = None
-    samp_weather: Optional[str] = None
+    room_window_count: Optional[int] = None
     samp_floor: Optional[str] = None
     samp_room_id: Optional[int] = None
+    samp_sort_meth: Optional[str] = None
     samp_time_out: Optional[str] = None
+    samp_weather: Optional[str] = None
     season: Optional[str] = None
     season_use: Optional[str] = None
+    shad_dev_water_mold: Optional[str] = None
     shading_device_cond: Optional[str] = None
     shading_device_loc: Optional[str] = None
     shading_device_mat: Optional[str] = None
-    shad_dev_water_mold: Optional[str] = None
     shading_device_type: Optional[str] = None
-    specific_humidity: Optional[str] = None
     specific: Optional[str] = None
+    specific_humidity: Optional[str] = None
+    substructure_type: Optional[str] = None
     temp_out: Optional[str] = None
     train_line: Optional[str] = None
     train_stat_loc: Optional[str] = None
@@ -1406,41 +1606,26 @@ class BuiltEnvironment(EnvironmentalPackage):
     wall_finish_mat: Optional[str] = None
     wall_height: Optional[str] = None
     wall_loc: Optional[str] = None
-    wall_water_mold: Optional[str] = None
     wall_surf_treatment: Optional[str] = None
     wall_texture: Optional[str] = None
     wall_thermal_mass: Optional[str] = None
+    wall_water_mold: Optional[str] = None
     water_feat_size: Optional[str] = None
     water_feat_type: Optional[str] = None
     weekday: Optional[str] = None
-    window_size: Optional[str] = None
     window_cond: Optional[str] = None
     window_cover: Optional[str] = None
     window_horiz_pos: Optional[str] = None
     window_loc: Optional[str] = None
     window_mat: Optional[str] = None
     window_open_freq: Optional[int] = None
-    window_water_mold: Optional[str] = None
+    window_size: Optional[str] = None
     window_status: Optional[str] = None
     window_type: Optional[str] = None
     window_vert_pos: Optional[str] = None
+    window_water_mold: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.rel_air_humidity):
-            self.MissingRequiredField("rel_air_humidity")
-        if not isinstance(self.rel_air_humidity, str):
-            self.rel_air_humidity = str(self.rel_air_humidity)
-
         if self._is_empty(self.abs_air_humidity):
             self.MissingRequiredField("abs_air_humidity")
         if not isinstance(self.abs_air_humidity, str):
@@ -1456,25 +1641,15 @@ class BuiltEnvironment(EnvironmentalPackage):
         if not isinstance(self.build_occup_type, str):
             self.build_occup_type = str(self.build_occup_type)
 
+        if self._is_empty(self.building_setting):
+            self.MissingRequiredField("building_setting")
+        if not isinstance(self.building_setting, str):
+            self.building_setting = str(self.building_setting)
+
         if self._is_empty(self.carb_dioxide):
             self.MissingRequiredField("carb_dioxide")
         if not isinstance(self.carb_dioxide, str):
             self.carb_dioxide = str(self.carb_dioxide)
-
-        if self._is_empty(self.ventilation_type):
-            self.MissingRequiredField("ventilation_type")
-        if not isinstance(self.ventilation_type, str):
-            self.ventilation_type = str(self.ventilation_type)
-
-        if self._is_empty(self.organism_count):
-            self.MissingRequiredField("organism_count")
-        if not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self._is_empty(self.indoor_space):
-            self.MissingRequiredField("indoor_space")
-        if not isinstance(self.indoor_space, str):
-            self.indoor_space = str(self.indoor_space)
 
         if self._is_empty(self.filter_type):
             self.MissingRequiredField("filter_type")
@@ -1486,15 +1661,40 @@ class BuiltEnvironment(EnvironmentalPackage):
         if not isinstance(self.heat_cool_type, str):
             self.heat_cool_type = str(self.heat_cool_type)
 
-        if self._is_empty(self.building_setting):
-            self.MissingRequiredField("building_setting")
-        if not isinstance(self.building_setting, str):
-            self.building_setting = str(self.building_setting)
+        if self._is_empty(self.indoor_space):
+            self.MissingRequiredField("indoor_space")
+        if not isinstance(self.indoor_space, str):
+            self.indoor_space = str(self.indoor_space)
 
         if self._is_empty(self.light_type):
             self.MissingRequiredField("light_type")
         if not isinstance(self.light_type, str):
             self.light_type = str(self.light_type)
+
+        if self._is_empty(self.occup_density_samp):
+            self.MissingRequiredField("occup_density_samp")
+        if not isinstance(self.occup_density_samp, str):
+            self.occup_density_samp = str(self.occup_density_samp)
+
+        if self._is_empty(self.occup_samp):
+            self.MissingRequiredField("occup_samp")
+        if not isinstance(self.occup_samp, int):
+            self.occup_samp = int(self.occup_samp)
+
+        if self._is_empty(self.organism_count):
+            self.MissingRequiredField("organism_count")
+        if not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self._is_empty(self.rel_air_humidity):
+            self.MissingRequiredField("rel_air_humidity")
+        if not isinstance(self.rel_air_humidity, str):
+            self.rel_air_humidity = str(self.rel_air_humidity)
 
         if self._is_empty(self.space_typ_state):
             self.MissingRequiredField("space_typ_state")
@@ -1506,18 +1706,13 @@ class BuiltEnvironment(EnvironmentalPackage):
         if not isinstance(self.typ_occup_density, float):
             self.typ_occup_density = float(self.typ_occup_density)
 
-        if self._is_empty(self.occup_samp):
-            self.MissingRequiredField("occup_samp")
-        if not isinstance(self.occup_samp, int):
-            self.occup_samp = int(self.occup_samp)
+        if self._is_empty(self.ventilation_type):
+            self.MissingRequiredField("ventilation_type")
+        if not isinstance(self.ventilation_type, str):
+            self.ventilation_type = str(self.ventilation_type)
 
-        if self._is_empty(self.occup_density_samp):
-            self.MissingRequiredField("occup_density_samp")
-        if not isinstance(self.occup_density_samp, str):
-            self.occup_density_samp = str(self.occup_density_samp)
-
-        if self.surf_material is not None and not isinstance(self.surf_material, str):
-            self.surf_material = str(self.surf_material)
+        if self.indoor_surf is not None and not isinstance(self.indoor_surf, str):
+            self.indoor_surf = str(self.indoor_surf)
 
         if self.surf_air_cont is not None and not isinstance(self.surf_air_cont, str):
             self.surf_air_cont = str(self.surf_air_cont)
@@ -1525,26 +1720,17 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.surf_humidity is not None and not isinstance(self.surf_humidity, str):
             self.surf_humidity = str(self.surf_humidity)
 
-        if self.surf_temp is not None and not isinstance(self.surf_temp, str):
-            self.surf_temp = str(self.surf_temp)
-
-        if self.surf_moisture_ph is not None and not isinstance(self.surf_moisture_ph, float):
-            self.surf_moisture_ph = float(self.surf_moisture_ph)
+        if self.surf_material is not None and not isinstance(self.surf_material, str):
+            self.surf_material = str(self.surf_material)
 
         if self.surf_moisture is not None and not isinstance(self.surf_moisture, str):
             self.surf_moisture = str(self.surf_moisture)
 
-        if self.dew_point is not None and not isinstance(self.dew_point, str):
-            self.dew_point = str(self.dew_point)
+        if self.surf_moisture_ph is not None and not isinstance(self.surf_moisture_ph, float):
+            self.surf_moisture_ph = float(self.surf_moisture_ph)
 
-        if self.indoor_surf is not None and not isinstance(self.indoor_surf, str):
-            self.indoor_surf = str(self.indoor_surf)
-
-        if self.substructure_type is not None and not isinstance(self.substructure_type, str):
-            self.substructure_type = str(self.substructure_type)
-
-        if self.samp_sort_meth is not None and not isinstance(self.samp_sort_meth, str):
-            self.samp_sort_meth = str(self.samp_sort_meth)
+        if self.surf_temp is not None and not isinstance(self.surf_temp, str):
+            self.surf_temp = str(self.surf_temp)
 
         if self.address is not None and not isinstance(self.address, str):
             self.address = str(self.address)
@@ -1561,11 +1747,11 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.arch_struc is not None and not isinstance(self.arch_struc, str):
             self.arch_struc = str(self.arch_struc)
 
-        if self.avg_occup is not None and not isinstance(self.avg_occup, float):
-            self.avg_occup = float(self.avg_occup)
-
         if self.avg_dew_point is not None and not isinstance(self.avg_dew_point, str):
             self.avg_dew_point = str(self.avg_dew_point)
+
+        if self.avg_occup is not None and not isinstance(self.avg_occup, float):
+            self.avg_occup = float(self.avg_occup)
 
         if self.avg_temp is not None and not isinstance(self.avg_temp, str):
             self.avg_temp = str(self.avg_temp)
@@ -1575,6 +1761,9 @@ class BuiltEnvironment(EnvironmentalPackage):
 
         if self.bedroom_count is not None and not isinstance(self.bedroom_count, int):
             self.bedroom_count = int(self.bedroom_count)
+
+        if self.build_docs is not None and not isinstance(self.build_docs, str):
+            self.build_docs = str(self.build_docs)
 
         if self.built_struc_age is not None and not isinstance(self.built_struc_age, str):
             self.built_struc_age = str(self.built_struc_age)
@@ -1594,9 +1783,6 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.ceil_finish_mat is not None and not isinstance(self.ceil_finish_mat, str):
             self.ceil_finish_mat = str(self.ceil_finish_mat)
 
-        if self.ceil_water_mold is not None and not isinstance(self.ceil_water_mold, str):
-            self.ceil_water_mold = str(self.ceil_water_mold)
-
         if self.ceil_struc is not None and not isinstance(self.ceil_struc, str):
             self.ceil_struc = str(self.ceil_struc)
 
@@ -1609,17 +1795,20 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.ceil_type is not None and not isinstance(self.ceil_type, str):
             self.ceil_type = str(self.ceil_type)
 
+        if self.ceil_water_mold is not None and not isinstance(self.ceil_water_mold, str):
+            self.ceil_water_mold = str(self.ceil_water_mold)
+
         if self.cool_syst_id is not None and not isinstance(self.cool_syst_id, int):
             self.cool_syst_id = int(self.cool_syst_id)
 
         if self.date_last_rain is not None and not isinstance(self.date_last_rain, str):
             self.date_last_rain = str(self.date_last_rain)
 
-        if self.build_docs is not None and not isinstance(self.build_docs, str):
-            self.build_docs = str(self.build_docs)
+        if self.dew_point is not None and not isinstance(self.dew_point, str):
+            self.dew_point = str(self.dew_point)
 
-        if self.door_size is not None and not isinstance(self.door_size, str):
-            self.door_size = str(self.door_size)
+        if self.door_comp_type is not None and not isinstance(self.door_comp_type, str):
+            self.door_comp_type = str(self.door_comp_type)
 
         if self.door_cond is not None and not isinstance(self.door_cond, str):
             self.door_cond = str(self.door_cond)
@@ -1636,20 +1825,20 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.door_move is not None and not isinstance(self.door_move, str):
             self.door_move = str(self.door_move)
 
-        if self.door_water_mold is not None and not isinstance(self.door_water_mold, str):
-            self.door_water_mold = str(self.door_water_mold)
+        if self.door_size is not None and not isinstance(self.door_size, str):
+            self.door_size = str(self.door_size)
 
         if self.door_type is not None and not isinstance(self.door_type, str):
             self.door_type = str(self.door_type)
-
-        if self.door_comp_type is not None and not isinstance(self.door_comp_type, str):
-            self.door_comp_type = str(self.door_comp_type)
 
         if self.door_type_metal is not None and not isinstance(self.door_type_metal, str):
             self.door_type_metal = str(self.door_type_metal)
 
         if self.door_type_wood is not None and not isinstance(self.door_type_wood, str):
             self.door_type_wood = str(self.door_type_wood)
+
+        if self.door_water_mold is not None and not isinstance(self.door_water_mold, str):
+            self.door_water_mold = str(self.door_water_mold)
 
         if self.drawings is not None and not isinstance(self.drawings, str):
             self.drawings = str(self.drawings)
@@ -1669,6 +1858,12 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.ext_door is not None and not isinstance(self.ext_door, int):
             self.ext_door = int(self.ext_door)
 
+        if self.ext_wall_orient is not None and not isinstance(self.ext_wall_orient, str):
+            self.ext_wall_orient = str(self.ext_wall_orient)
+
+        if self.ext_window_orient is not None and not isinstance(self.ext_window_orient, str):
+            self.ext_window_orient = str(self.ext_window_orient)
+
         if self.fireplace_type is not None and not isinstance(self.fireplace_type, str):
             self.fireplace_type = str(self.fireplace_type)
 
@@ -1687,14 +1882,14 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.floor_finish_mat is not None and not isinstance(self.floor_finish_mat, str):
             self.floor_finish_mat = str(self.floor_finish_mat)
 
-        if self.floor_water_mold is not None and not isinstance(self.floor_water_mold, str):
-            self.floor_water_mold = str(self.floor_water_mold)
-
         if self.floor_struc is not None and not isinstance(self.floor_struc, str):
             self.floor_struc = str(self.floor_struc)
 
         if self.floor_thermal_mass is not None and not isinstance(self.floor_thermal_mass, str):
             self.floor_thermal_mass = str(self.floor_thermal_mass)
+
+        if self.floor_water_mold is not None and not isinstance(self.floor_water_mold, str):
+            self.floor_water_mold = str(self.floor_water_mold)
 
         if self.freq_clean is not None and not isinstance(self.freq_clean, str):
             self.freq_clean = str(self.freq_clean)
@@ -1741,11 +1936,11 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.mech_struc is not None and not isinstance(self.mech_struc, str):
             self.mech_struc = str(self.mech_struc)
 
-        if self.number_plants is not None and not isinstance(self.number_plants, int):
-            self.number_plants = int(self.number_plants)
-
         if self.number_pets is not None and not isinstance(self.number_pets, int):
             self.number_pets = int(self.number_pets)
+
+        if self.number_plants is not None and not isinstance(self.number_plants, int):
+            self.number_plants = int(self.number_plants)
 
         if self.number_resident is not None and not isinstance(self.number_resident, int):
             self.number_resident = int(self.number_resident)
@@ -1753,20 +1948,14 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.occup_document is not None and not isinstance(self.occup_document, str):
             self.occup_document = str(self.occup_document)
 
-        if self.ext_wall_orient is not None and not isinstance(self.ext_wall_orient, str):
-            self.ext_wall_orient = str(self.ext_wall_orient)
-
-        if self.ext_window_orient is not None and not isinstance(self.ext_window_orient, str):
-            self.ext_window_orient = str(self.ext_window_orient)
-
-        if self.rel_humidity_out is not None and not isinstance(self.rel_humidity_out, str):
-            self.rel_humidity_out = str(self.rel_humidity_out)
-
         if self.pres_animal_insect is not None and not isinstance(self.pres_animal_insect, str):
             self.pres_animal_insect = str(self.pres_animal_insect)
 
         if self.quad_pos is not None and not isinstance(self.quad_pos, str):
             self.quad_pos = str(self.quad_pos)
+
+        if self.rel_humidity_out is not None and not isinstance(self.rel_humidity_out, str):
+            self.rel_humidity_out = str(self.rel_humidity_out)
 
         if self.rel_samp_loc is not None and not isinstance(self.rel_samp_loc, str):
             self.rel_samp_loc = str(self.rel_samp_loc)
@@ -1780,6 +1969,9 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.room_condt is not None and not isinstance(self.room_condt, str):
             self.room_condt = str(self.room_condt)
 
+        if self.room_connected is not None and not isinstance(self.room_connected, str):
+            self.room_connected = str(self.room_connected)
+
         if self.room_count is not None and not isinstance(self.room_count, int):
             self.room_count = int(self.room_count)
 
@@ -1788,6 +1980,12 @@ class BuiltEnvironment(EnvironmentalPackage):
 
         if self.room_door_dist is not None and not isinstance(self.room_door_dist, str):
             self.room_door_dist = str(self.room_door_dist)
+
+        if self.room_door_share is not None and not isinstance(self.room_door_share, str):
+            self.room_door_share = str(self.room_door_share)
+
+        if self.room_hallway is not None and not isinstance(self.room_hallway, str):
+            self.room_hallway = str(self.room_hallway)
 
         if self.room_loc is not None and not isinstance(self.room_loc, str):
             self.room_loc = str(self.room_loc)
@@ -1810,23 +2008,11 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.room_vol is not None and not isinstance(self.room_vol, str):
             self.room_vol = str(self.room_vol)
 
-        if self.room_window_count is not None and not isinstance(self.room_window_count, int):
-            self.room_window_count = int(self.room_window_count)
-
-        if self.room_connected is not None and not isinstance(self.room_connected, str):
-            self.room_connected = str(self.room_connected)
-
-        if self.room_hallway is not None and not isinstance(self.room_hallway, str):
-            self.room_hallway = str(self.room_hallway)
-
-        if self.room_door_share is not None and not isinstance(self.room_door_share, str):
-            self.room_door_share = str(self.room_door_share)
-
         if self.room_wall_share is not None and not isinstance(self.room_wall_share, str):
             self.room_wall_share = str(self.room_wall_share)
 
-        if self.samp_weather is not None and not isinstance(self.samp_weather, str):
-            self.samp_weather = str(self.samp_weather)
+        if self.room_window_count is not None and not isinstance(self.room_window_count, int):
+            self.room_window_count = int(self.room_window_count)
 
         if self.samp_floor is not None and not isinstance(self.samp_floor, str):
             self.samp_floor = str(self.samp_floor)
@@ -1834,14 +2020,23 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.samp_room_id is not None and not isinstance(self.samp_room_id, int):
             self.samp_room_id = int(self.samp_room_id)
 
+        if self.samp_sort_meth is not None and not isinstance(self.samp_sort_meth, str):
+            self.samp_sort_meth = str(self.samp_sort_meth)
+
         if self.samp_time_out is not None and not isinstance(self.samp_time_out, str):
             self.samp_time_out = str(self.samp_time_out)
+
+        if self.samp_weather is not None and not isinstance(self.samp_weather, str):
+            self.samp_weather = str(self.samp_weather)
 
         if self.season is not None and not isinstance(self.season, str):
             self.season = str(self.season)
 
         if self.season_use is not None and not isinstance(self.season_use, str):
             self.season_use = str(self.season_use)
+
+        if self.shad_dev_water_mold is not None and not isinstance(self.shad_dev_water_mold, str):
+            self.shad_dev_water_mold = str(self.shad_dev_water_mold)
 
         if self.shading_device_cond is not None and not isinstance(self.shading_device_cond, str):
             self.shading_device_cond = str(self.shading_device_cond)
@@ -1852,17 +2047,17 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.shading_device_mat is not None and not isinstance(self.shading_device_mat, str):
             self.shading_device_mat = str(self.shading_device_mat)
 
-        if self.shad_dev_water_mold is not None and not isinstance(self.shad_dev_water_mold, str):
-            self.shad_dev_water_mold = str(self.shad_dev_water_mold)
-
         if self.shading_device_type is not None and not isinstance(self.shading_device_type, str):
             self.shading_device_type = str(self.shading_device_type)
+
+        if self.specific is not None and not isinstance(self.specific, str):
+            self.specific = str(self.specific)
 
         if self.specific_humidity is not None and not isinstance(self.specific_humidity, str):
             self.specific_humidity = str(self.specific_humidity)
 
-        if self.specific is not None and not isinstance(self.specific, str):
-            self.specific = str(self.specific)
+        if self.substructure_type is not None and not isinstance(self.substructure_type, str):
+            self.substructure_type = str(self.substructure_type)
 
         if self.temp_out is not None and not isinstance(self.temp_out, str):
             self.temp_out = str(self.temp_out)
@@ -1894,9 +2089,6 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.wall_loc is not None and not isinstance(self.wall_loc, str):
             self.wall_loc = str(self.wall_loc)
 
-        if self.wall_water_mold is not None and not isinstance(self.wall_water_mold, str):
-            self.wall_water_mold = str(self.wall_water_mold)
-
         if self.wall_surf_treatment is not None and not isinstance(self.wall_surf_treatment, str):
             self.wall_surf_treatment = str(self.wall_surf_treatment)
 
@@ -1906,6 +2098,9 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.wall_thermal_mass is not None and not isinstance(self.wall_thermal_mass, str):
             self.wall_thermal_mass = str(self.wall_thermal_mass)
 
+        if self.wall_water_mold is not None and not isinstance(self.wall_water_mold, str):
+            self.wall_water_mold = str(self.wall_water_mold)
+
         if self.water_feat_size is not None and not isinstance(self.water_feat_size, str):
             self.water_feat_size = str(self.water_feat_size)
 
@@ -1914,9 +2109,6 @@ class BuiltEnvironment(EnvironmentalPackage):
 
         if self.weekday is not None and not isinstance(self.weekday, str):
             self.weekday = str(self.weekday)
-
-        if self.window_size is not None and not isinstance(self.window_size, str):
-            self.window_size = str(self.window_size)
 
         if self.window_cond is not None and not isinstance(self.window_cond, str):
             self.window_cond = str(self.window_cond)
@@ -1936,8 +2128,8 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.window_open_freq is not None and not isinstance(self.window_open_freq, int):
             self.window_open_freq = int(self.window_open_freq)
 
-        if self.window_water_mold is not None and not isinstance(self.window_water_mold, str):
-            self.window_water_mold = str(self.window_water_mold)
+        if self.window_size is not None and not isinstance(self.window_size, str):
+            self.window_size = str(self.window_size)
 
         if self.window_status is not None and not isinstance(self.window_status, str):
             self.window_status = str(self.window_status)
@@ -1948,11 +2140,17 @@ class BuiltEnvironment(EnvironmentalPackage):
         if self.window_vert_pos is not None and not isinstance(self.window_vert_pos, str):
             self.window_vert_pos = str(self.window_vert_pos)
 
+        if self.window_water_mold is not None and not isinstance(self.window_water_mold, str):
+            self.window_water_mold = str(self.window_water_mold)
+
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016019"]
@@ -1960,37 +2158,21 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
     class_name: ClassVar[str] = "FoodAnimalAndAnimalFeed"
     class_model_uri: ClassVar[URIRef] = MIXS.FoodAnimalAndAnimalFeed
 
-    samp_name: str = None
-    project_name: str = None
-    lat_lon: str = None
-    geo_loc_name: str = None
+    coll_site_geo_feat: str = None
     collection_date: str = None
     env_broad_scale: str = None
     env_local_scale: str = None
     env_medium: str = None
-    seq_meth: str = None
-    coll_site_geo_feat: str = None
     food_origin: str = None
     food_prod: str = None
     food_product_type: str = None
+    geo_loc_name: str = None
     IFSAC_category: str = None
     intended_consumer: str = None
+    lat_lon: str = None
+    project_name: str = None
     samp_purpose: str = None
-    samp_size: Optional[str] = None
-    samp_collect_device: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    organism_count: Optional[str] = None
-    spikein_count: Optional[str] = None
-    samp_stor_temp: Optional[str] = None
-    samp_stor_dur: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    pool_dna_extracts: Optional[str] = None
-    temp: Optional[str] = None
-    samp_stor_loc: Optional[str] = None
-    samp_transport_cont: Optional[str] = None
-    perturbation: Optional[str] = None
-    food_source: Optional[str] = None
+    seq_meth: str = None
     animal_am: Optional[str] = None
     animal_am_dur: Optional[str] = None
     animal_am_freq: Optional[str] = None
@@ -2012,6 +2194,7 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
     cult_result_org: Optional[str] = None
     cult_target: Optional[str] = None
     enrichment_protocol: Optional[str] = None
+    experimental_factor: Optional[str] = None
     food_additive: Optional[str] = None
     food_contact_surf: Optional[str] = None
     food_contain_wrap: Optional[str] = None
@@ -2027,6 +2210,7 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
     food_prod_synonym: Optional[str] = None
     food_product_qual: Optional[str] = None
     food_quality_date: Optional[str] = None
+    food_source: Optional[str] = None
     food_source_age: Optional[str] = None
     food_trace_list: Optional[str] = None
     food_trav_mode: Optional[str] = None
@@ -2036,22 +2220,33 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
     library_prep_kit: Optional[str] = None
     lot_number: Optional[str] = None
     microb_cult_med: Optional[str] = None
+    misc_param: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    organism_count: Optional[str] = None
     part_plant_animal: Optional[str] = None
+    perturbation: Optional[str] = None
+    pool_dna_extracts: Optional[str] = None
     repository_name: Optional[str] = None
-    samp_collect_method: Optional[str] = None
     samp_pooling: Optional[str] = None
     samp_rep_biol: Optional[str] = None
     samp_rep_tech: Optional[str] = None
+    samp_size: Optional[str] = None
     samp_source_mat_cat: Optional[str] = None
     samp_stor_device: Optional[str] = None
     samp_stor_media: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_transport_cont: Optional[str] = None
     samp_transport_dur: Optional[str] = None
     samp_transport_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
     sequencing_kit: Optional[str] = None
     sequencing_location: Optional[str] = None
     serovar_or_serotype: Optional[str] = None
     spikein_AMR: Optional[str] = None
     spikein_antibiotic: Optional[str] = None
+    spikein_count: Optional[str] = None
     spikein_growth_med: Optional[str] = None
     spikein_metal: Optional[str] = None
     spikein_org: Optional[str] = None
@@ -2062,29 +2257,14 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
     study_inc_temp: Optional[str] = None
     study_timecourse: Optional[str] = None
     study_tmnt: Optional[str] = None
+    temp: Optional[str] = None
     timepoint: Optional[str] = None
-    misc_param: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
+        if self._is_empty(self.coll_site_geo_feat):
+            self.MissingRequiredField("coll_site_geo_feat")
+        if not isinstance(self.coll_site_geo_feat, str):
+            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
 
         if self._is_empty(self.collection_date):
             self.MissingRequiredField("collection_date")
@@ -2106,16 +2286,6 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if not isinstance(self.env_medium, str):
             self.env_medium = str(self.env_medium)
 
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self._is_empty(self.coll_site_geo_feat):
-            self.MissingRequiredField("coll_site_geo_feat")
-        if not isinstance(self.coll_site_geo_feat, str):
-            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
-
         if self._is_empty(self.food_origin):
             self.MissingRequiredField("food_origin")
         if not isinstance(self.food_origin, str):
@@ -2131,6 +2301,11 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if not isinstance(self.food_product_type, str):
             self.food_product_type = str(self.food_product_type)
 
+        if self._is_empty(self.geo_loc_name):
+            self.MissingRequiredField("geo_loc_name")
+        if not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
         if self._is_empty(self.IFSAC_category):
             self.MissingRequiredField("IFSAC_category")
         if not isinstance(self.IFSAC_category, str):
@@ -2141,55 +2316,25 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if not isinstance(self.intended_consumer, str):
             self.intended_consumer = str(self.intended_consumer)
 
+        if self._is_empty(self.lat_lon):
+            self.MissingRequiredField("lat_lon")
+        if not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
         if self._is_empty(self.samp_purpose):
             self.MissingRequiredField("samp_purpose")
         if not isinstance(self.samp_purpose, str):
             self.samp_purpose = str(self.samp_purpose)
 
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
-        if self.samp_collect_device is not None and not isinstance(self.samp_collect_device, str):
-            self.samp_collect_device = str(self.samp_collect_device)
-
-        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
-            self.experimental_factor = str(self.experimental_factor)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
-            self.spikein_count = str(self.spikein_count)
-
-        if self.samp_stor_temp is not None and not isinstance(self.samp_stor_temp, str):
-            self.samp_stor_temp = str(self.samp_stor_temp)
-
-        if self.samp_stor_dur is not None and not isinstance(self.samp_stor_dur, str):
-            self.samp_stor_dur = str(self.samp_stor_dur)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
-            self.pool_dna_extracts = str(self.pool_dna_extracts)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.samp_stor_loc is not None and not isinstance(self.samp_stor_loc, str):
-            self.samp_stor_loc = str(self.samp_stor_loc)
-
-        if self.samp_transport_cont is not None and not isinstance(self.samp_transport_cont, str):
-            self.samp_transport_cont = str(self.samp_transport_cont)
-
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
-
-        if self.food_source is not None and not isinstance(self.food_source, str):
-            self.food_source = str(self.food_source)
+        if self._is_empty(self.seq_meth):
+            self.MissingRequiredField("seq_meth")
+        if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         if self.animal_am is not None and not isinstance(self.animal_am, str):
             self.animal_am = str(self.animal_am)
@@ -2254,6 +2399,9 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
             self.enrichment_protocol = str(self.enrichment_protocol)
 
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
         if self.food_additive is not None and not isinstance(self.food_additive, str):
             self.food_additive = str(self.food_additive)
 
@@ -2299,6 +2447,9 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.food_quality_date is not None and not isinstance(self.food_quality_date, str):
             self.food_quality_date = str(self.food_quality_date)
 
+        if self.food_source is not None and not isinstance(self.food_source, str):
+            self.food_source = str(self.food_source)
+
         if self.food_source_age is not None and not isinstance(self.food_source_age, str):
             self.food_source_age = str(self.food_source_age)
 
@@ -2326,14 +2477,26 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.microb_cult_med is not None and not isinstance(self.microb_cult_med, str):
             self.microb_cult_med = str(self.microb_cult_med)
 
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
         if self.part_plant_animal is not None and not isinstance(self.part_plant_animal, str):
             self.part_plant_animal = str(self.part_plant_animal)
 
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
+        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
+            self.pool_dna_extracts = str(self.pool_dna_extracts)
+
         if self.repository_name is not None and not isinstance(self.repository_name, str):
             self.repository_name = str(self.repository_name)
-
-        if self.samp_collect_method is not None and not isinstance(self.samp_collect_method, str):
-            self.samp_collect_method = str(self.samp_collect_method)
 
         if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
             self.samp_pooling = str(self.samp_pooling)
@@ -2344,6 +2507,9 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.samp_rep_tech is not None and not isinstance(self.samp_rep_tech, str):
             self.samp_rep_tech = str(self.samp_rep_tech)
 
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
         if self.samp_source_mat_cat is not None and not isinstance(self.samp_source_mat_cat, str):
             self.samp_source_mat_cat = str(self.samp_source_mat_cat)
 
@@ -2353,11 +2519,26 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.samp_stor_media is not None and not isinstance(self.samp_stor_media, str):
             self.samp_stor_media = str(self.samp_stor_media)
 
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_transport_cont is not None and not isinstance(self.samp_transport_cont, str):
+            self.samp_transport_cont = str(self.samp_transport_cont)
+
         if self.samp_transport_dur is not None and not isinstance(self.samp_transport_dur, str):
             self.samp_transport_dur = str(self.samp_transport_dur)
 
         if self.samp_transport_temp is not None and not isinstance(self.samp_transport_temp, str):
             self.samp_transport_temp = str(self.samp_transport_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
 
         if self.sequencing_kit is not None and not isinstance(self.sequencing_kit, str):
             self.sequencing_kit = str(self.sequencing_kit)
@@ -2373,6 +2554,9 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
 
         if self.spikein_antibiotic is not None and not isinstance(self.spikein_antibiotic, str):
             self.spikein_antibiotic = str(self.spikein_antibiotic)
+
+        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
+            self.spikein_count = str(self.spikein_count)
 
         if self.spikein_growth_med is not None and not isinstance(self.spikein_growth_med, str):
             self.spikein_growth_med = str(self.spikein_growth_med)
@@ -2404,17 +2588,20 @@ class FoodAnimalAndAnimalFeed(EnvironmentalPackage):
         if self.study_tmnt is not None and not isinstance(self.study_tmnt, str):
             self.study_tmnt = str(self.study_tmnt)
 
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
         if self.timepoint is not None and not isinstance(self.timepoint, str):
             self.timepoint = str(self.timepoint)
-
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class FoodFarmEnvironment(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016020"]
@@ -2422,171 +2609,154 @@ class FoodFarmEnvironment(EnvironmentalPackage):
     class_name: ClassVar[str] = "FoodFarmEnvironment"
     class_model_uri: ClassVar[URIRef] = MIXS.FoodFarmEnvironment
 
-    samp_name: str = None
-    project_name: str = None
-    lat_lon: str = None
-    geo_loc_name: str = None
+    biotic_regm: str = None
+    chem_administration: str = None
     collection_date: str = None
     env_broad_scale: str = None
     env_local_scale: str = None
     env_medium: str = None
-    seq_meth: str = None
-    depth: str = None
-    biotic_regm: str = None
-    chem_administration: str = None
     food_product_type: str = None
-    samp_type: str = None
+    geo_loc_name: str = None
     IFSAC_category: str = None
-    samp_size: Optional[str] = None
-    samp_collect_device: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    humidity: Optional[str] = None
-    organism_count: Optional[str] = None
-    spikein_count: Optional[str] = None
-    samp_stor_temp: Optional[str] = None
-    solar_irradiance: Optional[str] = None
-    ventilation_rate: Optional[str] = None
-    samp_stor_dur: Optional[str] = None
-    wind_speed: Optional[str] = None
-    salinity: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    previous_land_use: Optional[str] = None
-    crop_rotation: Optional[str] = None
-    soil_type_meth: Optional[str] = None
-    tot_org_c_meth: Optional[str] = None
-    tot_nitro_cont_meth: Optional[str] = None
-    salinity_meth: Optional[str] = None
-    host_age: Optional[str] = None
-    host_dry_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_length: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    root_med_carbon: Optional[str] = None
-    root_med_macronutr: Optional[str] = None
-    root_med_micronutr: Optional[str] = None
-    season_temp: Optional[str] = None
-    season_precpt: Optional[str] = None
-    tot_org_carb: Optional[str] = None
-    tot_nitro_content: Optional[str] = None
-    conduc: Optional[str] = None
-    turbidity: Optional[str] = None
-    size_frac_low: Optional[str] = None
-    size_frac_up: Optional[str] = None
-    temp: Optional[str] = None
-    ventilation_type: Optional[str] = None
-    wind_direction: Optional[str] = None
-    genetic_mod: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    ph: Optional[float] = None
-    ances_data: Optional[str] = None
-    growth_habit: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_taxid: Optional[int] = None
-    mechanical_damage: Optional[str] = None
-    perturbation: Optional[str] = None
-    root_cond: Optional[str] = None
-    root_med_ph: Optional[float] = None
-    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
-    ph_meth: Optional[str] = None
-    growth_medium: Optional[str] = None
-    season: Optional[str] = None
+    lat_lon: str = None
+    project_name: str = None
+    samp_type: str = None
+    seq_meth: str = None
     farm_water_source: Optional[str] = None
+    host_disease_stat: Optional[str] = None
     plant_water_method: Optional[str] = None
-    air_PM_concen: Optional[str] = None
-    animal_feed_equip: Optional[str] = None
-    animal_intrusion: Optional[str] = None
+    adjacent_environment: Optional[str] = None
+    air_flow_impede: Optional[str] = None
+    air_pm_concen: Optional[str] = None
+    ances_data: Optional[str] = None
     anim_water_method: Optional[str] = None
+    animal_diet: Optional[str] = None
+    animal_feed_equip: Optional[str] = None
+    animal_group_size: Optional[int] = None
+    animal_housing: Optional[str] = None
+    animal_intrusion: Optional[str] = None
+    conduc: Optional[str] = None
+    crop_rotation: Optional[str] = None
     crop_yield: Optional[str] = None
+    cult_isol_date: Optional[str] = None
     cult_result: Optional[str] = None
     cult_result_org: Optional[str] = None
     cult_target: Optional[str] = None
-    plant_part_maturity: Optional[str] = None
-    adjacent_environment: Optional[str] = None
-    water_source_adjac: Optional[str] = None
-    farm_equip_shared: Optional[str] = None
+    date_extr_weath: Optional[str] = None
+    enrichment_protocol: Optional[str] = None
+    extr_weather_event: Optional[str] = None
+    farm_equip: Optional[str] = None
     farm_equip_san: Optional[str] = None
     farm_equip_san_freq: Optional[str] = None
-    farm_equip: Optional[str] = None
+    farm_equip_shared: Optional[str] = None
     fertilizer_admin: Optional[str] = None
     fertilizer_date: Optional[str] = None
-    animal_group_size: Optional[int] = None
-    animal_diet: Optional[str] = None
+    food_clean_proc: Optional[str] = None
     food_contact_surf: Optional[str] = None
     food_contain_wrap: Optional[str] = None
     food_harvest_proc: Optional[str] = None
     food_pack_medium: Optional[str] = None
     food_preserv_proc: Optional[str] = None
     food_prod_char: Optional[str] = None
-    prod_label_claims: Optional[str] = None
+    food_quality_date: Optional[str] = None
+    food_source: Optional[str] = None
     food_trav_mode: Optional[str] = None
     food_trav_vehic: Optional[str] = None
-    food_source: Optional[str] = None
     food_treat_proc: Optional[str] = None
-    extr_weather_event: Optional[str] = None
-    date_extr_weath: Optional[str] = None
+    genetic_mod: Optional[str] = None
+    growth_habit: Optional[str] = None
+    growth_medium: Optional[str] = None
+    host_age: Optional[str] = None
+    host_dry_mass: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_length: Optional[str] = None
+    host_phenotype: Optional[str] = None
     host_subspecf_genlin: Optional[str] = None
+    host_taxid: Optional[int] = None
+    host_tot_mass: Optional[str] = None
+    humidity: Optional[str] = None
     intended_consumer: Optional[str] = None
     library_prep_kit: Optional[str] = None
-    air_flow_impede: Optional[str] = None
     lot_number: Optional[str] = None
-    season_humidity: Optional[str] = None
+    mechanical_damage: Optional[str] = None
+    misc_param: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    organism_count: Optional[str] = None
     part_plant_animal: Optional[str] = None
+    perturbation: Optional[str] = None
+    ph: Optional[float] = None
+    ph_meth: Optional[str] = None
     plant_growth_med: Optional[str] = None
+    plant_part_maturity: Optional[str] = None
     plant_reprod_crop: Optional[str] = None
-    samp_purpose: Optional[str] = None
+    previous_land_use: Optional[str] = None
+    rel_location: Optional[str] = None
     repository_name: Optional[str] = None
+    root_cond: Optional[str] = None
+    root_med_carbon: Optional[str] = None
+    root_med_macronutr: Optional[str] = None
+    root_med_micronutr: Optional[str] = None
+    root_med_ph: Optional[float] = None
+    salinity: Optional[str] = None
+    salinity_meth: Optional[str] = None
     samp_pooling: Optional[str] = None
+    samp_purpose: Optional[str] = None
+    samp_size: Optional[str] = None
     samp_source_mat_cat: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    season: Optional[str] = None
+    season_humidity: Optional[str] = None
+    season_precpt: Optional[str] = None
+    season_temp: Optional[str] = None
     sequencing_kit: Optional[str] = None
     sequencing_location: Optional[str] = None
     serovar_or_serotype: Optional[str] = None
+    size_frac_low: Optional[str] = None
+    size_frac_up: Optional[str] = None
     soil_conductivity: Optional[str] = None
     soil_cover: Optional[str] = None
     soil_pH: Optional[float] = None
-    rel_location: Optional[str] = None
     soil_porosity: Optional[str] = None
     soil_temp: Optional[str] = None
     soil_texture_class: Optional[str] = None
-    soil_texture_meth: Optional[str] = None
     soil_type: Optional[str] = None
+    soil_type_meth: Optional[str] = None
+    solar_irradiance: Optional[str] = None
+    spikein_antibiotic: Optional[str] = None
+    spikein_count: Optional[str] = None
+    spikein_growth_med: Optional[str] = None
+    spikein_metal: Optional[str] = None
     spikein_org: Optional[str] = None
     spikein_serovar: Optional[str] = None
-    spikein_growth_med: Optional[str] = None
     spikein_strain: Optional[str] = None
-    spikein_antibiotic: Optional[str] = None
-    spikein_metal: Optional[str] = None
+    temp: Optional[str] = None
+    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
     timepoint: Optional[str] = None
+    tot_org_c_meth: Optional[str] = None
+    tot_org_carb: Optional[str] = None
+    turbidity: Optional[str] = None
+    ventilation_rate: Optional[str] = None
+    ventilation_type: Optional[str] = None
     water_frequency: Optional[str] = None
     water_pH: Optional[float] = None
+    water_source_adjac: Optional[str] = None
     water_source_shared: Optional[str] = None
-    enrichment_protocol: Optional[str] = None
-    food_quality_date: Optional[str] = None
-    animal_housing: Optional[str] = None
-    cult_isol_date: Optional[str] = None
-    food_clean_proc: Optional[str] = None
-    misc_param: Optional[str] = None
+    wind_direction: Optional[str] = None
+    wind_speed: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
+        if self._is_empty(self.biotic_regm):
+            self.MissingRequiredField("biotic_regm")
+        if not isinstance(self.biotic_regm, str):
+            self.biotic_regm = str(self.biotic_regm)
 
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
+        if self._is_empty(self.chem_administration):
+            self.MissingRequiredField("chem_administration")
+        if not isinstance(self.chem_administration, str):
+            self.chem_administration = str(self.chem_administration)
 
         if self._is_empty(self.collection_date):
             self.MissingRequiredField("collection_date")
@@ -2608,224 +2778,91 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if not isinstance(self.env_medium, str):
             self.env_medium = str(self.env_medium)
 
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self._is_empty(self.depth):
-            self.MissingRequiredField("depth")
-        if not isinstance(self.depth, str):
-            self.depth = str(self.depth)
-
-        if self._is_empty(self.biotic_regm):
-            self.MissingRequiredField("biotic_regm")
-        if not isinstance(self.biotic_regm, str):
-            self.biotic_regm = str(self.biotic_regm)
-
-        if self._is_empty(self.chem_administration):
-            self.MissingRequiredField("chem_administration")
-        if not isinstance(self.chem_administration, str):
-            self.chem_administration = str(self.chem_administration)
-
         if self._is_empty(self.food_product_type):
             self.MissingRequiredField("food_product_type")
         if not isinstance(self.food_product_type, str):
             self.food_product_type = str(self.food_product_type)
 
-        if self._is_empty(self.samp_type):
-            self.MissingRequiredField("samp_type")
-        if not isinstance(self.samp_type, str):
-            self.samp_type = str(self.samp_type)
+        if self._is_empty(self.geo_loc_name):
+            self.MissingRequiredField("geo_loc_name")
+        if not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
 
         if self._is_empty(self.IFSAC_category):
             self.MissingRequiredField("IFSAC_category")
         if not isinstance(self.IFSAC_category, str):
             self.IFSAC_category = str(self.IFSAC_category)
 
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
+        if self._is_empty(self.lat_lon):
+            self.MissingRequiredField("lat_lon")
+        if not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
 
-        if self.samp_collect_device is not None and not isinstance(self.samp_collect_device, str):
-            self.samp_collect_device = str(self.samp_collect_device)
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self._is_empty(self.samp_type):
+            self.MissingRequiredField("samp_type")
+        if not isinstance(self.samp_type, str):
+            self.samp_type = str(self.samp_type)
 
-        if self.humidity is not None and not isinstance(self.humidity, str):
-            self.humidity = str(self.humidity)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
-            self.spikein_count = str(self.spikein_count)
-
-        if self.samp_stor_temp is not None and not isinstance(self.samp_stor_temp, str):
-            self.samp_stor_temp = str(self.samp_stor_temp)
-
-        if self.solar_irradiance is not None and not isinstance(self.solar_irradiance, str):
-            self.solar_irradiance = str(self.solar_irradiance)
-
-        if self.ventilation_rate is not None and not isinstance(self.ventilation_rate, str):
-            self.ventilation_rate = str(self.ventilation_rate)
-
-        if self.samp_stor_dur is not None and not isinstance(self.samp_stor_dur, str):
-            self.samp_stor_dur = str(self.samp_stor_dur)
-
-        if self.wind_speed is not None and not isinstance(self.wind_speed, str):
-            self.wind_speed = str(self.wind_speed)
-
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
-            self.previous_land_use = str(self.previous_land_use)
-
-        if self.crop_rotation is not None and not isinstance(self.crop_rotation, str):
-            self.crop_rotation = str(self.crop_rotation)
-
-        if self.soil_type_meth is not None and not isinstance(self.soil_type_meth, str):
-            self.soil_type_meth = str(self.soil_type_meth)
-
-        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
-            self.tot_org_c_meth = str(self.tot_org_c_meth)
-
-        if self.tot_nitro_cont_meth is not None and not isinstance(self.tot_nitro_cont_meth, str):
-            self.tot_nitro_cont_meth = str(self.tot_nitro_cont_meth)
-
-        if self.salinity_meth is not None and not isinstance(self.salinity_meth, str):
-            self.salinity_meth = str(self.salinity_meth)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
-            self.host_dry_mass = str(self.host_dry_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_length is not None and not isinstance(self.host_length, str):
-            self.host_length = str(self.host_length)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.root_med_carbon is not None and not isinstance(self.root_med_carbon, str):
-            self.root_med_carbon = str(self.root_med_carbon)
-
-        if self.root_med_macronutr is not None and not isinstance(self.root_med_macronutr, str):
-            self.root_med_macronutr = str(self.root_med_macronutr)
-
-        if self.root_med_micronutr is not None and not isinstance(self.root_med_micronutr, str):
-            self.root_med_micronutr = str(self.root_med_micronutr)
-
-        if self.season_temp is not None and not isinstance(self.season_temp, str):
-            self.season_temp = str(self.season_temp)
-
-        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
-            self.season_precpt = str(self.season_precpt)
-
-        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
-            self.tot_org_carb = str(self.tot_org_carb)
-
-        if self.tot_nitro_content is not None and not isinstance(self.tot_nitro_content, str):
-            self.tot_nitro_content = str(self.tot_nitro_content)
-
-        if self.conduc is not None and not isinstance(self.conduc, str):
-            self.conduc = str(self.conduc)
-
-        if self.turbidity is not None and not isinstance(self.turbidity, str):
-            self.turbidity = str(self.turbidity)
-
-        if self.size_frac_low is not None and not isinstance(self.size_frac_low, str):
-            self.size_frac_low = str(self.size_frac_low)
-
-        if self.size_frac_up is not None and not isinstance(self.size_frac_up, str):
-            self.size_frac_up = str(self.size_frac_up)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.ventilation_type is not None and not isinstance(self.ventilation_type, str):
-            self.ventilation_type = str(self.ventilation_type)
-
-        if self.wind_direction is not None and not isinstance(self.wind_direction, str):
-            self.wind_direction = str(self.wind_direction)
-
-        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
-            self.genetic_mod = str(self.genetic_mod)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
-        if self.ances_data is not None and not isinstance(self.ances_data, str):
-            self.ances_data = str(self.ances_data)
-
-        if self.growth_habit is not None and not isinstance(self.growth_habit, str):
-            self.growth_habit = str(self.growth_habit)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
-            self.host_taxid = int(self.host_taxid)
-
-        if self.mechanical_damage is not None and not isinstance(self.mechanical_damage, str):
-            self.mechanical_damage = str(self.mechanical_damage)
-
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
-
-        if self.root_cond is not None and not isinstance(self.root_cond, str):
-            self.root_cond = str(self.root_cond)
-
-        if self.root_med_ph is not None and not isinstance(self.root_med_ph, float):
-            self.root_med_ph = float(self.root_med_ph)
-
-        if not isinstance(self.tillage, list):
-            self.tillage = [self.tillage] if self.tillage is not None else []
-        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
-
-        if self.ph_meth is not None and not isinstance(self.ph_meth, str):
-            self.ph_meth = str(self.ph_meth)
-
-        if self.growth_medium is not None and not isinstance(self.growth_medium, str):
-            self.growth_medium = str(self.growth_medium)
-
-        if self.season is not None and not isinstance(self.season, str):
-            self.season = str(self.season)
+        if self._is_empty(self.seq_meth):
+            self.MissingRequiredField("seq_meth")
+        if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         if self.farm_water_source is not None and not isinstance(self.farm_water_source, str):
             self.farm_water_source = str(self.farm_water_source)
 
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
         if self.plant_water_method is not None and not isinstance(self.plant_water_method, str):
             self.plant_water_method = str(self.plant_water_method)
 
-        if self.air_PM_concen is not None and not isinstance(self.air_PM_concen, str):
-            self.air_PM_concen = str(self.air_PM_concen)
+        if self.adjacent_environment is not None and not isinstance(self.adjacent_environment, str):
+            self.adjacent_environment = str(self.adjacent_environment)
 
-        if self.animal_feed_equip is not None and not isinstance(self.animal_feed_equip, str):
-            self.animal_feed_equip = str(self.animal_feed_equip)
+        if self.air_flow_impede is not None and not isinstance(self.air_flow_impede, str):
+            self.air_flow_impede = str(self.air_flow_impede)
 
-        if self.animal_intrusion is not None and not isinstance(self.animal_intrusion, str):
-            self.animal_intrusion = str(self.animal_intrusion)
+        if self.air_pm_concen is not None and not isinstance(self.air_pm_concen, str):
+            self.air_pm_concen = str(self.air_pm_concen)
+
+        if self.ances_data is not None and not isinstance(self.ances_data, str):
+            self.ances_data = str(self.ances_data)
 
         if self.anim_water_method is not None and not isinstance(self.anim_water_method, str):
             self.anim_water_method = str(self.anim_water_method)
 
+        if self.animal_diet is not None and not isinstance(self.animal_diet, str):
+            self.animal_diet = str(self.animal_diet)
+
+        if self.animal_feed_equip is not None and not isinstance(self.animal_feed_equip, str):
+            self.animal_feed_equip = str(self.animal_feed_equip)
+
+        if self.animal_group_size is not None and not isinstance(self.animal_group_size, int):
+            self.animal_group_size = int(self.animal_group_size)
+
+        if self.animal_housing is not None and not isinstance(self.animal_housing, str):
+            self.animal_housing = str(self.animal_housing)
+
+        if self.animal_intrusion is not None and not isinstance(self.animal_intrusion, str):
+            self.animal_intrusion = str(self.animal_intrusion)
+
+        if self.conduc is not None and not isinstance(self.conduc, str):
+            self.conduc = str(self.conduc)
+
+        if self.crop_rotation is not None and not isinstance(self.crop_rotation, str):
+            self.crop_rotation = str(self.crop_rotation)
+
         if self.crop_yield is not None and not isinstance(self.crop_yield, str):
             self.crop_yield = str(self.crop_yield)
+
+        if self.cult_isol_date is not None and not isinstance(self.cult_isol_date, str):
+            self.cult_isol_date = str(self.cult_isol_date)
 
         if self.cult_result is not None and not isinstance(self.cult_result, str):
             self.cult_result = str(self.cult_result)
@@ -2836,17 +2873,17 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.cult_target is not None and not isinstance(self.cult_target, str):
             self.cult_target = str(self.cult_target)
 
-        if self.plant_part_maturity is not None and not isinstance(self.plant_part_maturity, str):
-            self.plant_part_maturity = str(self.plant_part_maturity)
+        if self.date_extr_weath is not None and not isinstance(self.date_extr_weath, str):
+            self.date_extr_weath = str(self.date_extr_weath)
 
-        if self.adjacent_environment is not None and not isinstance(self.adjacent_environment, str):
-            self.adjacent_environment = str(self.adjacent_environment)
+        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
+            self.enrichment_protocol = str(self.enrichment_protocol)
 
-        if self.water_source_adjac is not None and not isinstance(self.water_source_adjac, str):
-            self.water_source_adjac = str(self.water_source_adjac)
+        if self.extr_weather_event is not None and not isinstance(self.extr_weather_event, str):
+            self.extr_weather_event = str(self.extr_weather_event)
 
-        if self.farm_equip_shared is not None and not isinstance(self.farm_equip_shared, str):
-            self.farm_equip_shared = str(self.farm_equip_shared)
+        if self.farm_equip is not None and not isinstance(self.farm_equip, str):
+            self.farm_equip = str(self.farm_equip)
 
         if self.farm_equip_san is not None and not isinstance(self.farm_equip_san, str):
             self.farm_equip_san = str(self.farm_equip_san)
@@ -2854,8 +2891,8 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.farm_equip_san_freq is not None and not isinstance(self.farm_equip_san_freq, str):
             self.farm_equip_san_freq = str(self.farm_equip_san_freq)
 
-        if self.farm_equip is not None and not isinstance(self.farm_equip, str):
-            self.farm_equip = str(self.farm_equip)
+        if self.farm_equip_shared is not None and not isinstance(self.farm_equip_shared, str):
+            self.farm_equip_shared = str(self.farm_equip_shared)
 
         if self.fertilizer_admin is not None and not isinstance(self.fertilizer_admin, str):
             self.fertilizer_admin = str(self.fertilizer_admin)
@@ -2863,11 +2900,8 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.fertilizer_date is not None and not isinstance(self.fertilizer_date, str):
             self.fertilizer_date = str(self.fertilizer_date)
 
-        if self.animal_group_size is not None and not isinstance(self.animal_group_size, int):
-            self.animal_group_size = int(self.animal_group_size)
-
-        if self.animal_diet is not None and not isinstance(self.animal_diet, str):
-            self.animal_diet = str(self.animal_diet)
+        if self.food_clean_proc is not None and not isinstance(self.food_clean_proc, str):
+            self.food_clean_proc = str(self.food_clean_proc)
 
         if self.food_contact_surf is not None and not isinstance(self.food_contact_surf, str):
             self.food_contact_surf = str(self.food_contact_surf)
@@ -2887,8 +2921,11 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.food_prod_char is not None and not isinstance(self.food_prod_char, str):
             self.food_prod_char = str(self.food_prod_char)
 
-        if self.prod_label_claims is not None and not isinstance(self.prod_label_claims, str):
-            self.prod_label_claims = str(self.prod_label_claims)
+        if self.food_quality_date is not None and not isinstance(self.food_quality_date, str):
+            self.food_quality_date = str(self.food_quality_date)
+
+        if self.food_source is not None and not isinstance(self.food_source, str):
+            self.food_source = str(self.food_source)
 
         if self.food_trav_mode is not None and not isinstance(self.food_trav_mode, str):
             self.food_trav_mode = str(self.food_trav_mode)
@@ -2896,20 +2933,47 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.food_trav_vehic is not None and not isinstance(self.food_trav_vehic, str):
             self.food_trav_vehic = str(self.food_trav_vehic)
 
-        if self.food_source is not None and not isinstance(self.food_source, str):
-            self.food_source = str(self.food_source)
-
         if self.food_treat_proc is not None and not isinstance(self.food_treat_proc, str):
             self.food_treat_proc = str(self.food_treat_proc)
 
-        if self.extr_weather_event is not None and not isinstance(self.extr_weather_event, str):
-            self.extr_weather_event = str(self.extr_weather_event)
+        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
+            self.genetic_mod = str(self.genetic_mod)
 
-        if self.date_extr_weath is not None and not isinstance(self.date_extr_weath, str):
-            self.date_extr_weath = str(self.date_extr_weath)
+        if self.growth_habit is not None and not isinstance(self.growth_habit, str):
+            self.growth_habit = str(self.growth_habit)
+
+        if self.growth_medium is not None and not isinstance(self.growth_medium, str):
+            self.growth_medium = str(self.growth_medium)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
+
+        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
+            self.host_dry_mass = str(self.host_dry_mass)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_length is not None and not isinstance(self.host_length, str):
+            self.host_length = str(self.host_length)
+
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
 
         if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
             self.host_subspecf_genlin = str(self.host_subspecf_genlin)
+
+        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
+            self.host_taxid = int(self.host_taxid)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.humidity is not None and not isinstance(self.humidity, str):
+            self.humidity = str(self.humidity)
 
         if self.intended_consumer is not None and not isinstance(self.intended_consumer, str):
             self.intended_consumer = str(self.intended_consumer)
@@ -2917,35 +2981,104 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.library_prep_kit is not None and not isinstance(self.library_prep_kit, str):
             self.library_prep_kit = str(self.library_prep_kit)
 
-        if self.air_flow_impede is not None and not isinstance(self.air_flow_impede, str):
-            self.air_flow_impede = str(self.air_flow_impede)
-
         if self.lot_number is not None and not isinstance(self.lot_number, str):
             self.lot_number = str(self.lot_number)
 
-        if self.season_humidity is not None and not isinstance(self.season_humidity, str):
-            self.season_humidity = str(self.season_humidity)
+        if self.mechanical_damage is not None and not isinstance(self.mechanical_damage, str):
+            self.mechanical_damage = str(self.mechanical_damage)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
 
         if self.part_plant_animal is not None and not isinstance(self.part_plant_animal, str):
             self.part_plant_animal = str(self.part_plant_animal)
 
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
+
+        if self.ph_meth is not None and not isinstance(self.ph_meth, str):
+            self.ph_meth = str(self.ph_meth)
+
         if self.plant_growth_med is not None and not isinstance(self.plant_growth_med, str):
             self.plant_growth_med = str(self.plant_growth_med)
+
+        if self.plant_part_maturity is not None and not isinstance(self.plant_part_maturity, str):
+            self.plant_part_maturity = str(self.plant_part_maturity)
 
         if self.plant_reprod_crop is not None and not isinstance(self.plant_reprod_crop, str):
             self.plant_reprod_crop = str(self.plant_reprod_crop)
 
-        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
-            self.samp_purpose = str(self.samp_purpose)
+        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
+            self.previous_land_use = str(self.previous_land_use)
+
+        if self.rel_location is not None and not isinstance(self.rel_location, str):
+            self.rel_location = str(self.rel_location)
 
         if self.repository_name is not None and not isinstance(self.repository_name, str):
             self.repository_name = str(self.repository_name)
 
+        if self.root_cond is not None and not isinstance(self.root_cond, str):
+            self.root_cond = str(self.root_cond)
+
+        if self.root_med_carbon is not None and not isinstance(self.root_med_carbon, str):
+            self.root_med_carbon = str(self.root_med_carbon)
+
+        if self.root_med_macronutr is not None and not isinstance(self.root_med_macronutr, str):
+            self.root_med_macronutr = str(self.root_med_macronutr)
+
+        if self.root_med_micronutr is not None and not isinstance(self.root_med_micronutr, str):
+            self.root_med_micronutr = str(self.root_med_micronutr)
+
+        if self.root_med_ph is not None and not isinstance(self.root_med_ph, float):
+            self.root_med_ph = float(self.root_med_ph)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
+        if self.salinity_meth is not None and not isinstance(self.salinity_meth, str):
+            self.salinity_meth = str(self.salinity_meth)
+
         if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
             self.samp_pooling = str(self.samp_pooling)
 
+        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
+            self.samp_purpose = str(self.samp_purpose)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
         if self.samp_source_mat_cat is not None and not isinstance(self.samp_source_mat_cat, str):
             self.samp_source_mat_cat = str(self.samp_source_mat_cat)
+
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.season is not None and not isinstance(self.season, str):
+            self.season = str(self.season)
+
+        if self.season_humidity is not None and not isinstance(self.season_humidity, str):
+            self.season_humidity = str(self.season_humidity)
+
+        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
+            self.season_precpt = str(self.season_precpt)
+
+        if self.season_temp is not None and not isinstance(self.season_temp, str):
+            self.season_temp = str(self.season_temp)
 
         if self.sequencing_kit is not None and not isinstance(self.sequencing_kit, str):
             self.sequencing_kit = str(self.sequencing_kit)
@@ -2956,6 +3089,12 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.serovar_or_serotype is not None and not isinstance(self.serovar_or_serotype, str):
             self.serovar_or_serotype = str(self.serovar_or_serotype)
 
+        if self.size_frac_low is not None and not isinstance(self.size_frac_low, str):
+            self.size_frac_low = str(self.size_frac_low)
+
+        if self.size_frac_up is not None and not isinstance(self.size_frac_up, str):
+            self.size_frac_up = str(self.size_frac_up)
+
         if self.soil_conductivity is not None and not isinstance(self.soil_conductivity, str):
             self.soil_conductivity = str(self.soil_conductivity)
 
@@ -2964,9 +3103,6 @@ class FoodFarmEnvironment(EnvironmentalPackage):
 
         if self.soil_pH is not None and not isinstance(self.soil_pH, float):
             self.soil_pH = float(self.soil_pH)
-
-        if self.rel_location is not None and not isinstance(self.rel_location, str):
-            self.rel_location = str(self.rel_location)
 
         if self.soil_porosity is not None and not isinstance(self.soil_porosity, str):
             self.soil_porosity = str(self.soil_porosity)
@@ -2977,11 +3113,26 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.soil_texture_class is not None and not isinstance(self.soil_texture_class, str):
             self.soil_texture_class = str(self.soil_texture_class)
 
-        if self.soil_texture_meth is not None and not isinstance(self.soil_texture_meth, str):
-            self.soil_texture_meth = str(self.soil_texture_meth)
-
         if self.soil_type is not None and not isinstance(self.soil_type, str):
             self.soil_type = str(self.soil_type)
+
+        if self.soil_type_meth is not None and not isinstance(self.soil_type_meth, str):
+            self.soil_type_meth = str(self.soil_type_meth)
+
+        if self.solar_irradiance is not None and not isinstance(self.solar_irradiance, str):
+            self.solar_irradiance = str(self.solar_irradiance)
+
+        if self.spikein_antibiotic is not None and not isinstance(self.spikein_antibiotic, str):
+            self.spikein_antibiotic = str(self.spikein_antibiotic)
+
+        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
+            self.spikein_count = str(self.spikein_count)
+
+        if self.spikein_growth_med is not None and not isinstance(self.spikein_growth_med, str):
+            self.spikein_growth_med = str(self.spikein_growth_med)
+
+        if self.spikein_metal is not None and not isinstance(self.spikein_metal, str):
+            self.spikein_metal = str(self.spikein_metal)
 
         if self.spikein_org is not None and not isinstance(self.spikein_org, str):
             self.spikein_org = str(self.spikein_org)
@@ -2989,20 +3140,33 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.spikein_serovar is not None and not isinstance(self.spikein_serovar, str):
             self.spikein_serovar = str(self.spikein_serovar)
 
-        if self.spikein_growth_med is not None and not isinstance(self.spikein_growth_med, str):
-            self.spikein_growth_med = str(self.spikein_growth_med)
-
         if self.spikein_strain is not None and not isinstance(self.spikein_strain, str):
             self.spikein_strain = str(self.spikein_strain)
 
-        if self.spikein_antibiotic is not None and not isinstance(self.spikein_antibiotic, str):
-            self.spikein_antibiotic = str(self.spikein_antibiotic)
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
-        if self.spikein_metal is not None and not isinstance(self.spikein_metal, str):
-            self.spikein_metal = str(self.spikein_metal)
+        if not isinstance(self.tillage, list):
+            self.tillage = [self.tillage] if self.tillage is not None else []
+        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
 
         if self.timepoint is not None and not isinstance(self.timepoint, str):
             self.timepoint = str(self.timepoint)
+
+        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
+            self.tot_org_c_meth = str(self.tot_org_c_meth)
+
+        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
+            self.tot_org_carb = str(self.tot_org_carb)
+
+        if self.turbidity is not None and not isinstance(self.turbidity, str):
+            self.turbidity = str(self.turbidity)
+
+        if self.ventilation_rate is not None and not isinstance(self.ventilation_rate, str):
+            self.ventilation_rate = str(self.ventilation_rate)
+
+        if self.ventilation_type is not None and not isinstance(self.ventilation_type, str):
+            self.ventilation_type = str(self.ventilation_type)
 
         if self.water_frequency is not None and not isinstance(self.water_frequency, str):
             self.water_frequency = str(self.water_frequency)
@@ -3010,32 +3174,26 @@ class FoodFarmEnvironment(EnvironmentalPackage):
         if self.water_pH is not None and not isinstance(self.water_pH, float):
             self.water_pH = float(self.water_pH)
 
+        if self.water_source_adjac is not None and not isinstance(self.water_source_adjac, str):
+            self.water_source_adjac = str(self.water_source_adjac)
+
         if self.water_source_shared is not None and not isinstance(self.water_source_shared, str):
             self.water_source_shared = str(self.water_source_shared)
 
-        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
-            self.enrichment_protocol = str(self.enrichment_protocol)
+        if self.wind_direction is not None and not isinstance(self.wind_direction, str):
+            self.wind_direction = str(self.wind_direction)
 
-        if self.food_quality_date is not None and not isinstance(self.food_quality_date, str):
-            self.food_quality_date = str(self.food_quality_date)
-
-        if self.animal_housing is not None and not isinstance(self.animal_housing, str):
-            self.animal_housing = str(self.animal_housing)
-
-        if self.cult_isol_date is not None and not isinstance(self.cult_isol_date, str):
-            self.cult_isol_date = str(self.cult_isol_date)
-
-        if self.food_clean_proc is not None and not isinstance(self.food_clean_proc, str):
-            self.food_clean_proc = str(self.food_clean_proc)
-
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.wind_speed is not None and not isinstance(self.wind_speed, str):
+            self.wind_speed = str(self.wind_speed)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class FoodFoodProductionFacility(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016021"]
@@ -3043,131 +3201,112 @@ class FoodFoodProductionFacility(EnvironmentalPackage):
     class_name: ClassVar[str] = "FoodFoodProductionFacility"
     class_model_uri: ClassVar[URIRef] = MIXS.FoodFoodProductionFacility
 
-    samp_name: str = None
-    project_name: str = None
-    lat_lon: str = None
-    geo_loc_name: str = None
+    coll_site_geo_feat: str = None
     collection_date: str = None
     env_broad_scale: str = None
     env_local_scale: str = None
     env_medium: str = None
-    seq_meth: str = None
-    coll_site_geo_feat: str = None
-    samp_source_mat_cat: str = None
-    samp_type: str = None
-    samp_stor_media: str = None
-    samp_stor_device: str = None
-    food_product_type: str = None
-    IFSAC_category: str = None
-    food_product_qual: str = None
     food_contact_surf: str = None
-    samp_size: Optional[str] = None
-    samp_collect_device: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_stor_temp: Optional[str] = None
-    samp_stor_dur: Optional[str] = None
+    food_product_qual: str = None
+    food_product_type: str = None
+    geo_loc_name: str = None
+    IFSAC_category: str = None
+    lat_lon: str = None
+    project_name: str = None
+    samp_source_mat_cat: str = None
+    samp_stor_device: str = None
+    samp_stor_media: str = None
+    samp_type: str = None
+    seq_meth: str = None
     air_temp: Optional[str] = None
-    room_dim: Optional[str] = None
-    freq_clean: Optional[str] = None
-    samp_room_id: Optional[int] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    pool_dna_extracts: Optional[str] = None
-    samp_stor_loc: Optional[str] = None
-    surf_material: Optional[str] = None
-    indoor_surf: Optional[str] = None
-    avg_occup: Optional[float] = None
-    samp_floor: Optional[str] = None
-    genetic_mod: Optional[str] = None
-    facility_type: Optional[str] = None
-    food_trav_mode: Optional[str] = None
-    food_trav_vehic: Optional[str] = None
-    samp_transport_dur: Optional[str] = None
-    samp_transport_temp: Optional[str] = None
-    samp_collect_method: Optional[str] = None
-    num_samp_collect: Optional[str] = None
-    lot_number: Optional[str] = None
-    hygienic_area: Optional[str] = None
-    env_monitoring_zone: Optional[str] = None
     area_samp_size: Optional[str] = None
-    samp_surf_moisture: Optional[str] = None
-    samp_loc_condition: Optional[str] = None
-    biocide_used: Optional[str] = None
-    ster_meth_samp_room: Optional[str] = None
-    enrichment_protocol: Optional[str] = None
-    cult_target: Optional[str] = None
-    microb_cult_med: Optional[str] = None
-    timepoint: Optional[str] = None
+    avg_occup: Optional[float] = None
     bacterial_density: Optional[str] = None
+    biocide_used: Optional[str] = None
     cult_isol_date: Optional[str] = None
     cult_result: Optional[str] = None
     cult_result_org: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
-    samp_pooling: Optional[str] = None
-    samp_purpose: Optional[str] = None
-    samp_rep_tech: Optional[str] = None
-    samp_rep_biol: Optional[str] = None
-    samp_transport_cont: Optional[str] = None
-    study_design: Optional[str] = None
-    nucl_acid_ext_kit: Optional[str] = None
-    library_prep_kit: Optional[str] = None
-    sequencing_kit: Optional[str] = None
-    sequencing_location: Optional[str] = None
-    study_inc_temp: Optional[str] = None
-    study_inc_dur: Optional[str] = None
-    study_timecourse: Optional[str] = None
-    study_tmnt: Optional[str] = None
-    food_source: Optional[str] = None
+    cult_target: Optional[str] = None
+    dietary_claim_use: Optional[str] = None
+    enrichment_protocol: Optional[str] = None
+    env_monitoring_zone: Optional[str] = None
+    experimental_factor: Optional[str] = None
+    facility_type: Optional[str] = None
+    food_additive: Optional[str] = None
+    food_allergen_label: Optional[str] = None
+    food_contain_wrap: Optional[str] = None
+    food_cooking_proc: Optional[str] = None
     food_dis_point: Optional[str] = None
     food_dis_point_city: Optional[str] = None
-    food_origin: Optional[str] = None
-    food_prod_synonym: Optional[str] = None
-    food_additive: Optional[str] = None
-    food_trace_list: Optional[str] = None
-    part_plant_animal: Optional[str] = None
     food_ingredient: Optional[str] = None
-    spec_intended_cons: Optional[str] = None
-    HACCP_term: Optional[str] = None
-    dietary_claim_use: Optional[str] = None
-    food_allergen_label: Optional[str] = None
-    food_prod_char: Optional[str] = None
-    prod_label_claims: Optional[str] = None
     food_name_status: Optional[str] = None
-    food_preserv_proc: Optional[str] = None
-    food_cooking_proc: Optional[str] = None
-    food_treat_proc: Optional[str] = None
-    food_contain_wrap: Optional[str] = None
+    food_origin: Optional[str] = None
     food_pack_capacity: Optional[str] = None
+    food_pack_integrity: Optional[str] = None
     food_pack_medium: Optional[str] = None
+    food_preserv_proc: Optional[str] = None
     food_prior_contact: Optional[str] = None
     food_prod: Optional[str] = None
+    food_prod_char: Optional[str] = None
+    food_prod_synonym: Optional[str] = None
     food_quality_date: Optional[str] = None
-    repository_name: Optional[str] = None
+    food_source: Optional[str] = None
+    food_trace_list: Optional[str] = None
+    food_trav_mode: Optional[str] = None
+    food_trav_vehic: Optional[str] = None
+    food_treat_proc: Optional[str] = None
+    freq_clean: Optional[str] = None
+    genetic_mod: Optional[str] = None
+    HACCP_term: Optional[str] = None
+    hygienic_area: Optional[str] = None
+    indoor_surf: Optional[str] = None
     intended_consumer: Optional[str] = None
-    food_pack_integrity: Optional[str] = None
+    library_prep_kit: Optional[str] = None
+    lot_number: Optional[str] = None
+    microb_cult_med: Optional[str] = None
     misc_param: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    nucl_acid_ext_kit: Optional[str] = None
+    num_samp_collect: Optional[str] = None
+    organism_count: Optional[str] = None
+    part_plant_animal: Optional[str] = None
+    pool_dna_extracts: Optional[str] = None
+    repository_name: Optional[str] = None
+    room_dim: Optional[str] = None
+    samp_floor: Optional[str] = None
+    samp_loc_condition: Optional[str] = None
+    samp_pooling: Optional[str] = None
+    samp_purpose: Optional[str] = None
+    samp_rep_biol: Optional[str] = None
+    samp_rep_tech: Optional[str] = None
+    samp_room_id: Optional[int] = None
+    samp_size: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_surf_moisture: Optional[str] = None
+    samp_transport_cont: Optional[str] = None
+    samp_transport_dur: Optional[str] = None
+    samp_transport_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    sequencing_kit: Optional[str] = None
+    sequencing_location: Optional[str] = None
+    spec_intended_cons: Optional[str] = None
+    ster_meth_samp_room: Optional[str] = None
+    study_design: Optional[str] = None
+    study_inc_dur: Optional[str] = None
+    study_inc_temp: Optional[str] = None
+    study_timecourse: Optional[str] = None
+    study_tmnt: Optional[str] = None
+    surf_material: Optional[str] = None
+    timepoint: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
+        if self._is_empty(self.coll_site_geo_feat):
+            self.MissingRequiredField("coll_site_geo_feat")
+        if not isinstance(self.coll_site_geo_feat, str):
+            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
 
         if self._is_empty(self.collection_date):
             self.MissingRequiredField("collection_date")
@@ -3189,172 +3328,80 @@ class FoodFoodProductionFacility(EnvironmentalPackage):
         if not isinstance(self.env_medium, str):
             self.env_medium = str(self.env_medium)
 
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self._is_empty(self.coll_site_geo_feat):
-            self.MissingRequiredField("coll_site_geo_feat")
-        if not isinstance(self.coll_site_geo_feat, str):
-            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
-
-        if self._is_empty(self.samp_source_mat_cat):
-            self.MissingRequiredField("samp_source_mat_cat")
-        if not isinstance(self.samp_source_mat_cat, str):
-            self.samp_source_mat_cat = str(self.samp_source_mat_cat)
-
-        if self._is_empty(self.samp_type):
-            self.MissingRequiredField("samp_type")
-        if not isinstance(self.samp_type, str):
-            self.samp_type = str(self.samp_type)
-
-        if self._is_empty(self.samp_stor_media):
-            self.MissingRequiredField("samp_stor_media")
-        if not isinstance(self.samp_stor_media, str):
-            self.samp_stor_media = str(self.samp_stor_media)
-
-        if self._is_empty(self.samp_stor_device):
-            self.MissingRequiredField("samp_stor_device")
-        if not isinstance(self.samp_stor_device, str):
-            self.samp_stor_device = str(self.samp_stor_device)
-
-        if self._is_empty(self.food_product_type):
-            self.MissingRequiredField("food_product_type")
-        if not isinstance(self.food_product_type, str):
-            self.food_product_type = str(self.food_product_type)
-
-        if self._is_empty(self.IFSAC_category):
-            self.MissingRequiredField("IFSAC_category")
-        if not isinstance(self.IFSAC_category, str):
-            self.IFSAC_category = str(self.IFSAC_category)
+        if self._is_empty(self.food_contact_surf):
+            self.MissingRequiredField("food_contact_surf")
+        if not isinstance(self.food_contact_surf, str):
+            self.food_contact_surf = str(self.food_contact_surf)
 
         if self._is_empty(self.food_product_qual):
             self.MissingRequiredField("food_product_qual")
         if not isinstance(self.food_product_qual, str):
             self.food_product_qual = str(self.food_product_qual)
 
-        if self._is_empty(self.food_contact_surf):
-            self.MissingRequiredField("food_contact_surf")
-        if not isinstance(self.food_contact_surf, str):
-            self.food_contact_surf = str(self.food_contact_surf)
+        if self._is_empty(self.food_product_type):
+            self.MissingRequiredField("food_product_type")
+        if not isinstance(self.food_product_type, str):
+            self.food_product_type = str(self.food_product_type)
 
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
+        if self._is_empty(self.geo_loc_name):
+            self.MissingRequiredField("geo_loc_name")
+        if not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
 
-        if self.samp_collect_device is not None and not isinstance(self.samp_collect_device, str):
-            self.samp_collect_device = str(self.samp_collect_device)
+        if self._is_empty(self.IFSAC_category):
+            self.MissingRequiredField("IFSAC_category")
+        if not isinstance(self.IFSAC_category, str):
+            self.IFSAC_category = str(self.IFSAC_category)
 
-        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
-            self.experimental_factor = str(self.experimental_factor)
+        if self._is_empty(self.lat_lon):
+            self.MissingRequiredField("lat_lon")
+        if not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
 
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
+        if self._is_empty(self.samp_source_mat_cat):
+            self.MissingRequiredField("samp_source_mat_cat")
+        if not isinstance(self.samp_source_mat_cat, str):
+            self.samp_source_mat_cat = str(self.samp_source_mat_cat)
 
-        if self.samp_stor_temp is not None and not isinstance(self.samp_stor_temp, str):
-            self.samp_stor_temp = str(self.samp_stor_temp)
+        if self._is_empty(self.samp_stor_device):
+            self.MissingRequiredField("samp_stor_device")
+        if not isinstance(self.samp_stor_device, str):
+            self.samp_stor_device = str(self.samp_stor_device)
 
-        if self.samp_stor_dur is not None and not isinstance(self.samp_stor_dur, str):
-            self.samp_stor_dur = str(self.samp_stor_dur)
+        if self._is_empty(self.samp_stor_media):
+            self.MissingRequiredField("samp_stor_media")
+        if not isinstance(self.samp_stor_media, str):
+            self.samp_stor_media = str(self.samp_stor_media)
+
+        if self._is_empty(self.samp_type):
+            self.MissingRequiredField("samp_type")
+        if not isinstance(self.samp_type, str):
+            self.samp_type = str(self.samp_type)
+
+        if self._is_empty(self.seq_meth):
+            self.MissingRequiredField("seq_meth")
+        if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         if self.air_temp is not None and not isinstance(self.air_temp, str):
             self.air_temp = str(self.air_temp)
 
-        if self.room_dim is not None and not isinstance(self.room_dim, str):
-            self.room_dim = str(self.room_dim)
-
-        if self.freq_clean is not None and not isinstance(self.freq_clean, str):
-            self.freq_clean = str(self.freq_clean)
-
-        if self.samp_room_id is not None and not isinstance(self.samp_room_id, int):
-            self.samp_room_id = int(self.samp_room_id)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
-            self.pool_dna_extracts = str(self.pool_dna_extracts)
-
-        if self.samp_stor_loc is not None and not isinstance(self.samp_stor_loc, str):
-            self.samp_stor_loc = str(self.samp_stor_loc)
-
-        if self.surf_material is not None and not isinstance(self.surf_material, str):
-            self.surf_material = str(self.surf_material)
-
-        if self.indoor_surf is not None and not isinstance(self.indoor_surf, str):
-            self.indoor_surf = str(self.indoor_surf)
+        if self.area_samp_size is not None and not isinstance(self.area_samp_size, str):
+            self.area_samp_size = str(self.area_samp_size)
 
         if self.avg_occup is not None and not isinstance(self.avg_occup, float):
             self.avg_occup = float(self.avg_occup)
 
-        if self.samp_floor is not None and not isinstance(self.samp_floor, str):
-            self.samp_floor = str(self.samp_floor)
-
-        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
-            self.genetic_mod = str(self.genetic_mod)
-
-        if self.facility_type is not None and not isinstance(self.facility_type, str):
-            self.facility_type = str(self.facility_type)
-
-        if self.food_trav_mode is not None and not isinstance(self.food_trav_mode, str):
-            self.food_trav_mode = str(self.food_trav_mode)
-
-        if self.food_trav_vehic is not None and not isinstance(self.food_trav_vehic, str):
-            self.food_trav_vehic = str(self.food_trav_vehic)
-
-        if self.samp_transport_dur is not None and not isinstance(self.samp_transport_dur, str):
-            self.samp_transport_dur = str(self.samp_transport_dur)
-
-        if self.samp_transport_temp is not None and not isinstance(self.samp_transport_temp, str):
-            self.samp_transport_temp = str(self.samp_transport_temp)
-
-        if self.samp_collect_method is not None and not isinstance(self.samp_collect_method, str):
-            self.samp_collect_method = str(self.samp_collect_method)
-
-        if self.num_samp_collect is not None and not isinstance(self.num_samp_collect, str):
-            self.num_samp_collect = str(self.num_samp_collect)
-
-        if self.lot_number is not None and not isinstance(self.lot_number, str):
-            self.lot_number = str(self.lot_number)
-
-        if self.hygienic_area is not None and not isinstance(self.hygienic_area, str):
-            self.hygienic_area = str(self.hygienic_area)
-
-        if self.env_monitoring_zone is not None and not isinstance(self.env_monitoring_zone, str):
-            self.env_monitoring_zone = str(self.env_monitoring_zone)
-
-        if self.area_samp_size is not None and not isinstance(self.area_samp_size, str):
-            self.area_samp_size = str(self.area_samp_size)
-
-        if self.samp_surf_moisture is not None and not isinstance(self.samp_surf_moisture, str):
-            self.samp_surf_moisture = str(self.samp_surf_moisture)
-
-        if self.samp_loc_condition is not None and not isinstance(self.samp_loc_condition, str):
-            self.samp_loc_condition = str(self.samp_loc_condition)
+        if self.bacterial_density is not None and not isinstance(self.bacterial_density, str):
+            self.bacterial_density = str(self.bacterial_density)
 
         if self.biocide_used is not None and not isinstance(self.biocide_used, str):
             self.biocide_used = str(self.biocide_used)
-
-        if self.ster_meth_samp_room is not None and not isinstance(self.ster_meth_samp_room, str):
-            self.ster_meth_samp_room = str(self.ster_meth_samp_room)
-
-        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
-            self.enrichment_protocol = str(self.enrichment_protocol)
-
-        if self.cult_target is not None and not isinstance(self.cult_target, str):
-            self.cult_target = str(self.cult_target)
-
-        if self.microb_cult_med is not None and not isinstance(self.microb_cult_med, str):
-            self.microb_cult_med = str(self.microb_cult_med)
-
-        if self.timepoint is not None and not isinstance(self.timepoint, str):
-            self.timepoint = str(self.timepoint)
-
-        if self.bacterial_density is not None and not isinstance(self.bacterial_density, str):
-            self.bacterial_density = str(self.bacterial_density)
 
         if self.cult_isol_date is not None and not isinstance(self.cult_isol_date, str):
             self.cult_isol_date = str(self.cult_isol_date)
@@ -3365,53 +3412,35 @@ class FoodFoodProductionFacility(EnvironmentalPackage):
         if self.cult_result_org is not None and not isinstance(self.cult_result_org, str):
             self.cult_result_org = str(self.cult_result_org)
 
-        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
-            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+        if self.cult_target is not None and not isinstance(self.cult_target, str):
+            self.cult_target = str(self.cult_target)
 
-        if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
-            self.samp_pooling = str(self.samp_pooling)
+        if self.dietary_claim_use is not None and not isinstance(self.dietary_claim_use, str):
+            self.dietary_claim_use = str(self.dietary_claim_use)
 
-        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
-            self.samp_purpose = str(self.samp_purpose)
+        if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
+            self.enrichment_protocol = str(self.enrichment_protocol)
 
-        if self.samp_rep_tech is not None and not isinstance(self.samp_rep_tech, str):
-            self.samp_rep_tech = str(self.samp_rep_tech)
+        if self.env_monitoring_zone is not None and not isinstance(self.env_monitoring_zone, str):
+            self.env_monitoring_zone = str(self.env_monitoring_zone)
 
-        if self.samp_rep_biol is not None and not isinstance(self.samp_rep_biol, str):
-            self.samp_rep_biol = str(self.samp_rep_biol)
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
 
-        if self.samp_transport_cont is not None and not isinstance(self.samp_transport_cont, str):
-            self.samp_transport_cont = str(self.samp_transport_cont)
+        if self.facility_type is not None and not isinstance(self.facility_type, str):
+            self.facility_type = str(self.facility_type)
 
-        if self.study_design is not None and not isinstance(self.study_design, str):
-            self.study_design = str(self.study_design)
+        if self.food_additive is not None and not isinstance(self.food_additive, str):
+            self.food_additive = str(self.food_additive)
 
-        if self.nucl_acid_ext_kit is not None and not isinstance(self.nucl_acid_ext_kit, str):
-            self.nucl_acid_ext_kit = str(self.nucl_acid_ext_kit)
+        if self.food_allergen_label is not None and not isinstance(self.food_allergen_label, str):
+            self.food_allergen_label = str(self.food_allergen_label)
 
-        if self.library_prep_kit is not None and not isinstance(self.library_prep_kit, str):
-            self.library_prep_kit = str(self.library_prep_kit)
+        if self.food_contain_wrap is not None and not isinstance(self.food_contain_wrap, str):
+            self.food_contain_wrap = str(self.food_contain_wrap)
 
-        if self.sequencing_kit is not None and not isinstance(self.sequencing_kit, str):
-            self.sequencing_kit = str(self.sequencing_kit)
-
-        if self.sequencing_location is not None and not isinstance(self.sequencing_location, str):
-            self.sequencing_location = str(self.sequencing_location)
-
-        if self.study_inc_temp is not None and not isinstance(self.study_inc_temp, str):
-            self.study_inc_temp = str(self.study_inc_temp)
-
-        if self.study_inc_dur is not None and not isinstance(self.study_inc_dur, str):
-            self.study_inc_dur = str(self.study_inc_dur)
-
-        if self.study_timecourse is not None and not isinstance(self.study_timecourse, str):
-            self.study_timecourse = str(self.study_timecourse)
-
-        if self.study_tmnt is not None and not isinstance(self.study_tmnt, str):
-            self.study_tmnt = str(self.study_tmnt)
-
-        if self.food_source is not None and not isinstance(self.food_source, str):
-            self.food_source = str(self.food_source)
+        if self.food_cooking_proc is not None and not isinstance(self.food_cooking_proc, str):
+            self.food_cooking_proc = str(self.food_cooking_proc)
 
         if self.food_dis_point is not None and not isinstance(self.food_dis_point, str):
             self.food_dis_point = str(self.food_dis_point)
@@ -3419,62 +3448,26 @@ class FoodFoodProductionFacility(EnvironmentalPackage):
         if self.food_dis_point_city is not None and not isinstance(self.food_dis_point_city, str):
             self.food_dis_point_city = str(self.food_dis_point_city)
 
-        if self.food_origin is not None and not isinstance(self.food_origin, str):
-            self.food_origin = str(self.food_origin)
-
-        if self.food_prod_synonym is not None and not isinstance(self.food_prod_synonym, str):
-            self.food_prod_synonym = str(self.food_prod_synonym)
-
-        if self.food_additive is not None and not isinstance(self.food_additive, str):
-            self.food_additive = str(self.food_additive)
-
-        if self.food_trace_list is not None and not isinstance(self.food_trace_list, str):
-            self.food_trace_list = str(self.food_trace_list)
-
-        if self.part_plant_animal is not None and not isinstance(self.part_plant_animal, str):
-            self.part_plant_animal = str(self.part_plant_animal)
-
         if self.food_ingredient is not None and not isinstance(self.food_ingredient, str):
             self.food_ingredient = str(self.food_ingredient)
-
-        if self.spec_intended_cons is not None and not isinstance(self.spec_intended_cons, str):
-            self.spec_intended_cons = str(self.spec_intended_cons)
-
-        if self.HACCP_term is not None and not isinstance(self.HACCP_term, str):
-            self.HACCP_term = str(self.HACCP_term)
-
-        if self.dietary_claim_use is not None and not isinstance(self.dietary_claim_use, str):
-            self.dietary_claim_use = str(self.dietary_claim_use)
-
-        if self.food_allergen_label is not None and not isinstance(self.food_allergen_label, str):
-            self.food_allergen_label = str(self.food_allergen_label)
-
-        if self.food_prod_char is not None and not isinstance(self.food_prod_char, str):
-            self.food_prod_char = str(self.food_prod_char)
-
-        if self.prod_label_claims is not None and not isinstance(self.prod_label_claims, str):
-            self.prod_label_claims = str(self.prod_label_claims)
 
         if self.food_name_status is not None and not isinstance(self.food_name_status, str):
             self.food_name_status = str(self.food_name_status)
 
-        if self.food_preserv_proc is not None and not isinstance(self.food_preserv_proc, str):
-            self.food_preserv_proc = str(self.food_preserv_proc)
-
-        if self.food_cooking_proc is not None and not isinstance(self.food_cooking_proc, str):
-            self.food_cooking_proc = str(self.food_cooking_proc)
-
-        if self.food_treat_proc is not None and not isinstance(self.food_treat_proc, str):
-            self.food_treat_proc = str(self.food_treat_proc)
-
-        if self.food_contain_wrap is not None and not isinstance(self.food_contain_wrap, str):
-            self.food_contain_wrap = str(self.food_contain_wrap)
+        if self.food_origin is not None and not isinstance(self.food_origin, str):
+            self.food_origin = str(self.food_origin)
 
         if self.food_pack_capacity is not None and not isinstance(self.food_pack_capacity, str):
             self.food_pack_capacity = str(self.food_pack_capacity)
 
+        if self.food_pack_integrity is not None and not isinstance(self.food_pack_integrity, str):
+            self.food_pack_integrity = str(self.food_pack_integrity)
+
         if self.food_pack_medium is not None and not isinstance(self.food_pack_medium, str):
             self.food_pack_medium = str(self.food_pack_medium)
+
+        if self.food_preserv_proc is not None and not isinstance(self.food_preserv_proc, str):
+            self.food_preserv_proc = str(self.food_preserv_proc)
 
         if self.food_prior_contact is not None and not isinstance(self.food_prior_contact, str):
             self.food_prior_contact = str(self.food_prior_contact)
@@ -3482,26 +3475,176 @@ class FoodFoodProductionFacility(EnvironmentalPackage):
         if self.food_prod is not None and not isinstance(self.food_prod, str):
             self.food_prod = str(self.food_prod)
 
+        if self.food_prod_char is not None and not isinstance(self.food_prod_char, str):
+            self.food_prod_char = str(self.food_prod_char)
+
+        if self.food_prod_synonym is not None and not isinstance(self.food_prod_synonym, str):
+            self.food_prod_synonym = str(self.food_prod_synonym)
+
         if self.food_quality_date is not None and not isinstance(self.food_quality_date, str):
             self.food_quality_date = str(self.food_quality_date)
 
-        if self.repository_name is not None and not isinstance(self.repository_name, str):
-            self.repository_name = str(self.repository_name)
+        if self.food_source is not None and not isinstance(self.food_source, str):
+            self.food_source = str(self.food_source)
+
+        if self.food_trace_list is not None and not isinstance(self.food_trace_list, str):
+            self.food_trace_list = str(self.food_trace_list)
+
+        if self.food_trav_mode is not None and not isinstance(self.food_trav_mode, str):
+            self.food_trav_mode = str(self.food_trav_mode)
+
+        if self.food_trav_vehic is not None and not isinstance(self.food_trav_vehic, str):
+            self.food_trav_vehic = str(self.food_trav_vehic)
+
+        if self.food_treat_proc is not None and not isinstance(self.food_treat_proc, str):
+            self.food_treat_proc = str(self.food_treat_proc)
+
+        if self.freq_clean is not None and not isinstance(self.freq_clean, str):
+            self.freq_clean = str(self.freq_clean)
+
+        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
+            self.genetic_mod = str(self.genetic_mod)
+
+        if self.HACCP_term is not None and not isinstance(self.HACCP_term, str):
+            self.HACCP_term = str(self.HACCP_term)
+
+        if self.hygienic_area is not None and not isinstance(self.hygienic_area, str):
+            self.hygienic_area = str(self.hygienic_area)
+
+        if self.indoor_surf is not None and not isinstance(self.indoor_surf, str):
+            self.indoor_surf = str(self.indoor_surf)
 
         if self.intended_consumer is not None and not isinstance(self.intended_consumer, str):
             self.intended_consumer = str(self.intended_consumer)
 
-        if self.food_pack_integrity is not None and not isinstance(self.food_pack_integrity, str):
-            self.food_pack_integrity = str(self.food_pack_integrity)
+        if self.library_prep_kit is not None and not isinstance(self.library_prep_kit, str):
+            self.library_prep_kit = str(self.library_prep_kit)
+
+        if self.lot_number is not None and not isinstance(self.lot_number, str):
+            self.lot_number = str(self.lot_number)
+
+        if self.microb_cult_med is not None and not isinstance(self.microb_cult_med, str):
+            self.microb_cult_med = str(self.microb_cult_med)
 
         if self.misc_param is not None and not isinstance(self.misc_param, str):
             self.misc_param = str(self.misc_param)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.nucl_acid_ext_kit is not None and not isinstance(self.nucl_acid_ext_kit, str):
+            self.nucl_acid_ext_kit = str(self.nucl_acid_ext_kit)
+
+        if self.num_samp_collect is not None and not isinstance(self.num_samp_collect, str):
+            self.num_samp_collect = str(self.num_samp_collect)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.part_plant_animal is not None and not isinstance(self.part_plant_animal, str):
+            self.part_plant_animal = str(self.part_plant_animal)
+
+        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
+            self.pool_dna_extracts = str(self.pool_dna_extracts)
+
+        if self.repository_name is not None and not isinstance(self.repository_name, str):
+            self.repository_name = str(self.repository_name)
+
+        if self.room_dim is not None and not isinstance(self.room_dim, str):
+            self.room_dim = str(self.room_dim)
+
+        if self.samp_floor is not None and not isinstance(self.samp_floor, str):
+            self.samp_floor = str(self.samp_floor)
+
+        if self.samp_loc_condition is not None and not isinstance(self.samp_loc_condition, str):
+            self.samp_loc_condition = str(self.samp_loc_condition)
+
+        if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
+            self.samp_pooling = str(self.samp_pooling)
+
+        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
+            self.samp_purpose = str(self.samp_purpose)
+
+        if self.samp_rep_biol is not None and not isinstance(self.samp_rep_biol, str):
+            self.samp_rep_biol = str(self.samp_rep_biol)
+
+        if self.samp_rep_tech is not None and not isinstance(self.samp_rep_tech, str):
+            self.samp_rep_tech = str(self.samp_rep_tech)
+
+        if self.samp_room_id is not None and not isinstance(self.samp_room_id, int):
+            self.samp_room_id = int(self.samp_room_id)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_surf_moisture is not None and not isinstance(self.samp_surf_moisture, str):
+            self.samp_surf_moisture = str(self.samp_surf_moisture)
+
+        if self.samp_transport_cont is not None and not isinstance(self.samp_transport_cont, str):
+            self.samp_transport_cont = str(self.samp_transport_cont)
+
+        if self.samp_transport_dur is not None and not isinstance(self.samp_transport_dur, str):
+            self.samp_transport_dur = str(self.samp_transport_dur)
+
+        if self.samp_transport_temp is not None and not isinstance(self.samp_transport_temp, str):
+            self.samp_transport_temp = str(self.samp_transport_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sequencing_kit is not None and not isinstance(self.sequencing_kit, str):
+            self.sequencing_kit = str(self.sequencing_kit)
+
+        if self.sequencing_location is not None and not isinstance(self.sequencing_location, str):
+            self.sequencing_location = str(self.sequencing_location)
+
+        if self.spec_intended_cons is not None and not isinstance(self.spec_intended_cons, str):
+            self.spec_intended_cons = str(self.spec_intended_cons)
+
+        if self.ster_meth_samp_room is not None and not isinstance(self.ster_meth_samp_room, str):
+            self.ster_meth_samp_room = str(self.ster_meth_samp_room)
+
+        if self.study_design is not None and not isinstance(self.study_design, str):
+            self.study_design = str(self.study_design)
+
+        if self.study_inc_dur is not None and not isinstance(self.study_inc_dur, str):
+            self.study_inc_dur = str(self.study_inc_dur)
+
+        if self.study_inc_temp is not None and not isinstance(self.study_inc_temp, str):
+            self.study_inc_temp = str(self.study_inc_temp)
+
+        if self.study_timecourse is not None and not isinstance(self.study_timecourse, str):
+            self.study_timecourse = str(self.study_timecourse)
+
+        if self.study_tmnt is not None and not isinstance(self.study_tmnt, str):
+            self.study_tmnt = str(self.study_tmnt)
+
+        if self.surf_material is not None and not isinstance(self.surf_material, str):
+            self.surf_material = str(self.surf_material)
+
+        if self.timepoint is not None and not isinstance(self.timepoint, str):
+            self.timepoint = str(self.timepoint)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class FoodHumanFoods(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016022"]
@@ -3509,32 +3652,17 @@ class FoodHumanFoods(EnvironmentalPackage):
     class_name: ClassVar[str] = "FoodHumanFoods"
     class_model_uri: ClassVar[URIRef] = MIXS.FoodHumanFoods
 
-    samp_name: str = None
-    project_name: str = None
-    lat_lon: str = None
-    geo_loc_name: str = None
+    coll_site_geo_feat: str = None
     collection_date: str = None
     env_broad_scale: str = None
     env_local_scale: str = None
     env_medium: str = None
-    seq_meth: str = None
-    coll_site_geo_feat: str = None
     food_product_type: str = None
+    geo_loc_name: str = None
     IFSAC_category: str = None
-    samp_size: Optional[str] = None
-    samp_collect_device: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    organism_count: Optional[str] = None
-    spikein_count: Optional[str] = None
-    samp_stor_temp: Optional[str] = None
-    samp_stor_dur: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    pool_dna_extracts: Optional[str] = None
-    temp: Optional[str] = None
-    samp_stor_loc: Optional[str] = None
-    genetic_mod: Optional[str] = None
-    perturbation: Optional[str] = None
+    lat_lon: str = None
+    project_name: str = None
+    seq_meth: str = None
     ferm_chem_add: Optional[str] = None
     ferm_chem_add_perc: Optional[str] = None
     ferm_headspace_oxy: Optional[str] = None
@@ -3555,6 +3683,7 @@ class FoodHumanFoods(EnvironmentalPackage):
     cult_target: Optional[str] = None
     dietary_claim_use: Optional[str] = None
     enrichment_protocol: Optional[str] = None
+    experimental_factor: Optional[str] = None
     food_additive: Optional[str] = None
     food_allergen_label: Optional[str] = None
     food_contact_surf: Optional[str] = None
@@ -3578,6 +3707,7 @@ class FoodHumanFoods(EnvironmentalPackage):
     food_trav_mode: Optional[str] = None
     food_trav_vehic: Optional[str] = None
     food_treat_proc: Optional[str] = None
+    genetic_mod: Optional[str] = None
     HACCP_term: Optional[str] = None
     intended_consumer: Optional[str] = None
     library_prep_kit: Optional[str] = None
@@ -3589,26 +3719,36 @@ class FoodHumanFoods(EnvironmentalPackage):
     microb_start_prep: Optional[str] = None
     microb_start_source: Optional[str] = None
     microb_start_taxID: Optional[str] = None
+    misc_param: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
     nucl_acid_ext_kit: Optional[str] = None
     num_samp_collect: Optional[str] = None
+    organism_count: Optional[str] = None
     part_plant_animal: Optional[str] = None
+    perturbation: Optional[str] = None
+    pool_dna_extracts: Optional[str] = None
     repository_name: Optional[str] = None
-    sample_collec_method: Optional[str] = None
     samp_pooling: Optional[str] = None
+    samp_purpose: Optional[str] = None
     samp_rep_biol: Optional[str] = None
     samp_rep_tech: Optional[str] = None
+    samp_size: Optional[str] = None
     samp_source_mat_cat: Optional[str] = None
     samp_stor_device: Optional[str] = None
     samp_stor_media: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
     samp_transport_cont: Optional[str] = None
     samp_transport_dur: Optional[str] = None
     samp_transport_temp: Optional[str] = None
-    samp_purpose: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
     sequencing_kit: Optional[str] = None
     sequencing_location: Optional[str] = None
     serovar_or_serotype: Optional[str] = None
     spikein_AMR: Optional[str] = None
     spikein_antibiotic: Optional[str] = None
+    spikein_count: Optional[str] = None
     spikein_growth_med: Optional[str] = None
     spikein_metal: Optional[str] = None
     spikein_org: Optional[str] = None
@@ -3619,29 +3759,14 @@ class FoodHumanFoods(EnvironmentalPackage):
     study_inc_temp: Optional[str] = None
     study_timecourse: Optional[str] = None
     study_tmnt: Optional[str] = None
+    temp: Optional[str] = None
     timepoint: Optional[str] = None
-    misc_param: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
+        if self._is_empty(self.coll_site_geo_feat):
+            self.MissingRequiredField("coll_site_geo_feat")
+        if not isinstance(self.coll_site_geo_feat, str):
+            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
 
         if self._is_empty(self.collection_date):
             self.MissingRequiredField("collection_date")
@@ -3663,67 +3788,35 @@ class FoodHumanFoods(EnvironmentalPackage):
         if not isinstance(self.env_medium, str):
             self.env_medium = str(self.env_medium)
 
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self._is_empty(self.coll_site_geo_feat):
-            self.MissingRequiredField("coll_site_geo_feat")
-        if not isinstance(self.coll_site_geo_feat, str):
-            self.coll_site_geo_feat = str(self.coll_site_geo_feat)
-
         if self._is_empty(self.food_product_type):
             self.MissingRequiredField("food_product_type")
         if not isinstance(self.food_product_type, str):
             self.food_product_type = str(self.food_product_type)
+
+        if self._is_empty(self.geo_loc_name):
+            self.MissingRequiredField("geo_loc_name")
+        if not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
 
         if self._is_empty(self.IFSAC_category):
             self.MissingRequiredField("IFSAC_category")
         if not isinstance(self.IFSAC_category, str):
             self.IFSAC_category = str(self.IFSAC_category)
 
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
+        if self._is_empty(self.lat_lon):
+            self.MissingRequiredField("lat_lon")
+        if not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
 
-        if self.samp_collect_device is not None and not isinstance(self.samp_collect_device, str):
-            self.samp_collect_device = str(self.samp_collect_device)
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
 
-        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
-            self.experimental_factor = str(self.experimental_factor)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
-            self.spikein_count = str(self.spikein_count)
-
-        if self.samp_stor_temp is not None and not isinstance(self.samp_stor_temp, str):
-            self.samp_stor_temp = str(self.samp_stor_temp)
-
-        if self.samp_stor_dur is not None and not isinstance(self.samp_stor_dur, str):
-            self.samp_stor_dur = str(self.samp_stor_dur)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
-            self.pool_dna_extracts = str(self.pool_dna_extracts)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.samp_stor_loc is not None and not isinstance(self.samp_stor_loc, str):
-            self.samp_stor_loc = str(self.samp_stor_loc)
-
-        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
-            self.genetic_mod = str(self.genetic_mod)
-
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
+        if self._is_empty(self.seq_meth):
+            self.MissingRequiredField("seq_meth")
+        if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         if self.ferm_chem_add is not None and not isinstance(self.ferm_chem_add, str):
             self.ferm_chem_add = str(self.ferm_chem_add)
@@ -3785,6 +3878,9 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.enrichment_protocol is not None and not isinstance(self.enrichment_protocol, str):
             self.enrichment_protocol = str(self.enrichment_protocol)
 
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
         if self.food_additive is not None and not isinstance(self.food_additive, str):
             self.food_additive = str(self.food_additive)
 
@@ -3854,6 +3950,9 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.food_treat_proc is not None and not isinstance(self.food_treat_proc, str):
             self.food_treat_proc = str(self.food_treat_proc)
 
+        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
+            self.genetic_mod = str(self.genetic_mod)
+
         if self.HACCP_term is not None and not isinstance(self.HACCP_term, str):
             self.HACCP_term = str(self.HACCP_term)
 
@@ -3887,29 +3986,47 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.microb_start_taxID is not None and not isinstance(self.microb_start_taxID, str):
             self.microb_start_taxID = str(self.microb_start_taxID)
 
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
         if self.nucl_acid_ext_kit is not None and not isinstance(self.nucl_acid_ext_kit, str):
             self.nucl_acid_ext_kit = str(self.nucl_acid_ext_kit)
 
         if self.num_samp_collect is not None and not isinstance(self.num_samp_collect, str):
             self.num_samp_collect = str(self.num_samp_collect)
 
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
         if self.part_plant_animal is not None and not isinstance(self.part_plant_animal, str):
             self.part_plant_animal = str(self.part_plant_animal)
+
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
+        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
+            self.pool_dna_extracts = str(self.pool_dna_extracts)
 
         if self.repository_name is not None and not isinstance(self.repository_name, str):
             self.repository_name = str(self.repository_name)
 
-        if self.sample_collec_method is not None and not isinstance(self.sample_collec_method, str):
-            self.sample_collec_method = str(self.sample_collec_method)
-
         if self.samp_pooling is not None and not isinstance(self.samp_pooling, str):
             self.samp_pooling = str(self.samp_pooling)
+
+        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
+            self.samp_purpose = str(self.samp_purpose)
 
         if self.samp_rep_biol is not None and not isinstance(self.samp_rep_biol, str):
             self.samp_rep_biol = str(self.samp_rep_biol)
 
         if self.samp_rep_tech is not None and not isinstance(self.samp_rep_tech, str):
             self.samp_rep_tech = str(self.samp_rep_tech)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
 
         if self.samp_source_mat_cat is not None and not isinstance(self.samp_source_mat_cat, str):
             self.samp_source_mat_cat = str(self.samp_source_mat_cat)
@@ -3920,6 +4037,15 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.samp_stor_media is not None and not isinstance(self.samp_stor_media, str):
             self.samp_stor_media = str(self.samp_stor_media)
 
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
         if self.samp_transport_cont is not None and not isinstance(self.samp_transport_cont, str):
             self.samp_transport_cont = str(self.samp_transport_cont)
 
@@ -3929,8 +4055,8 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.samp_transport_temp is not None and not isinstance(self.samp_transport_temp, str):
             self.samp_transport_temp = str(self.samp_transport_temp)
 
-        if self.samp_purpose is not None and not isinstance(self.samp_purpose, str):
-            self.samp_purpose = str(self.samp_purpose)
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
 
         if self.sequencing_kit is not None and not isinstance(self.sequencing_kit, str):
             self.sequencing_kit = str(self.sequencing_kit)
@@ -3946,6 +4072,9 @@ class FoodHumanFoods(EnvironmentalPackage):
 
         if self.spikein_antibiotic is not None and not isinstance(self.spikein_antibiotic, str):
             self.spikein_antibiotic = str(self.spikein_antibiotic)
+
+        if self.spikein_count is not None and not isinstance(self.spikein_count, str):
+            self.spikein_count = str(self.spikein_count)
 
         if self.spikein_growth_med is not None and not isinstance(self.spikein_growth_med, str):
             self.spikein_growth_med = str(self.spikein_growth_med)
@@ -3977,17 +4106,20 @@ class FoodHumanFoods(EnvironmentalPackage):
         if self.study_tmnt is not None and not isinstance(self.study_tmnt, str):
             self.study_tmnt = str(self.study_tmnt)
 
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
         if self.timepoint is not None and not isinstance(self.timepoint, str):
             self.timepoint = str(self.timepoint)
-
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HostAssociated(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016002"]
@@ -3995,63 +4127,52 @@ class HostAssociated(EnvironmentalPackage):
     class_name: ClassVar[str] = "HostAssociated"
     class_model_uri: ClassVar[URIRef] = MIXS.HostAssociated
 
-    samp_name: str = None
     project_name: str = None
     alt: Optional[str] = None
-    depth: Optional[str] = None
     elev: Optional[str] = None
     ances_data: Optional[str] = None
     biol_stat: Optional[str] = None
-    genetic_mod: Optional[str] = None
-    host_common_name: Optional[str] = None
-    samp_capt_status: Optional[str] = None
-    samp_dis_stage: Optional[str] = None
-    host_taxid: Optional[int] = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_life_stage: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    chem_administration: Optional[str] = None
-    host_body_habitat: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_length: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_growth_cond: Optional[str] = None
-    host_substrate: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_subspecf_genlin: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    host_dry_mass: Optional[str] = None
     blood_press_diast: Optional[str] = None
     blood_press_syst: Optional[str] = None
-    host_color: Optional[str] = None
-    host_shape: Optional[str] = None
+    chem_administration: Optional[str] = None
+    genetic_mod: Optional[str] = None
     gravidity: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_habitat: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_color: Optional[str] = None
+    host_common_name: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_dry_mass: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_growth_cond: Optional[str] = None
+    host_height: Optional[str] = None
+    host_last_meal: Optional[str] = None
+    host_length: Optional[str] = None
+    host_life_stage: Optional[str] = None
+    host_phenotype: Optional[str] = None
+    host_shape: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_subspecf_genlin: Optional[str] = None
+    host_substrate: Optional[str] = None
+    host_taxid: Optional[int] = None
+    host_tot_mass: Optional[str] = None
+    misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
     perturbation: Optional[str] = None
     salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
+    samp_capt_status: Optional[str] = None
+    samp_dis_stage: Optional[str] = None
     samp_store_dur: Optional[str] = None
     samp_store_loc: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    misc_param: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    temp: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
@@ -4059,9 +4180,6 @@ class HostAssociated(EnvironmentalPackage):
 
         if self.alt is not None and not isinstance(self.alt, str):
             self.alt = str(self.alt)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -4072,38 +4190,23 @@ class HostAssociated(EnvironmentalPackage):
         if self.biol_stat is not None and not isinstance(self.biol_stat, str):
             self.biol_stat = str(self.biol_stat)
 
-        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
-            self.genetic_mod = str(self.genetic_mod)
+        if self.blood_press_diast is not None and not isinstance(self.blood_press_diast, str):
+            self.blood_press_diast = str(self.blood_press_diast)
 
-        if self.host_common_name is not None and not isinstance(self.host_common_name, str):
-            self.host_common_name = str(self.host_common_name)
-
-        if self.samp_capt_status is not None and not isinstance(self.samp_capt_status, str):
-            self.samp_capt_status = str(self.samp_capt_status)
-
-        if self.samp_dis_stage is not None and not isinstance(self.samp_dis_stage, str):
-            self.samp_dis_stage = str(self.samp_dis_stage)
-
-        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
-            self.host_taxid = int(self.host_taxid)
-
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_life_stage is not None and not isinstance(self.host_life_stage, str):
-            self.host_life_stage = str(self.host_life_stage)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
+        if self.blood_press_syst is not None and not isinstance(self.blood_press_syst, str):
+            self.blood_press_syst = str(self.blood_press_syst)
 
         if self.chem_administration is not None and not isinstance(self.chem_administration, str):
             self.chem_administration = str(self.chem_administration)
+
+        if self.genetic_mod is not None and not isinstance(self.genetic_mod, str):
+            self.genetic_mod = str(self.genetic_mod)
+
+        if self.gravidity is not None and not isinstance(self.gravidity, str):
+            self.gravidity = str(self.gravidity)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
 
         if self.host_body_habitat is not None and not isinstance(self.host_body_habitat, str):
             self.host_body_habitat = str(self.host_body_habitat)
@@ -4111,62 +4214,71 @@ class HostAssociated(EnvironmentalPackage):
         if self.host_body_site is not None and not isinstance(self.host_body_site, str):
             self.host_body_site = str(self.host_body_site)
 
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_length is not None and not isinstance(self.host_length, str):
-            self.host_length = str(self.host_length)
-
-        if self.host_diet is not None and not isinstance(self.host_diet, str):
-            self.host_diet = str(self.host_diet)
-
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_growth_cond is not None and not isinstance(self.host_growth_cond, str):
-            self.host_growth_cond = str(self.host_growth_cond)
-
-        if self.host_substrate is not None and not isinstance(self.host_substrate, str):
-            self.host_substrate = str(self.host_substrate)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
-
-        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
-            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
         if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
             self.host_body_temp = str(self.host_body_temp)
-
-        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
-            self.host_dry_mass = str(self.host_dry_mass)
-
-        if self.blood_press_diast is not None and not isinstance(self.blood_press_diast, str):
-            self.blood_press_diast = str(self.blood_press_diast)
-
-        if self.blood_press_syst is not None and not isinstance(self.blood_press_syst, str):
-            self.blood_press_syst = str(self.blood_press_syst)
 
         if self.host_color is not None and not isinstance(self.host_color, str):
             self.host_color = str(self.host_color)
 
+        if self.host_common_name is not None and not isinstance(self.host_common_name, str):
+            self.host_common_name = str(self.host_common_name)
+
+        if self.host_diet is not None and not isinstance(self.host_diet, str):
+            self.host_diet = str(self.host_diet)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
+            self.host_dry_mass = str(self.host_dry_mass)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_growth_cond is not None and not isinstance(self.host_growth_cond, str):
+            self.host_growth_cond = str(self.host_growth_cond)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
+
+        if self.host_length is not None and not isinstance(self.host_length, str):
+            self.host_length = str(self.host_length)
+
+        if self.host_life_stage is not None and not isinstance(self.host_life_stage, str):
+            self.host_life_stage = str(self.host_life_stage)
+
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
+
         if self.host_shape is not None and not isinstance(self.host_shape, str):
             self.host_shape = str(self.host_shape)
 
-        if self.gravidity is not None and not isinstance(self.gravidity, str):
-            self.gravidity = str(self.gravidity)
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
+            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
+
+        if self.host_substrate is not None and not isinstance(self.host_substrate, str):
+            self.host_substrate = str(self.host_substrate)
+
+        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
+            self.host_taxid = int(self.host_taxid)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
@@ -4174,20 +4286,11 @@ class HostAssociated(EnvironmentalPackage):
         if self.salinity is not None and not isinstance(self.salinity, str):
             self.salinity = str(self.salinity)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+        if self.samp_capt_status is not None and not isinstance(self.samp_capt_status, str):
+            self.samp_capt_status = str(self.samp_capt_status)
 
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
+        if self.samp_dis_stage is not None and not isinstance(self.samp_dis_stage, str):
+            self.samp_dis_stage = str(self.samp_dis_stage)
 
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
@@ -4195,17 +4298,23 @@ class HostAssociated(EnvironmentalPackage):
         if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
             self.samp_store_loc = str(self.samp_store_loc)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HumanAssociated(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016003"]
@@ -4213,145 +4322,182 @@ class HumanAssociated(EnvironmentalPackage):
     class_name: ClassVar[str] = "HumanAssociated"
     class_model_uri: ClassVar[URIRef] = MIXS.HumanAssociated
 
-    samp_name: str = None
     project_name: str = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    ihmc_medication_code: Optional[int] = None
+    amniotic_fluid_color: Optional[str] = None
+    blood_blood_disord: Optional[str] = None
     chem_administration: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    smoker: Optional[Union[bool, Bool]] = None
-    host_hiv_stat: Optional[str] = None
-    drug_usage: Optional[str] = None
-    host_body_mass_index: Optional[str] = None
     diet_last_six_month: Optional[str] = None
-    weight_loss_3_month: Optional[str] = None
+    drug_usage: Optional[str] = None
     ethnicity: Optional[str] = None
+    foetal_health_stat: Optional[str] = None
+    gestation_state: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_mass_index: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_hiv_stat: Optional[str] = None
+    host_last_meal: Optional[str] = None
     host_occupation: Optional[str] = None
+    host_phenotype: Optional[str] = None
+    host_pulse: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_tot_mass: Optional[str] = None
+    ihmc_medication_code: Optional[int] = None
+    kidney_disord: Optional[str] = None
+    maternal_health_stat: Optional[str] = None
+    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    perturbation: Optional[str] = None
     pet_farm_animal: Optional[str] = None
+    pulmonary_disord: Optional[str] = None
+    salinity: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    smoker: Optional[Union[bool, Bool]] = None
+    study_complt_stat: Optional[str] = None
+    temp: Optional[str] = None
     travel_out_six_month: Optional[str] = None
     twin_sibling: Optional[Union[bool, Bool]] = None
-    medic_hist_perform: Optional[Union[bool, Bool]] = None
-    study_complt_stat: Optional[str] = None
-    pulmonary_disord: Optional[str] = None
-    nose_throat_disord: Optional[str] = None
-    blood_blood_disord: Optional[str] = None
-    host_pulse: Optional[str] = None
-    gestation_state: Optional[str] = None
-    maternal_health_stat: Optional[str] = None
-    foetal_health_stat: Optional[str] = None
-    amniotic_fluid_color: Optional[str] = None
-    kidney_disord: Optional[str] = None
-    urogenit_tract_disor: Optional[str] = None
     urine_collect_meth: Optional[str] = None
-    perturbation: Optional[str] = None
-    salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
-    samp_store_dur: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    samp_store_loc: Optional[str] = None
-    misc_param: Optional[str] = None
+    urogenit_tract_disor: Optional[str] = None
+    weight_loss_3_month: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
+        if self.amniotic_fluid_color is not None and not isinstance(self.amniotic_fluid_color, str):
+            self.amniotic_fluid_color = str(self.amniotic_fluid_color)
 
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
-            self.ihmc_medication_code = int(self.ihmc_medication_code)
+        if self.blood_blood_disord is not None and not isinstance(self.blood_blood_disord, str):
+            self.blood_blood_disord = str(self.blood_blood_disord)
 
         if self.chem_administration is not None and not isinstance(self.chem_administration, str):
             self.chem_administration = str(self.chem_administration)
 
-        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
-            self.host_body_site = str(self.host_body_site)
-
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_diet is not None and not isinstance(self.host_diet, str):
-            self.host_diet = str(self.host_diet)
-
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
-            self.host_body_temp = str(self.host_body_temp)
-
-        if self.smoker is not None and not isinstance(self.smoker, Bool):
-            self.smoker = Bool(self.smoker)
-
-        if self.host_hiv_stat is not None and not isinstance(self.host_hiv_stat, str):
-            self.host_hiv_stat = str(self.host_hiv_stat)
+        if self.diet_last_six_month is not None and not isinstance(self.diet_last_six_month, str):
+            self.diet_last_six_month = str(self.diet_last_six_month)
 
         if self.drug_usage is not None and not isinstance(self.drug_usage, str):
             self.drug_usage = str(self.drug_usage)
 
+        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
+            self.ethnicity = str(self.ethnicity)
+
+        if self.foetal_health_stat is not None and not isinstance(self.foetal_health_stat, str):
+            self.foetal_health_stat = str(self.foetal_health_stat)
+
+        if self.gestation_state is not None and not isinstance(self.gestation_state, str):
+            self.gestation_state = str(self.gestation_state)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
+
         if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
             self.host_body_mass_index = str(self.host_body_mass_index)
 
-        if self.diet_last_six_month is not None and not isinstance(self.diet_last_six_month, str):
-            self.diet_last_six_month = str(self.diet_last_six_month)
+        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
+            self.host_body_site = str(self.host_body_site)
 
-        if self.weight_loss_3_month is not None and not isinstance(self.weight_loss_3_month, str):
-            self.weight_loss_3_month = str(self.weight_loss_3_month)
+        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
+            self.host_body_temp = str(self.host_body_temp)
 
-        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
-            self.ethnicity = str(self.ethnicity)
+        if self.host_diet is not None and not isinstance(self.host_diet, str):
+            self.host_diet = str(self.host_diet)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_hiv_stat is not None and not isinstance(self.host_hiv_stat, str):
+            self.host_hiv_stat = str(self.host_hiv_stat)
+
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
 
         if self.host_occupation is not None and not isinstance(self.host_occupation, str):
             self.host_occupation = str(self.host_occupation)
 
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
+
+        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
+            self.host_pulse = str(self.host_pulse)
+
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
+            self.ihmc_medication_code = int(self.ihmc_medication_code)
+
+        if self.kidney_disord is not None and not isinstance(self.kidney_disord, str):
+            self.kidney_disord = str(self.kidney_disord)
+
+        if self.maternal_health_stat is not None and not isinstance(self.maternal_health_stat, str):
+            self.maternal_health_stat = str(self.maternal_health_stat)
+
+        if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
+            self.medic_hist_perform = Bool(self.medic_hist_perform)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
         if self.pet_farm_animal is not None and not isinstance(self.pet_farm_animal, str):
             self.pet_farm_animal = str(self.pet_farm_animal)
+
+        if self.pulmonary_disord is not None and not isinstance(self.pulmonary_disord, str):
+            self.pulmonary_disord = str(self.pulmonary_disord)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.smoker is not None and not isinstance(self.smoker, Bool):
+            self.smoker = Bool(self.smoker)
+
+        if self.study_complt_stat is not None and not isinstance(self.study_complt_stat, str):
+            self.study_complt_stat = str(self.study_complt_stat)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         if self.travel_out_six_month is not None and not isinstance(self.travel_out_six_month, str):
             self.travel_out_six_month = str(self.travel_out_six_month)
@@ -4359,83 +4505,23 @@ class HumanAssociated(EnvironmentalPackage):
         if self.twin_sibling is not None and not isinstance(self.twin_sibling, Bool):
             self.twin_sibling = Bool(self.twin_sibling)
 
-        if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
-            self.medic_hist_perform = Bool(self.medic_hist_perform)
-
-        if self.study_complt_stat is not None and not isinstance(self.study_complt_stat, str):
-            self.study_complt_stat = str(self.study_complt_stat)
-
-        if self.pulmonary_disord is not None and not isinstance(self.pulmonary_disord, str):
-            self.pulmonary_disord = str(self.pulmonary_disord)
-
-        if self.nose_throat_disord is not None and not isinstance(self.nose_throat_disord, str):
-            self.nose_throat_disord = str(self.nose_throat_disord)
-
-        if self.blood_blood_disord is not None and not isinstance(self.blood_blood_disord, str):
-            self.blood_blood_disord = str(self.blood_blood_disord)
-
-        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
-            self.host_pulse = str(self.host_pulse)
-
-        if self.gestation_state is not None and not isinstance(self.gestation_state, str):
-            self.gestation_state = str(self.gestation_state)
-
-        if self.maternal_health_stat is not None and not isinstance(self.maternal_health_stat, str):
-            self.maternal_health_stat = str(self.maternal_health_stat)
-
-        if self.foetal_health_stat is not None and not isinstance(self.foetal_health_stat, str):
-            self.foetal_health_stat = str(self.foetal_health_stat)
-
-        if self.amniotic_fluid_color is not None and not isinstance(self.amniotic_fluid_color, str):
-            self.amniotic_fluid_color = str(self.amniotic_fluid_color)
-
-        if self.kidney_disord is not None and not isinstance(self.kidney_disord, str):
-            self.kidney_disord = str(self.kidney_disord)
+        if self.urine_collect_meth is not None and not isinstance(self.urine_collect_meth, str):
+            self.urine_collect_meth = str(self.urine_collect_meth)
 
         if self.urogenit_tract_disor is not None and not isinstance(self.urogenit_tract_disor, str):
             self.urogenit_tract_disor = str(self.urogenit_tract_disor)
 
-        if self.urine_collect_meth is not None and not isinstance(self.urine_collect_meth, str):
-            self.urine_collect_meth = str(self.urine_collect_meth)
-
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
-
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
-
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
-
-        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
-            self.samp_store_dur = str(self.samp_store_dur)
-
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
-
-        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
-
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.weight_loss_3_month is not None and not isinstance(self.weight_loss_3_month, str):
+            self.weight_loss_3_month = str(self.weight_loss_3_month)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HumanGut(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016004"]
@@ -4443,126 +4529,113 @@ class HumanGut(EnvironmentalPackage):
     class_name: ClassVar[str] = "HumanGut"
     class_model_uri: ClassVar[URIRef] = MIXS.HumanGut
 
-    samp_name: str = None
     project_name: str = None
-    gastrointest_disord: Optional[str] = None
-    liver_disord: Optional[str] = None
-    special_diet: Optional[str] = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    ihmc_medication_code: Optional[int] = None
     chem_administration: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    host_body_mass_index: Optional[str] = None
     ethnicity: Optional[str] = None
+    gastrointest_disord: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_mass_index: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_last_meal: Optional[str] = None
     host_occupation: Optional[str] = None
-    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    host_phenotype: Optional[str] = None
     host_pulse: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_tot_mass: Optional[str] = None
+    ihmc_medication_code: Optional[int] = None
+    liver_disord: Optional[str] = None
+    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
     perturbation: Optional[str] = None
     salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
     samp_store_temp: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_dur: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    samp_store_loc: Optional[str] = None
-    misc_param: Optional[str] = None
+    special_diet: Optional[str] = None
+    temp: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self.gastrointest_disord is not None and not isinstance(self.gastrointest_disord, str):
-            self.gastrointest_disord = str(self.gastrointest_disord)
-
-        if self.liver_disord is not None and not isinstance(self.liver_disord, str):
-            self.liver_disord = str(self.liver_disord)
-
-        if self.special_diet is not None and not isinstance(self.special_diet, str):
-            self.special_diet = str(self.special_diet)
-
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
-            self.ihmc_medication_code = int(self.ihmc_medication_code)
-
         if self.chem_administration is not None and not isinstance(self.chem_administration, str):
             self.chem_administration = str(self.chem_administration)
-
-        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
-            self.host_body_site = str(self.host_body_site)
-
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_diet is not None and not isinstance(self.host_diet, str):
-            self.host_diet = str(self.host_diet)
-
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
-            self.host_body_temp = str(self.host_body_temp)
-
-        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
-            self.host_body_mass_index = str(self.host_body_mass_index)
 
         if self.ethnicity is not None and not isinstance(self.ethnicity, str):
             self.ethnicity = str(self.ethnicity)
 
+        if self.gastrointest_disord is not None and not isinstance(self.gastrointest_disord, str):
+            self.gastrointest_disord = str(self.gastrointest_disord)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
+
+        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
+            self.host_body_mass_index = str(self.host_body_mass_index)
+
+        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
+            self.host_body_site = str(self.host_body_site)
+
+        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
+            self.host_body_temp = str(self.host_body_temp)
+
+        if self.host_diet is not None and not isinstance(self.host_diet, str):
+            self.host_diet = str(self.host_diet)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
+
         if self.host_occupation is not None and not isinstance(self.host_occupation, str):
             self.host_occupation = str(self.host_occupation)
+
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
+
+        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
+            self.host_pulse = str(self.host_pulse)
+
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
+            self.ihmc_medication_code = int(self.ihmc_medication_code)
+
+        if self.liver_disord is not None and not isinstance(self.liver_disord, str):
+            self.liver_disord = str(self.liver_disord)
 
         if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
             self.medic_hist_perform = Bool(self.medic_hist_perform)
 
-        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
-            self.host_pulse = str(self.host_pulse)
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
@@ -4570,14 +4643,11 @@ class HumanGut(EnvironmentalPackage):
         if self.salinity is not None and not isinstance(self.salinity, str):
             self.salinity = str(self.salinity)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
 
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
 
         if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
             self.samp_store_temp = str(self.samp_store_temp)
@@ -4585,23 +4655,20 @@ class HumanGut(EnvironmentalPackage):
         if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
             self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
 
-        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
-            self.samp_store_dur = str(self.samp_store_dur)
+        if self.special_diet is not None and not isinstance(self.special_diet, str):
+            self.special_diet = str(self.special_diet)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
-
-        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
-
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HumanOral(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016005"]
@@ -4609,122 +4676,105 @@ class HumanOral(EnvironmentalPackage):
     class_name: ClassVar[str] = "HumanOral"
     class_model_uri: ClassVar[URIRef] = MIXS.HumanOral
 
-    samp_name: str = None
     project_name: str = None
-    nose_throat_disord: Optional[str] = None
-    time_last_toothbrush: Optional[str] = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    ihmc_medication_code: Optional[int] = None
     chem_administration: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    host_body_mass_index: Optional[str] = None
     ethnicity: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_mass_index: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_last_meal: Optional[str] = None
     host_occupation: Optional[str] = None
-    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    host_phenotype: Optional[str] = None
     host_pulse: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_tot_mass: Optional[str] = None
+    ihmc_medication_code: Optional[int] = None
+    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
     perturbation: Optional[str] = None
     salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
     samp_store_dur: Optional[str] = None
-    host_symbiont: Optional[str] = None
     samp_store_loc: Optional[str] = None
-    misc_param: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    temp: Optional[str] = None
+    time_last_toothbrush: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self.nose_throat_disord is not None and not isinstance(self.nose_throat_disord, str):
-            self.nose_throat_disord = str(self.nose_throat_disord)
-
-        if self.time_last_toothbrush is not None and not isinstance(self.time_last_toothbrush, str):
-            self.time_last_toothbrush = str(self.time_last_toothbrush)
-
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
-            self.ihmc_medication_code = int(self.ihmc_medication_code)
-
         if self.chem_administration is not None and not isinstance(self.chem_administration, str):
             self.chem_administration = str(self.chem_administration)
-
-        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
-            self.host_body_site = str(self.host_body_site)
-
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_diet is not None and not isinstance(self.host_diet, str):
-            self.host_diet = str(self.host_diet)
-
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
-            self.host_body_temp = str(self.host_body_temp)
-
-        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
-            self.host_body_mass_index = str(self.host_body_mass_index)
 
         if self.ethnicity is not None and not isinstance(self.ethnicity, str):
             self.ethnicity = str(self.ethnicity)
 
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
+
+        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
+            self.host_body_mass_index = str(self.host_body_mass_index)
+
+        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
+            self.host_body_site = str(self.host_body_site)
+
+        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
+            self.host_body_temp = str(self.host_body_temp)
+
+        if self.host_diet is not None and not isinstance(self.host_diet, str):
+            self.host_diet = str(self.host_diet)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
+
         if self.host_occupation is not None and not isinstance(self.host_occupation, str):
             self.host_occupation = str(self.host_occupation)
+
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
+
+        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
+            self.host_pulse = str(self.host_pulse)
+
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
+            self.ihmc_medication_code = int(self.ihmc_medication_code)
 
         if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
             self.medic_hist_perform = Bool(self.medic_hist_perform)
 
-        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
-            self.host_pulse = str(self.host_pulse)
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
@@ -4732,38 +4782,32 @@ class HumanOral(EnvironmentalPackage):
         if self.salinity is not None and not isinstance(self.salinity, str):
             self.salinity = str(self.salinity)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
-
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
-
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
 
         if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
             self.samp_store_loc = str(self.samp_store_loc)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.time_last_toothbrush is not None and not isinstance(self.time_last_toothbrush, str):
+            self.time_last_toothbrush = str(self.time_last_toothbrush)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HumanSkin(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016006"]
@@ -4771,126 +4815,113 @@ class HumanSkin(EnvironmentalPackage):
     class_name: ClassVar[str] = "HumanSkin"
     class_model_uri: ClassVar[URIRef] = MIXS.HumanSkin
 
-    samp_name: str = None
     project_name: str = None
-    dermatology_disord: Optional[str] = None
-    time_since_last_wash: Optional[str] = None
-    dominant_hand: Optional[str] = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    ihmc_medication_code: Optional[int] = None
     chem_administration: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    host_body_mass_index: Optional[str] = None
+    dermatology_disord: Optional[str] = None
+    dominant_hand: Optional[str] = None
     ethnicity: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_mass_index: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_last_meal: Optional[str] = None
     host_occupation: Optional[str] = None
-    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    host_phenotype: Optional[str] = None
     host_pulse: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_tot_mass: Optional[str] = None
+    ihmc_medication_code: Optional[int] = None
+    medic_hist_perform: Optional[Union[bool, Bool]] = None
+    misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
     perturbation: Optional[str] = None
     salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
     samp_store_dur: Optional[str] = None
     samp_store_loc: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    misc_param: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    temp: Optional[str] = None
+    time_since_last_wash: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
+        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
+            self.chem_administration = str(self.chem_administration)
+
         if self.dermatology_disord is not None and not isinstance(self.dermatology_disord, str):
             self.dermatology_disord = str(self.dermatology_disord)
-
-        if self.time_since_last_wash is not None and not isinstance(self.time_since_last_wash, str):
-            self.time_since_last_wash = str(self.time_since_last_wash)
 
         if self.dominant_hand is not None and not isinstance(self.dominant_hand, str):
             self.dominant_hand = str(self.dominant_hand)
 
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
+        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
+            self.ethnicity = str(self.ethnicity)
 
         if self.host_age is not None and not isinstance(self.host_age, str):
             self.host_age = str(self.host_age)
 
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
-        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
-            self.ihmc_medication_code = int(self.ihmc_medication_code)
-
-        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
-            self.chem_administration = str(self.chem_administration)
+        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
+            self.host_body_mass_index = str(self.host_body_mass_index)
 
         if self.host_body_site is not None and not isinstance(self.host_body_site, str):
             self.host_body_site = str(self.host_body_site)
 
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
+        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
+            self.host_body_temp = str(self.host_body_temp)
 
         if self.host_diet is not None and not isinstance(self.host_diet, str):
             self.host_diet = str(self.host_diet)
 
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
 
         if self.host_genotype is not None and not isinstance(self.host_genotype, str):
             self.host_genotype = str(self.host_genotype)
 
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
 
-        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
-            self.host_body_temp = str(self.host_body_temp)
-
-        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
-            self.host_body_mass_index = str(self.host_body_mass_index)
-
-        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
-            self.ethnicity = str(self.ethnicity)
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
 
         if self.host_occupation is not None and not isinstance(self.host_occupation, str):
             self.host_occupation = str(self.host_occupation)
 
-        if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
-            self.medic_hist_perform = Bool(self.medic_hist_perform)
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
 
         if self.host_pulse is not None and not isinstance(self.host_pulse, str):
             self.host_pulse = str(self.host_pulse)
+
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
+            self.ihmc_medication_code = int(self.ihmc_medication_code)
+
+        if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
+            self.medic_hist_perform = Bool(self.medic_hist_perform)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
@@ -4898,38 +4929,32 @@ class HumanSkin(EnvironmentalPackage):
         if self.salinity is not None and not isinstance(self.salinity, str):
             self.salinity = str(self.salinity)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
-
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
 
         if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
             self.samp_store_loc = str(self.samp_store_loc)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.time_since_last_wash is not None and not isinstance(self.time_since_last_wash, str):
+            self.time_since_last_wash = str(self.time_since_last_wash)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HumanVaginal(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016007"]
@@ -4937,80 +4962,109 @@ class HumanVaginal(EnvironmentalPackage):
     class_name: ClassVar[str] = "HumanVaginal"
     class_model_uri: ClassVar[URIRef] = MIXS.HumanVaginal
 
-    samp_name: str = None
     project_name: str = None
-    menarche: Optional[str] = None
-    sexual_act: Optional[str] = None
-    pregnancy: Optional[str] = None
-    douche: Optional[str] = None
     birth_control: Optional[str] = None
-    menopause: Optional[str] = None
+    chem_administration: Optional[str] = None
+    douche: Optional[str] = None
+    ethnicity: Optional[str] = None
+    gynecologic_disord: Optional[str] = None
+    host_age: Optional[str] = None
+    host_body_mass_index: Optional[str] = None
+    host_body_site: Optional[str] = None
+    host_body_temp: Optional[str] = None
+    host_diet: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_genotype: Optional[str] = None
+    host_height: Optional[str] = None
+    host_last_meal: Optional[str] = None
+    host_occupation: Optional[str] = None
+    host_phenotype: Optional[str] = None
+    host_pulse: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_tot_mass: Optional[str] = None
     hrt: Optional[str] = None
     hysterectomy: Optional[Union[bool, Bool]] = None
-    gynecologic_disord: Optional[str] = None
-    urogenit_disord: Optional[str] = None
-    host_subject_id: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
-    host_disease_stat: Optional[str] = None
     ihmc_medication_code: Optional[int] = None
-    chem_administration: Optional[str] = None
-    host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_diet: Optional[str] = None
-    host_last_meal: Optional[str] = None
-    host_family_relation: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_body_temp: Optional[str] = None
-    host_body_mass_index: Optional[str] = None
-    ethnicity: Optional[str] = None
-    host_occupation: Optional[str] = None
     medic_hist_perform: Optional[Union[bool, Bool]] = None
-    host_pulse: Optional[str] = None
-    perturbation: Optional[str] = None
-    samp_salinity: Optional[str] = None
-    salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
-    organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
-    samp_store_loc: Optional[str] = None
-    samp_store_dur: Optional[str] = None
-    host_symbiont: Optional[str] = None
+    menarche: Optional[str] = None
+    menopause: Optional[str] = None
     misc_param: Optional[str] = None
+    organism_count: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    perturbation: Optional[str] = None
+    pregnancy: Optional[str] = None
+    salinity: Optional[str] = None
+    samp_salinity: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    sexual_act: Optional[str] = None
+    temp: Optional[str] = None
+    urogenit_disord: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self.menarche is not None and not isinstance(self.menarche, str):
-            self.menarche = str(self.menarche)
+        if self.birth_control is not None and not isinstance(self.birth_control, str):
+            self.birth_control = str(self.birth_control)
 
-        if self.sexual_act is not None and not isinstance(self.sexual_act, str):
-            self.sexual_act = str(self.sexual_act)
-
-        if self.pregnancy is not None and not isinstance(self.pregnancy, str):
-            self.pregnancy = str(self.pregnancy)
+        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
+            self.chem_administration = str(self.chem_administration)
 
         if self.douche is not None and not isinstance(self.douche, str):
             self.douche = str(self.douche)
 
-        if self.birth_control is not None and not isinstance(self.birth_control, str):
-            self.birth_control = str(self.birth_control)
+        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
+            self.ethnicity = str(self.ethnicity)
 
-        if self.menopause is not None and not isinstance(self.menopause, str):
-            self.menopause = str(self.menopause)
+        if self.gynecologic_disord is not None and not isinstance(self.gynecologic_disord, str):
+            self.gynecologic_disord = str(self.gynecologic_disord)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
+
+        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
+            self.host_body_mass_index = str(self.host_body_mass_index)
+
+        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
+            self.host_body_site = str(self.host_body_site)
+
+        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
+            self.host_body_temp = str(self.host_body_temp)
+
+        if self.host_diet is not None and not isinstance(self.host_diet, str):
+            self.host_diet = str(self.host_diet)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
+
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
+
+        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
+            self.host_last_meal = str(self.host_last_meal)
+
+        if self.host_occupation is not None and not isinstance(self.host_occupation, str):
+            self.host_occupation = str(self.host_occupation)
+
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
+
+        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
+            self.host_pulse = str(self.host_pulse)
+
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
 
         if self.hrt is not None and not isinstance(self.hrt, str):
             self.hrt = str(self.hrt)
@@ -5018,116 +5072,68 @@ class HumanVaginal(EnvironmentalPackage):
         if self.hysterectomy is not None and not isinstance(self.hysterectomy, Bool):
             self.hysterectomy = Bool(self.hysterectomy)
 
-        if self.gynecologic_disord is not None and not isinstance(self.gynecologic_disord, str):
-            self.gynecologic_disord = str(self.gynecologic_disord)
-
-        if self.urogenit_disord is not None and not isinstance(self.urogenit_disord, str):
-            self.urogenit_disord = str(self.urogenit_disord)
-
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
-
         if self.ihmc_medication_code is not None and not isinstance(self.ihmc_medication_code, int):
             self.ihmc_medication_code = int(self.ihmc_medication_code)
-
-        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
-            self.chem_administration = str(self.chem_administration)
-
-        if self.host_body_site is not None and not isinstance(self.host_body_site, str):
-            self.host_body_site = str(self.host_body_site)
-
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
-
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
-
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
-
-        if self.host_diet is not None and not isinstance(self.host_diet, str):
-            self.host_diet = str(self.host_diet)
-
-        if self.host_last_meal is not None and not isinstance(self.host_last_meal, str):
-            self.host_last_meal = str(self.host_last_meal)
-
-        if self.host_family_relation is not None and not isinstance(self.host_family_relation, str):
-            self.host_family_relation = str(self.host_family_relation)
-
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.host_body_temp is not None and not isinstance(self.host_body_temp, str):
-            self.host_body_temp = str(self.host_body_temp)
-
-        if self.host_body_mass_index is not None and not isinstance(self.host_body_mass_index, str):
-            self.host_body_mass_index = str(self.host_body_mass_index)
-
-        if self.ethnicity is not None and not isinstance(self.ethnicity, str):
-            self.ethnicity = str(self.ethnicity)
-
-        if self.host_occupation is not None and not isinstance(self.host_occupation, str):
-            self.host_occupation = str(self.host_occupation)
 
         if self.medic_hist_perform is not None and not isinstance(self.medic_hist_perform, Bool):
             self.medic_hist_perform = Bool(self.medic_hist_perform)
 
-        if self.host_pulse is not None and not isinstance(self.host_pulse, str):
-            self.host_pulse = str(self.host_pulse)
+        if self.menarche is not None and not isinstance(self.menarche, str):
+            self.menarche = str(self.menarche)
 
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
+        if self.menopause is not None and not isinstance(self.menopause, str):
+            self.menopause = str(self.menopause)
 
-        if self.samp_salinity is not None and not isinstance(self.samp_salinity, str):
-            self.samp_salinity = str(self.samp_salinity)
-
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
-
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
 
         if self.organism_count is not None and not isinstance(self.organism_count, str):
             self.organism_count = str(self.organism_count)
 
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
 
-        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
+        if self.pregnancy is not None and not isinstance(self.pregnancy, str):
+            self.pregnancy = str(self.pregnancy)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
+        if self.samp_salinity is not None and not isinstance(self.samp_salinity, str):
+            self.samp_salinity = str(self.samp_salinity)
 
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sexual_act is not None and not isinstance(self.sexual_act, str):
+            self.sexual_act = str(self.sexual_act)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.urogenit_disord is not None and not isinstance(self.urogenit_disord, str):
+            self.urogenit_disord = str(self.urogenit_disord)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HydrocarbonResourcesCores(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016015"]
@@ -5135,258 +5141,173 @@ class HydrocarbonResourcesCores(EnvironmentalPackage):
     class_name: ClassVar[str] = "HydrocarbonResourcesCores"
     class_model_uri: ClassVar[URIRef] = MIXS.HydrocarbonResourcesCores
 
-    samp_name: str = None
-    project_name: str = None
-    hcr: str = None
-    hc_produced: str = None
-    basin: str = None
-    hcr_temp: str = None
-    sulfate_fw: str = None
-    vfa_fw: str = None
-    samp_type: str = None
-    temp: str = None
     api: str = None
-    field: Optional[str] = None
-    reservoir: Optional[str] = None
-    tvdss_of_hcr_temp: Optional[str] = None
-    hcr_pressure: Optional[str] = None
-    tvdss_of_hcr_press: Optional[str] = None
-    permeability: Optional[str] = None
-    porosity: Optional[str] = None
-    lithology: Optional[str] = None
+    basin: str = None
+    hc_produced: str = None
+    hcr: str = None
+    hcr_temp: str = None
+    project_name: str = None
+    samp_type: str = None
+    sulfate_fw: str = None
+    temp: str = None
+    vfa_fw: str = None
+    ammonium: Optional[str] = None
+    aromatics_pc: Optional[str] = None
+    asphaltenes_pc: Optional[str] = None
+    benzene: Optional[str] = None
     depos_env: Optional[str] = None
-    hcr_geol_age: Optional[str] = None
-    owc_tvdss: Optional[str] = None
+    diss_inorg_phosp: Optional[str] = None
+    diss_iron: Optional[str] = None
+    ethylbenzene: Optional[str] = None
+    field: Optional[str] = None
     hcr_fw_salinity: Optional[str] = None
-    sr_kerog_type: Optional[str] = None
-    sr_lithology: Optional[str] = None
-    sr_dep_env: Optional[str] = None
-    sr_geol_age: Optional[str] = None
-    samp_well_name: Optional[str] = None
-    win: Optional[str] = None
-    samp_subtype: Optional[str] = None
-    pressure: Optional[str] = None
-    samp_tvdss: Optional[str] = None
-    samp_md: Optional[str] = None
-    elev: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    samp_transport_cond: Optional[str] = None
-    samp_store_temp: Optional[str] = None
-    samp_store_dur: Optional[str] = None
-    samp_store_loc: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    organism_count: Optional[str] = None
-    org_count_qpcr_info: Optional[str] = None
-    ph: Optional[float] = None
-    salinity: Optional[str] = None
-    alkalinity: Optional[str] = None
-    alkalinity_method: Optional[str] = None
-    sulfate: Optional[str] = None
-    sulfide: Optional[str] = None
-    tot_sulfur: Optional[str] = None
+    hcr_geol_age: Optional[str] = None
+    lithology: Optional[str] = None
     nitrate: Optional[str] = None
     nitrite: Optional[str] = None
-    ammonium: Optional[str] = None
-    tot_nitro: Optional[str] = None
-    diss_iron: Optional[str] = None
-    sodium: Optional[str] = None
-    chloride: Optional[str] = None
-    potassium: Optional[str] = None
-    magnesium: Optional[str] = None
-    calcium: Optional[str] = None
+    organism_count: Optional[str] = None
+    ph: Optional[float] = None
+    reservoir: Optional[str] = None
+    resins_pc: Optional[str] = None
+    samp_subtype: Optional[str] = None
+    samp_tvdss: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    samp_well_name: Optional[str] = None
+    saturates_pc: Optional[str] = None
+    sulfate: Optional[str] = None
+    sulfide: Optional[str] = None
+    tan: Optional[str] = None
+    toluene: Optional[str] = None
     tot_iron: Optional[str] = None
-    diss_org_carb: Optional[str] = None
-    diss_inorg_carb: Optional[str] = None
-    diss_inorg_phosp: Optional[str] = None
-    tot_phosp: Optional[str] = None
-    suspend_solids: Optional[str] = None
+    tot_sulfur: Optional[str] = None
+    vfa: Optional[str] = None
+    win: Optional[str] = None
+    xylene: Optional[str] = None
+    additional_info: Optional[str] = None
+    alkalinity: Optional[str] = None
+    alkalinity_method: Optional[str] = None
+    calcium: Optional[str] = None
+    chloride: Optional[str] = None
     density: Optional[str] = None
     diss_carb_dioxide: Optional[str] = None
+    diss_inorg_carb: Optional[str] = None
+    diss_org_carb: Optional[str] = None
     diss_oxygen_fluid: Optional[str] = None
-    vfa: Optional[str] = None
-    benzene: Optional[str] = None
-    toluene: Optional[str] = None
-    ethylbenzene: Optional[str] = None
-    xylene: Optional[str] = None
-    tan: Optional[str] = None
-    viscosity: Optional[str] = None
-    pour_point: Optional[str] = None
-    saturates_pc: Optional[str] = None
-    aromatics_pc: Optional[str] = None
-    resins_pc: Optional[str] = None
-    asphaltenes_pc: Optional[str] = None
+    elev: Optional[str] = None
+    hcr_pressure: Optional[str] = None
+    magnesium: Optional[str] = None
     misc_param: Optional[str] = None
-    additional_info: Optional[str] = None
+    org_count_qpcr_info: Optional[str] = None
+    owc_tvdss: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    permeability: Optional[str] = None
+    porosity: Optional[str] = None
+    potassium: Optional[str] = None
+    pour_point: Optional[str] = None
+    pressure: Optional[str] = None
+    salinity: Optional[str] = None
+    samp_md: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_transport_cond: Optional[str] = None
+    sodium: Optional[str] = None
+    sr_dep_env: Optional[str] = None
+    sr_geol_age: Optional[str] = None
+    sr_kerog_type: Optional[str] = None
+    sr_lithology: Optional[str] = None
+    suspend_solids: Optional[str] = None
+    tot_phosp: Optional[str] = None
+    tvdss_of_hcr_press: Optional[str] = None
+    tvdss_of_hcr_temp: Optional[str] = None
+    viscosity: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.hcr):
-            self.MissingRequiredField("hcr")
-        if not isinstance(self.hcr, str):
-            self.hcr = str(self.hcr)
-
-        if self._is_empty(self.hc_produced):
-            self.MissingRequiredField("hc_produced")
-        if not isinstance(self.hc_produced, str):
-            self.hc_produced = str(self.hc_produced)
+        if self._is_empty(self.api):
+            self.MissingRequiredField("api")
+        if not isinstance(self.api, str):
+            self.api = str(self.api)
 
         if self._is_empty(self.basin):
             self.MissingRequiredField("basin")
         if not isinstance(self.basin, str):
             self.basin = str(self.basin)
 
+        if self._is_empty(self.hc_produced):
+            self.MissingRequiredField("hc_produced")
+        if not isinstance(self.hc_produced, str):
+            self.hc_produced = str(self.hc_produced)
+
+        if self._is_empty(self.hcr):
+            self.MissingRequiredField("hcr")
+        if not isinstance(self.hcr, str):
+            self.hcr = str(self.hcr)
+
         if self._is_empty(self.hcr_temp):
             self.MissingRequiredField("hcr_temp")
         if not isinstance(self.hcr_temp, str):
             self.hcr_temp = str(self.hcr_temp)
 
-        if self._is_empty(self.sulfate_fw):
-            self.MissingRequiredField("sulfate_fw")
-        if not isinstance(self.sulfate_fw, str):
-            self.sulfate_fw = str(self.sulfate_fw)
-
-        if self._is_empty(self.vfa_fw):
-            self.MissingRequiredField("vfa_fw")
-        if not isinstance(self.vfa_fw, str):
-            self.vfa_fw = str(self.vfa_fw)
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
 
         if self._is_empty(self.samp_type):
             self.MissingRequiredField("samp_type")
         if not isinstance(self.samp_type, str):
             self.samp_type = str(self.samp_type)
 
+        if self._is_empty(self.sulfate_fw):
+            self.MissingRequiredField("sulfate_fw")
+        if not isinstance(self.sulfate_fw, str):
+            self.sulfate_fw = str(self.sulfate_fw)
+
         if self._is_empty(self.temp):
             self.MissingRequiredField("temp")
         if not isinstance(self.temp, str):
             self.temp = str(self.temp)
 
-        if self._is_empty(self.api):
-            self.MissingRequiredField("api")
-        if not isinstance(self.api, str):
-            self.api = str(self.api)
+        if self._is_empty(self.vfa_fw):
+            self.MissingRequiredField("vfa_fw")
+        if not isinstance(self.vfa_fw, str):
+            self.vfa_fw = str(self.vfa_fw)
 
-        if self.field is not None and not isinstance(self.field, str):
-            self.field = str(self.field)
+        if self.ammonium is not None and not isinstance(self.ammonium, str):
+            self.ammonium = str(self.ammonium)
 
-        if self.reservoir is not None and not isinstance(self.reservoir, str):
-            self.reservoir = str(self.reservoir)
+        if self.aromatics_pc is not None and not isinstance(self.aromatics_pc, str):
+            self.aromatics_pc = str(self.aromatics_pc)
 
-        if self.tvdss_of_hcr_temp is not None and not isinstance(self.tvdss_of_hcr_temp, str):
-            self.tvdss_of_hcr_temp = str(self.tvdss_of_hcr_temp)
+        if self.asphaltenes_pc is not None and not isinstance(self.asphaltenes_pc, str):
+            self.asphaltenes_pc = str(self.asphaltenes_pc)
 
-        if self.hcr_pressure is not None and not isinstance(self.hcr_pressure, str):
-            self.hcr_pressure = str(self.hcr_pressure)
-
-        if self.tvdss_of_hcr_press is not None and not isinstance(self.tvdss_of_hcr_press, str):
-            self.tvdss_of_hcr_press = str(self.tvdss_of_hcr_press)
-
-        if self.permeability is not None and not isinstance(self.permeability, str):
-            self.permeability = str(self.permeability)
-
-        if self.porosity is not None and not isinstance(self.porosity, str):
-            self.porosity = str(self.porosity)
-
-        if self.lithology is not None and not isinstance(self.lithology, str):
-            self.lithology = str(self.lithology)
+        if self.benzene is not None and not isinstance(self.benzene, str):
+            self.benzene = str(self.benzene)
 
         if self.depos_env is not None and not isinstance(self.depos_env, str):
             self.depos_env = str(self.depos_env)
 
-        if self.hcr_geol_age is not None and not isinstance(self.hcr_geol_age, str):
-            self.hcr_geol_age = str(self.hcr_geol_age)
+        if self.diss_inorg_phosp is not None and not isinstance(self.diss_inorg_phosp, str):
+            self.diss_inorg_phosp = str(self.diss_inorg_phosp)
 
-        if self.owc_tvdss is not None and not isinstance(self.owc_tvdss, str):
-            self.owc_tvdss = str(self.owc_tvdss)
+        if self.diss_iron is not None and not isinstance(self.diss_iron, str):
+            self.diss_iron = str(self.diss_iron)
+
+        if self.ethylbenzene is not None and not isinstance(self.ethylbenzene, str):
+            self.ethylbenzene = str(self.ethylbenzene)
+
+        if self.field is not None and not isinstance(self.field, str):
+            self.field = str(self.field)
 
         if self.hcr_fw_salinity is not None and not isinstance(self.hcr_fw_salinity, str):
             self.hcr_fw_salinity = str(self.hcr_fw_salinity)
 
-        if self.sr_kerog_type is not None and not isinstance(self.sr_kerog_type, str):
-            self.sr_kerog_type = str(self.sr_kerog_type)
+        if self.hcr_geol_age is not None and not isinstance(self.hcr_geol_age, str):
+            self.hcr_geol_age = str(self.hcr_geol_age)
 
-        if self.sr_lithology is not None and not isinstance(self.sr_lithology, str):
-            self.sr_lithology = str(self.sr_lithology)
-
-        if self.sr_dep_env is not None and not isinstance(self.sr_dep_env, str):
-            self.sr_dep_env = str(self.sr_dep_env)
-
-        if self.sr_geol_age is not None and not isinstance(self.sr_geol_age, str):
-            self.sr_geol_age = str(self.sr_geol_age)
-
-        if self.samp_well_name is not None and not isinstance(self.samp_well_name, str):
-            self.samp_well_name = str(self.samp_well_name)
-
-        if self.win is not None and not isinstance(self.win, str):
-            self.win = str(self.win)
-
-        if self.samp_subtype is not None and not isinstance(self.samp_subtype, str):
-            self.samp_subtype = str(self.samp_subtype)
-
-        if self.pressure is not None and not isinstance(self.pressure, str):
-            self.pressure = str(self.pressure)
-
-        if self.samp_tvdss is not None and not isinstance(self.samp_tvdss, str):
-            self.samp_tvdss = str(self.samp_tvdss)
-
-        if self.samp_md is not None and not isinstance(self.samp_md, str):
-            self.samp_md = str(self.samp_md)
-
-        if self.elev is not None and not isinstance(self.elev, str):
-            self.elev = str(self.elev)
-
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
-
-        if self.samp_transport_cond is not None and not isinstance(self.samp_transport_cond, str):
-            self.samp_transport_cond = str(self.samp_transport_cond)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
-
-        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
-            self.samp_store_dur = str(self.samp_store_dur)
-
-        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.organism_count is not None and not isinstance(self.organism_count, str):
-            self.organism_count = str(self.organism_count)
-
-        if self.org_count_qpcr_info is not None and not isinstance(self.org_count_qpcr_info, str):
-            self.org_count_qpcr_info = str(self.org_count_qpcr_info)
-
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
-
-        if self.alkalinity is not None and not isinstance(self.alkalinity, str):
-            self.alkalinity = str(self.alkalinity)
-
-        if self.alkalinity_method is not None and not isinstance(self.alkalinity_method, str):
-            self.alkalinity_method = str(self.alkalinity_method)
-
-        if self.sulfate is not None and not isinstance(self.sulfate, str):
-            self.sulfate = str(self.sulfate)
-
-        if self.sulfide is not None and not isinstance(self.sulfide, str):
-            self.sulfide = str(self.sulfide)
-
-        if self.tot_sulfur is not None and not isinstance(self.tot_sulfur, str):
-            self.tot_sulfur = str(self.tot_sulfur)
+        if self.lithology is not None and not isinstance(self.lithology, str):
+            self.lithology = str(self.lithology)
 
         if self.nitrate is not None and not isinstance(self.nitrate, str):
             self.nitrate = str(self.nitrate)
@@ -5394,47 +5315,74 @@ class HydrocarbonResourcesCores(EnvironmentalPackage):
         if self.nitrite is not None and not isinstance(self.nitrite, str):
             self.nitrite = str(self.nitrite)
 
-        if self.ammonium is not None and not isinstance(self.ammonium, str):
-            self.ammonium = str(self.ammonium)
+        if self.organism_count is not None and not isinstance(self.organism_count, str):
+            self.organism_count = str(self.organism_count)
 
-        if self.tot_nitro is not None and not isinstance(self.tot_nitro, str):
-            self.tot_nitro = str(self.tot_nitro)
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
-        if self.diss_iron is not None and not isinstance(self.diss_iron, str):
-            self.diss_iron = str(self.diss_iron)
+        if self.reservoir is not None and not isinstance(self.reservoir, str):
+            self.reservoir = str(self.reservoir)
 
-        if self.sodium is not None and not isinstance(self.sodium, str):
-            self.sodium = str(self.sodium)
+        if self.resins_pc is not None and not isinstance(self.resins_pc, str):
+            self.resins_pc = str(self.resins_pc)
 
-        if self.chloride is not None and not isinstance(self.chloride, str):
-            self.chloride = str(self.chloride)
+        if self.samp_subtype is not None and not isinstance(self.samp_subtype, str):
+            self.samp_subtype = str(self.samp_subtype)
 
-        if self.potassium is not None and not isinstance(self.potassium, str):
-            self.potassium = str(self.potassium)
+        if self.samp_tvdss is not None and not isinstance(self.samp_tvdss, str):
+            self.samp_tvdss = str(self.samp_tvdss)
 
-        if self.magnesium is not None and not isinstance(self.magnesium, str):
-            self.magnesium = str(self.magnesium)
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
 
-        if self.calcium is not None and not isinstance(self.calcium, str):
-            self.calcium = str(self.calcium)
+        if self.samp_well_name is not None and not isinstance(self.samp_well_name, str):
+            self.samp_well_name = str(self.samp_well_name)
+
+        if self.saturates_pc is not None and not isinstance(self.saturates_pc, str):
+            self.saturates_pc = str(self.saturates_pc)
+
+        if self.sulfate is not None and not isinstance(self.sulfate, str):
+            self.sulfate = str(self.sulfate)
+
+        if self.sulfide is not None and not isinstance(self.sulfide, str):
+            self.sulfide = str(self.sulfide)
+
+        if self.tan is not None and not isinstance(self.tan, str):
+            self.tan = str(self.tan)
+
+        if self.toluene is not None and not isinstance(self.toluene, str):
+            self.toluene = str(self.toluene)
 
         if self.tot_iron is not None and not isinstance(self.tot_iron, str):
             self.tot_iron = str(self.tot_iron)
 
-        if self.diss_org_carb is not None and not isinstance(self.diss_org_carb, str):
-            self.diss_org_carb = str(self.diss_org_carb)
+        if self.tot_sulfur is not None and not isinstance(self.tot_sulfur, str):
+            self.tot_sulfur = str(self.tot_sulfur)
 
-        if self.diss_inorg_carb is not None and not isinstance(self.diss_inorg_carb, str):
-            self.diss_inorg_carb = str(self.diss_inorg_carb)
+        if self.vfa is not None and not isinstance(self.vfa, str):
+            self.vfa = str(self.vfa)
 
-        if self.diss_inorg_phosp is not None and not isinstance(self.diss_inorg_phosp, str):
-            self.diss_inorg_phosp = str(self.diss_inorg_phosp)
+        if self.win is not None and not isinstance(self.win, str):
+            self.win = str(self.win)
 
-        if self.tot_phosp is not None and not isinstance(self.tot_phosp, str):
-            self.tot_phosp = str(self.tot_phosp)
+        if self.xylene is not None and not isinstance(self.xylene, str):
+            self.xylene = str(self.xylene)
 
-        if self.suspend_solids is not None and not isinstance(self.suspend_solids, str):
-            self.suspend_solids = str(self.suspend_solids)
+        if self.additional_info is not None and not isinstance(self.additional_info, str):
+            self.additional_info = str(self.additional_info)
+
+        if self.alkalinity is not None and not isinstance(self.alkalinity, str):
+            self.alkalinity = str(self.alkalinity)
+
+        if self.alkalinity_method is not None and not isinstance(self.alkalinity_method, str):
+            self.alkalinity_method = str(self.alkalinity_method)
+
+        if self.calcium is not None and not isinstance(self.calcium, str):
+            self.calcium = str(self.calcium)
+
+        if self.chloride is not None and not isinstance(self.chloride, str):
+            self.chloride = str(self.chloride)
 
         if self.density is not None and not isinstance(self.density, str):
             self.density = str(self.density)
@@ -5442,56 +5390,107 @@ class HydrocarbonResourcesCores(EnvironmentalPackage):
         if self.diss_carb_dioxide is not None and not isinstance(self.diss_carb_dioxide, str):
             self.diss_carb_dioxide = str(self.diss_carb_dioxide)
 
+        if self.diss_inorg_carb is not None and not isinstance(self.diss_inorg_carb, str):
+            self.diss_inorg_carb = str(self.diss_inorg_carb)
+
+        if self.diss_org_carb is not None and not isinstance(self.diss_org_carb, str):
+            self.diss_org_carb = str(self.diss_org_carb)
+
         if self.diss_oxygen_fluid is not None and not isinstance(self.diss_oxygen_fluid, str):
             self.diss_oxygen_fluid = str(self.diss_oxygen_fluid)
 
-        if self.vfa is not None and not isinstance(self.vfa, str):
-            self.vfa = str(self.vfa)
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
 
-        if self.benzene is not None and not isinstance(self.benzene, str):
-            self.benzene = str(self.benzene)
+        if self.hcr_pressure is not None and not isinstance(self.hcr_pressure, str):
+            self.hcr_pressure = str(self.hcr_pressure)
 
-        if self.toluene is not None and not isinstance(self.toluene, str):
-            self.toluene = str(self.toluene)
-
-        if self.ethylbenzene is not None and not isinstance(self.ethylbenzene, str):
-            self.ethylbenzene = str(self.ethylbenzene)
-
-        if self.xylene is not None and not isinstance(self.xylene, str):
-            self.xylene = str(self.xylene)
-
-        if self.tan is not None and not isinstance(self.tan, str):
-            self.tan = str(self.tan)
-
-        if self.viscosity is not None and not isinstance(self.viscosity, str):
-            self.viscosity = str(self.viscosity)
-
-        if self.pour_point is not None and not isinstance(self.pour_point, str):
-            self.pour_point = str(self.pour_point)
-
-        if self.saturates_pc is not None and not isinstance(self.saturates_pc, str):
-            self.saturates_pc = str(self.saturates_pc)
-
-        if self.aromatics_pc is not None and not isinstance(self.aromatics_pc, str):
-            self.aromatics_pc = str(self.aromatics_pc)
-
-        if self.resins_pc is not None and not isinstance(self.resins_pc, str):
-            self.resins_pc = str(self.resins_pc)
-
-        if self.asphaltenes_pc is not None and not isinstance(self.asphaltenes_pc, str):
-            self.asphaltenes_pc = str(self.asphaltenes_pc)
+        if self.magnesium is not None and not isinstance(self.magnesium, str):
+            self.magnesium = str(self.magnesium)
 
         if self.misc_param is not None and not isinstance(self.misc_param, str):
             self.misc_param = str(self.misc_param)
 
-        if self.additional_info is not None and not isinstance(self.additional_info, str):
-            self.additional_info = str(self.additional_info)
+        if self.org_count_qpcr_info is not None and not isinstance(self.org_count_qpcr_info, str):
+            self.org_count_qpcr_info = str(self.org_count_qpcr_info)
+
+        if self.owc_tvdss is not None and not isinstance(self.owc_tvdss, str):
+            self.owc_tvdss = str(self.owc_tvdss)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+
+        if self.permeability is not None and not isinstance(self.permeability, str):
+            self.permeability = str(self.permeability)
+
+        if self.porosity is not None and not isinstance(self.porosity, str):
+            self.porosity = str(self.porosity)
+
+        if self.potassium is not None and not isinstance(self.potassium, str):
+            self.potassium = str(self.potassium)
+
+        if self.pour_point is not None and not isinstance(self.pour_point, str):
+            self.pour_point = str(self.pour_point)
+
+        if self.pressure is not None and not isinstance(self.pressure, str):
+            self.pressure = str(self.pressure)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
+        if self.samp_md is not None and not isinstance(self.samp_md, str):
+            self.samp_md = str(self.samp_md)
+
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_transport_cond is not None and not isinstance(self.samp_transport_cond, str):
+            self.samp_transport_cond = str(self.samp_transport_cond)
+
+        if self.sodium is not None and not isinstance(self.sodium, str):
+            self.sodium = str(self.sodium)
+
+        if self.sr_dep_env is not None and not isinstance(self.sr_dep_env, str):
+            self.sr_dep_env = str(self.sr_dep_env)
+
+        if self.sr_geol_age is not None and not isinstance(self.sr_geol_age, str):
+            self.sr_geol_age = str(self.sr_geol_age)
+
+        if self.sr_kerog_type is not None and not isinstance(self.sr_kerog_type, str):
+            self.sr_kerog_type = str(self.sr_kerog_type)
+
+        if self.sr_lithology is not None and not isinstance(self.sr_lithology, str):
+            self.sr_lithology = str(self.sr_lithology)
+
+        if self.suspend_solids is not None and not isinstance(self.suspend_solids, str):
+            self.suspend_solids = str(self.suspend_solids)
+
+        if self.tot_phosp is not None and not isinstance(self.tot_phosp, str):
+            self.tot_phosp = str(self.tot_phosp)
+
+        if self.tvdss_of_hcr_press is not None and not isinstance(self.tvdss_of_hcr_press, str):
+            self.tvdss_of_hcr_press = str(self.tvdss_of_hcr_press)
+
+        if self.tvdss_of_hcr_temp is not None and not isinstance(self.tvdss_of_hcr_temp, str):
+            self.tvdss_of_hcr_temp = str(self.tvdss_of_hcr_temp)
+
+        if self.viscosity is not None and not isinstance(self.viscosity, str):
+            self.viscosity = str(self.viscosity)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016016"]
@@ -5499,148 +5498,141 @@ class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
     class_name: ClassVar[str] = "HydrocarbonResourcesFluidsSwabs"
     class_model_uri: ClassVar[URIRef] = MIXS.HydrocarbonResourcesFluidsSwabs
 
-    samp_name: str = None
-    project_name: str = None
-    hcr: str = None
-    hc_produced: str = None
-    basin: str = None
-    water_cut: str = None
-    iwf: str = None
     add_recov_method: str = None
-    samp_type: str = None
+    api: str = None
+    basin: str = None
+    hc_produced: str = None
+    hcr: str = None
+    iwf: str = None
+    nitrate: str = None
+    project_name: str = None
     samp_collect_point: str = None
-    temp: str = None
+    samp_type: str = None
     sulfate: str = None
     sulfide: str = None
-    nitrate: str = None
-    api: str = None
-    field: Optional[str] = None
-    reservoir: Optional[str] = None
-    hcr_temp: Optional[str] = None
-    tvdss_of_hcr_temp: Optional[str] = None
-    hcr_pressure: Optional[str] = None
-    tvdss_of_hcr_press: Optional[str] = None
-    lithology: Optional[str] = None
-    depos_env: Optional[str] = None
-    hcr_geol_age: Optional[str] = None
-    hcr_fw_salinity: Optional[str] = None
-    sulfate_fw: Optional[str] = None
-    vfa_fw: Optional[str] = None
-    prod_start_date: Optional[str] = None
-    prod_rate: Optional[str] = None
-    water_prod_rate: Optional[str] = None
-    iw_bt_date_well: Optional[str] = None
+    temp: str = None
+    water_cut: str = None
+    ammonium: Optional[str] = None
+    aromatics_pc: Optional[str] = None
+    asphaltenes_pc: Optional[str] = None
+    benzene: Optional[str] = None
     biocide: Optional[str] = None
     biocide_admin_method: Optional[str] = None
-    chem_treatment: Optional[str] = None
-    chem_treat_method: Optional[str] = None
-    samp_loc_corr_rate: Optional[str] = None
-    samp_well_name: Optional[str] = None
-    win: Optional[str] = None
-    samp_subtype: Optional[str] = None
-    pressure: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    samp_preserv: Optional[str] = None
-    samp_transport_cond: Optional[str] = None
-    samp_store_temp: Optional[str] = None
-    samp_store_dur: Optional[str] = None
-    samp_store_loc: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
+    depos_env: Optional[str] = None
+    diss_inorg_phosp: Optional[str] = None
+    diss_iron: Optional[str] = None
+    ethylbenzene: Optional[str] = None
+    field: Optional[str] = None
+    hcr_fw_salinity: Optional[str] = None
+    hcr_geol_age: Optional[str] = None
+    hcr_temp: Optional[str] = None
+    lithology: Optional[str] = None
+    nitrite: Optional[str] = None
     organism_count: Optional[str] = None
-    org_count_qpcr_info: Optional[str] = None
     ph: Optional[float] = None
-    salinity: Optional[str] = None
+    prod_rate: Optional[str] = None
+    prod_start_date: Optional[str] = None
+    reservoir: Optional[str] = None
+    resins_pc: Optional[str] = None
+    samp_loc_corr_rate: Optional[str] = None
+    samp_subtype: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    samp_well_name: Optional[str] = None
+    saturates_pc: Optional[str] = None
+    sulfate_fw: Optional[str] = None
+    tan: Optional[str] = None
+    toluene: Optional[str] = None
+    tot_iron: Optional[str] = None
+    tot_sulfur: Optional[str] = None
+    vfa: Optional[str] = None
+    vfa_fw: Optional[str] = None
+    water_prod_rate: Optional[str] = None
+    win: Optional[str] = None
+    xylene: Optional[str] = None
+    additional_info: Optional[str] = None
     alkalinity: Optional[str] = None
     alkalinity_method: Optional[str] = None
-    tot_sulfur: Optional[str] = None
-    nitrite: Optional[str] = None
-    ammonium: Optional[str] = None
-    tot_nitro: Optional[str] = None
-    diss_iron: Optional[str] = None
-    sodium: Optional[str] = None
-    chloride: Optional[str] = None
-    potassium: Optional[str] = None
-    magnesium: Optional[str] = None
     calcium: Optional[str] = None
-    tot_iron: Optional[str] = None
-    diss_org_carb: Optional[str] = None
-    diss_inorg_carb: Optional[str] = None
-    diss_inorg_phosp: Optional[str] = None
-    tot_phosp: Optional[str] = None
-    suspend_solids: Optional[str] = None
+    chem_treat_method: Optional[str] = None
+    chem_treatment: Optional[str] = None
+    chloride: Optional[str] = None
     density: Optional[str] = None
     diss_carb_dioxide: Optional[str] = None
+    diss_inorg_carb: Optional[str] = None
+    diss_org_carb: Optional[str] = None
     diss_oxygen_fluid: Optional[str] = None
-    vfa: Optional[str] = None
-    benzene: Optional[str] = None
-    toluene: Optional[str] = None
-    ethylbenzene: Optional[str] = None
-    xylene: Optional[str] = None
-    tan: Optional[str] = None
-    viscosity: Optional[str] = None
-    pour_point: Optional[str] = None
-    saturates_pc: Optional[str] = None
-    aromatics_pc: Optional[str] = None
-    resins_pc: Optional[str] = None
-    asphaltenes_pc: Optional[str] = None
+    hcr_pressure: Optional[str] = None
+    iw_bt_date_well: Optional[str] = None
+    magnesium: Optional[str] = None
     misc_param: Optional[str] = None
-    additional_info: Optional[str] = None
+    org_count_qpcr_info: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    potassium: Optional[str] = None
+    pour_point: Optional[str] = None
+    pressure: Optional[str] = None
+    salinity: Optional[str] = None
+    samp_preserv: Optional[str] = None
+    samp_store_dur: Optional[str] = None
+    samp_store_loc: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_transport_cond: Optional[str] = None
+    sodium: Optional[str] = None
+    suspend_solids: Optional[str] = None
+    tot_phosp: Optional[str] = None
+    tvdss_of_hcr_press: Optional[str] = None
+    tvdss_of_hcr_temp: Optional[str] = None
+    viscosity: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
+        if self._is_empty(self.add_recov_method):
+            self.MissingRequiredField("add_recov_method")
+        if not isinstance(self.add_recov_method, str):
+            self.add_recov_method = str(self.add_recov_method)
 
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.hcr):
-            self.MissingRequiredField("hcr")
-        if not isinstance(self.hcr, str):
-            self.hcr = str(self.hcr)
-
-        if self._is_empty(self.hc_produced):
-            self.MissingRequiredField("hc_produced")
-        if not isinstance(self.hc_produced, str):
-            self.hc_produced = str(self.hc_produced)
+        if self._is_empty(self.api):
+            self.MissingRequiredField("api")
+        if not isinstance(self.api, str):
+            self.api = str(self.api)
 
         if self._is_empty(self.basin):
             self.MissingRequiredField("basin")
         if not isinstance(self.basin, str):
             self.basin = str(self.basin)
 
-        if self._is_empty(self.water_cut):
-            self.MissingRequiredField("water_cut")
-        if not isinstance(self.water_cut, str):
-            self.water_cut = str(self.water_cut)
+        if self._is_empty(self.hc_produced):
+            self.MissingRequiredField("hc_produced")
+        if not isinstance(self.hc_produced, str):
+            self.hc_produced = str(self.hc_produced)
+
+        if self._is_empty(self.hcr):
+            self.MissingRequiredField("hcr")
+        if not isinstance(self.hcr, str):
+            self.hcr = str(self.hcr)
 
         if self._is_empty(self.iwf):
             self.MissingRequiredField("iwf")
         if not isinstance(self.iwf, str):
             self.iwf = str(self.iwf)
 
-        if self._is_empty(self.add_recov_method):
-            self.MissingRequiredField("add_recov_method")
-        if not isinstance(self.add_recov_method, str):
-            self.add_recov_method = str(self.add_recov_method)
+        if self._is_empty(self.nitrate):
+            self.MissingRequiredField("nitrate")
+        if not isinstance(self.nitrate, str):
+            self.nitrate = str(self.nitrate)
 
-        if self._is_empty(self.samp_type):
-            self.MissingRequiredField("samp_type")
-        if not isinstance(self.samp_type, str):
-            self.samp_type = str(self.samp_type)
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
 
         if self._is_empty(self.samp_collect_point):
             self.MissingRequiredField("samp_collect_point")
         if not isinstance(self.samp_collect_point, str):
             self.samp_collect_point = str(self.samp_collect_point)
 
-        if self._is_empty(self.temp):
-            self.MissingRequiredField("temp")
-        if not isinstance(self.temp, str):
-            self.temp = str(self.temp)
+        if self._is_empty(self.samp_type):
+            self.MissingRequiredField("samp_type")
+        if not isinstance(self.samp_type, str):
+            self.samp_type = str(self.samp_type)
 
         if self._is_empty(self.sulfate):
             self.MissingRequiredField("sulfate")
@@ -5652,63 +5644,27 @@ class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
         if not isinstance(self.sulfide, str):
             self.sulfide = str(self.sulfide)
 
-        if self._is_empty(self.nitrate):
-            self.MissingRequiredField("nitrate")
-        if not isinstance(self.nitrate, str):
-            self.nitrate = str(self.nitrate)
+        if self._is_empty(self.temp):
+            self.MissingRequiredField("temp")
+        if not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
-        if self._is_empty(self.api):
-            self.MissingRequiredField("api")
-        if not isinstance(self.api, str):
-            self.api = str(self.api)
+        if self._is_empty(self.water_cut):
+            self.MissingRequiredField("water_cut")
+        if not isinstance(self.water_cut, str):
+            self.water_cut = str(self.water_cut)
 
-        if self.field is not None and not isinstance(self.field, str):
-            self.field = str(self.field)
+        if self.ammonium is not None and not isinstance(self.ammonium, str):
+            self.ammonium = str(self.ammonium)
 
-        if self.reservoir is not None and not isinstance(self.reservoir, str):
-            self.reservoir = str(self.reservoir)
+        if self.aromatics_pc is not None and not isinstance(self.aromatics_pc, str):
+            self.aromatics_pc = str(self.aromatics_pc)
 
-        if self.hcr_temp is not None and not isinstance(self.hcr_temp, str):
-            self.hcr_temp = str(self.hcr_temp)
+        if self.asphaltenes_pc is not None and not isinstance(self.asphaltenes_pc, str):
+            self.asphaltenes_pc = str(self.asphaltenes_pc)
 
-        if self.tvdss_of_hcr_temp is not None and not isinstance(self.tvdss_of_hcr_temp, str):
-            self.tvdss_of_hcr_temp = str(self.tvdss_of_hcr_temp)
-
-        if self.hcr_pressure is not None and not isinstance(self.hcr_pressure, str):
-            self.hcr_pressure = str(self.hcr_pressure)
-
-        if self.tvdss_of_hcr_press is not None and not isinstance(self.tvdss_of_hcr_press, str):
-            self.tvdss_of_hcr_press = str(self.tvdss_of_hcr_press)
-
-        if self.lithology is not None and not isinstance(self.lithology, str):
-            self.lithology = str(self.lithology)
-
-        if self.depos_env is not None and not isinstance(self.depos_env, str):
-            self.depos_env = str(self.depos_env)
-
-        if self.hcr_geol_age is not None and not isinstance(self.hcr_geol_age, str):
-            self.hcr_geol_age = str(self.hcr_geol_age)
-
-        if self.hcr_fw_salinity is not None and not isinstance(self.hcr_fw_salinity, str):
-            self.hcr_fw_salinity = str(self.hcr_fw_salinity)
-
-        if self.sulfate_fw is not None and not isinstance(self.sulfate_fw, str):
-            self.sulfate_fw = str(self.sulfate_fw)
-
-        if self.vfa_fw is not None and not isinstance(self.vfa_fw, str):
-            self.vfa_fw = str(self.vfa_fw)
-
-        if self.prod_start_date is not None and not isinstance(self.prod_start_date, str):
-            self.prod_start_date = str(self.prod_start_date)
-
-        if self.prod_rate is not None and not isinstance(self.prod_rate, str):
-            self.prod_rate = str(self.prod_rate)
-
-        if self.water_prod_rate is not None and not isinstance(self.water_prod_rate, str):
-            self.water_prod_rate = str(self.water_prod_rate)
-
-        if self.iw_bt_date_well is not None and not isinstance(self.iw_bt_date_well, str):
-            self.iw_bt_date_well = str(self.iw_bt_date_well)
+        if self.benzene is not None and not isinstance(self.benzene, str):
+            self.benzene = str(self.benzene)
 
         if self.biocide is not None and not isinstance(self.biocide, str):
             self.biocide = str(self.biocide)
@@ -5716,59 +5672,101 @@ class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
         if self.biocide_admin_method is not None and not isinstance(self.biocide_admin_method, str):
             self.biocide_admin_method = str(self.biocide_admin_method)
 
-        if self.chem_treatment is not None and not isinstance(self.chem_treatment, str):
-            self.chem_treatment = str(self.chem_treatment)
+        if self.depos_env is not None and not isinstance(self.depos_env, str):
+            self.depos_env = str(self.depos_env)
 
-        if self.chem_treat_method is not None and not isinstance(self.chem_treat_method, str):
-            self.chem_treat_method = str(self.chem_treat_method)
+        if self.diss_inorg_phosp is not None and not isinstance(self.diss_inorg_phosp, str):
+            self.diss_inorg_phosp = str(self.diss_inorg_phosp)
 
-        if self.samp_loc_corr_rate is not None and not isinstance(self.samp_loc_corr_rate, str):
-            self.samp_loc_corr_rate = str(self.samp_loc_corr_rate)
+        if self.diss_iron is not None and not isinstance(self.diss_iron, str):
+            self.diss_iron = str(self.diss_iron)
 
-        if self.samp_well_name is not None and not isinstance(self.samp_well_name, str):
-            self.samp_well_name = str(self.samp_well_name)
+        if self.ethylbenzene is not None and not isinstance(self.ethylbenzene, str):
+            self.ethylbenzene = str(self.ethylbenzene)
 
-        if self.win is not None and not isinstance(self.win, str):
-            self.win = str(self.win)
+        if self.field is not None and not isinstance(self.field, str):
+            self.field = str(self.field)
 
-        if self.samp_subtype is not None and not isinstance(self.samp_subtype, str):
-            self.samp_subtype = str(self.samp_subtype)
+        if self.hcr_fw_salinity is not None and not isinstance(self.hcr_fw_salinity, str):
+            self.hcr_fw_salinity = str(self.hcr_fw_salinity)
 
-        if self.pressure is not None and not isinstance(self.pressure, str):
-            self.pressure = str(self.pressure)
+        if self.hcr_geol_age is not None and not isinstance(self.hcr_geol_age, str):
+            self.hcr_geol_age = str(self.hcr_geol_age)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+        if self.hcr_temp is not None and not isinstance(self.hcr_temp, str):
+            self.hcr_temp = str(self.hcr_temp)
 
-        if self.samp_preserv is not None and not isinstance(self.samp_preserv, str):
-            self.samp_preserv = str(self.samp_preserv)
+        if self.lithology is not None and not isinstance(self.lithology, str):
+            self.lithology = str(self.lithology)
 
-        if self.samp_transport_cond is not None and not isinstance(self.samp_transport_cond, str):
-            self.samp_transport_cond = str(self.samp_transport_cond)
-
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
-
-        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
-            self.samp_store_dur = str(self.samp_store_dur)
-
-        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
-            self.samp_store_loc = str(self.samp_store_loc)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+        if self.nitrite is not None and not isinstance(self.nitrite, str):
+            self.nitrite = str(self.nitrite)
 
         if self.organism_count is not None and not isinstance(self.organism_count, str):
             self.organism_count = str(self.organism_count)
 
-        if self.org_count_qpcr_info is not None and not isinstance(self.org_count_qpcr_info, str):
-            self.org_count_qpcr_info = str(self.org_count_qpcr_info)
-
         if self.ph is not None and not isinstance(self.ph, float):
             self.ph = float(self.ph)
 
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
+        if self.prod_rate is not None and not isinstance(self.prod_rate, str):
+            self.prod_rate = str(self.prod_rate)
+
+        if self.prod_start_date is not None and not isinstance(self.prod_start_date, str):
+            self.prod_start_date = str(self.prod_start_date)
+
+        if self.reservoir is not None and not isinstance(self.reservoir, str):
+            self.reservoir = str(self.reservoir)
+
+        if self.resins_pc is not None and not isinstance(self.resins_pc, str):
+            self.resins_pc = str(self.resins_pc)
+
+        if self.samp_loc_corr_rate is not None and not isinstance(self.samp_loc_corr_rate, str):
+            self.samp_loc_corr_rate = str(self.samp_loc_corr_rate)
+
+        if self.samp_subtype is not None and not isinstance(self.samp_subtype, str):
+            self.samp_subtype = str(self.samp_subtype)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.samp_well_name is not None and not isinstance(self.samp_well_name, str):
+            self.samp_well_name = str(self.samp_well_name)
+
+        if self.saturates_pc is not None and not isinstance(self.saturates_pc, str):
+            self.saturates_pc = str(self.saturates_pc)
+
+        if self.sulfate_fw is not None and not isinstance(self.sulfate_fw, str):
+            self.sulfate_fw = str(self.sulfate_fw)
+
+        if self.tan is not None and not isinstance(self.tan, str):
+            self.tan = str(self.tan)
+
+        if self.toluene is not None and not isinstance(self.toluene, str):
+            self.toluene = str(self.toluene)
+
+        if self.tot_iron is not None and not isinstance(self.tot_iron, str):
+            self.tot_iron = str(self.tot_iron)
+
+        if self.tot_sulfur is not None and not isinstance(self.tot_sulfur, str):
+            self.tot_sulfur = str(self.tot_sulfur)
+
+        if self.vfa is not None and not isinstance(self.vfa, str):
+            self.vfa = str(self.vfa)
+
+        if self.vfa_fw is not None and not isinstance(self.vfa_fw, str):
+            self.vfa_fw = str(self.vfa_fw)
+
+        if self.water_prod_rate is not None and not isinstance(self.water_prod_rate, str):
+            self.water_prod_rate = str(self.water_prod_rate)
+
+        if self.win is not None and not isinstance(self.win, str):
+            self.win = str(self.win)
+
+        if self.xylene is not None and not isinstance(self.xylene, str):
+            self.xylene = str(self.xylene)
+
+        if self.additional_info is not None and not isinstance(self.additional_info, str):
+            self.additional_info = str(self.additional_info)
 
         if self.alkalinity is not None and not isinstance(self.alkalinity, str):
             self.alkalinity = str(self.alkalinity)
@@ -5776,53 +5774,17 @@ class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
         if self.alkalinity_method is not None and not isinstance(self.alkalinity_method, str):
             self.alkalinity_method = str(self.alkalinity_method)
 
-        if self.tot_sulfur is not None and not isinstance(self.tot_sulfur, str):
-            self.tot_sulfur = str(self.tot_sulfur)
-
-        if self.nitrite is not None and not isinstance(self.nitrite, str):
-            self.nitrite = str(self.nitrite)
-
-        if self.ammonium is not None and not isinstance(self.ammonium, str):
-            self.ammonium = str(self.ammonium)
-
-        if self.tot_nitro is not None and not isinstance(self.tot_nitro, str):
-            self.tot_nitro = str(self.tot_nitro)
-
-        if self.diss_iron is not None and not isinstance(self.diss_iron, str):
-            self.diss_iron = str(self.diss_iron)
-
-        if self.sodium is not None and not isinstance(self.sodium, str):
-            self.sodium = str(self.sodium)
-
-        if self.chloride is not None and not isinstance(self.chloride, str):
-            self.chloride = str(self.chloride)
-
-        if self.potassium is not None and not isinstance(self.potassium, str):
-            self.potassium = str(self.potassium)
-
-        if self.magnesium is not None and not isinstance(self.magnesium, str):
-            self.magnesium = str(self.magnesium)
-
         if self.calcium is not None and not isinstance(self.calcium, str):
             self.calcium = str(self.calcium)
 
-        if self.tot_iron is not None and not isinstance(self.tot_iron, str):
-            self.tot_iron = str(self.tot_iron)
+        if self.chem_treat_method is not None and not isinstance(self.chem_treat_method, str):
+            self.chem_treat_method = str(self.chem_treat_method)
 
-        if self.diss_org_carb is not None and not isinstance(self.diss_org_carb, str):
-            self.diss_org_carb = str(self.diss_org_carb)
+        if self.chem_treatment is not None and not isinstance(self.chem_treatment, str):
+            self.chem_treatment = str(self.chem_treatment)
 
-        if self.diss_inorg_carb is not None and not isinstance(self.diss_inorg_carb, str):
-            self.diss_inorg_carb = str(self.diss_inorg_carb)
-
-        if self.diss_inorg_phosp is not None and not isinstance(self.diss_inorg_phosp, str):
-            self.diss_inorg_phosp = str(self.diss_inorg_phosp)
-
-        if self.tot_phosp is not None and not isinstance(self.tot_phosp, str):
-            self.tot_phosp = str(self.tot_phosp)
-
-        if self.suspend_solids is not None and not isinstance(self.suspend_solids, str):
-            self.suspend_solids = str(self.suspend_solids)
+        if self.chloride is not None and not isinstance(self.chloride, str):
+            self.chloride = str(self.chloride)
 
         if self.density is not None and not isinstance(self.density, str):
             self.density = str(self.density)
@@ -5830,56 +5792,86 @@ class HydrocarbonResourcesFluidsSwabs(EnvironmentalPackage):
         if self.diss_carb_dioxide is not None and not isinstance(self.diss_carb_dioxide, str):
             self.diss_carb_dioxide = str(self.diss_carb_dioxide)
 
+        if self.diss_inorg_carb is not None and not isinstance(self.diss_inorg_carb, str):
+            self.diss_inorg_carb = str(self.diss_inorg_carb)
+
+        if self.diss_org_carb is not None and not isinstance(self.diss_org_carb, str):
+            self.diss_org_carb = str(self.diss_org_carb)
+
         if self.diss_oxygen_fluid is not None and not isinstance(self.diss_oxygen_fluid, str):
             self.diss_oxygen_fluid = str(self.diss_oxygen_fluid)
 
-        if self.vfa is not None and not isinstance(self.vfa, str):
-            self.vfa = str(self.vfa)
+        if self.hcr_pressure is not None and not isinstance(self.hcr_pressure, str):
+            self.hcr_pressure = str(self.hcr_pressure)
 
-        if self.benzene is not None and not isinstance(self.benzene, str):
-            self.benzene = str(self.benzene)
+        if self.iw_bt_date_well is not None and not isinstance(self.iw_bt_date_well, str):
+            self.iw_bt_date_well = str(self.iw_bt_date_well)
 
-        if self.toluene is not None and not isinstance(self.toluene, str):
-            self.toluene = str(self.toluene)
-
-        if self.ethylbenzene is not None and not isinstance(self.ethylbenzene, str):
-            self.ethylbenzene = str(self.ethylbenzene)
-
-        if self.xylene is not None and not isinstance(self.xylene, str):
-            self.xylene = str(self.xylene)
-
-        if self.tan is not None and not isinstance(self.tan, str):
-            self.tan = str(self.tan)
-
-        if self.viscosity is not None and not isinstance(self.viscosity, str):
-            self.viscosity = str(self.viscosity)
-
-        if self.pour_point is not None and not isinstance(self.pour_point, str):
-            self.pour_point = str(self.pour_point)
-
-        if self.saturates_pc is not None and not isinstance(self.saturates_pc, str):
-            self.saturates_pc = str(self.saturates_pc)
-
-        if self.aromatics_pc is not None and not isinstance(self.aromatics_pc, str):
-            self.aromatics_pc = str(self.aromatics_pc)
-
-        if self.resins_pc is not None and not isinstance(self.resins_pc, str):
-            self.resins_pc = str(self.resins_pc)
-
-        if self.asphaltenes_pc is not None and not isinstance(self.asphaltenes_pc, str):
-            self.asphaltenes_pc = str(self.asphaltenes_pc)
+        if self.magnesium is not None and not isinstance(self.magnesium, str):
+            self.magnesium = str(self.magnesium)
 
         if self.misc_param is not None and not isinstance(self.misc_param, str):
             self.misc_param = str(self.misc_param)
 
-        if self.additional_info is not None and not isinstance(self.additional_info, str):
-            self.additional_info = str(self.additional_info)
+        if self.org_count_qpcr_info is not None and not isinstance(self.org_count_qpcr_info, str):
+            self.org_count_qpcr_info = str(self.org_count_qpcr_info)
+
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+
+        if self.potassium is not None and not isinstance(self.potassium, str):
+            self.potassium = str(self.potassium)
+
+        if self.pour_point is not None and not isinstance(self.pour_point, str):
+            self.pour_point = str(self.pour_point)
+
+        if self.pressure is not None and not isinstance(self.pressure, str):
+            self.pressure = str(self.pressure)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
+        if self.samp_preserv is not None and not isinstance(self.samp_preserv, str):
+            self.samp_preserv = str(self.samp_preserv)
+
+        if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
+            self.samp_store_dur = str(self.samp_store_dur)
+
+        if self.samp_store_loc is not None and not isinstance(self.samp_store_loc, str):
+            self.samp_store_loc = str(self.samp_store_loc)
+
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_transport_cond is not None and not isinstance(self.samp_transport_cond, str):
+            self.samp_transport_cond = str(self.samp_transport_cond)
+
+        if self.sodium is not None and not isinstance(self.sodium, str):
+            self.sodium = str(self.sodium)
+
+        if self.suspend_solids is not None and not isinstance(self.suspend_solids, str):
+            self.suspend_solids = str(self.suspend_solids)
+
+        if self.tot_phosp is not None and not isinstance(self.tot_phosp, str):
+            self.tot_phosp = str(self.tot_phosp)
+
+        if self.tvdss_of_hcr_press is not None and not isinstance(self.tvdss_of_hcr_press, str):
+            self.tvdss_of_hcr_press = str(self.tvdss_of_hcr_press)
+
+        if self.tvdss_of_hcr_temp is not None and not isinstance(self.tvdss_of_hcr_temp, str):
+            self.tvdss_of_hcr_temp = str(self.tvdss_of_hcr_temp)
+
+        if self.viscosity is not None and not isinstance(self.viscosity, str):
+            self.viscosity = str(self.viscosity)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class MicrobialMatBiofilm(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016008"]
@@ -5887,9 +5879,7 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
     class_name: ClassVar[str] = "MicrobialMatBiofilm"
     class_model_uri: ClassVar[URIRef] = MIXS.MicrobialMatBiofilm
 
-    samp_name: str = None
     project_name: str = None
-    depth: Optional[str] = None
     elev: Optional[str] = None
     alkalinity: Optional[str] = None
     alkyl_diethers: Optional[str] = None
@@ -5926,10 +5916,10 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
     org_nitro: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph: Optional[float] = None
     part_org_carb: Optional[str] = None
     perturbation: Optional[str] = None
     petroleum_hydrocarb: Optional[str] = None
+    ph: Optional[float] = None
     phaeopigments: Optional[str] = None
     phosphate: Optional[str] = None
     phosplipid_fatt_acid: Optional[str] = None
@@ -5947,24 +5937,15 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
     sulfide: Optional[str] = None
     temp: Optional[str] = None
     tot_carb: Optional[str] = None
-    tot_nitro_content: Optional[str] = None
     tot_org_carb: Optional[str] = None
     turbidity: Optional[str] = None
     water_content: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -6074,9 +6055,6 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
         if self.part_org_carb is not None and not isinstance(self.part_org_carb, str):
             self.part_org_carb = str(self.part_org_carb)
 
@@ -6085,6 +6063,9 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
 
         if self.petroleum_hydrocarb is not None and not isinstance(self.petroleum_hydrocarb, str):
             self.petroleum_hydrocarb = str(self.petroleum_hydrocarb)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
         if self.phaeopigments is not None and not isinstance(self.phaeopigments, str):
             self.phaeopigments = str(self.phaeopigments)
@@ -6137,9 +6118,6 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
         if self.tot_carb is not None and not isinstance(self.tot_carb, str):
             self.tot_carb = str(self.tot_carb)
 
-        if self.tot_nitro_content is not None and not isinstance(self.tot_nitro_content, str):
-            self.tot_nitro_content = str(self.tot_nitro_content)
-
         if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
             self.tot_org_carb = str(self.tot_org_carb)
 
@@ -6154,6 +6132,9 @@ class MicrobialMatBiofilm(EnvironmentalPackage):
 
 @dataclass
 class MigsBa(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010003"]
@@ -6161,65 +6142,60 @@ class MigsBa(Checklist):
     class_name: ClassVar[str] = "MigsBa"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsBa
 
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    num_replicons: int = None
-    number_contig: int = None
-    project_name: str = None
-    ref_biomaterial: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    rel_to_oxygen: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    extrachrom_elements: Optional[int] = None
+    host_disease_stat: Optional[str] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
+    encoded_traits: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
-    host_disease_stat: Optional[str] = None
     host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    temp: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    num_replicons: Optional[int] = None
+    ref_biomaterial: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -6287,11 +6263,6 @@ class MigsBa(Checklist):
         if not isinstance(self.ref_biomaterial, str):
             self.ref_biomaterial = str(self.ref_biomaterial)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -6301,6 +6272,168 @@ class MigsBa(Checklist):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
@@ -6314,9 +6447,6 @@ class MigsBa(Checklist):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
@@ -6325,9 +6455,6 @@ class MigsBa(Checklist):
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -6389,12 +6516,6 @@ class MigsBa(Checklist):
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -6436,6 +6557,9 @@ class MigsBa(Checklist):
 
 @dataclass
 class MigsEu(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010002"]
@@ -6443,30 +6567,26 @@ class MigsEu(Checklist):
     class_name: ClassVar[str] = "MigsEu"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsEu
 
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    number_contig: int = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    propagation: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
     extrachrom_elements: Optional[int] = None
@@ -6478,30 +6598,29 @@ class MigsEu(Checklist):
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
     num_replicons: Optional[int] = None
-    pathogenicity: Optional[str] = None
     ploidy: Optional[str] = None
-    pos_cont_type: Optional[str] = None
-    propagation: Optional[str] = None
     ref_biomaterial: Optional[str] = None
     ref_db: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
     specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    temp: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -6559,11 +6678,6 @@ class MigsEu(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -6572,6 +6686,168 @@ class MigsEu(Checklist):
         if self._is_empty(self.seq_meth):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.propagation is not None and not isinstance(self.propagation, str):
+            self.propagation = str(self.propagation)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ploidy is not None and not isinstance(self.ploidy, str):
+            self.ploidy = str(self.ploidy)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
@@ -6586,9 +6862,6 @@ class MigsEu(Checklist):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
@@ -6597,9 +6870,6 @@ class MigsEu(Checklist):
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -6667,12 +6937,6 @@ class MigsEu(Checklist):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -6714,6 +6978,9 @@ class MigsEu(Checklist):
 
 @dataclass
 class MigsOrg(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010006"]
@@ -6721,56 +6988,51 @@ class MigsOrg(Checklist):
     class_name: ClassVar[str] = "MigsOrg"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsOrg
 
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    extrachrom_elements: Optional[int] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
     assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    associated_resource: Optional[str] = None
+    number_contig: Optional[int] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
     ref_biomaterial: Optional[str] = None
     ref_db: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    temp: Optional[str] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_software):
@@ -6818,11 +7080,6 @@ class MigsOrg(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -6831,6 +7088,141 @@ class MigsOrg(Checklist):
         if self._is_empty(self.seq_meth):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
@@ -6848,17 +7240,11 @@ class MigsOrg(Checklist):
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -6911,12 +7297,6 @@ class MigsOrg(Checklist):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -6952,6 +7332,9 @@ class MigsOrg(Checklist):
 
 @dataclass
 class MigsPl(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010004"]
@@ -6959,30 +7342,26 @@ class MigsPl(Checklist):
     class_name: ClassVar[str] = "MigsPl"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsPl
 
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    project_name: str = None
-    propagation: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    encoded_traits: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
     assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    associated_resource: Optional[str] = None
+    number_contig: Optional[int] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
     feat_pred: Optional[str] = None
@@ -6992,26 +7371,25 @@ class MigsPl(Checklist):
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
     ref_biomaterial: Optional[str] = None
     ref_db: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    temp: Optional[str] = None
+    propagation: Optional[str] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_software):
@@ -7064,11 +7442,6 @@ class MigsPl(Checklist):
         if not isinstance(self.propagation, str):
             self.propagation = str(self.propagation)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -7077,6 +7450,150 @@ class MigsPl(Checklist):
         if self._is_empty(self.seq_meth):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.propagation is not None and not isinstance(self.propagation, str):
+            self.propagation = str(self.propagation)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
@@ -7094,17 +7611,11 @@ class MigsPl(Checklist):
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -7160,12 +7671,6 @@ class MigsPl(Checklist):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -7204,6 +7709,9 @@ class MigsPl(Checklist):
 
 @dataclass
 class MigsVi(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010005"]
@@ -7211,64 +7719,59 @@ class MigsVi(Checklist):
     class_name: ClassVar[str] = "MigsVi"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsVi
 
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    project_name: str = None
-    propagation: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    encoded_traits: Optional[str] = None
+    virus_enrich_appr: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    host_disease_stat: Optional[str] = None
+    host_spec_range: Optional[str] = None
+    num_replicons: Optional[int] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
     assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    associated_resource: Optional[str] = None
+    number_contig: Optional[int] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
     feat_pred: Optional[str] = None
-    host_disease_stat: Optional[str] = None
-    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    num_replicons: Optional[int] = None
-    number_contig: Optional[int] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_biomaterial: Optional[str] = None
     ref_db: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    temp: Optional[str] = None
-    virus_enrich_appr: Optional[str] = None
+    propagation: Optional[str] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_software):
@@ -7321,11 +7824,6 @@ class MigsVi(Checklist):
         if not isinstance(self.propagation, str):
             self.propagation = str(self.propagation)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -7334,6 +7832,165 @@ class MigsVi(Checklist):
         if self._is_empty(self.seq_meth):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
+
+        if self.virus_enrich_appr is not None and not isinstance(self.virus_enrich_appr, str):
+            self.virus_enrich_appr = str(self.virus_enrich_appr)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.propagation is not None and not isinstance(self.propagation, str):
+            self.propagation = str(self.propagation)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
@@ -7351,9 +8008,6 @@ class MigsVi(Checklist):
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
@@ -7362,9 +8016,6 @@ class MigsVi(Checklist):
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -7429,12 +8080,6 @@ class MigsVi(Checklist):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -7476,6 +8121,9 @@ class MigsVi(Checklist):
 
 @dataclass
 class Mimag(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010011"]
@@ -7483,66 +8131,61 @@ class Mimag(Checklist):
     class_name: ClassVar[str] = "Mimag"
     class_model_uri: ClassVar[URIRef] = MIXS.Mimag
 
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    bin_param: str = None
-    bin_software: str = None
-    collection_date: str = None
-    compl_score: str = None
-    compl_software: str = None
-    contam_score: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    tax_ident: str = None
+    mid: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
-    compl_appr: Optional[str] = None
-    contam_screen_input: Optional[str] = None
-    contam_screen_param: Optional[str] = None
-    decontam_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
     experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    mag_cov_software: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    reassembly_bin: Optional[Union[bool, Bool]] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
     temp: Optional[str] = None
+    compl_appr: Optional[str] = None
+    contam_screen_input: Optional[str] = None
+    contam_screen_param: Optional[str] = None
+    decontam_software: Optional[str] = None
+    mag_cov_software: Optional[str] = None
+    reassembly_bin: Optional[Union[bool, Bool]] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
     trna_ext_software: Optional[str] = None
     trnas: Optional[int] = None
+    annot: Optional[str] = None
+    number_contig: Optional[int] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    bin_param: Optional[str] = None
+    bin_software: Optional[str] = None
+    contam_score: Optional[str] = None
+    tax_ident: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    compl_score: Optional[str] = None
+    compl_software: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -7615,11 +8258,6 @@ class Mimag(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -7635,20 +8273,65 @@ class Mimag(Checklist):
         if not isinstance(self.tax_ident, str):
             self.tax_ident = str(self.tax_ident)
 
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
 
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         if self.compl_appr is not None and not isinstance(self.compl_appr, str):
             self.compl_appr = str(self.compl_appr)
@@ -7662,8 +8345,122 @@ class Mimag(Checklist):
         if self.decontam_software is not None and not isinstance(self.decontam_software, str):
             self.decontam_software = str(self.decontam_software)
 
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
+        if self.mag_cov_software is not None and not isinstance(self.mag_cov_software, str):
+            self.mag_cov_software = str(self.mag_cov_software)
+
+        if self.reassembly_bin is not None and not isinstance(self.reassembly_bin, Bool):
+            self.reassembly_bin = Bool(self.reassembly_bin)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.trna_ext_software is not None and not isinstance(self.trna_ext_software, str):
+            self.trna_ext_software = str(self.trna_ext_software)
+
+        if self.trnas is not None and not isinstance(self.trnas, int):
+            self.trnas = int(self.trnas)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.bin_param is not None and not isinstance(self.bin_param, str):
+            self.bin_param = str(self.bin_param)
+
+        if self.bin_software is not None and not isinstance(self.bin_software, str):
+            self.bin_software = str(self.bin_software)
+
+        if self.contam_score is not None and not isinstance(self.contam_score, str):
+            self.contam_score = str(self.contam_score)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.compl_appr is not None and not isinstance(self.compl_appr, str):
+            self.compl_appr = str(self.compl_appr)
+
+        if self.contam_screen_input is not None and not isinstance(self.contam_screen_input, str):
+            self.contam_screen_input = str(self.contam_screen_input)
+
+        if self.contam_screen_param is not None and not isinstance(self.contam_screen_param, str):
+            self.contam_screen_param = str(self.contam_screen_param)
+
+        if self.decontam_software is not None and not isinstance(self.decontam_software, str):
+            self.decontam_software = str(self.decontam_software)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -7722,12 +8519,6 @@ class Mimag(Checklist):
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -7766,6 +8557,9 @@ class Mimag(Checklist):
 
 @dataclass
 class MimarksC(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010009"]
@@ -7773,45 +8567,40 @@ class MimarksC(Checklist):
     class_name: ClassVar[str] = "MimarksC"
     class_model_uri: ClassVar[URIRef] = MIXS.MimarksC
 
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    target_gene: str = None
-    alt: Optional[str] = None
-    associated_resource: Optional[str] = None
-    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     chimera_check: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
+    pcr_cond: Optional[str] = None
+    pcr_primers: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    seq_quality_check: Optional[str] = None
+    target_subfragment: Optional[str] = None
     neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
     nucl_acid_amp: Optional[str] = None
     nucl_acid_ext: Optional[str] = None
-    pcr_cond: Optional[str] = None
-    pcr_primers: Optional[str] = None
     pos_cont_type: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
-    samp_mat_process: Optional[str] = None
-    samp_size: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    seq_quality_check: Optional[str] = None
     sop: Optional[str] = None
     source_mat_id: Optional[str] = None
     subspecf_gen_lin: Optional[str] = None
-    target_subfragment: Optional[str] = None
-    temp: Optional[str] = None
     trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    samp_mat_process: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
+    experimental_factor: Optional[str] = None
+    extrachrom_elements: Optional[int] = None
+    samp_size: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    target_gene: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.collection_date):
@@ -7854,11 +8643,6 @@ class MimarksC(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -7874,20 +8658,116 @@ class MimarksC(Checklist):
         if not isinstance(self.target_gene, str):
             self.target_gene = str(self.target_gene)
 
+        if self.chimera_check is not None and not isinstance(self.chimera_check, str):
+            self.chimera_check = str(self.chimera_check)
+
+        if self.pcr_cond is not None and not isinstance(self.pcr_cond, str):
+            self.pcr_cond = str(self.pcr_cond)
+
+        if self.pcr_primers is not None and not isinstance(self.pcr_primers, str):
+            self.pcr_primers = str(self.pcr_primers)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.seq_quality_check is not None and not isinstance(self.seq_quality_check, str):
+            self.seq_quality_check = str(self.seq_quality_check)
+
+        if self.target_subfragment is not None and not isinstance(self.target_subfragment, str):
+            self.target_subfragment = str(self.target_subfragment)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
         if self.alt is not None and not isinstance(self.alt, str):
             self.alt = str(self.alt)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.target_gene is not None and not isinstance(self.target_gene, str):
+            self.target_gene = str(self.target_gene)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
 
         if self.chimera_check is not None and not isinstance(self.chimera_check, str):
             self.chimera_check = str(self.chimera_check)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -7918,12 +8798,6 @@ class MimarksC(Checklist):
 
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
 
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
@@ -7960,6 +8834,9 @@ class MimarksC(Checklist):
 
 @dataclass
 class MimarksS(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010008"]
@@ -7967,49 +8844,44 @@ class MimarksS(Checklist):
     class_name: ClassVar[str] = "MimarksS"
     class_model_uri: ClassVar[URIRef] = MIXS.MimarksS
 
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    target_gene: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
     chimera_check: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
+    mid: Optional[str] = None
+    pcr_cond: Optional[str] = None
+    pcr_primers: Optional[str] = None
+    seq_quality_check: Optional[str] = None
+    target_subfragment: Optional[str] = None
+    adapters: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    assembly_software: Optional[str] = None
     experimental_factor: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pcr_cond: Optional[str] = None
-    pcr_primers: Optional[str] = None
-    pos_cont_type: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    seq_quality_check: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    target_subfragment: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
     temp: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    target_gene: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.collection_date):
@@ -8047,11 +8919,6 @@ class MimarksS(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -8067,6 +8934,120 @@ class MimarksS(Checklist):
         if not isinstance(self.target_gene, str):
             self.target_gene = str(self.target_gene)
 
+        if self.chimera_check is not None and not isinstance(self.chimera_check, str):
+            self.chimera_check = str(self.chimera_check)
+
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.pcr_cond is not None and not isinstance(self.pcr_cond, str):
+            self.pcr_cond = str(self.pcr_cond)
+
+        if self.pcr_primers is not None and not isinstance(self.pcr_primers, str):
+            self.pcr_primers = str(self.pcr_primers)
+
+        if self.seq_quality_check is not None and not isinstance(self.seq_quality_check, str):
+            self.seq_quality_check = str(self.seq_quality_check)
+
+        if self.target_subfragment is not None and not isinstance(self.target_subfragment, str):
+            self.target_subfragment = str(self.target_subfragment)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.target_gene is not None and not isinstance(self.target_gene, str):
+            self.target_gene = str(self.target_gene)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
 
@@ -8076,14 +9057,8 @@ class MimarksS(Checklist):
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
         if self.chimera_check is not None and not isinstance(self.chimera_check, str):
             self.chimera_check = str(self.chimera_check)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -8130,12 +9105,6 @@ class MimarksS(Checklist):
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -8168,6 +9137,9 @@ class MimarksS(Checklist):
 
 @dataclass
 class Mims(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010007"]
@@ -8175,52 +9147,47 @@ class Mims(Checklist):
     class_name: ClassVar[str] = "Mims"
     class_model_uri: ClassVar[URIRef] = MIXS.Mims
 
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    mid: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
     assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
     assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
+    number_contig: Optional[int] = None
     experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
     samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
     tax_class: Optional[str] = None
-    temp: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.collection_date):
@@ -8258,11 +9225,6 @@ class Mims(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -8271,6 +9233,129 @@ class Mims(Checklist):
         if self._is_empty(self.seq_meth):
             self.MissingRequiredField("seq_meth")
         if not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
             self.seq_meth = str(self.seq_meth)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
@@ -8290,12 +9375,6 @@ class Mims(Checklist):
 
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
-
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -8348,12 +9427,6 @@ class Mims(Checklist):
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -8386,6 +9459,9 @@ class Mims(Checklist):
 
 @dataclass
 class Misag(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010010"]
@@ -8393,67 +9469,62 @@ class Misag(Checklist):
     class_name: ClassVar[str] = "Misag"
     class_model_uri: ClassVar[URIRef] = MIXS.Misag
 
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    compl_score: str = None
-    compl_software: str = None
-    contam_score: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    single_cell_lysis_appr: str = None
-    sort_tech: str = None
-    tax_ident: str = None
-    wga_amp_appr: str = None
+    mid: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
-    compl_appr: Optional[str] = None
-    contam_screen_input: Optional[str] = None
-    contam_screen_param: Optional[str] = None
-    decontam_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
     experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    sim_search_meth: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
+    temp: Optional[str] = None
+    compl_appr: Optional[str] = None
+    contam_screen_input: Optional[str] = None
+    contam_screen_param: Optional[str] = None
+    decontam_software: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
     single_cell_lysis_prot: Optional[str] = None
     size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
-    temp: Optional[str] = None
     trna_ext_software: Optional[str] = None
     trnas: Optional[int] = None
     wga_amp_kit: Optional[str] = None
+    annot: Optional[str] = None
+    number_contig: Optional[int] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    contam_score: Optional[str] = None
+    single_cell_lysis_appr: Optional[str] = None
+    sort_tech: Optional[str] = None
+    wga_amp_appr: Optional[str] = None
+    tax_ident: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    compl_score: Optional[str] = None
+    compl_software: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -8516,11 +9587,6 @@ class Misag(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -8551,20 +9617,65 @@ class Misag(Checklist):
         if not isinstance(self.wga_amp_appr, str):
             self.wga_amp_appr = str(self.wga_amp_appr)
 
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
 
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         if self.compl_appr is not None and not isinstance(self.compl_appr, str):
             self.compl_appr = str(self.compl_appr)
@@ -8578,8 +9689,125 @@ class Misag(Checklist):
         if self.decontam_software is not None and not isinstance(self.decontam_software, str):
             self.decontam_software = str(self.decontam_software)
 
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
+
+        if self.single_cell_lysis_prot is not None and not isinstance(self.single_cell_lysis_prot, str):
+            self.single_cell_lysis_prot = str(self.single_cell_lysis_prot)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.trna_ext_software is not None and not isinstance(self.trna_ext_software, str):
+            self.trna_ext_software = str(self.trna_ext_software)
+
+        if self.trnas is not None and not isinstance(self.trnas, int):
+            self.trnas = int(self.trnas)
+
+        if self.wga_amp_kit is not None and not isinstance(self.wga_amp_kit, str):
+            self.wga_amp_kit = str(self.wga_amp_kit)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.contam_score is not None and not isinstance(self.contam_score, str):
+            self.contam_score = str(self.contam_score)
+
+        if self.single_cell_lysis_appr is not None and not isinstance(self.single_cell_lysis_appr, str):
+            self.single_cell_lysis_appr = str(self.single_cell_lysis_appr)
+
+        if self.sort_tech is not None and not isinstance(self.sort_tech, str):
+            self.sort_tech = str(self.sort_tech)
+
+        if self.wga_amp_appr is not None and not isinstance(self.wga_amp_appr, str):
+            self.wga_amp_appr = str(self.wga_amp_appr)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.compl_appr is not None and not isinstance(self.compl_appr, str):
+            self.compl_appr = str(self.compl_appr)
+
+        if self.contam_screen_input is not None and not isinstance(self.contam_screen_input, str):
+            self.contam_screen_input = str(self.contam_screen_input)
+
+        if self.contam_screen_param is not None and not isinstance(self.contam_screen_param, str):
+            self.contam_screen_param = str(self.contam_screen_param)
+
+        if self.decontam_software is not None and not isinstance(self.decontam_software, str):
+            self.decontam_software = str(self.decontam_software)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -8632,12 +9860,6 @@ class Misag(Checklist):
         if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
             self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -8682,6 +9904,9 @@ class Misag(Checklist):
 
 @dataclass
 class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016009"]
@@ -8689,10 +9914,8 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
     class_name: ClassVar[str] = "MiscellaneousNaturalOrArtificialEnvironment"
     class_model_uri: ClassVar[URIRef] = MIXS.MiscellaneousNaturalOrArtificialEnvironment
 
-    samp_name: str = None
     project_name: str = None
     alt: Optional[str] = None
-    depth: Optional[str] = None
     elev: Optional[str] = None
     alkalinity: Optional[str] = None
     ammonium: Optional[str] = None
@@ -8718,8 +9941,8 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
     org_nitro: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph: Optional[float] = None
     perturbation: Optional[str] = None
+    ph: Optional[float] = None
     phosphate: Optional[str] = None
     phosplipid_fatt_acid: Optional[str] = None
     potassium: Optional[str] = None
@@ -8737,11 +9960,6 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
     water_current: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
@@ -8749,9 +9967,6 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
 
         if self.alt is not None and not isinstance(self.alt, str):
             self.alt = str(self.alt)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -8828,11 +10043,11 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
         if self.phosphate is not None and not isinstance(self.phosphate, str):
             self.phosphate = str(self.phosphate)
@@ -8884,6 +10099,9 @@ class MiscellaneousNaturalOrArtificialEnvironment(EnvironmentalPackage):
 
 @dataclass
 class Miuvig(Checklist):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010012"]
@@ -8891,83 +10109,78 @@ class Miuvig(Checklist):
     class_name: ClassVar[str] = "Miuvig"
     class_model_uri: ClassVar[URIRef] = MIXS.Miuvig
 
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    detec_type: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    number_contig: int = None
-    pred_genome_struc: str = None
-    pred_genome_type: str = None
-    project_name: str = None
-    samp_name: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    source_uvig: str = None
-    vir_ident_software: str = None
-    virus_enrich_appr: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
-    assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
     bin_param: Optional[str] = None
     bin_software: Optional[str] = None
-    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
     compl_appr: Optional[str] = None
+    host_pred_appr: Optional[str] = None
+    host_pred_est_acc: Optional[str] = None
+    mid: Optional[str] = None
+    otu_class_appr: Optional[str] = None
+    otu_db: Optional[str] = None
+    otu_seq_comp_appr: Optional[str] = None
+    reassembly_bin: Optional[Union[bool, Bool]] = None
+    single_cell_lysis_appr: Optional[str] = None
+    single_cell_lysis_prot: Optional[str] = None
+    size_frac: Optional[str] = None
+    sort_tech: Optional[str] = None
+    wga_amp_appr: Optional[str] = None
+    wga_amp_kit: Optional[str] = None
+    adapters: Optional[str] = None
+    assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
     compl_score: Optional[str] = None
-    compl_software: Optional[str] = None
-    depth: Optional[str] = None
-    elev: Optional[str] = None
-    estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
     feat_pred: Optional[str] = None
     host_disease_stat: Optional[str] = None
-    host_pred_appr: Optional[str] = None
-    host_pred_est_acc: Optional[str] = None
-    host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    mag_cov_software: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    otu_class_appr: Optional[str] = None
-    otu_db: Optional[str] = None
-    otu_seq_comp_appr: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
-    reassembly_bin: Optional[Union[bool, Bool]] = None
-    ref_biomaterial: Optional[str] = None
     ref_db: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    single_cell_lysis_appr: Optional[str] = None
-    single_cell_lysis_prot: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    sort_tech: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
+    alt: Optional[str] = None
+    elev: Optional[str] = None
     temp: Optional[str] = None
+    mag_cov_software: Optional[str] = None
     trna_ext_software: Optional[str] = None
     trnas: Optional[int] = None
-    wga_amp_appr: Optional[str] = None
-    wga_amp_kit: Optional[str] = None
+    annot: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    tax_ident: Optional[str] = None
+    biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    compl_software: Optional[str] = None
+    estimated_size: Optional[str] = None
+    host_spec_range: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    specific_host: Optional[str] = None
+    detec_type: Optional[str] = None
+    pred_genome_struc: Optional[str] = None
+    pred_genome_type: Optional[str] = None
+    source_uvig: Optional[str] = None
+    vir_ident_software: Optional[str] = None
+    virus_enrich_appr: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    project_name: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
         if self._is_empty(self.assembly_qual):
@@ -9035,11 +10248,6 @@ class Miuvig(Checklist):
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.samp_taxon_id):
             self.MissingRequiredField("samp_taxon_id")
         if not isinstance(self.samp_taxon_id, str):
@@ -9065,6 +10273,222 @@ class Miuvig(Checklist):
         if not isinstance(self.virus_enrich_appr, str):
             self.virus_enrich_appr = str(self.virus_enrich_appr)
 
+        if self.bin_param is not None and not isinstance(self.bin_param, str):
+            self.bin_param = str(self.bin_param)
+
+        if self.bin_software is not None and not isinstance(self.bin_software, str):
+            self.bin_software = str(self.bin_software)
+
+        if self.compl_appr is not None and not isinstance(self.compl_appr, str):
+            self.compl_appr = str(self.compl_appr)
+
+        if self.host_pred_appr is not None and not isinstance(self.host_pred_appr, str):
+            self.host_pred_appr = str(self.host_pred_appr)
+
+        if self.host_pred_est_acc is not None and not isinstance(self.host_pred_est_acc, str):
+            self.host_pred_est_acc = str(self.host_pred_est_acc)
+
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.otu_class_appr is not None and not isinstance(self.otu_class_appr, str):
+            self.otu_class_appr = str(self.otu_class_appr)
+
+        if self.otu_db is not None and not isinstance(self.otu_db, str):
+            self.otu_db = str(self.otu_db)
+
+        if self.otu_seq_comp_appr is not None and not isinstance(self.otu_seq_comp_appr, str):
+            self.otu_seq_comp_appr = str(self.otu_seq_comp_appr)
+
+        if self.reassembly_bin is not None and not isinstance(self.reassembly_bin, Bool):
+            self.reassembly_bin = Bool(self.reassembly_bin)
+
+        if self.single_cell_lysis_appr is not None and not isinstance(self.single_cell_lysis_appr, str):
+            self.single_cell_lysis_appr = str(self.single_cell_lysis_appr)
+
+        if self.single_cell_lysis_prot is not None and not isinstance(self.single_cell_lysis_prot, str):
+            self.single_cell_lysis_prot = str(self.single_cell_lysis_prot)
+
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
+
+        if self.sort_tech is not None and not isinstance(self.sort_tech, str):
+            self.sort_tech = str(self.sort_tech)
+
+        if self.wga_amp_appr is not None and not isinstance(self.wga_amp_appr, str):
+            self.wga_amp_appr = str(self.wga_amp_appr)
+
+        if self.wga_amp_kit is not None and not isinstance(self.wga_amp_kit, str):
+            self.wga_amp_kit = str(self.wga_amp_kit)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.compl_score is not None and not isinstance(self.compl_score, str):
+            self.compl_score = str(self.compl_score)
+
+        if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
+            self.experimental_factor = str(self.experimental_factor)
+
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
+            self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
+
+        if self.lib_reads_seqd is not None and not isinstance(self.lib_reads_seqd, int):
+            self.lib_reads_seqd = int(self.lib_reads_seqd)
+
+        if self.lib_screen is not None and not isinstance(self.lib_screen, str):
+            self.lib_screen = str(self.lib_screen)
+
+        if self.lib_size is not None and not isinstance(self.lib_size, int):
+            self.lib_size = int(self.lib_size)
+
+        if self.lib_vector is not None and not isinstance(self.lib_vector, str):
+            self.lib_vector = str(self.lib_vector)
+
+        if self.ref_db is not None and not isinstance(self.ref_db, str):
+            self.ref_db = str(self.ref_db)
+
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
+
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
+
+        if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
+            self.sim_search_meth = str(self.sim_search_meth)
+
+        if self.tax_class is not None and not isinstance(self.tax_class, str):
+            self.tax_class = str(self.tax_class)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.elev is not None and not isinstance(self.elev, str):
+            self.elev = str(self.elev)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if self.mag_cov_software is not None and not isinstance(self.mag_cov_software, str):
+            self.mag_cov_software = str(self.mag_cov_software)
+
+        if self.trna_ext_software is not None and not isinstance(self.trna_ext_software, str):
+            self.trna_ext_software = str(self.trna_ext_software)
+
+        if self.trnas is not None and not isinstance(self.trnas, int):
+            self.trnas = int(self.trnas)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
+            self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.compl_software is not None and not isinstance(self.compl_software, str):
+            self.compl_software = str(self.compl_software)
+
+        if self.estimated_size is not None and not isinstance(self.estimated_size, str):
+            self.estimated_size = str(self.estimated_size)
+
+        if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
+            self.host_spec_range = str(self.host_spec_range)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.detec_type is not None and not isinstance(self.detec_type, str):
+            self.detec_type = str(self.detec_type)
+
+        if self.pred_genome_struc is not None and not isinstance(self.pred_genome_struc, str):
+            self.pred_genome_struc = str(self.pred_genome_struc)
+
+        if self.pred_genome_type is not None and not isinstance(self.pred_genome_type, str):
+            self.pred_genome_type = str(self.pred_genome_type)
+
+        if self.source_uvig is not None and not isinstance(self.source_uvig, str):
+            self.source_uvig = str(self.source_uvig)
+
+        if self.vir_ident_software is not None and not isinstance(self.vir_ident_software, str):
+            self.vir_ident_software = str(self.vir_ident_software)
+
+        if self.virus_enrich_appr is not None and not isinstance(self.virus_enrich_appr, str):
+            self.virus_enrich_appr = str(self.virus_enrich_appr)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.project_name is not None and not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
 
@@ -9076,9 +10500,6 @@ class Miuvig(Checklist):
 
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
-
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
 
         if self.bin_param is not None and not isinstance(self.bin_param, str):
             self.bin_param = str(self.bin_param)
@@ -9097,9 +10518,6 @@ class Miuvig(Checklist):
 
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -9179,12 +10597,6 @@ class Miuvig(Checklist):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
 
@@ -9244,6 +10656,9 @@ class Miuvig(Checklist):
 
 @dataclass
 class PlantAssociated(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016010"]
@@ -9251,9 +10666,7 @@ class PlantAssociated(EnvironmentalPackage):
     class_name: ClassVar[str] = "PlantAssociated"
     class_model_uri: ClassVar[URIRef] = MIXS.PlantAssociated
 
-    samp_name: str = None
     project_name: str = None
-    depth: Optional[str] = None
     elev: Optional[str] = None
     air_temp_regm: Optional[str] = None
     ances_data: Optional[str] = None
@@ -9279,10 +10692,10 @@ class PlantAssociated(EnvironmentalPackage):
     host_dry_mass: Optional[str] = None
     host_genotype: Optional[str] = None
     host_height: Optional[str] = None
-    host_subspecf_genlin: Optional[str] = None
     host_length: Optional[str] = None
     host_life_stage: Optional[str] = None
     host_phenotype: Optional[str] = None
+    host_subspecf_genlin: Optional[str] = None
     host_taxid: Optional[int] = None
     host_tot_mass: Optional[str] = None
     host_wet_mass: Optional[str] = None
@@ -9291,12 +10704,12 @@ class PlantAssociated(EnvironmentalPackage):
     mechanical_damage: Optional[str] = None
     mineral_nutr_regm: Optional[str] = None
     misc_param: Optional[str] = None
-    non_min_nutr_regm: Optional[str] = None
+    non_mineral_nutr_regm: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph_regm: Optional[str] = None
     perturbation: Optional[str] = None
     pesticide_regm: Optional[str] = None
+    ph_regm: Optional[str] = None
     plant_growth_med: Optional[str] = None
     plant_product: Optional[str] = None
     plant_sex: Optional[str] = None
@@ -9307,14 +10720,14 @@ class PlantAssociated(EnvironmentalPackage):
     root_med_carbon: Optional[str] = None
     root_med_macronutr: Optional[str] = None
     root_med_micronutr: Optional[str] = None
-    root_med_suppl: Optional[str] = None
     root_med_ph: Optional[float] = None
     root_med_regl: Optional[str] = None
     root_med_solid: Optional[str] = None
+    root_med_suppl: Optional[str] = None
+    salinity: Optional[str] = None
     salt_regm: Optional[str] = None
     samp_capt_status: Optional[str] = None
     samp_dis_stage: Optional[str] = None
-    salinity: Optional[str] = None
     samp_store_dur: Optional[str] = None
     samp_store_loc: Optional[str] = None
     samp_store_temp: Optional[str] = None
@@ -9325,21 +10738,12 @@ class PlantAssociated(EnvironmentalPackage):
     tiss_cult_growth_med: Optional[str] = None
     water_temp_regm: Optional[str] = None
     watering_regm: Optional[str] = None
-    host_symbiont: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -9416,9 +10820,6 @@ class PlantAssociated(EnvironmentalPackage):
         if self.host_height is not None and not isinstance(self.host_height, str):
             self.host_height = str(self.host_height)
 
-        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
-            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
-
         if self.host_length is not None and not isinstance(self.host_length, str):
             self.host_length = str(self.host_length)
 
@@ -9427,6 +10828,9 @@ class PlantAssociated(EnvironmentalPackage):
 
         if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
             self.host_phenotype = str(self.host_phenotype)
+
+        if self.host_subspecf_genlin is not None and not isinstance(self.host_subspecf_genlin, str):
+            self.host_subspecf_genlin = str(self.host_subspecf_genlin)
 
         if self.host_taxid is not None and not isinstance(self.host_taxid, int):
             self.host_taxid = int(self.host_taxid)
@@ -9452,8 +10856,8 @@ class PlantAssociated(EnvironmentalPackage):
         if self.misc_param is not None and not isinstance(self.misc_param, str):
             self.misc_param = str(self.misc_param)
 
-        if self.non_min_nutr_regm is not None and not isinstance(self.non_min_nutr_regm, str):
-            self.non_min_nutr_regm = str(self.non_min_nutr_regm)
+        if self.non_mineral_nutr_regm is not None and not isinstance(self.non_mineral_nutr_regm, str):
+            self.non_mineral_nutr_regm = str(self.non_mineral_nutr_regm)
 
         if self.organism_count is not None and not isinstance(self.organism_count, str):
             self.organism_count = str(self.organism_count)
@@ -9461,14 +10865,14 @@ class PlantAssociated(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph_regm is not None and not isinstance(self.ph_regm, str):
-            self.ph_regm = str(self.ph_regm)
-
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
 
         if self.pesticide_regm is not None and not isinstance(self.pesticide_regm, str):
             self.pesticide_regm = str(self.pesticide_regm)
+
+        if self.ph_regm is not None and not isinstance(self.ph_regm, str):
+            self.ph_regm = str(self.ph_regm)
 
         if self.plant_growth_med is not None and not isinstance(self.plant_growth_med, str):
             self.plant_growth_med = str(self.plant_growth_med)
@@ -9500,9 +10904,6 @@ class PlantAssociated(EnvironmentalPackage):
         if self.root_med_micronutr is not None and not isinstance(self.root_med_micronutr, str):
             self.root_med_micronutr = str(self.root_med_micronutr)
 
-        if self.root_med_suppl is not None and not isinstance(self.root_med_suppl, str):
-            self.root_med_suppl = str(self.root_med_suppl)
-
         if self.root_med_ph is not None and not isinstance(self.root_med_ph, float):
             self.root_med_ph = float(self.root_med_ph)
 
@@ -9512,6 +10913,12 @@ class PlantAssociated(EnvironmentalPackage):
         if self.root_med_solid is not None and not isinstance(self.root_med_solid, str):
             self.root_med_solid = str(self.root_med_solid)
 
+        if self.root_med_suppl is not None and not isinstance(self.root_med_suppl, str):
+            self.root_med_suppl = str(self.root_med_suppl)
+
+        if self.salinity is not None and not isinstance(self.salinity, str):
+            self.salinity = str(self.salinity)
+
         if self.salt_regm is not None and not isinstance(self.salt_regm, str):
             self.salt_regm = str(self.salt_regm)
 
@@ -9520,9 +10927,6 @@ class PlantAssociated(EnvironmentalPackage):
 
         if self.samp_dis_stage is not None and not isinstance(self.samp_dis_stage, str):
             self.samp_dis_stage = str(self.samp_dis_stage)
-
-        if self.salinity is not None and not isinstance(self.salinity, str):
-            self.salinity = str(self.salinity)
 
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
@@ -9554,14 +10958,14 @@ class PlantAssociated(EnvironmentalPackage):
         if self.watering_regm is not None and not isinstance(self.watering_regm, str):
             self.watering_regm = str(self.watering_regm)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
-
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class MigsBaPlantAssociated(PlantAssociated):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010003_0016010"]
@@ -9569,34 +10973,30 @@ class MigsBaPlantAssociated(PlantAssociated):
     class_name: ClassVar[str] = "MigsBaPlantAssociated"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsBaPlantAssociated
 
-    samp_name: str = None
     project_name: str = None
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    num_replicons: int = None
-    number_contig: int = None
-    ref_biomaterial: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    rel_to_oxygen: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    extrachrom_elements: Optional[int] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    encoded_traits: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
     host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
@@ -9604,102 +11004,32 @@ class MigsBaPlantAssociated(PlantAssociated):
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    num_replicons: Optional[int] = None
+    ref_biomaterial: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.assembly_qual):
-            self.MissingRequiredField("assembly_qual")
-        if not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
-            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
-
-        if self._is_empty(self.assembly_software):
-            self.MissingRequiredField("assembly_software")
-        if not isinstance(self.assembly_software, str):
-            self.assembly_software = str(self.assembly_software)
-
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.isol_growth_condt):
-            self.MissingRequiredField("isol_growth_condt")
-        if not isinstance(self.isol_growth_condt, str):
-            self.isol_growth_condt = str(self.isol_growth_condt)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.num_replicons):
-            self.MissingRequiredField("num_replicons")
-        if not isinstance(self.num_replicons, int):
-            self.num_replicons = int(self.num_replicons)
-
-        if self._is_empty(self.number_contig):
-            self.MissingRequiredField("number_contig")
-        if not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
-
-        if self._is_empty(self.ref_biomaterial):
-            self.MissingRequiredField("ref_biomaterial")
-        if not isinstance(self.ref_biomaterial, str):
-            self.ref_biomaterial = str(self.ref_biomaterial)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
 
         if self.annot is not None and not isinstance(self.annot, str):
             self.annot = str(self.annot)
@@ -9707,11 +11037,50 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -9719,17 +11088,11 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
 
-        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
-            self.encoded_traits = str(self.encoded_traits)
-
         if self.estimated_size is not None and not isinstance(self.estimated_size, str):
             self.estimated_size = str(self.estimated_size)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
-
-        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
-            self.extrachrom_elements = int(self.extrachrom_elements)
 
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
@@ -9752,32 +11115,8 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
-
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
-            self.pathogenicity = str(self.pathogenicity)
-
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
-
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
-
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
 
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
@@ -9788,134 +11127,8 @@ class MigsBaPlantAssociated(PlantAssociated):
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.specific_host is not None and not isinstance(self.specific_host, str):
-            self.specific_host = str(self.specific_host)
-
-        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
-            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
-
-        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
-            self.tax_ident = str(self.tax_ident)
-
-        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
-            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass
-class MimsPlantAssociated(PlantAssociated):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016010"]
-    class_class_curie: ClassVar[str] = "MIXS:0010007_0016010"
-    class_name: ClassVar[str] = "MimsPlantAssociated"
-    class_model_uri: ClassVar[URIRef] = MIXS.MimsPlantAssociated
-
-    samp_name: str = None
-    project_name: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
-    assembly_name: Optional[str] = None
-    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
-    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
-    lib_reads_seqd: Optional[int] = None
-    lib_screen: Optional[str] = None
-    lib_size: Optional[int] = None
-    lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
-    samp_mat_process: Optional[str] = None
-    samp_size: Optional[str] = None
-    sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
-
-    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self.adapters is not None and not isinstance(self.adapters, str):
-            self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
-
-        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
-            self.assembly_name = str(self.assembly_name)
 
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
@@ -9923,14 +11136,138 @@ class MimsPlantAssociated(PlantAssociated):
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class MimsPlantAssociated(PlantAssociated):
+    """
+    placeholder description; linter will ignore this
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016010"]
+    class_class_curie: ClassVar[str] = "MIXS:0010007_0016010"
+    class_name: ClassVar[str] = "MimsPlantAssociated"
+    class_model_uri: ClassVar[URIRef] = MIXS.MimsPlantAssociated
+
+    project_name: str = None
+    mid: Optional[str] = None
+    adapters: Optional[str] = None
+    annot: Optional[str] = None
+    assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    number_contig: Optional[int] = None
+    experimental_factor: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    lib_reads_seqd: Optional[int] = None
+    lib_screen: Optional[str] = None
+    lib_size: Optional[int] = None
+    lib_vector: Optional[str] = None
+    samp_mat_process: Optional[str] = None
+    samp_size: Optional[str] = None
+    alt: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
-
-        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
-            self.feat_pred = str(self.feat_pred)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -9947,23 +11284,23 @@ class MimsPlantAssociated(PlantAssociated):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.mid is not None and not isinstance(self.mid, str):
-            self.mid = str(self.mid)
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
 
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.number_contig is not None and not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
 
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
 
         if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
             self.ref_biomaterial = str(self.ref_biomaterial)
@@ -9971,41 +11308,44 @@ class MimsPlantAssociated(PlantAssociated):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
-        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
-            self.samp_mat_process = str(self.samp_mat_process)
-
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.size_frac is not None and not isinstance(self.size_frac, str):
-            self.size_frac = str(self.size_frac)
-
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class Sediment(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016011"]
@@ -10013,9 +11353,7 @@ class Sediment(EnvironmentalPackage):
     class_name: ClassVar[str] = "Sediment"
     class_model_uri: ClassVar[URIRef] = MIXS.Sediment
 
-    samp_name: str = None
     project_name: str = None
-    depth: str = None
     elev: Optional[str] = None
     alkalinity: Optional[str] = None
     alkyl_diethers: Optional[str] = None
@@ -10053,11 +11391,11 @@ class Sediment(EnvironmentalPackage):
     org_nitro: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph: Optional[float] = None
-    particle_class: Optional[str] = None
     part_org_carb: Optional[str] = None
+    particle_class: Optional[str] = None
     perturbation: Optional[str] = None
     petroleum_hydrocarb: Optional[str] = None
+    ph: Optional[float] = None
     phaeopigments: Optional[str] = None
     phosphate: Optional[str] = None
     phosplipid_fatt_acid: Optional[str] = None
@@ -10079,26 +11417,15 @@ class Sediment(EnvironmentalPackage):
     tidal_stage: Optional[Union[str, "TIDALSTAGEENUM"]] = None
     tot_carb: Optional[str] = None
     tot_depth_water_col: Optional[str] = None
-    tot_nitro_content: Optional[str] = None
     tot_org_carb: Optional[str] = None
     turbidity: Optional[str] = None
     water_content: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
-
-        if self._is_empty(self.depth):
-            self.MissingRequiredField("depth")
-        if not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -10211,20 +11538,20 @@ class Sediment(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
+        if self.part_org_carb is not None and not isinstance(self.part_org_carb, str):
+            self.part_org_carb = str(self.part_org_carb)
 
         if self.particle_class is not None and not isinstance(self.particle_class, str):
             self.particle_class = str(self.particle_class)
-
-        if self.part_org_carb is not None and not isinstance(self.part_org_carb, str):
-            self.part_org_carb = str(self.part_org_carb)
 
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
 
         if self.petroleum_hydrocarb is not None and not isinstance(self.petroleum_hydrocarb, str):
             self.petroleum_hydrocarb = str(self.petroleum_hydrocarb)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
         if self.phaeopigments is not None and not isinstance(self.phaeopigments, str):
             self.phaeopigments = str(self.phaeopigments)
@@ -10289,9 +11616,6 @@ class Sediment(EnvironmentalPackage):
         if self.tot_depth_water_col is not None and not isinstance(self.tot_depth_water_col, str):
             self.tot_depth_water_col = str(self.tot_depth_water_col)
 
-        if self.tot_nitro_content is not None and not isinstance(self.tot_nitro_content, str):
-            self.tot_nitro_content = str(self.tot_nitro_content)
-
         if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
             self.tot_org_carb = str(self.tot_org_carb)
 
@@ -10306,6 +11630,9 @@ class Sediment(EnvironmentalPackage):
 
 @dataclass
 class MigsBaSediment(Sediment):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010003_0016011"]
@@ -10313,139 +11640,64 @@ class MigsBaSediment(Sediment):
     class_name: ClassVar[str] = "MigsBaSediment"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsBaSediment
 
-    samp_name: str = None
     project_name: str = None
-    depth: str = None
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    num_replicons: int = None
-    number_contig: int = None
-    ref_biomaterial: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    rel_to_oxygen: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    extrachrom_elements: Optional[int] = None
+    host_disease_stat: Optional[str] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    encoded_traits: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
-    host_disease_stat: Optional[str] = None
     host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    num_replicons: Optional[int] = None
+    ref_biomaterial: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.assembly_qual):
-            self.MissingRequiredField("assembly_qual")
-        if not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
-            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
-
-        if self._is_empty(self.assembly_software):
-            self.MissingRequiredField("assembly_software")
-        if not isinstance(self.assembly_software, str):
-            self.assembly_software = str(self.assembly_software)
-
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.isol_growth_condt):
-            self.MissingRequiredField("isol_growth_condt")
-        if not isinstance(self.isol_growth_condt, str):
-            self.isol_growth_condt = str(self.isol_growth_condt)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.num_replicons):
-            self.MissingRequiredField("num_replicons")
-        if not isinstance(self.num_replicons, int):
-            self.num_replicons = int(self.num_replicons)
-
-        if self._is_empty(self.number_contig):
-            self.MissingRequiredField("number_contig")
-        if not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
-
-        if self._is_empty(self.ref_biomaterial):
-            self.MissingRequiredField("ref_biomaterial")
-        if not isinstance(self.ref_biomaterial, str):
-            self.ref_biomaterial = str(self.ref_biomaterial)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
 
         if self.annot is not None and not isinstance(self.annot, str):
             self.annot = str(self.annot)
@@ -10453,11 +11705,53 @@ class MigsBaSediment(Sediment):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -10465,23 +11759,14 @@ class MigsBaSediment(Sediment):
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
 
-        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
-            self.encoded_traits = str(self.encoded_traits)
-
         if self.estimated_size is not None and not isinstance(self.estimated_size, str):
             self.estimated_size = str(self.estimated_size)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
 
-        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
-            self.extrachrom_elements = int(self.extrachrom_elements)
-
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
 
         if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
             self.host_spec_range = str(self.host_spec_range)
@@ -10501,32 +11786,8 @@ class MigsBaSediment(Sediment):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
-
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
-            self.pathogenicity = str(self.pathogenicity)
-
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
-
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
-
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
 
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
@@ -10537,135 +11798,8 @@ class MigsBaSediment(Sediment):
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.specific_host is not None and not isinstance(self.specific_host, str):
-            self.specific_host = str(self.specific_host)
-
-        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
-            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
-
-        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
-            self.tax_ident = str(self.tax_ident)
-
-        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
-            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass
-class MimsSediment(Sediment):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016011"]
-    class_class_curie: ClassVar[str] = "MIXS:0010007_0016011"
-    class_name: ClassVar[str] = "MimsSediment"
-    class_model_uri: ClassVar[URIRef] = MIXS.MimsSediment
-
-    samp_name: str = None
-    project_name: str = None
-    depth: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
-    assembly_name: Optional[str] = None
-    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
-    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
-    lib_reads_seqd: Optional[int] = None
-    lib_screen: Optional[str] = None
-    lib_size: Optional[int] = None
-    lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
-    samp_mat_process: Optional[str] = None
-    samp_size: Optional[str] = None
-    sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
-
-    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self.adapters is not None and not isinstance(self.adapters, str):
-            self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
-
-        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
-            self.assembly_name = str(self.assembly_name)
 
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
@@ -10673,14 +11807,138 @@ class MimsSediment(Sediment):
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class MimsSediment(Sediment):
+    """
+    placeholder description; linter will ignore this
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016011"]
+    class_class_curie: ClassVar[str] = "MIXS:0010007_0016011"
+    class_name: ClassVar[str] = "MimsSediment"
+    class_model_uri: ClassVar[URIRef] = MIXS.MimsSediment
+
+    project_name: str = None
+    mid: Optional[str] = None
+    adapters: Optional[str] = None
+    annot: Optional[str] = None
+    assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    number_contig: Optional[int] = None
+    experimental_factor: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    lib_reads_seqd: Optional[int] = None
+    lib_screen: Optional[str] = None
+    lib_size: Optional[int] = None
+    lib_vector: Optional[str] = None
+    samp_mat_process: Optional[str] = None
+    samp_size: Optional[str] = None
+    alt: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
-
-        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
-            self.feat_pred = str(self.feat_pred)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -10697,23 +11955,23 @@ class MimsSediment(Sediment):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.mid is not None and not isinstance(self.mid, str):
-            self.mid = str(self.mid)
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
 
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.number_contig is not None and not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
 
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
 
         if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
             self.ref_biomaterial = str(self.ref_biomaterial)
@@ -10721,41 +11979,44 @@ class MimsSediment(Sediment):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
-        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
-            self.samp_mat_process = str(self.samp_mat_process)
-
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.size_frac is not None and not isinstance(self.size_frac, str):
-            self.size_frac = str(self.size_frac)
-
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class Soil(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016012"]
@@ -10763,85 +12024,85 @@ class Soil(EnvironmentalPackage):
     class_name: ClassVar[str] = "Soil"
     class_model_uri: ClassVar[URIRef] = MIXS.Soil
 
-    samp_name: str = None
-    project_name: str = None
-    depth: str = None
     elev: str = None
+    project_name: str = None
+    agrochem_addition: Optional[str] = None
+    al_sat: Optional[str] = None
+    al_sat_meth: Optional[str] = None
+    annual_precpt: Optional[str] = None
+    annual_temp: Optional[str] = None
+    crop_rotation: Optional[str] = None
     cur_land_use: Optional[Union[str, "CURLANDUSEENUM"]] = None
     cur_vegetation: Optional[str] = None
     cur_vegetation_meth: Optional[str] = None
-    previous_land_use: Optional[str] = None
-    prev_land_use_meth: Optional[str] = None
-    crop_rotation: Optional[str] = None
-    agrochem_addition: Optional[str] = None
-    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
+    drainage_class: Optional[Union[str, "DRAINAGECLASSENUM"]] = None
+    extreme_event: Optional[str] = None
+    fao_class: Optional[Union[str, "FAOCLASSENUM"]] = None
     fire: Optional[str] = None
     flooding: Optional[str] = None
-    extreme_event: Optional[str] = None
-    soil_horizon: Optional[str] = None
-    horizon_meth: Optional[str] = None
-    sieving: Optional[str] = None
-    water_content: Optional[str] = None
-    water_cont_soil_meth: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    pool_dna_extracts: Optional[str] = None
-    store_cond: Optional[str] = None
-    link_climate_info: Optional[str] = None
-    annual_temp: Optional[str] = None
-    season_temp: Optional[str] = None
-    annual_precpt: Optional[str] = None
-    season_precpt: Optional[str] = None
-    link_class_info: Optional[str] = None
-    fao_class: Optional[Union[str, "FAOCLASSENUM"]] = None
-    local_class: Optional[str] = None
-    local_class_meth: Optional[str] = None
-    org_nitro: Optional[str] = None
-    temp: Optional[str] = None
-    soil_type: Optional[str] = None
-    soil_type_meth: Optional[str] = None
-    slope_gradient: Optional[str] = None
-    slope_aspect: Optional[str] = None
-    profile_position: Optional[Union[str, "PROFILEPOSITIONENUM"]] = None
-    drainage_class: Optional[Union[str, "DRAINAGECLASSENUM"]] = None
-    soil_text_measure: Optional[str] = None
-    soil_texture_meth: Optional[str] = None
-    ph: Optional[float] = None
-    ph_meth: Optional[str] = None
-    org_matter: Optional[str] = None
-    tot_org_carb: Optional[str] = None
-    tot_org_c_meth: Optional[str] = None
-    tot_nitro_content: Optional[str] = None
-    tot_nitro_cont_meth: Optional[str] = None
-    microbial_biomass: Optional[str] = None
-    micro_biomass_meth: Optional[str] = None
-    link_addit_analys: Optional[str] = None
-    salinity_meth: Optional[str] = None
     heavy_metals: Optional[str] = None
     heavy_metals_meth: Optional[str] = None
-    al_sat: Optional[str] = None
-    al_sat_meth: Optional[str] = None
+    horizon_meth: Optional[str] = None
+    link_addit_analys: Optional[str] = None
+    link_class_info: Optional[str] = None
+    link_climate_info: Optional[str] = None
+    local_class: Optional[str] = None
+    local_class_meth: Optional[str] = None
+    microbial_biomass: Optional[str] = None
     misc_param: Optional[str] = None
+    org_matter: Optional[str] = None
+    org_nitro: Optional[str] = None
+    ph: Optional[float] = None
+    ph_meth: Optional[str] = None
+    pool_dna_extracts: Optional[str] = None
+    previous_land_use: Optional[str] = None
+    previous_land_use_meth: Optional[str] = None
+    profile_position: Optional[Union[str, "PROFILEPOSITIONENUM"]] = None
+    salinity_meth: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    season_precpt: Optional[str] = None
+    season_temp: Optional[str] = None
+    sieving: Optional[str] = None
+    slope_aspect: Optional[str] = None
+    slope_gradient: Optional[str] = None
+    soil_type: Optional[str] = None
+    soil_type_meth: Optional[str] = None
+    store_cond: Optional[str] = None
+    temp: Optional[str] = None
+    tillage: Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]] = empty_list()
+    tot_org_c_meth: Optional[str] = None
+    tot_org_carb: Optional[str] = None
+    water_cont_soil_meth: Optional[str] = None
+    water_content: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
+        if self._is_empty(self.elev):
+            self.MissingRequiredField("elev")
+        if not isinstance(self.elev, str):
+            self.elev = str(self.elev)
 
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
 
-        if self._is_empty(self.depth):
-            self.MissingRequiredField("depth")
-        if not isinstance(self.depth, str):
-            self.depth = str(self.depth)
+        if self.agrochem_addition is not None and not isinstance(self.agrochem_addition, str):
+            self.agrochem_addition = str(self.agrochem_addition)
 
-        if self._is_empty(self.elev):
-            self.MissingRequiredField("elev")
-        if not isinstance(self.elev, str):
-            self.elev = str(self.elev)
+        if self.al_sat is not None and not isinstance(self.al_sat, str):
+            self.al_sat = str(self.al_sat)
+
+        if self.al_sat_meth is not None and not isinstance(self.al_sat_meth, str):
+            self.al_sat_meth = str(self.al_sat_meth)
+
+        if self.annual_precpt is not None and not isinstance(self.annual_precpt, str):
+            self.annual_precpt = str(self.annual_precpt)
+
+        if self.annual_temp is not None and not isinstance(self.annual_temp, str):
+            self.annual_temp = str(self.annual_temp)
+
+        if self.crop_rotation is not None and not isinstance(self.crop_rotation, str):
+            self.crop_rotation = str(self.crop_rotation)
 
         if self.cur_land_use is not None and not isinstance(self.cur_land_use, CURLANDUSEENUM):
             self.cur_land_use = CURLANDUSEENUM(self.cur_land_use)
@@ -10852,21 +12113,14 @@ class Soil(EnvironmentalPackage):
         if self.cur_vegetation_meth is not None and not isinstance(self.cur_vegetation_meth, str):
             self.cur_vegetation_meth = str(self.cur_vegetation_meth)
 
-        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
-            self.previous_land_use = str(self.previous_land_use)
+        if self.drainage_class is not None and not isinstance(self.drainage_class, DRAINAGECLASSENUM):
+            self.drainage_class = DRAINAGECLASSENUM(self.drainage_class)
 
-        if self.prev_land_use_meth is not None and not isinstance(self.prev_land_use_meth, str):
-            self.prev_land_use_meth = str(self.prev_land_use_meth)
+        if self.extreme_event is not None and not isinstance(self.extreme_event, str):
+            self.extreme_event = str(self.extreme_event)
 
-        if self.crop_rotation is not None and not isinstance(self.crop_rotation, str):
-            self.crop_rotation = str(self.crop_rotation)
-
-        if self.agrochem_addition is not None and not isinstance(self.agrochem_addition, str):
-            self.agrochem_addition = str(self.agrochem_addition)
-
-        if not isinstance(self.tillage, list):
-            self.tillage = [self.tillage] if self.tillage is not None else []
-        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
+        if self.fao_class is not None and not isinstance(self.fao_class, FAOCLASSENUM):
+            self.fao_class = FAOCLASSENUM(self.fao_class)
 
         if self.fire is not None and not isinstance(self.fire, str):
             self.fire = str(self.fire)
@@ -10874,53 +12128,23 @@ class Soil(EnvironmentalPackage):
         if self.flooding is not None and not isinstance(self.flooding, str):
             self.flooding = str(self.flooding)
 
-        if self.extreme_event is not None and not isinstance(self.extreme_event, str):
-            self.extreme_event = str(self.extreme_event)
+        if self.heavy_metals is not None and not isinstance(self.heavy_metals, str):
+            self.heavy_metals = str(self.heavy_metals)
 
-        if self.soil_horizon is not None and not isinstance(self.soil_horizon, str):
-            self.soil_horizon = str(self.soil_horizon)
+        if self.heavy_metals_meth is not None and not isinstance(self.heavy_metals_meth, str):
+            self.heavy_metals_meth = str(self.heavy_metals_meth)
 
         if self.horizon_meth is not None and not isinstance(self.horizon_meth, str):
             self.horizon_meth = str(self.horizon_meth)
 
-        if self.sieving is not None and not isinstance(self.sieving, str):
-            self.sieving = str(self.sieving)
-
-        if self.water_content is not None and not isinstance(self.water_content, str):
-            self.water_content = str(self.water_content)
-
-        if self.water_cont_soil_meth is not None and not isinstance(self.water_cont_soil_meth, str):
-            self.water_cont_soil_meth = str(self.water_cont_soil_meth)
-
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
-
-        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
-            self.pool_dna_extracts = str(self.pool_dna_extracts)
-
-        if self.store_cond is not None and not isinstance(self.store_cond, str):
-            self.store_cond = str(self.store_cond)
-
-        if self.link_climate_info is not None and not isinstance(self.link_climate_info, str):
-            self.link_climate_info = str(self.link_climate_info)
-
-        if self.annual_temp is not None and not isinstance(self.annual_temp, str):
-            self.annual_temp = str(self.annual_temp)
-
-        if self.season_temp is not None and not isinstance(self.season_temp, str):
-            self.season_temp = str(self.season_temp)
-
-        if self.annual_precpt is not None and not isinstance(self.annual_precpt, str):
-            self.annual_precpt = str(self.annual_precpt)
-
-        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
-            self.season_precpt = str(self.season_precpt)
+        if self.link_addit_analys is not None and not isinstance(self.link_addit_analys, str):
+            self.link_addit_analys = str(self.link_addit_analys)
 
         if self.link_class_info is not None and not isinstance(self.link_class_info, str):
             self.link_class_info = str(self.link_class_info)
 
-        if self.fao_class is not None and not isinstance(self.fao_class, FAOCLASSENUM):
-            self.fao_class = FAOCLASSENUM(self.fao_class)
+        if self.link_climate_info is not None and not isinstance(self.link_climate_info, str):
+            self.link_climate_info = str(self.link_climate_info)
 
         if self.local_class is not None and not isinstance(self.local_class, str):
             self.local_class = str(self.local_class)
@@ -10928,35 +12152,17 @@ class Soil(EnvironmentalPackage):
         if self.local_class_meth is not None and not isinstance(self.local_class_meth, str):
             self.local_class_meth = str(self.local_class_meth)
 
+        if self.microbial_biomass is not None and not isinstance(self.microbial_biomass, str):
+            self.microbial_biomass = str(self.microbial_biomass)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
+
+        if self.org_matter is not None and not isinstance(self.org_matter, str):
+            self.org_matter = str(self.org_matter)
+
         if self.org_nitro is not None and not isinstance(self.org_nitro, str):
             self.org_nitro = str(self.org_nitro)
-
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
-
-        if self.soil_type is not None and not isinstance(self.soil_type, str):
-            self.soil_type = str(self.soil_type)
-
-        if self.soil_type_meth is not None and not isinstance(self.soil_type_meth, str):
-            self.soil_type_meth = str(self.soil_type_meth)
-
-        if self.slope_gradient is not None and not isinstance(self.slope_gradient, str):
-            self.slope_gradient = str(self.slope_gradient)
-
-        if self.slope_aspect is not None and not isinstance(self.slope_aspect, str):
-            self.slope_aspect = str(self.slope_aspect)
-
-        if self.profile_position is not None and not isinstance(self.profile_position, PROFILEPOSITIONENUM):
-            self.profile_position = PROFILEPOSITIONENUM(self.profile_position)
-
-        if self.drainage_class is not None and not isinstance(self.drainage_class, DRAINAGECLASSENUM):
-            self.drainage_class = DRAINAGECLASSENUM(self.drainage_class)
-
-        if self.soil_text_measure is not None and not isinstance(self.soil_text_measure, str):
-            self.soil_text_measure = str(self.soil_text_measure)
-
-        if self.soil_texture_meth is not None and not isinstance(self.soil_texture_meth, str):
-            self.soil_texture_meth = str(self.soil_texture_meth)
 
         if self.ph is not None and not isinstance(self.ph, float):
             self.ph = float(self.ph)
@@ -10964,53 +12170,75 @@ class Soil(EnvironmentalPackage):
         if self.ph_meth is not None and not isinstance(self.ph_meth, str):
             self.ph_meth = str(self.ph_meth)
 
-        if self.org_matter is not None and not isinstance(self.org_matter, str):
-            self.org_matter = str(self.org_matter)
+        if self.pool_dna_extracts is not None and not isinstance(self.pool_dna_extracts, str):
+            self.pool_dna_extracts = str(self.pool_dna_extracts)
 
-        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
-            self.tot_org_carb = str(self.tot_org_carb)
+        if self.previous_land_use is not None and not isinstance(self.previous_land_use, str):
+            self.previous_land_use = str(self.previous_land_use)
 
-        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
-            self.tot_org_c_meth = str(self.tot_org_c_meth)
+        if self.previous_land_use_meth is not None and not isinstance(self.previous_land_use_meth, str):
+            self.previous_land_use_meth = str(self.previous_land_use_meth)
 
-        if self.tot_nitro_content is not None and not isinstance(self.tot_nitro_content, str):
-            self.tot_nitro_content = str(self.tot_nitro_content)
-
-        if self.tot_nitro_cont_meth is not None and not isinstance(self.tot_nitro_cont_meth, str):
-            self.tot_nitro_cont_meth = str(self.tot_nitro_cont_meth)
-
-        if self.microbial_biomass is not None and not isinstance(self.microbial_biomass, str):
-            self.microbial_biomass = str(self.microbial_biomass)
-
-        if self.micro_biomass_meth is not None and not isinstance(self.micro_biomass_meth, str):
-            self.micro_biomass_meth = str(self.micro_biomass_meth)
-
-        if self.link_addit_analys is not None and not isinstance(self.link_addit_analys, str):
-            self.link_addit_analys = str(self.link_addit_analys)
+        if self.profile_position is not None and not isinstance(self.profile_position, PROFILEPOSITIONENUM):
+            self.profile_position = PROFILEPOSITIONENUM(self.profile_position)
 
         if self.salinity_meth is not None and not isinstance(self.salinity_meth, str):
             self.salinity_meth = str(self.salinity_meth)
 
-        if self.heavy_metals is not None and not isinstance(self.heavy_metals, str):
-            self.heavy_metals = str(self.heavy_metals)
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
 
-        if self.heavy_metals_meth is not None and not isinstance(self.heavy_metals_meth, str):
-            self.heavy_metals_meth = str(self.heavy_metals_meth)
+        if self.season_precpt is not None and not isinstance(self.season_precpt, str):
+            self.season_precpt = str(self.season_precpt)
 
-        if self.al_sat is not None and not isinstance(self.al_sat, str):
-            self.al_sat = str(self.al_sat)
+        if self.season_temp is not None and not isinstance(self.season_temp, str):
+            self.season_temp = str(self.season_temp)
 
-        if self.al_sat_meth is not None and not isinstance(self.al_sat_meth, str):
-            self.al_sat_meth = str(self.al_sat_meth)
+        if self.sieving is not None and not isinstance(self.sieving, str):
+            self.sieving = str(self.sieving)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.slope_aspect is not None and not isinstance(self.slope_aspect, str):
+            self.slope_aspect = str(self.slope_aspect)
+
+        if self.slope_gradient is not None and not isinstance(self.slope_gradient, str):
+            self.slope_gradient = str(self.slope_gradient)
+
+        if self.soil_type is not None and not isinstance(self.soil_type, str):
+            self.soil_type = str(self.soil_type)
+
+        if self.soil_type_meth is not None and not isinstance(self.soil_type_meth, str):
+            self.soil_type_meth = str(self.soil_type_meth)
+
+        if self.store_cond is not None and not isinstance(self.store_cond, str):
+            self.store_cond = str(self.store_cond)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
+
+        if not isinstance(self.tillage, list):
+            self.tillage = [self.tillage] if self.tillage is not None else []
+        self.tillage = [v if isinstance(v, TILLAGEENUM) else TILLAGEENUM(v) for v in self.tillage]
+
+        if self.tot_org_c_meth is not None and not isinstance(self.tot_org_c_meth, str):
+            self.tot_org_c_meth = str(self.tot_org_c_meth)
+
+        if self.tot_org_carb is not None and not isinstance(self.tot_org_carb, str):
+            self.tot_org_carb = str(self.tot_org_carb)
+
+        if self.water_cont_soil_meth is not None and not isinstance(self.water_cont_soil_meth, str):
+            self.water_cont_soil_meth = str(self.water_cont_soil_meth)
+
+        if self.water_content is not None and not isinstance(self.water_content, str):
+            self.water_content = str(self.water_content)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class MigsBaSoil(Soil):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010003_0016012"]
@@ -11018,140 +12246,65 @@ class MigsBaSoil(Soil):
     class_name: ClassVar[str] = "MigsBaSoil"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsBaSoil
 
-    samp_name: str = None
-    project_name: str = None
-    depth: str = None
     elev: str = None
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    num_replicons: int = None
-    number_contig: int = None
-    ref_biomaterial: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    project_name: str = None
+    rel_to_oxygen: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    extrachrom_elements: Optional[int] = None
+    host_disease_stat: Optional[str] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    encoded_traits: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
-    host_disease_stat: Optional[str] = None
     host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    num_replicons: Optional[int] = None
+    ref_biomaterial: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.assembly_qual):
-            self.MissingRequiredField("assembly_qual")
-        if not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
-            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
-
-        if self._is_empty(self.assembly_software):
-            self.MissingRequiredField("assembly_software")
-        if not isinstance(self.assembly_software, str):
-            self.assembly_software = str(self.assembly_software)
-
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.isol_growth_condt):
-            self.MissingRequiredField("isol_growth_condt")
-        if not isinstance(self.isol_growth_condt, str):
-            self.isol_growth_condt = str(self.isol_growth_condt)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.num_replicons):
-            self.MissingRequiredField("num_replicons")
-        if not isinstance(self.num_replicons, int):
-            self.num_replicons = int(self.num_replicons)
-
-        if self._is_empty(self.number_contig):
-            self.MissingRequiredField("number_contig")
-        if not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
-
-        if self._is_empty(self.ref_biomaterial):
-            self.MissingRequiredField("ref_biomaterial")
-        if not isinstance(self.ref_biomaterial, str):
-            self.ref_biomaterial = str(self.ref_biomaterial)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
 
         if self.annot is not None and not isinstance(self.annot, str):
             self.annot = str(self.annot)
@@ -11159,11 +12312,53 @@ class MigsBaSoil(Soil):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -11171,23 +12366,14 @@ class MigsBaSoil(Soil):
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
 
-        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
-            self.encoded_traits = str(self.encoded_traits)
-
         if self.estimated_size is not None and not isinstance(self.estimated_size, str):
             self.estimated_size = str(self.estimated_size)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
 
-        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
-            self.extrachrom_elements = int(self.extrachrom_elements)
-
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
 
         if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
             self.host_spec_range = str(self.host_spec_range)
@@ -11207,32 +12393,8 @@ class MigsBaSoil(Soil):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
-
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
-            self.pathogenicity = str(self.pathogenicity)
-
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
-
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
-
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
 
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
@@ -11243,136 +12405,8 @@ class MigsBaSoil(Soil):
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.specific_host is not None and not isinstance(self.specific_host, str):
-            self.specific_host = str(self.specific_host)
-
-        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
-            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
-
-        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
-            self.tax_ident = str(self.tax_ident)
-
-        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
-            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass
-class MimsSoil(Soil):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016012"]
-    class_class_curie: ClassVar[str] = "MIXS:0010007_0016012"
-    class_name: ClassVar[str] = "MimsSoil"
-    class_model_uri: ClassVar[URIRef] = MIXS.MimsSoil
-
-    samp_name: str = None
-    project_name: str = None
-    depth: str = None
-    elev: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
-    assembly_name: Optional[str] = None
-    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
-    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
-    lib_reads_seqd: Optional[int] = None
-    lib_screen: Optional[str] = None
-    lib_size: Optional[int] = None
-    lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
-    samp_mat_process: Optional[str] = None
-    samp_size: Optional[str] = None
-    sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
-
-    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self.adapters is not None and not isinstance(self.adapters, str):
-            self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
-
-        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
-            self.assembly_name = str(self.assembly_name)
 
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
@@ -11380,14 +12414,139 @@ class MimsSoil(Soil):
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class MimsSoil(Soil):
+    """
+    placeholder description; linter will ignore this
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016012"]
+    class_class_curie: ClassVar[str] = "MIXS:0010007_0016012"
+    class_name: ClassVar[str] = "MimsSoil"
+    class_model_uri: ClassVar[URIRef] = MIXS.MimsSoil
+
+    elev: str = None
+    project_name: str = None
+    mid: Optional[str] = None
+    adapters: Optional[str] = None
+    annot: Optional[str] = None
+    assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    number_contig: Optional[int] = None
+    experimental_factor: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    lib_reads_seqd: Optional[int] = None
+    lib_screen: Optional[str] = None
+    lib_size: Optional[int] = None
+    lib_vector: Optional[str] = None
+    samp_mat_process: Optional[str] = None
+    samp_size: Optional[str] = None
+    alt: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
-
-        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
-            self.feat_pred = str(self.feat_pred)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -11404,23 +12563,23 @@ class MimsSoil(Soil):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.mid is not None and not isinstance(self.mid, str):
-            self.mid = str(self.mid)
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
 
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.number_contig is not None and not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
 
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
 
         if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
             self.ref_biomaterial = str(self.ref_biomaterial)
@@ -11428,41 +12587,44 @@ class MimsSoil(Soil):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
-        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
-            self.samp_mat_process = str(self.samp_mat_process)
-
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.size_frac is not None and not isinstance(self.size_frac, str):
-            self.size_frac = str(self.size_frac)
-
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         super().__post_init__(**kwargs)
 
 
 @dataclass
 class SymbiontAssociated(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016023"]
@@ -11470,100 +12632,74 @@ class SymbiontAssociated(EnvironmentalPackage):
     class_name: ClassVar[str] = "SymbiontAssociated"
     class_model_uri: ClassVar[URIRef] = MIXS.SymbiontAssociated
 
-    sample_name: Union[str, SymbiontAssociatedSampleName] = None
-    project_name: str = None
-    lat_lon: str = None
-    geo_loc_name: str = None
     collection_date: str = None
     env_broad_scale: str = None
     env_local_scale: str = None
     env_medium: str = None
+    geo_loc_name: str = None
     host_dependence: str = None
-    sym_life_cycle_type: str = None
     host_life_stage: str = None
+    lat_lon: str = None
+    project_name: str = None
+    sym_life_cycle_type: str = None
     alt: Optional[str] = None
-    depth: Optional[str] = None
     elev: Optional[str] = None
-    host_subject_id: Optional[str] = None
-    host_common_name: Optional[str] = None
-    host_taxid: Optional[int] = None
-    source_mat_id: Optional[str] = None
-    type_of_symbiosis: Optional[str] = None
-    host_age: Optional[str] = None
-    host_sex: Optional[str] = None
+    host_cellular_loc: Optional[str] = None
+    host_specificity: Optional[str] = None
     mode_transmission: Optional[str] = None
-    route_transmission: Optional[str] = None
+    symbiont_host_role: Optional[str] = None
+    type_of_symbiosis: Optional[str] = None
+    association_duration: Optional[str] = None
+    chem_administration: Optional[str] = None
+    gravidity: Optional[str] = None
+    host_age: Optional[str] = None
     host_body_habitat: Optional[str] = None
     host_body_site: Optional[str] = None
-    host_body_product: Optional[str] = None
-    host_tot_mass: Optional[str] = None
-    host_height: Optional[str] = None
-    host_length: Optional[str] = None
+    host_color: Optional[str] = None
+    host_common_name: Optional[str] = None
+    host_dry_mass: Optional[str] = None
+    host_genotype: Optional[str] = None
     host_growth_cond: Optional[str] = None
-    host_substrate: Optional[str] = None
-    host_family_relationship: Optional[str] = None
+    host_height: Optional[str] = None
     host_infra_specific_name: Optional[str] = None
     host_infra_specific_rank: Optional[str] = None
-    host_genotype: Optional[str] = None
-    host_phenotype: Optional[str] = None
-    host_dry_mass: Optional[str] = None
-    host_color: Optional[str] = None
-    host_shape: Optional[str] = None
-    gravidity: Optional[str] = None
+    host_length: Optional[str] = None
     host_number: Optional[str] = None
-    host_symbiont: Optional[str] = None
-    host_specificity: Optional[str] = None
-    symbiont_host_role: Optional[str] = None
-    host_cellular_loc: Optional[str] = None
-    association_duration: Optional[str] = None
     host_of_host_coinf: Optional[str] = None
-    host_of_host_name: Optional[str] = None
+    host_of_host_disease: Optional[str] = None
     host_of_host_env_loc: Optional[str] = None
     host_of_host_env_med: Optional[str] = None
-    host_of_host_taxid: Optional[int] = None
-    host_of_host_sub_id: Optional[str] = None
-    host_of_host_disease: Optional[str] = None
     host_of_host_fam_rel: Optional[str] = None
+    host_of_host_geno: Optional[str] = None
+    host_of_host_gravid: Optional[str] = None
     host_of_host_infname: Optional[str] = None
     host_of_host_infrank: Optional[str] = None
-    host_of_host_geno: Optional[str] = None
+    host_of_host_name: Optional[str] = None
     host_of_host_pheno: Optional[str] = None
-    host_of_host_gravid: Optional[str] = None
+    host_of_host_sub_id: Optional[str] = None
+    host_of_host_taxid: Optional[int] = None
     host_of_host_totmass: Optional[str] = None
-    chem_administration: Optional[str] = None
-    perturbation: Optional[str] = None
-    samp_salinity: Optional[str] = None
-    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    temp: Optional[str] = None
+    host_phenotype: Optional[str] = None
+    host_shape: Optional[str] = None
+    host_subject_id: Optional[str] = None
+    host_substrate: Optional[str] = None
+    host_taxid: Optional[int] = None
+    host_tot_mass: Optional[str] = None
+    misc_param: Optional[str] = None
     organism_count: Optional[str] = None
-    samp_vol_we_dna_ext: Optional[str] = None
-    samp_store_temp: Optional[str] = None
+    oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
+    perturbation: Optional[str] = None
+    route_transmission: Optional[str] = None
+    samp_salinity: Optional[str] = None
     samp_store_dur: Optional[str] = None
     samp_store_loc: Optional[str] = None
     samp_store_sol: Optional[str] = None
-    misc_param: Optional[str] = None
+    samp_store_temp: Optional[str] = None
+    samp_vol_we_dna_ext: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    temp: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.sample_name):
-            self.MissingRequiredField("sample_name")
-        if not isinstance(self.sample_name, SymbiontAssociatedSampleName):
-            self.sample_name = SymbiontAssociatedSampleName(self.sample_name)
-
-        if self._is_empty(self.project_name):
-            self.MissingRequiredField("project_name")
-        if not isinstance(self.project_name, str):
-            self.project_name = str(self.project_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
         if self._is_empty(self.collection_date):
             self.MissingRequiredField("collection_date")
         if not isinstance(self.collection_date, str):
@@ -11584,56 +12720,68 @@ class SymbiontAssociated(EnvironmentalPackage):
         if not isinstance(self.env_medium, str):
             self.env_medium = str(self.env_medium)
 
+        if self._is_empty(self.geo_loc_name):
+            self.MissingRequiredField("geo_loc_name")
+        if not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
         if self._is_empty(self.host_dependence):
             self.MissingRequiredField("host_dependence")
         if not isinstance(self.host_dependence, str):
             self.host_dependence = str(self.host_dependence)
-
-        if self._is_empty(self.sym_life_cycle_type):
-            self.MissingRequiredField("sym_life_cycle_type")
-        if not isinstance(self.sym_life_cycle_type, str):
-            self.sym_life_cycle_type = str(self.sym_life_cycle_type)
 
         if self._is_empty(self.host_life_stage):
             self.MissingRequiredField("host_life_stage")
         if not isinstance(self.host_life_stage, str):
             self.host_life_stage = str(self.host_life_stage)
 
+        if self._is_empty(self.lat_lon):
+            self.MissingRequiredField("lat_lon")
+        if not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self._is_empty(self.project_name):
+            self.MissingRequiredField("project_name")
+        if not isinstance(self.project_name, str):
+            self.project_name = str(self.project_name)
+
+        if self._is_empty(self.sym_life_cycle_type):
+            self.MissingRequiredField("sym_life_cycle_type")
+        if not isinstance(self.sym_life_cycle_type, str):
+            self.sym_life_cycle_type = str(self.sym_life_cycle_type)
+
         if self.alt is not None and not isinstance(self.alt, str):
             self.alt = str(self.alt)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
 
-        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
-            self.host_subject_id = str(self.host_subject_id)
+        if self.host_cellular_loc is not None and not isinstance(self.host_cellular_loc, str):
+            self.host_cellular_loc = str(self.host_cellular_loc)
 
-        if self.host_common_name is not None and not isinstance(self.host_common_name, str):
-            self.host_common_name = str(self.host_common_name)
-
-        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
-            self.host_taxid = int(self.host_taxid)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.type_of_symbiosis is not None and not isinstance(self.type_of_symbiosis, str):
-            self.type_of_symbiosis = str(self.type_of_symbiosis)
-
-        if self.host_age is not None and not isinstance(self.host_age, str):
-            self.host_age = str(self.host_age)
-
-        if self.host_sex is not None and not isinstance(self.host_sex, str):
-            self.host_sex = str(self.host_sex)
+        if self.host_specificity is not None and not isinstance(self.host_specificity, str):
+            self.host_specificity = str(self.host_specificity)
 
         if self.mode_transmission is not None and not isinstance(self.mode_transmission, str):
             self.mode_transmission = str(self.mode_transmission)
 
-        if self.route_transmission is not None and not isinstance(self.route_transmission, str):
-            self.route_transmission = str(self.route_transmission)
+        if self.symbiont_host_role is not None and not isinstance(self.symbiont_host_role, str):
+            self.symbiont_host_role = str(self.symbiont_host_role)
+
+        if self.type_of_symbiosis is not None and not isinstance(self.type_of_symbiosis, str):
+            self.type_of_symbiosis = str(self.type_of_symbiosis)
+
+        if self.association_duration is not None and not isinstance(self.association_duration, str):
+            self.association_duration = str(self.association_duration)
+
+        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
+            self.chem_administration = str(self.chem_administration)
+
+        if self.gravidity is not None and not isinstance(self.gravidity, str):
+            self.gravidity = str(self.gravidity)
+
+        if self.host_age is not None and not isinstance(self.host_age, str):
+            self.host_age = str(self.host_age)
 
         if self.host_body_habitat is not None and not isinstance(self.host_body_habitat, str):
             self.host_body_habitat = str(self.host_body_habitat)
@@ -11641,26 +12789,23 @@ class SymbiontAssociated(EnvironmentalPackage):
         if self.host_body_site is not None and not isinstance(self.host_body_site, str):
             self.host_body_site = str(self.host_body_site)
 
-        if self.host_body_product is not None and not isinstance(self.host_body_product, str):
-            self.host_body_product = str(self.host_body_product)
+        if self.host_color is not None and not isinstance(self.host_color, str):
+            self.host_color = str(self.host_color)
 
-        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
-            self.host_tot_mass = str(self.host_tot_mass)
+        if self.host_common_name is not None and not isinstance(self.host_common_name, str):
+            self.host_common_name = str(self.host_common_name)
 
-        if self.host_height is not None and not isinstance(self.host_height, str):
-            self.host_height = str(self.host_height)
+        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
+            self.host_dry_mass = str(self.host_dry_mass)
 
-        if self.host_length is not None and not isinstance(self.host_length, str):
-            self.host_length = str(self.host_length)
+        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
+            self.host_genotype = str(self.host_genotype)
 
         if self.host_growth_cond is not None and not isinstance(self.host_growth_cond, str):
             self.host_growth_cond = str(self.host_growth_cond)
 
-        if self.host_substrate is not None and not isinstance(self.host_substrate, str):
-            self.host_substrate = str(self.host_substrate)
-
-        if self.host_family_relationship is not None and not isinstance(self.host_family_relationship, str):
-            self.host_family_relationship = str(self.host_family_relationship)
+        if self.host_height is not None and not isinstance(self.host_height, str):
+            self.host_height = str(self.host_height)
 
         if self.host_infra_specific_name is not None and not isinstance(self.host_infra_specific_name, str):
             self.host_infra_specific_name = str(self.host_infra_specific_name)
@@ -11668,47 +12813,17 @@ class SymbiontAssociated(EnvironmentalPackage):
         if self.host_infra_specific_rank is not None and not isinstance(self.host_infra_specific_rank, str):
             self.host_infra_specific_rank = str(self.host_infra_specific_rank)
 
-        if self.host_genotype is not None and not isinstance(self.host_genotype, str):
-            self.host_genotype = str(self.host_genotype)
-
-        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
-            self.host_phenotype = str(self.host_phenotype)
-
-        if self.host_dry_mass is not None and not isinstance(self.host_dry_mass, str):
-            self.host_dry_mass = str(self.host_dry_mass)
-
-        if self.host_color is not None and not isinstance(self.host_color, str):
-            self.host_color = str(self.host_color)
-
-        if self.host_shape is not None and not isinstance(self.host_shape, str):
-            self.host_shape = str(self.host_shape)
-
-        if self.gravidity is not None and not isinstance(self.gravidity, str):
-            self.gravidity = str(self.gravidity)
+        if self.host_length is not None and not isinstance(self.host_length, str):
+            self.host_length = str(self.host_length)
 
         if self.host_number is not None and not isinstance(self.host_number, str):
             self.host_number = str(self.host_number)
 
-        if self.host_symbiont is not None and not isinstance(self.host_symbiont, str):
-            self.host_symbiont = str(self.host_symbiont)
-
-        if self.host_specificity is not None and not isinstance(self.host_specificity, str):
-            self.host_specificity = str(self.host_specificity)
-
-        if self.symbiont_host_role is not None and not isinstance(self.symbiont_host_role, str):
-            self.symbiont_host_role = str(self.symbiont_host_role)
-
-        if self.host_cellular_loc is not None and not isinstance(self.host_cellular_loc, str):
-            self.host_cellular_loc = str(self.host_cellular_loc)
-
-        if self.association_duration is not None and not isinstance(self.association_duration, str):
-            self.association_duration = str(self.association_duration)
-
         if self.host_of_host_coinf is not None and not isinstance(self.host_of_host_coinf, str):
             self.host_of_host_coinf = str(self.host_of_host_coinf)
 
-        if self.host_of_host_name is not None and not isinstance(self.host_of_host_name, str):
-            self.host_of_host_name = str(self.host_of_host_name)
+        if self.host_of_host_disease is not None and not isinstance(self.host_of_host_disease, str):
+            self.host_of_host_disease = str(self.host_of_host_disease)
 
         if self.host_of_host_env_loc is not None and not isinstance(self.host_of_host_env_loc, str):
             self.host_of_host_env_loc = str(self.host_of_host_env_loc)
@@ -11716,17 +12831,14 @@ class SymbiontAssociated(EnvironmentalPackage):
         if self.host_of_host_env_med is not None and not isinstance(self.host_of_host_env_med, str):
             self.host_of_host_env_med = str(self.host_of_host_env_med)
 
-        if self.host_of_host_taxid is not None and not isinstance(self.host_of_host_taxid, int):
-            self.host_of_host_taxid = int(self.host_of_host_taxid)
-
-        if self.host_of_host_sub_id is not None and not isinstance(self.host_of_host_sub_id, str):
-            self.host_of_host_sub_id = str(self.host_of_host_sub_id)
-
-        if self.host_of_host_disease is not None and not isinstance(self.host_of_host_disease, str):
-            self.host_of_host_disease = str(self.host_of_host_disease)
-
         if self.host_of_host_fam_rel is not None and not isinstance(self.host_of_host_fam_rel, str):
             self.host_of_host_fam_rel = str(self.host_of_host_fam_rel)
+
+        if self.host_of_host_geno is not None and not isinstance(self.host_of_host_geno, str):
+            self.host_of_host_geno = str(self.host_of_host_geno)
+
+        if self.host_of_host_gravid is not None and not isinstance(self.host_of_host_gravid, str):
+            self.host_of_host_gravid = str(self.host_of_host_gravid)
 
         if self.host_of_host_infname is not None and not isinstance(self.host_of_host_infname, str):
             self.host_of_host_infname = str(self.host_of_host_infname)
@@ -11734,41 +12846,56 @@ class SymbiontAssociated(EnvironmentalPackage):
         if self.host_of_host_infrank is not None and not isinstance(self.host_of_host_infrank, str):
             self.host_of_host_infrank = str(self.host_of_host_infrank)
 
-        if self.host_of_host_geno is not None and not isinstance(self.host_of_host_geno, str):
-            self.host_of_host_geno = str(self.host_of_host_geno)
+        if self.host_of_host_name is not None and not isinstance(self.host_of_host_name, str):
+            self.host_of_host_name = str(self.host_of_host_name)
 
         if self.host_of_host_pheno is not None and not isinstance(self.host_of_host_pheno, str):
             self.host_of_host_pheno = str(self.host_of_host_pheno)
 
-        if self.host_of_host_gravid is not None and not isinstance(self.host_of_host_gravid, str):
-            self.host_of_host_gravid = str(self.host_of_host_gravid)
+        if self.host_of_host_sub_id is not None and not isinstance(self.host_of_host_sub_id, str):
+            self.host_of_host_sub_id = str(self.host_of_host_sub_id)
+
+        if self.host_of_host_taxid is not None and not isinstance(self.host_of_host_taxid, int):
+            self.host_of_host_taxid = int(self.host_of_host_taxid)
 
         if self.host_of_host_totmass is not None and not isinstance(self.host_of_host_totmass, str):
             self.host_of_host_totmass = str(self.host_of_host_totmass)
 
-        if self.chem_administration is not None and not isinstance(self.chem_administration, str):
-            self.chem_administration = str(self.chem_administration)
+        if self.host_phenotype is not None and not isinstance(self.host_phenotype, str):
+            self.host_phenotype = str(self.host_phenotype)
 
-        if self.perturbation is not None and not isinstance(self.perturbation, str):
-            self.perturbation = str(self.perturbation)
+        if self.host_shape is not None and not isinstance(self.host_shape, str):
+            self.host_shape = str(self.host_shape)
 
-        if self.samp_salinity is not None and not isinstance(self.samp_salinity, str):
-            self.samp_salinity = str(self.samp_salinity)
+        if self.host_subject_id is not None and not isinstance(self.host_subject_id, str):
+            self.host_subject_id = str(self.host_subject_id)
 
-        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
-            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
+        if self.host_substrate is not None and not isinstance(self.host_substrate, str):
+            self.host_substrate = str(self.host_substrate)
 
-        if self.temp is not None and not isinstance(self.temp, str):
-            self.temp = str(self.temp)
+        if self.host_taxid is not None and not isinstance(self.host_taxid, int):
+            self.host_taxid = int(self.host_taxid)
+
+        if self.host_tot_mass is not None and not isinstance(self.host_tot_mass, str):
+            self.host_tot_mass = str(self.host_tot_mass)
+
+        if self.misc_param is not None and not isinstance(self.misc_param, str):
+            self.misc_param = str(self.misc_param)
 
         if self.organism_count is not None and not isinstance(self.organism_count, str):
             self.organism_count = str(self.organism_count)
 
-        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
-            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+        if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
+            self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
-            self.samp_store_temp = str(self.samp_store_temp)
+        if self.perturbation is not None and not isinstance(self.perturbation, str):
+            self.perturbation = str(self.perturbation)
+
+        if self.route_transmission is not None and not isinstance(self.route_transmission, str):
+            self.route_transmission = str(self.route_transmission)
+
+        if self.samp_salinity is not None and not isinstance(self.samp_salinity, str):
+            self.samp_salinity = str(self.samp_salinity)
 
         if self.samp_store_dur is not None and not isinstance(self.samp_store_dur, str):
             self.samp_store_dur = str(self.samp_store_dur)
@@ -11779,23 +12906,26 @@ class SymbiontAssociated(EnvironmentalPackage):
         if self.samp_store_sol is not None and not isinstance(self.samp_store_sol, str):
             self.samp_store_sol = str(self.samp_store_sol)
 
-        if self.misc_param is not None and not isinstance(self.misc_param, str):
-            self.misc_param = str(self.misc_param)
+        if self.samp_store_temp is not None and not isinstance(self.samp_store_temp, str):
+            self.samp_store_temp = str(self.samp_store_temp)
+
+        if self.samp_vol_we_dna_ext is not None and not isinstance(self.samp_vol_we_dna_ext, str):
+            self.samp_vol_we_dna_ext = str(self.samp_vol_we_dna_ext)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.temp is not None and not isinstance(self.temp, str):
+            self.temp = str(self.temp)
 
         super().__post_init__(**kwargs)
 
 
-class UnknownTerm(YAMLRoot):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = MIXS["0016017"]
-    class_class_curie: ClassVar[str] = "MIXS:0016017"
-    class_name: ClassVar[str] = "UnknownTerm"
-    class_model_uri: ClassVar[URIRef] = MIXS.UnknownTerm
-
-
 @dataclass
 class WastewaterSludge(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016013"]
@@ -11803,9 +12933,7 @@ class WastewaterSludge(EnvironmentalPackage):
     class_name: ClassVar[str] = "WastewaterSludge"
     class_model_uri: ClassVar[URIRef] = MIXS.WastewaterSludge
 
-    samp_name: str = None
     project_name: str = None
-    depth: Optional[str] = None
     alkalinity: Optional[str] = None
     biochem_oxygen_dem: Optional[str] = None
     chem_administration: Optional[str] = None
@@ -11820,8 +12948,8 @@ class WastewaterSludge(EnvironmentalPackage):
     org_particles: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph: Optional[float] = None
     perturbation: Optional[str] = None
+    ph: Optional[float] = None
     phosphate: Optional[str] = None
     pre_treatment: Optional[str] = None
     primary_treatment: Optional[str] = None
@@ -11840,23 +12968,14 @@ class WastewaterSludge(EnvironmentalPackage):
     suspend_solids: Optional[str] = None
     temp: Optional[str] = None
     tertiary_treatment: Optional[str] = None
-    tot_nitro: Optional[str] = None
     tot_phosphate: Optional[str] = None
     wastewater_type: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
-
-        if self.depth is not None and not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.alkalinity is not None and not isinstance(self.alkalinity, str):
             self.alkalinity = str(self.alkalinity)
@@ -11900,11 +13019,11 @@ class WastewaterSludge(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
         if self.perturbation is not None and not isinstance(self.perturbation, str):
             self.perturbation = str(self.perturbation)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
         if self.phosphate is not None and not isinstance(self.phosphate, str):
             self.phosphate = str(self.phosphate)
@@ -11960,9 +13079,6 @@ class WastewaterSludge(EnvironmentalPackage):
         if self.tertiary_treatment is not None and not isinstance(self.tertiary_treatment, str):
             self.tertiary_treatment = str(self.tertiary_treatment)
 
-        if self.tot_nitro is not None and not isinstance(self.tot_nitro, str):
-            self.tot_nitro = str(self.tot_nitro)
-
         if self.tot_phosphate is not None and not isinstance(self.tot_phosphate, str):
             self.tot_phosphate = str(self.tot_phosphate)
 
@@ -11974,6 +13090,9 @@ class WastewaterSludge(EnvironmentalPackage):
 
 @dataclass
 class Water(EnvironmentalPackage):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0016014"]
@@ -11981,9 +13100,7 @@ class Water(EnvironmentalPackage):
     class_name: ClassVar[str] = "Water"
     class_model_uri: ClassVar[URIRef] = MIXS.Water
 
-    samp_name: str = None
     project_name: str = None
-    depth: str = None
     elev: Optional[str] = None
     alkalinity: Optional[str] = None
     alkalinity_method: Optional[str] = None
@@ -11991,9 +13108,9 @@ class Water(EnvironmentalPackage):
     aminopept_act: Optional[str] = None
     ammonium: Optional[str] = None
     atmospheric_data: Optional[str] = None
-    bacteria_carb_prod: Optional[str] = None
     bac_prod: Optional[str] = None
     bac_resp: Optional[str] = None
+    bacteria_carb_prod: Optional[str] = None
     biomass: Optional[str] = None
     bishomohopanol: Optional[str] = None
     bromide: Optional[str] = None
@@ -12030,11 +13147,11 @@ class Water(EnvironmentalPackage):
     org_nitro: Optional[str] = None
     organism_count: Optional[str] = None
     oxy_stat_samp: Optional[Union[str, "OXYSTATSAMPENUM"]] = None
-    ph: Optional[float] = None
     part_org_carb: Optional[str] = None
     part_org_nitro: Optional[str] = None
     perturbation: Optional[str] = None
     petroleum_hydrocarb: Optional[str] = None
+    ph: Optional[float] = None
     phaeopigments: Optional[str] = None
     phosphate: Optional[str] = None
     phosplipid_fatt_acid: Optional[str] = None
@@ -12061,27 +13178,16 @@ class Water(EnvironmentalPackage):
     tot_depth_water_col: Optional[str] = None
     tot_diss_nitro: Optional[str] = None
     tot_inorg_nitro: Optional[str] = None
-    tot_nitro: Optional[str] = None
     tot_part_carb: Optional[str] = None
     tot_phosp: Optional[str] = None
     turbidity: Optional[str] = None
     water_current: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.samp_name):
-            self.MissingRequiredField("samp_name")
-        if not isinstance(self.samp_name, str):
-            self.samp_name = str(self.samp_name)
-
         if self._is_empty(self.project_name):
             self.MissingRequiredField("project_name")
         if not isinstance(self.project_name, str):
             self.project_name = str(self.project_name)
-
-        if self._is_empty(self.depth):
-            self.MissingRequiredField("depth")
-        if not isinstance(self.depth, str):
-            self.depth = str(self.depth)
 
         if self.elev is not None and not isinstance(self.elev, str):
             self.elev = str(self.elev)
@@ -12104,14 +13210,14 @@ class Water(EnvironmentalPackage):
         if self.atmospheric_data is not None and not isinstance(self.atmospheric_data, str):
             self.atmospheric_data = str(self.atmospheric_data)
 
-        if self.bacteria_carb_prod is not None and not isinstance(self.bacteria_carb_prod, str):
-            self.bacteria_carb_prod = str(self.bacteria_carb_prod)
-
         if self.bac_prod is not None and not isinstance(self.bac_prod, str):
             self.bac_prod = str(self.bac_prod)
 
         if self.bac_resp is not None and not isinstance(self.bac_resp, str):
             self.bac_resp = str(self.bac_resp)
+
+        if self.bacteria_carb_prod is not None and not isinstance(self.bacteria_carb_prod, str):
+            self.bacteria_carb_prod = str(self.bacteria_carb_prod)
 
         if self.biomass is not None and not isinstance(self.biomass, str):
             self.biomass = str(self.biomass)
@@ -12221,9 +13327,6 @@ class Water(EnvironmentalPackage):
         if self.oxy_stat_samp is not None and not isinstance(self.oxy_stat_samp, OXYSTATSAMPENUM):
             self.oxy_stat_samp = OXYSTATSAMPENUM(self.oxy_stat_samp)
 
-        if self.ph is not None and not isinstance(self.ph, float):
-            self.ph = float(self.ph)
-
         if self.part_org_carb is not None and not isinstance(self.part_org_carb, str):
             self.part_org_carb = str(self.part_org_carb)
 
@@ -12235,6 +13338,9 @@ class Water(EnvironmentalPackage):
 
         if self.petroleum_hydrocarb is not None and not isinstance(self.petroleum_hydrocarb, str):
             self.petroleum_hydrocarb = str(self.petroleum_hydrocarb)
+
+        if self.ph is not None and not isinstance(self.ph, float):
+            self.ph = float(self.ph)
 
         if self.phaeopigments is not None and not isinstance(self.phaeopigments, str):
             self.phaeopigments = str(self.phaeopigments)
@@ -12314,9 +13420,6 @@ class Water(EnvironmentalPackage):
         if self.tot_inorg_nitro is not None and not isinstance(self.tot_inorg_nitro, str):
             self.tot_inorg_nitro = str(self.tot_inorg_nitro)
 
-        if self.tot_nitro is not None and not isinstance(self.tot_nitro, str):
-            self.tot_nitro = str(self.tot_nitro)
-
         if self.tot_part_carb is not None and not isinstance(self.tot_part_carb, str):
             self.tot_part_carb = str(self.tot_part_carb)
 
@@ -12334,6 +13437,9 @@ class Water(EnvironmentalPackage):
 
 @dataclass
 class MigsBaWater(Water):
+    """
+    placeholder description; linter will ignore this
+    """
     _inherited_slots: ClassVar[List[str]] = []
 
     class_class_uri: ClassVar[URIRef] = MIXS["0010003_0016012"]
@@ -12341,139 +13447,64 @@ class MigsBaWater(Water):
     class_name: ClassVar[str] = "MigsBaWater"
     class_model_uri: ClassVar[URIRef] = MIXS.MigsBaWater
 
-    samp_name: str = None
     project_name: str = None
-    depth: str = None
-    assembly_qual: Union[str, "ASSEMBLYQUALENUM"] = None
-    assembly_software: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    isol_growth_condt: str = None
-    lat_lon: str = None
-    num_replicons: int = None
-    number_contig: int = None
-    ref_biomaterial: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
+    rel_to_oxygen: Optional[str] = None
     adapters: Optional[str] = None
-    alt: Optional[str] = None
     annot: Optional[str] = None
     assembly_name: Optional[str] = None
-    associated_resource: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pathogenicity: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    subspecf_gen_lin: Optional[str] = None
+    tax_ident: Optional[str] = None
+    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
     biotic_relationship: Optional[Union[str, "BIOTICRELATIONSHIPENUM"]] = None
+    extrachrom_elements: Optional[int] = None
+    host_disease_stat: Optional[str] = None
+    specific_host: Optional[str] = None
+    alt: Optional[str] = None
+    encoded_traits: Optional[str] = None
     compl_score: Optional[str] = None
     compl_software: Optional[str] = None
-    encoded_traits: Optional[str] = None
     estimated_size: Optional[str] = None
     experimental_factor: Optional[str] = None
-    extrachrom_elements: Optional[int] = None
     feat_pred: Optional[str] = None
-    host_disease_stat: Optional[str] = None
     host_spec_range: Optional[str] = None
     lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
     lib_reads_seqd: Optional[int] = None
     lib_screen: Optional[str] = None
     lib_size: Optional[int] = None
     lib_vector: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    pathogenicity: Optional[str] = None
-    pos_cont_type: Optional[str] = None
     ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
     samp_mat_process: Optional[str] = None
     samp_size: Optional[str] = None
     sim_search_meth: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    specific_host: Optional[str] = None
-    subspecf_gen_lin: Optional[str] = None
     tax_class: Optional[str] = None
-    tax_ident: Optional[str] = None
-    trophic_level: Optional[Union[str, "TROPHICLEVELENUM"]] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    isol_growth_condt: Optional[str] = None
+    lat_lon: Optional[str] = None
+    number_contig: Optional[int] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+    num_replicons: Optional[int] = None
+    ref_biomaterial: Optional[str] = None
 
     def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.assembly_qual):
-            self.MissingRequiredField("assembly_qual")
-        if not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
-            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
-
-        if self._is_empty(self.assembly_software):
-            self.MissingRequiredField("assembly_software")
-        if not isinstance(self.assembly_software, str):
-            self.assembly_software = str(self.assembly_software)
-
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.isol_growth_condt):
-            self.MissingRequiredField("isol_growth_condt")
-        if not isinstance(self.isol_growth_condt, str):
-            self.isol_growth_condt = str(self.isol_growth_condt)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.num_replicons):
-            self.MissingRequiredField("num_replicons")
-        if not isinstance(self.num_replicons, int):
-            self.num_replicons = int(self.num_replicons)
-
-        if self._is_empty(self.number_contig):
-            self.MissingRequiredField("number_contig")
-        if not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
-
-        if self._is_empty(self.ref_biomaterial):
-            self.MissingRequiredField("ref_biomaterial")
-        if not isinstance(self.ref_biomaterial, str):
-            self.ref_biomaterial = str(self.ref_biomaterial)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
         if self.adapters is not None and not isinstance(self.adapters, str):
             self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
 
         if self.annot is not None and not isinstance(self.annot, str):
             self.annot = str(self.annot)
@@ -12481,11 +13512,53 @@ class MigsBaWater(Water):
         if self.assembly_name is not None and not isinstance(self.assembly_name, str):
             self.assembly_name = str(self.assembly_name)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
+            self.pathogenicity = str(self.pathogenicity)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
+            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
+
+        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
+            self.tax_ident = str(self.tax_ident)
+
+        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
+            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
 
         if self.biotic_relationship is not None and not isinstance(self.biotic_relationship, BIOTICRELATIONSHIPENUM):
             self.biotic_relationship = BIOTICRELATIONSHIPENUM(self.biotic_relationship)
+
+        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
+            self.extrachrom_elements = int(self.extrachrom_elements)
+
+        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
+            self.host_disease_stat = str(self.host_disease_stat)
+
+        if self.specific_host is not None and not isinstance(self.specific_host, str):
+            self.specific_host = str(self.specific_host)
+
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
+
+        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
+            self.encoded_traits = str(self.encoded_traits)
 
         if self.compl_score is not None and not isinstance(self.compl_score, str):
             self.compl_score = str(self.compl_score)
@@ -12493,23 +13566,14 @@ class MigsBaWater(Water):
         if self.compl_software is not None and not isinstance(self.compl_software, str):
             self.compl_software = str(self.compl_software)
 
-        if self.encoded_traits is not None and not isinstance(self.encoded_traits, str):
-            self.encoded_traits = str(self.encoded_traits)
-
         if self.estimated_size is not None and not isinstance(self.estimated_size, str):
             self.estimated_size = str(self.estimated_size)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
 
-        if self.extrachrom_elements is not None and not isinstance(self.extrachrom_elements, int):
-            self.extrachrom_elements = int(self.extrachrom_elements)
-
         if self.feat_pred is not None and not isinstance(self.feat_pred, str):
             self.feat_pred = str(self.feat_pred)
-
-        if self.host_disease_stat is not None and not isinstance(self.host_disease_stat, str):
-            self.host_disease_stat = str(self.host_disease_stat)
 
         if self.host_spec_range is not None and not isinstance(self.host_spec_range, str):
             self.host_spec_range = str(self.host_spec_range)
@@ -12529,32 +13593,8 @@ class MigsBaWater(Water):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
-
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
-
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
-
-        if self.pathogenicity is not None and not isinstance(self.pathogenicity, str):
-            self.pathogenicity = str(self.pathogenicity)
-
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
-
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
-
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
 
         if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
             self.samp_mat_process = str(self.samp_mat_process)
@@ -12565,135 +13605,8 @@ class MigsBaWater(Water):
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
-        if self.specific_host is not None and not isinstance(self.specific_host, str):
-            self.specific_host = str(self.specific_host)
-
-        if self.subspecf_gen_lin is not None and not isinstance(self.subspecf_gen_lin, str):
-            self.subspecf_gen_lin = str(self.subspecf_gen_lin)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
-
-        if self.tax_ident is not None and not isinstance(self.tax_ident, str):
-            self.tax_ident = str(self.tax_ident)
-
-        if self.trophic_level is not None and not isinstance(self.trophic_level, TROPHICLEVELENUM):
-            self.trophic_level = TROPHICLEVELENUM(self.trophic_level)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass
-class MimsWater(Water):
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016012"]
-    class_class_curie: ClassVar[str] = "MIXS:0010007_0016012"
-    class_name: ClassVar[str] = "MimsWater"
-    class_model_uri: ClassVar[URIRef] = MIXS.MimsWater
-
-    samp_name: str = None
-    project_name: str = None
-    depth: str = None
-    collection_date: str = None
-    env_broad_scale: str = None
-    env_local_scale: str = None
-    env_medium: str = None
-    geo_loc_name: str = None
-    lat_lon: str = None
-    samp_taxon_id: str = None
-    seq_meth: str = None
-    adapters: Optional[str] = None
-    alt: Optional[str] = None
-    annot: Optional[str] = None
-    assembly_name: Optional[str] = None
-    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
-    assembly_software: Optional[str] = None
-    associated_resource: Optional[str] = None
-    experimental_factor: Optional[str] = None
-    feat_pred: Optional[str] = None
-    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
-    lib_reads_seqd: Optional[int] = None
-    lib_screen: Optional[str] = None
-    lib_size: Optional[int] = None
-    lib_vector: Optional[str] = None
-    mid: Optional[str] = None
-    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
-    nucl_acid_amp: Optional[str] = None
-    nucl_acid_ext: Optional[str] = None
-    number_contig: Optional[int] = None
-    pos_cont_type: Optional[str] = None
-    ref_biomaterial: Optional[str] = None
-    ref_db: Optional[str] = None
-    rel_to_oxygen: Optional[str] = None
-    samp_collec_device: Optional[str] = None
-    samp_collec_method: Optional[str] = None
-    samp_mat_process: Optional[str] = None
-    samp_size: Optional[str] = None
-    sim_search_meth: Optional[str] = None
-    size_frac: Optional[str] = None
-    sop: Optional[str] = None
-    source_mat_id: Optional[str] = None
-    tax_class: Optional[str] = None
-
-    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
-        if self._is_empty(self.collection_date):
-            self.MissingRequiredField("collection_date")
-        if not isinstance(self.collection_date, str):
-            self.collection_date = str(self.collection_date)
-
-        if self._is_empty(self.env_broad_scale):
-            self.MissingRequiredField("env_broad_scale")
-        if not isinstance(self.env_broad_scale, str):
-            self.env_broad_scale = str(self.env_broad_scale)
-
-        if self._is_empty(self.env_local_scale):
-            self.MissingRequiredField("env_local_scale")
-        if not isinstance(self.env_local_scale, str):
-            self.env_local_scale = str(self.env_local_scale)
-
-        if self._is_empty(self.env_medium):
-            self.MissingRequiredField("env_medium")
-        if not isinstance(self.env_medium, str):
-            self.env_medium = str(self.env_medium)
-
-        if self._is_empty(self.geo_loc_name):
-            self.MissingRequiredField("geo_loc_name")
-        if not isinstance(self.geo_loc_name, str):
-            self.geo_loc_name = str(self.geo_loc_name)
-
-        if self._is_empty(self.lat_lon):
-            self.MissingRequiredField("lat_lon")
-        if not isinstance(self.lat_lon, str):
-            self.lat_lon = str(self.lat_lon)
-
-        if self._is_empty(self.samp_taxon_id):
-            self.MissingRequiredField("samp_taxon_id")
-        if not isinstance(self.samp_taxon_id, str):
-            self.samp_taxon_id = str(self.samp_taxon_id)
-
-        if self._is_empty(self.seq_meth):
-            self.MissingRequiredField("seq_meth")
-        if not isinstance(self.seq_meth, str):
-            self.seq_meth = str(self.seq_meth)
-
-        if self.adapters is not None and not isinstance(self.adapters, str):
-            self.adapters = str(self.adapters)
-
-        if self.alt is not None and not isinstance(self.alt, str):
-            self.alt = str(self.alt)
-
-        if self.annot is not None and not isinstance(self.annot, str):
-            self.annot = str(self.annot)
-
-        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
-            self.assembly_name = str(self.assembly_name)
 
         if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
             self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
@@ -12701,14 +13614,138 @@ class MimsWater(Water):
         if self.assembly_software is not None and not isinstance(self.assembly_software, str):
             self.assembly_software = str(self.assembly_software)
 
-        if self.associated_resource is not None and not isinstance(self.associated_resource, str):
-            self.associated_resource = str(self.associated_resource)
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.isol_growth_condt is not None and not isinstance(self.isol_growth_condt, str):
+            self.isol_growth_condt = str(self.isol_growth_condt)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
+
+        if self.num_replicons is not None and not isinstance(self.num_replicons, int):
+            self.num_replicons = int(self.num_replicons)
+
+        if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
+            self.ref_biomaterial = str(self.ref_biomaterial)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class MimsWater(Water):
+    """
+    placeholder description; linter will ignore this
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MIXS["0010007_0016012"]
+    class_class_curie: ClassVar[str] = "MIXS:0010007_0016012"
+    class_name: ClassVar[str] = "MimsWater"
+    class_model_uri: ClassVar[URIRef] = MIXS.MimsWater
+
+    project_name: str = None
+    mid: Optional[str] = None
+    adapters: Optional[str] = None
+    annot: Optional[str] = None
+    assembly_name: Optional[str] = None
+    neg_cont_type: Optional[Union[str, "NEGCONTTYPEENUM"]] = None
+    nucl_acid_amp: Optional[str] = None
+    nucl_acid_ext: Optional[str] = None
+    pos_cont_type: Optional[str] = None
+    sop: Optional[str] = None
+    source_mat_id: Optional[str] = None
+    assembly_qual: Optional[Union[str, "ASSEMBLYQUALENUM"]] = None
+    assembly_software: Optional[str] = None
+    number_contig: Optional[int] = None
+    experimental_factor: Optional[str] = None
+    lib_layout: Optional[Union[str, "LIBLAYOUTENUM"]] = None
+    lib_reads_seqd: Optional[int] = None
+    lib_screen: Optional[str] = None
+    lib_size: Optional[int] = None
+    lib_vector: Optional[str] = None
+    samp_mat_process: Optional[str] = None
+    samp_size: Optional[str] = None
+    alt: Optional[str] = None
+    rel_to_oxygen: Optional[str] = None
+    size_frac: Optional[str] = None
+    feat_pred: Optional[str] = None
+    ref_biomaterial: Optional[str] = None
+    ref_db: Optional[str] = None
+    sim_search_meth: Optional[str] = None
+    tax_class: Optional[str] = None
+    collection_date: Optional[str] = None
+    env_broad_scale: Optional[str] = None
+    env_local_scale: Optional[str] = None
+    env_medium: Optional[str] = None
+    geo_loc_name: Optional[str] = None
+    lat_lon: Optional[str] = None
+    samp_taxon_id: Optional[str] = None
+    seq_meth: Optional[str] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.mid is not None and not isinstance(self.mid, str):
+            self.mid = str(self.mid)
+
+        if self.adapters is not None and not isinstance(self.adapters, str):
+            self.adapters = str(self.adapters)
+
+        if self.annot is not None and not isinstance(self.annot, str):
+            self.annot = str(self.annot)
+
+        if self.assembly_name is not None and not isinstance(self.assembly_name, str):
+            self.assembly_name = str(self.assembly_name)
+
+        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
+            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+
+        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
+            self.nucl_acid_amp = str(self.nucl_acid_amp)
+
+        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
+            self.nucl_acid_ext = str(self.nucl_acid_ext)
+
+        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
+            self.pos_cont_type = str(self.pos_cont_type)
+
+        if self.sop is not None and not isinstance(self.sop, str):
+            self.sop = str(self.sop)
+
+        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
+            self.source_mat_id = str(self.source_mat_id)
+
+        if self.assembly_qual is not None and not isinstance(self.assembly_qual, ASSEMBLYQUALENUM):
+            self.assembly_qual = ASSEMBLYQUALENUM(self.assembly_qual)
+
+        if self.assembly_software is not None and not isinstance(self.assembly_software, str):
+            self.assembly_software = str(self.assembly_software)
+
+        if self.number_contig is not None and not isinstance(self.number_contig, int):
+            self.number_contig = int(self.number_contig)
 
         if self.experimental_factor is not None and not isinstance(self.experimental_factor, str):
             self.experimental_factor = str(self.experimental_factor)
-
-        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
-            self.feat_pred = str(self.feat_pred)
 
         if self.lib_layout is not None and not isinstance(self.lib_layout, LIBLAYOUTENUM):
             self.lib_layout = LIBLAYOUTENUM(self.lib_layout)
@@ -12725,23 +13762,23 @@ class MimsWater(Water):
         if self.lib_vector is not None and not isinstance(self.lib_vector, str):
             self.lib_vector = str(self.lib_vector)
 
-        if self.mid is not None and not isinstance(self.mid, str):
-            self.mid = str(self.mid)
+        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
+            self.samp_mat_process = str(self.samp_mat_process)
 
-        if self.neg_cont_type is not None and not isinstance(self.neg_cont_type, NEGCONTTYPEENUM):
-            self.neg_cont_type = NEGCONTTYPEENUM(self.neg_cont_type)
+        if self.samp_size is not None and not isinstance(self.samp_size, str):
+            self.samp_size = str(self.samp_size)
 
-        if self.nucl_acid_amp is not None and not isinstance(self.nucl_acid_amp, str):
-            self.nucl_acid_amp = str(self.nucl_acid_amp)
+        if self.alt is not None and not isinstance(self.alt, str):
+            self.alt = str(self.alt)
 
-        if self.nucl_acid_ext is not None and not isinstance(self.nucl_acid_ext, str):
-            self.nucl_acid_ext = str(self.nucl_acid_ext)
+        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
+            self.rel_to_oxygen = str(self.rel_to_oxygen)
 
-        if self.number_contig is not None and not isinstance(self.number_contig, int):
-            self.number_contig = int(self.number_contig)
+        if self.size_frac is not None and not isinstance(self.size_frac, str):
+            self.size_frac = str(self.size_frac)
 
-        if self.pos_cont_type is not None and not isinstance(self.pos_cont_type, str):
-            self.pos_cont_type = str(self.pos_cont_type)
+        if self.feat_pred is not None and not isinstance(self.feat_pred, str):
+            self.feat_pred = str(self.feat_pred)
 
         if self.ref_biomaterial is not None and not isinstance(self.ref_biomaterial, str):
             self.ref_biomaterial = str(self.ref_biomaterial)
@@ -12749,44 +13786,47 @@ class MimsWater(Water):
         if self.ref_db is not None and not isinstance(self.ref_db, str):
             self.ref_db = str(self.ref_db)
 
-        if self.rel_to_oxygen is not None and not isinstance(self.rel_to_oxygen, str):
-            self.rel_to_oxygen = str(self.rel_to_oxygen)
-
-        if self.samp_collec_device is not None and not isinstance(self.samp_collec_device, str):
-            self.samp_collec_device = str(self.samp_collec_device)
-
-        if self.samp_collec_method is not None and not isinstance(self.samp_collec_method, str):
-            self.samp_collec_method = str(self.samp_collec_method)
-
-        if self.samp_mat_process is not None and not isinstance(self.samp_mat_process, str):
-            self.samp_mat_process = str(self.samp_mat_process)
-
-        if self.samp_size is not None and not isinstance(self.samp_size, str):
-            self.samp_size = str(self.samp_size)
-
         if self.sim_search_meth is not None and not isinstance(self.sim_search_meth, str):
             self.sim_search_meth = str(self.sim_search_meth)
 
-        if self.size_frac is not None and not isinstance(self.size_frac, str):
-            self.size_frac = str(self.size_frac)
-
-        if self.sop is not None and not isinstance(self.sop, str):
-            self.sop = str(self.sop)
-
-        if self.source_mat_id is not None and not isinstance(self.source_mat_id, str):
-            self.source_mat_id = str(self.source_mat_id)
-
         if self.tax_class is not None and not isinstance(self.tax_class, str):
             self.tax_class = str(self.tax_class)
+
+        if self.collection_date is not None and not isinstance(self.collection_date, str):
+            self.collection_date = str(self.collection_date)
+
+        if self.env_broad_scale is not None and not isinstance(self.env_broad_scale, str):
+            self.env_broad_scale = str(self.env_broad_scale)
+
+        if self.env_local_scale is not None and not isinstance(self.env_local_scale, str):
+            self.env_local_scale = str(self.env_local_scale)
+
+        if self.env_medium is not None and not isinstance(self.env_medium, str):
+            self.env_medium = str(self.env_medium)
+
+        if self.geo_loc_name is not None and not isinstance(self.geo_loc_name, str):
+            self.geo_loc_name = str(self.geo_loc_name)
+
+        if self.lat_lon is not None and not isinstance(self.lat_lon, str):
+            self.lat_lon = str(self.lat_lon)
+
+        if self.samp_taxon_id is not None and not isinstance(self.samp_taxon_id, str):
+            self.samp_taxon_id = str(self.samp_taxon_id)
+
+        if self.seq_meth is not None and not isinstance(self.seq_meth, str):
+            self.seq_meth = str(self.seq_meth)
 
         super().__post_init__(**kwargs)
 
 
 # Enumerations
 class ASSEMBLYQUALENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     _defn = EnumDefinition(
         name="ASSEMBLYQUALENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -12803,7 +13843,9 @@ class ASSEMBLYQUALENUM(EnumDefinitionImpl):
                 PermissibleValue(text="Medium-quality draft genome") )
 
 class BIOTICRELATIONSHIPENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     commensalism = PermissibleValue(text="commensalism")
     mutualism = PermissibleValue(text="mutualism")
     parasitism = PermissibleValue(text="parasitism")
@@ -12811,6 +13853,7 @@ class BIOTICRELATIONSHIPENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="BIOTICRELATIONSHIPENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -12819,7 +13862,9 @@ class BIOTICRELATIONSHIPENUM(EnumDefinitionImpl):
                 PermissibleValue(text="free living") )
 
 class CURLANDUSEENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     badlands = PermissibleValue(text="badlands")
     cities = PermissibleValue(text="cities")
     farmstead = PermissibleValue(text="farmstead")
@@ -12832,6 +13877,7 @@ class CURLANDUSEENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="CURLANDUSEENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -12890,12 +13936,15 @@ class CURLANDUSEENUM(EnumDefinitionImpl):
                 PermissibleValue(text="vine crops (grapes)") )
 
 class DRAINAGECLASSENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     poorly = PermissibleValue(text="poorly")
     well = PermissibleValue(text="well")
 
     _defn = EnumDefinition(
         name="DRAINAGECLASSENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -12910,7 +13959,9 @@ class DRAINAGECLASSENUM(EnumDefinitionImpl):
                 PermissibleValue(text="very poorly") )
 
 class FAOCLASSENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     Acrisols = PermissibleValue(text="Acrisols")
     Andosols = PermissibleValue(text="Andosols")
     Arenosols = PermissibleValue(text="Arenosols")
@@ -12940,10 +13991,13 @@ class FAOCLASSENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="FAOCLASSENUM",
+        description="placeholder description; linter will ignore this",
     )
 
 class LIBLAYOUTENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     other = PermissibleValue(text="other")
     paired = PermissibleValue(text="paired")
     single = PermissibleValue(text="single")
@@ -12951,12 +14005,16 @@ class LIBLAYOUTENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="LIBLAYOUTENUM",
+        description="placeholder description; linter will ignore this",
     )
 
 class NEGCONTTYPEENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     _defn = EnumDefinition(
         name="NEGCONTTYPEENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -12977,17 +14035,22 @@ class NEGCONTTYPEENUM(EnumDefinitionImpl):
                 PermissibleValue(text="sterile syringe") )
 
 class OXYSTATSAMPENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     aerobic = PermissibleValue(text="aerobic")
     anaerobic = PermissibleValue(text="anaerobic")
     other = PermissibleValue(text="other")
 
     _defn = EnumDefinition(
         name="OXYSTATSAMPENUM",
+        description="placeholder description; linter will ignore this",
     )
 
 class PROFILEPOSITIONENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     backslope = PermissibleValue(text="backslope")
     footslope = PermissibleValue(text="footslope")
     shoulder = PermissibleValue(text="shoulder")
@@ -12996,10 +14059,13 @@ class PROFILEPOSITIONENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="PROFILEPOSITIONENUM",
+        description="placeholder description; linter will ignore this",
     )
 
 class RELTOOXYGENENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     aerobe = PermissibleValue(text="aerobe")
     anaerobe = PermissibleValue(text="anaerobe")
     facultative = PermissibleValue(text="facultative")
@@ -13008,6 +14074,7 @@ class RELTOOXYGENENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="RELTOOXYGENENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -13018,11 +14085,14 @@ class RELTOOXYGENENUM(EnumDefinitionImpl):
                 PermissibleValue(text="obligate anaerobe") )
 
 class SOILHORIZONENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     Permafrost = PermissibleValue(text="Permafrost")
 
     _defn = EnumDefinition(
         name="SOILHORIZONENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -13041,9 +14111,12 @@ class SOILHORIZONENUM(EnumDefinitionImpl):
                 PermissibleValue(text="R layer") )
 
 class TIDALSTAGEENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     _defn = EnumDefinition(
         name="TIDALSTAGEENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -13058,7 +14131,9 @@ class TIDALSTAGEENUM(EnumDefinitionImpl):
                 PermissibleValue(text="low tide") )
 
 class TILLAGEENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     chisel = PermissibleValue(text="chisel")
     drill = PermissibleValue(text="drill")
     mouldboard = PermissibleValue(text="mouldboard")
@@ -13066,6 +14141,7 @@ class TILLAGEENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="TILLAGEENUM",
+        description="placeholder description; linter will ignore this",
     )
 
     @classmethod
@@ -13082,7 +14158,9 @@ class TILLAGEENUM(EnumDefinitionImpl):
                 PermissibleValue(text="zonal tillage") )
 
 class TROPHICLEVELENUM(EnumDefinitionImpl):
-
+    """
+    placeholder description; linter will ignore this
+    """
     autotroph = PermissibleValue(text="autotroph")
     carboxydotroph = PermissibleValue(text="carboxydotroph")
     chemoautolithotroph = PermissibleValue(text="chemoautolithotroph")
@@ -13117,17 +14195,12 @@ class TROPHICLEVELENUM(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="TROPHICLEVELENUM",
+        description="placeholder description; linter will ignore this",
     )
 
 # Slots
 class slots:
     pass
-
-slots.Food_Product_type = Slot(uri=MIXS.Food_Product_type, name="Food_Product_type", curie=MIXS.curie('Food_Product_type'),
-                   model_uri=MIXS.Food_Product_type, domain=None, range=Optional[str])
-
-slots.Food_source = Slot(uri=MIXS.Food_source, name="Food_source", curie=MIXS.curie('Food_source'),
-                   model_uri=MIXS.Food_source, domain=None, range=Optional[str])
 
 slots.HACCP_term = Slot(uri=MIXS['0001215'], name="HACCP_term", curie=MIXS.curie('0001215'),
                    model_uri=MIXS.HACCP_term, domain=None, range=Optional[str],
@@ -13164,24 +14237,15 @@ slots.adjacent_environment = Slot(uri=MIXS['0001121'], name="adjacent_environmen
 slots.aero_struc = Slot(uri=MIXS['0000773'], name="aero_struc", curie=MIXS.curie('0000773'),
                    model_uri=MIXS.aero_struc, domain=None, range=Optional[str])
 
-slots.agriculture_set = Slot(uri=MIXS.agriculture_set, name="agriculture_set", curie=MIXS.curie('agriculture_set'),
-                   model_uri=MIXS.agriculture_set, domain=None, range=Optional[Union[Union[dict, Agriculture], List[Union[dict, Agriculture]]]])
-
 slots.agrochem_addition = Slot(uri=MIXS['0000639'], name="agrochem_addition", curie=MIXS.curie('0000639'),
                    model_uri=MIXS.agrochem_addition, domain=None, range=Optional[str])
-
-slots.air_particulate_matter_concentration = Slot(uri=MIXS.air_particulate_matter_concentration, name="air particulate matter concentration", curie=MIXS.curie('air_particulate_matter_concentration'),
-                   model_uri=MIXS.air_particulate_matter_concentration, domain=None, range=Optional[str])
-
-slots.air_PM_concen = Slot(uri=MIXS['0000108'], name="air_PM_concen", curie=MIXS.curie('0000108'),
-                   model_uri=MIXS.air_PM_concen, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.air_flow_impede = Slot(uri=MIXS['0001146'], name="air_flow_impede", curie=MIXS.curie('0001146'),
                    model_uri=MIXS.air_flow_impede, domain=None, range=Optional[str])
 
-slots.air_set = Slot(uri=MIXS.air_set, name="air_set", curie=MIXS.curie('air_set'),
-                   model_uri=MIXS.air_set, domain=None, range=Optional[Union[Union[dict, Air], List[Union[dict, Air]]]])
+slots.air_pm_concen = Slot(uri=MIXS['0000108'], name="air_pm_concen", curie=MIXS.curie('0000108'),
+                   model_uri=MIXS.air_pm_concen, domain=None, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.air_temp = Slot(uri=MIXS['0000124'], name="air_temp", curie=MIXS.curie('0000124'),
                    model_uri=MIXS.air_temp, domain=None, range=Optional[str],
@@ -13321,15 +14385,9 @@ slots.assembly_name = Slot(uri=MIXS['0000057'], name="assembly_name", curie=MIXS
 slots.assembly_qual = Slot(uri=MIXS['0000056'], name="assembly_qual", curie=MIXS.curie('0000056'),
                    model_uri=MIXS.assembly_qual, domain=None, range=Optional[Union[str, "ASSEMBLYQUALENUM"]])
 
-slots.assembly_quality = Slot(uri=MIXS.assembly_quality, name="assembly_quality", curie=MIXS.curie('assembly_quality'),
-                   model_uri=MIXS.assembly_quality, domain=None, range=Optional[str])
-
 slots.assembly_software = Slot(uri=MIXS['0000058'], name="assembly_software", curie=MIXS.curie('0000058'),
                    model_uri=MIXS.assembly_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.associated_resource = Slot(uri=MIXS['0000091'], name="associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.associated_resource, domain=None, range=Optional[str])
 
 slots.association_duration = Slot(uri=MIXS['0001299'], name="association_duration", curie=MIXS.curie('0001299'),
                    model_uri=MIXS.association_duration, domain=None, range=Optional[str],
@@ -13451,9 +14509,6 @@ slots.build_occup_type = Slot(uri=MIXS['0000761'], name="build_occup_type", curi
 slots.building_setting = Slot(uri=MIXS['0000768'], name="building_setting", curie=MIXS.curie('0000768'),
                    model_uri=MIXS.building_setting, domain=None, range=Optional[str])
 
-slots.built_environment_set = Slot(uri=MIXS.built_environment_set, name="built_environment_set", curie=MIXS.curie('built_environment_set'),
-                   model_uri=MIXS.built_environment_set, domain=None, range=Optional[Union[Union[dict, BuiltEnvironment], List[Union[dict, BuiltEnvironment]]]])
-
 slots.built_struc_age = Slot(uri=MIXS['0000145'], name="built_struc_age", curie=MIXS.curie('0000145'),
                    model_uri=MIXS.built_struc_age, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -13505,9 +14560,6 @@ slots.ceil_type = Slot(uri=MIXS['0000784'], name="ceil_type", curie=MIXS.curie('
 
 slots.ceil_water_mold = Slot(uri=MIXS['0000781'], name="ceil_water_mold", curie=MIXS.curie('0000781'),
                    model_uri=MIXS.ceil_water_mold, domain=None, range=Optional[str])
-
-slots.checklist_set = Slot(uri=MIXS.checklist_set, name="checklist_set", curie=MIXS.curie('checklist_set'),
-                   model_uri=MIXS.checklist_set, domain=None, range=Optional[Union[Union[dict, Checklist], List[Union[dict, Checklist]]]])
 
 slots.chem_administration = Slot(uri=MIXS['0000751'], name="chem_administration", curie=MIXS.curie('0000751'),
                    model_uri=MIXS.chem_administration, domain=None, range=Optional[str])
@@ -13633,10 +14685,6 @@ slots.density = Slot(uri=MIXS['0000435'], name="density", curie=MIXS.curie('0000
 
 slots.depos_env = Slot(uri=MIXS['0000992'], name="depos_env", curie=MIXS.curie('0000992'),
                    model_uri=MIXS.depos_env, domain=None, range=Optional[str])
-
-slots.depth = Slot(uri=MIXS['0000018'], name="depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.dermatology_disord = Slot(uri=MIXS['0000284'], name="dermatology_disord", curie=MIXS.curie('0000284'),
                    model_uri=MIXS.dermatology_disord, domain=None, range=Optional[str],
@@ -13790,9 +14838,6 @@ slots.env_medium = Slot(uri=MIXS['0000014'], name="env_medium", curie=MIXS.curie
 slots.env_monitoring_zone = Slot(uri=MIXS['0001254'], name="env_monitoring_zone", curie=MIXS.curie('0001254'),
                    model_uri=MIXS.env_monitoring_zone, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
-
-slots.environmental_package_set = Slot(uri=MIXS.environmental_package_set, name="environmental_package_set", curie=MIXS.curie('environmental_package_set'),
-                   model_uri=MIXS.environmental_package_set, domain=None, range=Optional[Union[Union[dict, EnvironmentalPackage], List[Union[dict, EnvironmentalPackage]]]])
 
 slots.escalator = Slot(uri=MIXS['0000800'], name="escalator", curie=MIXS.curie('0000800'),
                    model_uri=MIXS.escalator, domain=None, range=Optional[int])
@@ -13964,9 +15009,6 @@ slots.food_additive = Slot(uri=MIXS['0001200'], name="food_additive", curie=MIXS
 slots.food_allergen_label = Slot(uri=MIXS['0001201'], name="food_allergen_label", curie=MIXS.curie('0001201'),
                    model_uri=MIXS.food_allergen_label, domain=None, range=Optional[str])
 
-slots.food_animal_and_animal_feed_set = Slot(uri=MIXS.food_animal_and_animal_feed_set, name="food_animal_and_animal_feed_set", curie=MIXS.curie('food_animal_and_animal_feed_set'),
-                   model_uri=MIXS.food_animal_and_animal_feed_set, domain=None, range=Optional[Union[Union[dict, FoodAnimalAndAnimalFeed], List[Union[dict, FoodAnimalAndAnimalFeed]]]])
-
 slots.food_clean_proc = Slot(uri=MIXS['0001182'], name="food_clean_proc", curie=MIXS.curie('0001182'),
                    model_uri=MIXS.food_clean_proc, domain=None, range=Optional[str])
 
@@ -13985,18 +15027,9 @@ slots.food_dis_point = Slot(uri=MIXS['0001203'], name="food_dis_point", curie=MI
 slots.food_dis_point_city = Slot(uri=MIXS['0001204'], name="food_dis_point_city", curie=MIXS.curie('0001204'),
                    model_uri=MIXS.food_dis_point_city, domain=None, range=Optional[str])
 
-slots.food_farm_environment_set = Slot(uri=MIXS.food_farm_environment_set, name="food_farm_environment_set", curie=MIXS.curie('food_farm_environment_set'),
-                   model_uri=MIXS.food_farm_environment_set, domain=None, range=Optional[Union[Union[dict, FoodFarmEnvironment], List[Union[dict, FoodFarmEnvironment]]]])
-
-slots.food_food_production_facility_set = Slot(uri=MIXS.food_food_production_facility_set, name="food_food_production_facility_set", curie=MIXS.curie('food_food_production_facility_set'),
-                   model_uri=MIXS.food_food_production_facility_set, domain=None, range=Optional[Union[Union[dict, FoodFoodProductionFacility], List[Union[dict, FoodFoodProductionFacility]]]])
-
 slots.food_harvest_proc = Slot(uri=MIXS['0001133'], name="food_harvest_proc", curie=MIXS.curie('0001133'),
                    model_uri=MIXS.food_harvest_proc, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.food_human_foods_set = Slot(uri=MIXS.food_human_foods_set, name="food_human_foods_set", curie=MIXS.curie('food_human_foods_set'),
-                   model_uri=MIXS.food_human_foods_set, domain=None, range=Optional[Union[Union[dict, FoodHumanFoods], List[Union[dict, FoodHumanFoods]]]])
 
 slots.food_ingredient = Slot(uri=MIXS['0001205'], name="food_ingredient", curie=MIXS.curie('0001205'),
                    model_uri=MIXS.food_ingredient, domain=None, range=Optional[str])
@@ -14187,9 +15220,6 @@ slots.herbicide_regm = Slot(uri=MIXS['0000561'], name="herbicide_regm", curie=MI
                    model_uri=MIXS.herbicide_regm, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
-slots.horizon = Slot(uri=MIXS.horizon, name="horizon", curie=MIXS.curie('horizon'),
-                   model_uri=MIXS.horizon, domain=None, range=Optional[str])
-
 slots.horizon_meth = Slot(uri=MIXS['0000321'], name="horizon_meth", curie=MIXS.curie('0000321'),
                    model_uri=MIXS.horizon_meth, domain=None, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
@@ -14198,9 +15228,6 @@ slots.host_age = Slot(uri=MIXS['0000255'], name="host_age", curie=MIXS.curie('00
                    model_uri=MIXS.host_age, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.host_associated_set = Slot(uri=MIXS.host_associated_set, name="host_associated_set", curie=MIXS.curie('host_associated_set'),
-                   model_uri=MIXS.host_associated_set, domain=None, range=Optional[Union[Union[dict, HostAssociated], List[Union[dict, HostAssociated]]]])
-
 slots.host_body_habitat = Slot(uri=MIXS['0000866'], name="host_body_habitat", curie=MIXS.curie('0000866'),
                    model_uri=MIXS.host_body_habitat, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -14208,9 +15235,6 @@ slots.host_body_habitat = Slot(uri=MIXS['0000866'], name="host_body_habitat", cu
 slots.host_body_mass_index = Slot(uri=MIXS['0000317'], name="host_body_mass_index", curie=MIXS.curie('0000317'),
                    model_uri=MIXS.host_body_mass_index, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.host_body_product = Slot(uri=MIXS.host_body_product, name="host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.host_body_product, domain=None, range=Optional[str])
 
 slots.host_body_site = Slot(uri=MIXS['0000867'], name="host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.host_body_site, domain=None, range=Optional[str],
@@ -14245,12 +15269,6 @@ slots.host_disease_stat = Slot(uri=MIXS['0000031'], name="host_disease_stat", cu
 slots.host_dry_mass = Slot(uri=MIXS['0000257'], name="host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.host_dry_mass, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.host_family_relation = Slot(uri=MIXS.host_family_relation, name="host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.host_family_relation, domain=None, range=Optional[str])
-
-slots.host_family_relationship = Slot(uri=MIXS['0000872'], name="host_family_relationship", curie=MIXS.curie('0000872'),
-                   model_uri=MIXS.host_family_relationship, domain=None, range=Optional[str])
 
 slots.host_genotype = Slot(uri=MIXS['0000365'], name="host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.host_genotype, domain=None, range=Optional[str],
@@ -14357,9 +15375,6 @@ slots.host_pulse = Slot(uri=MIXS['0000333'], name="host_pulse", curie=MIXS.curie
                    model_uri=MIXS.host_pulse, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.host_sex = Slot(uri=MIXS.host_sex, name="host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.host_sex, domain=None, range=Optional[str])
-
 slots.host_shape = Slot(uri=MIXS['0000261'], name="host_shape", curie=MIXS.curie('0000261'),
                    model_uri=MIXS.host_shape, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -14382,9 +15397,6 @@ slots.host_substrate = Slot(uri=MIXS['0000252'], name="host_substrate", curie=MI
                    model_uri=MIXS.host_substrate, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.host_symbiont = Slot(uri=MIXS.host_symbiont, name="host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.host_symbiont, domain=None, range=Optional[str])
-
 slots.host_taxid = Slot(uri=MIXS['0000250'], name="host_taxid", curie=MIXS.curie('0000250'),
                    model_uri=MIXS.host_taxid, domain=None, range=Optional[int])
 
@@ -14399,33 +15411,12 @@ slots.host_wet_mass = Slot(uri=MIXS['0000567'], name="host_wet_mass", curie=MIXS
 slots.hrt = Slot(uri=MIXS['0000969'], name="hrt", curie=MIXS.curie('0000969'),
                    model_uri=MIXS.hrt, domain=None, range=Optional[str])
 
-slots.human_associated_set = Slot(uri=MIXS.human_associated_set, name="human_associated_set", curie=MIXS.curie('human_associated_set'),
-                   model_uri=MIXS.human_associated_set, domain=None, range=Optional[Union[Union[dict, HumanAssociated], List[Union[dict, HumanAssociated]]]])
-
-slots.human_gut_set = Slot(uri=MIXS.human_gut_set, name="human_gut_set", curie=MIXS.curie('human_gut_set'),
-                   model_uri=MIXS.human_gut_set, domain=None, range=Optional[Union[Union[dict, HumanGut], List[Union[dict, HumanGut]]]])
-
-slots.human_oral_set = Slot(uri=MIXS.human_oral_set, name="human_oral_set", curie=MIXS.curie('human_oral_set'),
-                   model_uri=MIXS.human_oral_set, domain=None, range=Optional[Union[Union[dict, HumanOral], List[Union[dict, HumanOral]]]])
-
-slots.human_skin_set = Slot(uri=MIXS.human_skin_set, name="human_skin_set", curie=MIXS.curie('human_skin_set'),
-                   model_uri=MIXS.human_skin_set, domain=None, range=Optional[Union[Union[dict, HumanSkin], List[Union[dict, HumanSkin]]]])
-
-slots.human_vaginal_set = Slot(uri=MIXS.human_vaginal_set, name="human_vaginal_set", curie=MIXS.curie('human_vaginal_set'),
-                   model_uri=MIXS.human_vaginal_set, domain=None, range=Optional[Union[Union[dict, HumanVaginal], List[Union[dict, HumanVaginal]]]])
-
 slots.humidity = Slot(uri=MIXS['0000100'], name="humidity", curie=MIXS.curie('0000100'),
                    model_uri=MIXS.humidity, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.humidity_regm = Slot(uri=MIXS['0000568'], name="humidity_regm", curie=MIXS.curie('0000568'),
                    model_uri=MIXS.humidity_regm, domain=None, range=Optional[str])
-
-slots.hydrocarbon_resources_cores_set = Slot(uri=MIXS.hydrocarbon_resources_cores_set, name="hydrocarbon_resources_cores_set", curie=MIXS.curie('hydrocarbon_resources_cores_set'),
-                   model_uri=MIXS.hydrocarbon_resources_cores_set, domain=None, range=Optional[Union[Union[dict, HydrocarbonResourcesCores], List[Union[dict, HydrocarbonResourcesCores]]]])
-
-slots.hydrocarbon_resources_fluids_swabs_set = Slot(uri=MIXS.hydrocarbon_resources_fluids_swabs_set, name="hydrocarbon_resources_fluids_swabs_set", curie=MIXS.curie('hydrocarbon_resources_fluids_swabs_set'),
-                   model_uri=MIXS.hydrocarbon_resources_fluids_swabs_set, domain=None, range=Optional[Union[Union[dict, HydrocarbonResourcesFluidsSwabs], List[Union[dict, HydrocarbonResourcesFluidsSwabs]]]])
 
 slots.hygienic_area = Slot(uri=MIXS['0001253'], name="hygienic_area", curie=MIXS.curie('0001253'),
                    model_uri=MIXS.hygienic_area, domain=None, range=Optional[str],
@@ -14585,10 +15576,6 @@ slots.methane = Slot(uri=MIXS['0000101'], name="methane", curie=MIXS.curie('0000
                    model_uri=MIXS.methane, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.micro_biomass_meth = Slot(uri=MIXS['0000339'], name="micro_biomass_meth", curie=MIXS.curie('0000339'),
-                   model_uri=MIXS.micro_biomass_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
 slots.microb_cult_med = Slot(uri=MIXS['0001216'], name="microb_cult_med", curie=MIXS.curie('0001216'),
                    model_uri=MIXS.microb_cult_med, domain=None, range=Optional[str])
 
@@ -14617,12 +15604,6 @@ slots.microbial_biomass = Slot(uri=MIXS['0000650'], name="microbial_biomass", cu
                    model_uri=MIXS.microbial_biomass, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.microbial_biomass_meth = Slot(uri=MIXS.microbial_biomass_meth, name="microbial_biomass_meth", curie=MIXS.curie('microbial_biomass_meth'),
-                   model_uri=MIXS.microbial_biomass_meth, domain=None, range=Optional[str])
-
-slots.microbial_mat_biofilm_set = Slot(uri=MIXS.microbial_mat_biofilm_set, name="microbial_mat_biofilm_set", curie=MIXS.curie('microbial_mat_biofilm_set'),
-                   model_uri=MIXS.microbial_mat_biofilm_set, domain=None, range=Optional[Union[Union[dict, MicrobialMatBiofilm], List[Union[dict, MicrobialMatBiofilm]]]])
-
 slots.mid = Slot(uri=MIXS['0000047'], name="mid", curie=MIXS.curie('0000047'),
                    model_uri=MIXS.mid, domain=None, range=Optional[str],
                    pattern=re.compile(r'[ACGT]+'))
@@ -14640,7 +15621,7 @@ slots.migs_ba_soil_set = Slot(uri=MIXS.migs_ba_soil_set, name="migs_ba_soil_set"
                    model_uri=MIXS.migs_ba_soil_set, domain=None, range=Optional[Union[Union[dict, MigsBaSoil], List[Union[dict, MigsBaSoil]]]])
 
 slots.migs_ba_water_set = Slot(uri=MIXS.migs_ba_water_set, name="migs_ba_water_set", curie=MIXS.curie('migs_ba_water_set'),
-                   model_uri=MIXS.migs_ba_water_set, domain=None, range=Optional[str])
+                   model_uri=MIXS.migs_ba_water_set, domain=None, range=Optional[Union[Union[dict, MigsBaWater], List[Union[dict, MigsBaWater]]]])
 
 slots.mims_plant_associated_set = Slot(uri=MIXS.mims_plant_associated_set, name="mims_plant_associated_set", curie=MIXS.curie('mims_plant_associated_set'),
                    model_uri=MIXS.mims_plant_associated_set, domain=None, range=Optional[Union[Union[dict, MimsPlantAssociated], List[Union[dict, MimsPlantAssociated]]]])
@@ -14652,7 +15633,7 @@ slots.mims_soil_set = Slot(uri=MIXS.mims_soil_set, name="mims_soil_set", curie=M
                    model_uri=MIXS.mims_soil_set, domain=None, range=Optional[Union[Union[dict, MimsSoil], List[Union[dict, MimsSoil]]]])
 
 slots.mims_water_set = Slot(uri=MIXS.mims_water_set, name="mims_water_set", curie=MIXS.curie('mims_water_set'),
-                   model_uri=MIXS.mims_water_set, domain=None, range=Optional[str])
+                   model_uri=MIXS.mims_water_set, domain=None, range=Optional[Union[Union[dict, MimsWater], List[Union[dict, MimsWater]]]])
 
 slots.mineral_nutr_regm = Slot(uri=MIXS['0000570'], name="mineral_nutr_regm", curie=MIXS.curie('0000570'),
                    model_uri=MIXS.mineral_nutr_regm, domain=None, range=Optional[str],
@@ -14684,15 +15665,9 @@ slots.nitro = Slot(uri=MIXS['0000504'], name="nitro", curie=MIXS.curie('0000504'
                    model_uri=MIXS.nitro, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.non_min_nutr_regm = Slot(uri=MIXS.non_min_nutr_regm, name="non_min_nutr_regm", curie=MIXS.curie('non_min_nutr_regm'),
-                   model_uri=MIXS.non_min_nutr_regm, domain=None, range=Optional[str])
-
 slots.non_mineral_nutr_regm = Slot(uri=MIXS['0000571'], name="non_mineral_nutr_regm", curie=MIXS.curie('0000571'),
                    model_uri=MIXS.non_mineral_nutr_regm, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
-
-slots.nose_throat_disord = Slot(uri=MIXS.nose_throat_disord, name="nose_throat_disord", curie=MIXS.curie('nose_throat_disord'),
-                   model_uri=MIXS.nose_throat_disord, domain=None, range=Optional[str])
 
 slots.nucl_acid_amp = Slot(uri=MIXS['0000038'], name="nucl_acid_amp", curie=MIXS.curie('0000038'),
                    model_uri=MIXS.nucl_acid_amp, domain=None, range=Optional[str],
@@ -14853,9 +15828,6 @@ slots.photosynt_activ_meth = Slot(uri=MIXS['0001336'], name="photosynt_activ_met
                    model_uri=MIXS.photosynt_activ_meth, domain=None, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]*)'))
 
-slots.plant_associated_set = Slot(uri=MIXS.plant_associated_set, name="plant_associated_set", curie=MIXS.curie('plant_associated_set'),
-                   model_uri=MIXS.plant_associated_set, domain=None, range=Optional[Union[Union[dict, PlantAssociated], List[Union[dict, PlantAssociated]]]])
-
 slots.plant_growth_med = Slot(uri=MIXS['0001057'], name="plant_growth_med", curie=MIXS.curie('0001057'),
                    model_uri=MIXS.plant_growth_med, domain=None, range=Optional[str])
 
@@ -14926,9 +15898,6 @@ slots.pressure = Slot(uri=MIXS['0000412'], name="pressure", curie=MIXS.curie('00
                    model_uri=MIXS.pressure, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.prev_land_use_meth = Slot(uri=MIXS.prev_land_use_meth, name="prev_land_use_meth", curie=MIXS.curie('prev_land_use_meth'),
-                   model_uri=MIXS.prev_land_use_meth, domain=None, range=Optional[str])
-
 slots.previous_land_use = Slot(uri=MIXS['0000315'], name="previous_land_use", curie=MIXS.curie('0000315'),
                    model_uri=MIXS.previous_land_use, domain=None, range=Optional[str])
 
@@ -14942,10 +15911,6 @@ slots.primary_prod = Slot(uri=MIXS['0000728'], name="primary_prod", curie=MIXS.c
 
 slots.primary_treatment = Slot(uri=MIXS['0000349'], name="primary_treatment", curie=MIXS.curie('0000349'),
                    model_uri=MIXS.primary_treatment, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.prod_label_claims = Slot(uri=MIXS['9999999'], name="prod_label_claims", curie=MIXS.curie('9999999'),
-                   model_uri=MIXS.prod_label_claims, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
 slots.prod_rate = Slot(uri=MIXS['0000452'], name="prod_rate", curie=MIXS.curie('0000452'),
@@ -15136,19 +16101,6 @@ slots.salt_regm = Slot(uri=MIXS['0000582'], name="salt_regm", curie=MIXS.curie('
 slots.samp_capt_status = Slot(uri=MIXS['0000860'], name="samp_capt_status", curie=MIXS.curie('0000860'),
                    model_uri=MIXS.samp_capt_status, domain=None, range=Optional[str])
 
-slots.samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.samp_collec_device, domain=None, range=Optional[str])
-
-slots.samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.samp_collec_method, domain=None, range=Optional[str])
-
-slots.samp_collect_device = Slot(uri=MIXS['0000002'], name="samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.samp_collect_device, domain=None, range=Optional[str])
-
-slots.samp_collect_method = Slot(uri=MIXS['0001225'], name="samp_collect_method", curie=MIXS.curie('0001225'),
-                   model_uri=MIXS.samp_collect_method, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]*)'))
-
 slots.samp_collect_point = Slot(uri=MIXS['0001015'], name="samp_collect_point", curie=MIXS.curie('0001015'),
                    model_uri=MIXS.samp_collect_point, domain=None, range=Optional[str])
 
@@ -15170,9 +16122,6 @@ slots.samp_mat_process = Slot(uri=MIXS['0000016'], name="samp_mat_process", curi
 
 slots.samp_md = Slot(uri=MIXS['0000413'], name="samp_md", curie=MIXS.curie('0000413'),
                    model_uri=MIXS.samp_md, domain=None, range=Optional[str])
-
-slots.samp_name = Slot(uri=MIXS.samp_name, name="samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.samp_name, domain=None, range=Optional[str])
 
 slots.samp_pooling = Slot(uri=MIXS['0001153'], name="samp_pooling", curie=MIXS.curie('0001153'),
                    model_uri=MIXS.samp_pooling, domain=None, range=Optional[str],
@@ -15215,17 +16164,8 @@ slots.samp_source_mat_cat = Slot(uri=MIXS['0001154'], name="samp_source_mat_cat"
 slots.samp_stor_device = Slot(uri=MIXS['0001228'], name="samp_stor_device", curie=MIXS.curie('0001228'),
                    model_uri=MIXS.samp_stor_device, domain=None, range=Optional[str])
 
-slots.samp_stor_dur = Slot(uri=MIXS.samp_stor_dur, name="samp_stor_dur", curie=MIXS.curie('samp_stor_dur'),
-                   model_uri=MIXS.samp_stor_dur, domain=None, range=Optional[str])
-
-slots.samp_stor_loc = Slot(uri=MIXS.samp_stor_loc, name="samp_stor_loc", curie=MIXS.curie('samp_stor_loc'),
-                   model_uri=MIXS.samp_stor_loc, domain=None, range=Optional[str])
-
 slots.samp_stor_media = Slot(uri=MIXS['0001229'], name="samp_stor_media", curie=MIXS.curie('0001229'),
                    model_uri=MIXS.samp_stor_media, domain=None, range=Optional[str])
-
-slots.samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.samp_stor_temp, domain=None, range=Optional[str])
 
 slots.samp_store_dur = Slot(uri=MIXS['0000116'], name="samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.samp_store_dur, domain=None, range=Optional[str],
@@ -15286,13 +16226,6 @@ slots.samp_well_name = Slot(uri=MIXS['0000296'], name="samp_well_name", curie=MI
                    model_uri=MIXS.samp_well_name, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.sample_collec_method = Slot(uri=MIXS.sample_collec_method, name="sample_collec_method", curie=MIXS.curie('sample_collec_method'),
-                   model_uri=MIXS.sample_collec_method, domain=None, range=Optional[str])
-
-slots.sample_name = Slot(uri=MIXS['0001107'], name="sample_name", curie=MIXS.curie('0001107'),
-                   model_uri=MIXS.sample_name, domain=None, range=URIRef,
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
 slots.saturates_pc = Slot(uri=MIXS['0000131'], name="saturates_pc", curie=MIXS.curie('0000131'),
                    model_uri=MIXS.saturates_pc, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -15322,9 +16255,6 @@ slots.season_use = Slot(uri=MIXS['0000830'], name="season_use", curie=MIXS.curie
 slots.secondary_treatment = Slot(uri=MIXS['0000351'], name="secondary_treatment", curie=MIXS.curie('0000351'),
                    model_uri=MIXS.secondary_treatment, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.sediment_set = Slot(uri=MIXS.sediment_set, name="sediment_set", curie=MIXS.curie('sediment_set'),
-                   model_uri=MIXS.sediment_set, domain=None, range=Optional[Union[Union[dict, Sediment], List[Union[dict, Sediment]]]])
 
 slots.sediment_type = Slot(uri=MIXS['0001078'], name="sediment_type", curie=MIXS.curie('0001078'),
                    model_uri=MIXS.sediment_type, domain=None, range=Optional[str])
@@ -15427,35 +16357,18 @@ slots.soil_cover = Slot(uri=MIXS['0001159'], name="soil_cover", curie=MIXS.curie
                    model_uri=MIXS.soil_cover, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
-slots.soil_depth = Slot(uri=MIXS.soil_depth, name="soil_depth", curie=MIXS.curie('soil_depth'),
-                   model_uri=MIXS.soil_depth, domain=None, range=Optional[str])
-
-slots.soil_horizon = Slot(uri=MIXS.soil_horizon, name="soil_horizon", curie=MIXS.curie('soil_horizon'),
-                   model_uri=MIXS.soil_horizon, domain=None, range=Optional[str])
-
 slots.soil_pH = Slot(uri=MIXS['0001160'], name="soil_pH", curie=MIXS.curie('0001160'),
                    model_uri=MIXS.soil_pH, domain=None, range=Optional[float])
 
 slots.soil_porosity = Slot(uri=MIXS['0001162'], name="soil_porosity", curie=MIXS.curie('0001162'),
                    model_uri=MIXS.soil_porosity, domain=None, range=Optional[str])
 
-slots.soil_set = Slot(uri=MIXS.soil_set, name="soil_set", curie=MIXS.curie('soil_set'),
-                   model_uri=MIXS.soil_set, domain=None, range=Optional[Union[Union[dict, Soil], List[Union[dict, Soil]]]])
-
 slots.soil_temp = Slot(uri=MIXS['0001163'], name="soil_temp", curie=MIXS.curie('0001163'),
                    model_uri=MIXS.soil_temp, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.soil_text_measure = Slot(uri=MIXS['0000335'], name="soil_text_measure", curie=MIXS.curie('0000335'),
-                   model_uri=MIXS.soil_text_measure, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
 slots.soil_texture_class = Slot(uri=MIXS['0001164'], name="soil_texture_class", curie=MIXS.curie('0001164'),
                    model_uri=MIXS.soil_texture_class, domain=None, range=Optional[str])
-
-slots.soil_texture_meth = Slot(uri=MIXS['0000336'], name="soil_texture_meth", curie=MIXS.curie('0000336'),
-                   model_uri=MIXS.soil_texture_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.soil_type = Slot(uri=MIXS['0000332'], name="soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.soil_type, domain=None, range=Optional[str],
@@ -15632,9 +16545,6 @@ slots.suspend_solids = Slot(uri=MIXS['0000150'], name="suspend_solids", curie=MI
 slots.sym_life_cycle_type = Slot(uri=MIXS['0001300'], name="sym_life_cycle_type", curie=MIXS.curie('0001300'),
                    model_uri=MIXS.sym_life_cycle_type, domain=None, range=Optional[str])
 
-slots.symbiont_associated_set = Slot(uri=MIXS.symbiont_associated_set, name="symbiont_associated_set", curie=MIXS.curie('symbiont_associated_set'),
-                   model_uri=MIXS.symbiont_associated_set, domain=None, range=Optional[Union[Dict[Union[str, SymbiontAssociatedSampleName], Union[dict, SymbiontAssociated]], List[Union[dict, SymbiontAssociated]]]])
-
 slots.symbiont_host_role = Slot(uri=MIXS['0001303'], name="symbiont_host_role", curie=MIXS.curie('0001303'),
                    model_uri=MIXS.symbiont_host_role, domain=None, range=Optional[str])
 
@@ -15669,12 +16579,6 @@ slots.tertiary_treatment = Slot(uri=MIXS['0000352'], name="tertiary_treatment", 
                    model_uri=MIXS.tertiary_treatment, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.texture = Slot(uri=MIXS.texture, name="texture", curie=MIXS.curie('texture'),
-                   model_uri=MIXS.texture, domain=None, range=Optional[str])
-
-slots.texture_meth = Slot(uri=MIXS.texture_meth, name="texture_meth", curie=MIXS.curie('texture_meth'),
-                   model_uri=MIXS.texture_meth, domain=None, range=Optional[str])
-
 slots.tidal_stage = Slot(uri=MIXS['0000750'], name="tidal_stage", curie=MIXS.curie('0000750'),
                    model_uri=MIXS.tidal_stage, domain=None, range=Optional[Union[str, "TIDALSTAGEENUM"]])
 
@@ -15698,9 +16602,6 @@ slots.toluene = Slot(uri=MIXS['0000154'], name="toluene", curie=MIXS.curie('0000
                    model_uri=MIXS.toluene, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.tot_car = Slot(uri=MIXS.tot_car, name="tot_car", curie=MIXS.curie('tot_car'),
-                   model_uri=MIXS.tot_car, domain=None, range=Optional[str])
-
 slots.tot_carb = Slot(uri=MIXS['0000525'], name="tot_carb", curie=MIXS.curie('0000525'),
                    model_uri=MIXS.tot_carb, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -15721,19 +16622,6 @@ slots.tot_iron = Slot(uri=MIXS['0000105'], name="tot_iron", curie=MIXS.curie('00
                    model_uri=MIXS.tot_iron, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.tot_n_meth = Slot(uri=MIXS.tot_n_meth, name="tot_n_meth", curie=MIXS.curie('tot_n_meth'),
-                   model_uri=MIXS.tot_n_meth, domain=None, range=Optional[str])
-
-slots.tot_nitro = Slot(uri=MIXS.tot_nitro, name="tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.tot_nitro, domain=None, range=Optional[str])
-
-slots.tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
-                   model_uri=MIXS.tot_nitro_cont_meth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
-slots.tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
-                   model_uri=MIXS.tot_nitro_content, domain=None, range=Optional[str])
-
 slots.tot_org_c_meth = Slot(uri=MIXS['0000337'], name="tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.tot_org_c_meth, domain=None, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
@@ -15744,9 +16632,6 @@ slots.tot_org_carb = Slot(uri=MIXS['0000533'], name="tot_org_carb", curie=MIXS.c
 slots.tot_part_carb = Slot(uri=MIXS['0000747'], name="tot_part_carb", curie=MIXS.curie('0000747'),
                    model_uri=MIXS.tot_part_carb, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.tot_phos = Slot(uri=MIXS.tot_phos, name="tot_phos", curie=MIXS.curie('tot_phos'),
-                   model_uri=MIXS.tot_phos, domain=None, range=Optional[str])
 
 slots.tot_phosp = Slot(uri=MIXS['0000117'], name="tot_phosp", curie=MIXS.curie('0000117'),
                    model_uri=MIXS.tot_phosp, domain=None, range=Optional[str],
@@ -15804,14 +16689,8 @@ slots.typ_occup_density = Slot(uri=MIXS['0000771'], name="typ_occup_density", cu
 slots.type_of_symbiosis = Slot(uri=MIXS['0001307'], name="type_of_symbiosis", curie=MIXS.curie('0001307'),
                    model_uri=MIXS.type_of_symbiosis, domain=None, range=Optional[str])
 
-slots.unknown_term_set = Slot(uri=MIXS.unknown_term_set, name="unknown_term_set", curie=MIXS.curie('unknown_term_set'),
-                   model_uri=MIXS.unknown_term_set, domain=None, range=Optional[Union[Union[dict, UnknownTerm], List[Union[dict, UnknownTerm]]]])
-
 slots.urine_collect_meth = Slot(uri=MIXS['0000899'], name="urine_collect_meth", curie=MIXS.curie('0000899'),
                    model_uri=MIXS.urine_collect_meth, domain=None, range=Optional[str])
-
-slots.url = Slot(uri=MIXS.url, name="url", curie=MIXS.curie('url'),
-                   model_uri=MIXS.url, domain=None, range=Optional[str])
 
 slots.urogenit_disord = Slot(uri=MIXS['0000289'], name="urogenit_disord", curie=MIXS.curie('0000289'),
                    model_uri=MIXS.urogenit_disord, domain=None, range=Optional[str],
@@ -15884,9 +16763,6 @@ slots.wall_thermal_mass = Slot(uri=MIXS['0000222'], name="wall_thermal_mass", cu
 slots.wall_water_mold = Slot(uri=MIXS['0000844'], name="wall_water_mold", curie=MIXS.curie('0000844'),
                    model_uri=MIXS.wall_water_mold, domain=None, range=Optional[str])
 
-slots.wastewater_sludge_set = Slot(uri=MIXS.wastewater_sludge_set, name="wastewater_sludge_set", curie=MIXS.curie('wastewater_sludge_set'),
-                   model_uri=MIXS.wastewater_sludge_set, domain=None, range=Optional[Union[Union[dict, WastewaterSludge], List[Union[dict, WastewaterSludge]]]])
-
 slots.wastewater_type = Slot(uri=MIXS['0000353'], name="wastewater_type", curie=MIXS.curie('0000353'),
                    model_uri=MIXS.wastewater_type, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -15923,9 +16799,6 @@ slots.water_pH = Slot(uri=MIXS['0001175'], name="water_pH", curie=MIXS.curie('00
 slots.water_prod_rate = Slot(uri=MIXS['0000453'], name="water_prod_rate", curie=MIXS.curie('0000453'),
                    model_uri=MIXS.water_prod_rate, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.water_set = Slot(uri=MIXS.water_set, name="water_set", curie=MIXS.curie('water_set'),
-                   model_uri=MIXS.water_set, domain=None, range=Optional[Union[Union[dict, Water], List[Union[dict, Water]]]])
 
 slots.water_source_adjac = Slot(uri=MIXS['0001122'], name="water_source_adjac", curie=MIXS.curie('0001122'),
                    model_uri=MIXS.water_source_adjac, domain=None, range=Optional[str],
@@ -16002,12 +16875,6 @@ slots.xylene = Slot(uri=MIXS['0000156'], name="xylene", curie=MIXS.curie('000015
                    model_uri=MIXS.xylene, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Agriculture_Food_Product_type = Slot(uri=MIXS.Food_Product_type, name="Agriculture_Food_Product_type", curie=MIXS.curie('Food_Product_type'),
-                   model_uri=MIXS.Agriculture_Food_Product_type, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_Food_source = Slot(uri=MIXS.Food_source, name="Agriculture_Food_source", curie=MIXS.curie('Food_source'),
-                   model_uri=MIXS.Agriculture_Food_source, domain=Agriculture, range=str)
-
 slots.Agriculture_adapters = Slot(uri=MIXS['0000048'], name="Agriculture_adapters", curie=MIXS.curie('0000048'),
                    model_uri=MIXS.Agriculture_adapters, domain=Agriculture, range=str,
                    pattern=re.compile(r'[ACGT]+;[ACGT]+'))
@@ -16042,8 +16909,8 @@ slots.Agriculture_assembly_name = Slot(uri=MIXS['0000057'], name="Agriculture_as
                    model_uri=MIXS.Agriculture_assembly_name, domain=Agriculture, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [^s\|][^\r\n\t\|]*'))
 
-slots.Agriculture_assembly_quality = Slot(uri=MIXS.assembly_quality, name="Agriculture_assembly_quality", curie=MIXS.curie('assembly_quality'),
-                   model_uri=MIXS.Agriculture_assembly_quality, domain=Agriculture, range=Optional[str])
+slots.Agriculture_assembly_qual = Slot(uri=MIXS['0000056'], name="Agriculture_assembly_qual", curie=MIXS.curie('0000056'),
+                   model_uri=MIXS.Agriculture_assembly_qual, domain=Agriculture, range=Optional[Union[str, "ASSEMBLYQUALENUM"]])
 
 slots.Agriculture_assembly_software = Slot(uri=MIXS['0000058'], name="Agriculture_assembly_software", curie=MIXS.curie('0000058'),
                    model_uri=MIXS.Agriculture_assembly_software, domain=Agriculture, range=Optional[str],
@@ -16131,6 +16998,13 @@ slots.Agriculture_food_prod = Slot(uri=MIXS['0001211'], name="Agriculture_food_p
                    model_uri=MIXS.Agriculture_food_prod, domain=Agriculture, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
+slots.Agriculture_food_product_type = Slot(uri=MIXS['0001184'], name="Agriculture_food_product_type", curie=MIXS.curie('0001184'),
+                   model_uri=MIXS.Agriculture_food_product_type, domain=Agriculture, range=Optional[str])
+
+slots.Agriculture_food_source = Slot(uri=MIXS['0001139'], name="Agriculture_food_source", curie=MIXS.curie('0001139'),
+                   model_uri=MIXS.Agriculture_food_source, domain=Agriculture, range=str,
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
+
 slots.Agriculture_food_trav_mode = Slot(uri=MIXS['0001137'], name="Agriculture_food_trav_mode", curie=MIXS.curie('0001137'),
                    model_uri=MIXS.Agriculture_food_trav_mode, domain=Agriculture, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -16157,9 +17031,6 @@ slots.Agriculture_heavy_metals_meth = Slot(uri=MIXS['0000343'], name="Agricultur
 slots.Agriculture_herbicide_regm = Slot(uri=MIXS['0000561'], name="Agriculture_herbicide_regm", curie=MIXS.curie('0000561'),
                    model_uri=MIXS.Agriculture_herbicide_regm, domain=Agriculture, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
-
-slots.Agriculture_horizon = Slot(uri=MIXS.horizon, name="Agriculture_horizon", curie=MIXS.curie('horizon'),
-                   model_uri=MIXS.Agriculture_horizon, domain=Agriculture, range=Optional[str])
 
 slots.Agriculture_horizon_meth = Slot(uri=MIXS['0000321'], name="Agriculture_horizon_meth", curie=MIXS.curie('0000321'),
                    model_uri=MIXS.Agriculture_horizon_meth, domain=Agriculture, range=Optional[str],
@@ -16207,9 +17078,6 @@ slots.Agriculture_host_spec_range = Slot(uri=MIXS['0000030'], name="Agriculture_
 
 slots.Agriculture_host_subspecf_genlin = Slot(uri=MIXS['0001318'], name="Agriculture_host_subspecf_genlin", curie=MIXS.curie('0001318'),
                    model_uri=MIXS.Agriculture_host_subspecf_genlin, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_host_symbiont = Slot(uri=MIXS.host_symbiont, name="Agriculture_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.Agriculture_host_symbiont, domain=Agriculture, range=Optional[str])
 
 slots.Agriculture_host_taxid = Slot(uri=MIXS['0000250'], name="Agriculture_host_taxid", curie=MIXS.curie('0000250'),
                    model_uri=MIXS.Agriculture_host_taxid, domain=Agriculture, range=int)
@@ -16269,9 +17137,6 @@ slots.Agriculture_lot_number = Slot(uri=MIXS['0001147'], name="Agriculture_lot_n
 slots.Agriculture_microbial_biomass = Slot(uri=MIXS['0000650'], name="Agriculture_microbial_biomass", curie=MIXS.curie('0000650'),
                    model_uri=MIXS.Agriculture_microbial_biomass, domain=Agriculture, range=str,
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Agriculture_microbial_biomass_meth = Slot(uri=MIXS.microbial_biomass_meth, name="Agriculture_microbial_biomass_meth", curie=MIXS.curie('microbial_biomass_meth'),
-                   model_uri=MIXS.Agriculture_microbial_biomass_meth, domain=Agriculture, range=str)
 
 slots.Agriculture_mid = Slot(uri=MIXS['0000047'], name="Agriculture_mid", curie=MIXS.curie('0000047'),
                    model_uri=MIXS.Agriculture_mid, domain=Agriculture, range=str,
@@ -16383,13 +17248,6 @@ slots.Agriculture_salt_regm = Slot(uri=MIXS['0000582'], name="Agriculture_salt_r
                    model_uri=MIXS.Agriculture_salt_regm, domain=Agriculture, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
-slots.Agriculture_samp_collect_device = Slot(uri=MIXS['0000002'], name="Agriculture_samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.Agriculture_samp_collect_device, domain=Agriculture, range=str)
-
-slots.Agriculture_samp_collect_method = Slot(uri=MIXS['0001225'], name="Agriculture_samp_collect_method", curie=MIXS.curie('0001225'),
-                   model_uri=MIXS.Agriculture_samp_collect_method, domain=Agriculture, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]*)'))
-
 slots.Agriculture_samp_mat_process = Slot(uri=MIXS['0000016'], name="Agriculture_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Agriculture_samp_mat_process, domain=Agriculture, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -16402,9 +17260,6 @@ slots.Agriculture_samp_size = Slot(uri=MIXS['0000001'], name="Agriculture_samp_s
                    model_uri=MIXS.Agriculture_samp_size, domain=Agriculture, range=str,
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Agriculture_samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="Agriculture_samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.Agriculture_samp_stor_temp, domain=Agriculture, range=Optional[str])
-
 slots.Agriculture_samp_store_dur = Slot(uri=MIXS['0000116'], name="Agriculture_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.Agriculture_samp_store_dur, domain=Agriculture, range=str,
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -16412,6 +17267,10 @@ slots.Agriculture_samp_store_dur = Slot(uri=MIXS['0000116'], name="Agriculture_s
 slots.Agriculture_samp_store_loc = Slot(uri=MIXS['0000755'], name="Agriculture_samp_store_loc", curie=MIXS.curie('0000755'),
                    model_uri=MIXS.Agriculture_samp_store_loc, domain=Agriculture, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Agriculture_samp_store_temp = Slot(uri=MIXS['0000110'], name="Agriculture_samp_store_temp", curie=MIXS.curie('0000110'),
+                   model_uri=MIXS.Agriculture_samp_store_temp, domain=Agriculture, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Agriculture_samp_vol_we_dna_ext = Slot(uri=MIXS['0000111'], name="Agriculture_samp_vol_we_dna_ext", curie=MIXS.curie('0000111'),
                    model_uri=MIXS.Agriculture_samp_vol_we_dna_ext, domain=Agriculture, range=str,
@@ -16473,12 +17332,6 @@ slots.Agriculture_soil_cover = Slot(uri=MIXS['0001159'], name="Agriculture_soil_
                    model_uri=MIXS.Agriculture_soil_cover, domain=Agriculture, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
-slots.Agriculture_soil_depth = Slot(uri=MIXS.soil_depth, name="Agriculture_soil_depth", curie=MIXS.curie('soil_depth'),
-                   model_uri=MIXS.Agriculture_soil_depth, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_soil_horizon = Slot(uri=MIXS.soil_horizon, name="Agriculture_soil_horizon", curie=MIXS.curie('soil_horizon'),
-                   model_uri=MIXS.Agriculture_soil_horizon, domain=Agriculture, range=Optional[str])
-
 slots.Agriculture_soil_pH = Slot(uri=MIXS['0001160'], name="Agriculture_soil_pH", curie=MIXS.curie('0001160'),
                    model_uri=MIXS.Agriculture_soil_pH, domain=Agriculture, range=Optional[float])
 
@@ -16532,23 +17385,12 @@ slots.Agriculture_temp = Slot(uri=MIXS['0000113'], name="Agriculture_temp", curi
                    model_uri=MIXS.Agriculture_temp, domain=Agriculture, range=str,
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Agriculture_texture = Slot(uri=MIXS.texture, name="Agriculture_texture", curie=MIXS.curie('texture'),
-                   model_uri=MIXS.Agriculture_texture, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_texture_meth = Slot(uri=MIXS.texture_meth, name="Agriculture_texture_meth", curie=MIXS.curie('texture_meth'),
-                   model_uri=MIXS.Agriculture_texture_meth, domain=Agriculture, range=Optional[str])
-
 slots.Agriculture_tillage = Slot(uri=MIXS['0001081'], name="Agriculture_tillage", curie=MIXS.curie('0001081'),
                    model_uri=MIXS.Agriculture_tillage, domain=Agriculture, range=Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]])
 
-slots.Agriculture_tot_car = Slot(uri=MIXS.tot_car, name="Agriculture_tot_car", curie=MIXS.curie('tot_car'),
-                   model_uri=MIXS.Agriculture_tot_car, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_tot_n_meth = Slot(uri=MIXS.tot_n_meth, name="Agriculture_tot_n_meth", curie=MIXS.curie('tot_n_meth'),
-                   model_uri=MIXS.Agriculture_tot_n_meth, domain=Agriculture, range=Optional[str])
-
-slots.Agriculture_tot_nitro = Slot(uri=MIXS.tot_nitro, name="Agriculture_tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.Agriculture_tot_nitro, domain=Agriculture, range=Optional[str])
+slots.Agriculture_tot_carb = Slot(uri=MIXS['0000525'], name="Agriculture_tot_carb", curie=MIXS.curie('0000525'),
+                   model_uri=MIXS.Agriculture_tot_carb, domain=Agriculture, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Agriculture_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="Agriculture_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.Agriculture_tot_org_c_meth, domain=Agriculture, range=Optional[str],
@@ -16557,14 +17399,8 @@ slots.Agriculture_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="Agriculture_t
 slots.Agriculture_tot_org_carb = Slot(uri=MIXS['0000533'], name="Agriculture_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.Agriculture_tot_org_carb, domain=Agriculture, range=Optional[str])
 
-slots.Agriculture_tot_phos = Slot(uri=MIXS.tot_phos, name="Agriculture_tot_phos", curie=MIXS.curie('tot_phos'),
-                   model_uri=MIXS.Agriculture_tot_phos, domain=Agriculture, range=Optional[str])
-
 slots.Agriculture_trophic_level = Slot(uri=MIXS['0000032'], name="Agriculture_trophic_level", curie=MIXS.curie('0000032'),
                    model_uri=MIXS.Agriculture_trophic_level, domain=Agriculture, range=Optional[Union[str, "TROPHICLEVELENUM"]])
-
-slots.Agriculture_url = Slot(uri=MIXS.url, name="Agriculture_url", curie=MIXS.curie('url'),
-                   model_uri=MIXS.Agriculture_url, domain=Agriculture, range=Optional[str])
 
 slots.Agriculture_water_pH = Slot(uri=MIXS['0001175'], name="Agriculture_water_pH", curie=MIXS.curie('0001175'),
                    model_uri=MIXS.Agriculture_water_pH, domain=Agriculture, range=Optional[float])
@@ -16578,8 +17414,9 @@ slots.Agriculture_water_temp_regm = Slot(uri=MIXS['0000590'], name="Agriculture_
 slots.Agriculture_watering_regm = Slot(uri=MIXS['0000591'], name="Agriculture_watering_regm", curie=MIXS.curie('0000591'),
                    model_uri=MIXS.Agriculture_watering_regm, domain=Agriculture, range=Optional[str])
 
-slots.Air_air_particulate_matter_concentration = Slot(uri=MIXS.air_particulate_matter_concentration, name="Air_air particulate matter concentration", curie=MIXS.curie('air_particulate_matter_concentration'),
-                   model_uri=MIXS.Air_air_particulate_matter_concentration, domain=Air, range=Optional[str])
+slots.Air_air_pm_concen = Slot(uri=MIXS['0000108'], name="Air_air_pm_concen", curie=MIXS.curie('0000108'),
+                   model_uri=MIXS.Air_air_pm_concen, domain=Air, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Air_alt = Slot(uri=MIXS['0000094'], name="Air_alt", curie=MIXS.curie('0000094'),
                    model_uri=MIXS.Air_alt, domain=Air, range=str,
@@ -16640,9 +17477,6 @@ slots.Air_project_name = Slot(uri=MIXS['0000092'], name="Air_project_name", curi
 slots.Air_salinity = Slot(uri=MIXS['0000183'], name="Air_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.Air_salinity, domain=Air, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Air_samp_name = Slot(uri=MIXS.samp_name, name="Air_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Air_samp_name, domain=Air, range=str)
 
 slots.Air_samp_store_dur = Slot(uri=MIXS['0000116'], name="Air_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.Air_samp_store_dur, domain=Air, range=Optional[str],
@@ -17044,9 +17878,6 @@ slots.BuiltEnvironment_room_window_count = Slot(uri=MIXS['0000237'], name="Built
 slots.BuiltEnvironment_samp_floor = Slot(uri=MIXS['0000828'], name="BuiltEnvironment_samp_floor", curie=MIXS.curie('0000828'),
                    model_uri=MIXS.BuiltEnvironment_samp_floor, domain=BuiltEnvironment, range=Optional[str])
 
-slots.BuiltEnvironment_samp_name = Slot(uri=MIXS.samp_name, name="BuiltEnvironment_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.BuiltEnvironment_samp_name, domain=BuiltEnvironment, range=str)
-
 slots.BuiltEnvironment_samp_room_id = Slot(uri=MIXS['0000244'], name="BuiltEnvironment_samp_room_id", curie=MIXS.curie('0000244'),
                    model_uri=MIXS.BuiltEnvironment_samp_room_id, domain=BuiltEnvironment, range=Optional[int])
 
@@ -17213,59 +18044,326 @@ slots.BuiltEnvironment_window_vert_pos = Slot(uri=MIXS['0000857'], name="BuiltEn
 slots.BuiltEnvironment_window_water_mold = Slot(uri=MIXS['0000854'], name="BuiltEnvironment_window_water_mold", curie=MIXS.curie('0000854'),
                    model_uri=MIXS.BuiltEnvironment_window_water_mold, domain=BuiltEnvironment, range=Optional[str])
 
-slots.Database_agriculture_set = Slot(uri=MIXS.agriculture_set, name="Database_agriculture_set", curie=MIXS.curie('agriculture_set'),
-                   model_uri=MIXS.Database_agriculture_set, domain=Database, range=Optional[Union[Union[dict, Agriculture], List[Union[dict, Agriculture]]]])
+slots.Checklist_adapters = Slot(uri=MIXS['0000048'], name="Checklist_adapters", curie=MIXS.curie('0000048'),
+                   model_uri=MIXS.Checklist_adapters, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[ACGT]+;[ACGT]+'))
 
-slots.Database_air_set = Slot(uri=MIXS.air_set, name="Database_air_set", curie=MIXS.curie('air_set'),
-                   model_uri=MIXS.Database_air_set, domain=Database, range=Optional[Union[Union[dict, Air], List[Union[dict, Air]]]])
+slots.Checklist_alt = Slot(uri=MIXS['0000094'], name="Checklist_alt", curie=MIXS.curie('0000094'),
+                   model_uri=MIXS.Checklist_alt, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Database_built_environment_set = Slot(uri=MIXS.built_environment_set, name="Database_built_environment_set", curie=MIXS.curie('built_environment_set'),
-                   model_uri=MIXS.Database_built_environment_set, domain=Database, range=Optional[Union[Union[dict, BuiltEnvironment], List[Union[dict, BuiltEnvironment]]]])
+slots.Checklist_annot = Slot(uri=MIXS['0000059'], name="Checklist_annot", curie=MIXS.curie('0000059'),
+                   model_uri=MIXS.Checklist_annot, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.Database_checklist_set = Slot(uri=MIXS.checklist_set, name="Database_checklist_set", curie=MIXS.curie('checklist_set'),
-                   model_uri=MIXS.Database_checklist_set, domain=Database, range=Optional[Union[Union[dict, Checklist], List[Union[dict, Checklist]]]])
+slots.Checklist_assembly_name = Slot(uri=MIXS['0000057'], name="Checklist_assembly_name", curie=MIXS.curie('0000057'),
+                   model_uri=MIXS.Checklist_assembly_name, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [^s\|][^\r\n\t\|]*'))
 
-slots.Database_environmental_package_set = Slot(uri=MIXS.environmental_package_set, name="Database_environmental_package_set", curie=MIXS.curie('environmental_package_set'),
-                   model_uri=MIXS.Database_environmental_package_set, domain=Database, range=Optional[Union[Union[dict, "EnvironmentalPackage"], List[Union[dict, "EnvironmentalPackage"]]]])
+slots.Checklist_assembly_qual = Slot(uri=MIXS['0000056'], name="Checklist_assembly_qual", curie=MIXS.curie('0000056'),
+                   model_uri=MIXS.Checklist_assembly_qual, domain=Checklist, range=Optional[Union[str, "ASSEMBLYQUALENUM"]])
 
-slots.Database_food_animal_and_animal_feed_set = Slot(uri=MIXS.food_animal_and_animal_feed_set, name="Database_food_animal_and_animal_feed_set", curie=MIXS.curie('food_animal_and_animal_feed_set'),
-                   model_uri=MIXS.Database_food_animal_and_animal_feed_set, domain=Database, range=Optional[Union[Union[dict, "FoodAnimalAndAnimalFeed"], List[Union[dict, "FoodAnimalAndAnimalFeed"]]]])
+slots.Checklist_assembly_software = Slot(uri=MIXS['0000058'], name="Checklist_assembly_software", curie=MIXS.curie('0000058'),
+                   model_uri=MIXS.Checklist_assembly_software, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Database_food_farm_environment_set = Slot(uri=MIXS.food_farm_environment_set, name="Database_food_farm_environment_set", curie=MIXS.curie('food_farm_environment_set'),
-                   model_uri=MIXS.Database_food_farm_environment_set, domain=Database, range=Optional[Union[Union[dict, "FoodFarmEnvironment"], List[Union[dict, "FoodFarmEnvironment"]]]])
+slots.Checklist_bin_param = Slot(uri=MIXS['0000077'], name="Checklist_bin_param", curie=MIXS.curie('0000077'),
+                   model_uri=MIXS.Checklist_bin_param, domain=Checklist, range=Optional[str])
 
-slots.Database_food_food_production_facility_set = Slot(uri=MIXS.food_food_production_facility_set, name="Database_food_food_production_facility_set", curie=MIXS.curie('food_food_production_facility_set'),
-                   model_uri=MIXS.Database_food_food_production_facility_set, domain=Database, range=Optional[Union[Union[dict, "FoodFoodProductionFacility"], List[Union[dict, "FoodFoodProductionFacility"]]]])
+slots.Checklist_bin_software = Slot(uri=MIXS['0000078'], name="Checklist_bin_software", curie=MIXS.curie('0000078'),
+                   model_uri=MIXS.Checklist_bin_software, domain=Checklist, range=Optional[str])
 
-slots.Database_food_human_foods_set = Slot(uri=MIXS.food_human_foods_set, name="Database_food_human_foods_set", curie=MIXS.curie('food_human_foods_set'),
-                   model_uri=MIXS.Database_food_human_foods_set, domain=Database, range=Optional[Union[Union[dict, "FoodHumanFoods"], List[Union[dict, "FoodHumanFoods"]]]])
+slots.Checklist_biotic_relationship = Slot(uri=MIXS['0000028'], name="Checklist_biotic_relationship", curie=MIXS.curie('0000028'),
+                   model_uri=MIXS.Checklist_biotic_relationship, domain=Checklist, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
-slots.Database_host_associated_set = Slot(uri=MIXS.host_associated_set, name="Database_host_associated_set", curie=MIXS.curie('host_associated_set'),
-                   model_uri=MIXS.Database_host_associated_set, domain=Database, range=Optional[Union[Union[dict, "HostAssociated"], List[Union[dict, "HostAssociated"]]]])
+slots.Checklist_chimera_check = Slot(uri=MIXS['0000052'], name="Checklist_chimera_check", curie=MIXS.curie('0000052'),
+                   model_uri=MIXS.Checklist_chimera_check, domain=Checklist, range=Optional[str])
 
-slots.Database_human_associated_set = Slot(uri=MIXS.human_associated_set, name="Database_human_associated_set", curie=MIXS.curie('human_associated_set'),
-                   model_uri=MIXS.Database_human_associated_set, domain=Database, range=Optional[Union[Union[dict, "HumanAssociated"], List[Union[dict, "HumanAssociated"]]]])
+slots.Checklist_collection_date = Slot(uri=MIXS['0000011'], name="Checklist_collection_date", curie=MIXS.curie('0000011'),
+                   model_uri=MIXS.Checklist_collection_date, domain=Checklist, range=Optional[str])
 
-slots.Database_human_gut_set = Slot(uri=MIXS.human_gut_set, name="Database_human_gut_set", curie=MIXS.curie('human_gut_set'),
-                   model_uri=MIXS.Database_human_gut_set, domain=Database, range=Optional[Union[Union[dict, "HumanGut"], List[Union[dict, "HumanGut"]]]])
+slots.Checklist_compl_appr = Slot(uri=MIXS['0000071'], name="Checklist_compl_appr", curie=MIXS.curie('0000071'),
+                   model_uri=MIXS.Checklist_compl_appr, domain=Checklist, range=Optional[str])
 
-slots.Database_human_oral_set = Slot(uri=MIXS.human_oral_set, name="Database_human_oral_set", curie=MIXS.curie('human_oral_set'),
-                   model_uri=MIXS.Database_human_oral_set, domain=Database, range=Optional[Union[Union[dict, "HumanOral"], List[Union[dict, "HumanOral"]]]])
+slots.Checklist_compl_score = Slot(uri=MIXS['0000069'], name="Checklist_compl_score", curie=MIXS.curie('0000069'),
+                   model_uri=MIXS.Checklist_compl_score, domain=Checklist, range=Optional[str])
 
-slots.Database_human_skin_set = Slot(uri=MIXS.human_skin_set, name="Database_human_skin_set", curie=MIXS.curie('human_skin_set'),
-                   model_uri=MIXS.Database_human_skin_set, domain=Database, range=Optional[Union[Union[dict, "HumanSkin"], List[Union[dict, "HumanSkin"]]]])
+slots.Checklist_compl_software = Slot(uri=MIXS['0000070'], name="Checklist_compl_software", curie=MIXS.curie('0000070'),
+                   model_uri=MIXS.Checklist_compl_software, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Database_human_vaginal_set = Slot(uri=MIXS.human_vaginal_set, name="Database_human_vaginal_set", curie=MIXS.curie('human_vaginal_set'),
-                   model_uri=MIXS.Database_human_vaginal_set, domain=Database, range=Optional[Union[Union[dict, "HumanVaginal"], List[Union[dict, "HumanVaginal"]]]])
+slots.Checklist_contam_score = Slot(uri=MIXS['0000072'], name="Checklist_contam_score", curie=MIXS.curie('0000072'),
+                   model_uri=MIXS.Checklist_contam_score, domain=Checklist, range=Optional[str])
 
-slots.Database_hydrocarbon_resources_cores_set = Slot(uri=MIXS.hydrocarbon_resources_cores_set, name="Database_hydrocarbon_resources_cores_set", curie=MIXS.curie('hydrocarbon_resources_cores_set'),
-                   model_uri=MIXS.Database_hydrocarbon_resources_cores_set, domain=Database, range=Optional[Union[Union[dict, "HydrocarbonResourcesCores"], List[Union[dict, "HydrocarbonResourcesCores"]]]])
+slots.Checklist_contam_screen_input = Slot(uri=MIXS['0000005'], name="Checklist_contam_screen_input", curie=MIXS.curie('0000005'),
+                   model_uri=MIXS.Checklist_contam_screen_input, domain=Checklist, range=Optional[str])
 
-slots.Database_hydrocarbon_resources_fluids_swabs_set = Slot(uri=MIXS.hydrocarbon_resources_fluids_swabs_set, name="Database_hydrocarbon_resources_fluids_swabs_set", curie=MIXS.curie('hydrocarbon_resources_fluids_swabs_set'),
-                   model_uri=MIXS.Database_hydrocarbon_resources_fluids_swabs_set, domain=Database, range=Optional[Union[Union[dict, "HydrocarbonResourcesFluidsSwabs"], List[Union[dict, "HydrocarbonResourcesFluidsSwabs"]]]])
+slots.Checklist_contam_screen_param = Slot(uri=MIXS['0000073'], name="Checklist_contam_screen_param", curie=MIXS.curie('0000073'),
+                   model_uri=MIXS.Checklist_contam_screen_param, domain=Checklist, range=Optional[str])
 
-slots.Database_microbial_mat_biofilm_set = Slot(uri=MIXS.microbial_mat_biofilm_set, name="Database_microbial_mat_biofilm_set", curie=MIXS.curie('microbial_mat_biofilm_set'),
-                   model_uri=MIXS.Database_microbial_mat_biofilm_set, domain=Database, range=Optional[Union[Union[dict, "MicrobialMatBiofilm"], List[Union[dict, "MicrobialMatBiofilm"]]]])
+slots.Checklist_decontam_software = Slot(uri=MIXS['0000074'], name="Checklist_decontam_software", curie=MIXS.curie('0000074'),
+                   model_uri=MIXS.Checklist_decontam_software, domain=Checklist, range=Optional[str])
+
+slots.Checklist_detec_type = Slot(uri=MIXS['0000084'], name="Checklist_detec_type", curie=MIXS.curie('0000084'),
+                   model_uri=MIXS.Checklist_detec_type, domain=Checklist, range=Optional[str])
+
+slots.Checklist_elev = Slot(uri=MIXS['0000093'], name="Checklist_elev", curie=MIXS.curie('0000093'),
+                   model_uri=MIXS.Checklist_elev, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_encoded_traits = Slot(uri=MIXS['0000034'], name="Checklist_encoded_traits", curie=MIXS.curie('0000034'),
+                   model_uri=MIXS.Checklist_encoded_traits, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_env_broad_scale = Slot(uri=MIXS['0000012'], name="Checklist_env_broad_scale", curie=MIXS.curie('0000012'),
+                   model_uri=MIXS.Checklist_env_broad_scale, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
+
+slots.Checklist_env_local_scale = Slot(uri=MIXS['0000013'], name="Checklist_env_local_scale", curie=MIXS.curie('0000013'),
+                   model_uri=MIXS.Checklist_env_local_scale, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
+
+slots.Checklist_env_medium = Slot(uri=MIXS['0000014'], name="Checklist_env_medium", curie=MIXS.curie('0000014'),
+                   model_uri=MIXS.Checklist_env_medium, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
+
+slots.Checklist_estimated_size = Slot(uri=MIXS['0000024'], name="Checklist_estimated_size", curie=MIXS.curie('0000024'),
+                   model_uri=MIXS.Checklist_estimated_size, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[+-]?[1-9][0-9]* bp'))
+
+slots.Checklist_experimental_factor = Slot(uri=MIXS['0000008'], name="Checklist_experimental_factor", curie=MIXS.curie('0000008'),
+                   model_uri=MIXS.Checklist_experimental_factor, domain=Checklist, range=Optional[str])
+
+slots.Checklist_extrachrom_elements = Slot(uri=MIXS['0000023'], name="Checklist_extrachrom_elements", curie=MIXS.curie('0000023'),
+                   model_uri=MIXS.Checklist_extrachrom_elements, domain=Checklist, range=Optional[int])
+
+slots.Checklist_feat_pred = Slot(uri=MIXS['0000061'], name="Checklist_feat_pred", curie=MIXS.curie('0000061'),
+                   model_uri=MIXS.Checklist_feat_pred, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_geo_loc_name = Slot(uri=MIXS['0000010'], name="Checklist_geo_loc_name", curie=MIXS.curie('0000010'),
+                   model_uri=MIXS.Checklist_geo_loc_name, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*: [^s\|][^\r\n\t\|]*, [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_host_disease_stat = Slot(uri=MIXS['0000031'], name="Checklist_host_disease_stat", curie=MIXS.curie('0000031'),
+                   model_uri=MIXS.Checklist_host_disease_stat, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
+
+slots.Checklist_host_pred_appr = Slot(uri=MIXS['0000088'], name="Checklist_host_pred_appr", curie=MIXS.curie('0000088'),
+                   model_uri=MIXS.Checklist_host_pred_appr, domain=Checklist, range=Optional[str])
+
+slots.Checklist_host_pred_est_acc = Slot(uri=MIXS['0000089'], name="Checklist_host_pred_est_acc", curie=MIXS.curie('0000089'),
+                   model_uri=MIXS.Checklist_host_pred_est_acc, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_host_spec_range = Slot(uri=MIXS['0000030'], name="Checklist_host_spec_range", curie=MIXS.curie('0000030'),
+                   model_uri=MIXS.Checklist_host_spec_range, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*'))
+
+slots.Checklist_isol_growth_condt = Slot(uri=MIXS['0000003'], name="Checklist_isol_growth_condt", curie=MIXS.curie('0000003'),
+                   model_uri=MIXS.Checklist_isol_growth_condt, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+
+slots.Checklist_lat_lon = Slot(uri=MIXS['0000009'], name="Checklist_lat_lon", curie=MIXS.curie('0000009'),
+                   model_uri=MIXS.Checklist_lat_lon, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'))
+
+slots.Checklist_lib_layout = Slot(uri=MIXS['0000041'], name="Checklist_lib_layout", curie=MIXS.curie('0000041'),
+                   model_uri=MIXS.Checklist_lib_layout, domain=Checklist, range=Optional[Union[str, "LIBLAYOUTENUM"]])
+
+slots.Checklist_lib_reads_seqd = Slot(uri=MIXS['0000040'], name="Checklist_lib_reads_seqd", curie=MIXS.curie('0000040'),
+                   model_uri=MIXS.Checklist_lib_reads_seqd, domain=Checklist, range=Optional[int])
+
+slots.Checklist_lib_screen = Slot(uri=MIXS['0000043'], name="Checklist_lib_screen", curie=MIXS.curie('0000043'),
+                   model_uri=MIXS.Checklist_lib_screen, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_lib_size = Slot(uri=MIXS['0000039'], name="Checklist_lib_size", curie=MIXS.curie('0000039'),
+                   model_uri=MIXS.Checklist_lib_size, domain=Checklist, range=Optional[int])
+
+slots.Checklist_lib_vector = Slot(uri=MIXS['0000042'], name="Checklist_lib_vector", curie=MIXS.curie('0000042'),
+                   model_uri=MIXS.Checklist_lib_vector, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_mag_cov_software = Slot(uri=MIXS['0000080'], name="Checklist_mag_cov_software", curie=MIXS.curie('0000080'),
+                   model_uri=MIXS.Checklist_mag_cov_software, domain=Checklist, range=Optional[str])
+
+slots.Checklist_mid = Slot(uri=MIXS['0000047'], name="Checklist_mid", curie=MIXS.curie('0000047'),
+                   model_uri=MIXS.Checklist_mid, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[ACGT]+'))
+
+slots.Checklist_neg_cont_type = Slot(uri=MIXS['0001321'], name="Checklist_neg_cont_type", curie=MIXS.curie('0001321'),
+                   model_uri=MIXS.Checklist_neg_cont_type, domain=Checklist, range=Optional[Union[str, "NEGCONTTYPEENUM"]])
+
+slots.Checklist_nucl_acid_amp = Slot(uri=MIXS['0000038'], name="Checklist_nucl_acid_amp", curie=MIXS.curie('0000038'),
+                   model_uri=MIXS.Checklist_nucl_acid_amp, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+
+slots.Checklist_nucl_acid_ext = Slot(uri=MIXS['0000037'], name="Checklist_nucl_acid_ext", curie=MIXS.curie('0000037'),
+                   model_uri=MIXS.Checklist_nucl_acid_ext, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+
+slots.Checklist_num_replicons = Slot(uri=MIXS['0000022'], name="Checklist_num_replicons", curie=MIXS.curie('0000022'),
+                   model_uri=MIXS.Checklist_num_replicons, domain=Checklist, range=Optional[int])
+
+slots.Checklist_number_contig = Slot(uri=MIXS['0000060'], name="Checklist_number_contig", curie=MIXS.curie('0000060'),
+                   model_uri=MIXS.Checklist_number_contig, domain=Checklist, range=Optional[int])
+
+slots.Checklist_otu_class_appr = Slot(uri=MIXS['0000085'], name="Checklist_otu_class_appr", curie=MIXS.curie('0000085'),
+                   model_uri=MIXS.Checklist_otu_class_appr, domain=Checklist, range=Optional[str])
+
+slots.Checklist_otu_db = Slot(uri=MIXS['0000087'], name="Checklist_otu_db", curie=MIXS.curie('0000087'),
+                   model_uri=MIXS.Checklist_otu_db, domain=Checklist, range=Optional[str])
+
+slots.Checklist_otu_seq_comp_appr = Slot(uri=MIXS['0000086'], name="Checklist_otu_seq_comp_appr", curie=MIXS.curie('0000086'),
+                   model_uri=MIXS.Checklist_otu_seq_comp_appr, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_pathogenicity = Slot(uri=MIXS['0000027'], name="Checklist_pathogenicity", curie=MIXS.curie('0000027'),
+                   model_uri=MIXS.Checklist_pathogenicity, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_pcr_cond = Slot(uri=MIXS['0000049'], name="Checklist_pcr_cond", curie=MIXS.curie('0000049'),
+                   model_uri=MIXS.Checklist_pcr_cond, domain=Checklist, range=Optional[str])
+
+slots.Checklist_pcr_primers = Slot(uri=MIXS['0000046'], name="Checklist_pcr_primers", curie=MIXS.curie('0000046'),
+                   model_uri=MIXS.Checklist_pcr_primers, domain=Checklist, range=Optional[str])
+
+slots.Checklist_ploidy = Slot(uri=MIXS['0000021'], name="Checklist_ploidy", curie=MIXS.curie('0000021'),
+                   model_uri=MIXS.Checklist_ploidy, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
+
+slots.Checklist_pos_cont_type = Slot(uri=MIXS['0001322'], name="Checklist_pos_cont_type", curie=MIXS.curie('0001322'),
+                   model_uri=MIXS.Checklist_pos_cont_type, domain=Checklist, range=Optional[str])
+
+slots.Checklist_pred_genome_struc = Slot(uri=MIXS['0000083'], name="Checklist_pred_genome_struc", curie=MIXS.curie('0000083'),
+                   model_uri=MIXS.Checklist_pred_genome_struc, domain=Checklist, range=Optional[str])
+
+slots.Checklist_pred_genome_type = Slot(uri=MIXS['0000082'], name="Checklist_pred_genome_type", curie=MIXS.curie('0000082'),
+                   model_uri=MIXS.Checklist_pred_genome_type, domain=Checklist, range=Optional[str])
+
+slots.Checklist_project_name = Slot(uri=MIXS['0000092'], name="Checklist_project_name", curie=MIXS.curie('0000092'),
+                   model_uri=MIXS.Checklist_project_name, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_propagation = Slot(uri=MIXS['0000033'], name="Checklist_propagation", curie=MIXS.curie('0000033'),
+                   model_uri=MIXS.Checklist_propagation, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_reassembly_bin = Slot(uri=MIXS['0000079'], name="Checklist_reassembly_bin", curie=MIXS.curie('0000079'),
+                   model_uri=MIXS.Checklist_reassembly_bin, domain=Checklist, range=Optional[Union[bool, Bool]])
+
+slots.Checklist_ref_biomaterial = Slot(uri=MIXS['0000025'], name="Checklist_ref_biomaterial", curie=MIXS.curie('0000025'),
+                   model_uri=MIXS.Checklist_ref_biomaterial, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
+
+slots.Checklist_ref_db = Slot(uri=MIXS['0000062'], name="Checklist_ref_db", curie=MIXS.curie('0000062'),
+                   model_uri=MIXS.Checklist_ref_db, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="Checklist_rel_to_oxygen", curie=MIXS.curie('0000015'),
+                   model_uri=MIXS.Checklist_rel_to_oxygen, domain=Checklist, range=Optional[str])
+
+slots.Checklist_samp_mat_process = Slot(uri=MIXS['0000016'], name="Checklist_samp_mat_process", curie=MIXS.curie('0000016'),
+                   model_uri=MIXS.Checklist_samp_mat_process, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_samp_size = Slot(uri=MIXS['0000001'], name="Checklist_samp_size", curie=MIXS.curie('0000001'),
+                   model_uri=MIXS.Checklist_samp_size, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_samp_taxon_id = Slot(uri=MIXS['0001320'], name="Checklist_samp_taxon_id", curie=MIXS.curie('0001320'),
+                   model_uri=MIXS.Checklist_samp_taxon_id, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]* [NCBITaxon:[0-9]+]'))
+
+slots.Checklist_samp_vol_we_dna_ext = Slot(uri=MIXS['0000111'], name="Checklist_samp_vol_we_dna_ext", curie=MIXS.curie('0000111'),
+                   model_uri=MIXS.Checklist_samp_vol_we_dna_ext, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_seq_meth = Slot(uri=MIXS['0000050'], name="Checklist_seq_meth", curie=MIXS.curie('0000050'),
+                   model_uri=MIXS.Checklist_seq_meth, domain=Checklist, range=Optional[str])
+
+slots.Checklist_seq_quality_check = Slot(uri=MIXS['0000051'], name="Checklist_seq_quality_check", curie=MIXS.curie('0000051'),
+                   model_uri=MIXS.Checklist_seq_quality_check, domain=Checklist, range=Optional[str])
+
+slots.Checklist_sim_search_meth = Slot(uri=MIXS['0000063'], name="Checklist_sim_search_meth", curie=MIXS.curie('0000063'),
+                   model_uri=MIXS.Checklist_sim_search_meth, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_single_cell_lysis_appr = Slot(uri=MIXS['0000076'], name="Checklist_single_cell_lysis_appr", curie=MIXS.curie('0000076'),
+                   model_uri=MIXS.Checklist_single_cell_lysis_appr, domain=Checklist, range=Optional[str])
+
+slots.Checklist_single_cell_lysis_prot = Slot(uri=MIXS['0000054'], name="Checklist_single_cell_lysis_prot", curie=MIXS.curie('0000054'),
+                   model_uri=MIXS.Checklist_single_cell_lysis_prot, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_size_frac = Slot(uri=MIXS['0000017'], name="Checklist_size_frac", curie=MIXS.curie('0000017'),
+                   model_uri=MIXS.Checklist_size_frac, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_sop = Slot(uri=MIXS['0000090'], name="Checklist_sop", curie=MIXS.curie('0000090'),
+                   model_uri=MIXS.Checklist_sop, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])))'))
+
+slots.Checklist_sort_tech = Slot(uri=MIXS['0000075'], name="Checklist_sort_tech", curie=MIXS.curie('0000075'),
+                   model_uri=MIXS.Checklist_sort_tech, domain=Checklist, range=Optional[str])
+
+slots.Checklist_source_mat_id = Slot(uri=MIXS['0000026'], name="Checklist_source_mat_id", curie=MIXS.curie('0000026'),
+                   model_uri=MIXS.Checklist_source_mat_id, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_source_uvig = Slot(uri=MIXS['0000035'], name="Checklist_source_uvig", curie=MIXS.curie('0000035'),
+                   model_uri=MIXS.Checklist_source_uvig, domain=Checklist, range=Optional[str])
+
+slots.Checklist_specific_host = Slot(uri=MIXS['0000029'], name="Checklist_specific_host", curie=MIXS.curie('0000029'),
+                   model_uri=MIXS.Checklist_specific_host, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*|NCBITaxon:[0-9]+'))
+
+slots.Checklist_subspecf_gen_lin = Slot(uri=MIXS['0000020'], name="Checklist_subspecf_gen_lin", curie=MIXS.curie('0000020'),
+                   model_uri=MIXS.Checklist_subspecf_gen_lin, domain=Checklist, range=Optional[str])
+
+slots.Checklist_target_gene = Slot(uri=MIXS['0000044'], name="Checklist_target_gene", curie=MIXS.curie('0000044'),
+                   model_uri=MIXS.Checklist_target_gene, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_target_subfragment = Slot(uri=MIXS['0000045'], name="Checklist_target_subfragment", curie=MIXS.curie('0000045'),
+                   model_uri=MIXS.Checklist_target_subfragment, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_tax_class = Slot(uri=MIXS['0000064'], name="Checklist_tax_class", curie=MIXS.curie('0000064'),
+                   model_uri=MIXS.Checklist_tax_class, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_tax_ident = Slot(uri=MIXS['0000053'], name="Checklist_tax_ident", curie=MIXS.curie('0000053'),
+                   model_uri=MIXS.Checklist_tax_ident, domain=Checklist, range=Optional[str])
+
+slots.Checklist_temp = Slot(uri=MIXS['0000113'], name="Checklist_temp", curie=MIXS.curie('0000113'),
+                   model_uri=MIXS.Checklist_temp, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_trna_ext_software = Slot(uri=MIXS['0000068'], name="Checklist_trna_ext_software", curie=MIXS.curie('0000068'),
+                   model_uri=MIXS.Checklist_trna_ext_software, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_trnas = Slot(uri=MIXS['0000067'], name="Checklist_trnas", curie=MIXS.curie('0000067'),
+                   model_uri=MIXS.Checklist_trnas, domain=Checklist, range=Optional[int])
+
+slots.Checklist_trophic_level = Slot(uri=MIXS['0000032'], name="Checklist_trophic_level", curie=MIXS.curie('0000032'),
+                   model_uri=MIXS.Checklist_trophic_level, domain=Checklist, range=Optional[Union[str, "TROPHICLEVELENUM"]])
+
+slots.Checklist_vir_ident_software = Slot(uri=MIXS['0000081'], name="Checklist_vir_ident_software", curie=MIXS.curie('0000081'),
+                   model_uri=MIXS.Checklist_vir_ident_software, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
+
+slots.Checklist_virus_enrich_appr = Slot(uri=MIXS['0000036'], name="Checklist_virus_enrich_appr", curie=MIXS.curie('0000036'),
+                   model_uri=MIXS.Checklist_virus_enrich_appr, domain=Checklist, range=Optional[str])
+
+slots.Checklist_wga_amp_appr = Slot(uri=MIXS['0000055'], name="Checklist_wga_amp_appr", curie=MIXS.curie('0000055'),
+                   model_uri=MIXS.Checklist_wga_amp_appr, domain=Checklist, range=Optional[str])
+
+slots.Checklist_wga_amp_kit = Slot(uri=MIXS['0000006'], name="Checklist_wga_amp_kit", curie=MIXS.curie('0000006'),
+                   model_uri=MIXS.Checklist_wga_amp_kit, domain=Checklist, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
 slots.Database_migs_ba_plant_associated_set = Slot(uri=MIXS.migs_ba_plant_associated_set, name="Database_migs_ba_plant_associated_set", curie=MIXS.curie('migs_ba_plant_associated_set'),
                    model_uri=MIXS.Database_migs_ba_plant_associated_set, domain=Database, range=Optional[Union[Union[dict, "MigsBaPlantAssociated"], List[Union[dict, "MigsBaPlantAssociated"]]]])
@@ -17293,27 +18391,6 @@ slots.Database_mims_soil_set = Slot(uri=MIXS.mims_soil_set, name="Database_mims_
 
 slots.Database_mims_water_set = Slot(uri=MIXS.mims_water_set, name="Database_mims_water_set", curie=MIXS.curie('mims_water_set'),
                    model_uri=MIXS.Database_mims_water_set, domain=Database, range=Optional[Union[Union[dict, "MimsWater"], List[Union[dict, "MimsWater"]]]])
-
-slots.Database_plant_associated_set = Slot(uri=MIXS.plant_associated_set, name="Database_plant_associated_set", curie=MIXS.curie('plant_associated_set'),
-                   model_uri=MIXS.Database_plant_associated_set, domain=Database, range=Optional[Union[Union[dict, "PlantAssociated"], List[Union[dict, "PlantAssociated"]]]])
-
-slots.Database_sediment_set = Slot(uri=MIXS.sediment_set, name="Database_sediment_set", curie=MIXS.curie('sediment_set'),
-                   model_uri=MIXS.Database_sediment_set, domain=Database, range=Optional[Union[Union[dict, "Sediment"], List[Union[dict, "Sediment"]]]])
-
-slots.Database_soil_set = Slot(uri=MIXS.soil_set, name="Database_soil_set", curie=MIXS.curie('soil_set'),
-                   model_uri=MIXS.Database_soil_set, domain=Database, range=Optional[Union[Union[dict, "Soil"], List[Union[dict, "Soil"]]]])
-
-slots.Database_symbiont_associated_set = Slot(uri=MIXS.symbiont_associated_set, name="Database_symbiont_associated_set", curie=MIXS.curie('symbiont_associated_set'),
-                   model_uri=MIXS.Database_symbiont_associated_set, domain=Database, range=Optional[Union[Dict[Union[str, SymbiontAssociatedSampleName], Union[dict, "SymbiontAssociated"]], List[Union[dict, "SymbiontAssociated"]]]])
-
-slots.Database_unknown_term_set = Slot(uri=MIXS.unknown_term_set, name="Database_unknown_term_set", curie=MIXS.curie('unknown_term_set'),
-                   model_uri=MIXS.Database_unknown_term_set, domain=Database, range=Optional[Union[Union[dict, "UnknownTerm"], List[Union[dict, "UnknownTerm"]]]])
-
-slots.Database_wastewater_sludge_set = Slot(uri=MIXS.wastewater_sludge_set, name="Database_wastewater_sludge_set", curie=MIXS.curie('wastewater_sludge_set'),
-                   model_uri=MIXS.Database_wastewater_sludge_set, domain=Database, range=Optional[Union[Union[dict, "WastewaterSludge"], List[Union[dict, "WastewaterSludge"]]]])
-
-slots.Database_water_set = Slot(uri=MIXS.water_set, name="Database_water_set", curie=MIXS.curie('water_set'),
-                   model_uri=MIXS.Database_water_set, domain=Database, range=Optional[Union[Union[dict, "Water"], List[Union[dict, "Water"]]]])
 
 slots.FoodAnimalAndAnimalFeed_HACCP_term = Slot(uri=MIXS['0001215'], name="FoodAnimalAndAnimalFeed_HACCP_term", curie=MIXS.curie('0001215'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_HACCP_term, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
@@ -17543,16 +18620,6 @@ slots.FoodAnimalAndAnimalFeed_repository_name = Slot(uri=MIXS['0001152'], name="
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_repository_name, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.FoodAnimalAndAnimalFeed_samp_collect_device = Slot(uri=MIXS['0000002'], name="FoodAnimalAndAnimalFeed_samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_collect_device, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
-
-slots.FoodAnimalAndAnimalFeed_samp_collect_method = Slot(uri=MIXS['0001225'], name="FoodAnimalAndAnimalFeed_samp_collect_method", curie=MIXS.curie('0001225'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_collect_method, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]*)'))
-
-slots.FoodAnimalAndAnimalFeed_samp_name = Slot(uri=MIXS.samp_name, name="FoodAnimalAndAnimalFeed_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_name, domain=FoodAnimalAndAnimalFeed, range=str)
-
 slots.FoodAnimalAndAnimalFeed_samp_pooling = Slot(uri=MIXS['0001153'], name="FoodAnimalAndAnimalFeed_samp_pooling", curie=MIXS.curie('0001153'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_pooling, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -17579,17 +18646,20 @@ slots.FoodAnimalAndAnimalFeed_samp_source_mat_cat = Slot(uri=MIXS['0001154'], na
 slots.FoodAnimalAndAnimalFeed_samp_stor_device = Slot(uri=MIXS['0001228'], name="FoodAnimalAndAnimalFeed_samp_stor_device", curie=MIXS.curie('0001228'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_stor_device, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
 
-slots.FoodAnimalAndAnimalFeed_samp_stor_dur = Slot(uri=MIXS.samp_stor_dur, name="FoodAnimalAndAnimalFeed_samp_stor_dur", curie=MIXS.curie('samp_stor_dur'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_stor_dur, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
-
-slots.FoodAnimalAndAnimalFeed_samp_stor_loc = Slot(uri=MIXS.samp_stor_loc, name="FoodAnimalAndAnimalFeed_samp_stor_loc", curie=MIXS.curie('samp_stor_loc'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_stor_loc, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
-
 slots.FoodAnimalAndAnimalFeed_samp_stor_media = Slot(uri=MIXS['0001229'], name="FoodAnimalAndAnimalFeed_samp_stor_media", curie=MIXS.curie('0001229'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_stor_media, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
 
-slots.FoodAnimalAndAnimalFeed_samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="FoodAnimalAndAnimalFeed_samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_stor_temp, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
+slots.FoodAnimalAndAnimalFeed_samp_store_dur = Slot(uri=MIXS['0000116'], name="FoodAnimalAndAnimalFeed_samp_store_dur", curie=MIXS.curie('0000116'),
+                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_store_dur, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
+                   pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
+
+slots.FoodAnimalAndAnimalFeed_samp_store_loc = Slot(uri=MIXS['0000755'], name="FoodAnimalAndAnimalFeed_samp_store_loc", curie=MIXS.curie('0000755'),
+                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_store_loc, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.FoodAnimalAndAnimalFeed_samp_store_temp = Slot(uri=MIXS['0000110'], name="FoodAnimalAndAnimalFeed_samp_store_temp", curie=MIXS.curie('0000110'),
+                   model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_store_temp, domain=FoodAnimalAndAnimalFeed, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodAnimalAndAnimalFeed_samp_transport_cont = Slot(uri=MIXS['0001230'], name="FoodAnimalAndAnimalFeed_samp_transport_cont", curie=MIXS.curie('0001230'),
                    model_uri=MIXS.FoodAnimalAndAnimalFeed_samp_transport_cont, domain=FoodAnimalAndAnimalFeed, range=Optional[str])
@@ -17673,12 +18743,12 @@ slots.FoodFarmEnvironment_IFSAC_category = Slot(uri=MIXS['0001179'], name="FoodF
 slots.FoodFarmEnvironment_adjacent_environment = Slot(uri=MIXS['0001121'], name="FoodFarmEnvironment_adjacent_environment", curie=MIXS.curie('0001121'),
                    model_uri=MIXS.FoodFarmEnvironment_adjacent_environment, domain=FoodFarmEnvironment, range=Optional[str])
 
-slots.FoodFarmEnvironment_air_PM_concen = Slot(uri=MIXS['0000108'], name="FoodFarmEnvironment_air_PM_concen", curie=MIXS.curie('0000108'),
-                   model_uri=MIXS.FoodFarmEnvironment_air_PM_concen, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
 slots.FoodFarmEnvironment_air_flow_impede = Slot(uri=MIXS['0001146'], name="FoodFarmEnvironment_air_flow_impede", curie=MIXS.curie('0001146'),
                    model_uri=MIXS.FoodFarmEnvironment_air_flow_impede, domain=FoodFarmEnvironment, range=Optional[str])
+
+slots.FoodFarmEnvironment_air_pm_concen = Slot(uri=MIXS['0000108'], name="FoodFarmEnvironment_air_pm_concen", curie=MIXS.curie('0000108'),
+                   model_uri=MIXS.FoodFarmEnvironment_air_pm_concen, domain=FoodFarmEnvironment, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodFarmEnvironment_ances_data = Slot(uri=MIXS['0000247'], name="FoodFarmEnvironment_ances_data", curie=MIXS.curie('0000247'),
                    model_uri=MIXS.FoodFarmEnvironment_ances_data, domain=FoodFarmEnvironment, range=Optional[str],
@@ -17740,10 +18810,6 @@ slots.FoodFarmEnvironment_cult_target = Slot(uri=MIXS['0001119'], name="FoodFarm
 
 slots.FoodFarmEnvironment_date_extr_weath = Slot(uri=MIXS['0001142'], name="FoodFarmEnvironment_date_extr_weath", curie=MIXS.curie('0001142'),
                    model_uri=MIXS.FoodFarmEnvironment_date_extr_weath, domain=FoodFarmEnvironment, range=Optional[str])
-
-slots.FoodFarmEnvironment_depth = Slot(uri=MIXS['0000018'], name="FoodFarmEnvironment_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.FoodFarmEnvironment_depth, domain=FoodFarmEnvironment, range=str,
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodFarmEnvironment_enrichment_protocol = Slot(uri=MIXS['0001177'], name="FoodFarmEnvironment_enrichment_protocol", curie=MIXS.curie('0001177'),
                    model_uri=MIXS.FoodFarmEnvironment_enrichment_protocol, domain=FoodFarmEnvironment, range=Optional[str],
@@ -17947,10 +19013,6 @@ slots.FoodFarmEnvironment_plant_water_method = Slot(uri=MIXS['0001111'], name="F
 slots.FoodFarmEnvironment_previous_land_use = Slot(uri=MIXS['0000315'], name="FoodFarmEnvironment_previous_land_use", curie=MIXS.curie('0000315'),
                    model_uri=MIXS.FoodFarmEnvironment_previous_land_use, domain=FoodFarmEnvironment, range=Optional[str])
 
-slots.FoodFarmEnvironment_prod_label_claims = Slot(uri=MIXS['9999999'], name="FoodFarmEnvironment_prod_label_claims", curie=MIXS.curie('9999999'),
-                   model_uri=MIXS.FoodFarmEnvironment_prod_label_claims, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
 slots.FoodFarmEnvironment_project_name = Slot(uri=MIXS['0000092'], name="FoodFarmEnvironment_project_name", curie=MIXS.curie('0000092'),
                    model_uri=MIXS.FoodFarmEnvironment_project_name, domain=FoodFarmEnvironment, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -17989,12 +19051,6 @@ slots.FoodFarmEnvironment_salinity_meth = Slot(uri=MIXS['0000341'], name="FoodFa
                    model_uri=MIXS.FoodFarmEnvironment_salinity_meth, domain=FoodFarmEnvironment, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
-slots.FoodFarmEnvironment_samp_collect_device = Slot(uri=MIXS['0000002'], name="FoodFarmEnvironment_samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.FoodFarmEnvironment_samp_collect_device, domain=FoodFarmEnvironment, range=Optional[str])
-
-slots.FoodFarmEnvironment_samp_name = Slot(uri=MIXS.samp_name, name="FoodFarmEnvironment_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.FoodFarmEnvironment_samp_name, domain=FoodFarmEnvironment, range=str)
-
 slots.FoodFarmEnvironment_samp_pooling = Slot(uri=MIXS['0001153'], name="FoodFarmEnvironment_samp_pooling", curie=MIXS.curie('0001153'),
                    model_uri=MIXS.FoodFarmEnvironment_samp_pooling, domain=FoodFarmEnvironment, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -18010,11 +19066,13 @@ slots.FoodFarmEnvironment_samp_source_mat_cat = Slot(uri=MIXS['0001154'], name="
                    model_uri=MIXS.FoodFarmEnvironment_samp_source_mat_cat, domain=FoodFarmEnvironment, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
-slots.FoodFarmEnvironment_samp_stor_dur = Slot(uri=MIXS.samp_stor_dur, name="FoodFarmEnvironment_samp_stor_dur", curie=MIXS.curie('samp_stor_dur'),
-                   model_uri=MIXS.FoodFarmEnvironment_samp_stor_dur, domain=FoodFarmEnvironment, range=Optional[str])
+slots.FoodFarmEnvironment_samp_store_dur = Slot(uri=MIXS['0000116'], name="FoodFarmEnvironment_samp_store_dur", curie=MIXS.curie('0000116'),
+                   model_uri=MIXS.FoodFarmEnvironment_samp_store_dur, domain=FoodFarmEnvironment, range=Optional[str],
+                   pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
-slots.FoodFarmEnvironment_samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="FoodFarmEnvironment_samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.FoodFarmEnvironment_samp_stor_temp, domain=FoodFarmEnvironment, range=Optional[str])
+slots.FoodFarmEnvironment_samp_store_temp = Slot(uri=MIXS['0000110'], name="FoodFarmEnvironment_samp_store_temp", curie=MIXS.curie('0000110'),
+                   model_uri=MIXS.FoodFarmEnvironment_samp_store_temp, domain=FoodFarmEnvironment, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodFarmEnvironment_samp_type = Slot(uri=MIXS['0000998'], name="FoodFarmEnvironment_samp_type", curie=MIXS.curie('0000998'),
                    model_uri=MIXS.FoodFarmEnvironment_samp_type, domain=FoodFarmEnvironment, range=str,
@@ -18083,10 +19141,6 @@ slots.FoodFarmEnvironment_soil_temp = Slot(uri=MIXS['0001163'], name="FoodFarmEn
 slots.FoodFarmEnvironment_soil_texture_class = Slot(uri=MIXS['0001164'], name="FoodFarmEnvironment_soil_texture_class", curie=MIXS.curie('0001164'),
                    model_uri=MIXS.FoodFarmEnvironment_soil_texture_class, domain=FoodFarmEnvironment, range=Optional[str])
 
-slots.FoodFarmEnvironment_soil_texture_meth = Slot(uri=MIXS['0000336'], name="FoodFarmEnvironment_soil_texture_meth", curie=MIXS.curie('0000336'),
-                   model_uri=MIXS.FoodFarmEnvironment_soil_texture_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
 slots.FoodFarmEnvironment_soil_type = Slot(uri=MIXS['0000332'], name="FoodFarmEnvironment_soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.FoodFarmEnvironment_soil_type, domain=FoodFarmEnvironment, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -18129,13 +19183,6 @@ slots.FoodFarmEnvironment_tillage = Slot(uri=MIXS['0001081'], name="FoodFarmEnvi
 
 slots.FoodFarmEnvironment_timepoint = Slot(uri=MIXS['0001173'], name="FoodFarmEnvironment_timepoint", curie=MIXS.curie('0001173'),
                    model_uri=MIXS.FoodFarmEnvironment_timepoint, domain=FoodFarmEnvironment, range=Optional[str])
-
-slots.FoodFarmEnvironment_tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="FoodFarmEnvironment_tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
-                   model_uri=MIXS.FoodFarmEnvironment_tot_nitro_cont_meth, domain=FoodFarmEnvironment, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
-slots.FoodFarmEnvironment_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="FoodFarmEnvironment_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
-                   model_uri=MIXS.FoodFarmEnvironment_tot_nitro_content, domain=FoodFarmEnvironment, range=Optional[str])
 
 slots.FoodFarmEnvironment_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="FoodFarmEnvironment_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.FoodFarmEnvironment_tot_org_c_meth, domain=FoodFarmEnvironment, range=Optional[str],
@@ -18396,10 +19443,6 @@ slots.FoodFoodProductionFacility_part_plant_animal = Slot(uri=MIXS['0001149'], n
 slots.FoodFoodProductionFacility_pool_dna_extracts = Slot(uri=MIXS['0000325'], name="FoodFoodProductionFacility_pool_dna_extracts", curie=MIXS.curie('0000325'),
                    model_uri=MIXS.FoodFoodProductionFacility_pool_dna_extracts, domain=FoodFoodProductionFacility, range=Optional[str])
 
-slots.FoodFoodProductionFacility_prod_label_claims = Slot(uri=MIXS['9999999'], name="FoodFoodProductionFacility_prod_label_claims", curie=MIXS.curie('9999999'),
-                   model_uri=MIXS.FoodFoodProductionFacility_prod_label_claims, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
 slots.FoodFoodProductionFacility_project_name = Slot(uri=MIXS['0000092'], name="FoodFoodProductionFacility_project_name", curie=MIXS.curie('0000092'),
                    model_uri=MIXS.FoodFoodProductionFacility_project_name, domain=FoodFoodProductionFacility, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -18411,21 +19454,11 @@ slots.FoodFoodProductionFacility_repository_name = Slot(uri=MIXS['0001152'], nam
 slots.FoodFoodProductionFacility_room_dim = Slot(uri=MIXS['0000192'], name="FoodFoodProductionFacility_room_dim", curie=MIXS.curie('0000192'),
                    model_uri=MIXS.FoodFoodProductionFacility_room_dim, domain=FoodFoodProductionFacility, range=Optional[str])
 
-slots.FoodFoodProductionFacility_samp_collect_device = Slot(uri=MIXS['0000002'], name="FoodFoodProductionFacility_samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_collect_device, domain=FoodFoodProductionFacility, range=Optional[str])
-
-slots.FoodFoodProductionFacility_samp_collect_method = Slot(uri=MIXS['0001225'], name="FoodFoodProductionFacility_samp_collect_method", curie=MIXS.curie('0001225'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_collect_method, domain=FoodFoodProductionFacility, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])|([^s\|][^\r\n\t\|]*)'))
-
 slots.FoodFoodProductionFacility_samp_floor = Slot(uri=MIXS['0000828'], name="FoodFoodProductionFacility_samp_floor", curie=MIXS.curie('0000828'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_floor, domain=FoodFoodProductionFacility, range=Optional[str])
 
 slots.FoodFoodProductionFacility_samp_loc_condition = Slot(uri=MIXS['0001257'], name="FoodFoodProductionFacility_samp_loc_condition", curie=MIXS.curie('0001257'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_loc_condition, domain=FoodFoodProductionFacility, range=Optional[str])
-
-slots.FoodFoodProductionFacility_samp_name = Slot(uri=MIXS.samp_name, name="FoodFoodProductionFacility_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_name, domain=FoodFoodProductionFacility, range=str)
 
 slots.FoodFoodProductionFacility_samp_pooling = Slot(uri=MIXS['0001153'], name="FoodFoodProductionFacility_samp_pooling", curie=MIXS.curie('0001153'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_pooling, domain=FoodFoodProductionFacility, range=Optional[str],
@@ -18456,17 +19489,20 @@ slots.FoodFoodProductionFacility_samp_source_mat_cat = Slot(uri=MIXS['0001154'],
 slots.FoodFoodProductionFacility_samp_stor_device = Slot(uri=MIXS['0001228'], name="FoodFoodProductionFacility_samp_stor_device", curie=MIXS.curie('0001228'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_stor_device, domain=FoodFoodProductionFacility, range=str)
 
-slots.FoodFoodProductionFacility_samp_stor_dur = Slot(uri=MIXS.samp_stor_dur, name="FoodFoodProductionFacility_samp_stor_dur", curie=MIXS.curie('samp_stor_dur'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_stor_dur, domain=FoodFoodProductionFacility, range=Optional[str])
-
-slots.FoodFoodProductionFacility_samp_stor_loc = Slot(uri=MIXS.samp_stor_loc, name="FoodFoodProductionFacility_samp_stor_loc", curie=MIXS.curie('samp_stor_loc'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_stor_loc, domain=FoodFoodProductionFacility, range=Optional[str])
-
 slots.FoodFoodProductionFacility_samp_stor_media = Slot(uri=MIXS['0001229'], name="FoodFoodProductionFacility_samp_stor_media", curie=MIXS.curie('0001229'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_stor_media, domain=FoodFoodProductionFacility, range=str)
 
-slots.FoodFoodProductionFacility_samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="FoodFoodProductionFacility_samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.FoodFoodProductionFacility_samp_stor_temp, domain=FoodFoodProductionFacility, range=Optional[str])
+slots.FoodFoodProductionFacility_samp_store_dur = Slot(uri=MIXS['0000116'], name="FoodFoodProductionFacility_samp_store_dur", curie=MIXS.curie('0000116'),
+                   model_uri=MIXS.FoodFoodProductionFacility_samp_store_dur, domain=FoodFoodProductionFacility, range=Optional[str],
+                   pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
+
+slots.FoodFoodProductionFacility_samp_store_loc = Slot(uri=MIXS['0000755'], name="FoodFoodProductionFacility_samp_store_loc", curie=MIXS.curie('0000755'),
+                   model_uri=MIXS.FoodFoodProductionFacility_samp_store_loc, domain=FoodFoodProductionFacility, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.FoodFoodProductionFacility_samp_store_temp = Slot(uri=MIXS['0000110'], name="FoodFoodProductionFacility_samp_store_temp", curie=MIXS.curie('0000110'),
+                   model_uri=MIXS.FoodFoodProductionFacility_samp_store_temp, domain=FoodFoodProductionFacility, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodFoodProductionFacility_samp_surf_moisture = Slot(uri=MIXS['0001256'], name="FoodFoodProductionFacility_samp_surf_moisture", curie=MIXS.curie('0001256'),
                    model_uri=MIXS.FoodFoodProductionFacility_samp_surf_moisture, domain=FoodFoodProductionFacility, range=Optional[str])
@@ -18789,12 +19825,6 @@ slots.FoodHumanFoods_repository_name = Slot(uri=MIXS['0001152'], name="FoodHuman
                    model_uri=MIXS.FoodHumanFoods_repository_name, domain=FoodHumanFoods, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.FoodHumanFoods_samp_collect_device = Slot(uri=MIXS['0000002'], name="FoodHumanFoods_samp_collect_device", curie=MIXS.curie('0000002'),
-                   model_uri=MIXS.FoodHumanFoods_samp_collect_device, domain=FoodHumanFoods, range=Optional[str])
-
-slots.FoodHumanFoods_samp_name = Slot(uri=MIXS.samp_name, name="FoodHumanFoods_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.FoodHumanFoods_samp_name, domain=FoodHumanFoods, range=str)
-
 slots.FoodHumanFoods_samp_pooling = Slot(uri=MIXS['0001153'], name="FoodHumanFoods_samp_pooling", curie=MIXS.curie('0001153'),
                    model_uri=MIXS.FoodHumanFoods_samp_pooling, domain=FoodHumanFoods, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -18821,17 +19851,20 @@ slots.FoodHumanFoods_samp_source_mat_cat = Slot(uri=MIXS['0001154'], name="FoodH
 slots.FoodHumanFoods_samp_stor_device = Slot(uri=MIXS['0001228'], name="FoodHumanFoods_samp_stor_device", curie=MIXS.curie('0001228'),
                    model_uri=MIXS.FoodHumanFoods_samp_stor_device, domain=FoodHumanFoods, range=Optional[str])
 
-slots.FoodHumanFoods_samp_stor_dur = Slot(uri=MIXS.samp_stor_dur, name="FoodHumanFoods_samp_stor_dur", curie=MIXS.curie('samp_stor_dur'),
-                   model_uri=MIXS.FoodHumanFoods_samp_stor_dur, domain=FoodHumanFoods, range=Optional[str])
-
-slots.FoodHumanFoods_samp_stor_loc = Slot(uri=MIXS.samp_stor_loc, name="FoodHumanFoods_samp_stor_loc", curie=MIXS.curie('samp_stor_loc'),
-                   model_uri=MIXS.FoodHumanFoods_samp_stor_loc, domain=FoodHumanFoods, range=Optional[str])
-
 slots.FoodHumanFoods_samp_stor_media = Slot(uri=MIXS['0001229'], name="FoodHumanFoods_samp_stor_media", curie=MIXS.curie('0001229'),
                    model_uri=MIXS.FoodHumanFoods_samp_stor_media, domain=FoodHumanFoods, range=Optional[str])
 
-slots.FoodHumanFoods_samp_stor_temp = Slot(uri=MIXS.samp_stor_temp, name="FoodHumanFoods_samp_stor_temp", curie=MIXS.curie('samp_stor_temp'),
-                   model_uri=MIXS.FoodHumanFoods_samp_stor_temp, domain=FoodHumanFoods, range=Optional[str])
+slots.FoodHumanFoods_samp_store_dur = Slot(uri=MIXS['0000116'], name="FoodHumanFoods_samp_store_dur", curie=MIXS.curie('0000116'),
+                   model_uri=MIXS.FoodHumanFoods_samp_store_dur, domain=FoodHumanFoods, range=Optional[str],
+                   pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
+
+slots.FoodHumanFoods_samp_store_loc = Slot(uri=MIXS['0000755'], name="FoodHumanFoods_samp_store_loc", curie=MIXS.curie('0000755'),
+                   model_uri=MIXS.FoodHumanFoods_samp_store_loc, domain=FoodHumanFoods, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
+
+slots.FoodHumanFoods_samp_store_temp = Slot(uri=MIXS['0000110'], name="FoodHumanFoods_samp_store_temp", curie=MIXS.curie('0000110'),
+                   model_uri=MIXS.FoodHumanFoods_samp_store_temp, domain=FoodHumanFoods, range=Optional[str],
+                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.FoodHumanFoods_samp_transport_cont = Slot(uri=MIXS['0001230'], name="FoodHumanFoods_samp_transport_cont", curie=MIXS.curie('0001230'),
                    model_uri=MIXS.FoodHumanFoods_samp_transport_cont, domain=FoodHumanFoods, range=Optional[str])
@@ -18845,9 +19878,6 @@ slots.FoodHumanFoods_samp_transport_temp = Slot(uri=MIXS['0001232'], name="FoodH
 slots.FoodHumanFoods_samp_vol_we_dna_ext = Slot(uri=MIXS['0000111'], name="FoodHumanFoods_samp_vol_we_dna_ext", curie=MIXS.curie('0000111'),
                    model_uri=MIXS.FoodHumanFoods_samp_vol_we_dna_ext, domain=FoodHumanFoods, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.FoodHumanFoods_sample_collec_method = Slot(uri=MIXS.sample_collec_method, name="FoodHumanFoods_sample_collec_method", curie=MIXS.curie('sample_collec_method'),
-                   model_uri=MIXS.FoodHumanFoods_sample_collec_method, domain=FoodHumanFoods, range=Optional[str])
 
 slots.FoodHumanFoods_seq_meth = Slot(uri=MIXS['0000050'], name="FoodHumanFoods_seq_meth", curie=MIXS.curie('0000050'),
                    model_uri=MIXS.FoodHumanFoods_seq_meth, domain=FoodHumanFoods, range=str)
@@ -18933,10 +19963,6 @@ slots.HostAssociated_blood_press_syst = Slot(uri=MIXS['0000259'], name="HostAsso
 slots.HostAssociated_chem_administration = Slot(uri=MIXS['0000751'], name="HostAssociated_chem_administration", curie=MIXS.curie('0000751'),
                    model_uri=MIXS.HostAssociated_chem_administration, domain=HostAssociated, range=Optional[str])
 
-slots.HostAssociated_depth = Slot(uri=MIXS['0000018'], name="HostAssociated_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.HostAssociated_depth, domain=HostAssociated, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
 slots.HostAssociated_elev = Slot(uri=MIXS['0000093'], name="HostAssociated_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.HostAssociated_elev, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -18955,9 +19981,6 @@ slots.HostAssociated_host_age = Slot(uri=MIXS['0000255'], name="HostAssociated_h
 slots.HostAssociated_host_body_habitat = Slot(uri=MIXS['0000866'], name="HostAssociated_host_body_habitat", curie=MIXS.curie('0000866'),
                    model_uri=MIXS.HostAssociated_host_body_habitat, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HostAssociated_host_body_product = Slot(uri=MIXS.host_body_product, name="HostAssociated_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HostAssociated_host_body_product, domain=HostAssociated, range=Optional[str])
 
 slots.HostAssociated_host_body_site = Slot(uri=MIXS['0000867'], name="HostAssociated_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HostAssociated_host_body_site, domain=HostAssociated, range=Optional[str],
@@ -18987,9 +20010,6 @@ slots.HostAssociated_host_dry_mass = Slot(uri=MIXS['0000257'], name="HostAssocia
                    model_uri=MIXS.HostAssociated_host_dry_mass, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HostAssociated_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HostAssociated_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HostAssociated_host_family_relation, domain=HostAssociated, range=Optional[str])
-
 slots.HostAssociated_host_genotype = Slot(uri=MIXS['0000365'], name="HostAssociated_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HostAssociated_host_genotype, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -19016,9 +20036,6 @@ slots.HostAssociated_host_phenotype = Slot(uri=MIXS['0000874'], name="HostAssoci
                    model_uri=MIXS.HostAssociated_host_phenotype, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
-slots.HostAssociated_host_sex = Slot(uri=MIXS.host_sex, name="HostAssociated_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HostAssociated_host_sex, domain=HostAssociated, range=Optional[str])
-
 slots.HostAssociated_host_shape = Slot(uri=MIXS['0000261'], name="HostAssociated_host_shape", curie=MIXS.curie('0000261'),
                    model_uri=MIXS.HostAssociated_host_shape, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -19033,9 +20050,6 @@ slots.HostAssociated_host_subspecf_genlin = Slot(uri=MIXS['0001318'], name="Host
 slots.HostAssociated_host_substrate = Slot(uri=MIXS['0000252'], name="HostAssociated_host_substrate", curie=MIXS.curie('0000252'),
                    model_uri=MIXS.HostAssociated_host_substrate, domain=HostAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HostAssociated_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HostAssociated_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HostAssociated_host_symbiont, domain=HostAssociated, range=Optional[str])
 
 slots.HostAssociated_host_taxid = Slot(uri=MIXS['0000250'], name="HostAssociated_host_taxid", curie=MIXS.curie('0000250'),
                    model_uri=MIXS.HostAssociated_host_taxid, domain=HostAssociated, range=Optional[int])
@@ -19070,9 +20084,6 @@ slots.HostAssociated_samp_capt_status = Slot(uri=MIXS['0000860'], name="HostAsso
 
 slots.HostAssociated_samp_dis_stage = Slot(uri=MIXS['0000249'], name="HostAssociated_samp_dis_stage", curie=MIXS.curie('0000249'),
                    model_uri=MIXS.HostAssociated_samp_dis_stage, domain=HostAssociated, range=Optional[str])
-
-slots.HostAssociated_samp_name = Slot(uri=MIXS.samp_name, name="HostAssociated_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HostAssociated_samp_name, domain=HostAssociated, range=str)
 
 slots.HostAssociated_samp_store_dur = Slot(uri=MIXS['0000116'], name="HostAssociated_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HostAssociated_samp_store_dur, domain=HostAssociated, range=Optional[str],
@@ -19131,9 +20142,6 @@ slots.HumanAssociated_host_body_mass_index = Slot(uri=MIXS['0000317'], name="Hum
                    model_uri=MIXS.HumanAssociated_host_body_mass_index, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanAssociated_host_body_product = Slot(uri=MIXS.host_body_product, name="HumanAssociated_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HumanAssociated_host_body_product, domain=HumanAssociated, range=Optional[str])
-
 slots.HumanAssociated_host_body_site = Slot(uri=MIXS['0000867'], name="HumanAssociated_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HumanAssociated_host_body_site, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -19149,9 +20157,6 @@ slots.HumanAssociated_host_diet = Slot(uri=MIXS['0000869'], name="HumanAssociate
 slots.HumanAssociated_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanAssociated_host_disease_stat", curie=MIXS.curie('0000031'),
                    model_uri=MIXS.HumanAssociated_host_disease_stat, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
-
-slots.HumanAssociated_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanAssociated_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HumanAssociated_host_family_relation, domain=HumanAssociated, range=Optional[str])
 
 slots.HumanAssociated_host_genotype = Slot(uri=MIXS['0000365'], name="HumanAssociated_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HumanAssociated_host_genotype, domain=HumanAssociated, range=Optional[str],
@@ -19178,15 +20183,9 @@ slots.HumanAssociated_host_pulse = Slot(uri=MIXS['0000333'], name="HumanAssociat
                    model_uri=MIXS.HumanAssociated_host_pulse, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanAssociated_host_sex = Slot(uri=MIXS.host_sex, name="HumanAssociated_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HumanAssociated_host_sex, domain=HumanAssociated, range=Optional[str])
-
 slots.HumanAssociated_host_subject_id = Slot(uri=MIXS['0000861'], name="HumanAssociated_host_subject_id", curie=MIXS.curie('0000861'),
                    model_uri=MIXS.HumanAssociated_host_subject_id, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HumanAssociated_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HumanAssociated_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HumanAssociated_host_symbiont, domain=HumanAssociated, range=Optional[str])
 
 slots.HumanAssociated_host_tot_mass = Slot(uri=MIXS['0000263'], name="HumanAssociated_host_tot_mass", curie=MIXS.curie('0000263'),
                    model_uri=MIXS.HumanAssociated_host_tot_mass, domain=HumanAssociated, range=Optional[str],
@@ -19209,9 +20208,6 @@ slots.HumanAssociated_medic_hist_perform = Slot(uri=MIXS['0000897'], name="Human
 slots.HumanAssociated_misc_param = Slot(uri=MIXS['0000752'], name="HumanAssociated_misc_param", curie=MIXS.curie('0000752'),
                    model_uri=MIXS.HumanAssociated_misc_param, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'(([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)'))
-
-slots.HumanAssociated_nose_throat_disord = Slot(uri=MIXS.nose_throat_disord, name="HumanAssociated_nose_throat_disord", curie=MIXS.curie('nose_throat_disord'),
-                   model_uri=MIXS.HumanAssociated_nose_throat_disord, domain=HumanAssociated, range=Optional[str])
 
 slots.HumanAssociated_organism_count = Slot(uri=MIXS['0000103'], name="HumanAssociated_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.HumanAssociated_organism_count, domain=HumanAssociated, range=Optional[str])
@@ -19236,9 +20232,6 @@ slots.HumanAssociated_pulmonary_disord = Slot(uri=MIXS['0000269'], name="HumanAs
 slots.HumanAssociated_salinity = Slot(uri=MIXS['0000183'], name="HumanAssociated_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.HumanAssociated_salinity, domain=HumanAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HumanAssociated_samp_name = Slot(uri=MIXS.samp_name, name="HumanAssociated_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HumanAssociated_samp_name, domain=HumanAssociated, range=str)
 
 slots.HumanAssociated_samp_store_dur = Slot(uri=MIXS['0000116'], name="HumanAssociated_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HumanAssociated_samp_store_dur, domain=HumanAssociated, range=Optional[str],
@@ -19302,9 +20295,6 @@ slots.HumanGut_host_body_mass_index = Slot(uri=MIXS['0000317'], name="HumanGut_h
                    model_uri=MIXS.HumanGut_host_body_mass_index, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanGut_host_body_product = Slot(uri=MIXS.host_body_product, name="HumanGut_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HumanGut_host_body_product, domain=HumanGut, range=Optional[str])
-
 slots.HumanGut_host_body_site = Slot(uri=MIXS['0000867'], name="HumanGut_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HumanGut_host_body_site, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -19320,9 +20310,6 @@ slots.HumanGut_host_diet = Slot(uri=MIXS['0000869'], name="HumanGut_host_diet", 
 slots.HumanGut_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanGut_host_disease_stat", curie=MIXS.curie('0000031'),
                    model_uri=MIXS.HumanGut_host_disease_stat, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
-
-slots.HumanGut_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanGut_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HumanGut_host_family_relation, domain=HumanGut, range=Optional[str])
 
 slots.HumanGut_host_genotype = Slot(uri=MIXS['0000365'], name="HumanGut_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HumanGut_host_genotype, domain=HumanGut, range=Optional[str],
@@ -19346,15 +20333,9 @@ slots.HumanGut_host_pulse = Slot(uri=MIXS['0000333'], name="HumanGut_host_pulse"
                    model_uri=MIXS.HumanGut_host_pulse, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanGut_host_sex = Slot(uri=MIXS.host_sex, name="HumanGut_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HumanGut_host_sex, domain=HumanGut, range=Optional[str])
-
 slots.HumanGut_host_subject_id = Slot(uri=MIXS['0000861'], name="HumanGut_host_subject_id", curie=MIXS.curie('0000861'),
                    model_uri=MIXS.HumanGut_host_subject_id, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HumanGut_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HumanGut_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HumanGut_host_symbiont, domain=HumanGut, range=Optional[str])
 
 slots.HumanGut_host_tot_mass = Slot(uri=MIXS['0000263'], name="HumanGut_host_tot_mass", curie=MIXS.curie('0000263'),
                    model_uri=MIXS.HumanGut_host_tot_mass, domain=HumanGut, range=Optional[str],
@@ -19390,9 +20371,6 @@ slots.HumanGut_project_name = Slot(uri=MIXS['0000092'], name="HumanGut_project_n
 slots.HumanGut_salinity = Slot(uri=MIXS['0000183'], name="HumanGut_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.HumanGut_salinity, domain=HumanGut, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HumanGut_samp_name = Slot(uri=MIXS.samp_name, name="HumanGut_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HumanGut_samp_name, domain=HumanGut, range=str)
 
 slots.HumanGut_samp_store_dur = Slot(uri=MIXS['0000116'], name="HumanGut_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HumanGut_samp_store_dur, domain=HumanGut, range=Optional[str],
@@ -19432,9 +20410,6 @@ slots.HumanOral_host_body_mass_index = Slot(uri=MIXS['0000317'], name="HumanOral
                    model_uri=MIXS.HumanOral_host_body_mass_index, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanOral_host_body_product = Slot(uri=MIXS.host_body_product, name="HumanOral_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HumanOral_host_body_product, domain=HumanOral, range=Optional[str])
-
 slots.HumanOral_host_body_site = Slot(uri=MIXS['0000867'], name="HumanOral_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HumanOral_host_body_site, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -19450,9 +20425,6 @@ slots.HumanOral_host_diet = Slot(uri=MIXS['0000869'], name="HumanOral_host_diet"
 slots.HumanOral_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanOral_host_disease_stat", curie=MIXS.curie('0000031'),
                    model_uri=MIXS.HumanOral_host_disease_stat, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
-
-slots.HumanOral_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanOral_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HumanOral_host_family_relation, domain=HumanOral, range=Optional[str])
 
 slots.HumanOral_host_genotype = Slot(uri=MIXS['0000365'], name="HumanOral_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HumanOral_host_genotype, domain=HumanOral, range=Optional[str],
@@ -19476,15 +20448,9 @@ slots.HumanOral_host_pulse = Slot(uri=MIXS['0000333'], name="HumanOral_host_puls
                    model_uri=MIXS.HumanOral_host_pulse, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanOral_host_sex = Slot(uri=MIXS.host_sex, name="HumanOral_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HumanOral_host_sex, domain=HumanOral, range=Optional[str])
-
 slots.HumanOral_host_subject_id = Slot(uri=MIXS['0000861'], name="HumanOral_host_subject_id", curie=MIXS.curie('0000861'),
                    model_uri=MIXS.HumanOral_host_subject_id, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HumanOral_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HumanOral_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HumanOral_host_symbiont, domain=HumanOral, range=Optional[str])
 
 slots.HumanOral_host_tot_mass = Slot(uri=MIXS['0000263'], name="HumanOral_host_tot_mass", curie=MIXS.curie('0000263'),
                    model_uri=MIXS.HumanOral_host_tot_mass, domain=HumanOral, range=Optional[str],
@@ -19499,9 +20465,6 @@ slots.HumanOral_medic_hist_perform = Slot(uri=MIXS['0000897'], name="HumanOral_m
 slots.HumanOral_misc_param = Slot(uri=MIXS['0000752'], name="HumanOral_misc_param", curie=MIXS.curie('0000752'),
                    model_uri=MIXS.HumanOral_misc_param, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'(([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)'))
-
-slots.HumanOral_nose_throat_disord = Slot(uri=MIXS.nose_throat_disord, name="HumanOral_nose_throat_disord", curie=MIXS.curie('nose_throat_disord'),
-                   model_uri=MIXS.HumanOral_nose_throat_disord, domain=HumanOral, range=Optional[str])
 
 slots.HumanOral_organism_count = Slot(uri=MIXS['0000103'], name="HumanOral_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.HumanOral_organism_count, domain=HumanOral, range=Optional[str])
@@ -19519,9 +20482,6 @@ slots.HumanOral_project_name = Slot(uri=MIXS['0000092'], name="HumanOral_project
 slots.HumanOral_salinity = Slot(uri=MIXS['0000183'], name="HumanOral_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.HumanOral_salinity, domain=HumanOral, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HumanOral_samp_name = Slot(uri=MIXS.samp_name, name="HumanOral_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HumanOral_samp_name, domain=HumanOral, range=str)
 
 slots.HumanOral_samp_store_dur = Slot(uri=MIXS['0000116'], name="HumanOral_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HumanOral_samp_store_dur, domain=HumanOral, range=Optional[str],
@@ -19568,9 +20528,6 @@ slots.HumanSkin_host_body_mass_index = Slot(uri=MIXS['0000317'], name="HumanSkin
                    model_uri=MIXS.HumanSkin_host_body_mass_index, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanSkin_host_body_product = Slot(uri=MIXS.host_body_product, name="HumanSkin_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HumanSkin_host_body_product, domain=HumanSkin, range=Optional[str])
-
 slots.HumanSkin_host_body_site = Slot(uri=MIXS['0000867'], name="HumanSkin_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HumanSkin_host_body_site, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -19586,9 +20543,6 @@ slots.HumanSkin_host_diet = Slot(uri=MIXS['0000869'], name="HumanSkin_host_diet"
 slots.HumanSkin_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanSkin_host_disease_stat", curie=MIXS.curie('0000031'),
                    model_uri=MIXS.HumanSkin_host_disease_stat, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
-
-slots.HumanSkin_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanSkin_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HumanSkin_host_family_relation, domain=HumanSkin, range=Optional[str])
 
 slots.HumanSkin_host_genotype = Slot(uri=MIXS['0000365'], name="HumanSkin_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HumanSkin_host_genotype, domain=HumanSkin, range=Optional[str],
@@ -19612,15 +20566,9 @@ slots.HumanSkin_host_pulse = Slot(uri=MIXS['0000333'], name="HumanSkin_host_puls
                    model_uri=MIXS.HumanSkin_host_pulse, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanSkin_host_sex = Slot(uri=MIXS.host_sex, name="HumanSkin_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HumanSkin_host_sex, domain=HumanSkin, range=Optional[str])
-
 slots.HumanSkin_host_subject_id = Slot(uri=MIXS['0000861'], name="HumanSkin_host_subject_id", curie=MIXS.curie('0000861'),
                    model_uri=MIXS.HumanSkin_host_subject_id, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HumanSkin_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HumanSkin_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HumanSkin_host_symbiont, domain=HumanSkin, range=Optional[str])
 
 slots.HumanSkin_host_tot_mass = Slot(uri=MIXS['0000263'], name="HumanSkin_host_tot_mass", curie=MIXS.curie('0000263'),
                    model_uri=MIXS.HumanSkin_host_tot_mass, domain=HumanSkin, range=Optional[str],
@@ -19652,9 +20600,6 @@ slots.HumanSkin_project_name = Slot(uri=MIXS['0000092'], name="HumanSkin_project
 slots.HumanSkin_salinity = Slot(uri=MIXS['0000183'], name="HumanSkin_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.HumanSkin_salinity, domain=HumanSkin, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HumanSkin_samp_name = Slot(uri=MIXS.samp_name, name="HumanSkin_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HumanSkin_samp_name, domain=HumanSkin, range=str)
 
 slots.HumanSkin_samp_store_dur = Slot(uri=MIXS['0000116'], name="HumanSkin_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HumanSkin_samp_store_dur, domain=HumanSkin, range=Optional[str],
@@ -19705,9 +20650,6 @@ slots.HumanVaginal_host_body_mass_index = Slot(uri=MIXS['0000317'], name="HumanV
                    model_uri=MIXS.HumanVaginal_host_body_mass_index, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanVaginal_host_body_product = Slot(uri=MIXS.host_body_product, name="HumanVaginal_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.HumanVaginal_host_body_product, domain=HumanVaginal, range=Optional[str])
-
 slots.HumanVaginal_host_body_site = Slot(uri=MIXS['0000867'], name="HumanVaginal_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.HumanVaginal_host_body_site, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -19723,9 +20665,6 @@ slots.HumanVaginal_host_diet = Slot(uri=MIXS['0000869'], name="HumanVaginal_host
 slots.HumanVaginal_host_disease_stat = Slot(uri=MIXS['0000031'], name="HumanVaginal_host_disease_stat", curie=MIXS.curie('0000031'),
                    model_uri=MIXS.HumanVaginal_host_disease_stat, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)'))
-
-slots.HumanVaginal_host_family_relation = Slot(uri=MIXS.host_family_relation, name="HumanVaginal_host_family_relation", curie=MIXS.curie('host_family_relation'),
-                   model_uri=MIXS.HumanVaginal_host_family_relation, domain=HumanVaginal, range=Optional[str])
 
 slots.HumanVaginal_host_genotype = Slot(uri=MIXS['0000365'], name="HumanVaginal_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.HumanVaginal_host_genotype, domain=HumanVaginal, range=Optional[str],
@@ -19749,15 +20688,9 @@ slots.HumanVaginal_host_pulse = Slot(uri=MIXS['0000333'], name="HumanVaginal_hos
                    model_uri=MIXS.HumanVaginal_host_pulse, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.HumanVaginal_host_sex = Slot(uri=MIXS.host_sex, name="HumanVaginal_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.HumanVaginal_host_sex, domain=HumanVaginal, range=Optional[str])
-
 slots.HumanVaginal_host_subject_id = Slot(uri=MIXS['0000861'], name="HumanVaginal_host_subject_id", curie=MIXS.curie('0000861'),
                    model_uri=MIXS.HumanVaginal_host_subject_id, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.HumanVaginal_host_symbiont = Slot(uri=MIXS.host_symbiont, name="HumanVaginal_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.HumanVaginal_host_symbiont, domain=HumanVaginal, range=Optional[str])
 
 slots.HumanVaginal_host_tot_mass = Slot(uri=MIXS['0000263'], name="HumanVaginal_host_tot_mass", curie=MIXS.curie('0000263'),
                    model_uri=MIXS.HumanVaginal_host_tot_mass, domain=HumanVaginal, range=Optional[str],
@@ -19804,9 +20737,6 @@ slots.HumanVaginal_project_name = Slot(uri=MIXS['0000092'], name="HumanVaginal_p
 slots.HumanVaginal_salinity = Slot(uri=MIXS['0000183'], name="HumanVaginal_salinity", curie=MIXS.curie('0000183'),
                    model_uri=MIXS.HumanVaginal_salinity, domain=HumanVaginal, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HumanVaginal_samp_name = Slot(uri=MIXS.samp_name, name="HumanVaginal_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HumanVaginal_samp_name, domain=HumanVaginal, range=str)
 
 slots.HumanVaginal_samp_salinity = Slot(uri=MIXS['0000109'], name="HumanVaginal_samp_salinity", curie=MIXS.curie('0000109'),
                    model_uri=MIXS.HumanVaginal_samp_salinity, domain=HumanVaginal, range=Optional[str],
@@ -20018,9 +20948,6 @@ slots.HydrocarbonResourcesCores_salinity = Slot(uri=MIXS['0000183'], name="Hydro
 slots.HydrocarbonResourcesCores_samp_md = Slot(uri=MIXS['0000413'], name="HydrocarbonResourcesCores_samp_md", curie=MIXS.curie('0000413'),
                    model_uri=MIXS.HydrocarbonResourcesCores_samp_md, domain=HydrocarbonResourcesCores, range=Optional[str])
 
-slots.HydrocarbonResourcesCores_samp_name = Slot(uri=MIXS.samp_name, name="HydrocarbonResourcesCores_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HydrocarbonResourcesCores_samp_name, domain=HydrocarbonResourcesCores, range=str)
-
 slots.HydrocarbonResourcesCores_samp_store_dur = Slot(uri=MIXS['0000116'], name="HydrocarbonResourcesCores_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.HydrocarbonResourcesCores_samp_store_dur, domain=HydrocarbonResourcesCores, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -20105,9 +21032,6 @@ slots.HydrocarbonResourcesCores_toluene = Slot(uri=MIXS['0000154'], name="Hydroc
 slots.HydrocarbonResourcesCores_tot_iron = Slot(uri=MIXS['0000105'], name="HydrocarbonResourcesCores_tot_iron", curie=MIXS.curie('0000105'),
                    model_uri=MIXS.HydrocarbonResourcesCores_tot_iron, domain=HydrocarbonResourcesCores, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HydrocarbonResourcesCores_tot_nitro = Slot(uri=MIXS.tot_nitro, name="HydrocarbonResourcesCores_tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.HydrocarbonResourcesCores_tot_nitro, domain=HydrocarbonResourcesCores, range=Optional[str])
 
 slots.HydrocarbonResourcesCores_tot_phosp = Slot(uri=MIXS['0000117'], name="HydrocarbonResourcesCores_tot_phosp", curie=MIXS.curie('0000117'),
                    model_uri=MIXS.HydrocarbonResourcesCores_tot_phosp, domain=HydrocarbonResourcesCores, range=Optional[str],
@@ -20340,9 +21264,6 @@ slots.HydrocarbonResourcesFluidsSwabs_samp_collect_point = Slot(uri=MIXS['000101
 slots.HydrocarbonResourcesFluidsSwabs_samp_loc_corr_rate = Slot(uri=MIXS['0000136'], name="HydrocarbonResourcesFluidsSwabs_samp_loc_corr_rate", curie=MIXS.curie('0000136'),
                    model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_samp_loc_corr_rate, domain=HydrocarbonResourcesFluidsSwabs, range=Optional[str])
 
-slots.HydrocarbonResourcesFluidsSwabs_samp_name = Slot(uri=MIXS.samp_name, name="HydrocarbonResourcesFluidsSwabs_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_samp_name, domain=HydrocarbonResourcesFluidsSwabs, range=str)
-
 slots.HydrocarbonResourcesFluidsSwabs_samp_preserv = Slot(uri=MIXS['0000463'], name="HydrocarbonResourcesFluidsSwabs_samp_preserv", curie=MIXS.curie('0000463'),
                    model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_samp_preserv, domain=HydrocarbonResourcesFluidsSwabs, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -20416,9 +21337,6 @@ slots.HydrocarbonResourcesFluidsSwabs_toluene = Slot(uri=MIXS['0000154'], name="
 slots.HydrocarbonResourcesFluidsSwabs_tot_iron = Slot(uri=MIXS['0000105'], name="HydrocarbonResourcesFluidsSwabs_tot_iron", curie=MIXS.curie('0000105'),
                    model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_tot_iron, domain=HydrocarbonResourcesFluidsSwabs, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.HydrocarbonResourcesFluidsSwabs_tot_nitro = Slot(uri=MIXS.tot_nitro, name="HydrocarbonResourcesFluidsSwabs_tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_tot_nitro, domain=HydrocarbonResourcesFluidsSwabs, range=Optional[str])
 
 slots.HydrocarbonResourcesFluidsSwabs_tot_phosp = Slot(uri=MIXS['0000117'], name="HydrocarbonResourcesFluidsSwabs_tot_phosp", curie=MIXS.curie('0000117'),
                    model_uri=MIXS.HydrocarbonResourcesFluidsSwabs_tot_phosp, domain=HydrocarbonResourcesFluidsSwabs, range=Optional[str],
@@ -20511,10 +21429,6 @@ slots.MicrobialMatBiofilm_chloride = Slot(uri=MIXS['0000429'], name="MicrobialMa
 
 slots.MicrobialMatBiofilm_chlorophyll = Slot(uri=MIXS['0000177'], name="MicrobialMatBiofilm_chlorophyll", curie=MIXS.curie('0000177'),
                    model_uri=MIXS.MicrobialMatBiofilm_chlorophyll, domain=MicrobialMatBiofilm, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.MicrobialMatBiofilm_depth = Slot(uri=MIXS['0000018'], name="MicrobialMatBiofilm_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MicrobialMatBiofilm_depth, domain=MicrobialMatBiofilm, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MicrobialMatBiofilm_diether_lipids = Slot(uri=MIXS['0000178'], name="MicrobialMatBiofilm_diether_lipids", curie=MIXS.curie('0000178'),
@@ -20653,9 +21567,6 @@ slots.MicrobialMatBiofilm_salinity = Slot(uri=MIXS['0000183'], name="MicrobialMa
                    model_uri=MIXS.MicrobialMatBiofilm_salinity, domain=MicrobialMatBiofilm, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.MicrobialMatBiofilm_samp_name = Slot(uri=MIXS.samp_name, name="MicrobialMatBiofilm_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MicrobialMatBiofilm_samp_name, domain=MicrobialMatBiofilm, range=str)
-
 slots.MicrobialMatBiofilm_samp_store_dur = Slot(uri=MIXS['0000116'], name="MicrobialMatBiofilm_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.MicrobialMatBiofilm_samp_store_dur, domain=MicrobialMatBiofilm, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -20696,9 +21607,6 @@ slots.MicrobialMatBiofilm_tot_carb = Slot(uri=MIXS['0000525'], name="MicrobialMa
                    model_uri=MIXS.MicrobialMatBiofilm_tot_carb, domain=MicrobialMatBiofilm, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.MicrobialMatBiofilm_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="MicrobialMatBiofilm_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
-                   model_uri=MIXS.MicrobialMatBiofilm_tot_nitro_content, domain=MicrobialMatBiofilm, range=Optional[str])
-
 slots.MicrobialMatBiofilm_tot_org_carb = Slot(uri=MIXS['0000533'], name="MicrobialMatBiofilm_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.MicrobialMatBiofilm_tot_org_carb, domain=MicrobialMatBiofilm, range=Optional[str])
 
@@ -20733,9 +21641,6 @@ slots.MigsBa_assembly_software = Slot(uri=MIXS['0000058'], name="MigsBa_assembly
                    model_uri=MIXS.MigsBa_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsBa_associated_resource = Slot(uri=MIXS['0000091'], name="MigsBa_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MigsBa_associated_resource, domain=None, range=Optional[str])
-
 slots.MigsBa_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsBa_biotic_relationship", curie=MIXS.curie('0000028'),
                    model_uri=MIXS.MigsBa_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
@@ -20748,10 +21653,6 @@ slots.MigsBa_compl_score = Slot(uri=MIXS['0000069'], name="MigsBa_compl_score", 
 slots.MigsBa_compl_software = Slot(uri=MIXS['0000070'], name="MigsBa_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.MigsBa_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.MigsBa_depth = Slot(uri=MIXS['0000018'], name="MigsBa_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MigsBa_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MigsBa_elev = Slot(uri=MIXS['0000093'], name="MigsBa_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MigsBa_elev, domain=None, range=Optional[str],
@@ -20863,18 +21764,9 @@ slots.MigsBa_ref_db = Slot(uri=MIXS['0000062'], name="MigsBa_ref_db", curie=MIXS
 slots.MigsBa_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="MigsBa_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.MigsBa_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.MigsBa_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MigsBa_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MigsBa_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MigsBa_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MigsBa_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MigsBa_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MigsBa_samp_mat_process = Slot(uri=MIXS['0000016'], name="MigsBa_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MigsBa_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MigsBa_samp_name = Slot(uri=MIXS.samp_name, name="MigsBa_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MigsBa_samp_name, domain=None, range=str)
 
 slots.MigsBa_samp_size = Slot(uri=MIXS['0000001'], name="MigsBa_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MigsBa_samp_size, domain=None, range=Optional[str],
@@ -20947,9 +21839,6 @@ slots.MigsEu_assembly_software = Slot(uri=MIXS['0000058'], name="MigsEu_assembly
                    model_uri=MIXS.MigsEu_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsEu_associated_resource = Slot(uri=MIXS['0000091'], name="MigsEu_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MigsEu_associated_resource, domain=None, range=Optional[str])
-
 slots.MigsEu_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsEu_biotic_relationship", curie=MIXS.curie('0000028'),
                    model_uri=MIXS.MigsEu_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
@@ -20962,10 +21851,6 @@ slots.MigsEu_compl_score = Slot(uri=MIXS['0000069'], name="MigsEu_compl_score", 
 slots.MigsEu_compl_software = Slot(uri=MIXS['0000070'], name="MigsEu_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.MigsEu_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.MigsEu_depth = Slot(uri=MIXS['0000018'], name="MigsEu_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MigsEu_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MigsEu_elev = Slot(uri=MIXS['0000093'], name="MigsEu_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MigsEu_elev, domain=None, range=Optional[str],
@@ -21078,18 +21963,9 @@ slots.MigsEu_ref_db = Slot(uri=MIXS['0000062'], name="MigsEu_ref_db", curie=MIXS
                    model_uri=MIXS.MigsEu_ref_db, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsEu_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MigsEu_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MigsEu_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MigsEu_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MigsEu_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MigsEu_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MigsEu_samp_mat_process = Slot(uri=MIXS['0000016'], name="MigsEu_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MigsEu_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MigsEu_samp_name = Slot(uri=MIXS.samp_name, name="MigsEu_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MigsEu_samp_name, domain=None, range=str)
 
 slots.MigsEu_samp_size = Slot(uri=MIXS['0000001'], name="MigsEu_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MigsEu_samp_size, domain=None, range=Optional[str],
@@ -21162,9 +22038,6 @@ slots.MigsOrg_assembly_software = Slot(uri=MIXS['0000058'], name="MigsOrg_assemb
                    model_uri=MIXS.MigsOrg_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsOrg_associated_resource = Slot(uri=MIXS['0000091'], name="MigsOrg_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MigsOrg_associated_resource, domain=None, range=Optional[str])
-
 slots.MigsOrg_collection_date = Slot(uri=MIXS['0000011'], name="MigsOrg_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MigsOrg_collection_date, domain=None, range=str)
 
@@ -21174,10 +22047,6 @@ slots.MigsOrg_compl_score = Slot(uri=MIXS['0000069'], name="MigsOrg_compl_score"
 slots.MigsOrg_compl_software = Slot(uri=MIXS['0000070'], name="MigsOrg_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.MigsOrg_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.MigsOrg_depth = Slot(uri=MIXS['0000018'], name="MigsOrg_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MigsOrg_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MigsOrg_elev = Slot(uri=MIXS['0000093'], name="MigsOrg_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MigsOrg_elev, domain=None, range=Optional[str],
@@ -21267,18 +22136,9 @@ slots.MigsOrg_ref_db = Slot(uri=MIXS['0000062'], name="MigsOrg_ref_db", curie=MI
                    model_uri=MIXS.MigsOrg_ref_db, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsOrg_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MigsOrg_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MigsOrg_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MigsOrg_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MigsOrg_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MigsOrg_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MigsOrg_samp_mat_process = Slot(uri=MIXS['0000016'], name="MigsOrg_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MigsOrg_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MigsOrg_samp_name = Slot(uri=MIXS.samp_name, name="MigsOrg_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MigsOrg_samp_name, domain=None, range=str)
 
 slots.MigsOrg_samp_size = Slot(uri=MIXS['0000001'], name="MigsOrg_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MigsOrg_samp_size, domain=None, range=Optional[str],
@@ -21344,9 +22204,6 @@ slots.MigsPl_assembly_software = Slot(uri=MIXS['0000058'], name="MigsPl_assembly
                    model_uri=MIXS.MigsPl_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsPl_associated_resource = Slot(uri=MIXS['0000091'], name="MigsPl_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MigsPl_associated_resource, domain=None, range=Optional[str])
-
 slots.MigsPl_collection_date = Slot(uri=MIXS['0000011'], name="MigsPl_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MigsPl_collection_date, domain=None, range=str)
 
@@ -21356,10 +22213,6 @@ slots.MigsPl_compl_score = Slot(uri=MIXS['0000069'], name="MigsPl_compl_score", 
 slots.MigsPl_compl_software = Slot(uri=MIXS['0000070'], name="MigsPl_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.MigsPl_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.MigsPl_depth = Slot(uri=MIXS['0000018'], name="MigsPl_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MigsPl_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MigsPl_elev = Slot(uri=MIXS['0000093'], name="MigsPl_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MigsPl_elev, domain=None, range=Optional[str],
@@ -21458,18 +22311,9 @@ slots.MigsPl_ref_db = Slot(uri=MIXS['0000062'], name="MigsPl_ref_db", curie=MIXS
                    model_uri=MIXS.MigsPl_ref_db, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsPl_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MigsPl_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MigsPl_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MigsPl_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MigsPl_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MigsPl_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MigsPl_samp_mat_process = Slot(uri=MIXS['0000016'], name="MigsPl_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MigsPl_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MigsPl_samp_name = Slot(uri=MIXS.samp_name, name="MigsPl_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MigsPl_samp_name, domain=None, range=str)
 
 slots.MigsPl_samp_size = Slot(uri=MIXS['0000001'], name="MigsPl_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MigsPl_samp_size, domain=None, range=Optional[str],
@@ -21539,9 +22383,6 @@ slots.MigsVi_assembly_software = Slot(uri=MIXS['0000058'], name="MigsVi_assembly
                    model_uri=MIXS.MigsVi_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsVi_associated_resource = Slot(uri=MIXS['0000091'], name="MigsVi_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MigsVi_associated_resource, domain=None, range=Optional[str])
-
 slots.MigsVi_biotic_relationship = Slot(uri=MIXS['0000028'], name="MigsVi_biotic_relationship", curie=MIXS.curie('0000028'),
                    model_uri=MIXS.MigsVi_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
@@ -21554,10 +22395,6 @@ slots.MigsVi_compl_score = Slot(uri=MIXS['0000069'], name="MigsVi_compl_score", 
 slots.MigsVi_compl_software = Slot(uri=MIXS['0000070'], name="MigsVi_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.MigsVi_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.MigsVi_depth = Slot(uri=MIXS['0000018'], name="MigsVi_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MigsVi_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MigsVi_elev = Slot(uri=MIXS['0000093'], name="MigsVi_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MigsVi_elev, domain=None, range=Optional[str],
@@ -21667,18 +22504,9 @@ slots.MigsVi_ref_db = Slot(uri=MIXS['0000062'], name="MigsVi_ref_db", curie=MIXS
                    model_uri=MIXS.MigsVi_ref_db, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MigsVi_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MigsVi_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MigsVi_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MigsVi_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MigsVi_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MigsVi_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MigsVi_samp_mat_process = Slot(uri=MIXS['0000016'], name="MigsVi_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MigsVi_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MigsVi_samp_name = Slot(uri=MIXS.samp_name, name="MigsVi_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MigsVi_samp_name, domain=None, range=str)
 
 slots.MigsVi_samp_size = Slot(uri=MIXS['0000001'], name="MigsVi_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MigsVi_samp_size, domain=None, range=Optional[str],
@@ -21751,9 +22579,6 @@ slots.Mimag_assembly_software = Slot(uri=MIXS['0000058'], name="Mimag_assembly_s
                    model_uri=MIXS.Mimag_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Mimag_associated_resource = Slot(uri=MIXS['0000091'], name="Mimag_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.Mimag_associated_resource, domain=None, range=Optional[str])
-
 slots.Mimag_bin_param = Slot(uri=MIXS['0000077'], name="Mimag_bin_param", curie=MIXS.curie('0000077'),
                    model_uri=MIXS.Mimag_bin_param, domain=None, range=str)
 
@@ -21784,10 +22609,6 @@ slots.Mimag_contam_screen_param = Slot(uri=MIXS['0000073'], name="Mimag_contam_s
 
 slots.Mimag_decontam_software = Slot(uri=MIXS['0000074'], name="Mimag_decontam_software", curie=MIXS.curie('0000074'),
                    model_uri=MIXS.Mimag_decontam_software, domain=None, range=Optional[str])
-
-slots.Mimag_depth = Slot(uri=MIXS['0000018'], name="Mimag_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Mimag_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Mimag_elev = Slot(uri=MIXS['0000093'], name="Mimag_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.Mimag_elev, domain=None, range=Optional[str],
@@ -21879,18 +22700,9 @@ slots.Mimag_ref_db = Slot(uri=MIXS['0000062'], name="Mimag_ref_db", curie=MIXS.c
 slots.Mimag_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="Mimag_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.Mimag_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.Mimag_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="Mimag_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.Mimag_samp_collec_device, domain=None, range=Optional[str])
-
-slots.Mimag_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="Mimag_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.Mimag_samp_collec_method, domain=None, range=Optional[str])
-
 slots.Mimag_samp_mat_process = Slot(uri=MIXS['0000016'], name="Mimag_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Mimag_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.Mimag_samp_name = Slot(uri=MIXS.samp_name, name="Mimag_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Mimag_samp_name, domain=None, range=str)
 
 slots.Mimag_samp_size = Slot(uri=MIXS['0000001'], name="Mimag_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.Mimag_samp_size, domain=None, range=Optional[str],
@@ -21945,9 +22757,6 @@ slots.MimarksC_alt = Slot(uri=MIXS['0000094'], name="MimarksC_alt", curie=MIXS.c
                    model_uri=MIXS.MimarksC_alt, domain=None, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.MimarksC_associated_resource = Slot(uri=MIXS['0000091'], name="MimarksC_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MimarksC_associated_resource, domain=None, range=Optional[str])
-
 slots.MimarksC_biotic_relationship = Slot(uri=MIXS['0000028'], name="MimarksC_biotic_relationship", curie=MIXS.curie('0000028'),
                    model_uri=MIXS.MimarksC_biotic_relationship, domain=None, range=Optional[Union[str, "BIOTICRELATIONSHIPENUM"]])
 
@@ -21956,10 +22765,6 @@ slots.MimarksC_chimera_check = Slot(uri=MIXS['0000052'], name="MimarksC_chimera_
 
 slots.MimarksC_collection_date = Slot(uri=MIXS['0000011'], name="MimarksC_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MimarksC_collection_date, domain=None, range=str)
-
-slots.MimarksC_depth = Slot(uri=MIXS['0000018'], name="MimarksC_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MimarksC_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MimarksC_elev = Slot(uri=MIXS['0000093'], name="MimarksC_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MimarksC_elev, domain=None, range=Optional[str],
@@ -22022,18 +22827,9 @@ slots.MimarksC_project_name = Slot(uri=MIXS['0000092'], name="MimarksC_project_n
 slots.MimarksC_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="MimarksC_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.MimarksC_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.MimarksC_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MimarksC_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MimarksC_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MimarksC_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MimarksC_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MimarksC_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MimarksC_samp_mat_process = Slot(uri=MIXS['0000016'], name="MimarksC_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MimarksC_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MimarksC_samp_name = Slot(uri=MIXS.samp_name, name="MimarksC_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MimarksC_samp_name, domain=None, range=str)
 
 slots.MimarksC_samp_size = Slot(uri=MIXS['0000001'], name="MimarksC_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MimarksC_samp_size, domain=None, range=Optional[str],
@@ -22091,18 +22887,11 @@ slots.MimarksS_assembly_software = Slot(uri=MIXS['0000058'], name="MimarksS_asse
                    model_uri=MIXS.MimarksS_assembly_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.MimarksS_associated_resource = Slot(uri=MIXS['0000091'], name="MimarksS_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.MimarksS_associated_resource, domain=None, range=Optional[str])
-
 slots.MimarksS_chimera_check = Slot(uri=MIXS['0000052'], name="MimarksS_chimera_check", curie=MIXS.curie('0000052'),
                    model_uri=MIXS.MimarksS_chimera_check, domain=None, range=Optional[str])
 
 slots.MimarksS_collection_date = Slot(uri=MIXS['0000011'], name="MimarksS_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.MimarksS_collection_date, domain=None, range=str)
-
-slots.MimarksS_depth = Slot(uri=MIXS['0000018'], name="MimarksS_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MimarksS_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.MimarksS_elev = Slot(uri=MIXS['0000093'], name="MimarksS_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.MimarksS_elev, domain=None, range=Optional[str],
@@ -22179,18 +22968,9 @@ slots.MimarksS_project_name = Slot(uri=MIXS['0000092'], name="MimarksS_project_n
 slots.MimarksS_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="MimarksS_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.MimarksS_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.MimarksS_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="MimarksS_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.MimarksS_samp_collec_device, domain=None, range=Optional[str])
-
-slots.MimarksS_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="MimarksS_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.MimarksS_samp_collec_method, domain=None, range=Optional[str])
-
 slots.MimarksS_samp_mat_process = Slot(uri=MIXS['0000016'], name="MimarksS_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.MimarksS_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.MimarksS_samp_name = Slot(uri=MIXS.samp_name, name="MimarksS_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MimarksS_samp_name, domain=None, range=str)
 
 slots.MimarksS_samp_size = Slot(uri=MIXS['0000001'], name="MimarksS_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.MimarksS_samp_size, domain=None, range=Optional[str],
@@ -22257,15 +23037,8 @@ slots.Mims_assembly_software = Slot(uri=MIXS['0000058'], name="Mims_assembly_sof
                    model_uri=MIXS.Mims_assembly_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Mims_associated_resource = Slot(uri=MIXS['0000091'], name="Mims_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.Mims_associated_resource, domain=None, range=Optional[str])
-
 slots.Mims_collection_date = Slot(uri=MIXS['0000011'], name="Mims_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.Mims_collection_date, domain=None, range=str)
-
-slots.Mims_depth = Slot(uri=MIXS['0000018'], name="Mims_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Mims_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Mims_elev = Slot(uri=MIXS['0000093'], name="Mims_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.Mims_elev, domain=None, range=Optional[str],
@@ -22351,18 +23124,9 @@ slots.Mims_ref_db = Slot(uri=MIXS['0000062'], name="Mims_ref_db", curie=MIXS.cur
 slots.Mims_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="Mims_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.Mims_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.Mims_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="Mims_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.Mims_samp_collec_device, domain=None, range=Optional[str])
-
-slots.Mims_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="Mims_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.Mims_samp_collec_method, domain=None, range=Optional[str])
-
 slots.Mims_samp_mat_process = Slot(uri=MIXS['0000016'], name="Mims_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Mims_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.Mims_samp_name = Slot(uri=MIXS.samp_name, name="Mims_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Mims_samp_name, domain=None, range=str)
 
 slots.Mims_samp_size = Slot(uri=MIXS['0000001'], name="Mims_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.Mims_samp_size, domain=None, range=Optional[str],
@@ -22426,9 +23190,6 @@ slots.Misag_assembly_software = Slot(uri=MIXS['0000058'], name="Misag_assembly_s
                    model_uri=MIXS.Misag_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Misag_associated_resource = Slot(uri=MIXS['0000091'], name="Misag_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.Misag_associated_resource, domain=None, range=Optional[str])
-
 slots.Misag_collection_date = Slot(uri=MIXS['0000011'], name="Misag_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.Misag_collection_date, domain=None, range=str)
 
@@ -22453,10 +23214,6 @@ slots.Misag_contam_screen_param = Slot(uri=MIXS['0000073'], name="Misag_contam_s
 
 slots.Misag_decontam_software = Slot(uri=MIXS['0000074'], name="Misag_decontam_software", curie=MIXS.curie('0000074'),
                    model_uri=MIXS.Misag_decontam_software, domain=None, range=Optional[str])
-
-slots.Misag_depth = Slot(uri=MIXS['0000018'], name="Misag_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Misag_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Misag_elev = Slot(uri=MIXS['0000093'], name="Misag_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.Misag_elev, domain=None, range=Optional[str],
@@ -22542,18 +23299,9 @@ slots.Misag_ref_db = Slot(uri=MIXS['0000062'], name="Misag_ref_db", curie=MIXS.c
 slots.Misag_rel_to_oxygen = Slot(uri=MIXS['0000015'], name="Misag_rel_to_oxygen", curie=MIXS.curie('0000015'),
                    model_uri=MIXS.Misag_rel_to_oxygen, domain=None, range=Optional[str])
 
-slots.Misag_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="Misag_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.Misag_samp_collec_device, domain=None, range=Optional[str])
-
-slots.Misag_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="Misag_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.Misag_samp_collec_method, domain=None, range=Optional[str])
-
 slots.Misag_samp_mat_process = Slot(uri=MIXS['0000016'], name="Misag_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Misag_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.Misag_samp_name = Slot(uri=MIXS.samp_name, name="Misag_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Misag_samp_name, domain=None, range=str)
 
 slots.Misag_samp_size = Slot(uri=MIXS['0000001'], name="Misag_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.Misag_samp_size, domain=None, range=Optional[str],
@@ -22660,10 +23408,6 @@ slots.MiscellaneousNaturalOrArtificialEnvironment_density = Slot(uri=MIXS['00004
                    model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_density, domain=MiscellaneousNaturalOrArtificialEnvironment, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.MiscellaneousNaturalOrArtificialEnvironment_depth = Slot(uri=MIXS['0000018'], name="MiscellaneousNaturalOrArtificialEnvironment_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_depth, domain=MiscellaneousNaturalOrArtificialEnvironment, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
 slots.MiscellaneousNaturalOrArtificialEnvironment_diether_lipids = Slot(uri=MIXS['0000178'], name="MiscellaneousNaturalOrArtificialEnvironment_diether_lipids", curie=MIXS.curie('0000178'),
                    model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_diether_lipids, domain=MiscellaneousNaturalOrArtificialEnvironment, range=Optional[str],
                    pattern=re.compile(r'(([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)'))
@@ -22756,9 +23500,6 @@ slots.MiscellaneousNaturalOrArtificialEnvironment_salinity = Slot(uri=MIXS['0000
                    model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_salinity, domain=MiscellaneousNaturalOrArtificialEnvironment, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.MiscellaneousNaturalOrArtificialEnvironment_samp_name = Slot(uri=MIXS.samp_name, name="MiscellaneousNaturalOrArtificialEnvironment_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_samp_name, domain=MiscellaneousNaturalOrArtificialEnvironment, range=str)
-
 slots.MiscellaneousNaturalOrArtificialEnvironment_samp_store_dur = Slot(uri=MIXS['0000116'], name="MiscellaneousNaturalOrArtificialEnvironment_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.MiscellaneousNaturalOrArtificialEnvironment_samp_store_dur, domain=MiscellaneousNaturalOrArtificialEnvironment, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -22822,9 +23563,6 @@ slots.Miuvig_assembly_software = Slot(uri=MIXS['0000058'], name="Miuvig_assembly
                    model_uri=MIXS.Miuvig_assembly_software, domain=None, range=str,
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Miuvig_associated_resource = Slot(uri=MIXS['0000091'], name="Miuvig_associated resource", curie=MIXS.curie('0000091'),
-                   model_uri=MIXS.Miuvig_associated_resource, domain=None, range=Optional[str])
-
 slots.Miuvig_bin_param = Slot(uri=MIXS['0000077'], name="Miuvig_bin_param", curie=MIXS.curie('0000077'),
                    model_uri=MIXS.Miuvig_bin_param, domain=None, range=Optional[str])
 
@@ -22846,10 +23584,6 @@ slots.Miuvig_compl_score = Slot(uri=MIXS['0000069'], name="Miuvig_compl_score", 
 slots.Miuvig_compl_software = Slot(uri=MIXS['0000070'], name="Miuvig_compl_software", curie=MIXS.curie('0000070'),
                    model_uri=MIXS.Miuvig_compl_software, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
-
-slots.Miuvig_depth = Slot(uri=MIXS['0000018'], name="Miuvig_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Miuvig_depth, domain=None, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Miuvig_detec_type = Slot(uri=MIXS['0000084'], name="Miuvig_detec_type", curie=MIXS.curie('0000084'),
                    model_uri=MIXS.Miuvig_detec_type, domain=None, range=str)
@@ -22980,18 +23714,9 @@ slots.Miuvig_ref_db = Slot(uri=MIXS['0000062'], name="Miuvig_ref_db", curie=MIXS
                    model_uri=MIXS.Miuvig_ref_db, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'))
 
-slots.Miuvig_samp_collec_device = Slot(uri=MIXS.samp_collec_device, name="Miuvig_samp_collec_device", curie=MIXS.curie('samp_collec_device'),
-                   model_uri=MIXS.Miuvig_samp_collec_device, domain=None, range=Optional[str])
-
-slots.Miuvig_samp_collec_method = Slot(uri=MIXS.samp_collec_method, name="Miuvig_samp_collec_method", curie=MIXS.curie('samp_collec_method'),
-                   model_uri=MIXS.Miuvig_samp_collec_method, domain=None, range=Optional[str])
-
 slots.Miuvig_samp_mat_process = Slot(uri=MIXS['0000016'], name="Miuvig_samp_mat_process", curie=MIXS.curie('0000016'),
                    model_uri=MIXS.Miuvig_samp_mat_process, domain=None, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.Miuvig_samp_name = Slot(uri=MIXS.samp_name, name="Miuvig_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Miuvig_samp_name, domain=None, range=str)
 
 slots.Miuvig_samp_size = Slot(uri=MIXS['0000001'], name="Miuvig_samp_size", curie=MIXS.curie('0000001'),
                    model_uri=MIXS.Miuvig_samp_size, domain=None, range=Optional[str],
@@ -23104,10 +23829,6 @@ slots.PlantAssociated_climate_environment = Slot(uri=MIXS['0001040'], name="Plan
 slots.PlantAssociated_cult_root_med = Slot(uri=MIXS['0001041'], name="PlantAssociated_cult_root_med", curie=MIXS.curie('0001041'),
                    model_uri=MIXS.PlantAssociated_cult_root_med, domain=PlantAssociated, range=Optional[str])
 
-slots.PlantAssociated_depth = Slot(uri=MIXS['0000018'], name="PlantAssociated_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.PlantAssociated_depth, domain=PlantAssociated, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
 slots.PlantAssociated_elev = Slot(uri=MIXS['0000093'], name="PlantAssociated_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.PlantAssociated_elev, domain=PlantAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -23184,9 +23905,6 @@ slots.PlantAssociated_host_phenotype = Slot(uri=MIXS['0000874'], name="PlantAsso
 slots.PlantAssociated_host_subspecf_genlin = Slot(uri=MIXS['0001318'], name="PlantAssociated_host_subspecf_genlin", curie=MIXS.curie('0001318'),
                    model_uri=MIXS.PlantAssociated_host_subspecf_genlin, domain=PlantAssociated, range=Optional[str])
 
-slots.PlantAssociated_host_symbiont = Slot(uri=MIXS.host_symbiont, name="PlantAssociated_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.PlantAssociated_host_symbiont, domain=PlantAssociated, range=Optional[str])
-
 slots.PlantAssociated_host_taxid = Slot(uri=MIXS['0000250'], name="PlantAssociated_host_taxid", curie=MIXS.curie('0000250'),
                    model_uri=MIXS.PlantAssociated_host_taxid, domain=PlantAssociated, range=Optional[int])
 
@@ -23215,8 +23933,9 @@ slots.PlantAssociated_misc_param = Slot(uri=MIXS['0000752'], name="PlantAssociat
                    model_uri=MIXS.PlantAssociated_misc_param, domain=PlantAssociated, range=Optional[str],
                    pattern=re.compile(r'(([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)'))
 
-slots.PlantAssociated_non_min_nutr_regm = Slot(uri=MIXS.non_min_nutr_regm, name="PlantAssociated_non_min_nutr_regm", curie=MIXS.curie('non_min_nutr_regm'),
-                   model_uri=MIXS.PlantAssociated_non_min_nutr_regm, domain=PlantAssociated, range=Optional[str])
+slots.PlantAssociated_non_mineral_nutr_regm = Slot(uri=MIXS['0000571'], name="PlantAssociated_non_mineral_nutr_regm", curie=MIXS.curie('0000571'),
+                   model_uri=MIXS.PlantAssociated_non_mineral_nutr_regm, domain=PlantAssociated, range=Optional[str],
+                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*;R[+-]?[1-9][0-9]*/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/\d{4}-\d\d-\d\d[Tt]\d\d:\d\d(:\d\d(\.\d+)?([Zz]|[\+\-]\d\d:\d\d)?)?/P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
 
 slots.PlantAssociated_organism_count = Slot(uri=MIXS['0000103'], name="PlantAssociated_organism_count", curie=MIXS.curie('0000103'),
                    model_uri=MIXS.PlantAssociated_organism_count, domain=PlantAssociated, range=Optional[str])
@@ -23302,9 +24021,6 @@ slots.PlantAssociated_samp_capt_status = Slot(uri=MIXS['0000860'], name="PlantAs
 
 slots.PlantAssociated_samp_dis_stage = Slot(uri=MIXS['0000249'], name="PlantAssociated_samp_dis_stage", curie=MIXS.curie('0000249'),
                    model_uri=MIXS.PlantAssociated_samp_dis_stage, domain=PlantAssociated, range=Optional[str])
-
-slots.PlantAssociated_samp_name = Slot(uri=MIXS.samp_name, name="PlantAssociated_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.PlantAssociated_samp_name, domain=PlantAssociated, range=str)
 
 slots.PlantAssociated_samp_store_dur = Slot(uri=MIXS['0000116'], name="PlantAssociated_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.PlantAssociated_samp_store_dur, domain=PlantAssociated, range=Optional[str],
@@ -23394,10 +24110,6 @@ slots.Sediment_chlorophyll = Slot(uri=MIXS['0000177'], name="Sediment_chlorophyl
 
 slots.Sediment_density = Slot(uri=MIXS['0000435'], name="Sediment_density", curie=MIXS.curie('0000435'),
                    model_uri=MIXS.Sediment_density, domain=Sediment, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Sediment_depth = Slot(uri=MIXS['0000018'], name="Sediment_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Sediment_depth, domain=Sediment, range=str,
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Sediment_diether_lipids = Slot(uri=MIXS['0000178'], name="Sediment_diether_lipids", curie=MIXS.curie('0000178'),
@@ -23543,9 +24255,6 @@ slots.Sediment_salinity = Slot(uri=MIXS['0000183'], name="Sediment_salinity", cu
                    model_uri=MIXS.Sediment_salinity, domain=Sediment, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Sediment_samp_name = Slot(uri=MIXS.samp_name, name="Sediment_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Sediment_samp_name, domain=Sediment, range=str)
-
 slots.Sediment_samp_store_dur = Slot(uri=MIXS['0000116'], name="Sediment_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.Sediment_samp_store_dur, domain=Sediment, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -23596,9 +24305,6 @@ slots.Sediment_tot_depth_water_col = Slot(uri=MIXS['0000634'], name="Sediment_to
                    model_uri=MIXS.Sediment_tot_depth_water_col, domain=Sediment, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Sediment_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="Sediment_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
-                   model_uri=MIXS.Sediment_tot_nitro_content, domain=Sediment, range=Optional[str])
-
 slots.Sediment_tot_org_carb = Slot(uri=MIXS['0000533'], name="Sediment_tot_org_carb", curie=MIXS.curie('0000533'),
                    model_uri=MIXS.Sediment_tot_org_carb, domain=Sediment, range=Optional[str])
 
@@ -23642,10 +24348,6 @@ slots.Soil_cur_vegetation = Slot(uri=MIXS['0000312'], name="Soil_cur_vegetation"
 slots.Soil_cur_vegetation_meth = Slot(uri=MIXS['0000314'], name="Soil_cur_vegetation_meth", curie=MIXS.curie('0000314'),
                    model_uri=MIXS.Soil_cur_vegetation_meth, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
-slots.Soil_depth = Slot(uri=MIXS['0000018'], name="Soil_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Soil_depth, domain=Soil, range=str,
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Soil_drainage_class = Slot(uri=MIXS['0001085'], name="Soil_drainage_class", curie=MIXS.curie('0001085'),
                    model_uri=MIXS.Soil_drainage_class, domain=Soil, range=Optional[Union[str, "DRAINAGECLASSENUM"]])
@@ -23698,10 +24400,6 @@ slots.Soil_local_class_meth = Slot(uri=MIXS['0000331'], name="Soil_local_class_m
                    model_uri=MIXS.Soil_local_class_meth, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
-slots.Soil_micro_biomass_meth = Slot(uri=MIXS['0000339'], name="Soil_micro_biomass_meth", curie=MIXS.curie('0000339'),
-                   model_uri=MIXS.Soil_micro_biomass_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
 slots.Soil_microbial_biomass = Slot(uri=MIXS['0000650'], name="Soil_microbial_biomass", curie=MIXS.curie('0000650'),
                    model_uri=MIXS.Soil_microbial_biomass, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
@@ -23728,11 +24426,12 @@ slots.Soil_ph_meth = Slot(uri=MIXS['0001106'], name="Soil_ph_meth", curie=MIXS.c
 slots.Soil_pool_dna_extracts = Slot(uri=MIXS['0000325'], name="Soil_pool_dna_extracts", curie=MIXS.curie('0000325'),
                    model_uri=MIXS.Soil_pool_dna_extracts, domain=Soil, range=Optional[str])
 
-slots.Soil_prev_land_use_meth = Slot(uri=MIXS.prev_land_use_meth, name="Soil_prev_land_use_meth", curie=MIXS.curie('prev_land_use_meth'),
-                   model_uri=MIXS.Soil_prev_land_use_meth, domain=Soil, range=Optional[str])
-
 slots.Soil_previous_land_use = Slot(uri=MIXS['0000315'], name="Soil_previous_land_use", curie=MIXS.curie('0000315'),
                    model_uri=MIXS.Soil_previous_land_use, domain=Soil, range=Optional[str])
+
+slots.Soil_previous_land_use_meth = Slot(uri=MIXS['0000316'], name="Soil_previous_land_use_meth", curie=MIXS.curie('0000316'),
+                   model_uri=MIXS.Soil_previous_land_use_meth, domain=Soil, range=Optional[str],
+                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
 
 slots.Soil_profile_position = Slot(uri=MIXS['0001084'], name="Soil_profile_position", curie=MIXS.curie('0001084'),
                    model_uri=MIXS.Soil_profile_position, domain=Soil, range=Optional[Union[str, "PROFILEPOSITIONENUM"]])
@@ -23744,9 +24443,6 @@ slots.Soil_project_name = Slot(uri=MIXS['0000092'], name="Soil_project_name", cu
 slots.Soil_salinity_meth = Slot(uri=MIXS['0000341'], name="Soil_salinity_meth", curie=MIXS.curie('0000341'),
                    model_uri=MIXS.Soil_salinity_meth, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
-slots.Soil_samp_name = Slot(uri=MIXS.samp_name, name="Soil_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Soil_samp_name, domain=Soil, range=str)
 
 slots.Soil_samp_vol_we_dna_ext = Slot(uri=MIXS['0000111'], name="Soil_samp_vol_we_dna_ext", curie=MIXS.curie('0000111'),
                    model_uri=MIXS.Soil_samp_vol_we_dna_ext, domain=Soil, range=Optional[str],
@@ -23771,17 +24467,6 @@ slots.Soil_slope_gradient = Slot(uri=MIXS['0000646'], name="Soil_slope_gradient"
                    model_uri=MIXS.Soil_slope_gradient, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Soil_soil_horizon = Slot(uri=MIXS.soil_horizon, name="Soil_soil_horizon", curie=MIXS.curie('soil_horizon'),
-                   model_uri=MIXS.Soil_soil_horizon, domain=Soil, range=Optional[str])
-
-slots.Soil_soil_text_measure = Slot(uri=MIXS['0000335'], name="Soil_soil_text_measure", curie=MIXS.curie('0000335'),
-                   model_uri=MIXS.Soil_soil_text_measure, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Soil_soil_texture_meth = Slot(uri=MIXS['0000336'], name="Soil_soil_texture_meth", curie=MIXS.curie('0000336'),
-                   model_uri=MIXS.Soil_soil_texture_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
 slots.Soil_soil_type = Slot(uri=MIXS['0000332'], name="Soil_soil_type", curie=MIXS.curie('0000332'),
                    model_uri=MIXS.Soil_soil_type, domain=Soil, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -23800,13 +24485,6 @@ slots.Soil_temp = Slot(uri=MIXS['0000113'], name="Soil_temp", curie=MIXS.curie('
 
 slots.Soil_tillage = Slot(uri=MIXS['0001081'], name="Soil_tillage", curie=MIXS.curie('0001081'),
                    model_uri=MIXS.Soil_tillage, domain=Soil, range=Optional[Union[Union[str, "TILLAGEENUM"], List[Union[str, "TILLAGEENUM"]]]])
-
-slots.Soil_tot_nitro_cont_meth = Slot(uri=MIXS['0000338'], name="Soil_tot_nitro_cont_meth", curie=MIXS.curie('0000338'),
-                   model_uri=MIXS.Soil_tot_nitro_cont_meth, domain=Soil, range=Optional[str],
-                   pattern=re.compile(r'(10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])'))
-
-slots.Soil_tot_nitro_content = Slot(uri=MIXS.tot_nitro_content, name="Soil_tot_nitro_content", curie=MIXS.curie('tot_nitro_content'),
-                   model_uri=MIXS.Soil_tot_nitro_content, domain=Soil, range=Optional[str])
 
 slots.Soil_tot_org_c_meth = Slot(uri=MIXS['0000337'], name="Soil_tot_org_c_meth", curie=MIXS.curie('0000337'),
                    model_uri=MIXS.Soil_tot_org_c_meth, domain=Soil, range=Optional[str],
@@ -23836,10 +24514,6 @@ slots.SymbiontAssociated_chem_administration = Slot(uri=MIXS['0000751'], name="S
 
 slots.SymbiontAssociated_collection_date = Slot(uri=MIXS['0000011'], name="SymbiontAssociated_collection_date", curie=MIXS.curie('0000011'),
                    model_uri=MIXS.SymbiontAssociated_collection_date, domain=SymbiontAssociated, range=str)
-
-slots.SymbiontAssociated_depth = Slot(uri=MIXS['0000018'], name="SymbiontAssociated_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.SymbiontAssociated_depth, domain=SymbiontAssociated, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.SymbiontAssociated_elev = Slot(uri=MIXS['0000093'], name="SymbiontAssociated_elev", curie=MIXS.curie('0000093'),
                    model_uri=MIXS.SymbiontAssociated_elev, domain=SymbiontAssociated, range=Optional[str],
@@ -23872,9 +24546,6 @@ slots.SymbiontAssociated_host_body_habitat = Slot(uri=MIXS['0000866'], name="Sym
                    model_uri=MIXS.SymbiontAssociated_host_body_habitat, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
 
-slots.SymbiontAssociated_host_body_product = Slot(uri=MIXS.host_body_product, name="SymbiontAssociated_host_body_product", curie=MIXS.curie('host_body_product'),
-                   model_uri=MIXS.SymbiontAssociated_host_body_product, domain=SymbiontAssociated, range=Optional[str])
-
 slots.SymbiontAssociated_host_body_site = Slot(uri=MIXS['0000867'], name="SymbiontAssociated_host_body_site", curie=MIXS.curie('0000867'),
                    model_uri=MIXS.SymbiontAssociated_host_body_site, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
@@ -23896,9 +24567,6 @@ slots.SymbiontAssociated_host_dependence = Slot(uri=MIXS['0001315'], name="Symbi
 slots.SymbiontAssociated_host_dry_mass = Slot(uri=MIXS['0000257'], name="SymbiontAssociated_host_dry_mass", curie=MIXS.curie('0000257'),
                    model_uri=MIXS.SymbiontAssociated_host_dry_mass, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.SymbiontAssociated_host_family_relationship = Slot(uri=MIXS['0000872'], name="SymbiontAssociated_host_family_relationship", curie=MIXS.curie('0000872'),
-                   model_uri=MIXS.SymbiontAssociated_host_family_relationship, domain=SymbiontAssociated, range=Optional[str])
 
 slots.SymbiontAssociated_host_genotype = Slot(uri=MIXS['0000365'], name="SymbiontAssociated_host_genotype", curie=MIXS.curie('0000365'),
                    model_uri=MIXS.SymbiontAssociated_host_genotype, domain=SymbiontAssociated, range=Optional[str],
@@ -23985,9 +24653,6 @@ slots.SymbiontAssociated_host_phenotype = Slot(uri=MIXS['0000874'], name="Symbio
                    model_uri=MIXS.SymbiontAssociated_host_phenotype, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'))
 
-slots.SymbiontAssociated_host_sex = Slot(uri=MIXS.host_sex, name="SymbiontAssociated_host_sex", curie=MIXS.curie('host_sex'),
-                   model_uri=MIXS.SymbiontAssociated_host_sex, domain=SymbiontAssociated, range=Optional[str])
-
 slots.SymbiontAssociated_host_shape = Slot(uri=MIXS['0000261'], name="SymbiontAssociated_host_shape", curie=MIXS.curie('0000261'),
                    model_uri=MIXS.SymbiontAssociated_host_shape, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -24002,9 +24667,6 @@ slots.SymbiontAssociated_host_subject_id = Slot(uri=MIXS['0000861'], name="Symbi
 slots.SymbiontAssociated_host_substrate = Slot(uri=MIXS['0000252'], name="SymbiontAssociated_host_substrate", curie=MIXS.curie('0000252'),
                    model_uri=MIXS.SymbiontAssociated_host_substrate, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.SymbiontAssociated_host_symbiont = Slot(uri=MIXS.host_symbiont, name="SymbiontAssociated_host_symbiont", curie=MIXS.curie('host_symbiont'),
-                   model_uri=MIXS.SymbiontAssociated_host_symbiont, domain=SymbiontAssociated, range=Optional[str])
 
 slots.SymbiontAssociated_host_taxid = Slot(uri=MIXS['0000250'], name="SymbiontAssociated_host_taxid", curie=MIXS.curie('0000250'),
                    model_uri=MIXS.SymbiontAssociated_host_taxid, domain=SymbiontAssociated, range=Optional[int])
@@ -24064,10 +24726,6 @@ slots.SymbiontAssociated_samp_vol_we_dna_ext = Slot(uri=MIXS['0000111'], name="S
                    model_uri=MIXS.SymbiontAssociated_samp_vol_we_dna_ext, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.SymbiontAssociated_sample_name = Slot(uri=MIXS['0001107'], name="SymbiontAssociated_sample_name", curie=MIXS.curie('0001107'),
-                   model_uri=MIXS.SymbiontAssociated_sample_name, domain=SymbiontAssociated, range=Union[str, SymbiontAssociatedSampleName],
-                   pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
 slots.SymbiontAssociated_source_mat_id = Slot(uri=MIXS['0000026'], name="SymbiontAssociated_source_mat_id", curie=MIXS.curie('0000026'),
                    model_uri=MIXS.SymbiontAssociated_source_mat_id, domain=SymbiontAssociated, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
@@ -24098,10 +24756,6 @@ slots.WastewaterSludge_chem_administration = Slot(uri=MIXS['0000751'], name="Was
 
 slots.WastewaterSludge_chem_oxygen_dem = Slot(uri=MIXS['0000656'], name="WastewaterSludge_chem_oxygen_dem", curie=MIXS.curie('0000656'),
                    model_uri=MIXS.WastewaterSludge_chem_oxygen_dem, domain=WastewaterSludge, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.WastewaterSludge_depth = Slot(uri=MIXS['0000018'], name="WastewaterSludge_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.WastewaterSludge_depth, domain=WastewaterSludge, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.WastewaterSludge_efficiency_percent = Slot(uri=MIXS['0000657'], name="WastewaterSludge_efficiency_percent", curie=MIXS.curie('0000657'),
@@ -24172,9 +24826,6 @@ slots.WastewaterSludge_salinity = Slot(uri=MIXS['0000183'], name="WastewaterSlud
                    model_uri=MIXS.WastewaterSludge_salinity, domain=WastewaterSludge, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.WastewaterSludge_samp_name = Slot(uri=MIXS.samp_name, name="WastewaterSludge_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.WastewaterSludge_samp_name, domain=WastewaterSludge, range=str)
-
 slots.WastewaterSludge_samp_store_dur = Slot(uri=MIXS['0000116'], name="WastewaterSludge_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.WastewaterSludge_samp_store_dur, domain=WastewaterSludge, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -24226,9 +24877,6 @@ slots.WastewaterSludge_temp = Slot(uri=MIXS['0000113'], name="WastewaterSludge_t
 slots.WastewaterSludge_tertiary_treatment = Slot(uri=MIXS['0000352'], name="WastewaterSludge_tertiary_treatment", curie=MIXS.curie('0000352'),
                    model_uri=MIXS.WastewaterSludge_tertiary_treatment, domain=WastewaterSludge, range=Optional[str],
                    pattern=re.compile(r'[^s\|][^\r\n\t\|]*'))
-
-slots.WastewaterSludge_tot_nitro = Slot(uri=MIXS.tot_nitro, name="WastewaterSludge_tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.WastewaterSludge_tot_nitro, domain=WastewaterSludge, range=Optional[str])
 
 slots.WastewaterSludge_tot_phosphate = Slot(uri=MIXS['0000689'], name="WastewaterSludge_tot_phosphate", curie=MIXS.curie('0000689'),
                    model_uri=MIXS.WastewaterSludge_tot_phosphate, domain=WastewaterSludge, range=Optional[str],
@@ -24310,10 +24958,6 @@ slots.Water_conduc = Slot(uri=MIXS['0000692'], name="Water_conduc", curie=MIXS.c
 
 slots.Water_density = Slot(uri=MIXS['0000435'], name="Water_density", curie=MIXS.curie('0000435'),
                    model_uri=MIXS.Water_density, domain=Water, range=Optional[str],
-                   pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Water_depth = Slot(uri=MIXS['0000018'], name="Water_depth", curie=MIXS.curie('0000018'),
-                   model_uri=MIXS.Water_depth, domain=Water, range=str,
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
 slots.Water_diether_lipids = Slot(uri=MIXS['0000178'], name="Water_diether_lipids", curie=MIXS.curie('0000178'),
@@ -24480,9 +25124,6 @@ slots.Water_salinity = Slot(uri=MIXS['0000183'], name="Water_salinity", curie=MI
                    model_uri=MIXS.Water_salinity, domain=Water, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
 
-slots.Water_samp_name = Slot(uri=MIXS.samp_name, name="Water_samp_name", curie=MIXS.curie('samp_name'),
-                   model_uri=MIXS.Water_samp_name, domain=Water, range=str)
-
 slots.Water_samp_store_dur = Slot(uri=MIXS['0000116'], name="Water_samp_store_dur", curie=MIXS.curie('0000116'),
                    model_uri=MIXS.Water_samp_store_dur, domain=Water, range=Optional[str],
                    pattern=re.compile(r'P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'))
@@ -24549,9 +25190,6 @@ slots.Water_tot_diss_nitro = Slot(uri=MIXS['0000744'], name="Water_tot_diss_nitr
 slots.Water_tot_inorg_nitro = Slot(uri=MIXS['0000745'], name="Water_tot_inorg_nitro", curie=MIXS.curie('0000745'),
                    model_uri=MIXS.Water_tot_inorg_nitro, domain=Water, range=Optional[str],
                    pattern=re.compile(r'[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'))
-
-slots.Water_tot_nitro = Slot(uri=MIXS.tot_nitro, name="Water_tot_nitro", curie=MIXS.curie('tot_nitro'),
-                   model_uri=MIXS.Water_tot_nitro, domain=Water, range=Optional[str])
 
 slots.Water_tot_part_carb = Slot(uri=MIXS['0000747'], name="Water_tot_part_carb", curie=MIXS.curie('0000747'),
                    model_uri=MIXS.Water_tot_part_carb, domain=Water, range=Optional[str],

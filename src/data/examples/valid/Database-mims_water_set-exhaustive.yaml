@@ -1,6 +1,6 @@
 mims_water_set:
-  - samp_name: xxx1
-    adapters: AAA;TTT
+  - adapters: AAA;TTT
+#    samp_name: xxx1
     alkalinity: 123 units
     alkalinity_method: xxx
     alkyl_diethers: 123 units
@@ -27,7 +27,7 @@ mims_water_set:
     collection_date: xxx
     conduc: 123 units
     density: 123 units
-    depth: 123 units
+#    depth: 123 units
     diether_lipids: xxx;123 units|abc;123 units
     diss_carb_dioxide: 123 units
     diss_hydrogen: 123 units
@@ -91,8 +91,8 @@ mims_water_set:
     ref_db: xxx;xxx;xxx
     rel_to_oxygen: microaerophilic
     salinity: 123 units
-    samp_collec_device: xxx
-    samp_collec_method: PMID:1234567
+#    samp_collec_device: xxx
+#    samp_collec_method: PMID:1234567
     samp_mat_process: xxx
     samp_size: 123 units
     samp_store_dur: P1D
@@ -119,7 +119,7 @@ mims_water_set:
     tot_depth_water_col: 123 units
     tot_diss_nitro: 123 units
     tot_inorg_nitro: 123 units
-    tot_nitro: 123 units
+#    tot_nitro: 123 units
     tot_part_carb: 123 units
     tot_phosp: 123 units
     turbidity: 123 units

@@ -1,0 +1,47 @@
+class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
+> class	title	aliases	class_uri	description	in_subset	is_a	mixin	mixins
+>		"internal_separator: ""|"""			"internal_separator: ""|"""			"internal_separator: ""|"""
+MigsBa	migs_ba		MIXS:0010003	placeholder description; linter will ignore this		Checklist	TRUE	
+MigsEu	migs_eu		MIXS:0010002	placeholder description; linter will ignore this		Checklist	TRUE	
+MigsOrg	migs_org		MIXS:0010006	placeholder description; linter will ignore this		Checklist	TRUE	
+MigsPl	migs_pl		MIXS:0010004	placeholder description; linter will ignore this		Checklist	TRUE	
+MigsVi	migs_vi		MIXS:0010005	placeholder description; linter will ignore this		Checklist	TRUE	
+Mimag	mimag		MIXS:0010011	placeholder description; linter will ignore this		Checklist	TRUE	
+MimarksC	mimarks_c		MIXS:0010009	placeholder description; linter will ignore this		Checklist	TRUE	
+MimarksS	mimarks_s		MIXS:0010008	placeholder description; linter will ignore this		Checklist	TRUE	
+Mims	mims		MIXS:0010007	placeholder description; linter will ignore this		Checklist	TRUE	
+Misag	misag		MIXS:0010010	placeholder description; linter will ignore this		Checklist	TRUE	
+Miuvig	miuvig		MIXS:0010012	placeholder description; linter will ignore this		Checklist	TRUE	
+Agriculture	agriculture		MIXS:0016018	placeholder description; linter will ignore this		EnvironmentalPackage		
+Air	air		MIXS:0016000	placeholder description; linter will ignore this		EnvironmentalPackage		
+BuiltEnvironment	built environment		MIXS:0016001	placeholder description; linter will ignore this		EnvironmentalPackage		
+FoodAnimalAndAnimalFeed	food-animal and animal feed		MIXS:0016019	placeholder description; linter will ignore this		EnvironmentalPackage		
+FoodFarmEnvironment	food-farm environment		MIXS:0016020	placeholder description; linter will ignore this		EnvironmentalPackage		
+FoodFoodProductionFacility	food-food production facility		MIXS:0016021	placeholder description; linter will ignore this		EnvironmentalPackage		
+FoodHumanFoods	food-human foods		MIXS:0016022	placeholder description; linter will ignore this		EnvironmentalPackage		
+HostAssociated	host-associated		MIXS:0016002	placeholder description; linter will ignore this		EnvironmentalPackage		
+HumanAssociated	human-associated		MIXS:0016003	placeholder description; linter will ignore this		EnvironmentalPackage		
+HumanGut	human-gut		MIXS:0016004	placeholder description; linter will ignore this		EnvironmentalPackage		
+HumanOral	human-oral		MIXS:0016005	placeholder description; linter will ignore this		EnvironmentalPackage		
+HumanSkin	human-skin		MIXS:0016006	placeholder description; linter will ignore this		EnvironmentalPackage		
+HumanVaginal	human-vaginal		MIXS:0016007	placeholder description; linter will ignore this		EnvironmentalPackage		
+HydrocarbonResourcesCores	hydrocarbon resources-cores		MIXS:0016015	placeholder description; linter will ignore this		EnvironmentalPackage		
+HydrocarbonResourcesFluidsSwabs	hydrocarbon resources-fluids/swabs		MIXS:0016016	placeholder description; linter will ignore this		EnvironmentalPackage		
+MicrobialMatBiofilm	microbial mat/biofilm		MIXS:0016008	placeholder description; linter will ignore this		EnvironmentalPackage		
+MiscellaneousNaturalOrArtificialEnvironment	miscellaneous natural or artificial environment		MIXS:0016009	placeholder description; linter will ignore this		EnvironmentalPackage		
+PlantAssociated	plant-associated		MIXS:0016010	placeholder description; linter will ignore this		EnvironmentalPackage		
+Sediment	sediment		MIXS:0016011	placeholder description; linter will ignore this		EnvironmentalPackage		
+Soil	soil		MIXS:0016012	placeholder description; linter will ignore this		EnvironmentalPackage		
+SymbiontAssociated	symbiont-associated		MIXS:0016023	placeholder description; linter will ignore this		EnvironmentalPackage		
+WastewaterSludge	wastewater/sludge		MIXS:0016013	placeholder description; linter will ignore this		EnvironmentalPackage		
+Water	water		MIXS:0016014	placeholder description; linter will ignore this		EnvironmentalPackage		
+Checklist				placeholder description; linter will ignore this				
+EnvironmentalPackage				placeholder description; linter will ignore this				
+MigsBaPlantAssociated	plant-associated sample according to the MigsBa checklist		MIXS:0010003_0016010	placeholder description; linter will ignore this		PlantAssociated		MigsBa
+MigsBaSediment	sediment sample according to the MigsBa checklist		MIXS:0010003_0016011	placeholder description; linter will ignore this		Sediment		MigsBa
+MigsBaSoil	soil sample according to the MigsBa checklist		MIXS:0010003_0016012	placeholder description; linter will ignore this		Soil		MigsBa
+MimsPlantAssociated	plant-associated sample according to the Mims checklist		MIXS:0010007_0016010	placeholder description; linter will ignore this		PlantAssociated		Mims
+MimsSediment	sediment sample according to the Mims checklist		MIXS:0010007_0016011	placeholder description; linter will ignore this		Sediment		Mims
+MimsSoil	soil sample according to the Mims checklist		MIXS:0010007_0016012	placeholder description; linter will ignore this		Soil		Mims
+MimsWater	soil sample according to the Mims checklist		MIXS:0010007_0016012	placeholder description; linter will ignore this		Water		Mims
+MigsBaWater	soil sample according to the MigsBa checklist		MIXS:0010003_0016012	placeholder description; linter will ignore this		Water		MigsBa

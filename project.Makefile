@@ -65,6 +65,7 @@ proj_clean: target_cleanup downloads_cleanup reports_cleanup data_cleanup
 	rm -rf src/mixs_subset_examples_first/schema/*.yaml*
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first_materialized_patterns.yaml
+	rm -rf reports/mixs_subset_examples_first_materialized_patterns.yaml.linting.tsv
 	mkdir -p docs
 	mkdir -p project
 	mkdir -p site
@@ -111,16 +112,16 @@ downloads_cleanup:
 
 reports_cleanup:
 #	rm -rf downloads
-	mkdir -p downloads
-	touch downloads/.gitkeep
+	mkdir -p reports
+	touch reports/.gitkeep
 	rm -rf reports/report_pre_*_contradictions.yaml
 	rm -rf reports/report_post_*_contradictions.yaml
 	rm -rf reports/Database-mimssoil_set-example.yaml.check-jsonschema.log
 
 data_cleanup:
 #	rm -rf downloads
-	mkdir -p downloads
-	touch downloads/.gitkeep
+	mkdir -p data
+	touch data/.gitkeep
 	rm -rf data/core_requirements.tsv
 	rm -rf data/mixs_v6_asserted_and_combinations.tsv
 	rm -rf data/mixs_v6_checklists_env_packages_combination_classes.tsv
@@ -609,24 +610,35 @@ data/database_slots.tsv: data/mixs_v6_asserted_and_combinations.tsv
 # creating data/database_slots_curated.tsv
 # add a second header row with LinkML column specifications
 
-src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml: data/codified_env_package_requirements_curated.tsv \
-data/core_requirements_recommended_required_curated.tsv \
-data/database_slots_curated.tsv \
-data/enums.tsv \
-data/mixs_combined_all_modified_lossy_deduped.tsv \
-data/mixs_v6_asserted_and_combinations.tsv \
-data/prefixes.tsv \
-data/schema.tsv
+#src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml: data/codified_env_package_requirements_curated.tsv \
+#data/core_requirements_recommended_required_curated.tsv \
+#data/database_slots_curated.tsv \
+#data/enums.tsv \
+#data/mixs_combined_all_modified_lossy_deduped.tsv \
+#data/mixs_v6_asserted_and_combinations.tsv \
+#data/prefixes.tsv \
+#data/schema.tsv
+#	$(RUN) sheets2linkml $^ > $@.tmp
+#	yq eval-all -i 'select(fileIndex==0).settings = select(fileIndex==1).settings | select(fileIndex==0)' $@.tmp data/settings.yaml
+#	poetry run add_interpolations \
+#		--input-file $@.tmp \
+#		--output-file $@
+#	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+#	rm -rf $@.tmp
+
+
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat_only.yaml: data/schema.tsv \
+data/prefixes.tsv data/classdefs.tsv data/mixs_combined_slotdefs.tsv data/database_slots_curated.tsv data/enums.tsv data/hand_stacked_for_slot_usages.csv
 	$(RUN) sheets2linkml $^ > $@.tmp
 	yq eval-all -i 'select(fileIndex==0).settings = select(fileIndex==1).settings | select(fileIndex==0)' $@.tmp data/settings.yaml
 	poetry run add_interpolations \
 		--input-file $@.tmp \
 		--output-file $@
-	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+#	rm -rf src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	rm -rf $@.tmp
 
 
-src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat.yaml
+src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_subset_examples_first/schema/mixs_subset_examples_first_structpat_only.yaml
 	$(RUN) gen-linkml \
 		--output $@ \
 		--materialize-patterns \
@@ -634,7 +646,7 @@ src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml: src/mixs_
 		--format yaml $<
 	rm -rf $<
 
-reports/mixs_subset_examples_first_materialized_patterns.yaml.lint.log: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
+reports/mixs_subset_examples_first_materialized_patterns.yaml.linting.tsv: src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
 	- $(RUN) linkml-lint \
  		--format tsv $< > $@
 
@@ -706,3 +718,9 @@ src/data/examples/valid/Database-mims_soil_set-exhaustive.yaml
 		--output $@ \
 		--schema $^
 
+temp: proj_clean data/mixs_v6_environmental_packages.tsv data/mixs_v6_MIxS.tsv
+# for the environmental package sheet, change all columns except slots and classes to annotations
+# class names will probably need to be pascal-cased in real time or looked up in ???
+# after the fact, we should flag classes or slots that don't appear in data/mixs_combined_all_modified_lossy_deduped.tsv
+# some of the mixs_v6_environmental_packages.tsv slots should have been curated out, but some need to be reintroduced after re-curation
+# would require extra schemasheets headers
