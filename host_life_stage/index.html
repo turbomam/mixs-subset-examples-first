@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-host_life_stage">Slot: host_life_stage</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000251">MIXS:0000251</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,38 +341,50 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../Agriculture/">Agriculture</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HostAssociated/">HostAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../PlantAssociated/">PlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../SymbiontAssociated/">SymbiontAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsBaPlantAssociated/">MigsBaPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -420,6 +433,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: host life stage
 notes:
 - stage
@@ -436,7 +450,7 @@ domain_of:
 - PlantAssociated
 - SymbiontAssociated
 range: string
-pattern: '[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{free_text}'
 

@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -205,6 +200,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-symbiontassociated">Class: SymbiontAssociated</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0016023">MIXS:0016023</a></p>
 <div class="mermaid"> classDiagram
     class SymbiontAssociated
@@ -217,8 +213,6 @@
       SymbiontAssociated : chem_administration
 
       SymbiontAssociated : collection_date
-
-      SymbiontAssociated : depth
 
       SymbiontAssociated : elev
 
@@ -236,8 +230,6 @@
 
       SymbiontAssociated : host_body_habitat
 
-      SymbiontAssociated : host_body_product
-
       SymbiontAssociated : host_body_site
 
       SymbiontAssociated : host_cellular_loc
@@ -249,8 +241,6 @@
       SymbiontAssociated : host_dependence
 
       SymbiontAssociated : host_dry_mass
-
-      SymbiontAssociated : host_family_relationship
 
       SymbiontAssociated : host_genotype
 
@@ -298,8 +288,6 @@
 
       SymbiontAssociated : host_phenotype
 
-      SymbiontAssociated : host_sex
-
       SymbiontAssociated : host_shape
 
       SymbiontAssociated : host_specificity
@@ -307,8 +295,6 @@
       SymbiontAssociated : host_subject_id
 
       SymbiontAssociated : host_substrate
-
-      SymbiontAssociated : host_symbiont
 
       SymbiontAssociated : host_taxid
 
@@ -324,7 +310,7 @@
 
       SymbiontAssociated : oxy_stat_samp
 
-          SymbiontAssociated ..&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
+          SymbiontAssociated --|&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
 
       SymbiontAssociated : perturbation
 
@@ -343,8 +329,6 @@
       SymbiontAssociated : samp_store_temp
 
       SymbiontAssociated : samp_vol_we_dna_ext
-
-      SymbiontAssociated : sample_name
 
       SymbiontAssociated : source_mat_id
 
@@ -377,455 +361,400 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../sample_name/">sample_name</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../project_name/">project_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../lat_lon/">lat_lon</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../geo_loc_name/">geo_loc_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../collection_date/">collection_date</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_broad_scale/">env_broad_scale</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_local_scale/">env_local_scale</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_medium/">env_medium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../alt/">alt</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../depth/">depth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../elev/">elev</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_subject_id/">host_subject_id</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_common_name/">host_common_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_taxid/">host_taxid</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../source_mat_id/">source_mat_id</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_dependence/">host_dependence</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../type_of_symbiosis/">type_of_symbiosis</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sym_life_cycle_type/">sym_life_cycle_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_life_stage/">host_life_stage</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_age/">host_age</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_sex/">host_sex</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../mode_transmission/">mode_transmission</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../route_transmission/">route_transmission</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_body_habitat/">host_body_habitat</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_body_site/">host_body_site</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_body_product/">host_body_product</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_tot_mass/">host_tot_mass</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_height/">host_height</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_length/">host_length</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_growth_cond/">host_growth_cond</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_substrate/">host_substrate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_family_relationship/">host_family_relationship</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_infra_specific_name/">host_infra_specific_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_infra_specific_rank/">host_infra_specific_rank</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_genotype/">host_genotype</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_phenotype/">host_phenotype</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_dry_mass/">host_dry_mass</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_color/">host_color</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_shape/">host_shape</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../gravidity/">gravidity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_number/">host_number</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_symbiont/">host_symbiont</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_specificity/">host_specificity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../symbiont_host_role/">symbiont_host_role</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../host_cellular_loc/">host_cellular_loc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_specificity/">host_specificity</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mode_transmission/">mode_transmission</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../symbiont_host_role/">symbiont_host_role</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../type_of_symbiosis/">type_of_symbiosis</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../association_duration/">association_duration</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_coinf/">host_of_host_coinf</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_name/">host_of_host_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_env_loc/">host_of_host_env_loc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_env_med/">host_of_host_env_med</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_taxid/">host_of_host_taxid</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_sub_id/">host_of_host_sub_id</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_disease/">host_of_host_disease</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_fam_rel/">host_of_host_fam_rel</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_infname/">host_of_host_infname</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_infrank/">host_of_host_infrank</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_geno/">host_of_host_geno</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_pheno/">host_of_host_pheno</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_gravid/">host_of_host_gravid</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_of_host_totmass/">host_of_host_totmass</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../chem_administration/">chem_administration</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../perturbation/">perturbation</a></td>
+<td><a href="../gravidity/">gravidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_salinity/">samp_salinity</a></td>
+<td><a href="../host_age/">host_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../temp/">temp</a></td>
+<td><a href="../host_body_habitat/">host_body_habitat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../organism_count/">organism_count</a></td>
+<td><a href="../host_body_site/">host_body_site</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td><a href="../host_color/">host_color</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td><a href="../host_common_name/">host_common_name</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td><a href="../host_dry_mass/">host_dry_mass</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td><a href="../host_genotype/">host_genotype</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../samp_store_sol/">samp_store_sol</a></td>
+<td><a href="../host_growth_cond/">host_growth_cond</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_height/">host_height</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_infra_specific_name/">host_infra_specific_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_infra_specific_rank/">host_infra_specific_rank</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_length/">host_length</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_number/">host_number</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_coinf/">host_of_host_coinf</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_disease/">host_of_host_disease</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_env_loc/">host_of_host_env_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_env_med/">host_of_host_env_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_fam_rel/">host_of_host_fam_rel</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_geno/">host_of_host_geno</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_gravid/">host_of_host_gravid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_infname/">host_of_host_infname</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_infrank/">host_of_host_infrank</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_name/">host_of_host_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_pheno/">host_of_host_pheno</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_sub_id/">host_of_host_sub_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_taxid/">host_of_host_taxid</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_of_host_totmass/">host_of_host_totmass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_phenotype/">host_phenotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_shape/">host_shape</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_subject_id/">host_subject_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_substrate/">host_substrate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_taxid/">host_taxid</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_tot_mass/">host_tot_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../misc_param/">misc_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
 <tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../symbiont_associated_set/">symbiont_associated_set</a></td>
-<td>range</td>
-<td><a href="./">SymbiontAssociated</a></td>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../route_transmission/">route_transmission</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_salinity/">samp_salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_sol/">samp_store_sol</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_dependence/">host_dependence</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../host_life_stage/">host_life_stage</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sym_life_cycle_type/">sym_life_cycle_type</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
 </tbody>
 </table>
@@ -858,88 +787,84 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: SymbiontAssociated
+description: placeholder description; linter will ignore this
 title: symbiont-associated
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 is_a: EnvironmentalPackage
 slots:
-- sample_name
-- project_name
-- lat_lon
-- geo_loc_name
+- alt
+- elev
+- host_cellular_loc
+- host_specificity
+- mode_transmission
+- symbiont_host_role
+- type_of_symbiosis
+- association_duration
+- chem_administration
+- gravidity
+- host_age
+- host_body_habitat
+- host_body_site
+- host_color
+- host_common_name
+- host_dry_mass
+- host_genotype
+- host_growth_cond
+- host_height
+- host_infra_specific_name
+- host_infra_specific_rank
+- host_length
+- host_number
+- host_of_host_coinf
+- host_of_host_disease
+- host_of_host_env_loc
+- host_of_host_env_med
+- host_of_host_fam_rel
+- host_of_host_geno
+- host_of_host_gravid
+- host_of_host_infname
+- host_of_host_infrank
+- host_of_host_name
+- host_of_host_pheno
+- host_of_host_sub_id
+- host_of_host_taxid
+- host_of_host_totmass
+- host_phenotype
+- host_shape
+- host_subject_id
+- host_substrate
+- host_taxid
+- host_tot_mass
+- misc_param
+- organism_count
+- oxy_stat_samp
+- perturbation
+- route_transmission
+- samp_salinity
+- samp_store_dur
+- samp_store_loc
+- samp_store_sol
+- samp_store_temp
+- samp_vol_we_dna_ext
+- source_mat_id
+- temp
 - collection_date
 - env_broad_scale
 - env_local_scale
 - env_medium
-- alt
-- depth
-- elev
-- host_subject_id
-- host_common_name
-- host_taxid
-- source_mat_id
+- geo_loc_name
 - host_dependence
-- type_of_symbiosis
-- sym_life_cycle_type
 - host_life_stage
-- host_age
-- host_sex
-- mode_transmission
-- route_transmission
-- host_body_habitat
-- host_body_site
-- host_body_product
-- host_tot_mass
-- host_height
-- host_length
-- host_growth_cond
-- host_substrate
-- host_family_relationship
-- host_infra_specific_name
-- host_infra_specific_rank
-- host_genotype
-- host_phenotype
-- host_dry_mass
-- host_color
-- host_shape
-- gravidity
-- host_number
-- host_symbiont
-- host_specificity
-- symbiont_host_role
-- host_cellular_loc
-- association_duration
-- host_of_host_coinf
-- host_of_host_name
-- host_of_host_env_loc
-- host_of_host_env_med
-- host_of_host_taxid
-- host_of_host_sub_id
-- host_of_host_disease
-- host_of_host_fam_rel
-- host_of_host_infname
-- host_of_host_infrank
-- host_of_host_geno
-- host_of_host_pheno
-- host_of_host_gravid
-- host_of_host_totmass
-- chem_administration
-- perturbation
-- samp_salinity
-- oxy_stat_samp
-- temp
-- organism_count
-- samp_vol_we_dna_ext
-- samp_store_temp
-- samp_store_dur
-- samp_store_loc
-- samp_store_sol
-- misc_param
+- lat_lon
+- project_name
+- sym_life_cycle_type
 slot_usage:
   alt:
     name: alt
     domain_of:
     - Air
+    - Checklist
     - HostAssociated
     - MigsBa
     - MigsEu
@@ -981,6 +906,7 @@ slot_usage:
   collection_date:
     name: collection_date
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -998,36 +924,12 @@ slot_usage:
     - Miuvig
     - SymbiontAssociated
     required: true
-  depth:
-    name: depth
-    domain_of:
-    - FoodFarmEnvironment
-    - HostAssociated
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    recommended: true
   elev:
     name: elev
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -1052,6 +954,7 @@ slot_usage:
   env_broad_scale:
     name: env_broad_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1072,6 +975,7 @@ slot_usage:
   env_local_scale:
     name: env_local_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1092,6 +996,7 @@ slot_usage:
   env_medium:
     name: env_medium
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1112,6 +1017,7 @@ slot_usage:
   geo_loc_name:
     name: geo_loc_name
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1152,16 +1058,6 @@ slot_usage:
     domain_of:
     - HostAssociated
     - SymbiontAssociated
-  host_body_product:
-    name: host_body_product
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
   host_body_site:
     name: host_body_site
     domain_of:
@@ -1201,10 +1097,6 @@ slot_usage:
     - FoodFarmEnvironment
     - HostAssociated
     - PlantAssociated
-    - SymbiontAssociated
-  host_family_relationship:
-    name: host_family_relationship
-    domain_of:
     - SymbiontAssociated
   host_genotype:
     name: host_genotype
@@ -1334,16 +1226,6 @@ slot_usage:
     - HumanVaginal
     - PlantAssociated
     - SymbiontAssociated
-  host_sex:
-    name: host_sex
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
   host_shape:
     name: host_shape
     domain_of:
@@ -1369,18 +1251,6 @@ slot_usage:
     domain_of:
     - HostAssociated
     - SymbiontAssociated
-  host_symbiont:
-    name: host_symbiont
-    domain_of:
-    - Agriculture
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
   host_taxid:
     name: host_taxid
     domain_of:
@@ -1405,6 +1275,7 @@ slot_usage:
   lat_lon:
     name: lat_lon
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1523,6 +1394,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1569,6 +1441,10 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1589,6 +1465,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1611,7 +1490,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1632,6 +1516,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1663,15 +1548,11 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-  sample_name:
-    name: sample_name
-    domain_of:
-    - SymbiontAssociated
-    required: true
   source_mat_id:
     name: source_mat_id
     domain_of:
     - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1699,6 +1580,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -1741,6 +1623,7 @@ class_uri: MIXS:0016023
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: SymbiontAssociated
+description: placeholder description; linter will ignore this
 title: symbiont-associated
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -1750,6 +1633,7 @@ slot_usage:
     name: alt
     domain_of:
     - Air
+    - Checklist
     - HostAssociated
     - MigsBa
     - MigsEu
@@ -1791,6 +1675,7 @@ slot_usage:
   collection_date:
     name: collection_date
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1808,36 +1693,12 @@ slot_usage:
     - Miuvig
     - SymbiontAssociated
     required: true
-  depth:
-    name: depth
-    domain_of:
-    - FoodFarmEnvironment
-    - HostAssociated
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    recommended: true
   elev:
     name: elev
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -1862,6 +1723,7 @@ slot_usage:
   env_broad_scale:
     name: env_broad_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1882,6 +1744,7 @@ slot_usage:
   env_local_scale:
     name: env_local_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1902,6 +1765,7 @@ slot_usage:
   env_medium:
     name: env_medium
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1922,6 +1786,7 @@ slot_usage:
   geo_loc_name:
     name: geo_loc_name
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1962,16 +1827,6 @@ slot_usage:
     domain_of:
     - HostAssociated
     - SymbiontAssociated
-  host_body_product:
-    name: host_body_product
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
   host_body_site:
     name: host_body_site
     domain_of:
@@ -2011,10 +1866,6 @@ slot_usage:
     - FoodFarmEnvironment
     - HostAssociated
     - PlantAssociated
-    - SymbiontAssociated
-  host_family_relationship:
-    name: host_family_relationship
-    domain_of:
     - SymbiontAssociated
   host_genotype:
     name: host_genotype
@@ -2144,16 +1995,6 @@ slot_usage:
     - HumanVaginal
     - PlantAssociated
     - SymbiontAssociated
-  host_sex:
-    name: host_sex
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
   host_shape:
     name: host_shape
     domain_of:
@@ -2179,18 +2020,6 @@ slot_usage:
     domain_of:
     - HostAssociated
     - SymbiontAssociated
-  host_symbiont:
-    name: host_symbiont
-    domain_of:
-    - Agriculture
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
   host_taxid:
     name: host_taxid
     domain_of:
@@ -2215,6 +2044,7 @@ slot_usage:
   lat_lon:
     name: lat_lon
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2333,6 +2163,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2379,6 +2210,10 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2399,6 +2234,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2421,7 +2259,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2442,6 +2285,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2473,15 +2317,11 @@ slot_usage:
     - SymbiontAssociated
     - WastewaterSludge
     - Water
-  sample_name:
-    name: sample_name
-    domain_of:
-    - SymbiontAssociated
-    required: true
   source_mat_id:
     name: source_mat_id
     domain_of:
     - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2509,6 +2349,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -2545,248 +2386,9 @@ slot_usage:
     - SymbiontAssociated
     recommended: true
 attributes:
-  sample_name:
-    name: sample_name
-    title: sample name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001107
-    identifier: true
-    alias: sample_name
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  project_name:
-    name: project_name
-    title: project name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000092
-    alias: project_name
-    owner: SymbiontAssociated
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  lat_lon:
-    name: lat_lon
-    title: geographic location (latitude and longitude)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000009
-    alias: lat_lon
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
-    structured_pattern:
-      syntax: '{lat} {lon}'
-  geo_loc_name:
-    name: geo_loc_name
-    title: geographic location (country and/or sea,region)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000010
-    alias: geo_loc_name
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{term}: {term}, {free_text}'
-  collection_date:
-    name: collection_date
-    title: collection date
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000011
-    alias: collection_date
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-  env_broad_scale:
-    name: env_broad_scale
-    title: broad-scale environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000012
-    alias: env_broad_scale
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_local_scale:
-    name: env_local_scale
-    title: local environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000013
-    alias: env_local_scale
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_medium:
-    name: env_medium
-    title: environmental medium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000014
-    alias: env_medium
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
   alt:
     name: alt
+    description: placeholder description; linter will ignore this
     title: altitude
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2795,6 +2397,7 @@ attributes:
     owner: SymbiontAssociated
     domain_of:
     - Air
+    - Checklist
     - HostAssociated
     - MigsBa
     - MigsEu
@@ -2811,46 +2414,12 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  depth:
-    name: depth
-    title: depth
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000018
-    alias: depth
-    owner: SymbiontAssociated
-    domain_of:
-    - FoodFarmEnvironment
-    - HostAssociated
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
     name: elev
+    description: placeholder description; linter will ignore this
     title: elevation
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2860,6 +2429,7 @@ attributes:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -2882,542 +2452,12 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  host_subject_id:
-    name: host_subject_id
-    title: host subject id
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000861
-    alias: host_subject_id
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_common_name:
-    name: host_common_name
-    title: host common name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000248
-    alias: host_common_name
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - HostAssociated
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_taxid:
-    name: host_taxid
-    title: host taxid
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000250
-    alias: host_taxid
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-  source_mat_id:
-    name: source_mat_id
-    title: source material identifiers
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000026
-    alias: source_mat_id
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_dependence:
-    name: host_dependence
-    title: host dependence
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001315
-    alias: host_dependence
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    required: true
-  type_of_symbiosis:
-    name: type_of_symbiosis
-    title: type of symbiosis
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001307
-    alias: type_of_symbiosis
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    recommended: true
-  sym_life_cycle_type:
-    name: sym_life_cycle_type
-    title: symbiotic host organism life cycle type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001300
-    alias: sym_life_cycle_type
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    required: true
-  host_life_stage:
-    name: host_life_stage
-    title: host life stage
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000251
-    alias: host_life_stage
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - HostAssociated
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_age:
-    name: host_age
-    title: host age
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000255
-    alias: host_age
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_sex:
-    name: host_sex
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: host_sex
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
-    range: string
-  mode_transmission:
-    name: mode_transmission
-    title: mode of transmission
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001312
-    alias: mode_transmission
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    recommended: true
-  route_transmission:
-    name: route_transmission
-    title: route of transmission
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001316
-    alias: route_transmission
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_body_habitat:
-    name: host_body_habitat
-    title: host body habitat
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000866
-    alias: host_body_habitat
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_body_site:
-    name: host_body_site
-    title: host body site
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000867
-    alias: host_body_site
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  host_body_product:
-    name: host_body_product
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: host_body_product
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - SymbiontAssociated
-    range: string
-  host_tot_mass:
-    name: host_tot_mass
-    title: host total mass
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000263
-    alias: host_tot_mass
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_height:
-    name: host_height
-    title: host height
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000264
-    alias: host_height
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_length:
-    name: host_length
-    title: host length
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000256
-    alias: host_length
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_growth_cond:
-    name: host_growth_cond
-    title: host growth conditions
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000871
-    alias: host_growth_cond
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-  host_substrate:
-    name: host_substrate
-    title: host substrate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000252
-    alias: host_substrate
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_family_relationship:
-    name: host_family_relationship
-    title: host family relationship
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000872
-    alias: host_family_relationship
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_infra_specific_name:
-    name: host_infra_specific_name
-    title: host infra-specific name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000253
-    alias: host_infra_specific_name
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_infra_specific_rank:
-    name: host_infra_specific_rank
-    title: host infra-specific rank
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000254
-    alias: host_infra_specific_rank
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_genotype:
-    name: host_genotype
-    title: host genotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000365
-    alias: host_genotype
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_phenotype:
-    name: host_phenotype
-    title: host phenotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000874
-    alias: host_phenotype
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  host_dry_mass:
-    name: host_dry_mass
-    title: host dry mass
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000257
-    alias: host_dry_mass
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - HostAssociated
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_color:
-    name: host_color
-    title: host color
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000260
-    alias: host_color
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_shape:
-    name: host_shape
-    title: host shape
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000261
-    alias: host_shape
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  gravidity:
-    name: gravidity
-    title: gravidity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000875
-    alias: gravidity
-    owner: SymbiontAssociated
-    domain_of:
-    - HostAssociated
-    - SymbiontAssociated
-    range: string
-  host_number:
-    name: host_number
-    title: host number individual
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001305
-    alias: host_number
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_symbiont:
-    name: host_symbiont
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: host_symbiont
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - PlantAssociated
-    - SymbiontAssociated
-    range: string
-  host_specificity:
-    name: host_specificity
-    title: host specificity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001308
-    alias: host_specificity
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    recommended: true
-  symbiont_host_role:
-    name: symbiont_host_role
-    title: host of the symbiont role
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001303
-    alias: symbiont_host_role
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    recommended: true
   host_cellular_loc:
     name: host_cellular_loc
+    description: placeholder description; linter will ignore this
     title: host cellular location
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3428,8 +2468,61 @@ attributes:
     - SymbiontAssociated
     range: string
     recommended: true
+  host_specificity:
+    name: host_specificity
+    description: placeholder description; linter will ignore this
+    title: host specificity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001308
+    alias: host_specificity
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    recommended: true
+  mode_transmission:
+    name: mode_transmission
+    description: placeholder description; linter will ignore this
+    title: mode of transmission
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001312
+    alias: mode_transmission
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    recommended: true
+  symbiont_host_role:
+    name: symbiont_host_role
+    description: placeholder description; linter will ignore this
+    title: host of the symbiont role
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001303
+    alias: symbiont_host_role
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    recommended: true
+  type_of_symbiosis:
+    name: type_of_symbiosis
+    description: placeholder description; linter will ignore this
+    title: type of symbiosis
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001307
+    alias: type_of_symbiosis
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    recommended: true
   association_duration:
     name: association_duration
+    description: placeholder description; linter will ignore this
     title: duration of association with the host
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3439,192 +2532,12 @@ attributes:
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  host_of_host_coinf:
-    name: host_of_host_coinf
-    title: observed coinfecting organisms in host of host
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001310
-    alias: host_of_host_coinf
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_name:
-    name: host_of_host_name
-    title: host of the symbiotic host common name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001324
-    alias: host_of_host_name
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_env_loc:
-    name: host_of_host_env_loc
-    title: host of the symbiotic host local environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001325
-    alias: host_of_host_env_loc
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  host_of_host_env_med:
-    name: host_of_host_env_med
-    title: host of the symbiotic host environmental medium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001326
-    alias: host_of_host_env_med
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  host_of_host_taxid:
-    name: host_of_host_taxid
-    title: host of the symbiotic host taxon id
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001306
-    alias: host_of_host_taxid
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: integer
-  host_of_host_sub_id:
-    name: host_of_host_sub_id
-    title: host of the symbiotic host subject id
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001327
-    alias: host_of_host_sub_id
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_disease:
-    name: host_of_host_disease
-    title: host of the symbiotic host disease status
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001319
-    alias: host_of_host_disease
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_of_host_fam_rel:
-    name: host_of_host_fam_rel
-    title: host of the symbiotic host family relationship
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001328
-    alias: host_of_host_fam_rel
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_of_host_infname:
-    name: host_of_host_infname
-    title: host of the symbiotic host infra-specific name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001329
-    alias: host_of_host_infname
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_infrank:
-    name: host_of_host_infrank
-    title: host of the symbiotic host infra-specific rank
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001330
-    alias: host_of_host_infrank
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_geno:
-    name: host_of_host_geno
-    title: host of the symbiotic host genotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001331
-    alias: host_of_host_geno
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  host_of_host_pheno:
-    name: host_of_host_pheno
-    title: host of the symbiotic host phenotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001332
-    alias: host_of_host_pheno
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_of_host_gravid:
-    name: host_of_host_gravid
-    title: host of the symbiotic host gravidity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001333
-    alias: host_of_host_gravid
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-  host_of_host_totmass:
-    name: host_of_host_totmass
-    title: host of the symbiotic host total mass
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001334
-    alias: host_of_host_totmass
-    owner: SymbiontAssociated
-    domain_of:
-    - SymbiontAssociated
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   chem_administration:
     name: chem_administration
+    description: placeholder description; linter will ignore this
     title: chemical administration
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3649,304 +2562,570 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-  perturbation:
-    name: perturbation
-    title: perturbation
+  gravidity:
+    name: gravidity
+    description: placeholder description; linter will ignore this
+    title: gravidity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000754
-    alias: perturbation
+    slot_uri: MIXS:0000875
+    alias: gravidity
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_age:
+    name: host_age
+    description: placeholder description; linter will ignore this
+    title: host age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000255
+    alias: host_age
     owner: SymbiontAssociated
     domain_of:
     - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
-    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
     - HumanOral
     - HumanSkin
     - HumanVaginal
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
     - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  samp_salinity:
-    name: samp_salinity
-    title: sample salinity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000109
-    alias: samp_salinity
-    owner: SymbiontAssociated
-    domain_of:
-    - HumanVaginal
     - SymbiontAssociated
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  oxy_stat_samp:
-    name: oxy_stat_samp
-    title: oxygenation status of sample
+  host_body_habitat:
+    name: host_body_habitat
+    description: placeholder description; linter will ignore this
+    title: host body habitat
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000753
-    alias: oxy_stat_samp
+    slot_uri: MIXS:0000866
+    alias: host_body_habitat
     owner: SymbiontAssociated
     domain_of:
-    - Agriculture
-    - Air
     - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
     - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: OXY_STAT_SAMP_ENUM
-  temp:
-    name: temp
-    title: temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000113
-    alias: temp
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  organism_count:
-    name: organism_count
-    title: organism count
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000103
-    alias: organism_count
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  samp_vol_we_dna_ext:
-    name: samp_vol_we_dna_ext
-    title: sample volume or weight for DNA extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000111
-    alias: samp_vol_we_dna_ext
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_store_temp:
-    name: samp_store_temp
-    title: sample storage temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000110
-    alias: samp_store_temp
-    owner: SymbiontAssociated
-    domain_of:
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_store_dur:
-    name: samp_store_dur
-    title: sample storage duration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000116
-    alias: samp_store_dur
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
-    structured_pattern:
-      syntax: '{period}'
-  samp_store_loc:
-    name: samp_store_loc
-    title: sample storage location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000755
-    alias: samp_store_loc
-    owner: SymbiontAssociated
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
-  samp_store_sol:
-    name: samp_store_sol
-    title: sample storage solution
+  host_body_site:
+    name: host_body_site
+    description: placeholder description; linter will ignore this
+    title: host body site
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0001317
-    alias: samp_store_sol
+    slot_uri: MIXS:0000867
+    alias: host_body_site
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  host_color:
+    name: host_color
+    description: placeholder description; linter will ignore this
+    title: host color
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000260
+    alias: host_color
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_common_name:
+    name: host_common_name
+    description: placeholder description; linter will ignore this
+    title: host common name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000248
+    alias: host_common_name
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_dry_mass:
+    name: host_dry_mass
+    description: placeholder description; linter will ignore this
+    title: host dry mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000257
+    alias: host_dry_mass
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_genotype:
+    name: host_genotype
+    description: placeholder description; linter will ignore this
+    title: host genotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000365
+    alias: host_genotype
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_growth_cond:
+    name: host_growth_cond
+    description: placeholder description; linter will ignore this
+    title: host growth conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000871
+    alias: host_growth_cond
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+  host_height:
+    name: host_height
+    description: placeholder description; linter will ignore this
+    title: host height
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000264
+    alias: host_height
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_infra_specific_name:
+    name: host_infra_specific_name
+    description: placeholder description; linter will ignore this
+    title: host infra-specific name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000253
+    alias: host_infra_specific_name
     owner: SymbiontAssociated
     domain_of:
     - SymbiontAssociated
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
+  host_infra_specific_rank:
+    name: host_infra_specific_rank
+    description: placeholder description; linter will ignore this
+    title: host infra-specific rank
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000254
+    alias: host_infra_specific_rank
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_length:
+    name: host_length
+    description: placeholder description; linter will ignore this
+    title: host length
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000256
+    alias: host_length
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_number:
+    name: host_number
+    description: placeholder description; linter will ignore this
+    title: host number individual
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001305
+    alias: host_number
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_coinf:
+    name: host_of_host_coinf
+    description: placeholder description; linter will ignore this
+    title: observed coinfecting organisms in host of host
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001310
+    alias: host_of_host_coinf
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_disease:
+    name: host_of_host_disease
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host disease status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001319
+    alias: host_of_host_disease
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_env_loc:
+    name: host_of_host_env_loc
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001325
+    alias: host_of_host_env_loc
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  host_of_host_env_med:
+    name: host_of_host_env_med
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001326
+    alias: host_of_host_env_med
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  host_of_host_fam_rel:
+    name: host_of_host_fam_rel
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host family relationship
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001328
+    alias: host_of_host_fam_rel
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_geno:
+    name: host_of_host_geno
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host genotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001331
+    alias: host_of_host_geno
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_gravid:
+    name: host_of_host_gravid
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host gravidity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001333
+    alias: host_of_host_gravid
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_infname:
+    name: host_of_host_infname
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host infra-specific name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001329
+    alias: host_of_host_infname
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_infrank:
+    name: host_of_host_infrank
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host infra-specific rank
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001330
+    alias: host_of_host_infrank
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_name:
+    name: host_of_host_name
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host common name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001324
+    alias: host_of_host_name
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_pheno:
+    name: host_of_host_pheno
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host phenotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001332
+    alias: host_of_host_pheno
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  host_of_host_sub_id:
+    name: host_of_host_sub_id
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host subject id
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001327
+    alias: host_of_host_sub_id
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_of_host_taxid:
+    name: host_of_host_taxid
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host taxon id
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001306
+    alias: host_of_host_taxid
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: integer
+  host_of_host_totmass:
+    name: host_of_host_totmass
+    description: placeholder description; linter will ignore this
+    title: host of the symbiotic host total mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001334
+    alias: host_of_host_totmass
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  host_phenotype:
+    name: host_phenotype
+    description: placeholder description; linter will ignore this
+    title: host phenotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000874
+    alias: host_phenotype
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  host_shape:
+    name: host_shape
+    description: placeholder description; linter will ignore this
+    title: host shape
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000261
+    alias: host_shape
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_subject_id:
+    name: host_subject_id
+    description: placeholder description; linter will ignore this
+    title: host subject id
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000861
+    alias: host_subject_id
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_substrate:
+    name: host_substrate
+    description: placeholder description; linter will ignore this
+    title: host substrate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000252
+    alias: host_substrate
+    owner: SymbiontAssociated
+    domain_of:
+    - HostAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_taxid:
+    name: host_taxid
+    description: placeholder description; linter will ignore this
+    title: host taxid
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000250
+    alias: host_taxid
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: integer
+  host_tot_mass:
+    name: host_tot_mass
+    description: placeholder description; linter will ignore this
+    title: host total mass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000263
+    alias: host_tot_mass
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
   misc_param:
     name: misc_param
+    description: placeholder description; linter will ignore this
     title: miscellaneous parameter
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3977,10 +3156,653 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
+  organism_count:
+    name: organism_count
+    description: placeholder description; linter will ignore this
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    description: placeholder description; linter will ignore this
+    title: oxygenation status of sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000753
+    alias: oxy_stat_samp
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: OXY_STAT_SAMP_ENUM
+  perturbation:
+    name: perturbation
+    description: placeholder description; linter will ignore this
+    title: perturbation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000754
+    alias: perturbation
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  route_transmission:
+    name: route_transmission
+    description: placeholder description; linter will ignore this
+    title: route of transmission
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001316
+    alias: route_transmission
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+  samp_salinity:
+    name: samp_salinity
+    description: placeholder description; linter will ignore this
+    title: sample salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000109
+    alias: samp_salinity
+    owner: SymbiontAssociated
+    domain_of:
+    - HumanVaginal
+    - SymbiontAssociated
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_store_dur:
+    name: samp_store_dur
+    description: placeholder description; linter will ignore this
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
+  samp_store_loc:
+    name: samp_store_loc
+    description: placeholder description; linter will ignore this
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_store_sol:
+    name: samp_store_sol
+    description: placeholder description; linter will ignore this
+    title: sample storage solution
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001317
+    alias: samp_store_sol
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_store_temp:
+    name: samp_store_temp
+    description: placeholder description; linter will ignore this
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: placeholder description; linter will ignore this
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  source_mat_id:
+    name: source_mat_id
+    description: placeholder description; linter will ignore this
+    title: source material identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000026
+    alias: source_mat_id
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  temp:
+    name: temp
+    description: placeholder description; linter will ignore this
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  collection_date:
+    name: collection_date
+    description: placeholder description; linter will ignore this
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  env_broad_scale:
+    name: env_broad_scale
+    description: placeholder description; linter will ignore this
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    description: placeholder description; linter will ignore this
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    description: placeholder description; linter will ignore this
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  geo_loc_name:
+    name: geo_loc_name
+    description: placeholder description; linter will ignore this
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*: [^s\|][^\r\n\t\|]*, [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
+  host_dependence:
+    name: host_dependence
+    description: placeholder description; linter will ignore this
+    title: host dependence
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001315
+    alias: host_dependence
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    required: true
+  host_life_stage:
+    name: host_life_stage
+    description: placeholder description; linter will ignore this
+    title: host life stage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000251
+    alias: host_life_stage
+    owner: SymbiontAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  lat_lon:
+    name: lat_lon
+    description: placeholder description; linter will ignore this
+    title: geographic location (latitude and longitude)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: SymbiontAssociated
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
+  project_name:
+    name: project_name
+    description: placeholder description; linter will ignore this
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: SymbiontAssociated
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  sym_life_cycle_type:
+    name: sym_life_cycle_type
+    description: placeholder description; linter will ignore this
+    title: symbiotic host organism life cycle type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001300
+    alias: sym_life_cycle_type
+    owner: SymbiontAssociated
+    domain_of:
+    - SymbiontAssociated
+    range: string
+    required: true
 class_uri: MIXS:0016023
 
 </code></pre>

@@ -324,6 +324,7 @@
 
 
 <h1 id="slot-indust_eff_percent">Slot: indust_eff_percent</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000662">MIXS:0000662</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -333,18 +334,25 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="annotations">Annotations</h3>
@@ -380,6 +388,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: industrial effluent percent
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -388,7 +397,7 @@ alias: indust_eff_percent
 domain_of:
 - WastewaterSludge
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{float} {unit}'
 

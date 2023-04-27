@@ -324,6 +324,7 @@
 
 
 <h1 id="slot-biotic_regm">Slot: biotic_regm</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0001038">MIXS:0001038</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -333,30 +334,40 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../PlantAssociated/">PlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsBaPlantAssociated/">MigsBaPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="annotations">Annotations</h3>
@@ -390,6 +401,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: biotic regimen
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -399,7 +411,7 @@ domain_of:
 - FoodFarmEnvironment
 - PlantAssociated
 range: string
-pattern: '[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{free_text}'
 

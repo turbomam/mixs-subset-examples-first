@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -205,12 +200,13 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-air">Class: Air</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0016000">MIXS:0016000</a></p>
 <div class="mermaid"> classDiagram
     class Air
       EnvironmentalPackage &lt;|-- Air
 
-      Air : air_particulate_matter_concentration
+      Air : air_pm_concen
 
       Air : alt
 
@@ -234,7 +230,7 @@
 
       Air : oxy_stat_samp
 
-          Air ..&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
+          Air --|&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
 
       Air : oxygen
 
@@ -245,8 +241,6 @@
       Air : project_name
 
       Air : salinity
-
-      Air : samp_name
 
       Air : samp_store_dur
 
@@ -291,197 +285,172 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../samp_name/">samp_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../project_name/">project_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../alt/">alt</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../elev/">elev</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../air_pm_concen/">air_pm_concen</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../barometric_press/">barometric_press</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../carb_dioxide/">carb_dioxide</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../carb_monoxide/">carb_monoxide</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../chem_administration/">chem_administration</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../humidity/">humidity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../methane/">methane</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../organism_count/">organism_count</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../oxygen/">oxygen</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../perturbation/">perturbation</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../pollutants/">pollutants</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../air_particulate_matter_concentration/">air_particulate_matter_concentration</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../salinity/">salinity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_dur/">samp_store_dur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_loc/">samp_store_loc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_temp/">samp_store_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../solar_irradiance/">solar_irradiance</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../temp/">temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../ventilation_rate/">ventilation_rate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../ventilation_type/">ventilation_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../volatile_org_comp/">volatile_org_comp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../wind_direction/">wind_direction</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../wind_speed/">wind_speed</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../misc_param/">misc_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
 <tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../air_set/">air_set</a></td>
-<td>range</td>
-<td><a href="./">Air</a></td>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../oxygen/">oxygen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pollutants/">pollutants</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../solar_irradiance/">solar_irradiance</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ventilation_rate/">ventilation_rate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ventilation_type/">ventilation_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../volatile_org_comp/">volatile_org_comp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wind_direction/">wind_direction</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../wind_speed/">wind_speed</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../alt/">alt</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
 </tbody>
 </table>
@@ -514,27 +483,26 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: Air
+description: placeholder description; linter will ignore this
 title: air
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 is_a: EnvironmentalPackage
 slots:
-- samp_name
-- project_name
-- alt
 - elev
+- air_pm_concen
 - barometric_press
 - carb_dioxide
 - carb_monoxide
 - chem_administration
 - humidity
 - methane
+- misc_param
 - organism_count
-- oxygen
 - oxy_stat_samp
+- oxygen
 - perturbation
 - pollutants
-- air particulate matter concentration
 - salinity
 - samp_store_dur
 - samp_store_loc
@@ -547,16 +515,19 @@ slots:
 - volatile_org_comp
 - wind_direction
 - wind_speed
-- misc_param
+- alt
+- project_name
 slot_usage:
-  air particulate matter concentration:
-    name: air particulate matter concentration
+  air_pm_concen:
+    name: air_pm_concen
     domain_of:
     - Air
+    - FoodFarmEnvironment
   alt:
     name: alt
     domain_of:
     - Air
+    - Checklist
     - HostAssociated
     - MigsBa
     - MigsEu
@@ -609,6 +580,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -746,6 +718,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -797,47 +770,15 @@ slot_usage:
     - Sediment
     - WastewaterSludge
     - Water
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_store_dur:
     name: samp_store_dur
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -858,6 +799,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -876,7 +820,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -897,6 +846,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -939,6 +889,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -1001,19 +952,22 @@ class_uri: MIXS:0016000
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: Air
+description: placeholder description; linter will ignore this
 title: air
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 is_a: EnvironmentalPackage
 slot_usage:
-  air particulate matter concentration:
-    name: air particulate matter concentration
+  air_pm_concen:
+    name: air_pm_concen
     domain_of:
     - Air
+    - FoodFarmEnvironment
   alt:
     name: alt
     domain_of:
     - Air
+    - Checklist
     - HostAssociated
     - MigsBa
     - MigsEu
@@ -1066,6 +1020,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -1203,6 +1158,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1254,47 +1210,15 @@ slot_usage:
     - Sediment
     - WastewaterSludge
     - Water
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_store_dur:
     name: samp_store_dur
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1315,6 +1239,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1333,7 +1260,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1354,6 +1286,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1396,6 +1329,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -1452,125 +1386,9 @@ slot_usage:
     - Air
     - FoodFarmEnvironment
 attributes:
-  samp_name:
-    name: samp_name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_name
-    owner: Air
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-  project_name:
-    name: project_name
-    title: project name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000092
-    alias: project_name
-    owner: Air
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  alt:
-    name: alt
-    title: altitude
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000094
-    alias: alt
-    owner: Air
-    domain_of:
-    - Air
-    - HostAssociated
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
   elev:
     name: elev
+    description: placeholder description; linter will ignore this
     title: elevation
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1580,6 +1398,7 @@ attributes:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -1602,11 +1421,28 @@ attributes:
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
+  air_pm_concen:
+    name: air_pm_concen
+    description: placeholder description; linter will ignore this
+    title: air particulate matter concentration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000108
+    alias: air_pm_concen
+    owner: Air
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
   barometric_press:
     name: barometric_press
+    description: placeholder description; linter will ignore this
     title: barometric pressure
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1616,11 +1452,12 @@ attributes:
     domain_of:
     - Air
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   carb_dioxide:
     name: carb_dioxide
+    description: placeholder description; linter will ignore this
     title: carbon dioxide
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1631,11 +1468,12 @@ attributes:
     - Air
     - BuiltEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   carb_monoxide:
     name: carb_monoxide
+    description: placeholder description; linter will ignore this
     title: carbon monoxide
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1645,11 +1483,12 @@ attributes:
     domain_of:
     - Air
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   chem_administration:
     name: chem_administration
+    description: placeholder description; linter will ignore this
     title: chemical administration
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1676,6 +1515,7 @@ attributes:
     range: string
   humidity:
     name: humidity
+    description: placeholder description; linter will ignore this
     title: humidity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1687,11 +1527,12 @@ attributes:
     - Air
     - FoodFarmEnvironment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   methane:
     name: methane
+    description: placeholder description; linter will ignore this
     title: methane
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1703,435 +1544,12 @@ attributes:
     - MicrobialMatBiofilm
     - Sediment
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  organism_count:
-    name: organism_count
-    title: organism count
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000103
-    alias: organism_count
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  oxygen:
-    name: oxygen
-    title: oxygen
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000104
-    alias: oxygen
-    owner: Air
-    domain_of:
-    - Air
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  oxy_stat_samp:
-    name: oxy_stat_samp
-    title: oxygenation status of sample
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000753
-    alias: oxy_stat_samp
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: OXY_STAT_SAMP_ENUM
-  perturbation:
-    name: perturbation
-    title: perturbation
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000754
-    alias: perturbation
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  pollutants:
-    name: pollutants
-    title: pollutants
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000107
-    alias: pollutants
-    owner: Air
-    domain_of:
-    - Air
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  air particulate matter concentration:
-    name: air particulate matter concentration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: air_particulate_matter_concentration
-    owner: Air
-    domain_of:
-    - Air
-    range: string
-  salinity:
-    name: salinity
-    title: salinity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000183
-    alias: salinity
-    owner: Air
-    domain_of:
-    - Air
-    - FoodFarmEnvironment
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_store_dur:
-    name: samp_store_dur
-    title: sample storage duration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000116
-    alias: samp_store_dur
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
-    structured_pattern:
-      syntax: '{period}'
-  samp_store_loc:
-    name: samp_store_loc
-    title: sample storage location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000755
-    alias: samp_store_loc
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  samp_store_temp:
-    name: samp_store_temp
-    title: sample storage temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000110
-    alias: samp_store_temp
-    owner: Air
-    domain_of:
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_vol_we_dna_ext:
-    name: samp_vol_we_dna_ext
-    title: sample volume or weight for DNA extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000111
-    alias: samp_vol_we_dna_ext
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  solar_irradiance:
-    name: solar_irradiance
-    title: solar irradiance
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000112
-    alias: solar_irradiance
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodFarmEnvironment
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  temp:
-    name: temp
-    title: temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000113
-    alias: temp
-    owner: Air
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  ventilation_rate:
-    name: ventilation_rate
-    title: ventilation rate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000114
-    alias: ventilation_rate
-    owner: Air
-    domain_of:
-    - Air
-    - FoodFarmEnvironment
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  ventilation_type:
-    name: ventilation_type
-    title: ventilation type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000756
-    alias: ventilation_type
-    owner: Air
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodFarmEnvironment
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  volatile_org_comp:
-    name: volatile_org_comp
-    title: volatile organic compounds
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000115
-    alias: volatile_org_comp
-    owner: Air
-    domain_of:
-    - Air
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  wind_direction:
-    name: wind_direction
-    title: wind direction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000757
-    alias: wind_direction
-    owner: Air
-    domain_of:
-    - Air
-    - FoodFarmEnvironment
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  wind_speed:
-    name: wind_speed
-    title: wind speed
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000118
-    alias: wind_speed
-    owner: Air
-    domain_of:
-    - Air
-    - FoodFarmEnvironment
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   misc_param:
     name: misc_param
+    description: placeholder description; linter will ignore this
     title: miscellaneous parameter
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2162,10 +1580,536 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
+  organism_count:
+    name: organism_count
+    description: placeholder description; linter will ignore this
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    description: placeholder description; linter will ignore this
+    title: oxygenation status of sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000753
+    alias: oxy_stat_samp
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: OXY_STAT_SAMP_ENUM
+  oxygen:
+    name: oxygen
+    description: placeholder description; linter will ignore this
+    title: oxygen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000104
+    alias: oxygen
+    owner: Air
+    domain_of:
+    - Air
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  perturbation:
+    name: perturbation
+    description: placeholder description; linter will ignore this
+    title: perturbation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000754
+    alias: perturbation
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  pollutants:
+    name: pollutants
+    description: placeholder description; linter will ignore this
+    title: pollutants
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000107
+    alias: pollutants
+    owner: Air
+    domain_of:
+    - Air
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  salinity:
+    name: salinity
+    description: placeholder description; linter will ignore this
+    title: salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000183
+    alias: salinity
+    owner: Air
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_store_dur:
+    name: samp_store_dur
+    description: placeholder description; linter will ignore this
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
+  samp_store_loc:
+    name: samp_store_loc
+    description: placeholder description; linter will ignore this
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_store_temp:
+    name: samp_store_temp
+    description: placeholder description; linter will ignore this
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: placeholder description; linter will ignore this
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  solar_irradiance:
+    name: solar_irradiance
+    description: placeholder description; linter will ignore this
+    title: solar irradiance
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000112
+    alias: solar_irradiance
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  temp:
+    name: temp
+    description: placeholder description; linter will ignore this
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: Air
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ventilation_rate:
+    name: ventilation_rate
+    description: placeholder description; linter will ignore this
+    title: ventilation rate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000114
+    alias: ventilation_rate
+    owner: Air
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ventilation_type:
+    name: ventilation_type
+    description: placeholder description; linter will ignore this
+    title: ventilation type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000756
+    alias: ventilation_type
+    owner: Air
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  volatile_org_comp:
+    name: volatile_org_comp
+    description: placeholder description; linter will ignore this
+    title: volatile organic compounds
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000115
+    alias: volatile_org_comp
+    owner: Air
+    domain_of:
+    - Air
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  wind_direction:
+    name: wind_direction
+    description: placeholder description; linter will ignore this
+    title: wind direction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000757
+    alias: wind_direction
+    owner: Air
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  wind_speed:
+    name: wind_speed
+    description: placeholder description; linter will ignore this
+    title: wind speed
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000118
+    alias: wind_speed
+    owner: Air
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  alt:
+    name: alt
+    description: placeholder description; linter will ignore this
+    title: altitude
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000094
+    alias: alt
+    owner: Air
+    domain_of:
+    - Air
+    - Checklist
+    - HostAssociated
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  project_name:
+    name: project_name
+    description: placeholder description; linter will ignore this
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: Air
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
 class_uri: MIXS:0016000
 
 </code></pre>

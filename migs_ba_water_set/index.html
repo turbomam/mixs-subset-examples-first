@@ -317,6 +317,7 @@
 
 
 <h1 id="slot-migs_ba_water_set">Slot: migs_ba_water_set</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/migs_ba_water_set">MIXS:migs_ba_water_set</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -326,18 +327,25 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../Database/">Database</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../MigsBaWater/">MigsBaWater</a></p>
+</li>
+<li>
+<p>Multivalued: True</p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -348,12 +356,16 @@
 <details>
 
 <pre><code class="language-yaml">name: migs_ba_water_set
+description: placeholder description; linter will ignore this
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
+multivalued: true
 alias: migs_ba_water_set
 domain_of:
 - Database
-range: string
+range: MigsBaWater
+inlined: true
+inlined_as_list: true
 
 </code></pre>
 

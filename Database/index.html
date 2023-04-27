@@ -195,144 +195,45 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-database">Class: Database</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/Database">MIXS:Database</a></p>
 <div class="mermaid"> classDiagram
     class Database
-      Database : agriculture_set
-
-          Database ..&gt; Agriculture : agriculture_set
-
-      Database : air_set
-
-          Database ..&gt; Air : air_set
-
-      Database : built_environment_set
-
-          Database ..&gt; BuiltEnvironment : built_environment_set
-
-      Database : checklist_set
-
-          Database ..&gt; Checklist : checklist_set
-
-      Database : environmental_package_set
-
-          Database ..&gt; EnvironmentalPackage : environmental_package_set
-
-      Database : food_animal_and_animal_feed_set
-
-          Database ..&gt; FoodAnimalAndAnimalFeed : food_animal_and_animal_feed_set
-
-      Database : food_farm_environment_set
-
-          Database ..&gt; FoodFarmEnvironment : food_farm_environment_set
-
-      Database : food_food_production_facility_set
-
-          Database ..&gt; FoodFoodProductionFacility : food_food_production_facility_set
-
-      Database : food_human_foods_set
-
-          Database ..&gt; FoodHumanFoods : food_human_foods_set
-
-      Database : host_associated_set
-
-          Database ..&gt; HostAssociated : host_associated_set
-
-      Database : human_associated_set
-
-          Database ..&gt; HumanAssociated : human_associated_set
-
-      Database : human_gut_set
-
-          Database ..&gt; HumanGut : human_gut_set
-
-      Database : human_oral_set
-
-          Database ..&gt; HumanOral : human_oral_set
-
-      Database : human_skin_set
-
-          Database ..&gt; HumanSkin : human_skin_set
-
-      Database : human_vaginal_set
-
-          Database ..&gt; HumanVaginal : human_vaginal_set
-
-      Database : hydrocarbon_resources_cores_set
-
-          Database ..&gt; HydrocarbonResourcesCores : hydrocarbon_resources_cores_set
-
-      Database : hydrocarbon_resources_fluids_swabs_set
-
-          Database ..&gt; HydrocarbonResourcesFluidsSwabs : hydrocarbon_resources_fluids_swabs_set
-
-      Database : microbial_mat_biofilm_set
-
-          Database ..&gt; MicrobialMatBiofilm : microbial_mat_biofilm_set
-
       Database : migs_ba_plant_associated_set
 
-          Database ..&gt; MigsBaPlantAssociated : migs_ba_plant_associated_set
+          Database --|&gt; MigsBaPlantAssociated : migs_ba_plant_associated_set
 
       Database : migs_ba_sediment_set
 
-          Database ..&gt; MigsBaSediment : migs_ba_sediment_set
+          Database --|&gt; MigsBaSediment : migs_ba_sediment_set
 
       Database : migs_ba_set
 
-          Database ..&gt; MigsBa : migs_ba_set
+          Database --|&gt; MigsBa : migs_ba_set
 
       Database : migs_ba_soil_set
 
-          Database ..&gt; MigsBaSoil : migs_ba_soil_set
+          Database --|&gt; MigsBaSoil : migs_ba_soil_set
 
       Database : migs_ba_water_set
 
-          Database ..&gt; MigsBaWater : migs_ba_water_set
+          Database --|&gt; MigsBaWater : migs_ba_water_set
 
       Database : mims_plant_associated_set
 
-          Database ..&gt; MimsPlantAssociated : mims_plant_associated_set
+          Database --|&gt; MimsPlantAssociated : mims_plant_associated_set
 
       Database : mims_sediment_set
 
-          Database ..&gt; MimsSediment : mims_sediment_set
+          Database --|&gt; MimsSediment : mims_sediment_set
 
       Database : mims_soil_set
 
-          Database ..&gt; MimsSoil : mims_soil_set
+          Database --|&gt; MimsSoil : mims_soil_set
 
       Database : mims_water_set
 
-          Database ..&gt; MimsWater : mims_water_set
-
-      Database : plant_associated_set
-
-          Database ..&gt; PlantAssociated : plant_associated_set
-
-      Database : sediment_set
-
-          Database ..&gt; Sediment : sediment_set
-
-      Database : soil_set
-
-          Database ..&gt; Soil : soil_set
-
-      Database : symbiont_associated_set
-
-          Database ..&gt; SymbiontAssociated : symbiont_associated_set
-
-      Database : unknown_term_set
-
-          Database ..&gt; UnknownTerm : unknown_term_set
-
-      Database : wastewater_sludge_set
-
-          Database ..&gt; WastewaterSludge : wastewater_sludge_set
-
-      Database : water_set
-
-          Database ..&gt; Water : water_set
+          Database --|&gt; MimsWater : mims_water_set
 
 
 </div>
@@ -349,207 +250,57 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../agriculture_set/">agriculture_set</a></td>
-<td>0..* <br/> <a href="../Agriculture/">Agriculture</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../air_set/">air_set</a></td>
-<td>0..* <br/> <a href="../Air/">Air</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../built_environment_set/">built_environment_set</a></td>
-<td>0..* <br/> <a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../checklist_set/">checklist_set</a></td>
-<td>0..* <br/> <a href="../Checklist/">Checklist</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../environmental_package_set/">environmental_package_set</a></td>
-<td>0..* <br/> <a href="../EnvironmentalPackage/">EnvironmentalPackage</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_animal_and_animal_feed_set/">food_animal_and_animal_feed_set</a></td>
-<td>0..* <br/> <a href="../FoodAnimalAndAnimalFeed/">FoodAnimalAndAnimalFeed</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_farm_environment_set/">food_farm_environment_set</a></td>
-<td>0..* <br/> <a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_food_production_facility_set/">food_food_production_facility_set</a></td>
-<td>0..* <br/> <a href="../FoodFoodProductionFacility/">FoodFoodProductionFacility</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_human_foods_set/">food_human_foods_set</a></td>
-<td>0..* <br/> <a href="../FoodHumanFoods/">FoodHumanFoods</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../host_associated_set/">host_associated_set</a></td>
-<td>0..* <br/> <a href="../HostAssociated/">HostAssociated</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../human_associated_set/">human_associated_set</a></td>
-<td>0..* <br/> <a href="../HumanAssociated/">HumanAssociated</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../human_gut_set/">human_gut_set</a></td>
-<td>0..* <br/> <a href="../HumanGut/">HumanGut</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../human_oral_set/">human_oral_set</a></td>
-<td>0..* <br/> <a href="../HumanOral/">HumanOral</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../human_skin_set/">human_skin_set</a></td>
-<td>0..* <br/> <a href="../HumanSkin/">HumanSkin</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../human_vaginal_set/">human_vaginal_set</a></td>
-<td>0..* <br/> <a href="../HumanVaginal/">HumanVaginal</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hydrocarbon_resources_cores_set/">hydrocarbon_resources_cores_set</a></td>
-<td>0..* <br/> <a href="../HydrocarbonResourcesCores/">HydrocarbonResourcesCores</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hydrocarbon_resources_fluids_swabs_set/">hydrocarbon_resources_fluids_swabs_set</a></td>
-<td>0..* <br/> <a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../microbial_mat_biofilm_set/">microbial_mat_biofilm_set</a></td>
-<td>0..* <br/> <a href="../MicrobialMatBiofilm/">MicrobialMatBiofilm</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../migs_ba_set/">migs_ba_set</a></td>
-<td>0..* <br/> <a href="../MigsBa/">MigsBa</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../migs_ba_plant_associated_set/">migs_ba_plant_associated_set</a></td>
 <td>0..* <br/> <a href="../MigsBaPlantAssociated/">MigsBaPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../migs_ba_sediment_set/">migs_ba_sediment_set</a></td>
 <td>0..* <br/> <a href="../MigsBaSediment/">MigsBaSediment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../migs_ba_set/">migs_ba_set</a></td>
+<td>0..* <br/> <a href="../MigsBa/">MigsBa</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../migs_ba_soil_set/">migs_ba_soil_set</a></td>
 <td>0..* <br/> <a href="../MigsBaSoil/">MigsBaSoil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../migs_ba_water_set/">migs_ba_water_set</a></td>
+<td>0..* <br/> <a href="../MigsBaWater/">MigsBaWater</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../mims_plant_associated_set/">mims_plant_associated_set</a></td>
 <td>0..* <br/> <a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../mims_sediment_set/">mims_sediment_set</a></td>
 <td>0..* <br/> <a href="../MimsSediment/">MimsSediment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../mims_soil_set/">mims_soil_set</a></td>
 <td>0..* <br/> <a href="../MimsSoil/">MimsSoil</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../plant_associated_set/">plant_associated_set</a></td>
-<td>0..* <br/> <a href="../PlantAssociated/">PlantAssociated</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sediment_set/">sediment_set</a></td>
-<td>0..* <br/> <a href="../Sediment/">Sediment</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../soil_set/">soil_set</a></td>
-<td>0..* <br/> <a href="../Soil/">Soil</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../symbiont_associated_set/">symbiont_associated_set</a></td>
-<td>0..* <br/> <a href="../SymbiontAssociated/">SymbiontAssociated</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../unknown_term_set/">unknown_term_set</a></td>
-<td>0..* <br/> <a href="../UnknownTerm/">UnknownTerm</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../wastewater_sludge_set/">wastewater_sludge_set</a></td>
-<td>0..* <br/> <a href="../WastewaterSludge/">WastewaterSludge</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../water_set/">water_set</a></td>
-<td>0..* <br/> <a href="../Water/">Water</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../migs_ba_water_set/">migs_ba_water_set</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../mims_water_set/">mims_water_set</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..* <br/> <a href="../MimsWater/">MimsWater</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 </tbody>
@@ -583,282 +334,56 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: Database
+description: placeholder description; linter will ignore this
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 slots:
-- agriculture_set
-- air_set
-- built_environment_set
-- checklist_set
-- environmental_package_set
-- food_animal_and_animal_feed_set
-- food_farm_environment_set
-- food_food_production_facility_set
-- food_human_foods_set
-- host_associated_set
-- human_associated_set
-- human_gut_set
-- human_oral_set
-- human_skin_set
-- human_vaginal_set
-- hydrocarbon_resources_cores_set
-- hydrocarbon_resources_fluids_swabs_set
-- microbial_mat_biofilm_set
-- migs_ba_set
 - migs_ba_plant_associated_set
 - migs_ba_sediment_set
+- migs_ba_set
 - migs_ba_soil_set
+- migs_ba_water_set
 - mims_plant_associated_set
 - mims_sediment_set
 - mims_soil_set
-- plant_associated_set
-- sediment_set
-- soil_set
-- symbiont_associated_set
-- unknown_term_set
-- wastewater_sludge_set
-- water_set
-- migs_ba_water_set
 - mims_water_set
 slot_usage:
-  agriculture_set:
-    name: agriculture_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Agriculture
-    inlined_as_list: true
-  air_set:
-    name: air_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Air
-    inlined_as_list: true
-  built_environment_set:
-    name: built_environment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: BuiltEnvironment
-    inlined_as_list: true
-  checklist_set:
-    name: checklist_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Checklist
-    inlined_as_list: true
-  environmental_package_set:
-    name: environmental_package_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: EnvironmentalPackage
-    inlined_as_list: true
-  food_animal_and_animal_feed_set:
-    name: food_animal_and_animal_feed_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodAnimalAndAnimalFeed
-    inlined_as_list: true
-  food_farm_environment_set:
-    name: food_farm_environment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodFarmEnvironment
-    inlined_as_list: true
-  food_food_production_facility_set:
-    name: food_food_production_facility_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodFoodProductionFacility
-    inlined_as_list: true
-  food_human_foods_set:
-    name: food_human_foods_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodHumanFoods
-    inlined_as_list: true
-  host_associated_set:
-    name: host_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HostAssociated
-    inlined_as_list: true
-  human_associated_set:
-    name: human_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanAssociated
-    inlined_as_list: true
-  human_gut_set:
-    name: human_gut_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanGut
-    inlined_as_list: true
-  human_oral_set:
-    name: human_oral_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanOral
-    inlined_as_list: true
-  human_skin_set:
-    name: human_skin_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanSkin
-    inlined_as_list: true
-  human_vaginal_set:
-    name: human_vaginal_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanVaginal
-    inlined_as_list: true
-  hydrocarbon_resources_cores_set:
-    name: hydrocarbon_resources_cores_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesCores
-    inlined_as_list: true
-  hydrocarbon_resources_fluids_swabs_set:
-    name: hydrocarbon_resources_fluids_swabs_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesFluidsSwabs
-    inlined_as_list: true
-  microbial_mat_biofilm_set:
-    name: microbial_mat_biofilm_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: MicrobialMatBiofilm
-    inlined_as_list: true
   migs_ba_plant_associated_set:
     name: migs_ba_plant_associated_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaPlantAssociated
-    inlined_as_list: true
   migs_ba_sediment_set:
     name: migs_ba_sediment_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaSediment
-    inlined_as_list: true
   migs_ba_set:
     name: migs_ba_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBa
-    inlined_as_list: true
   migs_ba_soil_set:
     name: migs_ba_soil_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaSoil
-    inlined_as_list: true
   migs_ba_water_set:
     name: migs_ba_water_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaWater
-    inlined_as_list: true
   mims_plant_associated_set:
     name: mims_plant_associated_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsPlantAssociated
-    inlined_as_list: true
   mims_sediment_set:
     name: mims_sediment_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsSediment
-    inlined_as_list: true
   mims_soil_set:
     name: mims_soil_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsSoil
-    inlined_as_list: true
   mims_water_set:
     name: mims_water_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsWater
-    inlined_as_list: true
-  plant_associated_set:
-    name: plant_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: PlantAssociated
-    inlined_as_list: true
-  sediment_set:
-    name: sediment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Sediment
-    inlined_as_list: true
-  soil_set:
-    name: soil_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Soil
-    inlined_as_list: true
-  symbiont_associated_set:
-    name: symbiont_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: SymbiontAssociated
-    inlined_as_list: true
-  unknown_term_set:
-    name: unknown_term_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: UnknownTerm
-    inlined_as_list: true
-  wastewater_sludge_set:
-    name: wastewater_sludge_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: WastewaterSludge
-    inlined_as_list: true
-  water_set:
-    name: water_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Water
-    inlined_as_list: true
 tree_root: true
 
 </code></pre>
@@ -866,478 +391,50 @@ tree_root: true
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: Database
+description: placeholder description; linter will ignore this
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 slot_usage:
-  agriculture_set:
-    name: agriculture_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Agriculture
-    inlined_as_list: true
-  air_set:
-    name: air_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Air
-    inlined_as_list: true
-  built_environment_set:
-    name: built_environment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: BuiltEnvironment
-    inlined_as_list: true
-  checklist_set:
-    name: checklist_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Checklist
-    inlined_as_list: true
-  environmental_package_set:
-    name: environmental_package_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: EnvironmentalPackage
-    inlined_as_list: true
-  food_animal_and_animal_feed_set:
-    name: food_animal_and_animal_feed_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodAnimalAndAnimalFeed
-    inlined_as_list: true
-  food_farm_environment_set:
-    name: food_farm_environment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodFarmEnvironment
-    inlined_as_list: true
-  food_food_production_facility_set:
-    name: food_food_production_facility_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodFoodProductionFacility
-    inlined_as_list: true
-  food_human_foods_set:
-    name: food_human_foods_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: FoodHumanFoods
-    inlined_as_list: true
-  host_associated_set:
-    name: host_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HostAssociated
-    inlined_as_list: true
-  human_associated_set:
-    name: human_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanAssociated
-    inlined_as_list: true
-  human_gut_set:
-    name: human_gut_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanGut
-    inlined_as_list: true
-  human_oral_set:
-    name: human_oral_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanOral
-    inlined_as_list: true
-  human_skin_set:
-    name: human_skin_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanSkin
-    inlined_as_list: true
-  human_vaginal_set:
-    name: human_vaginal_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HumanVaginal
-    inlined_as_list: true
-  hydrocarbon_resources_cores_set:
-    name: hydrocarbon_resources_cores_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesCores
-    inlined_as_list: true
-  hydrocarbon_resources_fluids_swabs_set:
-    name: hydrocarbon_resources_fluids_swabs_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesFluidsSwabs
-    inlined_as_list: true
-  microbial_mat_biofilm_set:
-    name: microbial_mat_biofilm_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: MicrobialMatBiofilm
-    inlined_as_list: true
   migs_ba_plant_associated_set:
     name: migs_ba_plant_associated_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaPlantAssociated
-    inlined_as_list: true
   migs_ba_sediment_set:
     name: migs_ba_sediment_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaSediment
-    inlined_as_list: true
   migs_ba_set:
     name: migs_ba_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBa
-    inlined_as_list: true
   migs_ba_soil_set:
     name: migs_ba_soil_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaSoil
-    inlined_as_list: true
   migs_ba_water_set:
     name: migs_ba_water_set
-    multivalued: true
     domain_of:
     - Database
-    range: MigsBaWater
-    inlined_as_list: true
   mims_plant_associated_set:
     name: mims_plant_associated_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsPlantAssociated
-    inlined_as_list: true
   mims_sediment_set:
     name: mims_sediment_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsSediment
-    inlined_as_list: true
   mims_soil_set:
     name: mims_soil_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsSoil
-    inlined_as_list: true
   mims_water_set:
     name: mims_water_set
-    multivalued: true
     domain_of:
     - Database
-    range: MimsWater
-    inlined_as_list: true
-  plant_associated_set:
-    name: plant_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: PlantAssociated
-    inlined_as_list: true
-  sediment_set:
-    name: sediment_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Sediment
-    inlined_as_list: true
-  soil_set:
-    name: soil_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Soil
-    inlined_as_list: true
-  symbiont_associated_set:
-    name: symbiont_associated_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: SymbiontAssociated
-    inlined_as_list: true
-  unknown_term_set:
-    name: unknown_term_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: UnknownTerm
-    inlined_as_list: true
-  wastewater_sludge_set:
-    name: wastewater_sludge_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: WastewaterSludge
-    inlined_as_list: true
-  water_set:
-    name: water_set
-    multivalued: true
-    domain_of:
-    - Database
-    range: Water
-    inlined_as_list: true
 attributes:
-  agriculture_set:
-    name: agriculture_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: agriculture_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Agriculture
-    inlined: true
-    inlined_as_list: true
-  air_set:
-    name: air_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: air_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Air
-    inlined: true
-    inlined_as_list: true
-  built_environment_set:
-    name: built_environment_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: built_environment_set
-    owner: Database
-    domain_of:
-    - Database
-    range: BuiltEnvironment
-    inlined: true
-    inlined_as_list: true
-  checklist_set:
-    name: checklist_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: checklist_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Checklist
-    inlined: true
-    inlined_as_list: true
-  environmental_package_set:
-    name: environmental_package_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: environmental_package_set
-    owner: Database
-    domain_of:
-    - Database
-    range: EnvironmentalPackage
-    inlined: true
-    inlined_as_list: true
-  food_animal_and_animal_feed_set:
-    name: food_animal_and_animal_feed_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: food_animal_and_animal_feed_set
-    owner: Database
-    domain_of:
-    - Database
-    range: FoodAnimalAndAnimalFeed
-    inlined: true
-    inlined_as_list: true
-  food_farm_environment_set:
-    name: food_farm_environment_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: food_farm_environment_set
-    owner: Database
-    domain_of:
-    - Database
-    range: FoodFarmEnvironment
-    inlined: true
-    inlined_as_list: true
-  food_food_production_facility_set:
-    name: food_food_production_facility_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: food_food_production_facility_set
-    owner: Database
-    domain_of:
-    - Database
-    range: FoodFoodProductionFacility
-    inlined: true
-    inlined_as_list: true
-  food_human_foods_set:
-    name: food_human_foods_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: food_human_foods_set
-    owner: Database
-    domain_of:
-    - Database
-    range: FoodHumanFoods
-    inlined: true
-    inlined_as_list: true
-  host_associated_set:
-    name: host_associated_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: host_associated_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HostAssociated
-    inlined: true
-    inlined_as_list: true
-  human_associated_set:
-    name: human_associated_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: human_associated_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HumanAssociated
-    inlined: true
-    inlined_as_list: true
-  human_gut_set:
-    name: human_gut_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: human_gut_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HumanGut
-    inlined: true
-    inlined_as_list: true
-  human_oral_set:
-    name: human_oral_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: human_oral_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HumanOral
-    inlined: true
-    inlined_as_list: true
-  human_skin_set:
-    name: human_skin_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: human_skin_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HumanSkin
-    inlined: true
-    inlined_as_list: true
-  human_vaginal_set:
-    name: human_vaginal_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: human_vaginal_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HumanVaginal
-    inlined: true
-    inlined_as_list: true
-  hydrocarbon_resources_cores_set:
-    name: hydrocarbon_resources_cores_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: hydrocarbon_resources_cores_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesCores
-    inlined: true
-    inlined_as_list: true
-  hydrocarbon_resources_fluids_swabs_set:
-    name: hydrocarbon_resources_fluids_swabs_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: hydrocarbon_resources_fluids_swabs_set
-    owner: Database
-    domain_of:
-    - Database
-    range: HydrocarbonResourcesFluidsSwabs
-    inlined: true
-    inlined_as_list: true
-  microbial_mat_biofilm_set:
-    name: microbial_mat_biofilm_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: microbial_mat_biofilm_set
-    owner: Database
-    domain_of:
-    - Database
-    range: MicrobialMatBiofilm
-    inlined: true
-    inlined_as_list: true
-  migs_ba_set:
-    name: migs_ba_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: migs_ba_set
-    owner: Database
-    domain_of:
-    - Database
-    range: MigsBa
-    inlined: true
-    inlined_as_list: true
   migs_ba_plant_associated_set:
     name: migs_ba_plant_associated_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1350,6 +447,7 @@ attributes:
     inlined_as_list: true
   migs_ba_sediment_set:
     name: migs_ba_sediment_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1360,8 +458,22 @@ attributes:
     range: MigsBaSediment
     inlined: true
     inlined_as_list: true
+  migs_ba_set:
+    name: migs_ba_set
+    description: placeholder description; linter will ignore this
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    multivalued: true
+    alias: migs_ba_set
+    owner: Database
+    domain_of:
+    - Database
+    range: MigsBa
+    inlined: true
+    inlined_as_list: true
   migs_ba_soil_set:
     name: migs_ba_soil_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1372,8 +484,22 @@ attributes:
     range: MigsBaSoil
     inlined: true
     inlined_as_list: true
+  migs_ba_water_set:
+    name: migs_ba_water_set
+    description: placeholder description; linter will ignore this
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    multivalued: true
+    alias: migs_ba_water_set
+    owner: Database
+    domain_of:
+    - Database
+    range: MigsBaWater
+    inlined: true
+    inlined_as_list: true
   mims_plant_associated_set:
     name: mims_plant_associated_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1386,6 +512,7 @@ attributes:
     inlined_as_list: true
   mims_sediment_set:
     name: mims_sediment_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1398,6 +525,7 @@ attributes:
     inlined_as_list: true
   mims_soil_set:
     name: mims_soil_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1408,103 +536,9 @@ attributes:
     range: MimsSoil
     inlined: true
     inlined_as_list: true
-  plant_associated_set:
-    name: plant_associated_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: plant_associated_set
-    owner: Database
-    domain_of:
-    - Database
-    range: PlantAssociated
-    inlined: true
-    inlined_as_list: true
-  sediment_set:
-    name: sediment_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: sediment_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Sediment
-    inlined: true
-    inlined_as_list: true
-  soil_set:
-    name: soil_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: soil_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Soil
-    inlined: true
-    inlined_as_list: true
-  symbiont_associated_set:
-    name: symbiont_associated_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: symbiont_associated_set
-    owner: Database
-    domain_of:
-    - Database
-    range: SymbiontAssociated
-    inlined: true
-    inlined_as_list: true
-  unknown_term_set:
-    name: unknown_term_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: unknown_term_set
-    owner: Database
-    domain_of:
-    - Database
-    range: UnknownTerm
-    inlined: true
-    inlined_as_list: true
-  wastewater_sludge_set:
-    name: wastewater_sludge_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: wastewater_sludge_set
-    owner: Database
-    domain_of:
-    - Database
-    range: WastewaterSludge
-    inlined: true
-    inlined_as_list: true
-  water_set:
-    name: water_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: water_set
-    owner: Database
-    domain_of:
-    - Database
-    range: Water
-    inlined: true
-    inlined_as_list: true
-  migs_ba_water_set:
-    name: migs_ba_water_set
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    multivalued: true
-    alias: migs_ba_water_set
-    owner: Database
-    domain_of:
-    - Database
-    range: MigsBaWater
-    inlined_as_list: true
   mims_water_set:
     name: mims_water_set
+    description: placeholder description; linter will ignore this
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
     multivalued: true
@@ -1513,6 +547,7 @@ attributes:
     domain_of:
     - Database
     range: MimsWater
+    inlined: true
     inlined_as_list: true
 tree_root: true
 

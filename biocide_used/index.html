@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-biocide_used">Slot: biocide_used</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0001258">MIXS:0001258</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,18 +341,25 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../FoodFoodProductionFacility/">FoodFoodProductionFacility</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -405,6 +413,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: m
+description: placeholder description; linter will ignore this
 title: biocide
 notes:
 - commercial name of biocide, active ingredient in biocide or class of biocide
@@ -418,7 +427,7 @@ alias: biocide_used
 domain_of:
 - FoodFoodProductionFacility
 range: string
-pattern: '[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{free_text}'
 

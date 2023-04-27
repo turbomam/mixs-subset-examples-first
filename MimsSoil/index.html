@@ -205,6 +205,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-mimssoil">Class: MimsSoil</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0010007_0016012">MIXS:0010007_0016012</a></p>
 <div class="mermaid"> classDiagram
     class MimsSoil
@@ -231,31 +232,55 @@
 
       MimsSoil : assembly_qual
 
-          MimsSoil ..&gt; ASSEMBLY_QUAL_ENUM : assembly_qual
+          MimsSoil --|&gt; ASSEMBLY_QUAL_ENUM : assembly_qual
 
       MimsSoil : assembly_software
 
-      MimsSoil : associated_resource
+      MimsSoil : bin_param
+
+      MimsSoil : bin_software
+
+      MimsSoil : biotic_relationship
+
+          MimsSoil --|&gt; BIOTIC_RELATIONSHIP_ENUM : biotic_relationship
+
+      MimsSoil : chimera_check
 
       MimsSoil : collection_date
+
+      MimsSoil : compl_appr
+
+      MimsSoil : compl_score
+
+      MimsSoil : compl_software
+
+      MimsSoil : contam_score
+
+      MimsSoil : contam_screen_input
+
+      MimsSoil : contam_screen_param
 
       MimsSoil : crop_rotation
 
       MimsSoil : cur_land_use
 
-          MimsSoil ..&gt; CUR_LAND_USE_ENUM : cur_land_use
+          MimsSoil --|&gt; CUR_LAND_USE_ENUM : cur_land_use
 
       MimsSoil : cur_vegetation
 
       MimsSoil : cur_vegetation_meth
 
-      MimsSoil : depth
+      MimsSoil : decontam_software
+
+      MimsSoil : detec_type
 
       MimsSoil : drainage_class
 
-          MimsSoil ..&gt; DRAINAGE_CLASS_ENUM : drainage_class
+          MimsSoil --|&gt; DRAINAGE_CLASS_ENUM : drainage_class
 
       MimsSoil : elev
+
+      MimsSoil : encoded_traits
 
       MimsSoil : env_broad_scale
 
@@ -263,13 +288,17 @@
 
       MimsSoil : env_medium
 
+      MimsSoil : estimated_size
+
       MimsSoil : experimental_factor
+
+      MimsSoil : extrachrom_elements
 
       MimsSoil : extreme_event
 
       MimsSoil : fao_class
 
-          MimsSoil ..&gt; FAO_CLASS_ENUM : fao_class
+          MimsSoil --|&gt; FAO_CLASS_ENUM : fao_class
 
       MimsSoil : feat_pred
 
@@ -285,11 +314,21 @@
 
       MimsSoil : horizon_meth
 
+      MimsSoil : host_disease_stat
+
+      MimsSoil : host_pred_appr
+
+      MimsSoil : host_pred_est_acc
+
+      MimsSoil : host_spec_range
+
+      MimsSoil : isol_growth_condt
+
       MimsSoil : lat_lon
 
       MimsSoil : lib_layout
 
-          MimsSoil ..&gt; LIB_LAYOUT_ENUM : lib_layout
+          MimsSoil --|&gt; LIB_LAYOUT_ENUM : lib_layout
 
       MimsSoil : lib_reads_seqd
 
@@ -309,7 +348,7 @@
 
       MimsSoil : local_class_meth
 
-      MimsSoil : micro_biomass_meth
+      MimsSoil : mag_cov_software
 
       MimsSoil : microbial_biomass
 
@@ -319,11 +358,13 @@
 
       MimsSoil : neg_cont_type
 
-          MimsSoil ..&gt; NEG_CONT_TYPE_ENUM : neg_cont_type
+          MimsSoil --|&gt; NEG_CONT_TYPE_ENUM : neg_cont_type
 
       MimsSoil : nucl_acid_amp
 
       MimsSoil : nucl_acid_ext
+
+      MimsSoil : num_replicons
 
       MimsSoil : number_contig
 
@@ -331,23 +372,45 @@
 
       MimsSoil : org_nitro
 
+      MimsSoil : otu_class_appr
+
+      MimsSoil : otu_db
+
+      MimsSoil : otu_seq_comp_appr
+
+      MimsSoil : pathogenicity
+
+      MimsSoil : pcr_cond
+
+      MimsSoil : pcr_primers
+
       MimsSoil : ph
 
       MimsSoil : ph_meth
+
+      MimsSoil : ploidy
 
       MimsSoil : pool_dna_extracts
 
       MimsSoil : pos_cont_type
 
-      MimsSoil : prev_land_use_meth
+      MimsSoil : pred_genome_struc
+
+      MimsSoil : pred_genome_type
 
       MimsSoil : previous_land_use
 
+      MimsSoil : previous_land_use_meth
+
       MimsSoil : profile_position
 
-          MimsSoil ..&gt; PROFILE_POSITION_ENUM : profile_position
+          MimsSoil --|&gt; PROFILE_POSITION_ENUM : profile_position
 
       MimsSoil : project_name
+
+      MimsSoil : propagation
+
+      MimsSoil : reassembly_bin
 
       MimsSoil : ref_biomaterial
 
@@ -357,13 +420,7 @@
 
       MimsSoil : salinity_meth
 
-      MimsSoil : samp_collec_device
-
-      MimsSoil : samp_collec_method
-
       MimsSoil : samp_mat_process
-
-      MimsSoil : samp_name
 
       MimsSoil : samp_size
 
@@ -377,9 +434,15 @@
 
       MimsSoil : seq_meth
 
+      MimsSoil : seq_quality_check
+
       MimsSoil : sieving
 
       MimsSoil : sim_search_meth
+
+      MimsSoil : single_cell_lysis_appr
+
+      MimsSoil : single_cell_lysis_prot
 
       MimsSoil : size_frac
 
@@ -387,41 +450,61 @@
 
       MimsSoil : slope_gradient
 
-      MimsSoil : soil_horizon
-
-      MimsSoil : soil_text_measure
-
-      MimsSoil : soil_texture_meth
-
       MimsSoil : soil_type
 
       MimsSoil : soil_type_meth
 
       MimsSoil : sop
 
+      MimsSoil : sort_tech
+
       MimsSoil : source_mat_id
+
+      MimsSoil : source_uvig
+
+      MimsSoil : specific_host
 
       MimsSoil : store_cond
 
+      MimsSoil : subspecf_gen_lin
+
+      MimsSoil : target_gene
+
+      MimsSoil : target_subfragment
+
       MimsSoil : tax_class
+
+      MimsSoil : tax_ident
 
       MimsSoil : temp
 
       MimsSoil : tillage
 
-          MimsSoil ..&gt; TILLAGE_ENUM : tillage
-
-      MimsSoil : tot_nitro_cont_meth
-
-      MimsSoil : tot_nitro_content
+          MimsSoil --|&gt; TILLAGE_ENUM : tillage
 
       MimsSoil : tot_org_c_meth
 
       MimsSoil : tot_org_carb
 
+      MimsSoil : trna_ext_software
+
+      MimsSoil : trnas
+
+      MimsSoil : trophic_level
+
+          MimsSoil --|&gt; TROPHIC_LEVEL_ENUM : trophic_level
+
+      MimsSoil : vir_ident_software
+
+      MimsSoil : virus_enrich_appr
+
       MimsSoil : water_cont_soil_meth
 
       MimsSoil : water_content
+
+      MimsSoil : wga_amp_appr
+
+      MimsSoil : wga_amp_kit
 
 
 </div>
@@ -447,592 +530,826 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../adapters/">adapters</a></td>
+<td><a href="../mid/">mid</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../alt/">alt</a></td>
+<td><a href="../adapters/">adapters</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../annot/">annot</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../assembly_name/">assembly_name</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../assembly_qual/">assembly_qual</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../ASSEMBLYQUALENUM/">ASSEMBLYQUALENUM</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../assembly_software/">assembly_software</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../associated_resource/">associated_resource</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../collection_date/">collection_date</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../depth/">depth</a></td>
-<td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../elev/">elev</a></td>
-<td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../env_broad_scale/">env_broad_scale</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../env_local_scale/">env_local_scale</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../env_medium/">env_medium</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../experimental_factor/">experimental_factor</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../feat_pred/">feat_pred</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../geo_loc_name/">geo_loc_name</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lat_lon/">lat_lon</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lib_layout/">lib_layout</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lib_screen/">lib_screen</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lib_size/">lib_size</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../lib_vector/">lib_vector</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../mid/">mid</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../neg_cont_type/">neg_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../number_contig/">number_contig</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../pos_cont_type/">pos_cont_type</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../project_name/">project_name</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../ref_db/">ref_db</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_collec_device/">samp_collec_device</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_collec_method/">samp_collec_method</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_mat_process/">samp_mat_process</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_name/">samp_name</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_size/">samp_size</a></td>
-<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../seq_meth/">seq_meth</a></td>
-<td>1..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../sim_search_meth/">sim_search_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
-</tr>
-<tr>
-<td><a href="../size_frac/">size_frac</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../sop/">sop</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../source_mat_id/">source_mat_id</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../tax_class/">tax_class</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Mims/">Mims</a></td>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../ASSEMBLYQUALENUM/">ASSEMBLYQUALENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../alt/">alt</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../elev/">elev</a></td>
+<td>1..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a>, <a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../temp/">temp</a></td>
 <td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a>, <a href="../Mims/">Mims</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a>, <a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../cur_land_use/">cur_land_use</a></td>
-<td>0..1 <br/> <a href="../CURLANDUSEENUM/">CURLANDUSEENUM</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../cur_vegetation/">cur_vegetation</a></td>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../cur_vegetation_meth/">cur_vegetation_meth</a></td>
+<td><a href="../size_frac/">size_frac</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../previous_land_use/">previous_land_use</a></td>
+<td><a href="../feat_pred/">feat_pred</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../prev_land_use_meth/">prev_land_use_meth</a></td>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
-<td><a href="../crop_rotation/">crop_rotation</a></td>
+<td><a href="../ref_db/">ref_db</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a>, <a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a>, <a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a>, <a href="../Mims/">Mims</a></td>
 </tr>
 <tr>
 <td><a href="../agrochem_addition/">agrochem_addition</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../tillage/">tillage</a></td>
-<td>0..* <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../fire/">fire</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../flooding/">flooding</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../extreme_event/">extreme_event</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../soil_horizon/">soil_horizon</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../horizon_meth/">horizon_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../sieving/">sieving</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../water_content/">water_content</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../water_cont_soil_meth/">water_cont_soil_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../pool_dna_extracts/">pool_dna_extracts</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../store_cond/">store_cond</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../link_climate_info/">link_climate_info</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../annual_temp/">annual_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../season_temp/">season_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../annual_precpt/">annual_precpt</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../season_precpt/">season_precpt</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../link_class_info/">link_class_info</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../fao_class/">fao_class</a></td>
-<td>0..1 <br/> <a href="../FAOCLASSENUM/">FAOCLASSENUM</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../local_class/">local_class</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../local_class_meth/">local_class_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../org_nitro/">org_nitro</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../soil_type/">soil_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../soil_type_meth/">soil_type_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../slope_gradient/">slope_gradient</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../slope_aspect/">slope_aspect</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../profile_position/">profile_position</a></td>
-<td>0..1 <br/> <a href="../PROFILEPOSITIONENUM/">PROFILEPOSITIONENUM</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../drainage_class/">drainage_class</a></td>
-<td>0..1 <br/> <a href="../DRAINAGECLASSENUM/">DRAINAGECLASSENUM</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../soil_text_measure/">soil_text_measure</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../soil_texture_meth/">soil_texture_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../ph/">ph</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../ph_meth/">ph_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../org_matter/">org_matter</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../tot_org_carb/">tot_org_carb</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../tot_org_c_meth/">tot_org_c_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../tot_nitro_content/">tot_nitro_content</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../tot_nitro_cont_meth/">tot_nitro_cont_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../microbial_biomass/">microbial_biomass</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../micro_biomass_meth/">micro_biomass_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../link_addit_analys/">link_addit_analys</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../salinity_meth/">salinity_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../heavy_metals/">heavy_metals</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td><a href="../Soil/">Soil</a></td>
-</tr>
-<tr>
-<td><a href="../heavy_metals_meth/">heavy_metals_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../al_sat/">al_sat</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../al_sat_meth/">al_sat_meth</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../annual_precpt/">annual_precpt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../annual_temp/">annual_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../crop_rotation/">crop_rotation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../cur_land_use/">cur_land_use</a></td>
+<td>0..1 <br/> <a href="../CURLANDUSEENUM/">CURLANDUSEENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../cur_vegetation/">cur_vegetation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../cur_vegetation_meth/">cur_vegetation_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../drainage_class/">drainage_class</a></td>
+<td>0..1 <br/> <a href="../DRAINAGECLASSENUM/">DRAINAGECLASSENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../extreme_event/">extreme_event</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../fao_class/">fao_class</a></td>
+<td>0..1 <br/> <a href="../FAOCLASSENUM/">FAOCLASSENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../fire/">fire</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../flooding/">flooding</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../heavy_metals/">heavy_metals</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../heavy_metals_meth/">heavy_metals_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../horizon_meth/">horizon_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../link_addit_analys/">link_addit_analys</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../link_class_info/">link_class_info</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../link_climate_info/">link_climate_info</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../local_class/">local_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../local_class_meth/">local_class_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../microbial_biomass/">microbial_biomass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td><a href="../Soil/">Soil</a></td>
 </tr>
 <tr>
 <td><a href="../misc_param/">misc_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../org_matter/">org_matter</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../org_nitro/">org_nitro</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../ph/">ph</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../ph_meth/">ph_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../pool_dna_extracts/">pool_dna_extracts</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../previous_land_use/">previous_land_use</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../previous_land_use_meth/">previous_land_use_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../profile_position/">profile_position</a></td>
+<td>0..1 <br/> <a href="../PROFILEPOSITIONENUM/">PROFILEPOSITIONENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../salinity_meth/">salinity_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../season_precpt/">season_precpt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../season_temp/">season_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../sieving/">sieving</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../slope_aspect/">slope_aspect</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../slope_gradient/">slope_gradient</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../soil_type/">soil_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../soil_type_meth/">soil_type_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../store_cond/">store_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../tillage/">tillage</a></td>
+<td>0..* <br/> <a href="../TILLAGEENUM/">TILLAGEENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../tot_org_c_meth/">tot_org_c_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../tot_org_carb/">tot_org_carb</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../water_cont_soil_meth/">water_cont_soil_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../water_content/">water_content</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Soil/">Soil</a></td>
+</tr>
+<tr>
+<td><a href="../bin_param/">bin_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../bin_software/">bin_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../biotic_relationship/">biotic_relationship</a></td>
+<td>0..1 <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../chimera_check/">chimera_check</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../compl_appr/">compl_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../compl_score/">compl_score</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../compl_software/">compl_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../contam_score/">contam_score</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../contam_screen_input/">contam_screen_input</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../contam_screen_param/">contam_screen_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../decontam_software/">decontam_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../detec_type/">detec_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../encoded_traits/">encoded_traits</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../estimated_size/">estimated_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../extrachrom_elements/">extrachrom_elements</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../host_disease_stat/">host_disease_stat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../host_pred_appr/">host_pred_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../host_pred_est_acc/">host_pred_est_acc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../host_spec_range/">host_spec_range</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../isol_growth_condt/">isol_growth_condt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../mag_cov_software/">mag_cov_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../num_replicons/">num_replicons</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../otu_class_appr/">otu_class_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../otu_db/">otu_db</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../otu_seq_comp_appr/">otu_seq_comp_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../pathogenicity/">pathogenicity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../pcr_cond/">pcr_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../pcr_primers/">pcr_primers</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../ploidy/">ploidy</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../pred_genome_struc/">pred_genome_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../pred_genome_type/">pred_genome_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../propagation/">propagation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../reassembly_bin/">reassembly_bin</a></td>
+<td>0..1 <br/> <a href="../Boolean/">Boolean</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../seq_quality_check/">seq_quality_check</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../single_cell_lysis_appr/">single_cell_lysis_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../single_cell_lysis_prot/">single_cell_lysis_prot</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../sort_tech/">sort_tech</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../source_uvig/">source_uvig</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../specific_host/">specific_host</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../subspecf_gen_lin/">subspecf_gen_lin</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../target_gene/">target_gene</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../target_subfragment/">target_subfragment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../tax_ident/">tax_ident</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../trna_ext_software/">trna_ext_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../trnas/">trnas</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../trophic_level/">trophic_level</a></td>
+<td>0..1 <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../vir_ident_software/">vir_ident_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../virus_enrich_appr/">virus_enrich_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../wga_amp_appr/">wga_amp_appr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
+</tr>
+<tr>
+<td><a href="../wga_amp_kit/">wga_amp_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td><a href="../Checklist/">Checklist</a></td>
 </tr>
 </tbody>
 </table>
@@ -1084,6 +1401,7 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: MimsSoil
+description: placeholder description; linter will ignore this
 title: soil sample according to the Mims checklist
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -1097,6 +1415,7 @@ class_uri: MIXS:0010007_0016012
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: MimsSoil
+description: placeholder description; linter will ignore this
 title: soil sample according to the Mims checklist
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -1104,8 +1423,31 @@ is_a: Soil
 mixins:
 - Mims
 attributes:
+  mid:
+    name: mid
+    description: placeholder description; linter will ignore this
+    title: multiplex identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000047
+    alias: mid
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[ACGT]+'
+    structured_pattern:
+      syntax: '{dna}'
   adapters:
     name: adapters
+    description: placeholder description; linter will ignore this
     title: adapters
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1114,6 +1456,7 @@ attributes:
     owner: MimsSoil
     domain_of:
     - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1129,37 +1472,9 @@ attributes:
     pattern: '[ACGT]+;[ACGT]+'
     structured_pattern:
       syntax: '{dna};{dna}'
-  alt:
-    name: alt
-    title: altitude
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000094
-    alias: alt
-    owner: MimsSoil
-    domain_of:
-    - Air
-    - HostAssociated
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
   annot:
     name: annot
+    description: placeholder description; linter will ignore this
     title: annotation
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1168,6 +1483,7 @@ attributes:
     owner: MimsSoil
     domain_of:
     - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1179,11 +1495,12 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   assembly_name:
     name: assembly_name
+    description: placeholder description; linter will ignore this
     title: assembly name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1192,6 +1509,7 @@ attributes:
     owner: MimsSoil
     domain_of:
     - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1203,63 +1521,45 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+ [^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]* [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text} {free_text}'
-  assembly_qual:
-    name: assembly_qual
-    title: assembly quality
+  neg_cont_type:
+    name: neg_cont_type
+    description: placeholder description; linter will ignore this
+    title: negative control type
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000056
-    alias: assembly_qual
+    slot_uri: MIXS:0001321
+    alias: neg_cont_type
     owner: MimsSoil
     domain_of:
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
     - MigsPl
     - MigsVi
     - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: ASSEMBLY_QUAL_ENUM
-    recommended: true
-  assembly_software:
-    name: assembly_software
-    title: assembly software
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000058
-    alias: assembly_software
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
+    - MimarksC
     - MimarksS
     - Mims
     - Misag
     - Miuvig
-    range: string
+    range: NEG_CONT_TYPE_ENUM
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{software};{version};{parameters}'
-  associated resource:
-    name: associated resource
-    title: relevant electronic resources
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    description: placeholder description; linter will ignore this
+    title: nucleic acid amplification
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000091
-    alias: associated_resource
+    slot_uri: MIXS:0000038
+    alias: nucl_acid_amp
     owner: MimsSoil
     domain_of:
+    - Agriculture
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1273,15 +1573,21 @@ attributes:
     - Miuvig
     range: string
     recommended: true
-  collection_date:
-    name: collection_date
-    title: collection date
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    description: placeholder description; linter will ignore this
+    title: nucleic acid extraction
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000011
-    alias: collection_date
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
     owner: MimsSoil
     domain_of:
+    - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1297,21 +1603,390 @@ attributes:
     - Mims
     - Misag
     - Miuvig
-    - SymbiontAssociated
     range: string
-    required: true
-  depth:
-    name: depth
-    title: depth
+    recommended: true
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  pos_cont_type:
+    name: pos_cont_type
+    description: placeholder description; linter will ignore this
+    title: positive control type
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000018
-    alias: depth
+    slot_uri: MIXS:0001322
+    alias: pos_cont_type
     owner: MimsSoil
     domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  sop:
+    name: sop
+    description: placeholder description; linter will ignore this
+    title: relevant standard operating procedures
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000090
+    alias: sop
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
+    structured_pattern:
+      syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
+  source_mat_id:
+    name: source_mat_id
+    description: placeholder description; linter will ignore this
+    title: source material identifiers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000026
+    alias: source_mat_id
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  assembly_qual:
+    name: assembly_qual
+    description: placeholder description; linter will ignore this
+    title: assembly quality
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000056
+    alias: assembly_qual
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: ASSEMBLY_QUAL_ENUM
+    recommended: true
+  assembly_software:
+    name: assembly_software
+    description: placeholder description; linter will ignore this
+    title: assembly software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000058
+    alias: assembly_software
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  number_contig:
+    name: number_contig
+    description: placeholder description; linter will ignore this
+    title: number of contigs
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000060
+    alias: number_contig
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  experimental_factor:
+    name: experimental_factor
+    description: placeholder description; linter will ignore this
+    title: experimental factor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  lib_layout:
+    name: lib_layout
+    description: placeholder description; linter will ignore this
+    title: library layout
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000041
+    alias: lib_layout
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: LIB_LAYOUT_ENUM
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    description: placeholder description; linter will ignore this
+    title: library reads sequenced
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000040
+    alias: lib_reads_seqd
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_screen:
+    name: lib_screen
+    description: placeholder description; linter will ignore this
+    title: library screening strategy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000043
+    alias: lib_screen
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  lib_size:
+    name: lib_size
+    description: placeholder description; linter will ignore this
+    title: library size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000039
+    alias: lib_size
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    recommended: true
+  lib_vector:
+    name: lib_vector
+    description: placeholder description; linter will ignore this
+    title: library vector
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000042
+    alias: lib_vector
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_mat_process:
+    name: samp_mat_process
+    description: placeholder description; linter will ignore this
+    title: sample material processing
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000016
+    alias: samp_mat_process
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_size:
+    name: samp_size
+    description: placeholder description; linter will ignore this
+    title: amount or size of sample collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  alt:
+    name: alt
+    description: placeholder description; linter will ignore this
+    title: altitude
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000094
+    alias: alt
+    owner: MimsSoil
+    domain_of:
+    - Air
+    - Checklist
     - HostAssociated
-    - MicrobialMatBiofilm
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1324,20 +1999,15 @@ attributes:
     - Misag
     - MiscellaneousNaturalOrArtificialEnvironment
     - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
     - SymbiontAssociated
-    - WastewaterSludge
-    - Water
     range: string
-    required: true
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   elev:
     name: elev
+    description: placeholder description; linter will ignore this
     title: elevation
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1347,6 +2017,7 @@ attributes:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - HostAssociated
     - HydrocarbonResourcesCores
     - MicrobialMatBiofilm
@@ -1370,22 +2041,34 @@ attributes:
     range: string
     required: true
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  env_broad_scale:
-    name: env_broad_scale
-    title: broad-scale environmental context
+  temp:
+    name: temp
+    description: placeholder description; linter will ignore this
+    title: temperature
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000012
-    alias: env_broad_scale
+    slot_uri: MIXS:0000113
+    alias: temp
     owner: MimsSoil
     domain_of:
+    - Agriculture
+    - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
-    - FoodFoodProductionFacility
     - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1396,100 +2079,61 @@ attributes:
     - MimarksS
     - Mims
     - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
     - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
     - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_local_scale:
-    name: env_local_scale
-    title: local environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000013
-    alias: env_local_scale
-    owner: MimsSoil
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_medium:
-    name: env_medium
-    title: environmental medium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000014
-    alias: env_medium
-    owner: MimsSoil
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  experimental_factor:
-    name: experimental_factor
-    title: experimental factor
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000008
-    alias: experimental_factor
-    owner: MimsSoil
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
+    - WastewaterSludge
+    - Water
     range: string
     recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  rel_to_oxygen:
+    name: rel_to_oxygen
+    description: placeholder description; linter will ignore this
+    title: relationship to oxygen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000015
+    alias: rel_to_oxygen
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    range: string
+  size_frac:
+    name: size_frac
+    description: placeholder description; linter will ignore this
+    title: size fraction selected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000017
+    alias: size_frac
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float}-{float} {unit}'
   feat_pred:
     name: feat_pred
+    description: placeholder description; linter will ignore this
     title: feature prediction
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1497,6 +2141,7 @@ attributes:
     alias: feat_pred
     owner: MimsSoil
     domain_of:
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -1507,18 +2152,164 @@ attributes:
     - Misag
     - Miuvig
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{software};{version};{parameters}'
-  geo_loc_name:
-    name: geo_loc_name
-    title: geographic location (country and/or sea,region)
+  ref_biomaterial:
+    name: ref_biomaterial
+    description: placeholder description; linter will ignore this
+    title: reference for biomaterial
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000010
-    alias: geo_loc_name
+    slot_uri: MIXS:0000025
+    alias: ref_biomaterial
     owner: MimsSoil
     domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  ref_db:
+    name: ref_db
+    description: placeholder description; linter will ignore this
+    title: reference database(s)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000062
+    alias: ref_db
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{database};{version};{reference}'
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: placeholder description; linter will ignore this
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sim_search_meth:
+    name: sim_search_meth
+    description: placeholder description; linter will ignore this
+    title: similarity search method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000063
+    alias: sim_search_meth
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  tax_class:
+    name: tax_class
+    description: placeholder description; linter will ignore this
+    title: taxonomic classification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000064
+    alias: tax_class
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  collection_date:
+    name: collection_date
+    description: placeholder description; linter will ignore this
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: MimsSoil
+    domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1537,11 +2328,137 @@ attributes:
     - SymbiontAssociated
     range: string
     required: true
-    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
+  env_broad_scale:
+    name: env_broad_scale
+    description: placeholder description; linter will ignore this
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    description: placeholder description; linter will ignore this
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    description: placeholder description; linter will ignore this
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  geo_loc_name:
+    name: geo_loc_name
+    description: placeholder description; linter will ignore this
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*: [^s\|][^\r\n\t\|]*, [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{term}: {term}, {free_text}'
   lat_lon:
     name: lat_lon
+    description: placeholder description; linter will ignore this
     title: geographic location (latitude and longitude)
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1549,6 +2466,7 @@ attributes:
     alias: lat_lon
     owner: MimsSoil
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1570,264 +2488,9 @@ attributes:
     pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
     structured_pattern:
       syntax: '{lat} {lon}'
-  lib_layout:
-    name: lib_layout
-    title: library layout
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000041
-    alias: lib_layout
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: LIB_LAYOUT_ENUM
-    recommended: true
-  lib_reads_seqd:
-    name: lib_reads_seqd
-    title: library reads sequenced
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000040
-    alias: lib_reads_seqd
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: integer
-    recommended: true
-  lib_screen:
-    name: lib_screen
-    title: library screening strategy
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000043
-    alias: lib_screen
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  lib_size:
-    name: lib_size
-    title: library size
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000039
-    alias: lib_size
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: integer
-    recommended: true
-  lib_vector:
-    name: lib_vector
-    title: library vector
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000042
-    alias: lib_vector
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  mid:
-    name: mid
-    title: multiplex identifiers
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000047
-    alias: mid
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: '[ACGT]+'
-    structured_pattern:
-      syntax: '{dna}'
-  neg_cont_type:
-    name: neg_cont_type
-    title: negative control type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001321
-    alias: neg_cont_type
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: NEG_CONT_TYPE_ENUM
-    recommended: true
-  nucl_acid_amp:
-    name: nucl_acid_amp
-    title: nucleic acid amplification
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000038
-    alias: nucl_acid_amp
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  nucl_acid_ext:
-    name: nucl_acid_ext
-    title: nucleic acid extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000037
-    alias: nucl_acid_ext
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  number_contig:
-    name: number_contig
-    title: number of contigs
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000060
-    alias: number_contig
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: integer
-    recommended: true
-  pos_cont_type:
-    name: pos_cont_type
-    title: positive control type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001322
-    alias: pos_cont_type
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
   project_name:
     name: project_name
+    description: placeholder description; linter will ignore this
     title: project name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -1837,6 +2500,7 @@ attributes:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1870,208 +2534,12 @@ attributes:
     - Water
     range: string
     required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
-  ref_biomaterial:
-    name: ref_biomaterial
-    title: reference for biomaterial
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000025
-    alias: ref_biomaterial
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  ref_db:
-    name: ref_db
-    title: reference database(s)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000062
-    alias: ref_db
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{database};{version};{reference}'
-  rel_to_oxygen:
-    name: rel_to_oxygen
-    title: relationship to oxygen
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000015
-    alias: rel_to_oxygen
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    range: string
-  samp_collec_device:
-    name: samp_collec_device
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_collec_device
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-  samp_collec_method:
-    name: samp_collec_method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_collec_method
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-  samp_mat_process:
-    name: samp_mat_process
-    title: sample material processing
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000016
-    alias: samp_mat_process
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  samp_name:
-    name: samp_name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_name
-    owner: MimsSoil
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-  samp_size:
-    name: samp_size
-    title: amount or size of sample collected
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000001
-    alias: samp_size
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
   samp_taxon_id:
     name: samp_taxon_id
+    description: placeholder description; linter will ignore this
     title: taxonomy ID of DNA sample
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2079,6 +2547,7 @@ attributes:
     alias: samp_taxon_id
     owner: MimsSoil
     domain_of:
+    - Checklist
     - MigsBa
     - MigsEu
     - MigsOrg
@@ -2092,57 +2561,12 @@ attributes:
     - Miuvig
     range: string
     required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [NCBITaxon:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]* [NCBITaxon:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{ncbi_term_id}]'
-  samp_vol_we_dna_ext:
-    name: samp_vol_we_dna_ext
-    title: sample volume or weight for DNA extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000111
-    alias: samp_vol_we_dna_ext
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
   seq_meth:
     name: seq_meth
+    description: placeholder description; linter will ignore this
     title: sequencing method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2151,6 +2575,7 @@ attributes:
     owner: MimsSoil
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2168,170 +2593,98 @@ attributes:
     - Miuvig
     range: string
     required: true
-  sim_search_meth:
-    name: sim_search_meth
-    title: similarity search method
+  agrochem_addition:
+    name: agrochem_addition
+    description: placeholder description; linter will ignore this
+    title: history/agrochemical additions
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000063
-    alias: sim_search_meth
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{software};{version};{parameters}'
-  size_frac:
-    name: size_frac
-    title: size fraction selected
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000017
-    alias: size_frac
-    owner: MimsSoil
-    domain_of:
-    - Mimag
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?-[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float}-{float} {unit}'
-  sop:
-    name: sop
-    title: relevant standard operating procedures
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000090
-    alias: sop
+    slot_uri: MIXS:0000639
+    alias: agrochem_addition
     owner: MimsSoil
     domain_of:
     - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    recommended: true
-    pattern: (((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-]))\|)*(((10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])))
-    structured_pattern:
-      syntax: ((({DOI})|({PMID})|({URL}))\|)*((({DOI})|({PMID})|({URL})))
-  source_mat_id:
-    name: source_mat_id
-    title: source material identifiers
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000026
-    alias: source_mat_id
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  tax_class:
-    name: tax_class
-    title: taxonomic classification
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000064
-    alias: tax_class
-    owner: MimsSoil
-    domain_of:
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  temp:
-    name: temp
-    title: temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000113
-    alias: temp
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
     - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
     range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+  al_sat:
+    name: al_sat
+    description: placeholder description; linter will ignore this
+    title: extreme_unusual_properties/Al saturation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000607
+    alias: al_sat
+    owner: MimsSoil
+    domain_of:
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
+  al_sat_meth:
+    name: al_sat_meth
+    description: placeholder description; linter will ignore this
+    title: extreme_unusual_properties/Al saturation method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000324
+    alias: al_sat_meth
+    owner: MimsSoil
+    domain_of:
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  annual_precpt:
+    name: annual_precpt
+    description: placeholder description; linter will ignore this
+    title: mean annual precipitation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000644
+    alias: annual_precpt
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  annual_temp:
+    name: annual_temp
+    description: placeholder description; linter will ignore this
+    title: mean annual temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000642
+    alias: annual_temp
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  crop_rotation:
+    name: crop_rotation
+    description: placeholder description; linter will ignore this
+    title: history/crop rotation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000318
+    alias: crop_rotation
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
   cur_land_use:
     name: cur_land_use
+    description: placeholder description; linter will ignore this
     title: current land use
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2344,6 +2697,7 @@ attributes:
     range: CUR_LAND_USE_ENUM
   cur_vegetation:
     name: cur_vegetation
+    description: placeholder description; linter will ignore this
     title: current vegetation
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2354,11 +2708,12 @@ attributes:
     - Agriculture
     - Soil
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   cur_vegetation_meth:
     name: cur_vegetation_meth
+    description: placeholder description; linter will ignore this
     title: current vegetation method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2372,69 +2727,48 @@ attributes:
     pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
-  previous_land_use:
-    name: previous_land_use
-    title: history/previous land use
+  drainage_class:
+    name: drainage_class
+    description: placeholder description; linter will ignore this
+    title: drainage classification
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000315
-    alias: previous_land_use
+    slot_uri: MIXS:0001085
+    alias: drainage_class
     owner: MimsSoil
     domain_of:
     - Agriculture
-    - FoodFarmEnvironment
     - Soil
-    range: string
-  prev_land_use_meth:
-    name: prev_land_use_meth
+    range: DRAINAGE_CLASS_ENUM
+  extreme_event:
+    name: extreme_event
+    description: placeholder description; linter will ignore this
+    title: history/extreme events
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    alias: prev_land_use_meth
-    owner: MimsSoil
-    domain_of:
-    - Soil
-    range: string
-  crop_rotation:
-    name: crop_rotation
-    title: history/crop rotation
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000318
-    alias: crop_rotation
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-  agrochem_addition:
-    name: agrochem_addition
-    title: history/agrochemical additions
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000639
-    alias: agrochem_addition
+    slot_uri: MIXS:0000320
+    alias: extreme_event
     owner: MimsSoil
     domain_of:
     - Agriculture
     - Soil
     range: string
-  tillage:
-    name: tillage
-    title: history/tillage
+  fao_class:
+    name: fao_class
+    description: placeholder description; linter will ignore this
+    title: soil_taxonomic/FAO classification
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0001081
-    multivalued: true
-    alias: tillage
+    slot_uri: MIXS:0001083
+    alias: fao_class
     owner: MimsSoil
     domain_of:
     - Agriculture
-    - FoodFarmEnvironment
     - Soil
-    range: TILLAGE_ENUM
+    range: FAO_CLASS_ENUM
   fire:
     name: fire
+    description: placeholder description; linter will ignore this
     title: history/fire
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2447,6 +2781,7 @@ attributes:
     range: string
   flooding:
     name: flooding
+    description: placeholder description; linter will ignore this
     title: history/flooding
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -2457,553 +2792,9 @@ attributes:
     - Agriculture
     - Soil
     range: string
-  extreme_event:
-    name: extreme_event
-    title: history/extreme events
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000320
-    alias: extreme_event
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-  soil_horizon:
-    name: soil_horizon
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: soil_horizon
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-  horizon_meth:
-    name: horizon_meth
-    title: horizon method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000321
-    alias: horizon_meth
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  sieving:
-    name: sieving
-    title: composite design/sieving
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000322
-    alias: sieving
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-  water_content:
-    name: water_content
-    title: water content
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000185
-    alias: water_content
-    owner: MimsSoil
-    domain_of:
-    - MicrobialMatBiofilm
-    - Sediment
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  water_cont_soil_meth:
-    name: water_cont_soil_meth
-    title: water content method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000323
-    alias: water_cont_soil_meth
-    owner: MimsSoil
-    domain_of:
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  pool_dna_extracts:
-    name: pool_dna_extracts
-    title: pooling of DNA extracts (if done)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000325
-    alias: pool_dna_extracts
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - Soil
-    range: string
-  store_cond:
-    name: store_cond
-    title: storage conditions
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000327
-    alias: store_cond
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
-    structured_pattern:
-      syntax: '{free_text};{period}'
-  link_climate_info:
-    name: link_climate_info
-    title: link to climate information
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000328
-    alias: link_climate_info
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  annual_temp:
-    name: annual_temp
-    title: mean annual temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000642
-    alias: annual_temp
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  season_temp:
-    name: season_temp
-    title: mean seasonal temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000643
-    alias: season_temp
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  annual_precpt:
-    name: annual_precpt
-    title: mean annual precipitation
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000644
-    alias: annual_precpt
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  season_precpt:
-    name: season_precpt
-    title: mean seasonal precipitation
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000645
-    alias: season_precpt
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  link_class_info:
-    name: link_class_info
-    title: link to classification information
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000329
-    alias: link_class_info
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  fao_class:
-    name: fao_class
-    title: soil_taxonomic/FAO classification
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001083
-    alias: fao_class
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: FAO_CLASS_ENUM
-  local_class:
-    name: local_class
-    title: soil_taxonomic/local classification
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000330
-    alias: local_class
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  local_class_meth:
-    name: local_class_meth
-    title: soil_taxonomic/local classification method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000331
-    alias: local_class_meth
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  org_nitro:
-    name: org_nitro
-    title: organic nitrogen
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000205
-    alias: org_nitro
-    owner: MimsSoil
-    domain_of:
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Soil
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  soil_type:
-    name: soil_type
-    title: soil type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000332
-    alias: soil_type
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  soil_type_meth:
-    name: soil_type_meth
-    title: soil type method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000334
-    alias: soil_type_meth
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  slope_gradient:
-    name: slope_gradient
-    title: slope gradient
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000646
-    alias: slope_gradient
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  slope_aspect:
-    name: slope_aspect
-    title: slope aspect
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000647
-    alias: slope_aspect
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  profile_position:
-    name: profile_position
-    title: profile position
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001084
-    alias: profile_position
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: PROFILE_POSITION_ENUM
-  drainage_class:
-    name: drainage_class
-    title: drainage classification
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001085
-    alias: drainage_class
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: DRAINAGE_CLASS_ENUM
-  soil_text_measure:
-    name: soil_text_measure
-    title: soil texture measurement
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000335
-    alias: soil_text_measure
-    owner: MimsSoil
-    domain_of:
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  soil_texture_meth:
-    name: soil_texture_meth
-    title: soil texture method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000336
-    alias: soil_texture_meth
-    owner: MimsSoil
-    domain_of:
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  ph:
-    name: ph
-    title: pH
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001001
-    alias: ph
-    owner: MimsSoil
-    domain_of:
-    - FoodFarmEnvironment
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    range: float
-  ph_meth:
-    name: ph_meth
-    title: pH method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001106
-    alias: ph_meth
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  org_matter:
-    name: org_matter
-    title: organic matter
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000204
-    alias: org_matter
-    owner: MimsSoil
-    domain_of:
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Soil
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  tot_org_carb:
-    name: tot_org_carb
-    title: total organic carbon
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000533
-    alias: tot_org_carb
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - MicrobialMatBiofilm
-    - Sediment
-    - Soil
-    range: string
-  tot_org_c_meth:
-    name: tot_org_c_meth
-    title: total organic carbon method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000337
-    alias: tot_org_c_meth
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  tot_nitro_content:
-    name: tot_nitro_content
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: tot_nitro_content
-    owner: MimsSoil
-    domain_of:
-    - FoodFarmEnvironment
-    - MicrobialMatBiofilm
-    - Sediment
-    - Soil
-    range: string
-  tot_nitro_cont_meth:
-    name: tot_nitro_cont_meth
-    title: total nitrogen content method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000338
-    alias: tot_nitro_cont_meth
-    owner: MimsSoil
-    domain_of:
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  microbial_biomass:
-    name: microbial_biomass
-    title: microbial biomass
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000650
-    alias: microbial_biomass
-    owner: MimsSoil
-    domain_of:
-    - Agriculture
-    - Soil
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  micro_biomass_meth:
-    name: micro_biomass_meth
-    title: microbial biomass method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000339
-    alias: micro_biomass_meth
-    owner: MimsSoil
-    domain_of:
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  link_addit_analys:
-    name: link_addit_analys
-    title: links to additional analysis
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000340
-    alias: link_addit_analys
-    owner: MimsSoil
-    domain_of:
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  salinity_meth:
-    name: salinity_meth
-    title: salinity method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000341
-    alias: salinity_meth
-    owner: MimsSoil
-    domain_of:
-    - FoodFarmEnvironment
-    - Soil
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
   heavy_metals:
     name: heavy_metals
+    description: placeholder description; linter will ignore this
     title: extreme_unusual_properties/heavy metals
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3013,12 +2804,13 @@ attributes:
     domain_of:
     - Soil
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
   heavy_metals_meth:
     name: heavy_metals_meth
+    description: placeholder description; linter will ignore this
     title: extreme_unusual_properties/heavy metals method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3032,27 +2824,30 @@ attributes:
     pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
-  al_sat:
-    name: al_sat
-    title: extreme_unusual_properties/Al saturation
+  horizon_meth:
+    name: horizon_meth
+    description: placeholder description; linter will ignore this
+    title: horizon method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000607
-    alias: al_sat
+    slot_uri: MIXS:0000321
+    alias: horizon_meth
     owner: MimsSoil
     domain_of:
+    - Agriculture
     - Soil
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
-      syntax: '{float} {unit}'
-  al_sat_meth:
-    name: al_sat_meth
-    title: extreme_unusual_properties/Al saturation method
+      syntax: ({DOI})|({PMID})|({URL})
+  link_addit_analys:
+    name: link_addit_analys
+    description: placeholder description; linter will ignore this
+    title: links to additional analysis
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000324
-    alias: al_sat_meth
+    slot_uri: MIXS:0000340
+    alias: link_addit_analys
     owner: MimsSoil
     domain_of:
     - Soil
@@ -3060,8 +2855,89 @@ attributes:
     pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})
+  link_class_info:
+    name: link_class_info
+    description: placeholder description; linter will ignore this
+    title: link to classification information
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000329
+    alias: link_class_info
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  link_climate_info:
+    name: link_climate_info
+    description: placeholder description; linter will ignore this
+    title: link to climate information
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000328
+    alias: link_climate_info
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  local_class:
+    name: local_class
+    description: placeholder description; linter will ignore this
+    title: soil_taxonomic/local classification
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000330
+    alias: local_class
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  local_class_meth:
+    name: local_class_meth
+    description: placeholder description; linter will ignore this
+    title: soil_taxonomic/local classification method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000331
+    alias: local_class_meth
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  microbial_biomass:
+    name: microbial_biomass
+    description: placeholder description; linter will ignore this
+    title: microbial biomass
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000650
+    alias: microbial_biomass
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
   misc_param:
     name: misc_param
+    description: placeholder description; linter will ignore this
     title: miscellaneous parameter
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3092,10 +2968,1189 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
+  org_matter:
+    name: org_matter
+    description: placeholder description; linter will ignore this
+    title: organic matter
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000204
+    alias: org_matter
+    owner: MimsSoil
+    domain_of:
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  org_nitro:
+    name: org_nitro
+    description: placeholder description; linter will ignore this
+    title: organic nitrogen
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000205
+    alias: org_nitro
+    owner: MimsSoil
+    domain_of:
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  ph:
+    name: ph
+    description: placeholder description; linter will ignore this
+    title: pH
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001001
+    alias: ph
+    owner: MimsSoil
+    domain_of:
+    - FoodFarmEnvironment
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Soil
+    - WastewaterSludge
+    - Water
+    range: float
+  ph_meth:
+    name: ph_meth
+    description: placeholder description; linter will ignore this
+    title: pH method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001106
+    alias: ph_meth
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  pool_dna_extracts:
+    name: pool_dna_extracts
+    description: placeholder description; linter will ignore this
+    title: pooling of DNA extracts (if done)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000325
+    alias: pool_dna_extracts
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - Soil
+    range: string
+  previous_land_use:
+    name: previous_land_use
+    description: placeholder description; linter will ignore this
+    title: history/previous land use
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000315
+    alias: previous_land_use
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+  previous_land_use_meth:
+    name: previous_land_use_meth
+    description: placeholder description; linter will ignore this
+    title: history/previous land use method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000316
+    alias: previous_land_use_meth
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  profile_position:
+    name: profile_position
+    description: placeholder description; linter will ignore this
+    title: profile position
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001084
+    alias: profile_position
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: PROFILE_POSITION_ENUM
+  salinity_meth:
+    name: salinity_meth
+    description: placeholder description; linter will ignore this
+    title: salinity method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000341
+    alias: salinity_meth
+    owner: MimsSoil
+    domain_of:
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  season_precpt:
+    name: season_precpt
+    description: placeholder description; linter will ignore this
+    title: mean seasonal precipitation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000645
+    alias: season_precpt
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  season_temp:
+    name: season_temp
+    description: placeholder description; linter will ignore this
+    title: mean seasonal temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000643
+    alias: season_temp
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sieving:
+    name: sieving
+    description: placeholder description; linter will ignore this
+    title: composite design/sieving
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000322
+    alias: sieving
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+  slope_aspect:
+    name: slope_aspect
+    description: placeholder description; linter will ignore this
+    title: slope aspect
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000647
+    alias: slope_aspect
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  slope_gradient:
+    name: slope_gradient
+    description: placeholder description; linter will ignore this
+    title: slope gradient
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000646
+    alias: slope_gradient
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  soil_type:
+    name: soil_type
+    description: placeholder description; linter will ignore this
+    title: soil type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000332
+    alias: soil_type
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  soil_type_meth:
+    name: soil_type_meth
+    description: placeholder description; linter will ignore this
+    title: soil type method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000334
+    alias: soil_type_meth
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  store_cond:
+    name: store_cond
+    description: placeholder description; linter will ignore this
+    title: storage conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000327
+    alias: store_cond
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Soil
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?'
+    structured_pattern:
+      syntax: '{free_text};{period}'
+  tillage:
+    name: tillage
+    description: placeholder description; linter will ignore this
+    title: history/tillage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001081
+    multivalued: true
+    alias: tillage
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: TILLAGE_ENUM
+  tot_org_c_meth:
+    name: tot_org_c_meth
+    description: placeholder description; linter will ignore this
+    title: total organic carbon method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000337
+    alias: tot_org_c_meth
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  tot_org_carb:
+    name: tot_org_carb
+    description: placeholder description; linter will ignore this
+    title: total organic carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000533
+    alias: tot_org_carb
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - MicrobialMatBiofilm
+    - Sediment
+    - Soil
+    range: string
+  water_cont_soil_meth:
+    name: water_cont_soil_meth
+    description: placeholder description; linter will ignore this
+    title: water content method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000323
+    alias: water_cont_soil_meth
+    owner: MimsSoil
+    domain_of:
+    - Soil
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  water_content:
+    name: water_content
+    description: placeholder description; linter will ignore this
+    title: water content
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000185
+    alias: water_content
+    owner: MimsSoil
+    domain_of:
+    - MicrobialMatBiofilm
+    - Sediment
+    - Soil
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  bin_param:
+    name: bin_param
+    description: placeholder description; linter will ignore this
+    title: binning parameters
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000077
+    alias: bin_param
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Miuvig
+    range: string
+  bin_software:
+    name: bin_software
+    description: placeholder description; linter will ignore this
+    title: binning software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000078
+    alias: bin_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Miuvig
+    range: string
+  biotic_relationship:
+    name: biotic_relationship
+    description: placeholder description; linter will ignore this
+    title: observed biotic relationship
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000028
+    alias: biotic_relationship
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+    range: BIOTIC_RELATIONSHIP_ENUM
+  chimera_check:
+    name: chimera_check
+    description: placeholder description; linter will ignore this
+    title: chimera check software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000052
+    alias: chimera_check
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+  compl_appr:
+    name: compl_appr
+    description: placeholder description; linter will ignore this
+    title: completeness approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000071
+    alias: compl_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+  compl_score:
+    name: compl_score
+    description: placeholder description; linter will ignore this
+    title: completeness score
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000069
+    alias: compl_score
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+  compl_software:
+    name: compl_software
+    description: placeholder description; linter will ignore this
+    title: completeness software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000070
+    alias: compl_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version}'
+  contam_score:
+    name: contam_score
+    description: placeholder description; linter will ignore this
+    title: contamination score
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000072
+    alias: contam_score
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    range: string
+  contam_screen_input:
+    name: contam_screen_input
+    description: placeholder description; linter will ignore this
+    title: contamination screening input
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000005
+    alias: contam_screen_input
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    range: string
+  contam_screen_param:
+    name: contam_screen_param
+    description: placeholder description; linter will ignore this
+    title: contamination screening parameters
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000073
+    alias: contam_screen_param
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    range: string
+  decontam_software:
+    name: decontam_software
+    description: placeholder description; linter will ignore this
+    title: decontamination software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000074
+    alias: decontam_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    range: string
+  detec_type:
+    name: detec_type
+    description: placeholder description; linter will ignore this
+    title: detection type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000084
+    alias: detec_type
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  encoded_traits:
+    name: encoded_traits
+    description: placeholder description; linter will ignore this
+    title: encoded traits
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000034
+    alias: encoded_traits
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsPl
+    - MigsVi
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  estimated_size:
+    name: estimated_size
+    description: placeholder description; linter will ignore this
+    title: estimated size
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000024
+    alias: estimated_size
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+    pattern: '[+-]?[1-9][0-9]* bp'
+    structured_pattern:
+      syntax: '{integer} bp'
+  extrachrom_elements:
+    name: extrachrom_elements
+    description: placeholder description; linter will ignore this
+    title: extrachromosomal elements
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000023
+    alias: extrachrom_elements
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MimarksC
+    range: integer
+  host_disease_stat:
+    name: host_disease_stat
+    description: placeholder description; linter will ignore this
+    title: host disease status
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000031
+    alias: host_disease_stat
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - PlantAssociated
+    range: string
+    pattern: ((([^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)\|)*(([^s\|][^\r\n\t\|]*
+      [[a-zA-Z]+:[0-9]+])|[^s\|][^\r\n\t\|]*)
+    structured_pattern:
+      syntax: ((({term_label} [{term_id}])|{free_text})\|)*(({term_label} [{term_id}])|{free_text})
+  host_pred_appr:
+    name: host_pred_appr
+    description: placeholder description; linter will ignore this
+    title: host prediction approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000088
+    alias: host_pred_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  host_pred_est_acc:
+    name: host_pred_est_acc
+    description: placeholder description; linter will ignore this
+    title: host prediction estimated accuracy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000089
+    alias: host_pred_est_acc
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  host_spec_range:
+    name: host_spec_range
+    description: placeholder description; linter will ignore this
+    title: host specificity or range
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000030
+    alias: host_spec_range
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+    pattern: ([+-]?[1-9][0-9]*\|)*[+-]?[1-9][0-9]*
+    structured_pattern:
+      syntax: ({integer}\|)*{integer}
+  isol_growth_condt:
+    name: isol_growth_condt
+    description: placeholder description; linter will ignore this
+    title: isolation and growth condition
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000003
+    alias: isol_growth_condt
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  mag_cov_software:
+    name: mag_cov_software
+    description: placeholder description; linter will ignore this
+    title: MAG coverage software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000080
+    alias: mag_cov_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Miuvig
+    range: string
+  num_replicons:
+    name: num_replicons
+    description: placeholder description; linter will ignore this
+    title: number of replicons
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000022
+    alias: num_replicons
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    range: integer
+  otu_class_appr:
+    name: otu_class_appr
+    description: placeholder description; linter will ignore this
+    title: OTU classification approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000085
+    alias: otu_class_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  otu_db:
+    name: otu_db
+    description: placeholder description; linter will ignore this
+    title: OTU database
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000087
+    alias: otu_db
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  otu_seq_comp_appr:
+    name: otu_seq_comp_appr
+    description: placeholder description; linter will ignore this
+    title: OTU sequence comparison approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000086
+    alias: otu_seq_comp_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  pathogenicity:
+    name: pathogenicity
+    description: placeholder description; linter will ignore this
+    title: known pathogenicity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000027
+    alias: pathogenicity
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  pcr_cond:
+    name: pcr_cond
+    description: placeholder description; linter will ignore this
+    title: pcr conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000049
+    alias: pcr_cond
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+  pcr_primers:
+    name: pcr_primers
+    description: placeholder description; linter will ignore this
+    title: pcr primers
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000046
+    alias: pcr_primers
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+  ploidy:
+    name: ploidy
+    description: placeholder description; linter will ignore this
+    title: ploidy
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000021
+    alias: ploidy
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsEu
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  pred_genome_struc:
+    name: pred_genome_struc
+    description: placeholder description; linter will ignore this
+    title: predicted genome structure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000083
+    alias: pred_genome_struc
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  pred_genome_type:
+    name: pred_genome_type
+    description: placeholder description; linter will ignore this
+    title: predicted genome type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000082
+    alias: pred_genome_type
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  propagation:
+    name: propagation
+    description: placeholder description; linter will ignore this
+    title: propagation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000033
+    alias: propagation
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  reassembly_bin:
+    name: reassembly_bin
+    description: placeholder description; linter will ignore this
+    title: reassembly post binning
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000079
+    alias: reassembly_bin
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Miuvig
+    range: boolean
+  seq_quality_check:
+    name: seq_quality_check
+    description: placeholder description; linter will ignore this
+    title: sequence quality check
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000051
+    alias: seq_quality_check
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+  single_cell_lysis_appr:
+    name: single_cell_lysis_appr
+    description: placeholder description; linter will ignore this
+    title: single cell or viral particle lysis approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000076
+    alias: single_cell_lysis_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Misag
+    - Miuvig
+    range: string
+  single_cell_lysis_prot:
+    name: single_cell_lysis_prot
+    description: placeholder description; linter will ignore this
+    title: single cell or viral particle lysis kit protocol
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000054
+    alias: single_cell_lysis_prot
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  sort_tech:
+    name: sort_tech
+    description: placeholder description; linter will ignore this
+    title: sorting technology
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000075
+    alias: sort_tech
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Misag
+    - Miuvig
+    range: string
+  source_uvig:
+    name: source_uvig
+    description: placeholder description; linter will ignore this
+    title: source of UViGs
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000035
+    alias: source_uvig
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+  specific_host:
+    name: specific_host
+    description: placeholder description; linter will ignore this
+    title: host scientific name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000029
+    alias: specific_host
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*|NCBITaxon:[0-9]+'
+    structured_pattern:
+      syntax: '{free_text}|{ncbi_term_id}'
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    description: placeholder description; linter will ignore this
+    title: subspecific genetic lineage
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000020
+    alias: subspecf_gen_lin
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - FoodFoodProductionFacility
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    range: string
+  target_gene:
+    name: target_gene
+    description: placeholder description; linter will ignore this
+    title: target gene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000044
+    alias: target_gene
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  target_subfragment:
+    name: target_subfragment
+    description: placeholder description; linter will ignore this
+    title: target subfragment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000045
+    alias: target_subfragment
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MimarksC
+    - MimarksS
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  tax_ident:
+    name: tax_ident
+    description: placeholder description; linter will ignore this
+    title: taxonomic identity marker
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000053
+    alias: tax_ident
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+  trna_ext_software:
+    name: trna_ext_software
+    description: placeholder description; linter will ignore this
+    title: tRNA extraction software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000068
+    alias: trna_ext_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  trnas:
+    name: trnas
+    description: placeholder description; linter will ignore this
+    title: number of standard tRNAs extracted
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000067
+    alias: trnas
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Mimag
+    - Misag
+    - Miuvig
+    range: integer
+    minimum_value: 0
+    maximum_value: 21
+  trophic_level:
+    name: trophic_level
+    description: placeholder description; linter will ignore this
+    title: trophic level
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000032
+    alias: trophic_level
+    owner: MimsSoil
+    domain_of:
+    - Agriculture
+    - Checklist
+    - MigsBa
+    - MigsEu
+    - MimarksC
+    range: TROPHIC_LEVEL_ENUM
+  vir_ident_software:
+    name: vir_ident_software
+    description: placeholder description; linter will ignore this
+    title: viral identification software
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000081
+    alias: vir_ident_software
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{software};{version};{parameters}'
+  virus_enrich_appr:
+    name: virus_enrich_appr
+    description: placeholder description; linter will ignore this
+    title: virus enrichment approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000036
+    alias: virus_enrich_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - MigsVi
+    - Miuvig
+    range: string
+  wga_amp_appr:
+    name: wga_amp_appr
+    description: placeholder description; linter will ignore this
+    title: WGA amplification approach
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000055
+    alias: wga_amp_appr
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Misag
+    - Miuvig
+    range: string
+  wga_amp_kit:
+    name: wga_amp_kit
+    description: placeholder description; linter will ignore this
+    title: WGA amplification kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000006
+    alias: wga_amp_kit
+    owner: MimsSoil
+    domain_of:
+    - Checklist
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
 class_uri: MIXS:0010007_0016012
 
 </code></pre>

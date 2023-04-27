@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-host_phenotype">Slot: host_phenotype</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000874">MIXS:0000874</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,62 +341,80 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../Agriculture/">Agriculture</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HostAssociated/">HostAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HumanAssociated/">HumanAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HumanGut/">HumanGut</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HumanOral/">HumanOral</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HumanSkin/">HumanSkin</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../HumanVaginal/">HumanVaginal</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../PlantAssociated/">PlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../SymbiontAssociated/">SymbiontAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsBaPlantAssociated/">MigsBaPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]</code></p>
+</li>
 </ul>
 <h2 id="see-also">See Also</h2>
 <ul>
@@ -434,6 +453,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: host phenotype
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 see_also:
@@ -454,7 +474,7 @@ domain_of:
 - PlantAssociated
 - SymbiontAssociated
 range: string
-pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
 structured_pattern:
   syntax: '{term_label} [{term_id}]'
 

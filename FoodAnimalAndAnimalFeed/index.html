@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -205,6 +200,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-foodanimalandanimalfeed">Class: FoodAnimalAndAnimalFeed</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0016019">MIXS:0016019</a></p>
 <div class="mermaid"> classDiagram
     class FoodAnimalAndAnimalFeed
@@ -344,12 +340,6 @@
 
       FoodAnimalAndAnimalFeed : repository_name
 
-      FoodAnimalAndAnimalFeed : samp_collect_device
-
-      FoodAnimalAndAnimalFeed : samp_collect_method
-
-      FoodAnimalAndAnimalFeed : samp_name
-
       FoodAnimalAndAnimalFeed : samp_pooling
 
       FoodAnimalAndAnimalFeed : samp_purpose
@@ -364,13 +354,13 @@
 
       FoodAnimalAndAnimalFeed : samp_stor_device
 
-      FoodAnimalAndAnimalFeed : samp_stor_dur
-
-      FoodAnimalAndAnimalFeed : samp_stor_loc
-
       FoodAnimalAndAnimalFeed : samp_stor_media
 
-      FoodAnimalAndAnimalFeed : samp_stor_temp
+      FoodAnimalAndAnimalFeed : samp_store_dur
+
+      FoodAnimalAndAnimalFeed : samp_store_loc
+
+      FoodAnimalAndAnimalFeed : samp_store_temp
 
       FoodAnimalAndAnimalFeed : samp_transport_cont
 
@@ -439,647 +429,610 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../samp_name/">samp_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../project_name/">project_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../lat_lon/">lat_lon</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../geo_loc_name/">geo_loc_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../collection_date/">collection_date</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_broad_scale/">env_broad_scale</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_local_scale/">env_local_scale</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../env_medium/">env_medium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../seq_meth/">seq_meth</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_size/">samp_size</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_collect_device/">samp_collect_device</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../experimental_factor/">experimental_factor</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../organism_count/">organism_count</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_count/">spikein_count</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_stor_temp/">samp_stor_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_stor_dur/">samp_stor_dur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../pool_dna_extracts/">pool_dna_extracts</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../temp/">temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_stor_loc/">samp_stor_loc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_transport_cont/">samp_transport_cont</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../perturbation/">perturbation</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../coll_site_geo_feat/">coll_site_geo_feat</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_origin/">food_origin</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_prod/">food_prod</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_product_type/">food_product_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../food_source/">food_source</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../IFSAC_category/">IFSAC_category</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../intended_consumer/">intended_consumer</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_purpose/">samp_purpose</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../animal_am/">animal_am</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_am_dur/">animal_am_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_am_freq/">animal_am_freq</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_am_route/">animal_am_route</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_am_use/">animal_am_use</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_body_cond/">animal_body_cond</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_diet/">animal_diet</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_feed_equip/">animal_feed_equip</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_group_size/">animal_group_size</a></td>
 <td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_housing/">animal_housing</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../animal_sex/">animal_sex</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../bacterial_density/">bacterial_density</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cons_food_stor_dur/">cons_food_stor_dur</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cons_food_stor_temp/">cons_food_stor_temp</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cons_purch_date/">cons_purch_date</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cons_qty_purchased/">cons_qty_purchased</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cult_isol_date/">cult_isol_date</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cult_result/">cult_result</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cult_result_org/">cult_result_org</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../cult_target/">cult_target</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../enrichment_protocol/">enrichment_protocol</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_additive/">food_additive</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_contact_surf/">food_contact_surf</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_contain_wrap/">food_contain_wrap</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_cooking_proc/">food_cooking_proc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_dis_point/">food_dis_point</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_dis_point_city/">food_dis_point_city</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_ingredient/">food_ingredient</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_pack_capacity/">food_pack_capacity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_pack_integrity/">food_pack_integrity</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_pack_medium/">food_pack_medium</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_preserv_proc/">food_preserv_proc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_prior_contact/">food_prior_contact</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_prod_synonym/">food_prod_synonym</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_product_qual/">food_product_qual</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_quality_date/">food_quality_date</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_source/">food_source</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_source_age/">food_source_age</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_trace_list/">food_trace_list</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_trav_mode/">food_trav_mode</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_trav_vehic/">food_trav_vehic</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../food_treat_proc/">food_treat_proc</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../HACCP_term/">HACCP_term</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../library_prep_kit/">library_prep_kit</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../lot_number/">lot_number</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../microb_cult_med/">microb_cult_med</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../part_plant_animal/">part_plant_animal</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../repository_name/">repository_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_collect_method/">samp_collect_method</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_pooling/">samp_pooling</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_rep_biol/">samp_rep_biol</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_rep_tech/">samp_rep_tech</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_source_mat_cat/">samp_source_mat_cat</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_stor_device/">samp_stor_device</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_stor_media/">samp_stor_media</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_transport_dur/">samp_transport_dur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_transport_temp/">samp_transport_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sequencing_kit/">sequencing_kit</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sequencing_location/">sequencing_location</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../serovar_or_serotype/">serovar_or_serotype</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_AMR/">spikein_AMR</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_antibiotic/">spikein_antibiotic</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_growth_med/">spikein_growth_med</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_metal/">spikein_metal</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_org/">spikein_org</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_serovar/">spikein_serovar</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../spikein_strain/">spikein_strain</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_design/">study_design</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_inc_dur/">study_inc_dur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_inc_temp/">study_inc_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_timecourse/">study_timecourse</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../study_tmnt/">study_tmnt</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../timepoint/">timepoint</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../misc_param/">misc_param</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
 <tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../food_animal_and_animal_feed_set/">food_animal_and_animal_feed_set</a></td>
-<td>range</td>
-<td><a href="./">FoodAnimalAndAnimalFeed</a></td>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../part_plant_animal/">part_plant_animal</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pool_dna_extracts/">pool_dna_extracts</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../repository_name/">repository_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_pooling/">samp_pooling</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_rep_biol/">samp_rep_biol</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_rep_tech/">samp_rep_tech</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_source_mat_cat/">samp_source_mat_cat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_device/">samp_stor_device</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_stor_media/">samp_stor_media</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_cont/">samp_transport_cont</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_dur/">samp_transport_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_temp/">samp_transport_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_kit/">sequencing_kit</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sequencing_location/">sequencing_location</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../serovar_or_serotype/">serovar_or_serotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_AMR/">spikein_AMR</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_antibiotic/">spikein_antibiotic</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_count/">spikein_count</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_growth_med/">spikein_growth_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_metal/">spikein_metal</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_org/">spikein_org</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_serovar/">spikein_serovar</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spikein_strain/">spikein_strain</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_design/">study_design</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_inc_dur/">study_inc_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_inc_temp/">study_inc_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_timecourse/">study_timecourse</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../study_tmnt/">study_tmnt</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../timepoint/">timepoint</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../coll_site_geo_feat/">coll_site_geo_feat</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_origin/">food_origin</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_prod/">food_prod</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../food_product_type/">food_product_type</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../IFSAC_category/">IFSAC_category</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../intended_consumer/">intended_consumer</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_purpose/">samp_purpose</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
 </tbody>
 </table>
@@ -1112,42 +1065,12 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: FoodAnimalAndAnimalFeed
+description: placeholder description; linter will ignore this
 title: food-animal and animal feed
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 is_a: EnvironmentalPackage
 slots:
-- samp_name
-- project_name
-- lat_lon
-- geo_loc_name
-- collection_date
-- env_broad_scale
-- env_local_scale
-- env_medium
-- seq_meth
-- samp_size
-- samp_collect_device
-- experimental_factor
-- nucl_acid_ext
-- organism_count
-- spikein_count
-- samp_stor_temp
-- samp_stor_dur
-- samp_vol_we_dna_ext
-- pool_dna_extracts
-- temp
-- samp_stor_loc
-- samp_transport_cont
-- perturbation
-- coll_site_geo_feat
-- food_origin
-- food_prod
-- food_product_type
-- food_source
-- IFSAC_category
-- intended_consumer
-- samp_purpose
 - animal_am
 - animal_am_dur
 - animal_am_freq
@@ -1169,6 +1092,7 @@ slots:
 - cult_result_org
 - cult_target
 - enrichment_protocol
+- experimental_factor
 - food_additive
 - food_contact_surf
 - food_contain_wrap
@@ -1184,6 +1108,7 @@ slots:
 - food_prod_synonym
 - food_product_qual
 - food_quality_date
+- food_source
 - food_source_age
 - food_trace_list
 - food_trav_mode
@@ -1193,22 +1118,33 @@ slots:
 - library_prep_kit
 - lot_number
 - microb_cult_med
+- misc_param
+- nucl_acid_ext
+- organism_count
 - part_plant_animal
+- perturbation
+- pool_dna_extracts
 - repository_name
-- samp_collect_method
 - samp_pooling
 - samp_rep_biol
 - samp_rep_tech
+- samp_size
 - samp_source_mat_cat
 - samp_stor_device
 - samp_stor_media
+- samp_store_dur
+- samp_store_loc
+- samp_store_temp
+- samp_transport_cont
 - samp_transport_dur
 - samp_transport_temp
+- samp_vol_we_dna_ext
 - sequencing_kit
 - sequencing_location
 - serovar_or_serotype
 - spikein_AMR
 - spikein_antibiotic
+- spikein_count
 - spikein_growth_med
 - spikein_metal
 - spikein_org
@@ -1219,8 +1155,23 @@ slots:
 - study_inc_temp
 - study_timecourse
 - study_tmnt
+- temp
 - timepoint
-- misc_param
+- coll_site_geo_feat
+- collection_date
+- env_broad_scale
+- env_local_scale
+- env_medium
+- food_origin
+- food_prod
+- food_product_type
+- geo_loc_name
+- IFSAC_category
+- intended_consumer
+- lat_lon
+- project_name
+- samp_purpose
+- seq_meth
 slot_usage:
   HACCP_term:
     name: HACCP_term
@@ -1300,6 +1251,7 @@ slot_usage:
   collection_date:
     name: collection_date
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1377,6 +1329,7 @@ slot_usage:
   env_broad_scale:
     name: env_broad_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1397,6 +1350,7 @@ slot_usage:
   env_local_scale:
     name: env_local_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1417,6 +1371,7 @@ slot_usage:
   env_medium:
     name: env_medium
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1437,6 +1392,7 @@ slot_usage:
   experimental_factor:
     name: experimental_factor
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
@@ -1556,6 +1512,7 @@ slot_usage:
   food_product_type:
     name: food_product_type
     domain_of:
+    - Agriculture
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1571,6 +1528,7 @@ slot_usage:
   food_source:
     name: food_source
     domain_of:
+    - Agriculture
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1611,6 +1569,7 @@ slot_usage:
   geo_loc_name:
     name: geo_loc_name
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1639,6 +1598,7 @@ slot_usage:
   lat_lon:
     name: lat_lon
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1707,6 +1667,7 @@ slot_usage:
     name: nucl_acid_ext
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1788,6 +1749,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1827,56 +1789,6 @@ slot_usage:
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_collect_device:
-    name: samp_collect_device
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-  samp_collect_method:
-    name: samp_collect_method
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_pooling:
     name: samp_pooling
     domain_of:
@@ -1909,6 +1821,7 @@ slot_usage:
     name: samp_size
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1937,33 +1850,83 @@ slot_usage:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_stor_dur:
-    name: samp_stor_dur
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-  samp_stor_loc:
-    name: samp_stor_loc
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
   samp_stor_media:
     name: samp_stor_media
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_stor_temp:
-    name: samp_stor_temp
+  samp_store_dur:
+    name: samp_store_dur
     domain_of:
     - Agriculture
+    - Air
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_loc:
+    name: samp_store_loc
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_temp:
+    name: samp_store_temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
   samp_transport_cont:
     name: samp_transport_cont
     domain_of:
@@ -1987,6 +1950,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2022,6 +1986,7 @@ slot_usage:
     name: seq_meth
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2142,6 +2107,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -2186,6 +2152,7 @@ class_uri: MIXS:0016019
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: FoodAnimalAndAnimalFeed
+description: placeholder description; linter will ignore this
 title: food-animal and animal feed
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -2269,6 +2236,7 @@ slot_usage:
   collection_date:
     name: collection_date
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2346,6 +2314,7 @@ slot_usage:
   env_broad_scale:
     name: env_broad_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2366,6 +2335,7 @@ slot_usage:
   env_local_scale:
     name: env_local_scale
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2386,6 +2356,7 @@ slot_usage:
   env_medium:
     name: env_medium
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2406,6 +2377,7 @@ slot_usage:
   experimental_factor:
     name: experimental_factor
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
@@ -2525,6 +2497,7 @@ slot_usage:
   food_product_type:
     name: food_product_type
     domain_of:
+    - Agriculture
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2540,6 +2513,7 @@ slot_usage:
   food_source:
     name: food_source
     domain_of:
+    - Agriculture
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2580,6 +2554,7 @@ slot_usage:
   geo_loc_name:
     name: geo_loc_name
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2608,6 +2583,7 @@ slot_usage:
   lat_lon:
     name: lat_lon
     domain_of:
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2676,6 +2652,7 @@ slot_usage:
     name: nucl_acid_ext
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2757,6 +2734,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2796,56 +2774,6 @@ slot_usage:
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_collect_device:
-    name: samp_collect_device
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-  samp_collect_method:
-    name: samp_collect_method
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_pooling:
     name: samp_pooling
     domain_of:
@@ -2878,6 +2806,7 @@ slot_usage:
     name: samp_size
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2906,33 +2835,83 @@ slot_usage:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_stor_dur:
-    name: samp_stor_dur
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-  samp_stor_loc:
-    name: samp_stor_loc
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
   samp_stor_media:
     name: samp_stor_media
     domain_of:
     - FoodAnimalAndAnimalFeed
     - FoodFoodProductionFacility
     - FoodHumanFoods
-  samp_stor_temp:
-    name: samp_stor_temp
+  samp_store_dur:
+    name: samp_store_dur
     domain_of:
     - Agriculture
+    - Air
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
     - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_loc:
+    name: samp_store_loc
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+  samp_store_temp:
+    name: samp_store_temp
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
   samp_transport_cont:
     name: samp_transport_cont
     domain_of:
@@ -2956,6 +2935,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2991,6 +2971,7 @@ slot_usage:
     name: seq_meth
     domain_of:
     - Agriculture
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -3111,6 +3092,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -3149,751 +3131,9 @@ slot_usage:
     - FoodFoodProductionFacility
     - FoodHumanFoods
 attributes:
-  samp_name:
-    name: samp_name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_name
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-  project_name:
-    name: project_name
-    title: project name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000092
-    alias: project_name
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  lat_lon:
-    name: lat_lon
-    title: geographic location (latitude and longitude)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000009
-    alias: lat_lon
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
-    structured_pattern:
-      syntax: '{lat} {lon}'
-  geo_loc_name:
-    name: geo_loc_name
-    title: geographic location (country and/or sea,region)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000010
-    alias: geo_loc_name
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+: [^s\|][^\r\n\t\|]+, [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{term}: {term}, {free_text}'
-  collection_date:
-    name: collection_date
-    title: collection date
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000011
-    alias: collection_date
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-  env_broad_scale:
-    name: env_broad_scale
-    title: broad-scale environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000012
-    alias: env_broad_scale
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_local_scale:
-    name: env_local_scale
-    title: local environmental context
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000013
-    alias: env_local_scale
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  env_medium:
-    name: env_medium
-    title: environmental medium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000014
-    alias: env_medium
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    - SymbiontAssociated
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  seq_meth:
-    name: seq_meth
-    title: sequencing method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000050
-    alias: seq_meth
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    required: true
-  samp_size:
-    name: samp_size
-    title: amount or size of sample collected
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000001
-    alias: samp_size
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_collect_device:
-    name: samp_collect_device
-    title: sample collection device
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000002
-    alias: samp_collect_device
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  experimental_factor:
-    name: experimental_factor
-    title: experimental factor
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000008
-    alias: experimental_factor
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-  nucl_acid_ext:
-    name: nucl_acid_ext
-    title: nucleic acid extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000037
-    alias: nucl_acid_ext
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - Miuvig
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})
-  organism_count:
-    name: organism_count
-    title: organism count
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000103
-    alias: organism_count
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  spikein_count:
-    name: spikein_count
-    title: spike-in organism count
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001335
-    alias: spikein_count
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  samp_stor_temp:
-    name: samp_stor_temp
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_stor_temp
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_stor_dur:
-    name: samp_stor_dur
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_stor_dur
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_vol_we_dna_ext:
-    name: samp_vol_we_dna_ext
-    title: sample volume or weight for DNA extraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000111
-    alias: samp_vol_we_dna_ext
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  pool_dna_extracts:
-    name: pool_dna_extracts
-    title: pooling of DNA extracts (if done)
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000325
-    alias: pool_dna_extracts
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - Soil
-    range: string
-  temp:
-    name: temp
-    title: temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000113
-    alias: temp
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_stor_loc:
-    name: samp_stor_loc
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: samp_stor_loc
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_transport_cont:
-    name: samp_transport_cont
-    title: sample transport container
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001230
-    alias: samp_transport_cont
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  perturbation:
-    name: perturbation
-    title: perturbation
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000754
-    alias: perturbation
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-  coll_site_geo_feat:
-    name: coll_site_geo_feat
-    title: collection site geographic feature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001183
-    alias: coll_site_geo_feat
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-  food_origin:
-    name: food_origin
-    title: food product origin geographic location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001207
-    alias: food_origin
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-  food_prod:
-    name: food_prod
-    title: food production system characteristics
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001211
-    alias: food_prod
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  food_product_type:
-    name: food_product_type
-    title: food product type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001184
-    alias: food_product_type
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-  food_source:
-    name: food_source
-    title: food source
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001139
-    alias: food_source
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  IFSAC_category:
-    name: IFSAC_category
-    title: Interagency Food Safety Analytics Collaboration (IFSAC) category
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001179
-    alias: IFSAC_category
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  intended_consumer:
-    name: intended_consumer
-    title: intended consumer
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001144
-    alias: intended_consumer
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
-  samp_purpose:
-    name: samp_purpose
-    title: purpose of sampling
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001151
-    alias: samp_purpose
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    required: true
   animal_am:
     name: animal_am
+    description: placeholder description; linter will ignore this
     title: food animal antimicrobial
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3903,11 +3143,12 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   animal_am_dur:
     name: animal_am_dur
+    description: placeholder description; linter will ignore this
     title: food animal antimicrobial duration
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3919,6 +3160,7 @@ attributes:
     range: string
   animal_am_freq:
     name: animal_am_freq
+    description: placeholder description; linter will ignore this
     title: food animal antimicrobial frequency
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3928,11 +3170,12 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   animal_am_route:
     name: animal_am_route
+    description: placeholder description; linter will ignore this
     title: food animal antimicrobial route of administration
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3942,11 +3185,12 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   animal_am_use:
     name: animal_am_use
+    description: placeholder description; linter will ignore this
     title: food animal antimicrobial intended use
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3956,11 +3200,12 @@ attributes:
     domain_of:
     - FoodAnimalAndAnimalFeed
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   animal_body_cond:
     name: animal_body_cond
+    description: placeholder description; linter will ignore this
     title: food animal body condition
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3972,6 +3217,7 @@ attributes:
     range: string
   animal_diet:
     name: animal_diet
+    description: placeholder description; linter will ignore this
     title: food animal source diet
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3982,11 +3228,12 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   animal_feed_equip:
     name: animal_feed_equip
+    description: placeholder description; linter will ignore this
     title: animal feeding equipment
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3999,6 +3246,7 @@ attributes:
     range: string
   animal_group_size:
     name: animal_group_size
+    description: placeholder description; linter will ignore this
     title: food animal group size
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4011,6 +3259,7 @@ attributes:
     range: integer
   animal_housing:
     name: animal_housing
+    description: placeholder description; linter will ignore this
     title: animal housing system
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4021,11 +3270,12 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   animal_sex:
     name: animal_sex
+    description: placeholder description; linter will ignore this
     title: food animal source sex category
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4037,6 +3287,7 @@ attributes:
     range: string
   bacterial_density:
     name: bacterial_density
+    description: placeholder description; linter will ignore this
     title: bacteria density
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4048,11 +3299,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   cons_food_stor_dur:
     name: cons_food_stor_dur
+    description: placeholder description; linter will ignore this
     title: food stored by consumer (storage duration)
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4065,6 +3317,7 @@ attributes:
     range: string
   cons_food_stor_temp:
     name: cons_food_stor_temp
+    description: placeholder description; linter will ignore this
     title: food stored by consumer (storage temperature)
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4077,6 +3330,7 @@ attributes:
     range: string
   cons_purch_date:
     name: cons_purch_date
+    description: placeholder description; linter will ignore this
     title: purchase date
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4089,6 +3343,7 @@ attributes:
     range: string
   cons_qty_purchased:
     name: cons_qty_purchased
+    description: placeholder description; linter will ignore this
     title: quantity purchased
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4099,11 +3354,12 @@ attributes:
     - FoodAnimalAndAnimalFeed
     - FoodHumanFoods
     range: string
-    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]+'
+    pattern: '[+-]?[1-9][0-9]* [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{integer} {unit}'
   cult_isol_date:
     name: cult_isol_date
+    description: placeholder description; linter will ignore this
     title: culture isolation date
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4119,6 +3375,7 @@ attributes:
     range: string
   cult_result:
     name: cult_result
+    description: placeholder description; linter will ignore this
     title: culture result
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4133,6 +3390,7 @@ attributes:
     range: string
   cult_result_org:
     name: cult_result_org
+    description: placeholder description; linter will ignore this
     title: culture result organism
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4147,6 +3405,7 @@ attributes:
     range: string
   cult_target:
     name: cult_target
+    description: placeholder description; linter will ignore this
     title: culture target microbial analyte
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4161,6 +3420,7 @@ attributes:
     range: string
   enrichment_protocol:
     name: enrichment_protocol
+    description: placeholder description; linter will ignore this
     title: enrichment protocol
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4174,11 +3434,38 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: ({DOI})|({PMID})|({URL})|({free_text})
+  experimental_factor:
+    name: experimental_factor
+    description: placeholder description; linter will ignore this
+    title: experimental factor
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000008
+    alias: experimental_factor
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
   food_additive:
     name: food_additive
+    description: placeholder description; linter will ignore this
     title: food additive
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4192,6 +3479,7 @@ attributes:
     range: string
   food_contact_surf:
     name: food_contact_surf
+    description: placeholder description; linter will ignore this
     title: food contact surface
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4206,6 +3494,7 @@ attributes:
     range: string
   food_contain_wrap:
     name: food_contain_wrap
+    description: placeholder description; linter will ignore this
     title: food container or wrapping
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4220,6 +3509,7 @@ attributes:
     range: string
   food_cooking_proc:
     name: food_cooking_proc
+    description: placeholder description; linter will ignore this
     title: food cooking process
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4233,6 +3523,7 @@ attributes:
     range: string
   food_dis_point:
     name: food_dis_point
+    description: placeholder description; linter will ignore this
     title: food distribution point geographic location
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4246,6 +3537,7 @@ attributes:
     range: string
   food_dis_point_city:
     name: food_dis_point_city
+    description: placeholder description; linter will ignore this
     title: food distribution point geographic location (city)
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4258,6 +3550,7 @@ attributes:
     range: string
   food_ingredient:
     name: food_ingredient
+    description: placeholder description; linter will ignore this
     title: food ingredient
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4271,6 +3564,7 @@ attributes:
     range: string
   food_pack_capacity:
     name: food_pack_capacity
+    description: placeholder description; linter will ignore this
     title: food package capacity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4282,11 +3576,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   food_pack_integrity:
     name: food_pack_integrity
+    description: placeholder description; linter will ignore this
     title: food packing medium integrity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4300,6 +3595,7 @@ attributes:
     range: string
   food_pack_medium:
     name: food_pack_medium
+    description: placeholder description; linter will ignore this
     title: food packing medium
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4314,6 +3610,7 @@ attributes:
     range: string
   food_preserv_proc:
     name: food_preserv_proc
+    description: placeholder description; linter will ignore this
     title: food preservation process
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4328,6 +3625,7 @@ attributes:
     range: string
   food_prior_contact:
     name: food_prior_contact
+    description: placeholder description; linter will ignore this
     title: material of contact prior to food packaging
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4341,6 +3639,7 @@ attributes:
     range: string
   food_prod_synonym:
     name: food_prod_synonym
+    description: placeholder description; linter will ignore this
     title: food product synonym
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4352,11 +3651,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   food_product_qual:
     name: food_product_qual
+    description: placeholder description; linter will ignore this
     title: food product by quality
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4368,11 +3668,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   food_quality_date:
     name: food_quality_date
+    description: placeholder description; linter will ignore this
     title: food quality date
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4385,8 +3686,28 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
+  food_source:
+    name: food_source
+    description: placeholder description; linter will ignore this
+    title: food source
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001139
+    alias: food_source
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
   food_source_age:
     name: food_source_age
+    description: placeholder description; linter will ignore this
     title: food source age
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4398,6 +3719,7 @@ attributes:
     range: string
   food_trace_list:
     name: food_trace_list
+    description: placeholder description; linter will ignore this
     title: food traceability list category
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4411,6 +3733,7 @@ attributes:
     range: string
   food_trav_mode:
     name: food_trav_mode
+    description: placeholder description; linter will ignore this
     title: food shipping transportation method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4424,11 +3747,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   food_trav_vehic:
     name: food_trav_vehic
+    description: placeholder description; linter will ignore this
     title: food shipping transportation vehicle
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4444,6 +3768,7 @@ attributes:
     range: string
   food_treat_proc:
     name: food_treat_proc
+    description: placeholder description; linter will ignore this
     title: food treatment process
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4458,6 +3783,7 @@ attributes:
     range: string
   HACCP_term:
     name: HACCP_term
+    description: placeholder description; linter will ignore this
     title: Hazard Analysis Critical Control Points (HACCP) guide food safety term
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4469,11 +3795,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
     structured_pattern:
       syntax: '{term_label} [{term_id}]'
   library_prep_kit:
     name: library_prep_kit
+    description: placeholder description; linter will ignore this
     title: library preparation kit
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4487,11 +3814,12 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
   lot_number:
     name: lot_number
+    description: placeholder description; linter will ignore this
     title: lot number
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4507,6 +3835,7 @@ attributes:
     range: string
   microb_cult_med:
     name: microb_cult_med
+    description: placeholder description; linter will ignore this
     title: microbiological culture medium
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4518,398 +3847,9 @@ attributes:
     - FoodFoodProductionFacility
     - FoodHumanFoods
     range: string
-  part_plant_animal:
-    name: part_plant_animal
-    title: part of plant or animal
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001149
-    alias: part_plant_animal
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  repository_name:
-    name: repository_name
-    title: repository name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001152
-    alias: repository_name
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  samp_collect_method:
-    name: samp_collect_method
-    title: sample collection method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001225
-    alias: samp_collect_method
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    range: string
-    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])|([^s\|][^\r\n\t\|]+)
-    structured_pattern:
-      syntax: ({DOI})|({PMID})|({URL})|({free_text})
-  samp_pooling:
-    name: samp_pooling
-    title: sample pooling
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001153
-    alias: samp_pooling
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  samp_rep_biol:
-    name: samp_rep_biol
-    title: biological sample replicate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001226
-    alias: samp_rep_biol
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_rep_tech:
-    name: samp_rep_tech
-    title: technical sample replicate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001227
-    alias: samp_rep_tech
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  samp_source_mat_cat:
-    name: samp_source_mat_cat
-    title: sample source material category
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001154
-    alias: samp_source_mat_cat
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  samp_stor_device:
-    name: samp_stor_device
-    title: sample storage device
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001228
-    alias: samp_stor_device
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_stor_media:
-    name: samp_stor_media
-    title: sample storage media
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001229
-    alias: samp_stor_media
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_transport_dur:
-    name: samp_transport_dur
-    title: sample transport duration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001231
-    alias: samp_transport_dur
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  samp_transport_temp:
-    name: samp_transport_temp
-    title: sample transport temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001232
-    alias: samp_transport_temp
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  sequencing_kit:
-    name: sequencing_kit
-    title: sequencing kit
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001155
-    alias: sequencing_kit
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  sequencing_location:
-    name: sequencing_location
-    title: sequencing location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001156
-    alias: sequencing_location
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  serovar_or_serotype:
-    name: serovar_or_serotype
-    title: serovar or serotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001157
-    alias: serovar_or_serotype
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_AMR:
-    name: spikein_AMR
-    title: antimicrobial phenotype of spike-in bacteria
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001235
-    alias: spikein_AMR
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodHumanFoods
-    range: string
-  spikein_antibiotic:
-    name: spikein_antibiotic
-    title: spike-in with antibiotics
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001171
-    alias: spikein_antibiotic
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_growth_med:
-    name: spikein_growth_med
-    title: spike-in growth medium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001169
-    alias: spikein_growth_med
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_metal:
-    name: spikein_metal
-    title: spike-in with heavy metals
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001172
-    alias: spikein_metal
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_org:
-    name: spikein_org
-    title: spike in organism
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001167
-    alias: spikein_org
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_serovar:
-    name: spikein_serovar
-    title: spike-in bacterial serovar or serotype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001168
-    alias: spikein_serovar
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  spikein_strain:
-    name: spikein_strain
-    title: spike-in microbial strain
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001170
-    alias: spikein_strain
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - Agriculture
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    range: string
-  study_design:
-    name: study_design
-    title: study design
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001236
-    alias: study_design
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  study_inc_dur:
-    name: study_inc_dur
-    title: study incubation duration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001237
-    alias: study_inc_dur
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  study_inc_temp:
-    name: study_inc_temp
-    title: study incubation temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001238
-    alias: study_inc_temp
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  study_timecourse:
-    name: study_timecourse
-    title: time-course duration
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001239
-    alias: study_timecourse
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  study_tmnt:
-    name: study_tmnt
-    title: study treatment
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001240
-    alias: study_tmnt
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
-  timepoint:
-    name: timepoint
-    title: timepoint
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001173
-    alias: timepoint
-    owner: FoodAnimalAndAnimalFeed
-    domain_of:
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    range: string
   misc_param:
     name: misc_param
+    description: placeholder description; linter will ignore this
     title: miscellaneous parameter
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4940,10 +3880,1161 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    description: placeholder description; linter will ignore this
+    title: nucleic acid extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000037
+    alias: nucl_acid_ext
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: (10.\d{4,9}/[-._;()/:a-zA-Z0-9]+)|(PMID:(\d{7,8}))|((?:https?://)?(?:www\.)?[\w-]+(?:\.[\w-]+)+[\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])
+    structured_pattern:
+      syntax: ({DOI})|({PMID})|({URL})
+  organism_count:
+    name: organism_count
+    description: placeholder description; linter will ignore this
+    title: organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000103
+    alias: organism_count
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  part_plant_animal:
+    name: part_plant_animal
+    description: placeholder description; linter will ignore this
+    title: part of plant or animal
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001149
+    alias: part_plant_animal
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  perturbation:
+    name: perturbation
+    description: placeholder description; linter will ignore this
+    title: perturbation
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000754
+    alias: perturbation
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+  pool_dna_extracts:
+    name: pool_dna_extracts
+    description: placeholder description; linter will ignore this
+    title: pooling of DNA extracts (if done)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000325
+    alias: pool_dna_extracts
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - Soil
+    range: string
+  repository_name:
+    name: repository_name
+    description: placeholder description; linter will ignore this
+    title: repository name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001152
+    alias: repository_name
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_pooling:
+    name: samp_pooling
+    description: placeholder description; linter will ignore this
+    title: sample pooling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001153
+    alias: samp_pooling
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_rep_biol:
+    name: samp_rep_biol
+    description: placeholder description; linter will ignore this
+    title: biological sample replicate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001226
+    alias: samp_rep_biol
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_rep_tech:
+    name: samp_rep_tech
+    description: placeholder description; linter will ignore this
+    title: technical sample replicate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001227
+    alias: samp_rep_tech
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_size:
+    name: samp_size
+    description: placeholder description; linter will ignore this
+    title: amount or size of sample collected
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000001
+    alias: samp_size
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_source_mat_cat:
+    name: samp_source_mat_cat
+    description: placeholder description; linter will ignore this
+    title: sample source material category
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001154
+    alias: samp_source_mat_cat
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  samp_stor_device:
+    name: samp_stor_device
+    description: placeholder description; linter will ignore this
+    title: sample storage device
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001228
+    alias: samp_stor_device
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_stor_media:
+    name: samp_stor_media
+    description: placeholder description; linter will ignore this
+    title: sample storage media
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001229
+    alias: samp_stor_media
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_store_dur:
+    name: samp_store_dur
+    description: placeholder description; linter will ignore this
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
+  samp_store_loc:
+    name: samp_store_loc
+    description: placeholder description; linter will ignore this
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_store_temp:
+    name: samp_store_temp
+    description: placeholder description; linter will ignore this
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_transport_cont:
+    name: samp_transport_cont
+    description: placeholder description; linter will ignore this
+    title: sample transport container
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001230
+    alias: samp_transport_cont
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_transport_dur:
+    name: samp_transport_dur
+    description: placeholder description; linter will ignore this
+    title: sample transport duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001231
+    alias: samp_transport_dur
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_transport_temp:
+    name: samp_transport_temp
+    description: placeholder description; linter will ignore this
+    title: sample transport temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001232
+    alias: samp_transport_temp
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: placeholder description; linter will ignore this
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sequencing_kit:
+    name: sequencing_kit
+    description: placeholder description; linter will ignore this
+    title: sequencing kit
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001155
+    alias: sequencing_kit
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  sequencing_location:
+    name: sequencing_location
+    description: placeholder description; linter will ignore this
+    title: sequencing location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001156
+    alias: sequencing_location
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  serovar_or_serotype:
+    name: serovar_or_serotype
+    description: placeholder description; linter will ignore this
+    title: serovar or serotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001157
+    alias: serovar_or_serotype
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_AMR:
+    name: spikein_AMR
+    description: placeholder description; linter will ignore this
+    title: antimicrobial phenotype of spike-in bacteria
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001235
+    alias: spikein_AMR
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodHumanFoods
+    range: string
+  spikein_antibiotic:
+    name: spikein_antibiotic
+    description: placeholder description; linter will ignore this
+    title: spike-in with antibiotics
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001171
+    alias: spikein_antibiotic
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_count:
+    name: spikein_count
+    description: placeholder description; linter will ignore this
+    title: spike-in organism count
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001335
+    alias: spikein_count
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_growth_med:
+    name: spikein_growth_med
+    description: placeholder description; linter will ignore this
+    title: spike-in growth medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001169
+    alias: spikein_growth_med
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_metal:
+    name: spikein_metal
+    description: placeholder description; linter will ignore this
+    title: spike-in with heavy metals
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001172
+    alias: spikein_metal
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_org:
+    name: spikein_org
+    description: placeholder description; linter will ignore this
+    title: spike in organism
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001167
+    alias: spikein_org
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_serovar:
+    name: spikein_serovar
+    description: placeholder description; linter will ignore this
+    title: spike-in bacterial serovar or serotype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001168
+    alias: spikein_serovar
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  spikein_strain:
+    name: spikein_strain
+    description: placeholder description; linter will ignore this
+    title: spike-in microbial strain
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001170
+    alias: spikein_strain
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    range: string
+  study_design:
+    name: study_design
+    description: placeholder description; linter will ignore this
+    title: study design
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001236
+    alias: study_design
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  study_inc_dur:
+    name: study_inc_dur
+    description: placeholder description; linter will ignore this
+    title: study incubation duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001237
+    alias: study_inc_dur
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  study_inc_temp:
+    name: study_inc_temp
+    description: placeholder description; linter will ignore this
+    title: study incubation temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001238
+    alias: study_inc_temp
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  study_timecourse:
+    name: study_timecourse
+    description: placeholder description; linter will ignore this
+    title: time-course duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001239
+    alias: study_timecourse
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  study_tmnt:
+    name: study_tmnt
+    description: placeholder description; linter will ignore this
+    title: study treatment
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001240
+    alias: study_tmnt
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  temp:
+    name: temp
+    description: placeholder description; linter will ignore this
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  timepoint:
+    name: timepoint
+    description: placeholder description; linter will ignore this
+    title: timepoint
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001173
+    alias: timepoint
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+  coll_site_geo_feat:
+    name: coll_site_geo_feat
+    description: placeholder description; linter will ignore this
+    title: collection site geographic feature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001183
+    alias: coll_site_geo_feat
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  collection_date:
+    name: collection_date
+    description: placeholder description; linter will ignore this
+    title: collection date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000011
+    alias: collection_date
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+  env_broad_scale:
+    name: env_broad_scale
+    description: placeholder description; linter will ignore this
+    title: broad-scale environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000012
+    alias: env_broad_scale
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_local_scale:
+    name: env_local_scale
+    description: placeholder description; linter will ignore this
+    title: local environmental context
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000013
+    alias: env_local_scale
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  env_medium:
+    name: env_medium
+    description: placeholder description; linter will ignore this
+    title: environmental medium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000014
+    alias: env_medium
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_origin:
+    name: food_origin
+    description: placeholder description; linter will ignore this
+    title: food product origin geographic location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001207
+    alias: food_origin
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  food_prod:
+    name: food_prod
+    description: placeholder description; linter will ignore this
+    title: food production system characteristics
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001211
+    alias: food_prod
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  food_product_type:
+    name: food_product_type
+    description: placeholder description; linter will ignore this
+    title: food product type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001184
+    alias: food_product_type
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  geo_loc_name:
+    name: geo_loc_name
+    description: placeholder description; linter will ignore this
+    title: geographic location (country and/or sea,region)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000010
+    alias: geo_loc_name
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*: [^s\|][^\r\n\t\|]*, [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{term}: {term}, {free_text}'
+  IFSAC_category:
+    name: IFSAC_category
+    description: placeholder description; linter will ignore this
+    title: Interagency Food Safety Analytics Collaboration (IFSAC) category
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001179
+    alias: IFSAC_category
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  intended_consumer:
+    name: intended_consumer
+    description: placeholder description; linter will ignore this
+    title: intended consumer
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001144
+    alias: intended_consumer
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  lat_lon:
+    name: lat_lon
+    description: placeholder description; linter will ignore this
+    title: geographic location (latitude and longitude)
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?) [-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)'
+    structured_pattern:
+      syntax: '{lat} {lon}'
+  project_name:
+    name: project_name
+    description: placeholder description; linter will ignore this
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_purpose:
+    name: samp_purpose
+    description: placeholder description; linter will ignore this
+    title: purpose of sampling
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001151
+    alias: samp_purpose
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+  seq_meth:
+    name: seq_meth
+    description: placeholder description; linter will ignore this
+    title: sequencing method
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000050
+    alias: seq_meth
+    owner: FoodAnimalAndAnimalFeed
+    domain_of:
+    - Agriculture
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
 class_uri: MIXS:0016019
 
 </code></pre>

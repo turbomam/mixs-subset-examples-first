@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-feat_pred">Slot: feat_pred</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000061">MIXS:0000061</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,82 +341,120 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="../Checklist/">Checklist</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
+</tr>
+<tr>
 <td><a href="../MigsBa/">MigsBa</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsEu/">MigsEu</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsOrg/">MigsOrg</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsPl/">MigsPl</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsVi/">MigsVi</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../Mimag/">Mimag</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../Mims/">Mims</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../Misag/">Misag</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../Miuvig/">Miuvig</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsBaPlantAssociated/">MigsBaPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MigsBaSediment/">MigsBaSediment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MigsBaSoil/">MigsBaSoil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MigsBaWater/">MigsBaWater</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../MimarksC/">MimarksC</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../MimarksS/">MimarksS</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsPlantAssociated/">MimsPlantAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsSediment/">MimsSediment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsSoil/">MimsSoil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsWater/">MimsWater</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -464,6 +503,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: feature prediction
 examples:
 - value: Prodigal;2.6.3;default parameters
@@ -472,6 +512,7 @@ rank: 1000
 slot_uri: MIXS:0000061
 alias: feat_pred
 domain_of:
+- Checklist
 - MigsBa
 - MigsEu
 - MigsOrg
@@ -482,7 +523,7 @@ domain_of:
 - Misag
 - Miuvig
 range: string
-pattern: '[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+;[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*;[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{software};{version};{parameters}'
 

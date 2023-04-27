@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-door_size">Slot: door_size</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000158">MIXS:0000158</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,18 +341,25 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -400,6 +408,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: door area or size
 examples:
 - value: 2.5 square meter
@@ -410,7 +419,7 @@ alias: door_size
 domain_of:
 - BuiltEnvironment
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{float} {unit}'
 

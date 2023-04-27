@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-num_samp_collect">Slot: num_samp_collect</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0001224">MIXS:0001224</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,22 +341,30 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../FoodFoodProductionFacility/">FoodFoodProductionFacility</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../FoodHumanFoods/">FoodHumanFoods</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -401,6 +410,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: number of samples collected
 examples:
 - value: 116 samples
@@ -412,7 +422,7 @@ domain_of:
 - FoodFoodProductionFacility
 - FoodHumanFoods
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{float} {unit}'
 

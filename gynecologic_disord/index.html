@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-gynecologic_disord">Slot: gynecologic_disord</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000288">MIXS:0000288</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,18 +341,25 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../HumanVaginal/">HumanVaginal</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="see-also">See Also</h2>
 <ul>
@@ -390,6 +398,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: m
+description: placeholder description; linter will ignore this
 title: gynecological disorder
 notes:
 - gynecological disorder
@@ -403,7 +412,7 @@ alias: gynecologic_disord
 domain_of:
 - HumanVaginal
 range: string
-pattern: '[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{free_text}'
 

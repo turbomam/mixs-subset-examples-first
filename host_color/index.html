@@ -324,6 +324,7 @@
 
 
 <h1 id="slot-host_color">Slot: host_color</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000260">MIXS:0000260</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -333,22 +334,30 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../HostAssociated/">HostAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../SymbiontAssociated/">SymbiontAssociated</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="annotations">Annotations</h3>
@@ -381,6 +390,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: host color
 notes:
 - color
@@ -392,7 +402,7 @@ domain_of:
 - HostAssociated
 - SymbiontAssociated
 range: string
-pattern: '[^s\|][^\r\n\t\|]+'
+pattern: '[^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{free_text}'
 

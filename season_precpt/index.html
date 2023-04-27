@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-season_precpt">Slot: season_precpt</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0000645">MIXS:0000645</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,34 +341,45 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../Agriculture/">Agriculture</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../Soil/">Soil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../MigsBaSoil/">MigsBaSoil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 <tr>
 <td><a href="../MimsSoil/">MimsSoil</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <table>
@@ -417,6 +429,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: '1'
+description: placeholder description; linter will ignore this
 title: mean seasonal precipitation
 examples:
 - value: 75 millimeters
@@ -429,7 +442,7 @@ domain_of:
 - FoodFarmEnvironment
 - Soil
 range: string
-pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
 structured_pattern:
   syntax: '{float} {unit}'
 

@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://turbomam.github.io/mixs-subset-examples-first/tot_nitro/">
+        <link rel="canonical" href="https://turbomam.github.io/mixs-subset-examples-first/air_pm_concen/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Slot: tot_nitro - mixs-subset-examples-first</title>
+        <title>Slot: air_pm_concen - mixs-subset-examples-first</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-tot_nitro" class="md-skip">
+        <a href="#slot-air_pm_concen" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: tot_nitro
+              Slot: air_pm_concen
             
           </span>
         </div>
@@ -270,12 +270,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
   
     <nav class="md-nav" aria-label="Identifier and Mapping Information">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    Annotations
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#schema-source" class="md-nav__link">
@@ -310,14 +324,15 @@
                 
                   
 
-  <a href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/tot_nitro.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/turbomam/mixs-subset-examples-first/edit/master/docs/air_pm_concen.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="slot-tot_nitro">Slot: tot_nitro</h1>
-<p>URI: <a href="http://example.com/tot_nitro">MIXS:tot_nitro</a></p>
+<h1 id="slot-air_pm_concen">Slot: air_pm_concen</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
+<p>URI: <a href="http://example.com/0000108">MIXS:0000108</a></p>
 <!-- no inheritance hierarchy -->
 
 <h2 id="applicable-classes">Applicable Classes</h2>
@@ -326,44 +341,60 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Agriculture/">Agriculture</a></td>
-<td></td>
+<td><a href="../Air/">Air</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
-<td><a href="../HydrocarbonResourcesCores/">HydrocarbonResourcesCores</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../HydrocarbonResourcesFluidsSwabs/">HydrocarbonResourcesFluidsSwabs</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../WastewaterSludge/">WastewaterSludge</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../Water/">Water</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../MigsBaWater/">MigsBaWater</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="../MimsWater/">MimsWater</a></td>
-<td></td>
+<td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*</code></p>
+</li>
 </ul>
+<h2 id="examples">Examples</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PM2.5;10 microgram per cubic meter</td>
+</tr>
+</tbody>
+</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="annotations">Annotations</h3>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>global_expected_value</td>
+<td>particulate matter name;measurement value</td>
+</tr>
+</tbody>
+</table>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first</li>
@@ -371,17 +402,37 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: tot_nitro
+<pre><code class="language-yaml">name: air_pm_concen
+annotations:
+  global_expected_value:
+    tag: global_expected_value
+    value: particulate matter name;measurement value
+  global_preferred_unit:
+    tag: global_preferred_unit
+    value: ug/m^3
+  global_raw_definition:
+    tag: global_raw_definition
+    value: Concentration of substances that remain suspended in the air, and comprise
+      mixtures of organic and inorganic substances (PM10 and PM2.5); can report multiple
+      PM's by entering numeric values preceded by name of PM
+  occurrence:
+    tag: occurrence
+    value: m
+description: placeholder description; linter will ignore this
+title: air particulate matter concentration
+examples:
+- value: PM2.5;10 microgram per cubic meter
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
-alias: tot_nitro
+slot_uri: MIXS:0000108
+alias: air_pm_concen
 domain_of:
-- Agriculture
-- HydrocarbonResourcesCores
-- HydrocarbonResourcesFluidsSwabs
-- WastewaterSludge
-- Water
+- Air
+- FoodFarmEnvironment
 range: string
+pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+structured_pattern:
+  syntax: '{free_text};{float} {unit}'
 
 </code></pre>
 

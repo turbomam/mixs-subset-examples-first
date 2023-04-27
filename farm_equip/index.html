@@ -331,6 +331,7 @@
 
 
 <h1 id="slot-farm_equip">Slot: farm_equip</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0001126">MIXS:0001126</a></p>
 <!-- no inheritance hierarchy -->
 
@@ -340,22 +341,30 @@
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../Agriculture/">Agriculture</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../FoodFarmEnvironment/">FoodFarmEnvironment</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../String/">String</a></li>
+<li>
+<p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Regex pattern: <code>[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]</code></p>
+</li>
 </ul>
 <h2 id="see-also">See Also</h2>
 <ul>
@@ -394,6 +403,7 @@ annotations:
   occurrence:
     tag: occurrence
     value: m
+description: placeholder description; linter will ignore this
 title: farm equipment used
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 see_also:
@@ -405,7 +415,7 @@ domain_of:
 - Agriculture
 - FoodFarmEnvironment
 range: string
-pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
+pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
 structured_pattern:
   syntax: '{term_label} [{term_id}]'
 

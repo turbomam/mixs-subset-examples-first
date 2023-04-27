@@ -152,11 +152,6 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
     Identifier and Mapping Information
   </a>
@@ -205,6 +200,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-hydrocarbonresourcesfluidsswabs">Class: HydrocarbonResourcesFluidsSwabs</h1>
+<p><em>placeholder description; linter will ignore this</em></p>
 <p>URI: <a href="http://example.com/0016016">MIXS:0016016</a></p>
 <div class="mermaid"> classDiagram
     class HydrocarbonResourcesFluidsSwabs
@@ -294,7 +290,7 @@
 
       HydrocarbonResourcesFluidsSwabs : oxy_stat_samp
 
-          HydrocarbonResourcesFluidsSwabs ..&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
+          HydrocarbonResourcesFluidsSwabs --|&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
 
       HydrocarbonResourcesFluidsSwabs : ph
 
@@ -319,8 +315,6 @@
       HydrocarbonResourcesFluidsSwabs : samp_collect_point
 
       HydrocarbonResourcesFluidsSwabs : samp_loc_corr_rate
-
-      HydrocarbonResourcesFluidsSwabs : samp_name
 
       HydrocarbonResourcesFluidsSwabs : samp_preserv
 
@@ -359,8 +353,6 @@
       HydrocarbonResourcesFluidsSwabs : toluene
 
       HydrocarbonResourcesFluidsSwabs : tot_iron
-
-      HydrocarbonResourcesFluidsSwabs : tot_nitro
 
       HydrocarbonResourcesFluidsSwabs : tot_phosp
 
@@ -405,539 +397,508 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../samp_name/">samp_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../project_name/">project_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hcr/">hcr</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hc_produced/">hc_produced</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../basin/">basin</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../field/">field</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../reservoir/">reservoir</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hcr_temp/">hcr_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tvdss_of_hcr_temp/">tvdss_of_hcr_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hcr_pressure/">hcr_pressure</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tvdss_of_hcr_press/">tvdss_of_hcr_press</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../lithology/">lithology</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../depos_env/">depos_env</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hcr_geol_age/">hcr_geol_age</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../hcr_fw_salinity/">hcr_fw_salinity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sulfate_fw/">sulfate_fw</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../vfa_fw/">vfa_fw</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../prod_start_date/">prod_start_date</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../prod_rate/">prod_rate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../water_prod_rate/">water_prod_rate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../water_cut/">water_cut</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../iwf/">iwf</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../add_recov_method/">add_recov_method</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../iw_bt_date_well/">iw_bt_date_well</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biocide/">biocide</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biocide_admin_method/">biocide_admin_method</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../chem_treatment/">chem_treatment</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../chem_treat_method/">chem_treat_method</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_loc_corr_rate/">samp_loc_corr_rate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_well_name/">samp_well_name</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../win/">win</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_type/">samp_type</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_subtype/">samp_subtype</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_collect_point/">samp_collect_point</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../temp/">temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../pressure/">pressure</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
-<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_preserv/">samp_preserv</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_transport_cond/">samp_transport_cond</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_temp/">samp_store_temp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_dur/">samp_store_dur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_store_loc/">samp_store_loc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../organism_count/">organism_count</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../org_count_qpcr_info/">org_count_qpcr_info</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../ph/">ph</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../salinity/">salinity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../alkalinity/">alkalinity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../alkalinity_method/">alkalinity_method</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sulfate/">sulfate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sulfide/">sulfide</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tot_sulfur/">tot_sulfur</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../nitrate/">nitrate</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../nitrite/">nitrite</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
 <td><a href="../ammonium/">ammonium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tot_nitro/">tot_nitro</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_iron/">diss_iron</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sodium/">sodium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../chloride/">chloride</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../potassium/">potassium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../magnesium/">magnesium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../calcium/">calcium</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tot_iron/">tot_iron</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_org_carb/">diss_org_carb</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_inorg_carb/">diss_inorg_carb</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_inorg_phosp/">diss_inorg_phosp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tot_phosp/">tot_phosp</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../suspend_solids/">suspend_solids</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../density/">density</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_carb_dioxide/">diss_carb_dioxide</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../diss_oxygen_fluid/">diss_oxygen_fluid</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../vfa/">vfa</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../benzene/">benzene</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../toluene/">toluene</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../ethylbenzene/">ethylbenzene</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../xylene/">xylene</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../api/">api</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../tan/">tan</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../viscosity/">viscosity</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../pour_point/">pour_point</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../saturates_pc/">saturates_pc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../aromatics_pc/">aromatics_pc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../resins_pc/">resins_pc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../asphaltenes_pc/">asphaltenes_pc</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../misc_param/">misc_param</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td><a href="../benzene/">benzene</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biocide/">biocide</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biocide_admin_method/">biocide_admin_method</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../depos_env/">depos_env</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_inorg_phosp/">diss_inorg_phosp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_iron/">diss_iron</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ethylbenzene/">ethylbenzene</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../field/">field</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_fw_salinity/">hcr_fw_salinity</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_geol_age/">hcr_geol_age</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_temp/">hcr_temp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../lithology/">lithology</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nitrite/">nitrite</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ph/">ph</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Float/">Float</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../prod_rate/">prod_rate</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../prod_start_date/">prod_start_date</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../reservoir/">reservoir</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../resins_pc/">resins_pc</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_loc_corr_rate/">samp_loc_corr_rate</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_subtype/">samp_subtype</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_well_name/">samp_well_name</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../saturates_pc/">saturates_pc</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfate_fw/">sulfate_fw</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tan/">tan</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../toluene/">toluene</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_iron/">tot_iron</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_sulfur/">tot_sulfur</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vfa/">vfa</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../vfa_fw/">vfa_fw</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../water_prod_rate/">water_prod_rate</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../win/">win</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../xylene/">xylene</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../additional_info/">additional_info</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
-<td></td>
+<td>placeholder description; linter will ignore this</td>
 <td>direct</td>
 </tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
 <tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
+<td><a href="../alkalinity/">alkalinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../hydrocarbon_resources_fluids_swabs_set/">hydrocarbon_resources_fluids_swabs_set</a></td>
-<td>range</td>
-<td><a href="./">HydrocarbonResourcesFluidsSwabs</a></td>
+<td><a href="../alkalinity_method/">alkalinity_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../calcium/">calcium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chem_treat_method/">chem_treat_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chem_treatment/">chem_treatment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chloride/">chloride</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../density/">density</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_carb_dioxide/">diss_carb_dioxide</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_inorg_carb/">diss_inorg_carb</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_org_carb/">diss_org_carb</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../diss_oxygen_fluid/">diss_oxygen_fluid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr_pressure/">hcr_pressure</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../iw_bt_date_well/">iw_bt_date_well</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../magnesium/">magnesium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../org_count_qpcr_info/">org_count_qpcr_info</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../potassium/">potassium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pour_point/">pour_point</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../pressure/">pressure</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_preserv/">samp_preserv</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_transport_cond/">samp_transport_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sodium/">sodium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../suspend_solids/">suspend_solids</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tot_phosp/">tot_phosp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tvdss_of_hcr_press/">tvdss_of_hcr_press</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tvdss_of_hcr_temp/">tvdss_of_hcr_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../viscosity/">viscosity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../add_recov_method/">add_recov_method</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../api/">api</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../basin/">basin</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hc_produced/">hc_produced</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../hcr/">hcr</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../iwf/">iwf</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../nitrate/">nitrate</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_collect_point/">samp_collect_point</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../samp_type/">samp_type</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfate/">sulfate</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sulfide/">sulfide</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../water_cut/">water_cut</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>placeholder description; linter will ignore this</td>
+<td>direct</td>
 </tr>
 </tbody>
 </table>
@@ -970,97 +931,96 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: HydrocarbonResourcesFluidsSwabs
+description: placeholder description; linter will ignore this
 title: hydrocarbon resources-fluids/swabs
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
 is_a: EnvironmentalPackage
 slots:
-- samp_name
-- project_name
-- hcr
-- hc_produced
-- basin
-- field
-- reservoir
-- hcr_temp
-- tvdss_of_hcr_temp
-- hcr_pressure
-- tvdss_of_hcr_press
-- lithology
-- depos_env
-- hcr_geol_age
-- hcr_fw_salinity
-- sulfate_fw
-- vfa_fw
-- prod_start_date
-- prod_rate
-- water_prod_rate
-- water_cut
-- iwf
-- add_recov_method
-- iw_bt_date_well
+- ammonium
+- aromatics_pc
+- asphaltenes_pc
+- benzene
 - biocide
 - biocide_admin_method
-- chem_treatment
-- chem_treat_method
-- samp_loc_corr_rate
-- samp_well_name
-- win
-- samp_type
-- samp_subtype
-- samp_collect_point
-- temp
-- pressure
-- oxy_stat_samp
-- samp_preserv
-- samp_transport_cond
-- samp_store_temp
-- samp_store_dur
-- samp_store_loc
-- samp_vol_we_dna_ext
+- depos_env
+- diss_inorg_phosp
+- diss_iron
+- ethylbenzene
+- field
+- hcr_fw_salinity
+- hcr_geol_age
+- hcr_temp
+- lithology
+- nitrite
 - organism_count
-- org_count_qpcr_info
 - ph
-- salinity
+- prod_rate
+- prod_start_date
+- reservoir
+- resins_pc
+- samp_loc_corr_rate
+- samp_subtype
+- samp_vol_we_dna_ext
+- samp_well_name
+- saturates_pc
+- sulfate_fw
+- tan
+- toluene
+- tot_iron
+- tot_sulfur
+- vfa
+- vfa_fw
+- water_prod_rate
+- win
+- xylene
+- additional_info
 - alkalinity
 - alkalinity_method
-- sulfate
-- sulfide
-- tot_sulfur
-- nitrate
-- nitrite
-- ammonium
-- tot_nitro
-- diss_iron
-- sodium
-- chloride
-- potassium
-- magnesium
 - calcium
-- tot_iron
-- diss_org_carb
-- diss_inorg_carb
-- diss_inorg_phosp
-- tot_phosp
-- suspend_solids
+- chem_treat_method
+- chem_treatment
+- chloride
 - density
 - diss_carb_dioxide
+- diss_inorg_carb
+- diss_org_carb
 - diss_oxygen_fluid
-- vfa
-- benzene
-- toluene
-- ethylbenzene
-- xylene
-- api
-- tan
-- viscosity
-- pour_point
-- saturates_pc
-- aromatics_pc
-- resins_pc
-- asphaltenes_pc
+- hcr_pressure
+- iw_bt_date_well
+- magnesium
 - misc_param
-- additional_info
+- org_count_qpcr_info
+- oxy_stat_samp
+- potassium
+- pour_point
+- pressure
+- salinity
+- samp_preserv
+- samp_store_dur
+- samp_store_loc
+- samp_store_temp
+- samp_transport_cond
+- sodium
+- suspend_solids
+- tot_phosp
+- tvdss_of_hcr_press
+- tvdss_of_hcr_temp
+- viscosity
+- add_recov_method
+- api
+- basin
+- hc_produced
+- hcr
+- iwf
+- nitrate
+- project_name
+- samp_collect_point
+- samp_type
+- sulfate
+- sulfide
+- temp
+- water_cut
 slot_usage:
   add_recov_method:
     name: add_recov_method
@@ -1440,6 +1400,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1513,42 +1474,6 @@ slot_usage:
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     recommended: true
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_preserv:
     name: samp_preserv
     domain_of:
@@ -1558,6 +1483,10 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1578,6 +1507,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1596,7 +1528,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -1636,6 +1573,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -1733,6 +1671,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -1776,14 +1715,6 @@ slot_usage:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     recommended: true
-  tot_nitro:
-    name: tot_nitro
-    domain_of:
-    - Agriculture
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - WastewaterSludge
-    - Water
   tot_phosp:
     name: tot_phosp
     domain_of:
@@ -1852,6 +1783,7 @@ class_uri: MIXS:0016016
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: HydrocarbonResourcesFluidsSwabs
+description: placeholder description; linter will ignore this
 title: hydrocarbon resources-fluids/swabs
 from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
 rank: 1000
@@ -2235,6 +2167,7 @@ slot_usage:
     domain_of:
     - Air
     - BuiltEnvironment
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2308,42 +2241,6 @@ slot_usage:
     domain_of:
     - HydrocarbonResourcesFluidsSwabs
     recommended: true
-  samp_name:
-    name: samp_name
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - WastewaterSludge
-    - Water
-    required: true
   samp_preserv:
     name: samp_preserv
     domain_of:
@@ -2353,6 +2250,10 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2373,6 +2274,9 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2391,7 +2295,12 @@ slot_usage:
   samp_store_temp:
     name: samp_store_temp
     domain_of:
+    - Agriculture
     - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -2431,6 +2340,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodFoodProductionFacility
@@ -2528,6 +2438,7 @@ slot_usage:
     domain_of:
     - Agriculture
     - Air
+    - Checklist
     - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
     - FoodHumanFoods
@@ -2571,14 +2482,6 @@ slot_usage:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     recommended: true
-  tot_nitro:
-    name: tot_nitro
-    domain_of:
-    - Agriculture
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - WastewaterSludge
-    - Water
   tot_phosp:
     name: tot_phosp
     domain_of:
@@ -2641,407 +2544,81 @@ slot_usage:
     - HydrocarbonResourcesFluidsSwabs
     recommended: true
 attributes:
-  samp_name:
-    name: samp_name
+  ammonium:
+    name: ammonium
+    description: placeholder description; linter will ignore this
+    title: ammonium
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    alias: samp_name
+    slot_uri: MIXS:0000427
+    alias: ammonium
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
     - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
     - Sediment
-    - Soil
-    - WastewaterSludge
     - Water
     range: string
-    required: true
-  project_name:
-    name: project_name
-    title: project name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000092
-    alias: project_name
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Air
-    - BuiltEnvironment
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  hcr:
-    name: hcr
-    title: hydrocarbon resource type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000988
-    alias: hcr
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-  hc_produced:
-    name: hc_produced
-    title: hydrocarbon type produced
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000989
-    alias: hc_produced
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-  basin:
-    name: basin
-    title: basin name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000290
-    alias: basin
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  field:
-    name: field
-    title: field name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000291
-    alias: field
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  reservoir:
-    name: reservoir
-    title: reservoir name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000303
-    alias: reservoir
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  hcr_temp:
-    name: hcr_temp
-    title: hydrocarbon resource original temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000393
-    alias: hcr_temp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-  tvdss_of_hcr_temp:
-    name: tvdss_of_hcr_temp
-    title: depth (TVDSS) of hydrocarbon resource temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000394
-    alias: tvdss_of_hcr_temp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  hcr_pressure:
-    name: hcr_pressure
-    title: hydrocarbon resource original pressure
+  aromatics_pc:
+    name: aromatics_pc
+    description: placeholder description; linter will ignore this
+    title: aromatics wt%
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000395
-    alias: hcr_pressure
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-  tvdss_of_hcr_press:
-    name: tvdss_of_hcr_press
-    title: depth (TVDSS) of hydrocarbon resource pressure
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000397
-    alias: tvdss_of_hcr_press
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  lithology:
-    name: lithology
-    title: lithology
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000990
-    alias: lithology
+    slot_uri: MIXS:0000133
+    alias: aromatics_pc
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
     recommended: true
-  depos_env:
-    name: depos_env
-    title: depositional environment
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  asphaltenes_pc:
+    name: asphaltenes_pc
+    description: placeholder description; linter will ignore this
+    title: asphaltenes wt%
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000992
-    alias: depos_env
+    slot_uri: MIXS:0000135
+    alias: asphaltenes_pc
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
     recommended: true
-  hcr_geol_age:
-    name: hcr_geol_age
-    title: hydrocarbon resource geological age
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  benzene:
+    name: benzene
+    description: placeholder description; linter will ignore this
+    title: benzene
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000993
-    alias: hcr_geol_age
+    slot_uri: MIXS:0000153
+    alias: benzene
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
     recommended: true
-  hcr_fw_salinity:
-    name: hcr_fw_salinity
-    title: formation water salinity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000406
-    alias: hcr_fw_salinity
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  sulfate_fw:
-    name: sulfate_fw
-    title: sulfate in formation water
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000407
-    alias: sulfate_fw
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  vfa_fw:
-    name: vfa_fw
-    title: vfa in formation water
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000408
-    alias: vfa_fw
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  prod_start_date:
-    name: prod_start_date
-    title: production start date
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001008
-    alias: prod_start_date
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-  prod_rate:
-    name: prod_rate
-    title: production rate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000452
-    alias: prod_rate
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  water_prod_rate:
-    name: water_prod_rate
-    title: water production rate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000453
-    alias: water_prod_rate
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  water_cut:
-    name: water_cut
-    title: water cut
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000454
-    alias: water_cut
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  iwf:
-    name: iwf
-    title: injection water fraction
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000455
-    alias: iwf
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  add_recov_method:
-    name: add_recov_method
-    title: secondary and tertiary recovery methods and start date
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001009
-    alias: add_recov_method
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-  iw_bt_date_well:
-    name: iw_bt_date_well
-    title: injection water breakthrough date of specific well
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001010
-    alias: iw_bt_date_well
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
   biocide:
     name: biocide
+    description: placeholder description; linter will ignore this
     title: biocide administration
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3054,6 +2631,7 @@ attributes:
     recommended: true
   biocide_admin_method:
     name: biocide_admin_method
+    description: placeholder description; linter will ignore this
     title: biocide administration method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3064,371 +2642,172 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     range: string
     recommended: true
-  chem_treatment:
-    name: chem_treatment
-    title: chemical treatment
+  depos_env:
+    name: depos_env
+    description: placeholder description; linter will ignore this
+    title: depositional environment
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0001012
-    alias: chem_treatment
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-  chem_treat_method:
-    name: chem_treat_method
-    title: chemical treatment method
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000457
-    alias: chem_treat_method
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-  samp_loc_corr_rate:
-    name: samp_loc_corr_rate
-    title: corrosion rate at sample location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000136
-    alias: samp_loc_corr_rate
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-  samp_well_name:
-    name: samp_well_name
-    title: sample well name
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000296
-    alias: samp_well_name
+    slot_uri: MIXS:0000992
+    alias: depos_env
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
     recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  win:
-    name: win
-    title: well identification number
+  diss_inorg_phosp:
+    name: diss_inorg_phosp
+    description: placeholder description; linter will ignore this
+    title: dissolved inorganic phosphorus
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000297
-    alias: win
+    slot_uri: MIXS:0000106
+    alias: diss_inorg_phosp
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text}'
-  samp_type:
-    name: samp_type
-    title: sample type
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000998
-    alias: samp_type
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-    pattern: '[^s\|][^\r\n\t\|]+ [[a-zA-Z]+:[0-9]+]'
-    structured_pattern:
-      syntax: '{term_label} [{term_id}]'
-  samp_subtype:
-    name: samp_subtype
-    title: sample subtype
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000999
-    alias: samp_subtype
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-  samp_collect_point:
-    name: samp_collect_point
-    title: sample collection point
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0001015
-    alias: samp_collect_point
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-  temp:
-    name: temp
-    title: temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000113
-    alias: temp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
-    - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
     - Water
     range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  pressure:
-    name: pressure
-    title: pressure
+  diss_iron:
+    name: diss_iron
+    description: placeholder description; linter will ignore this
+    title: dissolved iron
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000412
-    alias: pressure
+    slot_uri: MIXS:0000139
+    alias: diss_iron
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  oxy_stat_samp:
-    name: oxy_stat_samp
-    title: oxygenation status of sample
+  ethylbenzene:
+    name: ethylbenzene
+    description: placeholder description; linter will ignore this
+    title: ethylbenzene
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000753
-    alias: oxy_stat_samp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: OXY_STAT_SAMP_ENUM
-  samp_preserv:
-    name: samp_preserv
-    title: preservative added to sample
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000463
-    alias: samp_preserv
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  samp_transport_cond:
-    name: samp_transport_cond
-    title: sample transport conditions
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000410
-    alias: samp_transport_cond
+    slot_uri: MIXS:0000155
+    alias: ethylbenzene
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-  samp_store_temp:
-    name: samp_store_temp
-    title: sample storage temperature
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000110
-    alias: samp_store_temp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  samp_store_dur:
-    name: samp_store_dur
-    title: sample storage duration
+  field:
+    name: field
+    description: placeholder description; linter will ignore this
+    title: field name
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000116
-    alias: samp_store_dur
+    slot_uri: MIXS:0000291
+    alias: field
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
     range: string
-    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
-    structured_pattern:
-      syntax: '{period}'
-  samp_store_loc:
-    name: samp_store_loc
-    title: sample storage location
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000755
-    alias: samp_store_loc
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Agriculture
-    - Air
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - PlantAssociated
-    - Sediment
-    - SymbiontAssociated
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
-  samp_vol_we_dna_ext:
-    name: samp_vol_we_dna_ext
-    title: sample volume or weight for DNA extraction
+  hcr_fw_salinity:
+    name: hcr_fw_salinity
+    description: placeholder description; linter will ignore this
+    title: formation water salinity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000111
-    alias: samp_vol_we_dna_ext
+    slot_uri: MIXS:0000406
+    alias: hcr_fw_salinity
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
-    - Agriculture
-    - Air
-    - FoodAnimalAndAnimalFeed
-    - FoodFarmEnvironment
-    - FoodFoodProductionFacility
-    - FoodHumanFoods
-    - HostAssociated
-    - HumanAssociated
-    - HumanGut
-    - HumanOral
-    - HumanSkin
-    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  hcr_geol_age:
+    name: hcr_geol_age
+    description: placeholder description; linter will ignore this
+    title: hydrocarbon resource geological age
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000993
+    alias: hcr_geol_age
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  hcr_temp:
+    name: hcr_temp
+    description: placeholder description; linter will ignore this
+    title: hydrocarbon resource original temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000393
+    alias: hcr_temp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  lithology:
+    name: lithology
+    description: placeholder description; linter will ignore this
+    title: lithology
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000990
+    alias: lithology
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  nitrite:
+    name: nitrite
+    description: placeholder description; linter will ignore this
+    title: nitrite
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000426
+    alias: nitrite
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     - MicrobialMatBiofilm
-    - MigsBa
-    - MigsEu
-    - MigsOrg
-    - MigsPl
-    - MigsVi
-    - Mimag
-    - MimarksC
-    - MimarksS
-    - Mims
-    - Misag
     - MiscellaneousNaturalOrArtificialEnvironment
-    - Miuvig
-    - PlantAssociated
     - Sediment
-    - Soil
-    - SymbiontAssociated
-    - WastewaterSludge
     - Water
     range: string
     recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   organism_count:
     name: organism_count
+    description: placeholder description; linter will ignore this
     title: organism count
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3460,20 +2839,9 @@ attributes:
     - Water
     range: string
     recommended: true
-  org_count_qpcr_info:
-    name: org_count_qpcr_info
-    title: organism count qPCR information
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000099
-    alias: org_count_qpcr_info
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
   ph:
     name: ph
+    description: placeholder description; linter will ignore this
     title: pH
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3492,17 +2860,113 @@ attributes:
     - Water
     range: float
     recommended: true
-  salinity:
-    name: salinity
-    title: salinity
+  prod_rate:
+    name: prod_rate
+    description: placeholder description; linter will ignore this
+    title: production rate
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000183
-    alias: salinity
+    slot_uri: MIXS:0000452
+    alias: prod_rate
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  prod_start_date:
+    name: prod_start_date
+    description: placeholder description; linter will ignore this
+    title: production start date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001008
+    alias: prod_start_date
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  reservoir:
+    name: reservoir
+    description: placeholder description; linter will ignore this
+    title: reservoir name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000303
+    alias: reservoir
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  resins_pc:
+    name: resins_pc
+    description: placeholder description; linter will ignore this
+    title: resins wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000134
+    alias: resins_pc
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  samp_loc_corr_rate:
+    name: samp_loc_corr_rate
+    description: placeholder description; linter will ignore this
+    title: corrosion rate at sample location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000136
+    alias: samp_loc_corr_rate
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  samp_subtype:
+    name: samp_subtype
+    description: placeholder description; linter will ignore this
+    title: sample subtype
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000999
+    alias: samp_subtype
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: placeholder description; linter will ignore this
+    title: sample volume or weight for DNA extraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000111
+    alias: samp_vol_we_dna_ext
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
     - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
     - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
     - HostAssociated
     - HumanAssociated
     - HumanGut
@@ -3512,17 +2976,251 @@ attributes:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
     - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
     - PlantAssociated
     - Sediment
+    - Soil
+    - SymbiontAssociated
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
+  samp_well_name:
+    name: samp_well_name
+    description: placeholder description; linter will ignore this
+    title: sample well name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000296
+    alias: samp_well_name
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  saturates_pc:
+    name: saturates_pc
+    description: placeholder description; linter will ignore this
+    title: saturates wt%
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000131
+    alias: saturates_pc
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  sulfate_fw:
+    name: sulfate_fw
+    description: placeholder description; linter will ignore this
+    title: sulfate in formation water
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000407
+    alias: sulfate_fw
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tan:
+    name: tan
+    description: placeholder description; linter will ignore this
+    title: total acid number
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000120
+    alias: tan
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  toluene:
+    name: toluene
+    description: placeholder description; linter will ignore this
+    title: toluene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000154
+    alias: toluene
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_iron:
+    name: tot_iron
+    description: placeholder description; linter will ignore this
+    title: total iron
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000105
+    alias: tot_iron
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tot_sulfur:
+    name: tot_sulfur
+    description: placeholder description; linter will ignore this
+    title: total sulfur
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000419
+    alias: tot_sulfur
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  vfa:
+    name: vfa
+    description: placeholder description; linter will ignore this
+    title: volatile fatty acids
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000152
+    alias: vfa
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  vfa_fw:
+    name: vfa_fw
+    description: placeholder description; linter will ignore this
+    title: vfa in formation water
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000408
+    alias: vfa_fw
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  water_prod_rate:
+    name: water_prod_rate
+    description: placeholder description; linter will ignore this
+    title: water production rate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000453
+    alias: water_prod_rate
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  win:
+    name: win
+    description: placeholder description; linter will ignore this
+    title: well identification number
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000297
+    alias: win
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  xylene:
+    name: xylene
+    description: placeholder description; linter will ignore this
+    title: xylene
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000156
+    alias: xylene
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    recommended: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  additional_info:
+    name: additional_info
+    description: placeholder description; linter will ignore this
+    title: additional info
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000300
+    alias: additional_info
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
   alkalinity:
     name: alkalinity
+    description: placeholder description; linter will ignore this
     title: alkalinity
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3538,11 +3236,12 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   alkalinity_method:
     name: alkalinity_method
+    description: placeholder description; linter will ignore this
     title: alkalinity method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3554,233 +3253,12 @@ attributes:
     - HydrocarbonResourcesFluidsSwabs
     - Water
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
-  sulfate:
-    name: sulfate
-    title: sulfate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000423
-    alias: sulfate
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  sulfide:
-    name: sulfide
-    title: sulfide
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000424
-    alias: sulfide
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  tot_sulfur:
-    name: tot_sulfur
-    title: total sulfur
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000419
-    alias: tot_sulfur
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  nitrate:
-    name: nitrate
-    title: nitrate
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000425
-    alias: nitrate
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - WastewaterSludge
-    - Water
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  nitrite:
-    name: nitrite
-    title: nitrite
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000426
-    alias: nitrite
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  ammonium:
-    name: ammonium
-    title: ammonium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000427
-    alias: ammonium
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  tot_nitro:
-    name: tot_nitro
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    alias: tot_nitro
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - Agriculture
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - WastewaterSludge
-    - Water
-    range: string
-  diss_iron:
-    name: diss_iron
-    title: dissolved iron
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000139
-    alias: diss_iron
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  sodium:
-    name: sodium
-    title: sodium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000428
-    alias: sodium
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - WastewaterSludge
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  chloride:
-    name: chloride
-    title: chloride
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000429
-    alias: chloride
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  potassium:
-    name: potassium
-    title: potassium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000430
-    alias: potassium
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - MiscellaneousNaturalOrArtificialEnvironment
-    - Sediment
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  magnesium:
-    name: magnesium
-    title: magnesium
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000431
-    alias: magnesium
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - Sediment
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
   calcium:
     name: calcium
+    description: placeholder description; linter will ignore this
     title: calcium
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3795,50 +3273,41 @@ attributes:
     - Sediment
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  tot_iron:
-    name: tot_iron
-    title: total iron
+  chem_treat_method:
+    name: chem_treat_method
+    description: placeholder description; linter will ignore this
+    title: chemical treatment method
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000105
-    alias: tot_iron
+    slot_uri: MIXS:0000457
+    alias: chem_treat_method
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
-    - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  diss_org_carb:
-    name: diss_org_carb
-    title: dissolved organic carbon
+  chem_treatment:
+    name: chem_treatment
+    description: placeholder description; linter will ignore this
+    title: chemical treatment
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000433
-    alias: diss_org_carb
+    slot_uri: MIXS:0001012
+    alias: chem_treatment
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
-    - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
-    - MicrobialMatBiofilm
-    - Sediment
-    - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  diss_inorg_carb:
-    name: diss_inorg_carb
-    title: dissolved inorganic carbon
+  chloride:
+    name: chloride
+    description: placeholder description; linter will ignore this
+    title: chloride
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000434
-    alias: diss_inorg_carb
+    slot_uri: MIXS:0000429
+    alias: chloride
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
@@ -3848,60 +3317,12 @@ attributes:
     - Sediment
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  diss_inorg_phosp:
-    name: diss_inorg_phosp
-    title: dissolved inorganic phosphorus
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000106
-    alias: diss_inorg_phosp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - Water
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  tot_phosp:
-    name: tot_phosp
-    title: total phosphorus
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000117
-    alias: tot_phosp
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - Water
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  suspend_solids:
-    name: suspend_solids
-    title: suspended solids
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000150
-    alias: suspend_solids
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    - WastewaterSludge
-    range: string
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
   density:
     name: density
+    description: placeholder description; linter will ignore this
     title: density
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3915,11 +3336,12 @@ attributes:
     - Sediment
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   diss_carb_dioxide:
     name: diss_carb_dioxide
+    description: placeholder description; linter will ignore this
     title: dissolved carbon dioxide
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3934,11 +3356,51 @@ attributes:
     - Sediment
     - Water
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_inorg_carb:
+    name: diss_inorg_carb
+    description: placeholder description; linter will ignore this
+    title: dissolved inorganic carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000434
+    alias: diss_inorg_carb
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  diss_org_carb:
+    name: diss_org_carb
+    description: placeholder description; linter will ignore this
+    title: dissolved organic carbon
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000433
+    alias: diss_org_carb
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
   diss_oxygen_fluid:
     name: diss_oxygen_fluid
+    description: placeholder description; linter will ignore this
     title: dissolved oxygen in fluids
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -3949,214 +3411,56 @@ attributes:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  vfa:
-    name: vfa
-    title: volatile fatty acids
+  hcr_pressure:
+    name: hcr_pressure
+    description: placeholder description; linter will ignore this
+    title: hydrocarbon resource original pressure
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000152
-    alias: vfa
+    slot_uri: MIXS:0000395
+    alias: hcr_pressure
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
+  iw_bt_date_well:
+    name: iw_bt_date_well
+    description: placeholder description; linter will ignore this
+    title: injection water breakthrough date of specific well
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001010
+    alias: iw_bt_date_well
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  magnesium:
+    name: magnesium
+    description: placeholder description; linter will ignore this
+    title: magnesium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000431
+    alias: magnesium
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{float} {unit}'
-  benzene:
-    name: benzene
-    title: benzene
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000153
-    alias: benzene
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  toluene:
-    name: toluene
-    title: toluene
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000154
-    alias: toluene
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  ethylbenzene:
-    name: ethylbenzene
-    title: ethylbenzene
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000155
-    alias: ethylbenzene
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  xylene:
-    name: xylene
-    title: xylene
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000156
-    alias: xylene
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  api:
-    name: api
-    title: API gravity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000157
-    alias: api
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    required: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  tan:
-    name: tan
-    title: total acid number
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000120
-    alias: tan
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  viscosity:
-    name: viscosity
-    title: viscosity
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000126
-    alias: viscosity
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-  pour_point:
-    name: pour_point
-    title: pour point
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000127
-    alias: pour_point
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{float} {unit}'
-  saturates_pc:
-    name: saturates_pc
-    title: saturates wt%
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000131
-    alias: saturates_pc
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  aromatics_pc:
-    name: aromatics_pc
-    title: aromatics wt%
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000133
-    alias: aromatics_pc
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  resins_pc:
-    name: resins_pc
-    title: resins wt%
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000134
-    alias: resins_pc
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
-  asphaltenes_pc:
-    name: asphaltenes_pc
-    title: asphaltenes wt%
-    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
-    rank: 1000
-    slot_uri: MIXS:0000135
-    alias: asphaltenes_pc
-    owner: HydrocarbonResourcesFluidsSwabs
-    domain_of:
-    - HydrocarbonResourcesCores
-    - HydrocarbonResourcesFluidsSwabs
-    range: string
-    recommended: true
-    pattern: '[^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+'
-    structured_pattern:
-      syntax: '{free_text};{float} {unit}'
   misc_param:
     name: misc_param
+    description: placeholder description; linter will ignore this
     title: miscellaneous parameter
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
@@ -4187,25 +3491,669 @@ attributes:
     - WastewaterSludge
     - Water
     range: string
-    pattern: (([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]+)\\|)*([^s\|][^\r\n\t\|]+;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
-      [^s\|][^\r\n\t\|]+)
+    pattern: (([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*)\\|)*([^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?
+      [^s\|][^\r\n\t\|]*)
     structured_pattern:
       syntax: (({free_text};{float} {unit})\\|)*({free_text};{float} {unit})
-  additional_info:
-    name: additional_info
-    title: additional info
+  org_count_qpcr_info:
+    name: org_count_qpcr_info
+    description: placeholder description; linter will ignore this
+    title: organism count qPCR information
     from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
     rank: 1000
-    slot_uri: MIXS:0000300
-    alias: additional_info
+    slot_uri: MIXS:0000099
+    alias: org_count_qpcr_info
     owner: HydrocarbonResourcesFluidsSwabs
     domain_of:
     - HydrocarbonResourcesCores
     - HydrocarbonResourcesFluidsSwabs
     range: string
-    pattern: '[^s\|][^\r\n\t\|]+'
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    description: placeholder description; linter will ignore this
+    title: oxygenation status of sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000753
+    alias: oxy_stat_samp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: OXY_STAT_SAMP_ENUM
+  potassium:
+    name: potassium
+    description: placeholder description; linter will ignore this
+    title: potassium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000430
+    alias: potassium
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  pour_point:
+    name: pour_point
+    description: placeholder description; linter will ignore this
+    title: pour point
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000127
+    alias: pour_point
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  pressure:
+    name: pressure
+    description: placeholder description; linter will ignore this
+    title: pressure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000412
+    alias: pressure
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  salinity:
+    name: salinity
+    description: placeholder description; linter will ignore this
+    title: salinity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000183
+    alias: salinity
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_preserv:
+    name: samp_preserv
+    description: placeholder description; linter will ignore this
+    title: preservative added to sample
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000463
+    alias: samp_preserv
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  samp_store_dur:
+    name: samp_store_dur
+    description: placeholder description; linter will ignore this
+    title: sample storage duration
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000116
+    alias: samp_store_dur
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: P(?=\d+[YMWD])(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d+[HMS])(\d+H)?(\d+M)?(\d+S)?)?
+    structured_pattern:
+      syntax: '{period}'
+  samp_store_loc:
+    name: samp_store_loc
+    description: placeholder description; linter will ignore this
+    title: sample storage location
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000755
+    alias: samp_store_loc
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*'
     structured_pattern:
       syntax: '{free_text}'
+  samp_store_temp:
+    name: samp_store_temp
+    description: placeholder description; linter will ignore this
+    title: sample storage temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000110
+    alias: samp_store_temp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  samp_transport_cond:
+    name: samp_transport_cond
+    description: placeholder description; linter will ignore this
+    title: sample transport conditions
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000410
+    alias: samp_transport_cond
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  sodium:
+    name: sodium
+    description: placeholder description; linter will ignore this
+    title: sodium
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000428
+    alias: sodium
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  suspend_solids:
+    name: suspend_solids
+    description: placeholder description; linter will ignore this
+    title: suspended solids
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000150
+    alias: suspend_solids
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - WastewaterSludge
+    range: string
+    pattern: '[^s\|][^\r\n\t\|]*;[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text};{float} {unit}'
+  tot_phosp:
+    name: tot_phosp
+    description: placeholder description; linter will ignore this
+    title: total phosphorus
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000117
+    alias: tot_phosp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - Water
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tvdss_of_hcr_press:
+    name: tvdss_of_hcr_press
+    description: placeholder description; linter will ignore this
+    title: depth (TVDSS) of hydrocarbon resource pressure
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000397
+    alias: tvdss_of_hcr_press
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  tvdss_of_hcr_temp:
+    name: tvdss_of_hcr_temp
+    description: placeholder description; linter will ignore this
+    title: depth (TVDSS) of hydrocarbon resource temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000394
+    alias: tvdss_of_hcr_temp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  viscosity:
+    name: viscosity
+    description: placeholder description; linter will ignore this
+    title: viscosity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000126
+    alias: viscosity
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+  add_recov_method:
+    name: add_recov_method
+    description: placeholder description; linter will ignore this
+    title: secondary and tertiary recovery methods and start date
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001009
+    alias: add_recov_method
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  api:
+    name: api
+    description: placeholder description; linter will ignore this
+    title: API gravity
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000157
+    alias: api
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  basin:
+    name: basin
+    description: placeholder description; linter will ignore this
+    title: basin name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000290
+    alias: basin
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  hc_produced:
+    name: hc_produced
+    description: placeholder description; linter will ignore this
+    title: hydrocarbon type produced
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000989
+    alias: hc_produced
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  hcr:
+    name: hcr
+    description: placeholder description; linter will ignore this
+    title: hydrocarbon resource type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000988
+    alias: hcr
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  iwf:
+    name: iwf
+    description: placeholder description; linter will ignore this
+    title: injection water fraction
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000455
+    alias: iwf
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  nitrate:
+    name: nitrate
+    description: placeholder description; linter will ignore this
+    title: nitrate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000425
+    alias: nitrate
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  project_name:
+    name: project_name
+    description: placeholder description; linter will ignore this
+    title: project name
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000092
+    alias: project_name
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Air
+    - BuiltEnvironment
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{free_text}'
+  samp_collect_point:
+    name: samp_collect_point
+    description: placeholder description; linter will ignore this
+    title: sample collection point
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0001015
+    alias: samp_collect_point
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+  samp_type:
+    name: samp_type
+    description: placeholder description; linter will ignore this
+    title: sample type
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000998
+    alias: samp_type
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[^s\|][^\r\n\t\|]* [[a-zA-Z]+:[0-9]+]'
+    structured_pattern:
+      syntax: '{term_label} [{term_id}]'
+  sulfate:
+    name: sulfate
+    description: placeholder description; linter will ignore this
+    title: sulfate
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000423
+    alias: sulfate
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  sulfide:
+    name: sulfide
+    description: placeholder description; linter will ignore this
+    title: sulfide
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000424
+    alias: sulfide
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Sediment
+    - Water
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  temp:
+    name: temp
+    description: placeholder description; linter will ignore this
+    title: temperature
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000113
+    alias: temp
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - Agriculture
+    - Air
+    - Checklist
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - Miuvig
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
+  water_cut:
+    name: water_cut
+    description: placeholder description; linter will ignore this
+    title: water cut
+    from_schema: https://github.com/turbomam/mixs-subset-examples-first/tree/main/src/mixs_subset_examples_first
+    rank: 1000
+    slot_uri: MIXS:0000454
+    alias: water_cut
+    owner: HydrocarbonResourcesFluidsSwabs
+    domain_of:
+    - HydrocarbonResourcesFluidsSwabs
+    range: string
+    required: true
+    pattern: '[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)? [^s\|][^\r\n\t\|]*'
+    structured_pattern:
+      syntax: '{float} {unit}'
 class_uri: MIXS:0016016
 
 </code></pre>
