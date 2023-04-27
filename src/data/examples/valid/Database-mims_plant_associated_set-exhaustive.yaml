@@ -15,7 +15,7 @@ mims_plant_associated_set:
     chem_administration: agar [CHEBI:2509];2018-05-11T20:00Z
     chem_mutagen: nitrous acid;0.5 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1D
     climate_environment: tropical climate;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
-    collection_date: 2018-05-11T10:00:00+01:00
+    collection_date: "2018-05-11T10:00:00+01:00"
     cult_root_med: http://himedialabs.com/TD/PT158.pdf
 #    depth: 10 meter
     elev: 100 meter
