@@ -1,7 +1,12 @@
 mims_plant_associated_set:
   - adapters: AATGATACGGCGACCACCGAGATCTACACGCT;CAAGCAGAAGACGGCATACGAGAT
-#    samp_name: xxx1
     #    associated resource:
+    #    depth: 10 meter
+    #    host_symbiont: xxx
+    #    non_min_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
+    #    samp_collec_device: xxx
+    #    samp_collec_method: PMID:1234567
+    #    samp_name: xxx1
     air_temp_regm: 25 degree Celsius;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
     alt: 100 meter
     ances_data: A/3*B
@@ -17,7 +22,6 @@ mims_plant_associated_set:
     climate_environment: tropical climate;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
     collection_date: "2018-05-11T10:00:00+01:00"
     cult_root_med: http://himedialabs.com/TD/PT158.pdf
-#    depth: 10 meter
     elev: 100 meter
     env_broad_scale: text [prefix:123]
     env_local_scale: text [prefix:123]
@@ -44,7 +48,6 @@ mims_plant_associated_set:
     host_life_stage: adult
     host_phenotype: text [prefix:123]
     host_subspecf_genlin: serovar:Newport
-#    host_symbiont: xxx
     host_taxid: 9606
     host_tot_mass: 123 units
     host_wet_mass: 123 units
@@ -61,7 +64,6 @@ mims_plant_associated_set:
     mineral_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
     misc_param: xxx;123 units|abc;123 units
     neg_cont_type: distilled water
-#    non_min_nutr_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
     nucl_acid_amp: https://phylogenomics.me/protocols/16s-pcr-protocol/
     nucl_acid_ext: https://mobio.com/media/wysiwyg/pdfs/protocols/12888.pdf
     number_contig: 123
@@ -92,8 +94,6 @@ mims_plant_associated_set:
     salinity: 123 units
     salt_regm: xxx;123 units;R2/2018-05-11T14:30:00/2019-05-11T14:30:00/P1D
     samp_capt_status: farm sample
-#    samp_collec_device: xxx
-#    samp_collec_method: PMID:1234567
     samp_dis_stage: infection
     samp_mat_process: xxx
     samp_size: 123 units

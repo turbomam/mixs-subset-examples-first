@@ -1,0 +1,607 @@
+slot	class	mixs_requirement_value	recommended	required
+> slot	class	ignore	recommended	required
+adapters	MigsBa	C	True	
+adapters	MigsEu	C	True	
+adapters	MigsOrg	C	True	
+adapters	MigsPl	C	True	
+adapters	MigsVi	C	True	
+adapters	Mimag	C	True	
+adapters	MimarksS	C	True	
+adapters	Mims	C	True	
+adapters	Misag	C	True	
+adapters	Miuvig	C	True	
+alt	MigsBa	E	True	
+alt	MigsEu	E	True	
+alt	MigsOrg	E	True	
+alt	MigsPl	E	True	
+alt	MigsVi	E	True	
+alt	Mimag	E	True	
+alt	MimarksC	E	True	
+alt	MimarksS	E	True	
+alt	Mims	E	True	
+alt	Misag	E	True	
+alt	Miuvig	E	True	
+annot	Mimag	X		
+annot	Misag	X		
+annot	Miuvig	X		
+annot	MigsBa	C	True	
+annot	MigsEu	C	True	
+annot	MigsOrg	C	True	
+annot	MigsPl	C	True	
+annot	MigsVi	C	True	
+annot	Mims	C	True	
+assembly_name	MigsBa	C	True	
+assembly_name	MigsEu	C	True	
+assembly_name	MigsOrg	C	True	
+assembly_name	MigsPl	C	True	
+assembly_name	MigsVi	C	True	
+assembly_name	Mimag	C	True	
+assembly_name	Mims	C	True	
+assembly_name	Misag	C	True	
+assembly_name	Miuvig	C	True	
+assembly_qual	MigsBa	M		True
+assembly_qual	MigsEu	M		True
+assembly_qual	Mimag	M		True
+assembly_qual	Misag	M		True
+assembly_qual	Miuvig	M		True
+assembly_qual	MigsOrg	X		
+assembly_qual	MigsPl	X		
+assembly_qual	MigsVi	X		
+assembly_qual	Mims	C	True	
+assembly_software	MigsBa	M		True
+assembly_software	MigsEu	M		True
+assembly_software	MigsOrg	M		True
+assembly_software	MigsPl	M		True
+assembly_software	MigsVi	M		True
+assembly_software	Mimag	M		True
+assembly_software	Misag	M		True
+assembly_software	Miuvig	M		True
+assembly_software	MimarksS	C	True	
+assembly_software	Mims	C	True	
+associated resource	MigsBa	C	True	
+associated resource	MigsEu	C	True	
+associated resource	MigsOrg	C	True	
+associated resource	MigsPl	C	True	
+associated resource	MigsVi	C	True	
+associated resource	Mimag	C	True	
+associated resource	MimarksC	C	True	
+associated resource	MimarksS	C	True	
+associated resource	Mims	C	True	
+associated resource	Misag	C	True	
+associated resource	Miuvig	C	True	
+bin_param	Mimag	M		True
+bin_param	Miuvig	C	True	
+bin_software	Mimag	M		True
+bin_software	Miuvig	C	True	
+biotic_relationship	MigsEu	X		
+biotic_relationship	MigsVi	X		
+biotic_relationship	Miuvig	X		
+biotic_relationship	MigsBa	C	True	
+biotic_relationship	MimarksC	C	True	
+chimera_check	MimarksC	C	True	
+chimera_check	MimarksS	C	True	
+collection_date	MigsBa	M		True
+collection_date	MigsEu	M		True
+collection_date	MigsOrg	M		True
+collection_date	MigsPl	M		True
+collection_date	MigsVi	M		True
+collection_date	Mimag	M		True
+collection_date	MimarksC	M		True
+collection_date	MimarksS	M		True
+collection_date	Mims	M		True
+collection_date	Misag	M		True
+collection_date	Miuvig	M		True
+compl_appr	Mimag	X		
+compl_appr	Misag	X		
+compl_appr	Miuvig	C	True	
+compl_score	Mimag	M		True
+compl_score	Misag	M		True
+compl_score	MigsBa	X		
+compl_score	MigsEu	X		
+compl_score	MigsOrg	X		
+compl_score	MigsPl	X		
+compl_score	MigsVi	X		
+compl_score	Miuvig	C	True	
+compl_software	Mimag	M		True
+compl_software	Misag	M		True
+compl_software	MigsBa	X		
+compl_software	MigsEu	X		
+compl_software	MigsOrg	X		
+compl_software	MigsPl	X		
+compl_software	MigsVi	X		
+compl_software	Miuvig	X		
+contam_score	Mimag	M		True
+contam_score	Misag	M		True
+contam_screen_input	Mimag	X		
+contam_screen_input	Misag	X		
+contam_screen_param	Mimag	X		
+contam_screen_param	Misag	X		
+decontam_software	Mimag	X		
+decontam_software	Misag	X		
+depth	MigsBa	E	True	
+depth	MigsEu	E	True	
+depth	MigsOrg	E	True	
+depth	MigsPl	E	True	
+depth	MigsVi	E	True	
+depth	Mimag	E	True	
+depth	MimarksC	E	True	
+depth	MimarksS	E	True	
+depth	Mims	E	True	
+depth	Misag	E	True	
+depth	Miuvig	E	True	
+detec_type	Miuvig	M		True
+elev	MigsBa	E	True	
+elev	MigsEu	E	True	
+elev	MigsOrg	E	True	
+elev	MigsPl	E	True	
+elev	MigsVi	E	True	
+elev	Mimag	E	True	
+elev	MimarksC	E	True	
+elev	MimarksS	E	True	
+elev	Mims	E	True	
+elev	Misag	E	True	
+elev	Miuvig	E	True	
+encoded_traits	MigsBa	X		
+encoded_traits	MigsPl	C	True	
+encoded_traits	MigsVi	C	True	
+env_broad_scale	MigsBa	M		True
+env_broad_scale	MigsEu	M		True
+env_broad_scale	MigsOrg	M		True
+env_broad_scale	MigsPl	M		True
+env_broad_scale	MigsVi	M		True
+env_broad_scale	Mimag	M		True
+env_broad_scale	MimarksC	M		True
+env_broad_scale	MimarksS	M		True
+env_broad_scale	Mims	M		True
+env_broad_scale	Misag	M		True
+env_broad_scale	Miuvig	M		True
+env_local_scale	MigsBa	M		True
+env_local_scale	MigsEu	M		True
+env_local_scale	MigsOrg	M		True
+env_local_scale	MigsPl	M		True
+env_local_scale	MigsVi	M		True
+env_local_scale	Mimag	M		True
+env_local_scale	MimarksC	M		True
+env_local_scale	MimarksS	M		True
+env_local_scale	Mims	M		True
+env_local_scale	Misag	M		True
+env_local_scale	Miuvig	M		True
+env_medium	MigsBa	M		True
+env_medium	MigsEu	M		True
+env_medium	MigsOrg	M		True
+env_medium	MigsPl	M		True
+env_medium	MigsVi	M		True
+env_medium	Mimag	M		True
+env_medium	MimarksC	M		True
+env_medium	MimarksS	M		True
+env_medium	Mims	M		True
+env_medium	Misag	M		True
+env_medium	Miuvig	M		True
+estimated_size	MigsBa	X		
+estimated_size	MigsEu	X		
+estimated_size	MigsOrg	X		
+estimated_size	MigsPl	X		
+estimated_size	MigsVi	X		
+estimated_size	Miuvig	X		
+experimental_factor	MigsBa	X		
+experimental_factor	MigsEu	X		
+experimental_factor	MigsOrg	X		
+experimental_factor	MigsPl	X		
+experimental_factor	MigsVi	X		
+experimental_factor	MimarksC	X		
+experimental_factor	Mimag	C	True	
+experimental_factor	MimarksS	C	True	
+experimental_factor	Mims	C	True	
+experimental_factor	Misag	C	True	
+experimental_factor	Miuvig	C	True	
+extrachrom_elements	MigsEu	X		
+extrachrom_elements	MimarksC	X		
+extrachrom_elements	MigsBa	C	True	
+extrachrom_elements	MigsOrg	C	True	
+feat_pred	MigsBa	X		
+feat_pred	MigsEu	X		
+feat_pred	MigsOrg	X		
+feat_pred	MigsPl	X		
+feat_pred	MigsVi	X		
+feat_pred	Mimag	X		
+feat_pred	Mims	X		
+feat_pred	Misag	X		
+feat_pred	Miuvig	C	True	
+geo_loc_name	MigsBa	M		True
+geo_loc_name	MigsEu	M		True
+geo_loc_name	MigsOrg	M		True
+geo_loc_name	MigsPl	M		True
+geo_loc_name	MigsVi	M		True
+geo_loc_name	Mimag	M		True
+geo_loc_name	MimarksC	M		True
+geo_loc_name	MimarksS	M		True
+geo_loc_name	Mims	M		True
+geo_loc_name	Misag	M		True
+geo_loc_name	Miuvig	M		True
+host_disease_stat	MigsEu	X		
+host_disease_stat	MigsBa	C	True	
+host_disease_stat	MigsVi	C	True	
+host_disease_stat	Miuvig	C	True	
+host_pred_appr	Miuvig	C	True	
+host_pred_est_acc	Miuvig	C	True	
+host_spec_range	MigsBa	X		
+host_spec_range	MigsEu	X		
+host_spec_range	MigsPl	X		
+host_spec_range	Miuvig	X		
+host_spec_range	MigsVi	C	True	
+isol_growth_condt	MigsBa	M		True
+isol_growth_condt	MigsEu	M		True
+isol_growth_condt	MigsOrg	M		True
+isol_growth_condt	MigsPl	M		True
+isol_growth_condt	MigsVi	M		True
+isol_growth_condt	MimarksC	M		True
+lat_lon	MigsBa	M		True
+lat_lon	MigsEu	M		True
+lat_lon	MigsOrg	M		True
+lat_lon	MigsPl	M		True
+lat_lon	MigsVi	M		True
+lat_lon	Mimag	M		True
+lat_lon	MimarksC	M		True
+lat_lon	MimarksS	M		True
+lat_lon	Mims	M		True
+lat_lon	Misag	M		True
+lat_lon	Miuvig	M		True
+lib_layout	MigsBa	X		
+lib_layout	MigsEu	X		
+lib_layout	MigsOrg	X		
+lib_layout	MigsPl	X		
+lib_layout	MigsVi	X		
+lib_layout	Mimag	C	True	
+lib_layout	MimarksS	C	True	
+lib_layout	Mims	C	True	
+lib_layout	Misag	C	True	
+lib_layout	Miuvig	C	True	
+lib_reads_seqd	MigsBa	X		
+lib_reads_seqd	MigsEu	X		
+lib_reads_seqd	MigsOrg	X		
+lib_reads_seqd	MigsPl	X		
+lib_reads_seqd	MigsVi	X		
+lib_reads_seqd	Mimag	C	True	
+lib_reads_seqd	MimarksS	C	True	
+lib_reads_seqd	Mims	C	True	
+lib_reads_seqd	Misag	C	True	
+lib_reads_seqd	Miuvig	C	True	
+lib_screen	MigsBa	X		
+lib_screen	MigsEu	X		
+lib_screen	MigsOrg	X		
+lib_screen	MigsPl	X		
+lib_screen	MigsVi	X		
+lib_screen	Mimag	C	True	
+lib_screen	MimarksS	C	True	
+lib_screen	Mims	C	True	
+lib_screen	Misag	C	True	
+lib_screen	Miuvig	C	True	
+lib_size	MigsBa	X		
+lib_size	MigsEu	X		
+lib_size	MigsOrg	X		
+lib_size	MigsPl	X		
+lib_size	MigsVi	X		
+lib_size	Mimag	C	True	
+lib_size	MimarksS	C	True	
+lib_size	Mims	C	True	
+lib_size	Misag	C	True	
+lib_size	Miuvig	C	True	
+lib_vector	MigsBa	X		
+lib_vector	MigsEu	X		
+lib_vector	MigsOrg	X		
+lib_vector	MigsPl	X		
+lib_vector	MigsVi	X		
+lib_vector	Mimag	C	True	
+lib_vector	MimarksS	C	True	
+lib_vector	Mims	C	True	
+lib_vector	Misag	C	True	
+lib_vector	Miuvig	C	True	
+mag_cov_software	Mimag	X		
+mag_cov_software	Miuvig	X		
+mid	Mimag	C	True	
+mid	MimarksS	C	True	
+mid	Mims	C	True	
+mid	Misag	C	True	
+mid	Miuvig	C	True	
+neg_cont_type	MigsBa	C	True	
+neg_cont_type	MigsEu	C	True	
+neg_cont_type	MigsOrg	C	True	
+neg_cont_type	MigsPl	C	True	
+neg_cont_type	MigsVi	C	True	
+neg_cont_type	Mimag	C	True	
+neg_cont_type	MimarksC	C	True	
+neg_cont_type	MimarksS	C	True	
+neg_cont_type	Mims	C	True	
+neg_cont_type	Misag	C	True	
+neg_cont_type	Miuvig	C	True	
+nucl_acid_amp	MigsBa	C	True	
+nucl_acid_amp	MigsEu	C	True	
+nucl_acid_amp	MigsOrg	C	True	
+nucl_acid_amp	MigsPl	C	True	
+nucl_acid_amp	MigsVi	C	True	
+nucl_acid_amp	Mimag	C	True	
+nucl_acid_amp	MimarksC	C	True	
+nucl_acid_amp	MimarksS	C	True	
+nucl_acid_amp	Mims	C	True	
+nucl_acid_amp	Misag	C	True	
+nucl_acid_amp	Miuvig	C	True	
+nucl_acid_ext	MigsBa	C	True	
+nucl_acid_ext	MigsEu	C	True	
+nucl_acid_ext	MigsOrg	C	True	
+nucl_acid_ext	MigsPl	C	True	
+nucl_acid_ext	MigsVi	C	True	
+nucl_acid_ext	Mimag	C	True	
+nucl_acid_ext	MimarksC	C	True	
+nucl_acid_ext	MimarksS	C	True	
+nucl_acid_ext	Mims	C	True	
+nucl_acid_ext	Misag	C	True	
+nucl_acid_ext	Miuvig	C	True	
+num_replicons	MigsBa	M		True
+num_replicons	MigsEu	X		
+num_replicons	MigsVi	C	True	
+number_contig	MigsBa	M		True
+number_contig	MigsEu	M		True
+number_contig	Miuvig	M		True
+number_contig	MigsOrg	X		
+number_contig	MigsPl	X		
+number_contig	MigsVi	X		
+number_contig	Mimag	X		
+number_contig	Misag	X		
+number_contig	Mims	C	True	
+otu_class_appr	Miuvig	C	True	
+otu_db	Miuvig	C	True	
+otu_seq_comp_appr	Miuvig	C	True	
+pathogenicity	Miuvig	X		
+pathogenicity	MigsBa	C	True	
+pathogenicity	MigsEu	C	True	
+pathogenicity	MigsVi	C	True	
+pcr_cond	MimarksC	C	True	
+pcr_cond	MimarksS	C	True	
+pcr_primers	MimarksC	C	True	
+pcr_primers	MimarksS	C	True	
+ploidy	MigsEu	X		
+pos_cont_type	MigsBa	C	True	
+pos_cont_type	MigsEu	C	True	
+pos_cont_type	MigsOrg	C	True	
+pos_cont_type	MigsPl	C	True	
+pos_cont_type	MigsVi	C	True	
+pos_cont_type	Mimag	C	True	
+pos_cont_type	MimarksC	C	True	
+pos_cont_type	MimarksS	C	True	
+pos_cont_type	Mims	C	True	
+pos_cont_type	Misag	C	True	
+pos_cont_type	Miuvig	C	True	
+pred_genome_struc	Miuvig	M		True
+pred_genome_type	Miuvig	M		True
+project_name	MigsBa	M		True
+project_name	MigsEu	M		True
+project_name	MigsOrg	M		True
+project_name	MigsPl	M		True
+project_name	MigsVi	M		True
+project_name	Mimag	M		True
+project_name	MimarksC	M		True
+project_name	MimarksS	M		True
+project_name	Mims	M		True
+project_name	Misag	M		True
+project_name	Miuvig	M		True
+propagation	MigsPl	M		True
+propagation	MigsVi	M		True
+propagation	MigsEu	C	True	
+reassembly_bin	Mimag	X		
+reassembly_bin	Miuvig	C	True	
+ref_biomaterial	MigsBa	M		True
+ref_biomaterial	MigsEu	X		
+ref_biomaterial	MigsOrg	X		
+ref_biomaterial	MigsPl	X		
+ref_biomaterial	MigsVi	X		
+ref_biomaterial	Mimag	X		
+ref_biomaterial	Mims	X		
+ref_biomaterial	Misag	X		
+ref_biomaterial	Miuvig	X		
+ref_db	MigsBa	X		
+ref_db	MigsEu	X		
+ref_db	MigsOrg	X		
+ref_db	MigsPl	X		
+ref_db	MigsVi	X		
+ref_db	Mimag	X		
+ref_db	Mims	X		
+ref_db	Misag	X		
+ref_db	Miuvig	C	True	
+rel_to_oxygen	Mimag	X		
+rel_to_oxygen	MimarksS	X		
+rel_to_oxygen	Mims	X		
+rel_to_oxygen	Misag	X		
+rel_to_oxygen	MigsBa	C	True	
+rel_to_oxygen	MimarksC	C	True	
+samp_collec_device	MigsBa	X		
+samp_collec_device	MigsEu	X		
+samp_collec_device	MigsOrg	X		
+samp_collec_device	MigsPl	X		
+samp_collec_device	MigsVi	X		
+samp_collec_device	MimarksC	X		
+samp_collec_device	Mimag	C	True	
+samp_collec_device	MimarksS	C	True	
+samp_collec_device	Mims	C	True	
+samp_collec_device	Misag	C	True	
+samp_collec_device	Miuvig	C	True	
+samp_collec_method	MigsBa	X		
+samp_collec_method	MigsEu	X		
+samp_collec_method	MigsOrg	X		
+samp_collec_method	MigsPl	X		
+samp_collec_method	MigsVi	X		
+samp_collec_method	MimarksC	X		
+samp_collec_method	Mimag	C	True	
+samp_collec_method	MimarksS	C	True	
+samp_collec_method	Mims	C	True	
+samp_collec_method	Misag	C	True	
+samp_collec_method	Miuvig	C	True	
+samp_mat_process	MigsBa	X		
+samp_mat_process	MigsEu	X		
+samp_mat_process	MigsOrg	X		
+samp_mat_process	MigsPl	X		
+samp_mat_process	MigsVi	X		
+samp_mat_process	Mimag	C	True	
+samp_mat_process	MimarksC	C	True	
+samp_mat_process	MimarksS	C	True	
+samp_mat_process	Mims	C	True	
+samp_mat_process	Misag	C	True	
+samp_mat_process	Miuvig	C	True	
+samp_name	MigsBa	M		True
+samp_name	MigsEu	M		True
+samp_name	MigsOrg	M		True
+samp_name	MigsPl	M		True
+samp_name	MigsVi	M		True
+samp_name	Mimag	M		True
+samp_name	MimarksC	M		True
+samp_name	MimarksS	M		True
+samp_name	Mims	M		True
+samp_name	Misag	M		True
+samp_name	Miuvig	M		True
+samp_size	MigsBa	X		
+samp_size	MigsEu	X		
+samp_size	MigsOrg	X		
+samp_size	MigsPl	X		
+samp_size	MigsVi	X		
+samp_size	MimarksC	X		
+samp_size	Mimag	C	True	
+samp_size	MimarksS	C	True	
+samp_size	Mims	C	True	
+samp_size	Misag	C	True	
+samp_size	Miuvig	C	True	
+samp_taxon_id	MigsBa	M		True
+samp_taxon_id	MigsEu	M		True
+samp_taxon_id	MigsOrg	M		True
+samp_taxon_id	MigsPl	M		True
+samp_taxon_id	MigsVi	M		True
+samp_taxon_id	Mimag	M		True
+samp_taxon_id	MimarksC	M		True
+samp_taxon_id	MimarksS	M		True
+samp_taxon_id	Mims	M		True
+samp_taxon_id	Misag	M		True
+samp_taxon_id	Miuvig	M		True
+samp_vol_we_dna_ext	MigsBa	X		
+samp_vol_we_dna_ext	MigsEu	X		
+samp_vol_we_dna_ext	MigsOrg	X		
+samp_vol_we_dna_ext	MigsPl	X		
+samp_vol_we_dna_ext	MigsVi	X		
+samp_vol_we_dna_ext	Mimag	X		
+samp_vol_we_dna_ext	MimarksC	X		
+samp_vol_we_dna_ext	MimarksS	X		
+samp_vol_we_dna_ext	Mims	X		
+samp_vol_we_dna_ext	Misag	X		
+samp_vol_we_dna_ext	Miuvig	X		
+seq_meth	MigsBa	M		True
+seq_meth	MigsEu	M		True
+seq_meth	MigsOrg	M		True
+seq_meth	MigsPl	M		True
+seq_meth	MigsVi	M		True
+seq_meth	Mimag	M		True
+seq_meth	MimarksC	M		True
+seq_meth	MimarksS	M		True
+seq_meth	Mims	M		True
+seq_meth	Misag	M		True
+seq_meth	Miuvig	M		True
+seq_quality_check	MimarksC	C	True	
+seq_quality_check	MimarksS	C	True	
+sim_search_meth	MigsBa	X		
+sim_search_meth	MigsEu	X		
+sim_search_meth	MigsOrg	X		
+sim_search_meth	MigsPl	X		
+sim_search_meth	MigsVi	X		
+sim_search_meth	Mimag	X		
+sim_search_meth	Mims	X		
+sim_search_meth	Misag	X		
+sim_search_meth	Miuvig	C	True	
+single_cell_lysis_appr	Misag	M		True
+single_cell_lysis_appr	Miuvig	C	True	
+single_cell_lysis_prot	Misag	X		
+single_cell_lysis_prot	Miuvig	C	True	
+size_frac	Mimag	X		
+size_frac	MimarksS	X		
+size_frac	Mims	X		
+size_frac	Misag	X		
+size_frac	Miuvig	C	True	
+sop	MigsBa	C	True	
+sop	MigsEu	C	True	
+sop	MigsOrg	C	True	
+sop	MigsPl	C	True	
+sop	MigsVi	C	True	
+sop	Mimag	C	True	
+sop	MimarksC	C	True	
+sop	MimarksS	C	True	
+sop	Mims	C	True	
+sop	Misag	C	True	
+sop	Miuvig	C	True	
+sort_tech	Misag	M		True
+sort_tech	Miuvig	C	True	
+source_mat_id	MigsBa	C	True	
+source_mat_id	MigsEu	C	True	
+source_mat_id	MigsOrg	C	True	
+source_mat_id	MigsPl	C	True	
+source_mat_id	MigsVi	C	True	
+source_mat_id	Mimag	C	True	
+source_mat_id	MimarksC	C	True	
+source_mat_id	MimarksS	C	True	
+source_mat_id	Mims	C	True	
+source_mat_id	Misag	C	True	
+source_mat_id	Miuvig	C	True	
+source_uvig	Miuvig	M		True
+specific_host	MigsEu	X		
+specific_host	Miuvig	X		
+specific_host	MigsBa	C	True	
+specific_host	MigsPl	C	True	
+specific_host	MigsVi	C	True	
+subspecf_gen_lin	MigsBa	C	True	
+subspecf_gen_lin	MigsEu	C	True	
+subspecf_gen_lin	MigsOrg	C	True	
+subspecf_gen_lin	MigsPl	C	True	
+subspecf_gen_lin	MigsVi	C	True	
+subspecf_gen_lin	MimarksC	C	True	
+target_gene	MimarksC	M		True
+target_gene	MimarksS	M		True
+target_subfragment	MimarksC	C	True	
+target_subfragment	MimarksS	C	True	
+tax_class	MigsBa	X		
+tax_class	MigsEu	X		
+tax_class	MigsOrg	X		
+tax_class	MigsPl	X		
+tax_class	MigsVi	X		
+tax_class	Mimag	X		
+tax_class	Mims	X		
+tax_class	Misag	X		
+tax_class	Miuvig	C	True	
+tax_ident	Mimag	M		True
+tax_ident	Misag	M		True
+tax_ident	Miuvig	X		
+tax_ident	MigsBa	C	True	
+tax_ident	MigsEu	C	True	
+tax_ident	MigsOrg	C	True	
+tax_ident	MigsPl	C	True	
+tax_ident	MigsVi	C	True	
+temp	MigsBa	E	True	
+temp	MigsEu	E	True	
+temp	MigsOrg	E	True	
+temp	MigsPl	E	True	
+temp	MigsVi	E	True	
+temp	Mimag	E	True	
+temp	MimarksC	E	True	
+temp	MimarksS	E	True	
+temp	Mims	E	True	
+temp	Misag	E	True	
+temp	Miuvig	E	True	
+trna_ext_software	Mimag	X		
+trna_ext_software	Misag	X		
+trna_ext_software	Miuvig	X		
+trnas	Mimag	X		
+trnas	Misag	X		
+trnas	Miuvig	X		
+trophic_level	MigsBa	C	True	
+trophic_level	MigsEu	C	True	
+trophic_level	MimarksC	C	True	
+vir_ident_software	Miuvig	M		True
+virus_enrich_appr	Miuvig	M		True
+virus_enrich_appr	MigsVi	C	True	
+wga_amp_appr	Misag	M		True
+wga_amp_appr	Miuvig	C	True	
+wga_amp_kit	Misag	X		
+wga_amp_kit	Miuvig	C	True	
