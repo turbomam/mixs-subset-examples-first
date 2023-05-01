@@ -1,0 +1,19 @@
+{
+  "mixs_subset_examples_first": {
+    "MimsSoil": {
+      "name": "MimsSoil",
+      "status": "published",
+      "display": true
+    },
+    "MimsWater": {
+      "name": "MimsWater",
+      "status": "published",
+      "display": true
+    },
+    "MigsBaSoil": {
+      "name": "MigsBaSoil",
+      "status": "published",
+      "display": true
+    }
+  }
+}
