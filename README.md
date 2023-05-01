@@ -68,8 +68,7 @@ PlantAssociated, Sediment, Soil, and Water environments. Contributors who would 
 core combinations, or who would like to devise more efficient ways of working with large numbers of combinations are
 encouraged to speak up.
 
-A subset of the MIxS specification that's self-documenting and DataHarmonizer compatible. Comes with valid and invalid
-data examples.
+Additionally, this schema is closed: a compliant data set can't provide values for any term that is not already associated with the class that the user has selected to model their samples. In other words, users can't "add their own columns."  MIxS already provides several terms with open-ended semantics. Allowing users to provide values in fields of their own design is a sure way to decrease interoperability with other data sets.  
 
 Cumulative log of
 modifications: https://htmlpreview.github.io/?https://raw.githubusercontent.com/turbomam/mixs-subset-examples-first/main/assets/mixs_combined_diff.html
