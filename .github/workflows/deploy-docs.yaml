@@ -1,4 +1,4 @@
-name: Auto-deployment of nmdc_submission_schema documentation and DH interface
+name: Auto-deployment of MIxS curated subset documentation and DH interface
 on:
   push:
     branches: [ main ]
@@ -57,7 +57,7 @@ jobs:
 
       - name: Build documentation.
         run: |
-          poetry run gen-doc -d docs src/nmdc_submission_schema/schema/nmdc_submission_schema.yaml
+          poetry run gen-doc -d docs src/mixs_subset_examples_first/schema/mixs_subset_examples_first.yaml
           cp src/docs/*md docs/
           poetry run mkdocs build -d dist
 
