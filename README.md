@@ -40,8 +40,8 @@ LinkML interpretation of teh requirement codes: data/mixs_requirement_codes.tsv
       in the wild. This is not a place to put pet names.
 - curating enumerations
     - ideally we would have a minimal number of pure enumerations, with good reuse of enumeration across terms/slots
-- pure means that the enumerations are just a list of permissible values, not part of a pattern. compound validations
-  like enumeration + count will be dealt with elsewhere
+        - pure means that the enumerations are just a list of permissible values, not part of a pattern. compound
+          validations like enumeration + count will be dealt with elsewhere
 - identify which attributes of a term/slot must be invariant across all classes (name, identifier), and which could be
   customized on a clas-by-class basic (example value, requirement level)
 - review data/hand_stacked_conflicts.csv, to obtain
@@ -49,7 +49,10 @@ LinkML interpretation of teh requirement codes: data/mixs_requirement_codes.tsv
     - class-specific customizations of terms on class-by-class basic, for data/hand_stacked_for_slot_usages.csv
     - convert MIxS Value syntaxes (in consultation with other term attributes) into LinkML "settings" for structured
       patterns
-    -
+- provide more valid and invalid examples in src/data/examples. note that the preferred format is YAML at this time.
+  JSON files in the same format also be accepted with minor reconfiguration. Users wising to make contribution via
+  tabular formats like CSV or TSV should enter their data into the bundled DataHarmonizer, ensure that it is valid (or
+  invalid in an expected way), and then save to JSON.
 
 sources to consult when resolving conflicts in invariant term attribute associated with different classes
 
@@ -68,11 +71,16 @@ PlantAssociated, Sediment, Soil, and Water environments. Contributors who would 
 core combinations, or who would like to devise more efficient ways of working with large numbers of combinations are
 encouraged to speak up.
 
-A subset of the MIxS specification that's self-documenting and DataHarmonizer compatible. Comes with valid and invalid
-data examples.
+Additional notes:
+LinkML makes a differentiation between storage and presentation, for both teh schema and schema-compliant data. That
+means it's not necessary to combine two kinds of information into one term attribute, based on the concern that the two
+kinds of attributes must be displayed together. LinkML provides numerous mechanisms for controlling the appearance of
+schema documentation and data collection tools.
 
-Cumulative log of
-modifications: https://htmlpreview.github.io/?https://raw.githubusercontent.com/turbomam/mixs-subset-examples-first/main/assets/mixs_combined_diff.html
+The schema, sample data nd data collection tools provided here are not meant to impyt that prominent institutions that warehouse biosmaple/sequencing data will adopt any of the constraints or functailty demonstrated here. 
+
+log og initial
+edits: https://htmlpreview.github.io/?https://raw.githubusercontent.com/turbomam/mixs-subset-examples-first/main/assets/mixs_combined_diff.html
 
 ----
 
